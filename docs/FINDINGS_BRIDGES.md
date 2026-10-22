@@ -124,7 +124,7 @@ the first attack release at 3.3 false alarms per day.
   with D-view detectors therefore includes the value of source-chain access.
   The X view is the fair comparison.
 * The `ecod*` detectors are a frozen, train-only, smoothed two-tail ECDF
-  variant in the spirit of ECOD (Li et al. 2022), not the PyOD algorithm.
+  variant in the spirit of ECOD (Li et al. 2023), not the PyOD algorithm.
 * Prices are daily closes, and a candle is assumed usable once it has closed;
   the provider's real publication time was not measured. The sensitivity to
   intraday price data was not evaluated. Six Nomad releases have no price

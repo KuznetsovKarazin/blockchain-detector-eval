@@ -77,3 +77,15 @@ comparability or traceability limitation.
 | 8 | K3 kept per-seed metrics but not the scores | `scores.npz`: validation and test scores, validation thresholds and tx ids per model and seed (labels via the local copy, SHA-256 checked) | — | K3 re-run (`k3_20261022_163604`): per-seed metrics identical |
 | 9 | scope of inference: K3 bootstrap, "pre-registration", target-selected best transfer model, two bridge incidents | K3: cluster bootstrap over observed test steps, a pre-declared follow-up analysis; C transfer table marked exploratory; B limits stated in PROTOCOLS and FINDINGS | — | — |
 | 10 | overlap with Maganti 2026 | full reference (arXiv:2604.19514; RF 0.821 vs GraphSAGE 0.689 ± 0.017) | — | — |
+
+## Review of the public release (2026-10-22, commit 07c01f5)
+
+| # | Finding | Fix | Check |
+|---|---|---|---|
+| R1 | "82 % near-duplicates" and "templates give the label away" | 82 % described as the transitive union of project membership and near-duplicate links (near-duplicate components ≤ 51 files, projects ≤ 34, 227 `safe` groups, largest 5,408); SolidiFI: best mean AUPRC 1.000, consistent with template recognition, causal role not isolated | group sizes recomputed from `groups.parquet` |
+| R2 | K3 header called the bootstrap "variability over future periods" | header now says cluster bootstrap over observed test steps; pre-declared follow-up analysis | — |
+| R3 | manifests name development commits; two C4 input hashes differ from the public files | `results/PROVENANCE.md`: original hash → transformation → public hash for every file changed for the public release; C4 re-run on the public inputs (`c4_*_public`) with its own manifest; tag `v0.4.1` | numbers of the public C4 run equal the original |
+| R4 | pragma parser read commented-out pragmas, no hyphen ranges, `0.5.*` gave 0.5.0 | comments stripped; hyphen ranges, wildcards and partial versions follow npm semver | `test_comments_hyphen_ranges_and_wildcards`; compiler candidates of all 493 files unchanged, so C3 is not re-run |
+| R5 | `diagnostic_timeout` not saved | column in `slither_raw.csv` and line in each log | — |
+| R6 | downloader skipped any directory with `.git` | checks HEAD against the pin: resumes an incomplete checkout, updates a clean other revision, refuses to touch local changes | `test_checkout_state` |
+| R7 | `features_*.parquet` described as part of `results/` | DATA.md: local derived outputs of B1, read by B2 | — |

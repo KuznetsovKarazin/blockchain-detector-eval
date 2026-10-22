@@ -33,3 +33,12 @@ def test_or_ranges_and_unknown_newer_releases():
 def test_compile_failure_is_told_from_tool_crash():
     assert c3._is_compile_failure("a.sol:417:14: Error: Unbalanced stack at the end of a block")
     assert not c3._is_compile_failure("AssertionError\n    assert isinstance(right, TupleVariable)")
+
+
+def test_comments_hyphen_ranges_and_wildcards():
+    src = "// pragma solidity 0.4.24;\n/* pragma solidity 0.4.11; */\npragma solidity ^0.5.0;"
+    assert c3.solc_candidates(src) == (["0.5.17"], False)
+    assert c3.solc_candidates("pragma solidity 0.4.24 - 0.5.3;") == (["0.5.3", "0.4.26"], False)
+    assert c3.solc_candidates("pragma solidity 0.5.*;") == (["0.5.17"], False)
+    assert c3.solc_candidates("pragma solidity 0.5.x;") == (["0.5.17"], False)
+    assert c3.solc_candidates("pragma solidity ~0.4.24;") == (["0.4.26"], False)

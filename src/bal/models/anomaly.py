@@ -27,7 +27,7 @@ class RobustZ:
 
 
 class ECOD:
-    """Frozen, train-only ECDF tail score in the spirit of ECOD (Li et al. 2022).
+    """Frozen, train-only ECDF tail score in the spirit of ECOD (Li et al. 2023).
 
     This is NOT the PyOD/paper algorithm: the empirical CDFs are fitted once on
     the training data and frozen (inductive scoring of a stream), they are

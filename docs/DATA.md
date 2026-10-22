@@ -28,7 +28,7 @@ them (`bal.data.elliptic.load_scores`, `scripts/c4_slither_vs_ml.py`).
 
 | Source | Licence (at the pinned commit / source page) | In `results/` |
 |---|---|---|
-| XChainWatcher (incl. its daily token price files) | MIT (repository `LICENSE`) | per-event features and labels of both bridges (`b1_*/features_*.parquet`) |
+| XChainWatcher (incl. its daily token price files) | MIT (repository `LICENSE`) | thresholds, metrics, first alarms and per-attack contributions. The per-event features and labels (`b1_*/features_*.parquet`) are derived outputs that B1 writes locally and B2 reads; they are not committed, so run B1 before B2 |
 | SmartBugs-curated | Apache-2.0 (repository `LICENSE`) | file paths, scores, Slither statuses; labels are read from the local copy |
 | SolidiFI-benchmark | MIT for the benchmark; the original contracts keep their Etherscan licences (repository `LICENSE`) | file paths, scores |
 | DAppSCAN | no licence file in the repository | file paths, near-duplicate groups, fold ids and scores; no labels |

@@ -7,6 +7,11 @@ that differed from it and a SHA-256 of that diff, package versions, SHA-256 of
 the input files and the full CLI configuration. Revisions of a protocol after
 the external audit of 2026-10-22 are listed in [AUDIT_RESPONSE.md](AUDIT_RESPONSE.md).
 
+**AUPRC** everywhere in this repository is average precision as computed by
+`sklearn.metrics.average_precision_score` (the non-interpolated step sum
+Σ (Rₙ − Rₙ₋₁) Pₙ), not a trapezoidal area under the PR curve. Its chance
+level is the base rate, which is always reported next to it.
+
 ## T / K — Elliptic transactions
 
 | Part | Time steps | Used for |
@@ -56,7 +61,10 @@ amount of leakage.
 
 * Classes: reentrancy, arithmetic, timestamp dependence, unchecked low-level call.
 * Representations: TF-IDF of raw tokens; TF-IDF of tokens with user
-  identifiers → `ID` and numbers → `NUM`; 42 hand-written source patterns.
+  identifiers → `ID` and numbers → `NUM`; 43 hand-written pattern features
+  (38 regex counts and the call-before-write count, each per 100 non-empty
+  lines, plus solc version, a pre-0.8 flag, log1p(lines) and
+  log1p(functions)).
   TF-IDF is fitted inside each training fold.
 * Near-duplicates: identical normalised files are always merged; MinHash
   (token 5-gram, 16 bands × 4 rows) proposes candidates and **every** candidate

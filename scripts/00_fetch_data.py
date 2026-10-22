@@ -43,17 +43,51 @@ Manual downloads (licence / hosting does not allow scripted download):
 """
 
 
+def _git(dst: Path, *args: str) -> str | None:
+    r = subprocess.run(["git", "-C", str(dst), *args], capture_output=True, text=True)
+    return r.stdout.strip() if r.returncode == 0 else None
+
+
+def checkout_state(dst: Path, commit: str) -> str:
+    """'missing', 'pinned' (HEAD at the pin, clean), 'modified' (HEAD at the pin,
+    local changes), 'incomplete' (no HEAD, e.g. an interrupted download),
+    'other_commit' (clean checkout of another revision), 'other_modified'
+    (another revision with local changes) or 'not_git'."""
+    if not dst.exists():
+        return "missing"
+    if not (dst / ".git").exists():
+        return "not_git"
+    head = _git(dst, "rev-parse", "--verify", "-q", "HEAD")
+    if not head:
+        return "incomplete"
+    dirty = bool(_git(dst, "status", "--porcelain", "--untracked-files=no"))
+    if head == commit:
+        return "modified" if dirty else "pinned"
+    return "other_modified" if dirty else "other_commit"
+
+
 def fetch(name: str, repo: str, commit: str) -> None:
     dst = RAW / name
-    if (dst / ".git").exists() or dst.is_symlink():
-        print(f"[skip] {name} already present")
+    state = checkout_state(dst.resolve(), commit)
+    if state == "pinned":
+        print(f"[ok]   {name} already at {commit[:8]}")
         return
+    if state == "modified":
+        print(f"[warn] {name} at {commit[:8]} with local changes; left as is")
+        return
+    if state in ("other_modified", "not_git"):
+        raise SystemExit(f"{dst}: {state.replace('_', ' ')}; expected a clean checkout of {commit}. "
+                         "Move it away (local changes are not overwritten) and run again.")
     env = dict(os.environ, GIT_LFS_SKIP_SMUDGE="1")
-    subprocess.run(["git", "init", "-q", str(dst)], check=True)
-    subprocess.run(["git", "-C", str(dst), "remote", "add", "origin", f"https://github.com/{repo}"], check=True)
+    if state == "missing":
+        subprocess.run(["git", "init", "-q", str(dst)], check=True)
+    if _git(dst, "remote", "get-url", "origin") is None:
+        subprocess.run(["git", "-C", str(dst), "remote", "add", "origin", f"https://github.com/{repo}"], check=True)
     subprocess.run(["git", "-C", str(dst), "fetch", "-q", "--depth", "1", "origin", commit], check=True, env=env)
     subprocess.run(["git", "-C", str(dst), "checkout", "-q", "FETCH_HEAD"], check=True, env=env)
-    print(f"[ok]   {name} @ {commit[:8]}")
+    if checkout_state(dst, commit) != "pinned":
+        raise SystemExit(f"{dst}: checkout did not reach {commit}")
+    print(f"[ok]   {name} @ {commit[:8]} ({'resumed' if state == 'incomplete' else 'updated' if state == 'other_commit' else 'fetched'})")
 
 
 def main():

@@ -26,7 +26,7 @@ manifest under `results/`.
 > **Four findings in one line each**
 >
 > 1. A bridge detector with ROC-AUC 0.99 can still alarm only after 95.5 % of the stolen value has left; two-condition rules alarm first.
-> 2. A popular injected-bug benchmark (SolidiFI) gives AUPRC ≈ 1.0 to every model, because the bug templates give the label away; on real audit labels AUPRC is 0.04–0.15.
+> 2. On a popular injected-bug benchmark (SolidiFI) the best models reach AUPRC 1.0 under every split, consistent with recognising the bug templates; on real audit labels AUPRC is 0.04–0.15.
 > 3. Tree ensembles beat graph neural networks on Elliptic under a strict temporal protocol, and every model collapses after the dark-market shutdown, unnoticed by label-free monitors.
 > 4. KANs show no stable advantage over a same-size MLP; their LUT form is faster than a spline KAN but still slower than the MLP.
 
@@ -101,15 +101,21 @@ Ronin; Nomad's 421 calibration events cannot resolve 0.1 % (one alarm =
 
 Details: [docs/FINDINGS_CONTRACTS.md](docs/FINDINGS_CONTRACTS.md).
 
-* **SolidiFI cannot rank learned detectors.** Every representation reaches
-  AUPRC ≈ 1.0 under every split, including identifier normalisation,
-  project groups and the restriction to project-local code. The injected bug
-  templates give the label away. 100 % of positive files also carry an
-  identifier stem naming the bug type.
+* **SolidiFI cannot rank learned detectors.** The best mean AUPRC is 1.000
+  for every class under every split, including identifier normalisation,
+  project groups and the restriction to project-local code, and most other
+  models are near-perfect too (0.979–1.0 over all 288 runs). This is
+  consistent with recognising the injected bug templates; their causal role
+  was not isolated (no held-out-template or buggy/patched control). 100 % of
+  positive files also carry an identifier stem naming the bug type.
 * **On real audit labels (DAppSCAN) AUPRC is 0.04–0.15 at base rates of
-  0.5–2 %.** Shared library code chains 82 % of the files into one
-  near-duplicate group. Grouped evaluations therefore have to be read with
-  their fold sizes, which are saved for every run.
+  0.5–2 %.** Near-duplicate components alone are small (at most 51 files)
+  and projects have at most 34 files, but combining project membership and
+  near-duplicate links transitively for the `safe` split puts 5,408 of 6,587
+  files (82 %) into one group. This is a joint grouping constraint, not
+  evidence that 82 % of the files are near-duplicates of each other. Grouped
+  evaluations therefore have to be read with their fold sizes, which are
+  saved for every run.
 * **Static analysis vs learned models, measured the same way (SmartBugs,
   `c4`).** The "best transferred model" is chosen on the target, so its
   column is exploratory:
@@ -200,7 +206,7 @@ on validation. Details: [docs/FINDINGS_TRANSACTIONS_KAN.md](docs/FINDINGS_TRANSA
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements-dev.txt        # exact versions: requirements-lock.txt
-pytest -q                                   # 39 unit tests, < 2 min on CPU
+pytest -q                                   # 41 unit tests, < 2 min on CPU
 python scripts/00_fetch_data.py             # public sources at pinned commits → data/raw/
 ```
 
@@ -275,7 +281,7 @@ lists the current and superseded runs.
 
 ## References
 
-* Augusto et al. (2024). XChainWatcher: Monitoring and identifying attacks in cross-chain bridges. arXiv:2410.02029 (data: Ronin, Nomad).
+* Augusto et al. XChainWatcher: Monitoring and identifying attacks in cross-chain bridges. ACM Middleware 2025; arXiv:2410.02029 (data: Ronin, Nomad).
 * Durieux et al. (2020). Empirical review of automated analysis tools on 47,587 Ethereum smart contracts. ICSE 2020 (SmartBugs-curated).
 * Ghaleb & Pattabiraman (2020). How effective are smart contract analysis tools? Evaluating smart contract static analysis tools using bug injection. ISSTA 2020 (SolidiFI).
 * Zheng et al. (2024). DAppSCAN: Building large-scale datasets for smart contract weaknesses in DApp projects. IEEE Transactions on Software Engineering, doi:10.1109/TSE.2024.3383422.
@@ -283,7 +289,7 @@ lists the current and superseded runs.
 * Weber et al. (2019). Anti-money laundering in Bitcoin: Experimenting with graph convolutional networks for financial forensics. KDD Workshop on Anomaly Detection in Finance (Elliptic).
 * Elmougy & Liu (2023). Demystifying fraudulent transactions and illicit nodes in the Bitcoin network for financial forensics. KDD 2023 (Elliptic++).
 * Maganti (2026). arXiv:2604.19514. Strict inductive evaluation on Elliptic: RF F1 0.821 vs GraphSAGE 0.689 ± 0.017.
-* Li et al. (2022). ECOD: Unsupervised outlier detection using empirical cumulative distribution functions. IEEE TKDE.
+* Li et al. (2023). ECOD: Unsupervised outlier detection using empirical cumulative distribution functions. IEEE Transactions on Knowledge and Data Engineering 35(12).
 * Liu et al. (2024). KAN: Kolmogorov–Arnold Networks. arXiv:2404.19756.
 
 ## Related

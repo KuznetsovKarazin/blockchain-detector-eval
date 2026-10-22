@@ -66,27 +66,72 @@ FIRST_STATIC = (0, 4, 11)          # older releases have no static Linux binary
 BIN = Path(sys.executable).parent
 
 
+_VER = r"\d+(?:\.(?:\d+|[xX*]))?(?:\.(?:\d+|[xX*]))?"
+
+
 def _v(txt: str) -> tuple:
     parts = [int(x) for x in txt.split(".")]
     return tuple(parts + [0] * (3 - len(parts)))
 
 
+def _partial(txt: str) -> tuple[tuple, int]:
+    """Version with wildcards / missing parts filled by 0, and the number of fixed parts."""
+    fixed = []
+    for x in txt.split("."):
+        if not x.isdigit():
+            break
+        fixed.append(int(x))
+    return tuple(fixed + [0] * (3 - len(fixed))), len(fixed)
+
+
+def _bump(v: tuple, n: int) -> tuple:
+    """Smallest version above every version that agrees with v on its first n parts."""
+    if n == 0:
+        return (10**6, 0, 0)
+    w = list(v[:n])
+    w[-1] += 1
+    return tuple(w + [0] * (3 - n))
+
+
 def _expand(spec: str) -> list[tuple[str, tuple]]:
+    """One `||` alternative as a list of (operator, version) that must all hold.
+
+    Supported (npm-style semver, as used by solc): exact, partial and wildcard
+    versions (`0.5`, `0.5.x`, `0.5.*`), comparisons, `^`, `~`, and hyphen
+    ranges (`0.4.24 - 0.5.3`).
+    """
+    hy = re.fullmatch(rf"\s*({_VER})\s+-\s+({_VER})\s*", spec)
+    if hy:
+        (lo, _), (hi, n) = _partial(hy.group(1)), _partial(hy.group(2))
+        return [(">=", lo), ("<=", hi) if n == 3 else ("<", _bump(hi, n))]
     out = []
-    for op, ver in re.findall(r"(\^|~|>=|<=|>|<|=)?\s*(\d+\.\d+(?:\.\d+)?)", spec):
-        v = _v(ver)
-        if op in ("^", "~"):
+    for op, ver in re.findall(rf"(\^|~|>=|<=|>|<|=)?\s*({_VER})", spec):
+        v, n = _partial(ver)
+        if op == "^":
             upper = (0, v[1] + 1, 0) if v[0] == 0 else (v[0] + 1, 0, 0)
             out += [(">=", v), ("<", upper)]
+        elif op == "~":
+            out += [(">=", v), ("<", _bump(v, min(n, 2)))]
+        elif op in ("", "=") and n < 3:
+            out += [(">=", v), ("<", _bump(v, n))]
+        elif op == ">" and n < 3:
+            out.append((">=", _bump(v, n)))
+        elif op == "<=" and n < 3:
+            out.append(("<", _bump(v, n)))
         else:
             out.append((op or "=", v))
     return out
 
 
+def _strip_comments(src: str) -> str:
+    """Remove // and /* */ comments, so a commented-out pragma is not read."""
+    return re.sub(r"/\*.*?\*/|//[^\n]*", " ", src, flags=re.S)
+
+
 def pragma_constraints(src: str) -> list[list[list[tuple[str, tuple]]]]:
-    """For every `pragma solidity` line, its `||` alternatives, each a list of (operator, version)."""
+    """For every active `pragma solidity` line, its `||` alternatives, each a list of (operator, version)."""
     return [[_expand(alt) for alt in spec.split("||")]
-            for spec in re.findall(r"pragma\s+solidity\s+([^;]+);", src)]
+            for spec in re.findall(r"pragma\s+solidity\s+([^;]+);", _strip_comments(src))]
 
 
 def allowed(v: tuple, cons) -> bool:
@@ -131,7 +176,8 @@ def ensure_solc(version: str) -> Path:
 def run_slither_once(path: str, version: str, timeout: int) -> dict:
     solc = ensure_solc(version)
     t0 = time.time()
-    out = {"solc": version, "status": "tool_error", "detectors": [], "error": ""}
+    out = {"solc": version, "status": "tool_error", "detectors": [], "error": "",
+           "diagnostic_timeout": False}
     try:
         r = subprocess.run([str(BIN / "slither"), path, "--solc", str(solc), "--json", "-",
                             "--exclude-informational", "--exclude-optimization"],
@@ -149,6 +195,7 @@ def run_slither_once(path: str, version: str, timeout: int) -> dict:
             out["stderr"] = (d.stdout or "") + (d.stderr or "")
         except subprocess.TimeoutExpired:
             out["diagnostic_timeout"] = True
+            out["stderr"] = f"diagnostic rerun without --json timed out after {timeout} s"
     try:
         js = json.loads(r.stdout)
     except json.JSONDecodeError:
@@ -186,7 +233,8 @@ def run_slither(path: str, candidates: list[str], timeout: int = 180) -> dict:
     """Try the candidate compilers in order; keep the first success (or the last failure)."""
     if not candidates:
         return {"path": path, "solc": "", "status": "unsupported_pragma", "detectors": [],
-                "error": "no known solc release satisfies the pragma", "tried": "", "seconds": 0.0}
+                "error": "no known solc release satisfies the pragma", "tried": "", "seconds": 0.0,
+                "diagnostic_timeout": False}
     tried = []
     for v in candidates:
         r = run_slither_once(path, v, timeout)
@@ -219,11 +267,12 @@ def main():
     for i, row in R[R.status != "ok"].iterrows():
         (logs / f"{Path(row.path).stem}.log").write_text(
             f"path: {row.path}\nsolc: {row.solc}\ntried: {row.tried}\nstatus: {row.status}\n"
-            f"returncode: {row.get('returncode')}\n\n{row.get('stderr') or ''}")
+            f"returncode: {row.get('returncode')}\ndiagnostic_timeout: {bool(row.get('diagnostic_timeout'))}\n\n"
+            f"{row.get('stderr') or ''}")
     R = R.drop(columns=["stderr"], errors="ignore")
     df = df.merge(R, on="path", how="left")
     df["ok"] = df.status == "ok"
-    df[["dataset", "path", "solc", "status", "tried", "outside_pragma", "seconds", "error"]].assign(
+    df[["dataset", "path", "solc", "status", "tried", "outside_pragma", "seconds", "diagnostic_timeout", "error"]].assign(
         candidates=df.candidates.map(";".join), detectors=df.detectors.map(";".join)
     ).to_csv(run / "slither_raw.csv", index=False)
     print(df.groupby(["dataset", "status"]).size().to_string())

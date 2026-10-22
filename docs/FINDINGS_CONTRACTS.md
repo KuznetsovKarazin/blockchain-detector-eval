@@ -21,18 +21,21 @@ commits.
 
 Metric: AUPRC, always next to the base rate (the AUPRC of a random ranking).
 Representations: `lex_raw` (TF-IDF of raw tokens), `lex_norm` (identifiers → ID,
-numbers → NUM), `pat` (42 hand-written source patterns). Within-corpus models:
+numbers → NUM), `pat` (43 hand-written pattern features, see PROTOCOLS). Within-corpus models:
 logistic regression on TF-IDF, RF and LightGBM on patterns. Cross-corpus runs
 also include MLP and KAN.
 
 ## 1. Within SolidiFI every protocol gives AUPRC ≈ 1.0
 
-Every class reaches best AUPRC 1.000 under every protocol: `random`,
+The best mean AUPRC is 1.000 for every class under every protocol (most other
+models are near-perfect too: 0.979–1.0 over all 288 runs): `random`,
 `project` (all injections of one base contract together), `safe` (plus
 near-duplicate components) and `local_*` (project-local code only). That
 includes identifier normalisation, which removes the `re_ent`, `tmstmp`, …
 stems found in 100 % of SolidiFI positives (C1). The injected bug
-snippets are fixed templates, so detecting the template is enough. SolidiFI
+snippets are fixed templates, so the result is consistent with template
+recognition; the causal role of the remaining template cues was not isolated
+(no held-out-template or buggy/patched control). SolidiFI
 was built to test static analysers, and it cannot rank learned detectors.
 
 ## 2. DAppSCAN: overlap, library code and training size
@@ -49,8 +52,12 @@ reentrancy 1.7 %, unchecked 1.1 %, timestamp 0.5 % (2.6 / 2.1 / 1.4 / 0.7 % in t
 
 How to read the protocols:
 
-* `safe` does not isolate leakage on DAppSCAN. Shared library code
-  chains 5,408 of 6,587 files (82 %) into one group, so one fold has 1,179
+* `safe` does not isolate leakage on DAppSCAN. Near-duplicate components
+  alone have at most 51 files (4,993 components) and projects at most 34
+  (608 groups), but their transitive union gives 227 `safe` groups, the
+  largest with 5,408 of 6,587 files (82 %). That is a joint grouping
+  constraint, not evidence that 82 % of the files are near-duplicates. In the
+  `safe` folds one fold therefore has 1,179
   training files and 5,408 test files. The drop from `random` to `safe` mixes
   overlap removal with a much smaller training set for most predictions.
 * `random_matched` gives one random fold the same small training set; it

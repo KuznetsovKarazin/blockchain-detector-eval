@@ -1,6 +1,8 @@
 """
 K3  Is the matched-size KAN better than, or equivalent to, the MLP?
-A pre-declared uncertainty analysis for the best K1 configuration.
+A pre-declared follow-up analysis for the best K1 configuration (fixed before
+it ran, but after K1 had looked at the same test period; seeds 0-2 repeat K1),
+not a confirmatory preregistration.
 
 K1 compared KAN (width 8, grid 5, quantile inputs) with a parameter-matched
 MLP on 3 seeds and called the result a tie, although the F1 difference was
@@ -17,8 +19,11 @@ Pre-declared protocol (written before any of these runs)
 * Equivalence margin: |delta AUPRC| < 0.02 and |delta F1| < 0.03.
 * Two uncertainty units are reported, because they answer different questions:
   (a) seed: paired t-interval over 10 seeds (training randomness only);
-  (b) time: block bootstrap over the 15 test time steps of the seed-averaged
-      difference (2,000 resamples), i.e. variability over future periods.
+  (b) time: cluster bootstrap over the 15 observed test time steps of the
+      seed-averaged difference (2,000 resamples). It keeps the objects of a
+      step together, but not the dependence between neighbouring steps, and it
+      does not create new histories: it is not an estimate of variability
+      over future periods.
 * Decision rule: "KAN better" if the 90 % interval of delta lies above 0 for
   both units; "equivalent" if both 90 % intervals lie inside the margin
   (two one-sided tests at 5 %); otherwise "inconclusive".
