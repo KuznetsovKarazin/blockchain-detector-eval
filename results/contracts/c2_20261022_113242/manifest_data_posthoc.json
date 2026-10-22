@@ -1,0 +1,27 @@
+{
+  "computed_utc": "2026-10-22T14:13:24Z",
+  "note": "computed after the run; data repositories at the commits below",
+  "data_repos": {
+    "data/raw/smartbugs-curated": "230e649123477eff332742a59a1c7cc6dc286cab",
+    "data/raw/SolidiFI-benchmark": "4b0573e1b3f7031396de6f48f7f3e7380222ad3a",
+    "data/raw/DAppSCAN": "66a56619c44770e05c2db600fa6468115ff0dcd5"
+  },
+  "data_sets": {
+    "sources_dappscan": {
+      "n_files": 6587,
+      "sha256": "9f70899ecbc96a4122b747eb288911c9318155c3c4d21ffe0646f75f2d165ba2"
+    },
+    "sources_smartbugs": {
+      "n_files": 143,
+      "sha256": "584dbdf1f0ab5f174b9089e25adcabd92ffb90f93405caa466397a0d3874c575"
+    },
+    "sources_solidifi": {
+      "n_files": 350,
+      "sha256": "e66a314c3ce619e77c5554dc0c66dfa852e3bd1d93894ade7fd29c0cc19160a8"
+    },
+    "label_files": {
+      "n_files": 949,
+      "sha256": "af5b4368ce9d1d0b7e35d775ed468fa2b59e2eaae91a909e0faa37de0b28dc28"
+    }
+  }
+}

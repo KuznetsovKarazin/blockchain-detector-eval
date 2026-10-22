@@ -1,0 +1,41 @@
+number,value,datetime_start,datetime_complete,duration,params_features,params_max_features,params_min_samples_leaf,params_n_estimators,system_attrs_tpe:relative_params:0,state
+0,0.9905599608198151,2026-10-21 23:48:24.070012,2026-10-21 23:51:39.983947,0 days 00:03:15.913935,AF,0.4,10,500,,COMPLETE
+1,0.9906039146697466,2026-10-21 23:51:39.984698,2026-10-21 23:52:16.247485,0 days 00:00:36.262787,AF,sqrt,9,500,,COMPLETE
+2,0.9911820294638088,2026-10-21 23:52:16.247903,2026-10-21 23:53:06.054631,0 days 00:00:49.806728,AF+NB,log2,2,700,,COMPLETE
+3,0.9908992889220947,2026-10-21 23:53:06.055058,2026-10-21 23:53:21.842921,0 days 00:00:15.787863,LF,sqrt,7,300,,COMPLETE
+4,0.9801299535771696,2026-10-21 23:53:21.843355,2026-10-22 00:01:17.486962,0 days 00:07:55.643607,AF+NB,0.2,7,600,,COMPLETE
+5,0.9910014511977103,2026-10-22 00:01:17.487668,2026-10-22 00:02:35.803850,0 days 00:01:18.316182,LF,0.4,2,400,,COMPLETE
+6,0.9922112951485808,2026-10-22 00:02:35.804529,2026-10-22 00:03:26.479843,0 days 00:00:50.675314,AF+NB,sqrt,7,300,,COMPLETE
+7,0.9090970393193957,2026-10-22 00:03:26.480287,2026-10-22 00:23:17.192660,0 days 00:19:50.712373,AF+NB,0.4,5,700,,COMPLETE
+8,0.9919283687708043,2026-10-22 00:23:17.193382,2026-10-22 00:23:37.121145,0 days 00:00:19.927763,LF,0.2,4,200,,COMPLETE
+9,0.9083537915530665,2026-10-22 00:23:37.121564,2026-10-22 00:36:53.718515,0 days 00:13:16.596951,AF+NB,0.4,10,500,,COMPLETE
+10,0.9918080456038313,2026-10-22 00:36:53.719132,2026-10-22 00:37:07.202484,0 days 00:00:13.483352,AF+NB,log2,1,200,"{""features"": ""AF+NB"", ""max_features"": ""log2"", ""min_samples_leaf"": 1, ""n_estimators"": 200}",COMPLETE
+11,0.9918763796026031,2026-10-22 00:37:07.202890,2026-10-22 00:37:26.921730,0 days 00:00:19.718840,LF,0.2,3,200,"{""features"": ""LF"", ""max_features"": 0.2, ""min_samples_leaf"": 3, ""n_estimators"": 200}",COMPLETE
+12,0.9917275130264888,2026-10-22 00:37:26.922138,2026-10-22 00:37:59.002303,0 days 00:00:32.080165,AF+NB,sqrt,8,200,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 8, ""n_estimators"": 200}",COMPLETE
+13,0.9906573032083188,2026-10-22 00:37:59.002737,2026-10-22 00:38:24.314875,0 days 00:00:25.312138,AF+NB,log2,5,400,"{""features"": ""AF+NB"", ""max_features"": ""log2"", ""min_samples_leaf"": 5, ""n_estimators"": 400}",COMPLETE
+14,0.9917169948744217,2026-10-22 00:38:24.315355,2026-10-22 00:39:41.549802,0 days 00:01:17.234447,AF,0.2,5,400,"{""features"": ""AF"", ""max_features"": 0.2, ""min_samples_leaf"": 5, ""n_estimators"": 400}",COMPLETE
+15,0.993333897107369,2026-10-22 00:39:41.550325,2026-10-22 00:40:14.326295,0 days 00:00:32.775970,AF+NB,sqrt,3,200,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 3, ""n_estimators"": 200}",COMPLETE
+16,0.993258117164804,2026-10-22 00:40:14.326711,2026-10-22 00:41:02.083417,0 days 00:00:47.756706,AF+NB,sqrt,3,300,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 3, ""n_estimators"": 300}",COMPLETE
+17,0.9935580578941685,2026-10-22 00:41:02.084097,2026-10-22 00:41:52.776504,0 days 00:00:50.692407,AF+NB,sqrt,1,300,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 300}",COMPLETE
+18,0.9919509755233263,2026-10-22 00:41:52.777389,2026-10-22 00:42:22.631030,0 days 00:00:29.853641,AF,sqrt,2,400,"{""features"": ""AF"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 2, ""n_estimators"": 400}",COMPLETE
+19,0.9935580578941685,2026-10-22 00:42:22.631540,2026-10-22 00:43:15.103257,0 days 00:00:52.471717,AF+NB,sqrt,1,300,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 300}",COMPLETE
+20,0.9829174923473933,2026-10-22 00:43:15.103764,2026-10-22 00:45:27.597528,0 days 00:02:12.493764,AF,0.4,1,300,"{""features"": ""AF"", ""max_features"": 0.4, ""min_samples_leaf"": 1, ""n_estimators"": 300}",COMPLETE
+21,0.9936668500704111,2026-10-22 00:45:27.598557,2026-10-22 00:46:52.959136,0 days 00:01:25.360579,AF+NB,sqrt,1,500,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 500}",COMPLETE
+22,0.9936668500704111,2026-10-22 00:46:52.959721,2026-10-22 00:48:16.214357,0 days 00:01:23.254636,AF+NB,sqrt,1,500,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 500}",COMPLETE
+23,0.993186700666438,2026-10-22 00:48:16.214912,2026-10-22 00:49:37.158848,0 days 00:01:20.943936,AF+NB,sqrt,3,500,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 3, ""n_estimators"": 500}",COMPLETE
+24,0.9877558980134958,2026-10-22 00:49:37.159365,2026-10-22 00:57:32.170954,0 days 00:07:55.011589,AF+NB,0.2,2,600,"{""features"": ""AF+NB"", ""max_features"": 0.2, ""min_samples_leaf"": 2, ""n_estimators"": 600}",COMPLETE
+25,0.9936522299495796,2026-10-22 00:57:32.171471,2026-10-22 00:59:11.110044,0 days 00:01:38.938573,AF+NB,sqrt,1,600,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 600}",COMPLETE
+26,0.9937033508616258,2026-10-22 00:59:11.110789,2026-10-22 01:01:07.452214,0 days 00:01:56.341425,AF+NB,sqrt,1,700,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 700}",COMPLETE
+27,0.9868929652284766,2026-10-22 01:01:07.452720,2026-10-22 01:06:16.124019,0 days 00:05:08.671299,AF+NB,0.2,2,400,"{""features"": ""AF+NB"", ""max_features"": 0.2, ""min_samples_leaf"": 2, ""n_estimators"": 400}",COMPLETE
+28,0.992636027498891,2026-10-22 01:06:16.124636,2026-10-22 01:08:24.411003,0 days 00:02:08.286367,AF+NB,sqrt,3,800,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 3, ""n_estimators"": 800}",COMPLETE
+29,0.9890262962736887,2026-10-22 01:08:24.411565,2026-10-22 01:13:18.752439,0 days 00:04:54.340874,AF,0.4,2,700,"{""features"": ""AF"", ""max_features"": 0.4, ""min_samples_leaf"": 2, ""n_estimators"": 700}",COMPLETE
+30,0.992158967839354,2026-10-22 01:13:18.753003,2026-10-22 01:13:55.854117,0 days 00:00:37.101114,LF,sqrt,2,700,"{""features"": ""LF"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 2, ""n_estimators"": 700}",COMPLETE
+31,0.9937033508616258,2026-10-22 01:13:55.854537,2026-10-22 01:15:53.022595,0 days 00:01:57.168058,AF+NB,sqrt,1,700,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 700}",COMPLETE
+32,0.959593184787999,2026-10-22 01:15:53.023097,2026-10-22 01:30:28.013761,0 days 00:14:34.990664,AF+NB,0.4,1,500,"{""features"": ""AF+NB"", ""max_features"": 0.4, ""min_samples_leaf"": 1, ""n_estimators"": 500}",COMPLETE
+33,0.9927485990490714,2026-10-22 01:30:28.014320,2026-10-22 01:31:28.138760,0 days 00:01:00.124440,AF,sqrt,1,800,"{""features"": ""AF"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 800}",COMPLETE
+34,0.9631236365003523,2026-10-22 01:31:28.139282,2026-10-22 01:55:00.083732,0 days 00:23:31.944450,AF+NB,0.4,1,800,"{""features"": ""AF+NB"", ""max_features"": 0.4, ""min_samples_leaf"": 1, ""n_estimators"": 800}",COMPLETE
+35,0.9922136910978305,2026-10-22 01:55:00.084480,2026-10-22 01:56:22.383780,0 days 00:01:22.299300,AF+NB,sqrt,5,500,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 5, ""n_estimators"": 500}",COMPLETE
+36,0.9910408593019002,2026-10-22 01:56:22.384298,2026-10-22 01:57:17.126761,0 days 00:00:54.742463,AF+NB,log2,2,800,"{""features"": ""AF+NB"", ""max_features"": ""log2"", ""min_samples_leaf"": 2, ""n_estimators"": 800}",COMPLETE
+37,0.9829347309981783,2026-10-22 01:57:17.127365,2026-10-22 02:01:36.453137,0 days 00:04:19.325772,AF,0.4,1,600,"{""features"": ""AF"", ""max_features"": 0.4, ""min_samples_leaf"": 1, ""n_estimators"": 600}",COMPLETE
+38,0.9923263400575407,2026-10-22 02:01:36.453776,2026-10-22 02:02:04.331817,0 days 00:00:27.878041,LF,sqrt,1,500,"{""features"": ""LF"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 500}",COMPLETE
+39,0.9937033508616258,2026-10-22 02:02:04.332229,2026-10-22 02:04:02.172126,0 days 00:01:57.839897,AF+NB,sqrt,1,700,"{""features"": ""AF+NB"", ""max_features"": ""sqrt"", ""min_samples_leaf"": 1, ""n_estimators"": 700}",COMPLETE

@@ -1,0 +1,124 @@
+# Evaluation protocols
+
+All splits, thresholds and budgets below are encoded in code, not in configs,
+so that a script cannot be re-run with a silently different protocol. Each run
+writes a manifest (`manifest*.json`) with the git commit, the list of code files
+that differed from it and a SHA-256 of that diff, package versions, SHA-256 of
+the input files and the full CLI configuration. Revisions of a protocol after
+the external audit of 2026-10-22 are listed in [AUDIT_RESPONSE.md](AUDIT_RESPONSE.md).
+
+## T / K — Elliptic transactions
+
+| Part | Time steps | Used for |
+|---|---|---|
+| train | 1–30 | fitting |
+| validation | 31–34 | early stopping (GNNs), max-F1 threshold, Platt calibration, model selection |
+| test | 35–49 | reported; split into **pre** 35–42 and **post** 43–49 (dark-market shutdown) |
+
+* Elliptic edges never cross time steps, so test sub-graphs are disconnected
+  from training sub-graphs. `tests/test_gnn.py` checks that adding a
+  disconnected component changes neither the outputs nor the gradients of
+  GCN, GraphSAGE and GAT.
+* This is an offline snapshot benchmark: the 72 aggregate features of the
+  dataset summarise neighbours on both sides of a transaction, so a correct
+  temporal split does not prove that every feature is available at
+  transaction time.
+* Scalers are fitted on training nodes only. KAN inputs are additionally
+  multiplied by 0.6 after scaling, so that they stay inside the spline grid;
+  MLP inputs are not.
+* Early stopping is part of each model's definition and differs by family:
+  MLP/KAN hold out a stratified random 15 % of the labelled training nodes
+  (rows, not time steps), GNNs use the validation steps, trees and logistic regression do not stop early.
+* Headline rule: for each model the feature set with the highest mean
+  validation AUPRC is reported (`headline_by_validation.csv`); the test-best
+  set is shown next to it only for transparency.
+* Seeds 0–4 for every stochastic model. Seeds measure training randomness on
+  one fixed history, not uncertainty over new periods. K3 adds a cluster
+  bootstrap over the observed test time steps: it keeps the objects of a step
+  together but not the dependence between neighbouring steps, and it does not
+  create new histories. K3 (10 seeds) is a pre-declared follow-up analysis: it
+  was fixed before it ran, but after the first look at the same test period,
+  and seeds 0–2 repeat T1; it is not a confirmatory preregistration.
+* Label-shift correction (T2) never reads test labels. The oracle-prior row
+  keeps the validation F1 threshold and is therefore **not** an upper bound on
+  F1; the step-optimal F1 in `shift_diagnostics.csv` is.
+
+## T5 — Elliptic++ wallets
+
+Four splits of the same labelled wallet rows: random rows, random addresses,
+temporal rows, temporal and address-disjoint (with and without block/lifetime
+features). The 55 wallet features are constant within an address; the
+transitions change several things at once (address weighting, training size,
+prevalence, period), so differences are protocol sensitivity, not a measured
+amount of leakage.
+
+## C — Smart-contract vulnerability classification
+
+* Classes: reentrancy, arithmetic, timestamp dependence, unchecked low-level call.
+* Representations: TF-IDF of raw tokens; TF-IDF of tokens with user
+  identifiers → `ID` and numbers → `NUM`; 42 hand-written source patterns.
+  TF-IDF is fitted inside each training fold.
+* Near-duplicates: identical normalised files are always merged; MinHash
+  (token 5-gram, 16 bands × 4 rows) proposes candidates and **every** candidate
+  pair is verified with the exact Jaccard index (≥ 0.8). The partition does not
+  depend on input order (`tests/test_features.py`).
+* Within-corpus protocols (5 folds, out-of-fold scores): `random`,
+  `random_matched` (training folds sub-sampled to the size of the `safe`
+  folds), `project`, `safe` (project ∪ near-duplicate components),
+  `local_random` / `local_safe` (files whose near-duplicate component stays in
+  one project). Fold sizes and positives: `folds.csv`; fold ids:
+  `assignments.parquet`; per-file scores: `oof_scores.parquet`.
+* Cross-corpus: train on one corpus, test on another (labelling regimes:
+  manual = SmartBugs-curated, injected = SolidiFI, audit = DAppSCAN). The
+  DAppSCAN target is its 948 annotated files. The "best transferred model" in
+  the tables is chosen on the target itself, so that column is exploratory,
+  not the estimate of a model frozen on source validation before the test.
+* DAppSCAN negatives mean "no published finding of this class", not "verified
+  safe". Missing labels can move AUPRC up or down.
+* Metric: AUPRC with the base rate next to it, ROC-AUC. A static analyser's
+  binary flags are compared with learned scores on AUPRC and at the
+  analyser's own alarm count (`c4_slither_vs_ml.py`), never F1 against AUPRC.
+* Slither: the compiler is chosen inside the full pragma range (newest allowed
+  minor first); every file has a status (ok, compile_error, timeout,
+  tool_error, unsupported_pragma; OR ranges in pragmas are honoured) and metrics are given end-to-end and for analysed files only.
+
+## B — Cross-chain bridge outflows
+
+* Event stream: every release of funds on Ethereum by the bridge (matched
+  withdrawals + releases without a source-chain request). One event is one
+  release; Nomad's 382 attack events come from 167 transactions. Order:
+  (timestamp, tx hash, withdrawal id); the data have no block number or log
+  index, so events with one timestamp are treated as one block.
+* Train: normal events before `attack_day − 21 d`; calibration window:
+  `[attack_day − 21 d, attack_day − 7 d)`; test: from `attack_day − 7 d`.
+* Features and rules value every release, matched or not, with the close of
+  the last daily price candle that closed at or before it (raw candles of
+  XChainWatcher, `bal.data.prices`). Every B1 run asserts, row by row,
+  that the price time is not later than the release, and checks prefix
+  invariance of raw → features. That a candle is usable once it has closed is
+  an availability assumption: the provider's real publication time was not
+  measured, and the sensitivity to intraday price data was not evaluated.
+  Six Nomad releases get no price (five tokens without a series, one before
+  the first closed candle); two attack rows have zero reference USD already
+  in the source. Loss shares use the reference values of
+  `attacks.csv`; they are accounting only and never enter a feature.
+* Detectors never see attack labels. The threshold for a nominal budget of
+  0.1 % or 1 % is a conservative threshold taken from the observed calibration
+  scores whose achieved calibration rate does not exceed the budget (not
+  necessarily the lowest admissible value); tied scores are never split. The achieved rate and the
+  resolution 1/n of the calibration set are reported (`thresholds.csv`).
+* Loss accounting: attack value released before the alarm event, through the
+  alarm event, through its block, and after alarm + d seconds
+  (d = 0, 60, 600, 3600). All of these are released, executed transfers;
+  none is a measured prevented loss.
+* Transfer: fit + threshold on bridge A, evaluate on bridge B. The Nomad
+  training period is later than the Ronin attack, so Nomad → Ronin is a
+  retrospective transfer.
+* Scope: two incidents give no detection rate for future attacks. The split is
+  historical, the rules were written after the data had been seen, and signal
+  delays were not measured; no false alarm in the chosen window does not mean
+  none in operation.
+* Attack ranks (`best_attack_rank`, `median_attack_rank`) give tied scores the
+  midrank; `*_min` / `*_max` give the range over all orderings of the ties.
+* The `ecod*` detectors are a frozen, train-only, smoothed two-tail ECDF
+  variant in the spirit of ECOD, not the PyOD implementation.

@@ -1,0 +1,9 @@
+model,features_by_val,val_auprc,test_f1,test_auprc,post_f1,features_by_test,test_f1_if_test_selected
+lgbm,AF+NB,0.9948,0.8073,0.8012,0.0264,AF+NB,0.8073
+rf,AF+NB,0.9932,0.7978,0.7924,0.0266,AF+NB,0.7978
+sage,AF+graph,0.9337,0.5806,0.569,0.0218,AF+graph,0.5806
+mlp,AF+NB,0.8858,0.5172,0.5303,0.0454,LF,0.5571
+gat,AF+graph,0.8928,0.4996,0.501,0.0176,AF+graph,0.4996
+kan,AF,0.8414,0.4883,0.4736,0.0607,AF,0.4883
+gcn,AF+graph,0.8262,0.4587,0.4248,0.0146,AF+graph,0.4587
+logreg,AF+NB,0.7914,0.3704,0.3082,0.0627,LF,0.4157

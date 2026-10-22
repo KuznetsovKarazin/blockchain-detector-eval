@@ -1,0 +1,58 @@
+{
+  "script": "e17_01_kan_analysis.py",
+  "created_utc": "2026-10-21T23:40:10Z",
+  "git_commit": "2c944b641f52711301bb9f71a06d2a52a7677d87",
+  "git_dirty": true,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "torch_geometric": null,
+    "pyarrow": "26.0.0"
+  },
+  "config": {
+    "data": "data/raw/elliptic",
+    "synthetic": false,
+    "out": "results/e17",
+    "seeds": 3,
+    "prep": "quantile",
+    "perm_features": 40
+  },
+  "data": {
+    "data/raw/elliptic/elliptic_txs_features.csv": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0",
+    "data/raw/elliptic/elliptic_txs_classes.csv": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493",
+    "data/raw/elliptic/elliptic_txs_edgelist.csv": "a35053ba68a98e4382cae2ba65b9d9e36b23b6439e02dff084971b1b72a5156e"
+  },
+  "kan_configs": [
+    [
+      4,
+      3
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      16,
+      5
+    ],
+    [
+      8,
+      8
+    ]
+  ],
+  "ppi": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ]
+}

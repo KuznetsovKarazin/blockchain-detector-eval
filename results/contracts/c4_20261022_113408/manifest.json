@@ -1,0 +1,32 @@
+{
+  "script": "e13_04_slither_vs_ml.py",
+  "created_utc": "2026-10-22T11:34:08Z",
+  "git_commit": "1ce86c1aa235f872ea99169c638afdd724eda1f4",
+  "git_dirty": false,
+  "dirty_files": [],
+  "diff_sha256": null,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "e13_02": "results/e13/e13_02_20261022_092004",
+    "e13_03": "results/e13/e13_03_20261022_092255",
+    "out": "results/e13"
+  },
+  "data": {
+    "results/e13/e13_02_20261022_092004/cross_scores.parquet": "37dfb57b0ab19c909b41dbba11231ddacbd3c06b5d6f454b5e5ac16afe739398",
+    "results/e13/e13_03_20261022_092255/slither_raw.csv": "ce8de111fc1d2359648de491207617cfb812dacdf6ff80ceb0f19f07b891f6d0"
+  }
+}

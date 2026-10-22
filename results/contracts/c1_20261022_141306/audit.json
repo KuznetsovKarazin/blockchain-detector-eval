@@ -1,0 +1,53 @@
+{
+  "n_files": {
+    "dappscan": 6587,
+    "solidifi": 350,
+    "smartbugs": 143
+  },
+  "dappscan_exact_dup_share": 0.21830879004098983,
+  "dappscan_near_dup_share": 0.3622286321542432,
+  "dappscan_n_near_components": 4993,
+  "smartbugs_exact_dup_share": 0.26573426573426573,
+  "smartbugs_near_dup_share": 0.3916083916083916,
+  "smartbugs_n_near_components": 102,
+  "solidifi_exact_dup_share": 0.2,
+  "solidifi_near_dup_share": 0.6314285714285715,
+  "solidifi_n_near_components": 214,
+  "cross_corpus_components": 0,
+  "cross_corpus_files": {},
+  "solidifi_components_spanning_groups": 58,
+  "components_with_conflicting_labels": {
+    "reentrancy": 15,
+    "arithmetic": 25,
+    "timestamp": 6,
+    "unchecked": 45,
+    "tx_origin": 37,
+    "tod": 20
+  },
+  "solidifi_identifier_artefacts": {
+    "reentrancy": {
+      "pos_with_stem": 1.0,
+      "neg_with_stem": 0.02
+    },
+    "timestamp": {
+      "pos_with_stem": 1.0,
+      "neg_with_stem": 0.0
+    },
+    "unchecked": {
+      "pos_with_stem": 1.0,
+      "neg_with_stem": 0.0
+    },
+    "tx_origin": {
+      "pos_with_stem": 1.0,
+      "neg_with_stem": 0.0
+    },
+    "arithmetic": {
+      "pos_with_stem": 1.0,
+      "neg_with_stem": 0.0
+    },
+    "tod": {
+      "pos_with_stem": 1.0,
+      "neg_with_stem": 0.0
+    }
+  }
+}

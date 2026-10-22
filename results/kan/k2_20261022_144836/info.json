@@ -1,0 +1,9 @@
+{
+  "kan_params": 13280,
+  "mlp_params": 13361,
+  "mlp_hidden": 80,
+  "float_bytes": 53120,
+  "threads": 1,
+  "reps": 300,
+  "cpu": 4
+}

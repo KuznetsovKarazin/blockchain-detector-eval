@@ -1,0 +1,33 @@
+{
+  "script": "e10_02_label_shift.py",
+  "created_utc": "2026-10-21T23:21:28Z",
+  "git_commit": "1b39bbca4ece4565bab1fe6fd7545dca83c0fe89",
+  "git_dirty": true,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "torch_geometric": null,
+    "pyarrow": "26.0.0"
+  },
+  "config": {
+    "e10_run": "results/e10/e10_01_20261021_full",
+    "out": "results/e10"
+  },
+  "data": {
+    "results/e10/e10_01_20261021_full/scores_labelled.npz": "179112670c84bdbd66878960f50509ac8c5d3b63b7e175ec9d9b044c715b7972"
+  },
+  "variants": [
+    "none",
+    "em",
+    "bbse",
+    "oracle"
+  ]
+}

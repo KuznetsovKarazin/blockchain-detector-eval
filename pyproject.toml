@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blockchain-detector-eval"
+version = "0.4.0"
+description = "Reproducible, leakage-aware evaluation of anomaly detectors for blockchain security"
+authors = [{ name = "Oleksandr Kuznetsov", email = "oleksandr.kuznetsov@uniecampus.it" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0", "pandas>=2.2", "pyarrow>=15", "scipy>=1.13", "scikit-learn>=1.5",
+                "lightgbm>=4.3", "torch>=2.3", "matplotlib>=3.8", "optuna>=4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+slither = ["slither-analyzer==0.11.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

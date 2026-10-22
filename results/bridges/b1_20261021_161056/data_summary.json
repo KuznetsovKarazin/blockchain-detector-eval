@@ -1,0 +1,26 @@
+[
+  {
+    "bridge": "ronin",
+    "n_events": 25470,
+    "n_attack": 2,
+    "attack_usd": 565376764.7508999,
+    "normal_usd": 2084040149.0426946,
+    "n_unmatched_non_attack": 2638,
+    "start": "2022-01-01 00:05:42",
+    "end": "2022-03-29 15:22:33",
+    "n_tokens": 4,
+    "n_beneficiaries": 16999
+  },
+  {
+    "bridge": "nomad",
+    "n_events": 4869,
+    "n_attack": 382,
+    "attack_usd": 159577598.45990387,
+    "normal_usd": 222160634.0564116,
+    "n_unmatched_non_attack": 5,
+    "start": "2022-01-11 13:27:41",
+    "end": "2022-08-02 00:04:13",
+    "n_tokens": 14,
+    "n_beneficiaries": 3436
+  }
+]

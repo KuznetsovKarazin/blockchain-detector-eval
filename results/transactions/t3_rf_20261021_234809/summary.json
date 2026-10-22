@@ -1,0 +1,26 @@
+{
+  "model": "rf",
+  "best_val_auprc_seed0": 0.9937033508616258,
+  "best_params": {
+    "features": "AF+NB",
+    "n_estimators": 700,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1
+  },
+  "trials": 40,
+  "search_seconds": 8811.415983915329,
+  "val_auprc_mean": 0.9933491182520404,
+  "test_f1_mean": 0.7937054158902581,
+  "test_auprc_mean": 0.7923104159563223,
+  "pre_f1_mean": 0.8961809927617772,
+  "pre_auprc_mean": 0.9174349735533301,
+  "post_f1_mean": 0.025812900117601078,
+  "post_auprc_mean": 0.04039194523583863,
+  "val_auprc_std": 0.00039182273315116934,
+  "test_f1_std": 0.008396977388191987,
+  "test_auprc_std": 0.0019505451860071478,
+  "pre_f1_std": 0.0046445809002152935,
+  "pre_auprc_std": 0.0012228391044173431,
+  "post_f1_std": 0.0013965394117535386,
+  "post_auprc_std": 0.002131924239889992
+}

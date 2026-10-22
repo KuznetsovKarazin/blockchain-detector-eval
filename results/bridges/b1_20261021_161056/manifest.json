@@ -1,0 +1,82 @@
+{
+  "script": "e15_01_bridge_detection.py",
+  "created_utc": "2026-10-21T16:19:43Z",
+  "git_commit": "HEAD",
+  "git_dirty": true,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "torch_geometric": null,
+    "pyarrow": "26.0.0"
+  },
+  "config": {
+    "root": "data/raw/XChainWatcher/cross-chain-rules-validator",
+    "out": "results/e15",
+    "seeds": 5,
+    "detectors": "robust_z,ecod,iforest,ae_mlp,ae_kan"
+  },
+  "data": {},
+  "views": {
+    "D": [
+      "log_value",
+      "value_vs_token_med",
+      "token_novel",
+      "token_share",
+      "benef_novel",
+      "benef_log_count",
+      "log_n_1h",
+      "log_usd_1h",
+      "n_1h_rel",
+      "usd_1h_rel",
+      "log_gap",
+      "repeat_1h",
+      "hour_sin",
+      "hour_cos"
+    ],
+    "D_noreplay": [
+      "log_value",
+      "value_vs_token_med",
+      "token_novel",
+      "token_share",
+      "benef_novel",
+      "benef_log_count",
+      "log_n_1h",
+      "log_usd_1h",
+      "n_1h_rel",
+      "usd_1h_rel",
+      "log_gap",
+      "hour_sin",
+      "hour_cos"
+    ],
+    "X": [
+      "log_value",
+      "value_vs_token_med",
+      "token_novel",
+      "token_share",
+      "benef_novel",
+      "benef_log_count",
+      "log_n_1h",
+      "log_usd_1h",
+      "n_1h_rel",
+      "usd_1h_rel",
+      "log_gap",
+      "repeat_1h",
+      "hour_sin",
+      "hour_cos",
+      "unmatched",
+      "log_latency"
+    ]
+  },
+  "fpr_budgets": [
+    0.001,
+    0.01
+  ]
+}

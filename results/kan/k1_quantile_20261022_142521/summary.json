@@ -1,0 +1,62 @@
+{
+  "interpretability": {
+    "spearman_rel_vs_perm_on_candidates": 0.3883064516129033,
+    "spearman_rel_vs_rf_all": 0.4998397136216708,
+    "spearman_perm_vs_rf_on_candidates": 0.27137096774193553,
+    "top10_overlap_rel_rf": 0.5,
+    "top10_overlap_rel_perm_candidates": 0.6,
+    "n_candidates": 31
+  },
+  "clipped_fraction": {
+    "train": 0.27771345286050136,
+    "pre": 0.31512072658074464,
+    "post": 0.31635655758650405
+  },
+  "shift_correlation": [
+    {
+      "config": "kan16g5",
+      "model": "kan",
+      "spearman_clip_vs_f1": -0.1928571428571428
+    },
+    {
+      "config": "kan16g5",
+      "model": "mlp",
+      "spearman_clip_vs_f1": -0.3878464462024147
+    },
+    {
+      "config": "kan4g3",
+      "model": "kan",
+      "spearman_clip_vs_f1": -0.13583562171144475
+    },
+    {
+      "config": "kan4g3",
+      "model": "mlp",
+      "spearman_clip_vs_f1": -0.21147089240613293
+    },
+    {
+      "config": "kan8g5",
+      "model": "kan",
+      "spearman_clip_vs_f1": -0.35278558921485437
+    },
+    {
+      "config": "kan8g5",
+      "model": "mlp",
+      "spearman_clip_vs_f1": -0.22499999999999998
+    },
+    {
+      "config": "kan8g8",
+      "model": "kan",
+      "spearman_clip_vs_f1": -0.4071428571428571
+    },
+    {
+      "config": "kan8g8",
+      "model": "mlp",
+      "spearman_clip_vs_f1": -0.30563014885075074
+    },
+    {
+      "config": "rf",
+      "model": "rf",
+      "spearman_clip_vs_f1": -0.07748062179181807
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "bridge": "ronin",
+    "n_events": 25470,
+    "n_attack": 2,
+    "n_attack_tx": 2,
+    "attack_usd_ref": 565376764.7508999,
+    "attack_usd_observable": 540741535.6132002,
+    "n_usd_unknown": 1,
+    "normal_usd": 2082087044.9442084,
+    "n_unmatched_non_attack": 2638,
+    "start": "2022-01-01 00:05:42",
+    "end": "2022-03-29 15:22:33",
+    "n_tokens": 4,
+    "n_beneficiaries": 16999,
+    "prefix_invariance_max_abs_diff": 0.0
+  },
+  {
+    "bridge": "nomad",
+    "n_events": 4869,
+    "n_attack": 382,
+    "n_attack_tx": 167,
+    "attack_usd_ref": 159577598.45990387,
+    "attack_usd_observable": 157776198.0306416,
+    "n_usd_unknown": 5,
+    "normal_usd": 222160614.4981033,
+    "n_unmatched_non_attack": 5,
+    "start": "2022-01-11 13:27:41",
+    "end": "2022-08-02 00:04:13",
+    "n_tokens": 14,
+    "n_beneficiaries": 3436,
+    "prefix_invariance_max_abs_diff": 0.0
+  }
+]

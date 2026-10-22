@@ -1,0 +1,32 @@
+{
+  "script": "e13_02_vuln_benchmark.py",
+  "created_utc": "2026-10-21T22:16:05Z",
+  "git_commit": "1719a90109f00720b3e4dcea1e8ed39b60fc6764",
+  "git_dirty": true,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "torch_geometric": null,
+    "pyarrow": "26.0.0"
+  },
+  "config": {
+    "out": "results/e13",
+    "seeds": 3,
+    "models": "rf,lgbm,mlp,kan"
+  },
+  "data": {},
+  "target_classes": [
+    "reentrancy",
+    "arithmetic",
+    "timestamp",
+    "unchecked"
+  ]
+}

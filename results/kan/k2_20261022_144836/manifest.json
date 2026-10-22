@@ -1,0 +1,34 @@
+{
+  "script": "e17_02_lut_latency.py",
+  "created_utc": "2026-10-22T14:50:20Z",
+  "git_commit": "fb1651f2d1b4f7791ed61f141002a83ec85adf20",
+  "git_dirty": false,
+  "dirty_files": [],
+  "diff_sha256": null,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "data": "data/raw/elliptic",
+    "out": "results/e17",
+    "reps": 300,
+    "models": null
+  },
+  "data": {
+    "data/raw/elliptic/elliptic_txs_features.csv": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0",
+    "data/raw/elliptic/elliptic_txs_classes.csv": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493"
+  },
+  "data_sets": {}
+}

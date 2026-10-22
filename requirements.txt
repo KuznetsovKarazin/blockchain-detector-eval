@@ -1,0 +1,12 @@
+# Tested with Python 3.13 (CPU only). Exact versions of every reported run are
+# recorded in its results/*/manifest*.json; requirements-lock.txt pins the set
+# used for the published tables.
+numpy>=2.0
+pandas>=2.2
+pyarrow>=15
+scipy>=1.13
+scikit-learn>=1.5
+lightgbm>=4.3
+torch>=2.3
+matplotlib>=3.8
+optuna>=4.0            # t3 hyper-parameter search

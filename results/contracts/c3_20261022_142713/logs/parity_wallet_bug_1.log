@@ -1,0 +1,91 @@
+path: data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol
+solc: 0.4.11
+tried: 0.4.11:tool_error
+status: tool_error
+returncode: 1
+
+Multiple frameworks detected: solc, Solc-json. Using solc (highest priority). Use --compile-force-framework to override.
+'/root/.solc-bin/solc-0.4.11 --version' running
+'/root/.solc-bin/solc-0.4.11 data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc --allow-paths .,data/raw/smartbugs-curated/dataset/access_control' running
+Compilation warnings/errors on data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:18:1: Error: Source file requires different compiler version (current compiler is 0.4.11+commit.68ef5810.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.4.9; /* originally ^0.4.9, but doesn't compile with ^0.4.11 */
+^--------------------^
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:377:37: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.
+  address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
+                                    ^----------------------------------------^
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:417:14: Error: Unbalanced stack at the end of a block: 1 surplus item(s).
+    assembly {
+             ^
+Spanning multiple lines.
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:437:7: Warning: Return value of low-level calls not used.
+      _walletLibrary.delegatecall(msg.data); //it should have whitelisted specific methods that the user is allowed to call
+      ^-----------------------------------^
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:456:37: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.
+  address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
+                                    ^----------------------------------------^
+
+Traceback (most recent call last):
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 639, in _run_solc
+    ret: dict = json.loads(stdout)
+                ~~~~~~~~~~^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/claude-0/venv2/bin/slither", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 815, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 936, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 100, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 870, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+                        ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 279, in __init__
+    self._compile(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 725, in _compile
+    self._platform.compile(self, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 195, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 324, in _get_targets_json
+    return _run_solc(
+        compilation_unit,
+    ...<6 lines>...
+        force_legacy_json=force_legacy_json,
+    )
+  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 642, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:18:1: Error: Source file requires different compiler version (current compiler is 0.4.11+commit.68ef5810.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.4.9; /* originally ^0.4.9, but doesn't compile with ^0.4.11 */
+^--------------------^
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:377:37: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.
+  address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
+                                    ^----------------------------------------^
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:417:14: Error: Unbalanced stack at the end of a block: 1 surplus item(s).
+    assembly {
+             ^
+Spanning multiple lines.
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:437:7: Warning: Return value of low-level calls not used.
+      _walletLibrary.delegatecall(msg.data); //it should have whitelisted specific methods that the user is allowed to call
+      ^-----------------------------------^
+data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:456:37: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.
+  address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
+                                    ^----------------------------------------^
+

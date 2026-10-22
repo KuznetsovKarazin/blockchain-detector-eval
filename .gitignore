@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+venv*/
+.venv/
+
+# Data (fetched by scripts/00_fetch_data.py; Elliptic is downloaded manually)
+data/raw/
+data/cache/
+
+# Large per-run artefacts (metrics CSV/JSON and figures ARE committed)
+# (negations must come AFTER the rule they override)
+results/**/*.parquet
+results/**/*.npz
+!results/contracts/**/*.parquet
+!results/transactions/t1_20261022_v2/scores_labelled.npz
+!results/kan/k3_20261022_163604/scores.npz
+results/**/smoke*/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,31 @@
+{
+  "script": "e15_02_saturation_and_hybrid.py",
+  "created_utc": "2026-10-21T16:28:42Z",
+  "git_commit": "HEAD",
+  "git_dirty": true,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "torch_geometric": null,
+    "pyarrow": "26.0.0"
+  },
+  "config": {
+    "e15_run": "results/e15/e15_01_20261021_161056",
+    "out": "results/e15",
+    "seeds": 3
+  },
+  "data": {
+    "results/e15/e15_01_20261021_161056/features_ronin.parquet": "1f22b9507128c874a482ddcf05fce0ae14d4a89ce4834795fa4981b8f9f9583d",
+    "results/e15/e15_01_20261021_161056/features_nomad.parquet": "390824cc53bfa303f68e06eac7648cdfba4ca77dc34bb4447386d206f96bbb63"
+  },
+  "fpr_budget": 0.001,
+  "source_run": "results/e15/e15_01_20261021_161056"
+}

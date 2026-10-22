@@ -1,0 +1,31 @@
+{
+  "model": "kan",
+  "best_val_auprc_seed0": 0.967765724927728,
+  "best_params": {
+    "features": "AF+NB",
+    "depth": 1,
+    "width": 16,
+    "lr": 0.02613366605676363,
+    "weight_decay": 7.326034839086512e-05,
+    "prep": "quantile",
+    "batch": 256,
+    "grid": 12,
+    "l1_spline": 0.0001
+  },
+  "trials": 40,
+  "search_seconds": 11431.855440378189,
+  "val_auprc_mean": 0.9497876295153874,
+  "test_f1_mean": 0.654895531367304,
+  "test_auprc_mean": 0.7640316011595182,
+  "pre_f1_mean": 0.7627640188285241,
+  "pre_auprc_mean": 0.8721667344055201,
+  "post_f1_mean": 0.07499291092741713,
+  "post_auprc_mean": 0.07346995723123781,
+  "val_auprc_std": 0.02115527162691134,
+  "test_f1_std": 0.05563054297938871,
+  "test_auprc_std": 0.0462141277214789,
+  "pre_f1_std": 0.058203196231068066,
+  "pre_auprc_std": 0.04971312801557739,
+  "post_f1_std": 0.05653901098942724,
+  "post_auprc_std": 0.02961283318682007
+}

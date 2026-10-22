@@ -1,0 +1,10 @@
+{
+  "rows": 1268260,
+  "addresses": 822942,
+  "labelled_rows": 367472,
+  "labelled_addresses": 265354,
+  "features": 55,
+  "features_constant_within_address_share_min": 1.0,
+  "labelled_rows_in_test_steps_whose_address_also_in_train_steps": 0.05234596280940848,
+  "labelled_addresses_first_seen_ge35": 92451
+}

@@ -1,0 +1,37 @@
+{
+  "script": "e15_02_saturation_and_hybrid.py",
+  "created_utc": "2026-10-22T14:24:47Z",
+  "git_commit": "0a6828323f405d3b7bce48fdf8df6768ec6cdbc8",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/tools/"
+  ],
+  "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "e15_run": "results/e15/e15_01_20261022_141005",
+    "out": "results/e15",
+    "seeds": 5
+  },
+  "data": {
+    "results/e15/e15_01_20261022_141005/features_ronin.parquet": "90cef2b9f1ff3f5bb3fb651880f5ef4c9ba7909e14802b641f59c9a23cc1fc1b",
+    "results/e15/e15_01_20261022_141005/features_nomad.parquet": "dce2e7e262d0835aabf21b5d5fd9a7ac2316e2d85059880842e9b3b0c83803f6"
+  },
+  "data_sets": {},
+  "fpr_budget": 0.001,
+  "source_run": "results/e15/e15_01_20261022_141005"
+}

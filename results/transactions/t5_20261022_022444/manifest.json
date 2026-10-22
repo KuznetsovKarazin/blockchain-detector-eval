@@ -1,0 +1,36 @@
+{
+  "script": "e10_05_ellipticpp_wallet_leakage.py",
+  "created_utc": "2026-10-22T02:33:36Z",
+  "git_commit": "91fbc6d544e422e2ab382c4250d97e6b4e566186",
+  "git_dirty": true,
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "torch_geometric": null,
+    "pyarrow": "26.0.0"
+  },
+  "config": {
+    "data": "data/raw/ellipticpp",
+    "seeds": 3,
+    "out": "results/e10"
+  },
+  "data": {
+    "data/raw/ellipticpp/wallets_features_classes_combined.csv": "99bf27f7b76d6578ad59e0a61ec225ecd656fef6ae6958f29435ab286be2cc7d"
+  },
+  "time_features": [
+    "first_block_appeared_in",
+    "last_block_appeared_in",
+    "lifetime_in_blocks",
+    "num_timesteps_appeared_in",
+    "first_sent_block",
+    "first_received_block"
+  ]
+}

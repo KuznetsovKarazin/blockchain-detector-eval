@@ -1,0 +1,30 @@
+{
+  "model": "lgbm",
+  "best_val_auprc_seed0": 0.9951328578986761,
+  "best_params": {
+    "features": "AF",
+    "n_estimators": 800,
+    "learning_rate": 0.019748002054533063,
+    "num_leaves": 24,
+    "min_child_samples": 51,
+    "colsample_bytree": 0.6574659280769096,
+    "subsample": 0.9453243020816147,
+    "reg_lambda": 0.35130580838975406
+  },
+  "trials": 40,
+  "search_seconds": 829.5513553619385,
+  "val_auprc_mean": 0.9948039671941318,
+  "test_f1_mean": 0.8007177254866933,
+  "test_auprc_mean": 0.7952333167451252,
+  "pre_f1_mean": 0.8942746377675865,
+  "pre_auprc_mean": 0.9164823851153191,
+  "post_f1_mean": 0.03362037165606334,
+  "post_auprc_mean": 0.04178176593037018,
+  "val_auprc_std": 0.0003326930102110818,
+  "test_f1_std": 0.006240552425360015,
+  "test_auprc_std": 0.0006176898534996695,
+  "pre_f1_std": 0.00473894553454281,
+  "pre_auprc_std": 0.0004095966625002388,
+  "post_f1_std": 0.006900449773088109,
+  "post_auprc_std": 0.0006010243800103102
+}
