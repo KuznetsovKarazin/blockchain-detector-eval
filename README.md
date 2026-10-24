@@ -30,7 +30,7 @@ manifest under `results/`.
 > 2. On a popular injected-bug benchmark (SolidiFI) the best models reach AUPRC 1.0 under every split, consistent with recognising the bug templates; on real audit labels AUPRC is 0.04–0.15.
 > 3. Tree ensembles beat graph neural networks on Elliptic under a strict temporal protocol, and every model collapses after the dark-market shutdown, unnoticed by label-free monitors.
 > 4. KANs show no stable advantage over a same-size MLP; their LUT form is faster than a spline KAN but still slower than the MLP.
-> 5. On 13 recent DeFi exploits, tree ensembles rank the attack near the top of its day, but alarm budgets set a year earlier are exceeded 2–10×, and the KAN learns the attacker's set-up rather than the manipulation.
+> 5. On 13 recent DeFi exploits, tree ensembles rank the attack near the top of its day, but alarm budgets set a year earlier are exceeded 2–19×, and the KAN learns the attacker's set-up rather than the manipulation.
 
 **Contents:** [Who this is for](#who-this-is-for) · [Results](#results) ·
 [What this project does NOT claim](#what-this-project-does-not-claim) ·
@@ -196,12 +196,12 @@ a background sample from the AWS public Ethereum data (338k kept
 transactions, weighted to about a million per day). Details:
 [docs/FINDINGS_DEFI.md](docs/FINDINGS_DEFI.md).
 
-* Temporal test (2025–2026, 13 attacks): LightGBM AP 0.228 [0.116, 0.439],
-  random forest 0.181, MLP 0.108, KAN 0.098 [0.029, 0.289]; a flash loan ×
-  price move rule is near random (0.002). Tree models put the median attack
-  at rank 3–5 of its day.
+* Temporal test (2025–2026, 13 attacks; mean AP over seeds): LightGBM 0.230
+  [0.106, 0.423], random forest 0.189, MLP 0.101, KAN 0.072 [0.029, 0.178],
+  logistic regression 0.022; a flash loan × price move rule is near random
+  (0.002). Tree models put the median attack at rank 3–6 of its day.
 * Alarm budgets set on 2024 do not hold on 2025–2026: a 1/day threshold gives
-  2.3–9.9 alarms per day.
+  2.0–18.9 alarms per day.
 * The KAN mostly uses the attacker's set-up (fresh sender, contract deployed
   the same day, gas), not the manipulation features. Its edge functions match
   its partial dependence only when signed by the second layer (Spearman +1.0,
@@ -229,7 +229,7 @@ transactions, weighted to about a million per day). Details:
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements-dev.txt        # or, for the published environment (Python 3.13): -r requirements-lock.txt
 pip install --no-deps -e .                  # the `bal` package itself, so that `from bal ...` works anywhere
-pytest -q                                   # 42 unit tests, < 2 min on CPU
+pytest -q                                   # 45 unit tests, < 2 min on CPU
 python scripts/00_fetch_data.py             # public sources at pinned commits → data/raw/
 ```
 
@@ -259,7 +259,7 @@ python scripts/k3_kan_mlp_uncertainty.py --seeds 10
 python scripts/k4_extract_days.py --workers 1
 python scripts/k4_defi_kan.py --seeds 5
 # ... or the models only, from the committed feature table
-python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261023_200340/features.parquet
+python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261024_080035/features.parquet
 ```
 
 All runs are CPU-only. Each run writes a manifest with the git commit, the

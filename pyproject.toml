@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "blockchain-detector-eval"
-version = "0.5.0"
+version = "0.5.1"
 description = "Reproducible, leakage-aware evaluation of anomaly detectors for blockchain security"
 authors = [{ name = "Oleksandr Kuznetsov", email = "oleksandr.kuznetsov@uniecampus.it" }]
 license = { text = "MIT" }

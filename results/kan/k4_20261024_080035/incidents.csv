@@ -1,0 +1,41 @@
+date,name,heading,poc,txs,found
+2021-10-27,CreamFinance,20211027 CreamFinance - Price Manipulation,src/test/2021-10/Cream_2_exp.sol,0x0fe2542079644e107cbf13690eb9c2c65963ccb79089ff96bfaf8dced2331c92,1
+2022-06-16,InverseFinance,20220616 InverseFinance - Flashloan & Price Oracle Manipulation,src/test/2022-06/InverseFinance_exp.sol,0x958236266991bc3fe3b77feaacea120f172c0708ad01c7a715b255f218f9313c,1
+2022-08-13,Circle,20220813 Circle - Price Manipulation,src/test/2022-08/Circle_exp1.sol,0xa4e650772f6e6b7ecc0964fe4c3854850669d1467570a2fa2b6edfa0f112c4b7,1
+2022-08-16,Circle,20220816 Circle - Price Manipulation,src/test/2022-08/Circle_exp2.sol,0xf1818f62c635e5c80ef16b7857da812c74ce330ebed46682b4d173bffe84c666,1
+2022-10-14,MEVBOTa47b,20221014 MEVBOTa47b - Price Oracle Manipulation,src/test/2022-10/MEVa47b_exp.sol,0x35ecf595864400696853c53edf3e3d60096639b6071cadea6076c9c6ceb921c1,1
+2022-11-08,Kashi,20221108 Kashi - Price-caching Design Defect,src/test/2022-11/Kashi_exp.sol,0x3d163bfbec5686d428a6d43e45e2626a220cc4fcfac7620c620b82c1f2537c78,1
+2023-01-11,RoeFinance,20230111 - RoeFinance - FlashLoan price manipulation,src/test/2023-01/RoeFinance_exp.sol,0x927b784148b60d5233e57287671cdf67d38e3e69e5b6d0ecacc7c1aeaa98985b,1
+2023-03-17,ParaSpace NFT,20230317 - ParaSpace NFT - Flashloan + scaledBalanceOf Manipulation,src/test/2023-03/Paraspace_exp_2.sol,0xe3f0d14cfb6076cabdc9057001c3fafe28767a192e88005bc37bd7d385a1116a,1
+2023-05-31,ERC20TokenBank,20230531 ERC20TokenBank - Price Manipulation,src/test/2023-05/ERC20TokenBank_exp.sol,0x578a195e05f04b19fd8af6358dc6407aa1add87c3167f053beb990d6b4735f26,1
+2023-06-07,CompounderFinance,20230607 CompounderFinance - Manipulation of funds through fluctuations in the amount of exchangeable assets,src/test/2023-06/CompounderFinance_exp.sol,0xcff84cc137c92e427f720ca1f2b36fbad793f34ec5117eed127060686e6797b1,1
+2023-06-06,VINU,20230606 VINU - Price Manipulation,src/test/2023-06/VINU_exp.sol,0xaf46a42fe1ed7193b25c523723dc047c7500e50a00ecb7bbb822d665adb3e1f3,1
+2023-07-22,Conic Finance 02,20230722 Conic Finance 02 - Price Manipulation,src/test/2023-07/Conic02_exp.sol,0x37acd17a80a5f95728459bfea85cb2e1f64b4c75cf4a4c8dcb61964e26860882,1
+2023-08-19,BTC20,20230819 BTC20 - Price Manipulation,src/test/2023-08/BTC20_exp.sol,0xcdd93e37ba2991ce02d8ca07bf6563bf5cd5ae801cbbce3dd0babb22e30b2dbe,1
+2023-08-14,ZunamiProtocol,20230814 ZunamiProtocol - Price Manipulation,src/test/2023-08/Zunami_exp.sol,0x0788ba222970c7c68a738b0e08fb197e669e61f9b226ceec4cab9b85abe8cceb,1
+2023-09-11,0x0DEX,20230911 0x0DEX - Parameter manipulation,src/test/2023-09/0x0DEX_exp.sol,0x00b375f8e90fc54c1345b33c686977ebec26877e2c8cac165429927a6c9bdbec,1
+2023-10-08,pSeudoEth,20231008 pSeudoEth - Pool manipulation,src/test/2023-10/pSeudoEth_exp.sol,0x4ab68b21799828a57ea99c1288036889b39bf85785240576e697ebff524b3930,1
+2023-11-29,Burntbubba,20231129 Burntbubba - Price Manipulation,src/test/2023-11/Burntbubba_exp.sol,0x2b6d0af0dc513a15e325703405739057f9de6ef3f99934b957653b8a3fade4c6,1
+2023-12-11,GoodCompound,20231211 GoodCompound - Price Manipulation,src/test/2023-12/GoodCompound_exp.sol,0x1106418384414ed56cd7cbb9fedc66a02d39b663d580abc618f2d387348354ab,1
+2024-02-23,CompoundUni,20240223 CompoundUni - Oracle bad price,src/test/2024-02/CompoundUni_exp.sol,0xaee0f8d1235584a3212f233b655f87b89f22f1d4890782447c4ef742b37af58d,1
+2024-06-10,UwULend,20240610 UwULend - Price Manipulation,src/test/2024-06/UwuLend_First_exp.sol,0x242a0fb4fde9de0dc2fd42e8db743cbc197ffa2bf6a036ba0bba303df296408b,1
+2024-06-10,UwULend,20240610 UwULend - Price Manipulation,src/test/2024-06/UwuLend_Second_exp.sol,0x9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110,0
+2024-08-16,Zenterest,20240816 Zenterest - Price Out Of Date,src/test/2024-08/Zenterest_exp.sol,0xfe8bc757d87e97a5471378c90d390df47e1b29bb9fca918b94acd8ecfaadc598,1
+2024-09-05,HANAToken,20240905 HANAToken - Price Manipulation,src/test/2024-09/HANAToken_exp.sol,0xe8cee3450545a865b4a8fffd93938ae93429574dc8e01b02bc6a02f2f4490e4e,0
+2024-09-23,PestoToken,20240923 PestoToken - Price Manipulation,src/test/2024-09/PestoToken_exp.sol,0x3d5b4a0d560e8dd750239b578e2b85921b523835b644714dc239a2db70cf067c,1
+2024-10-01,FireToken,20241001 FireToken - Pair Manipulation With Transfer Function,src/test/2024-10/FireToken_exp.sol,0xd20b3b31a682322eb0698ecd67a6d8a040ccea653ba429ec73e3584fa176ff2b,1
+2024-10-13,MorphoBlue,20241013 MorphoBlue - Overpriced Asset in Oracle,src/test/2024-10/MorphoBlue_exp.sol,0x256979ae169abb7fbbbbc14188742f4b9debf48b48ad5b5207cadcc99ccb493b,1
+2024-11-14,vETH,20241114 vETH - Vulnerable Price Dependency,src/test/2024-11/vETH_exp.sol,0x1ae40f26819da4f10bc7c894a2cc507cdb31c29635d31fa90c8f3f240f0327c0;0x900891b4540cac8443d6802a08a7a0562b5320444aa6d8eed19705ea6fb9710b;0x90db330d9e46609c9d3712b60e64e32e3a4a2f31075674a58dd81181122352f8,3
+2025-01-01,LAURAToken,20250101 LAURAToken - Pair Balance Manipulation,src/test/2025-01/LAURAToken_exp.sol,0xef34f4fdf03e403e3c94e96539354fb4fe0b79a5ec927eacc63bc04108dbf420,1
+2025-02-11,Scorch,20250211 Scorch - Price Oracle Manipulation,src/test/2025-02/Scorch_exp.sol,0x02dc4409af99de400b2427dad525c31467a8fd2ac6cb251f885d33c073510ba2,1
+2025-04-07,AmpKashi,20250407 AmpKashi - AMP Collateral Borrow Price Manipulation,src/test/2025-04/AmpKashi_exp.sol,0x21c91633ca99b991b3ba20e02b12bbeef187fd3fea756cece4748c2ee0173db3,1
+2025-06-23,GradientMakerPool,20250623 GradientMakerPool - Price Oracle Manipulation,src/test/2025-06/GradientMakerPool_exp.sol,0xb5cfa3f86ce9506e2364475dc43c44de444b079d4752edbffcdad7d1654b1f67,1
+2025-06-26,ResupplyFi,20250626 ResupplyFi - Share price manipulation,src/test/2025-06/ResupplyFi_exp.sol,0xffbbd492e0605a8bb6d490c3cd879e87ff60862b0684160d08fd5711e7a872d3,1
+2025-07-24,EmptySetReserve,20250724 EmptySetReserve - Fixed Order Swap,src/test/2025-07/EmptySetReserve_exp.sol,0x240e9573e6c59cfe025c311c176c351bb07a86ae994aaaff58ec3f7f84dab372,1
+2025-08-19,PresaleV5,20250819 PresaleV5 - Price Manipulation,src/test/2025-08/PresaleV5_exp.sol,0x0ef0cde3d8348fdced3adf7d0475ec1364236dd6ab1d8580addad96b004b604a,1
+2025-11-10,DRLVaultV3,20251110 DRLVaultV3 - Price Manipulation,src/test/2025-11/DRLVaultV3_exp.sol,0xe3eab35b288c086afa9b86a97ab93c7bb61d21b1951a156d2a8f6f5d5715c475,1
+2026-01-20,Makina,20260120 Makina - Price Oracle Manipulation,src/test/2026-01/makina_exp.sol,0x569733b8016ef9418f0b6bde8c14224d9e759e79301499908ecbcd956a0651f5,1
+2026-03-02,Curve LlamaLend,20260302 Curve LlamaLend - Share price manipulation,src/test/2026-03/Curve_LlamaLend_exp.sol,0xb93506af8f1a39f6a31e2d34f5f6a262c2799fef6e338640f42ab8737ed3d8a4,1
+2026-03-15,StakeOnMe,20260315 StakeOnMe - Owner-privileged JAKE burn reserve drain,src/test/2026-03/unverified_237d_exp.sol,0xed71e72ba1be2cff06438fab558a79936414d24dd1f6d3e58ecadc2a8f673fe5,1
+2026-04-20,ThetanutsVaultShareRounding,20260420 ThetanutsVaultShareRounding - Vault Share Rounding Manipulation,src/test/2026-04/ThetanutsVaultShareRounding_exp.sol,0x1bc83899060c27106b6fb4257b208925085794e83b21c444854442fd3554862c,1
+2026-07-01,edel-xstock,20260701 edel-xstock - Price Oracle Manipulation,src/test/2026-07/edel-xstock_exp.sol,0xe2320086b2815d21b0927839bd0e306466c29a68d38d5361e99dd21ec5472612,1

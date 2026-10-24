@@ -149,3 +149,31 @@ def addr(word: str) -> str:
 def words(data: str) -> list[int]:
     h = data[2:] if data.startswith("0x") else data
     return [int(h[i:i + 64], 16) for i in range(0, len(h) - 63, 64)]
+
+
+def flash_hashes(logs: pd.DataFrame, transfers: pd.DataFrame, v2_pairs: set[str]) -> set[str]:
+    """Transactions with a flash loan, by one rule for every transaction.
+
+    * a flash-loan event (`FLASH_TOPICS`);
+    * dYdX SoloMargin `Withdraw` and `Deposit` in the same transaction;
+    * a Uniswap V2 flash swap: in a transaction with a V2 `Swap`, a V2 pair
+      (`v2_pairs`, the emitters of `Sync` that day, or an emitter of a V2
+      `Swap` in `logs`) transfers a token out before any transfer into it.
+
+    `logs` needs transaction_hash, address, topic0; `transfers` needs
+    transaction_hash, from_address, to_address, log_index.
+    """
+    out = set(logs.loc[logs.topic0.isin(FLASH_TOPICS), "transaction_hash"])
+    dy = logs[logs.address == DYDX_SOLO]
+    out |= set(dy.loc[dy.topic0 == T_DYDX_WITHDRAW, "transaction_hash"]) & \
+        set(dy.loc[dy.topic0 == T_DYDX_DEPOSIT, "transaction_hash"])
+    swaps = logs[logs.topic0 == T_SWAP_V2]
+    swap_tx = set(swaps.transaction_hash)
+    v2_pairs = set(v2_pairs) | set(swaps.address)       # V2-style pools without a Sync count too
+    t = transfers[transfers.transaction_hash.isin(swap_tx)]
+    first_out = t[t.from_address.isin(v2_pairs)].groupby(["transaction_hash", "from_address"]).log_index.min()
+    first_in = t[t.to_address.isin(v2_pairs)].groupby(["transaction_hash", "to_address"]).log_index.min()
+    first_out.index.names = first_in.index.names = ["tx", "pair"]
+    j = pd.concat([first_out.rename("o"), first_in.rename("i")], axis=1).dropna()
+    out |= set(j[j.o < j.i].index.get_level_values("tx"))
+    return out

@@ -8,7 +8,9 @@ earlier). Nothing is taken from later transactions, labels or incident text.
 
 Features
 --------
-has_flash            any flash loan (explicit event or V2 flash swap)
+has_flash            any flash loan by `bal.data.defi.flash_hashes` (event, dYdX
+                     withdraw + deposit, or V2 flash swap), the rule used in the
+                     extraction; never the stratum
 n_flash              number of flash-loan events (+ V2 flash swaps)
 flash_to_pool        max over flash-borrowed tokens of amount / largest
                      pre-transaction reserve of that token in a V2 pool the
@@ -26,7 +28,8 @@ profit_usd           net inflow of WETH, USDC, USDT, DAI to the sender and the
                      pool before the tx); native ETH is not visible without
                      traces and is not counted
 gas_used, nonce, value_eth
-to_created_today     the called contract was created earlier the same day
+to_created_today     the called contract was created by an earlier transaction
+                     of the same day (block, index before this one)
 """
 
 from __future__ import annotations
@@ -92,10 +95,9 @@ def day_features(day_dir: str | Path) -> pd.DataFrame:
     pairs = pd.read_parquet(d / "pairs.parquet").set_index("pair")
     # pairs whose transfers in the day file include their own LP token: take the
     # two other tokens from the kept transactions' transfers
-    v2 = set(pd.read_parquet(d / "state.parquet", columns=["address", "topic0"]).query(
-        "topic0 == @D.T_SYNC").address)
-    pt = pd.concat([tt[tt.from_address.isin(v2)][["from_address", "token_address"]].set_axis(["pair", "token"], axis=1),
-                    tt[tt.to_address.isin(v2)][["to_address", "token_address"]].set_axis(["pair", "token"], axis=1)])
+    v2_pairs = set(st.loc[st.topic0 == D.T_SYNC, "address"])
+    pt = pd.concat([tt[tt.from_address.isin(v2_pairs)][["from_address", "token_address"]].set_axis(["pair", "token"], axis=1),
+                    tt[tt.to_address.isin(v2_pairs)][["to_address", "token_address"]].set_axis(["pair", "token"], axis=1)])
     pt = pt[pt.pair != pt.token].drop_duplicates().groupby("pair").token.agg(lambda s: sorted(set(s)))
     pt = pt[pt.map(len) == 2]
     extra = pd.DataFrame({"token0": pt.map(lambda x: x[0]), "token1": pt.map(lambda x: x[1])})
@@ -146,7 +148,8 @@ def day_features(day_dir: str | Path) -> pd.DataFrame:
     res = pd.concat([v2[["tx", "token0", "pre_r0"]].set_axis(["tx", "token", "reserve"], axis=1),
                      v2[["tx", "token1", "pre_r1"]].set_axis(["tx", "token", "reserve"], axis=1)])
     res = res.groupby(["tx", "token"]).reserve.max()
-    flash_tx = set(tx[tx.stratum.isin(["flash", "attack"])].hash)
+    # one rule for every transaction, the same as in the extraction (not the stratum)
+    flash_tx = D.flash_hashes(lg, tt, v2_pairs)
     # V2 flash swaps: first out-transfer of the pair before any in-transfer
     t_in = tt[tt.to_address.isin(pairs.index)].groupby(["transaction_hash", "to_address"]).log_index.min()
     t_out = tt[tt.from_address.isin(pairs.index)].sort_values("log_index").groupby(
@@ -170,7 +173,7 @@ def day_features(day_dir: str | Path) -> pd.DataFrame:
     who = tx.set_index("hash")[["from_address", "to_address"]].rename(columns={"from_address": "sender",
                                                                                "to_address": "called"})
     t = tt[tt.token_address.isin(set(D.STABLES) | {D.WETH})].join(who, on="transaction_hash")
-    dec = t.token_address.map(lambda a: D.STABLES.get(a, 18))
+    dec = t.token_address.map(lambda a: D.STABLES.get(a, 18)).astype(float)
     usd = np.where(t.token_address.isin(D.STABLES), 1.0, t.transaction_hash.map(tpos.usd_per_weth))
     amt = t.value / 10.0 ** dec * usd
     to_me = (t.to_address == t.sender) | (t.to_address == t.called)
@@ -194,7 +197,10 @@ def day_features(day_dir: str | Path) -> pd.DataFrame:
     f["gas_used"] = tx.receipt_gas_used.astype(float)
     f["nonce"] = tx.nonce.astype(float)
     f["value_eth"] = tx.value.astype(float) / 1e18
-    f["to_created_today"] = tx.created_today.astype(float)
+    # called contract created by an EARLIER transaction of the same day
+    cr = pd.read_parquet(d / "creations.parquet")
+    cr_pos = _pos(cr.block_number, cr.transaction_index).groupby(cr.address.to_numpy()).min()
+    f["to_created_today"] = (tx.to_address.str.lower().map(cr_pos) < tx.pos).astype(float)
     meta = tx[["stratum", "weight", "block_number", "transaction_index", "from_address", "to_address",
                "receipt_status"]]
     return f[FEATURES].join(meta).reset_index().rename(columns={"index": "hash"})

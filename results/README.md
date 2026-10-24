@@ -37,4 +37,4 @@ underlying datasets.
 | K1 KAN analysis | `kan/k1_{quantile,robust}_20261022_142521` | `k1_*_20261021_232204` (float64 LUT) |
 | K2 LUT latency | timing: `kan/k2_20261024_011451`, `…_011806`, `…_011911`, `…_012008`, `…_012105` (one thread, threadpoolctl); models: `kan/k2_20261022_144836/models.pkl` | timing of `k2_20261022_144836` (threads limited through torch only), `k2_20261022_021810` (float64 LUT) |
 | K3 KAN vs MLP, 10 seeds | `kan/k3_20261022_163604` (incl. per-seed `scores.npz`) | `k3_20261022_113301` (same numbers, scores not saved) |
-| K4 DeFi flash-loan exploits | `kan/k4_20261023_200340` (incl. `features.parquet`, `scores.npz`) | — |
+| K4 DeFi flash-loan exploits | `kan/k4_20261024_080035` (incl. `features.parquet`, `scores.npz`) | `k4_20261023_200340` (`has_flash` from the stratum, `to_created_today` saw later creations) |

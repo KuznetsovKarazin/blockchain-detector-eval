@@ -18,6 +18,9 @@ is read when an attack transaction is not found there) this script reads
   with the population size of each stratum, so that sampled strata can be
   re-weighted to alarms per day;
 * all logs and token transfers of the kept transactions;
+* the contracts created that day with the position of their creating
+  transaction (`creations.parquet`), so that "called contract created
+  earlier" can be decided per transaction;
 * the day's pool state events (V2 `Sync`, V3 `Swap`) and the token pair of
   each V2 pool, so that pre-transaction prices are known (state before the
   transaction = last event of an earlier transaction of the same day);
@@ -74,18 +77,26 @@ def _read(table, date, cols):
     return pa.concat_tables(parts)
 
 
-def _v2_flash_swaps(lg: pd.DataFrame, tt: pd.DataFrame) -> set[str]:
-    """Txs in which a V2 pair transfers a token out before any transfer into it."""
-    sw = lg[lg.topic0 == D.T_SWAP_V2][["transaction_hash", "address", "log_index"]]
-    if sw.empty:
-        return set()
-    pairs = set(sw.address)
-    t = tt[tt.transaction_hash.isin(set(sw.transaction_hash))]
-    out_ = t[t.from_address.isin(pairs)].groupby(["transaction_hash", "from_address"]).log_index.min()
-    in_ = t[t.to_address.isin(pairs)].groupby(["transaction_hash", "to_address"]).log_index.min()
-    out_.index.names = in_.index.names = ["tx", "pair"]
-    j = pd.concat([out_.rename("first_out"), in_.rename("first_in")], axis=1).dropna()
-    return set(j[j.first_out < j.first_in].index.get_level_values("tx"))
+def _creations(tx: pd.DataFrame) -> pd.DataFrame:
+    """Contracts created that day with the position of the creating transaction."""
+    c = tx[tx.receipt_contract_address.fillna("").str.len() > 0]      # "" for non-creating txs
+    return pd.DataFrame({"address": c.receipt_contract_address.str.lower().to_numpy(),
+                         "block_number": c.block_number.to_numpy(),
+                         "transaction_index": c.transaction_index.to_numpy()})
+
+
+def update_day(date, exclude):
+    """Add creations.parquet and the count of excluded exploit txs to an older extract."""
+    out = OUT / date
+    info = json.loads((out / "done.json").read_text())
+    if (out / "creations.parquet").exists() and "n_excluded_other_exploits" in info:
+        return info
+    tx = _read("transactions", date, ["hash", "block_number", "transaction_index",
+                                      "receipt_contract_address"]).to_pandas().drop_duplicates("hash")
+    _creations(tx).to_parquet(out / "creations.parquet", index=False)
+    info["n_excluded_other_exploits"] = len(set(tx.hash) & exclude)
+    (out / "done.json").write_text(json.dumps(info, indent=1))
+    return info
 
 
 def extract_day(date, attack_txs, exclude, providers, args):
@@ -113,12 +124,8 @@ def extract_day(date, attack_txs, exclude, providers, args):
     ev["address"] = ev.address.str.lower()
 
     found = set(tx.hash) & set(attack_txs)
-    flash = set(ev[ev.topic0.isin(D.FLASH_TOPICS)].transaction_hash)
-    dy = ev[ev.address == D.DYDX_SOLO]
-    dyw = set(dy[dy.topic0 == D.T_DYDX_WITHDRAW].transaction_hash)
-    dyd = set(dy[dy.topic0 == D.T_DYDX_DEPOSIT].transaction_hash)
-    flash |= dyw & dyd
-    flash |= _v2_flash_swaps(ev, tt)
+    v2 = set(ev[ev.topic0 == D.T_SYNC].address)
+    flash = D.flash_hashes(ev, tt, v2)          # same rule as the feature has_flash
     ok = set(tx[tx.receipt_status == 1].hash)
 
     # contracts touched by the attack txs (protocol stratum)
@@ -149,10 +156,8 @@ def extract_day(date, attack_txs, exclude, providers, args):
     sel = tx[tx.hash.isin(strata)].copy()
     sel["stratum"] = sel.hash.map(strata)
     sel["weight"] = sel.stratum.map(lambda s: pop[s] / max(1, kept[s]))
-    sel["created_today"] = sel.to_address.isin(set(tx.receipt_contract_address.dropna()))
-    first_create = tx.dropna(subset=["receipt_contract_address"]).groupby("receipt_contract_address").block_number.min()
-    sel["to_created_block"] = sel.to_address.map(first_create)
     sel.to_parquet(out / "txs.parquet", index=False)
+    _creations(tx).to_parquet(out / "creations.parquet", index=False)
     sl = lg_t.filter(pc.is_in(lg_t["transaction_hash"], value_set=pa.array(sorted(strata), type=pa.string()))).to_pandas()
     sl["address"] = sl.address.str.lower()
     sl["topics"] = sl.topics.map(list)
@@ -161,7 +166,6 @@ def extract_day(date, attack_txs, exclude, providers, args):
     st = ev[ev.topic0.isin(D.STATE_TOPICS)][["address", "topic0", "data", "transaction_hash", "block_number",
                                             "transaction_index", "log_index"]]
     st.to_parquet(out / "state.parquet", index=False)
-    v2 = set(ev[ev.topic0 == D.T_SYNC].address)
     pt = pd.concat([tt[tt.from_address.isin(v2)][["from_address", "token_address"]].set_axis(["pair", "token"], axis=1),
                     tt[tt.to_address.isin(v2)][["to_address", "token_address"]].set_axis(["pair", "token"], axis=1)])
     pt = pt.drop_duplicates().groupby("pair").token.agg(lambda s: sorted(set(s)))
@@ -170,6 +174,7 @@ def extract_day(date, attack_txs, exclude, providers, args):
                   "token1": pt.map(lambda x: x[1]).values}).to_parquet(out / "pairs.parquet", index=False)
     info = {"date": date, "n_tx": int(len(tx)), "n_success": int(len(ok)), "population": pop, "kept": kept,
             "attack_found": sorted(found), "attack_missing": sorted(set(attack_txs) - found),
+            "n_excluded_other_exploits": len(set(tx.hash) & exclude),
             "seconds": round(time.time() - t0, 1)}
     (out / "done.json").write_text(json.dumps(info, indent=1))
     return info
@@ -182,6 +187,8 @@ def main():
     ap.add_argument("--background", type=int, default=3000)
     ap.add_argument("--protocol-cap", type=int, default=5000)
     ap.add_argument("--only", nargs="*")
+    ap.add_argument("--update", action="store_true",
+                    help="only add creations.parquet / exclusion counts to existing day extracts")
     a = ap.parse_args()
     incs = D.load_incidents(a.root)
     all_mainnet = D.load_incidents(a.root, price_only=False)
@@ -198,6 +205,16 @@ def main():
     if a.only:
         days = {d: v for d, v in days.items() if d in a.only}
     print(len(incs), "incidents on", len(days), "days")
+    if a.update:
+        dates = sorted(p.parent.name for p in OUT.glob("*/done.json"))
+        txs_of = {}
+        for i in incs:
+            for dd in (-1, 0, 1):
+                txs_of.setdefault(str((pd.Timestamp(i.date) + pd.Timedelta(days=dd)).date()), set()).update(i.txs)
+        with ProcessPoolExecutor(a.workers) as ex:
+            for d, j in [(d, ex.submit(update_day, d, exclude_all - txs_of.get(d, set()))) for d in dates]:
+                print(d, "excluded:", j.result()["n_excluded_other_exploits"], flush=True)
+        return
     jobs = []
     with ProcessPoolExecutor(a.workers) as ex:
         for d, txs in sorted(days.items()):

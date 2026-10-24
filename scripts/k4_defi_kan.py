@@ -33,8 +33,10 @@ Protocol (fixed before the run)
   `has_flash * max_price_move`. Neural models and trees: 5 seeds.
 * AP = sklearn `average_precision_score` (non-interpolated). Reported on the
   kept sample (hard negatives at full weight) and population-weighted with
-  the sampling weights. 90 % intervals: bootstrap over test incident days
-  (2,000 resamples) for the seed-averaged scores.
+  the sampling weights, each with its base rate. Point estimate: mean over
+  seeds of the per-seed AP; 90 % interval: bootstrap over test incident days
+  (2,000 resamples), recomputing the same seed mean in every resample. The
+  AP of the seed-averaged score is reported separately.
 * Alarm budget: 1 and 10 alarms per day. The threshold is a conservative value
   among the observed validation scores whose weighted alarms per day on the
   validation days do not exceed the budget; the achieved rate is reported.
@@ -59,7 +61,7 @@ Usage
     python scripts/k4_extract_days.py --workers 3
     python scripts/k4_defi_kan.py --seeds 5
     # models only, from the committed feature table (no AWS access needed):
-    python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261023_200340/features.parquet
+    python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261024_080035/features.parquet
 """
 
 from __future__ import annotations
@@ -86,6 +88,7 @@ from bal.utils.repro import dump_json, set_seed, write_manifest          # noqa:
 DERIVED = Path("data/derived/k4")
 TRAIN_END, VAL_END = "2023-12-31", "2024-12-31"
 BUDGETS = (1, 10)
+N_PERM = 20
 LOG_COLS = ["n_flash", "flash_to_pool", "n_pools", "n_contracts", "n_logs", "n_tokens", "gas_used",
             "nonce", "value_eth", "max_price_move", "net_price_move"]
 
@@ -151,15 +154,29 @@ def make(name, seed, h, prep="quantile"):
     return TorchClassifier("mlp", hidden=(h,), seed=seed, prep=prep)
 
 
-def boot_ci(df, s, n=2000, seed=0, weighted=False):
+def boot_ci(df, ss, n=2000, seed=0, weighted=False):
+    """90 % interval of the seed-mean AP, resampling days (the same days for every seed).
+
+    `ss` is one score vector or a list of per-seed score vectors; the statistic
+    is the mean over seeds of the AP, i.e. the same quantity as the point
+    estimate `mean of per-seed AP`.
+    """
+    ss = [ss] if isinstance(ss, np.ndarray) and ss.ndim == 1 else list(ss)
     rng = np.random.default_rng(seed)
     days = df.day.unique()
     idx = {d: np.flatnonzero(df.day.to_numpy() == d) for d in days}
+    y, w = df.y.to_numpy(), df.weight.to_numpy()
     vals = []
     for _ in range(n):
         ii = np.concatenate([idx[d] for d in rng.choice(days, len(days))])
-        vals.append(ap(df.y.to_numpy()[ii], s[ii], df.weight.to_numpy()[ii] if weighted else None))
+        vals.append(np.mean([ap(y[ii], s[ii], w[ii] if weighted else None) for s in ss]))
     return [float(np.nanpercentile(vals, 5)), float(np.nanpercentile(vals, 95))]
+
+
+def base_rate(df, weighted=False):
+    """AP of a random ranking: the (weighted) share of attacks."""
+    w = df.weight.to_numpy() if weighted else np.ones(len(df))
+    return float((w * df.y.to_numpy()).sum() / w.sum())
 
 
 def main():
@@ -245,8 +262,11 @@ def main():
     ci = {}
     tdf = df[te].reset_index(drop=True)
     for name in names:
-        s_mean = np.mean([v[te] for k, v in scores.items() if k.rsplit("_", 1)[0] == name], axis=0)
-        ci[name] = {"test_ap_ci90": boot_ci(tdf, s_mean, a.boot), "test_ap_weighted_ci90": boot_ci(tdf, s_mean, a.boot, weighted=True),
+        per_seed = [v[te] for k, v in scores.items() if k.rsplit("_", 1)[0] == name]
+        s_mean = np.mean(per_seed, axis=0)
+        ci[name] = {"test_ap_ci90": boot_ci(tdf, per_seed, a.boot),
+                    "test_ap_weighted_ci90": boot_ci(tdf, per_seed, a.boot, weighted=True),
+                    "test_base_rate": base_rate(tdf), "test_base_rate_weighted": base_rate(tdf, weighted=True),
                     "seed_mean_score_test_ap": ap(tdf.y.to_numpy(), s_mean),
                     "median_day_rank": float(R[R.model == name].groupby("hash")["rank"].mean().median())}
     agg = agg.join(pd.DataFrame(ci).T)
@@ -259,19 +279,29 @@ def main():
     oof = {n: np.zeros(len(df)) for n in names}
     for name in names:
         seeds = [0] if name in ("rule", "logreg") else range(min(3, a.seeds))
-        acc = np.zeros(len(df))
+        per_seed = []
         for seed in seeds:
+            s_oof = np.zeros(len(df))
             if name == "rule":
-                acc += (df.has_flash * df.max_price_move).to_numpy(float)
-                continue
-            for k, (i_tr, i_te) in enumerate(GroupKFold(a.folds).split(X, y, g)):
-                set_seed(seed)
-                mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[i_tr], y[i_tr])
-                acc[i_te] += mdl.predict_score(X[i_te])
-        oof[name] = acc / len(seeds)
+                s_oof = (df.has_flash * df.max_price_move).to_numpy(float)
+            else:
+                for k, (i_tr, i_te) in enumerate(GroupKFold(a.folds).split(X, y, g)):
+                    set_seed(seed)
+                    mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[i_tr], y[i_tr])
+                    s_oof[i_te] = mdl.predict_score(X[i_te])
+            per_seed.append(s_oof)
+        oof[name] = np.mean(per_seed, axis=0)
         rk = day_ranks(df, oof[name])
-        lpo.append({"model": name, "seeds": len(seeds), "ap": ap(y, oof[name]), "ap_weighted": ap(y, oof[name], w),
-                    "ap_ci90": boot_ci(df, oof[name], a.boot), "median_day_rank": float(rk["rank"].median()),
+        # out-of-fold AP per seed, averaged over seeds (point and interval);
+        # the AP of the seed-averaged OOF score is reported as `ensemble_ap`
+        lpo.append({"model": name, "seeds": len(seeds),
+                    "ap": float(np.mean([ap(y, s_) for s_ in per_seed])),
+                    "ap_ci90": boot_ci(df, per_seed, a.boot),
+                    "ap_weighted": float(np.mean([ap(y, s_, w) for s_ in per_seed])),
+                    "ap_weighted_ci90": boot_ci(df, per_seed, a.boot, weighted=True),
+                    "base_rate": base_rate(df), "base_rate_weighted": base_rate(df, weighted=True),
+                    "ensemble_ap": ap(y, oof[name]),
+                    "median_day_rank": float(rk["rank"].median()),
                     "share_rank_le_10": float((rk["rank"] <= 10).mean())})
         print(lpo[-1], flush=True)
     pd.DataFrame(lpo).to_csv(run / "leave_protocol_out.csv", index=False)
@@ -286,6 +316,15 @@ def main():
     Zv = km._prep(X[va])
     base_ap = ap(y[va], km.predict_score(X[va]))
     rng = np.random.default_rng(0)
+    # permutation importance: one computation for every feature, N_PERM
+    # permutations each (with 9 validation attacks one permutation is noisy)
+    perm = np.zeros((N_PERM, d))
+    for r_ in range(N_PERM):
+        for j in range(d):
+            Xp = X[va].copy()
+            Xp[:, j] = Xp[rng.permutation(len(Xp)), j]
+            perm[r_, j] = base_ap - ap(y[va], km.predict_score(Xp))
+    perm_mean, perm_sd = perm.mean(0), perm.std(0, ddof=1)
     ef_rows, chk = [], []
     # second-layer slopes at the validation hidden activations: the sign and
     # weight with which each hidden unit passes a first-layer edge to the logit
@@ -306,26 +345,19 @@ def main():
         # raw feature value at each grid point (validation rows with the nearest transformed value)
         order = np.argsort(Zv[:, j])
         raw_at = df[FEATURES[j]].to_numpy()[va][order][np.clip(np.searchsorted(Zv[order, j], xs), 0, len(order) - 1)]
-        drops = []
-        for _ in range(3):
-            Xp = X[va].copy()
-            Xp[:, j] = Xp[rng.permutation(len(Xp)), j]
-            drops.append(base_ap - ap(y[va], km.predict_score(Xp)))
         chk.append({"feature": FEATURES[j], "relevance": float(rel[j]),
                     "spearman_edge_vs_partial_dependence": float(spearmanr(edge, pdp)[0]),
                     "spearman_unweighted_edge_sum_vs_pd": float(spearmanr(edge_raw, pdp)[0]),
-                    "permutation_ap_drop_val": float(np.mean(drops))})
+                    "permutation_ap_drop_val": float(perm_mean[j]),
+                    "permutation_ap_drop_val_sd": float(perm_sd[j])})
         ef_rows += [{"feature": FEATURES[j], "z": float(x), "raw_value": float(rv), "edge_path": float(e),
                      "edge_sum_unweighted": float(er), "partial_dependence_logit": p}
                     for x, rv, e, er, p in zip(xs, raw_at, edge, edge_raw, pdp)]
-    allperm = []
-    for j in range(d):
-        Xp = X[va].copy()
-        Xp[:, j] = Xp[rng.permutation(len(Xp)), j]
-        allperm.append(base_ap - ap(y[va], km.predict_score(Xp)))
-    summary["kan_relevance_vs_permutation_spearman"] = float(spearmanr(rel, allperm)[0])
+    summary["kan_relevance_vs_permutation_spearman"] = float(spearmanr(rel, perm_mean)[0])
     summary["kan_relevance"] = dict(zip(FEATURES, map(float, rel)))
-    summary["kan_permutation_ap_drop_val"] = dict(zip(FEATURES, map(float, allperm)))
+    summary["kan_permutation_ap_drop_val"] = dict(zip(FEATURES, map(float, perm_mean)))
+    summary["kan_permutation_ap_drop_val_sd"] = dict(zip(FEATURES, map(float, perm_sd)))
+    summary["n_permutations"] = N_PERM
     pd.DataFrame(ef_rows).to_csv(run / "kan_edge_functions.csv", index=False)
     pd.DataFrame(chk).to_csv(run / "kan_edge_checks.csv", index=False)
     summary["edge_checks"] = chk

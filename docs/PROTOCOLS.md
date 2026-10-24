@@ -112,12 +112,20 @@ amount of leakage.
   budget; achieved validation and test rates are reported
   (`thresholds.csv`, `temporal_summary.csv`).
 * AP = sklearn `average_precision_score`, on the kept rows and
-  population-weighted; 90 % intervals by bootstrap over test days
-  (2,000 resamples) of the seed-averaged score. Rank of an attack among its
+  population-weighted, each with its base rate. Point estimate: mean over
+  seeds of the per-seed AP (leave-protocol-out: of the per-seed out-of-fold
+  AP); 90 % interval: bootstrap over days (2,000 resamples) recomputing the
+  same seed mean in each resample. The AP of the seed-averaged score is
+  reported separately (`seed_mean_score_test_ap`, `ensemble_ap`). Rank of an attack among its
   day's weighted transactions, ties counted half.
 * KAN edge check: signed edge path (first-layer function × mean slope of the
   second-layer function, summed over hidden units) against partial dependence
-  of the logit on validation rows, and relevance against permutation AP drop.
+  of the logit on validation rows, and relevance against permutation AP drop
+  (mean and SD of 20 permutations per feature).
+* Features never read the stratum or the label: `has_flash` uses the same
+  rule for every transaction (`bal.data.defi.flash_hashes`), and creation of
+  the called contract counts only before the transaction's (block, index).
+  `tests/test_defi_features.py` checks both.
 
 ## B — Cross-chain bridge outflows
 
