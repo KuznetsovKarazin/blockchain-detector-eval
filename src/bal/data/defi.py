@@ -16,7 +16,10 @@ kept as a positive when
   (etherscan, Phalcon / BlockSec explorer, or an "Attack Tx" line).
 
 The README heading, not the code, decides the type, so the selection does not
-look at the transactions it will later score. Every linked transaction is a
+look at the transactions it will later score. The result is a keyword-selected
+cohort of exploits involving flash loans, not a set of verified
+price-manipulation attacks: a heading can mention a price for another flaw
+(the cohort includes a rounding bug). Every linked transaction is a
 candidate positive; `attack_rows` keeps those that are found on the incident
 day (or the day before / after) and succeeded.
 
@@ -33,6 +36,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 DEFAULT_ROOT = Path("data/raw/DeFiHackLabs")
@@ -74,7 +78,7 @@ def _headings(root: Path) -> dict[str, tuple[str, set[str]]]:
 
 
 def load_incidents(root: str | Path = DEFAULT_ROOT, price_only: bool = True) -> list[Incident]:
-    """Ethereum flash-loan incidents (price / oracle manipulation if `price_only`)."""
+    """Ethereum incidents whose PoC uses a flash loan (price / oracle keyword in the heading if `price_only`)."""
     root = Path(root)
     heads = _headings(root)
     out = []
@@ -151,14 +155,43 @@ def words(data: str) -> list[int]:
     return [int(h[i:i + 64], 16) for i in range(0, len(h) - 63, 64)]
 
 
-def flash_hashes(logs: pd.DataFrame, transfers: pd.DataFrame, v2_pairs: set[str]) -> set[str]:
+def chain_key(block, log_index):
+    """Total order of events within a day: block, then log index (int64)."""
+    return np.asarray(block, dtype=np.int64) * 1_000_000 + np.asarray(log_index, dtype=np.int64)
+
+
+def pair_tokens(tt: pd.DataFrame, v2: set[str]) -> pd.DataFrame:
+    """First transfer of every token into or out of a V2 pool that day.
+
+    One row per (pair, token) with the block and log index of the first such
+    transfer; the pool's own LP token is left out. The features rebuild the
+    token pair of a pool at a transaction from the rows up to the end of that
+    transaction only (`bal.features.defi_features.causal_pairs`), so a later
+    transfer cannot change the map seen by an earlier transaction.
+    """
+    cols = ["token_address", "block_number", "log_index"]
+    p = pd.concat([tt[tt.from_address.isin(v2)][["from_address", *cols]].rename(columns={"from_address": "pair"}),
+                   tt[tt.to_address.isin(v2)][["to_address", *cols]].rename(columns={"to_address": "pair"})])
+    p = p.rename(columns={"token_address": "token"})
+    p = p[p.pair != p.token].sort_values(["block_number", "log_index"], kind="stable")
+    return p.drop_duplicates(["pair", "token"]).reset_index(drop=True)
+
+
+def flash_hashes(logs: pd.DataFrame, transfers: pd.DataFrame, v2_pairs: set[str],
+                 v2_since: pd.Series | None = None, tx_end: pd.Series | None = None) -> set[str]:
     """Transactions with a flash loan, by one rule for every transaction.
 
     * a flash-loan event (`FLASH_TOPICS`);
     * dYdX SoloMargin `Withdraw` and `Deposit` in the same transaction;
     * a Uniswap V2 flash swap: in a transaction with a V2 `Swap`, a V2 pair
-      (`v2_pairs`, the emitters of `Sync` that day, or an emitter of a V2
-      `Swap` in `logs`) transfers a token out before any transfer into it.
+      transfers a token out before any transfer into it.
+
+    A V2 pair is an emitter of a V2 `Swap` in the same transaction or, without
+    `v2_since`, any emitter of `Sync` that day (`v2_pairs`; used by the
+    extraction to form the sampling strata). With `v2_since` (first `Sync`
+    of each pool as `chain_key`) and `tx_end` (`chain_key` of the last log of
+    each transaction) a pool counts only if its first `Sync` is not later
+    than the end of the transaction: the causal rule of the features.
 
     `logs` needs transaction_hash, address, topic0; `transfers` needs
     transaction_hash, from_address, to_address, log_index.
@@ -169,10 +202,23 @@ def flash_hashes(logs: pd.DataFrame, transfers: pd.DataFrame, v2_pairs: set[str]
         set(dy.loc[dy.topic0 == T_DYDX_DEPOSIT, "transaction_hash"])
     swaps = logs[logs.topic0 == T_SWAP_V2]
     swap_tx = set(swaps.transaction_hash)
-    v2_pairs = set(v2_pairs) | set(swaps.address)       # V2-style pools without a Sync count too
     t = transfers[transfers.transaction_hash.isin(swap_tx)]
-    first_out = t[t.from_address.isin(v2_pairs)].groupby(["transaction_hash", "from_address"]).log_index.min()
-    first_in = t[t.to_address.isin(v2_pairs)].groupby(["transaction_hash", "to_address"]).log_index.min()
+    if v2_since is None:
+        v2_pairs = set(v2_pairs) | set(swaps.address)       # V2-style pools without a Sync count too
+        first_out = t[t.from_address.isin(v2_pairs)].groupby(["transaction_hash", "from_address"]).log_index.min()
+        first_in = t[t.to_address.isin(v2_pairs)].groupby(["transaction_hash", "to_address"]).log_index.min()
+    else:
+        own = pd.MultiIndex.from_frame(swaps[["transaction_hash", "address"]].drop_duplicates())
+
+        def is_v2(tx, pair):
+            since = pair.map(v2_since).fillna(np.inf).to_numpy(float)
+            end = tx.map(tx_end).fillna(-np.inf).to_numpy(float)
+            return (since <= end) | pd.MultiIndex.from_arrays([tx, pair]).isin(own)
+
+        first_out = t[is_v2(t.transaction_hash, t.from_address)].groupby(
+            ["transaction_hash", "from_address"]).log_index.min()
+        first_in = t[is_v2(t.transaction_hash, t.to_address)].groupby(
+            ["transaction_hash", "to_address"]).log_index.min()
     first_out.index.names = first_in.index.names = ["tx", "pair"]
     j = pd.concat([first_out.rename("o"), first_in.rename("i")], axis=1).dropna()
     out |= set(j[j.o < j.i].index.get_level_values("tx"))

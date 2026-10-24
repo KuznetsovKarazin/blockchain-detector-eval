@@ -82,18 +82,18 @@ smartbugs,data/raw/smartbugs-curated/dataset/reentrancy/etherstore.sol,0.4.26,ok
 smartbugs,data/raw/smartbugs-curated/dataset/reentrancy/modifier_reentrancy.sol,0.4.26,ok,0.4.26:ok,False,0.37817859649658203,,0.4.26,reentrancy-no-eth
 smartbugs,data/raw/smartbugs-curated/dataset/reentrancy/reentrance.sol,0.4.26,ok,0.4.26:ok,False,0.8008713722229004,,0.4.26,reentrancy-eth
 smartbugs,data/raw/smartbugs-curated/dataset/reentrancy/reentrancy_bonus.sol,0.4.26,tool_error,0.4.26:tool_error,False,0.49810218811035156,"~~~~~~~~~~~^^^^^^^^^^^^
-  File ""/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/expression.py"", line 251, in _post_visit
+  File ""<venv>/lib/python3.13/site-packages/slither/visitors/expression/expression.py"", line 251, in _post_visit
     self._post_assignement_operation(expression)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File ""/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/slithir/expression_to_slithir.py"", line 213, in _post_assignement_operation
+  File ""<venv>/lib/python3.13/site-packages/slither/visitors/slithir/expression_to_slithir.py"", line 213, in _post_assignement_operation
     assert isinstance(right, TupleVariable)
            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
 AssertionError",0.4.26,
 smartbugs,data/raw/smartbugs-curated/dataset/reentrancy/reentrancy_cross_function.sol,0.4.26,tool_error,0.4.26:tool_error,False,0.36687326431274414,"~~~~~~~~~~~^^^^^^^^^^^^
-  File ""/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/expression.py"", line 251, in _post_visit
+  File ""<venv>/lib/python3.13/site-packages/slither/visitors/expression/expression.py"", line 251, in _post_visit
     self._post_assignement_operation(expression)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File ""/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/slithir/expression_to_slithir.py"", line 213, in _post_assignement_operation
+  File ""<venv>/lib/python3.13/site-packages/slither/visitors/slithir/expression_to_slithir.py"", line 213, in _post_assignement_operation
     assert isinstance(right, TupleVariable)
            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
 AssertionError",0.4.26,
@@ -133,10 +133,10 @@ smartbugs,data/raw/smartbugs-curated/dataset/unchecked_low_level_calls/0x806a6bd
 smartbugs,data/raw/smartbugs-curated/dataset/unchecked_low_level_calls/0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol,0.4.26,ok,0.4.26:ok,False,0.41146183013916016,,0.4.26,controlled-array-length;missing-zero-check;shadowing-local;unchecked-lowlevel
 smartbugs,data/raw/smartbugs-curated/dataset/unchecked_low_level_calls/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol,0.4.26,tool_error,0.4.26:tool_error,False,0.47220778465270996," self._post_visit(expression)
     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File ""/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/expression.py"", line 254, in _post_visit
+  File ""<venv>/lib/python3.13/site-packages/slither/visitors/expression/expression.py"", line 254, in _post_visit
     self._post_binary_operation(expression)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File ""/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/constants_folding.py"", line 215, in _post_binary_operation
+  File ""<venv>/lib/python3.13/site-packages/slither/visitors/expression/constants_folding.py"", line 215, in _post_binary_operation
     raise NotConstant
 slither.visitors.expression.constants_folding.NotConstant",0.4.26,
 smartbugs,data/raw/smartbugs-curated/dataset/unchecked_low_level_calls/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol,0.4.26,ok,0.4.26:ok,False,0.40499114990234375,,0.4.26,incorrect-modifier;locked-ether;missing-zero-check;shadowing-state;unchecked-lowlevel

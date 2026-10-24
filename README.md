@@ -35,7 +35,7 @@ manifest under `results/`.
 **Contents:** [Who this is for](#who-this-is-for) · [Results](#results) ·
 [What this project does NOT claim](#what-this-project-does-not-claim) ·
 [Quick start](#quick-start) · [Repository layout](#repository-layout) ·
-[Reviews](#reviews) · [Citation](#citation) · [References](#references) ·
+[Changes](#changes) · [Citation](#citation) · [References](#references) ·
 [License](#license)
 
 ---
@@ -279,21 +279,19 @@ src/bal/
   utils/      repro.py (seeds, manifests, atomic writes)
 scripts/      00_fetch_data.py, b*_ (bridges), c*_ (contracts), t*_ (transactions), k*_ (KAN, DeFi)
 results/      one folder per run: metrics, folds, per-row scores where small, manifest
-docs/         PROTOCOLS.md, DATA.md, FINDINGS_*.md, AUDIT_RESPONSE.md
+docs/         PROTOCOLS.md, DATA.md, FINDINGS_*.md, archive/ (earlier review notes)
 tests/        GNN isolation, near-duplicates, thresholds and ties, loss accounting,
               causal features, label shift, KAN/LUT exactness, solc selection, aggregation
 ```
 
-## Reviews
+## Changes
 
-Three independent read-only reviews (2026-10-22) found defects in GAT
-attention, near-duplicate grouping, threshold and rank ties, compiler
-selection, price timing, repeated aggregation and manifest coverage, and
-several interpretations stronger than the evidence. All were fixed or
-reworded and the affected experiments re-run.
-[docs/AUDIT_RESPONSE.md](docs/AUDIT_RESPONSE.md) lists each finding, the fix,
-its test and the old → new numbers; [results/README.md](results/README.md)
-lists the current and superseded runs.
+[CHANGELOG.md](CHANGELOG.md) lists each release: defects found and fixed,
+the regression tests that cover them and the runs that were repeated.
+[results/README.md](results/README.md) lists the current and superseded runs;
+the large superseded K4 runs are kept only in the release that produced them.
+Earlier review notes are kept in
+[docs/archive/AUDIT_RESPONSE.md](docs/archive/AUDIT_RESPONSE.md).
 
 ## Citation
 
@@ -301,9 +299,10 @@ lists the current and superseded runs.
 @software{blockchain_detector_eval,
   title  = {blockchain-detector-eval: When Can You Trust a Blockchain
             Anomaly Detector, and What Does It Cost to Run?},
-  author = {Kuznetsov, Oleksandr},
-  year   = {2026},
-  url    = {https://github.com/KuznetsovKarazin/blockchain-detector-eval}
+  author  = {Kuznetsov, Oleksandr},
+  year    = {2026},
+  version = {0.6.0},
+  url     = {https://github.com/KuznetsovKarazin/blockchain-detector-eval}
 }
 ```
 

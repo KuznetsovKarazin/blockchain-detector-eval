@@ -1,7 +1,13 @@
 """
-K4  Can a KAN flag flash-loan price-manipulation exploits among the
-transactions of the same day, at an alarm budget per day, and do its edge
-functions say why?
+K4  Can a KAN flag the attack transactions of a keyword-selected cohort of
+DeFi exploits involving flash loans among the transactions of the same day,
+at an alarm budget per day, and do its edge functions say why?
+
+The cohort is the selection rule of `bal.data.defi.load_incidents`: mainnet
+PoC with a flash loan whose README heading contains a price / oracle
+keyword. The heading decides, not a check of the attack mechanics, so the
+cohort is not a set of verified price-manipulation attacks (it includes, for
+example, a rounding bug whose heading mentions a price).
 
 Data: incident days from `k4_extract_days.py` (DeFiHackLabs @23c7bd8 incidents,
 AWS Ethereum transactions / logs / token transfers). Positives are the linked
@@ -26,8 +32,11 @@ Protocol (fixed before the run)
   test 2025-2026. Features are transformed by log1p (signed for profit);
   MLP / KAN input normalisation (quantile or robust) is chosen on validation
   AP, per model.
-* Leave-protocol-out: 8 folds grouped by incident day (no incident in train
-  and test), out-of-fold scores, threshold-free metrics only.
+* Leave-days-out: 8 folds grouped by incident day (no incident day in both
+  train and test; the grouping key is the day, not the protocol), out-of-fold
+  scores, threshold-free metrics only. MLP / KAN normalisation is re-chosen
+  inside every outer fold on an inner day-grouped split of its training rows
+  (`choose_prep`), never on labels of the held-out days.
 * Models: logistic regression, random forest, LightGBM, MLP [d, h, 1] with the
   parameter count of the KAN [d, 8, 1] (grid 5), the rule score
   `has_flash * max_price_move`. Neural models and trees: 5 seeds.
@@ -154,6 +163,24 @@ def make(name, seed, h, prep="quantile"):
     return TorchClassifier("mlp", hidden=(h,), seed=seed, prep=prep)
 
 
+def choose_prep(name, h, X, y, groups, idx, inner_folds=4):
+    """Normalisation of an MLP / KAN chosen on the training rows `idx` only.
+
+    The rows are split by day (GroupKFold, first split of `inner_folds`); both
+    normalisations are fitted with seed 0 on the inner training days and
+    compared by AP on the inner validation days (ties: quantile).
+    """
+    i_fit, i_val = next(GroupKFold(inner_folds).split(X[idx], y[idx], groups[idx]))
+    i_fit, i_val = idx[i_fit], idx[i_val]
+    res = {}
+    for p in ("quantile", "robust"):
+        set_seed(0)
+        mdl = make(name, 0, h, p).fit(X[i_fit], y[i_fit])
+        res[p] = ap(y[i_val], mdl.predict_score(X[i_val]))
+    best = max(res, key=lambda k: (np.nan_to_num(res[k], nan=-1), k == "quantile"))
+    return best, res, sorted(set(groups[i_val]))
+
+
 def boot_ci(df, ss, n=2000, seed=0, weighted=False):
     """90 % interval of the seed-mean AP, resampling days (the same days for every seed).
 
@@ -273,8 +300,20 @@ def main():
     agg.to_csv(run / "temporal_summary.csv")
     print(agg.round(3).to_string(), flush=True)
 
-    # ---- leave-protocol-out --------------------------------------------------
+    # ---- leave-days-out (folds grouped by incident day) -----------------------
+    # The MLP / KAN normalisation is chosen again inside every outer fold, on an
+    # inner day-grouped split of that fold's training rows only, so no label of
+    # a held-out day enters any choice made for it (`prep_choice_by_fold.csv`).
     g = df.day.to_numpy()
+    outer = list(GroupKFold(a.folds).split(X, y, g))
+    fold_prep, prep_rows = {}, []
+    for m in ("mlp", "kan"):
+        for k, (i_tr, _) in enumerate(outer):
+            p_k, res_k, inner_days = choose_prep(m, h, X, y, g, i_tr)
+            fold_prep[(m, k)] = p_k
+            prep_rows.append({"model": m, "fold": k, "prep": p_k, "inner_val_days": ";".join(inner_days),
+                              **{f"inner_val_ap_{p}": v for p, v in res_k.items()}})
+    pd.DataFrame(prep_rows).to_csv(run / "prep_choice_by_fold.csv", index=False)
     lpo = []
     oof = {n: np.zeros(len(df)) for n in names}
     for name in names:
@@ -285,9 +324,9 @@ def main():
             if name == "rule":
                 s_oof = (df.has_flash * df.max_price_move).to_numpy(float)
             else:
-                for k, (i_tr, i_te) in enumerate(GroupKFold(a.folds).split(X, y, g)):
+                for k, (i_tr, i_te) in enumerate(outer):
                     set_seed(seed)
-                    mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[i_tr], y[i_tr])
+                    mdl = make(name, seed, h, fold_prep.get((name, k), "quantile")).fit(X[i_tr], y[i_tr])
                     s_oof[i_te] = mdl.predict_score(X[i_te])
             per_seed.append(s_oof)
         oof[name] = np.mean(per_seed, axis=0)
@@ -304,7 +343,7 @@ def main():
                     "median_day_rank": float(rk["rank"].median()),
                     "share_rank_le_10": float((rk["rank"] <= 10).mean())})
         print(lpo[-1], flush=True)
-    pd.DataFrame(lpo).to_csv(run / "leave_protocol_out.csv", index=False)
+    pd.DataFrame(lpo).to_csv(run / "leave_days_out.csv", index=False)
 
     # ---- KAN edge functions vs perturbation ----------------------------------
     import torch

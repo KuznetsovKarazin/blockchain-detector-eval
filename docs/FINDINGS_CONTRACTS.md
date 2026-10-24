@@ -1,6 +1,6 @@
 # C — What smart-contract vulnerability benchmarks measure
 
-Current runs (after the audit fixes of 2026-10-22, see [AUDIT_RESPONSE.md](AUDIT_RESPONSE.md)):
+Current runs (after the audit fixes of 2026-10-22, see [archive/AUDIT_RESPONSE.md](archive/AUDIT_RESPONSE.md)):
 
 * `results/contracts/c1_20261022_141306`: corpus audit with the order-invariant
   near-duplicate grouping (replaces the first run of 2026-10-21: DAppSCAN

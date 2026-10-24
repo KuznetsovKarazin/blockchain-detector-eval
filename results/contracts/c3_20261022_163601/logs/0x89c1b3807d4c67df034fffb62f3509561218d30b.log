@@ -88,59 +88,59 @@ data/raw/smartbugs-curated/dataset/unchecked_low_level_calls/0x89c1b3807d4c67df0
                           ^-----^
 
 Traceback (most recent call last):
-  File "/tmp/claude-0/venv2/bin/slither", line 6, in <module>
+  File "<venv>/bin/slither", line 6, in <module>
     sys.exit(main())
              ~~~~^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 815, in main
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 815, in main
     main_impl(all_detector_classes=detectors, all_printer_classes=printers)
     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 936, in main_impl
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 936, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 111, in process_all
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 111, in process_all
     ) = process_single(compilation, args, detector_classes, printer_classes)
         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 80, in process_single
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 80, in process_single
     slither = Slither(target, ast_format=ast, **vars(args))
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/slither.py", line 197, in __init__
+  File "<venv>/lib/python3.13/site-packages/slither/slither.py", line 197, in __init__
     self._init_parsing_and_analyses(kwargs.get("skip_analyze", False))
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/slither.py", line 211, in _init_parsing_and_analyses
+  File "<venv>/lib/python3.13/site-packages/slither/slither.py", line 211, in _init_parsing_and_analyses
     raise e
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/slither.py", line 207, in _init_parsing_and_analyses
+  File "<venv>/lib/python3.13/site-packages/slither/slither.py", line 207, in _init_parsing_and_analyses
     parser.parse_contracts()
     ~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 577, in parse_contracts
+  File "<venv>/lib/python3.13/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 577, in parse_contracts
     self._analyze_third_part(contracts_to_be_analyzed, libraries)
     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 696, in _analyze_third_part
+  File "<venv>/lib/python3.13/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 696, in _analyze_third_part
     self._analyze_variables_modifiers_functions(contract)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 802, in _analyze_variables_modifiers_functions
+  File "<venv>/lib/python3.13/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 802, in _analyze_variables_modifiers_functions
     contract.analyze_state_variables()
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/solc_parsing/declarations/contract.py", line 633, in analyze_state_variables
+  File "<venv>/lib/python3.13/site-packages/slither/solc_parsing/declarations/contract.py", line 633, in analyze_state_variables
     var_parser.analyze(self)
     ~~~~~~~~~~~~~~~~~~^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/solc_parsing/variables/variable_declaration.py", line 203, in analyze
+  File "<venv>/lib/python3.13/site-packages/slither/solc_parsing/variables/variable_declaration.py", line 203, in analyze
     self._variable.type = parse_type(self._elem_to_parse, caller_context)
                           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/solc_parsing/solidity_types/type_parsing.py", line 444, in parse_type
+  File "<venv>/lib/python3.13/site-packages/slither/solc_parsing/solidity_types/type_parsing.py", line 444, in parse_type
     return ArrayType(array_type, length)
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/core/solidity_types/array_type.py", line 32, in __init__
+  File "<venv>/lib/python3.13/site-packages/slither/core/solidity_types/array_type.py", line 32, in __init__
     cf = ConstantFolding(length, "uint256")
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/constants_folding.py", line 59, in __init__
+  File "<venv>/lib/python3.13/site-packages/slither/visitors/expression/constants_folding.py", line 59, in __init__
     super().__init__(expression)
     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/expression.py", line 58, in __init__
+  File "<venv>/lib/python3.13/site-packages/slither/visitors/expression/expression.py", line 58, in __init__
     self._visit_expression(self.expression)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/expression.py", line 77, in _visit_expression
+  File "<venv>/lib/python3.13/site-packages/slither/visitors/expression/expression.py", line 77, in _visit_expression
     self._post_visit(expression)
     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/expression.py", line 254, in _post_visit
+  File "<venv>/lib/python3.13/site-packages/slither/visitors/expression/expression.py", line 254, in _post_visit
     self._post_binary_operation(expression)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/visitors/expression/constants_folding.py", line 215, in _post_binary_operation
+  File "<venv>/lib/python3.13/site-packages/slither/visitors/expression/constants_folding.py", line 215, in _post_binary_operation
     raise NotConstant
 slither.visitors.expression.constants_folding.NotConstant

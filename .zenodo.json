@@ -1,0 +1,36 @@
+{
+  "upload_type": "software",
+  "title": "blockchain-detector-eval: when can you trust a blockchain anomaly detector, and what does it cost to run?",
+  "creators": [
+    {
+      "name": "Kuznetsov, Oleksandr",
+      "orcid": "0000-0003-2331-6326",
+      "affiliation": "eCampus University, Novedrate (CO), Italy; V.N. Karazin Kharkiv National University, Kharkiv, Ukraine"
+    }
+  ],
+  "description": "<p>Evaluation code and results for blockchain anomaly detectors under realistic protocols: cross-chain bridge exploits (XChainWatcher), smart-contract vulnerability benchmarks (SmartBugs-curated, SolidiFI, DAppSCAN), temporal and address-disjoint evaluation on the Elliptic transaction graph, Kolmogorov–Arnold networks against same-size MLPs including LUT inference, and flash-loan price-manipulation exploits on Ethereum (DeFiHackLabs, AWS public blockchain data). Every number comes from a numbered script and is stored with a manifest (code commit, input digests, package versions, configuration).</p><p>Licences: code MIT (LICENSE); documentation and result files CC BY 4.0 (results/LICENSE). Third-party datasets are not redistributed and keep their own terms (docs/DATA.md).</p>",
+  "license": "MIT",
+  "keywords": [
+    "blockchain security",
+    "anomaly detection",
+    "Kolmogorov-Arnold networks",
+    "cross-chain bridges",
+    "smart contract vulnerabilities",
+    "DeFi exploits",
+    "Elliptic dataset",
+    "evaluation methodology"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/KuznetsovKarazin/lut-kan",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.1016/j.neucom.2026.133774",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ],
+  "language": "eng"
+}

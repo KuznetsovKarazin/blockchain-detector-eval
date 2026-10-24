@@ -5,7 +5,7 @@ so that a script cannot be re-run with a silently different protocol. Each run
 writes a manifest (`manifest*.json`) with the git commit, the list of code files
 that differed from it and a SHA-256 of that diff, package versions, SHA-256 of
 the input files and the full CLI configuration. Revisions of a protocol after
-the external audit of 2026-10-22 are listed in [AUDIT_RESPONSE.md](AUDIT_RESPONSE.md).
+the external audit of 2026-10-22 are listed in [archive/AUDIT_RESPONSE.md](archive/AUDIT_RESPONSE.md).
 
 **AUPRC** everywhere in this repository is average precision as computed by
 `sklearn.metrics.average_precision_score` (the non-interpolated step sum
