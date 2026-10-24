@@ -53,6 +53,12 @@ reentrancy 1.7 %, unchecked 1.1 %, timestamp 0.5 % (2.6 / 2.1 / 1.4 / 0.7 % in t
 | arithmetic | 0.119 (pat/RF) | 0.110 | 0.104 | 0.085 | 0.099 | **0.099** |
 | timestamp (33–36 positives) | 0.049 | 0.038 | 0.042 | 0.050 | 0.067 | 0.093 |
 
+Even the best `random` model is a weak screen: among its top 1 % (66 of
+6,587 files) precision is 26–29 % for reentrancy (17–19 of 114 positives),
+17–25 % for unchecked calls and 21–24 % for arithmetic, depending on the seed
+(ties counted in expectation; computed from `oof_scores.parquet` with the
+local labels).
+
 How to read the protocols:
 
 * `safe` does not isolate leakage on DAppSCAN. Near-duplicate components
@@ -147,7 +153,7 @@ true positives over all tie orders where it is not fixed.
 | Class | k | Slither AUPRC | Slither P / R at k | Best model AUPRC | That model's P / R at k |
 |---|---|---|---|---|---|
 | reentrancy | 38 | 0.728 | 0.76 / 0.94 | 0.784 (lex_raw, SolidiFI) | 0.70 / 0.85 (26–27 of 31 found) |
-| unchecked | 57 | 0.885 | 0.90 / 0.98 | 0.733 (pat/RF, DAppSCAN) | 0.64 / 0.71 |
+| unchecked | 57 | 0.885 | 0.89 / 0.98 | 0.733 (pat/RF, DAppSCAN) | 0.64 / 0.71 |
 | timestamp | 23 | 0.217 | 0.22 / 1.00 | 0.586 (lex_norm, SolidiFI) | 0.22 / 1.00 |
 
 For reentrancy the best model ranks better overall (higher AUPRC), yet at

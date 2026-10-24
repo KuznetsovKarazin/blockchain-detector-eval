@@ -214,7 +214,7 @@ points, 2 differ), identical in all five runs; memory 0.24–1.9 MB against
 78.3 / 17.9 µs for LUT / MLP at batch 1.
 
 * LUT vs matched float B-spline (both NumPy): 1.6× faster at batch 1,
-  3.5× at batch 1024. The LUT advantage is real but modest in interpreted code.
+  3.4× at batch 1024. The LUT advantage is real but modest in interpreted code.
 * The matched MLP is 4.2× faster than the LUT-KAN at batch 1 and 31× faster at
   batch 1024 on this CPU. A deployment argument for KAN on Elliptic-scale
   inputs therefore needs compiled LUT kernels (the lut-kan toolchain) or MCU

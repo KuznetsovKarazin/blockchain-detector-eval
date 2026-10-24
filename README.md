@@ -180,7 +180,7 @@ on validation. Details: [docs/FINDINGS_TRANSACTIONS_KAN.md](docs/FINDINGS_TRANSA
   importance (Spearman 0.33–0.39).
 * A lookup-table (LUT) KAN keeps 99.985 % of decisions at 8 points per
   interval with quantile inputs, but only 99.88 % with robust inputs
-  (re-measured on the current float32 LUT code). It is 1.6–3.5× faster than a
+  (re-measured on the current float32 LUT code). It is 1.6–3.4× faster than a
   matched NumPy B-spline KAN, but a same-size MLP is 4.2× (batch 1) to 31×
   (batch 1024) faster still (one thread, median of five runs). Timings cover
   the kernel only; the trained models are saved with the run.
