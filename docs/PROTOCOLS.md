@@ -93,27 +93,32 @@ amount of leakage.
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the
-  selected DeFiHackLabs entries; every other transaction of an incident day
+  keyword-selected DeFiHackLabs entries (README heading names a price or
+  oracle manipulation; the PoC forks mainnet and takes a flash loan); every other transaction of an incident day
   is a negative, in strata (all flash-loan transactions; transactions
   touching the attacked contracts, sampled; uniform background, sampled)
   with weight = stratum population / kept rows. Transactions of other
   DeFiHackLabs exploits are removed.
 * Temporal split by incident date: train ≤ 2023-12-31, validation 2024,
-  test 2025–2026. Leave-protocol-out: GroupKFold(8) by incident day,
+  test 2025–2026. Leave-days-out: GroupKFold(8) by incident day,
   out-of-fold scores, no thresholds.
 * Features are causal at transaction level: pool state before the
   transaction comes from the last state event of an earlier transaction of
   the same day (or, for a V2 pool without one, from its first swap in the
-  transaction). They are available only after the block is mined.
+  transaction), and a V2 pool's token pair from token transfers up to the end
+  of the transaction (`causal_pairs`). They are available only after the block is mined.
 * MLP / KAN input normalisation (quantile or robust) is chosen per model on
-  validation AP; the MLP hidden width matches the KAN parameter count.
+  validation AP for the temporal split, and again inside every leave-days-out
+  fold on an inner day-grouped split of that fold's training days
+  (`prep_choice_by_fold.csv`); the MLP hidden width matches the KAN parameter
+  count.
 * Budgets: 1 and 10 alarms per day. The threshold is a conservative observed
   validation score whose weighted alarms per validation day do not exceed the
   budget; achieved validation and test rates are reported
   (`thresholds.csv`, `temporal_summary.csv`).
 * AP = sklearn `average_precision_score`, on the kept rows and
   population-weighted, each with its base rate. Point estimate: mean over
-  seeds of the per-seed AP (leave-protocol-out: of the per-seed out-of-fold
+  seeds of the per-seed AP (leave-days-out: of the per-seed out-of-fold
   AP); 90 % interval: bootstrap over days (2,000 resamples) recomputing the
   same seed mean in each resample. The AP of the seed-averaged score is
   reported separately (`seed_mean_score_test_ap`, `ensemble_ap`). Rank of an attack among its

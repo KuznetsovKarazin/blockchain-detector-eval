@@ -16,7 +16,7 @@ K4 (DeFi exploits):
   use events of later blocks. Regression tests:
   `test_later_block_changes_no_earlier_feature`,
   `test_pair_map_uses_only_transfers_up_to_the_transaction`.
-* The input transform of MLP and KAN (quantile or standard) is chosen inside
+* The input transform of MLP and KAN (quantile or robust) is chosen inside
   each outer fold of the leave-days-out evaluation by an inner grouped split
   (`prep_choice_by_fold.csv`); up to 0.5.1 it was chosen once on data that
   included the evaluation folds.
@@ -44,7 +44,11 @@ K4 (DeFi exploits):
   On the 331,215 common rows the causal pool metadata changes 4,868 rows
   (1.5 %), almost all in the flash stratum: `n_flash`, `flash_to_pool`, and
   `has_flash` of five transactions; one attack changes (`flash_to_pool`).
-* New run from a clean tree: see `docs/FINDINGS_DEFI.md`. It supersedes
+* New run `k4_20261024_204829` from a clean tree (continued twice with
+  `--resume`; see `docs/FINDINGS_DEFI.md`). Temporal test AP: LightGBM 0.212,
+  random forest 0.209, KAN 0.140, MLP 0.094 (KAN vs MLP inconclusive);
+  held-out days: the MLP falls from 0.146 to 0.066 with its transform chosen
+  inside each fold. It supersedes
   `k4_20261024_080035` (made from a modified working tree whose diff cannot be
   reproduced) and `k4_20261023_200340`.
 

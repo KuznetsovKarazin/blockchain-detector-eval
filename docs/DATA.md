@@ -59,7 +59,7 @@ position of their creating transaction (`creations.parquet`), so that
 `--update` adds this file and the number of removed transactions of other
 exploits to day extracts made before it existed. Prices: Uniswap V2 `Sync` and V3 `Swap` only; the
 USD value of WETH comes from the USDC/WETH V2 pool of the day.
-`python scripts/k4_defi_kan.py --features results/kan/k4_20261024_080035/features.parquet`
+`python scripts/k4_defi_kan.py --features results/kan/k4_20261024_204829/features.parquet`
 re-runs the models without the extraction.
 
 ## Bridge event construction (B)
