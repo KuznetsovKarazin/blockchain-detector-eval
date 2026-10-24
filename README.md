@@ -125,7 +125,7 @@ Details: [docs/FINDINGS_CONTRACTS.md](docs/FINDINGS_CONTRACTS.md).
 | Class | Slither AUPRC | Best transferred model AUPRC | At Slither's alarm count: Slither precision / recall | Model precision / recall |
 |---|---|---|---|---|
 | reentrancy | 0.73 | 0.78 (raw-token TF-IDF, trained on SolidiFI) | 0.76 / 0.94 | 0.70 / 0.85 |
-| unchecked call | 0.89 | 0.74 (pattern RF, trained on DAppSCAN) | 0.90 / 0.98 | 0.61 / 0.67 |
+| unchecked call | 0.89 | 0.73 (pattern RF, trained on DAppSCAN) | 0.90 / 0.98 | 0.64 / 0.71 |
 | timestamp | 0.22 | 0.59 | 0.22 / 1.00 | 0.22 / 1.00 |
 | arithmetic | no detector | 0.54 | — | — |
 
@@ -331,3 +331,4 @@ Code: MIT (`LICENSE`). Results and documentation: CC BY 4.0
 (`results/LICENSE`). The datasets are not redistributed and keep their own
 terms; [docs/DATA.md](docs/DATA.md) lists each source's licence and what the
 result files contain.
+

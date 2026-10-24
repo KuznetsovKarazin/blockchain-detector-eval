@@ -1,0 +1,26 @@
+СТАТЬЯ 1 — ТОЧКА ПРОДОЛЖЕНИЯ
+Дата: 25 октября 2026 года.
+
+Рабочее название: Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation.
+Репозиторий: https://github.com/KuznetsovKarazin/blockchain-detector-eval
+Ветка: paper/security-evaluation
+Исходный книжный commit: 2c2c7723cb9fa42ff46fb6f252652056a74f9223.
+
+Начать с STATUS.md и protocol.json в этом каталоге. Полный авторский исследовательский план: Article_1_2_Research_Plan_2026-10-24.docx, передаваемый автором в новый чат. Самостоятельный полный промпт статьи также предоставляется автору отдельным TXT.
+
+Этот пакет содержит:
+- draft протокола P1.01 (ещё не заморожен);
+- воспроизводимый аудит существующих folds в preflight/;
+- предварительный metadata/provenance inventory внешнего кандидата в external_audit/.
+Новых модельных запусков и external scoring здесь нет.
+
+Главная ближайшая задача — определить пригодные независимые объекты внешнего корпуса и построить fixed-T manifests четырёх training pools. Прежний random_matched остаётся частичным контролем, а прежний cross-corpus — exploratory.
+
+Основные классы: reentrancy, unchecked. Методы: raw/normalized TF-IDF LR, pattern RF/LightGBM, Slither. Нужны один тест T, сопоставимые размер обучения и positives, train-only tuning, показатели при 5/10/20% проверяемых файлов, coverage/errors и статистика по совместным project/clone groups.
+
+Проверенные источники: docs/FINDINGS_CONTRACTS.md, docs/PROTOCOLS.md, docs/DATA.md; C1 c1_20261022_141306, C2 c2_20261024_004314, C3 c3_20261022_163601, C4 c4_20261024_011448. Результаты этих runs не перезаписывать.
+
+Статья 2 (monitoring) ведётся отдельно в blockchain-analytics-lab, paper/monitoring-jss. Резервная DeFi/KAN статья K4 не входит в обязательный объём этой работы.
+
+Общение с автором по-русски, рукопись/код на ясном научном английском. Продолжать реальные данные и код; не подменять неизвестные метки отрицательными, не называть изученные тесты нетронутыми. Сообщать фактически выполненные действия, commit и следующие конкретные шаги. Отправка рукописи и переписки требует отдельного поручения автора.
+

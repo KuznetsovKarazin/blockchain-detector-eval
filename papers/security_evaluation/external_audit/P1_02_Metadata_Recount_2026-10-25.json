@@ -1,0 +1,238 @@
+{
+  "schema": "p1_external_candidate_metadata_recount_v1",
+  "generated_at_utc": "2026-10-24T23:17:52+00:00",
+  "scope": "Within-candidate identity metadata only; no model or annotation evaluation.",
+  "status": "CANDIDATE_ONLY_NOT_INDEPENDENCE_VERIFIED",
+  "input_metadata": {
+    "tree_sha": "6c0d44ef03847129939d14cc612fdfc036cb30fc",
+    "tree_entries": 4364,
+    "tree_truncated": false,
+    "tree_json_sha256": "bad98e1889bb089414e7f977b79be619d32d4a77a1d3cb4496e04262e77f9dd1",
+    "manifest_filename": "sample_of_interest.csv",
+    "manifest_bytes": 199782,
+    "manifest_sha256": "b9e17c5e88188f518491d381b4a2991b5809e8b356e7e861c50e33420d362fb6",
+    "manifest_git_blob_sha": "dc9a94575f28a5202ff7351503e260f76d4834f1",
+    "manifest_matches_git_tree": true
+  },
+  "source_file_count": 2181,
+  "unique_source_git_blobs": 2178,
+  "source_file_counts": {
+    "contracts/sb_results_contracts": {
+      "file_count": 1501,
+      "total_bytes": 20395616
+    },
+    "contracts/smartbugs_curated": {
+      "file_count": 142,
+      "total_bytes": 502451
+    },
+    "contracts/zeus_safe_contracts": {
+      "file_count": 231,
+      "total_bytes": 636564
+    },
+    "contracts/zeus_vulnerable_contracts": {
+      "file_count": 307,
+      "total_bytes": 1375140
+    }
+  },
+  "bytecode_file_count": 2105,
+  "bytecode_file_counts": {
+    "bytecode/smartbugs_curated": {
+      "file_count": 66,
+      "total_bytes": 267578
+    },
+    "bytecode/smartbugs_results": {
+      "file_count": 1501,
+      "total_bytes": 15726774
+    },
+    "bytecode/zeus_safe": {
+      "file_count": 231,
+      "total_bytes": 834122
+    },
+    "bytecode/zeus_vulnerable": {
+      "file_count": 307,
+      "total_bytes": 1602850
+    }
+  },
+  "manifest_rows": 2182,
+  "manifest_rows_by_source": {
+    "smartbugs_curated": 143,
+    "smartbugs_results": 1501,
+    "zeus_safe": 231,
+    "zeus_vulnerable": 307
+  },
+  "unique_source_contract_pairs_case_sensitive": 2180,
+  "unique_lowercase_contract_identifiers": 2167,
+  "duplicate_source_contract_keys": [
+    {
+      "source": "smartbugs_curated",
+      "contract": "0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839",
+      "count": 2
+    },
+    {
+      "source": "zeus_vulnerable",
+      "contract": "0x9220d625bd6bea95c865b3c4faf273bfbd6bc48a",
+      "count": 2
+    }
+  ],
+  "cross_source_lowercase_identifier_count": 13,
+  "cross_source_lowercase_identifiers": [
+    {
+      "contract": "0x2a28cc275b458019910e3b8b8ee58f17eb6d38c8",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x39aa4006ee5941c0c0e41b924fdafcb2c4c918e8",
+      "sources": [
+        "zeus_safe",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x3ac26f27595effeb5e426bd093081ec30ebdd545",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x4fd997ed7c10dbd04e95d3730cd77d79513076f2",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x6e01ee36b522a824609b7f7dfb5e4aa8fbb48934",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x8ea6c8077d6316b46e449aec8fb60a606cf50eea",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5",
+      "sources": [
+        "zeus_safe",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x940e7d8fb34921c3c5bbb8b9792b1a0e4688fe9b",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0x941d225236464a25eb18076df7da6a91d0f95e9e",
+      "sources": [
+        "smartbugs_curated",
+        "smartbugs_results"
+      ]
+    },
+    {
+      "contract": "0x9828f591b21ee4ad4fd803fc7339588cb83a6b84",
+      "sources": [
+        "smartbugs_results",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0xc3ef562cc403c8f9edf7c3826655fbf50f4ddde8",
+      "sources": [
+        "smartbugs_results",
+        "zeus_safe"
+      ]
+    },
+    {
+      "contract": "0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b",
+      "sources": [
+        "zeus_safe",
+        "zeus_vulnerable"
+      ]
+    },
+    {
+      "contract": "0xe47014f16c55ddd3add5b68b951e10fcea7da686",
+      "sources": [
+        "zeus_safe",
+        "zeus_vulnerable"
+      ]
+    }
+  ],
+  "exact_git_blob_duplicate_groups": [
+    {
+      "git_blob_sha": "12b38c37b24a9058629ab2e763203eb385746f42",
+      "paths": [
+        "contracts/zeus_safe_contracts/0xe47014f16c55ddd3add5b68b951e10fcea7da686.sol",
+        "contracts/zeus_vulnerable_contracts/0xe47014f16c55ddd3add5b68b951e10fcea7da686.sol"
+      ]
+    },
+    {
+      "git_blob_sha": "6c0132ca9a66563bacbb3dbe41208f6bd2253d02",
+      "paths": [
+        "contracts/zeus_safe_contracts/0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5.sol",
+        "contracts/zeus_vulnerable_contracts/0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5.sol"
+      ]
+    },
+    {
+      "git_blob_sha": "89a6073be1cb9cc00c130da2a896a38c28f24113",
+      "paths": [
+        "contracts/zeus_safe_contracts/0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b.sol",
+        "contracts/zeus_vulnerable_contracts/0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b.sol"
+      ]
+    }
+  ],
+  "manifest_source_file_reconciliation": [
+    {
+      "source": "smartbugs_results",
+      "source_directory": "contracts/sb_results_contracts",
+      "unique_manifest_identifiers": 1501,
+      "unique_source_file_stems": 1501,
+      "manifest_identifiers_without_file_stem": [],
+      "source_file_stems_without_manifest_identifier": []
+    },
+    {
+      "source": "smartbugs_curated",
+      "source_directory": "contracts/smartbugs_curated",
+      "unique_manifest_identifiers": 142,
+      "unique_source_file_stems": 142,
+      "manifest_identifiers_without_file_stem": [],
+      "source_file_stems_without_manifest_identifier": []
+    },
+    {
+      "source": "zeus_safe",
+      "source_directory": "contracts/zeus_safe_contracts",
+      "unique_manifest_identifiers": 231,
+      "unique_source_file_stems": 231,
+      "manifest_identifiers_without_file_stem": [],
+      "source_file_stems_without_manifest_identifier": []
+    },
+    {
+      "source": "zeus_vulnerable",
+      "source_directory": "contracts/zeus_vulnerable_contracts",
+      "unique_manifest_identifiers": 306,
+      "unique_source_file_stems": 307,
+      "manifest_identifiers_without_file_stem": [],
+      "source_file_stems_without_manifest_identifier": [
+        "0xdac8da3e58c11b4e0e8dfaefe191107e143ac29b"
+      ]
+    }
+  ],
+  "unmapped_manifest_source_labels": [],
+  "limitations": [
+    "Git blob equality identifies byte-identical files; no source normalization or clone detection is performed.",
+    "Identifier checks use lowercase strings, without Ethereum address validation or zero-padding.",
+    "File reconciliation additionally removes a trailing .sol from manifest identifiers.",
+    "No comparison is made against the current study's training, validation or test pools.",
+    "No vulnerability tag is parsed; no class labels or detector metrics are generated."
+  ]
+}

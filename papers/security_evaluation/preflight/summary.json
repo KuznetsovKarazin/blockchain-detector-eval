@@ -1,0 +1,255 @@
+{
+  "schema": "existing_contract_split_readiness_v1",
+  "audit_kind": "read_only_reanalysis_of_existing_metadata",
+  "new_models_trained": false,
+  "new_fixed_test_experiment": false,
+  "external_corpus_audited": false,
+  "handoff_date": "2026-10-25",
+  "handoff_timezone": "Europe/Rome",
+  "generated_utc": "2026-10-24T23:15:42.809408+00:00",
+  "source_repository": "KuznetsovKarazin/blockchain-detector-eval",
+  "source_snapshot_commit": "2c2c7723cb9fa42ff46fb6f252652056a74f9223",
+  "inputs": {
+    "folds": {
+      "filename": "results__contracts__c2_20261024_004314__folds.csv",
+      "size_bytes": 34205,
+      "sha256": "3499a2555918074d6b1dd07ce6cfbee4eed8734805c63d96d17b5733ca4febbd"
+    },
+    "corpus_audit": {
+      "filename": "results__contracts__c1_20261022_141306__audit.json",
+      "size_bytes": 1281,
+      "sha256": "1b3e8407c3942706ae5cd631d83f140a7a255e828fd8de938102000a288cb508"
+    },
+    "run_manifest": {
+      "filename": "results__contracts__c2_20261024_004314__manifest.json",
+      "size_bytes": 2007,
+      "sha256": "92ae8ee40d0090fc412629fe5ac52ddc420436c16286eb3bfacb562088860dba"
+    }
+  },
+  "historical_run_provenance": {
+    "script": "c2_vuln_benchmark.py",
+    "created_utc": "2026-10-24T01:14:44Z",
+    "git_commit": "40e792530b98dd8a83f291d95197d7cd55d981d0",
+    "git_dirty": true,
+    "dirty_files": [
+      "scripts/c2_vuln_benchmark.py",
+      "scripts/k4_defi_kan.py"
+    ],
+    "diff_sha256": "c67f4ec3d30dc28bc0c250768e94d1d3e9f78ce045fcf3da97a20c3b88b3db3b",
+    "lex_rows_copied_from": [
+      "results/contracts/c2_20261022_092004",
+      "results/contracts/c2_20261022_113242"
+    ]
+  },
+  "corpus_n_files": {
+    "dappscan": 6587,
+    "solidifi": 350,
+    "smartbugs": 143
+  },
+  "fold_rows": 720,
+  "datasets_in_folds": [
+    "dappscan",
+    "solidifi"
+  ],
+  "classes": [
+    "arithmetic",
+    "reentrancy",
+    "timestamp",
+    "unchecked"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "protocols": [
+    "local_random",
+    "local_safe",
+    "project",
+    "random",
+    "random_matched",
+    "safe"
+  ],
+  "giant_joint_fold": {
+    "corpus_n_files": 6587,
+    "largest_test_n": 5408,
+    "largest_test_fraction": 0.8210110824350995,
+    "corresponding_train_sizes": [
+      1179
+    ],
+    "affected_class_seed_fold_rows": 12,
+    "affected_rows": [
+      {
+        "dataset": "dappscan",
+        "cls": "arithmetic",
+        "protocol": "safe",
+        "seed": 0,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 41,
+        "pos_test": 97
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "arithmetic",
+        "protocol": "safe",
+        "seed": 1,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 41,
+        "pos_test": 97
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "arithmetic",
+        "protocol": "safe",
+        "seed": 2,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 41,
+        "pos_test": 97
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "reentrancy",
+        "protocol": "safe",
+        "seed": 0,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 31,
+        "pos_test": 83
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "reentrancy",
+        "protocol": "safe",
+        "seed": 1,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 31,
+        "pos_test": 83
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "reentrancy",
+        "protocol": "safe",
+        "seed": 2,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 31,
+        "pos_test": 83
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "timestamp",
+        "protocol": "safe",
+        "seed": 0,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 26,
+        "pos_test": 10
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "timestamp",
+        "protocol": "safe",
+        "seed": 1,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 26,
+        "pos_test": 10
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "timestamp",
+        "protocol": "safe",
+        "seed": 2,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 26,
+        "pos_test": 10
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "unchecked",
+        "protocol": "safe",
+        "seed": 0,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 22,
+        "pos_test": 52
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "unchecked",
+        "protocol": "safe",
+        "seed": 1,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 22,
+        "pos_test": 52
+      },
+      {
+        "dataset": "dappscan",
+        "cls": "unchecked",
+        "protocol": "safe",
+        "seed": 2,
+        "fold": 0,
+        "n_train": 1179,
+        "n_test": 5408,
+        "pos_train": 22,
+        "pos_test": 52
+      }
+    ],
+    "all_safe_train_sizes": [
+      1179,
+      6292,
+      6293
+    ],
+    "interpretation": "The joint project/clone protocol has a dominant test fold and a much smaller training pool. Counts alone do not establish pairwise cloning or identify a causal leakage effect."
+  },
+  "controls": {
+    "random_matched_present": true,
+    "project_present": true,
+    "local_random_and_local_safe_present": true,
+    "clone_only_named_protocol_present": false,
+    "fixed_test_membership_verified": false,
+    "four_size_and_positive_matched_pools_verified": false,
+    "count_comparison_dataset_class_seed_groups": 24,
+    "training_size_multisets_equal_groups": 12,
+    "interpretation": "random_matched is an existing partial training-size control. These files do not demonstrate a common fixed test or four matched training pools. Fold IDs and matching counts do not prove membership equality."
+  },
+  "limitations": [
+    "No file-level memberships, code, new labels, model scores, external corpus, or dependency graph were analysed by this script.",
+    "No AP, treatment effect, model ranking, external validity, or leakage magnitude is estimated.",
+    "DAppSCAN no-finding labels remain proxy labels, not verified negatives.",
+    "All counts describe the historical selected runs; the source snapshot commit differs from the original run's recorded commit and dirty-diff provenance."
+  ],
+  "fixed_test_inputs_next": {
+    "groups": "results/contracts/c2_20261024_004314/groups.parquet",
+    "assignments": "results/contracts/c2_20261024_004314/assignments.parquet",
+    "corpus_sources": "docs/DATA.md at source_snapshot_commit; obtain raw files at pinned source commits",
+    "labels": "Load labels locally from pinned original sources; never treat missing labels as verified negatives.",
+    "group_fields": [
+      "file_id",
+      "dataset",
+      "path",
+      "group",
+      "comp",
+      "safe_group",
+      "local"
+    ],
+    "warning": "Verify the actual Parquet schema before use; the schema fields here follow the C2 exporter. Create new fixed-T manifests from file identities and grouping constraints rather than recycling fold numbers."
+  }
+}

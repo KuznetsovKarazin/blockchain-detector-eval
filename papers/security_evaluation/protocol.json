@@ -1,0 +1,180 @@
+{
+  "schema": "security_evaluation_protocol_v0.1",
+  "status": "draft_not_frozen",
+  "prepared_local_date": "2026-10-25",
+  "timezone": "Europe/Rome",
+  "working_title": "Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation",
+  "source_plan": "Article_1_2_Research_Plan_2026-10-24.docx",
+  "baseline": {
+    "repository": "KuznetsovKarazin/blockchain-detector-eval",
+    "commit": "2c2c7723cb9fa42ff46fb6f252652056a74f9223",
+    "branch": "paper/security-evaluation"
+  },
+  "research_questions": [
+    "Project and clone dependence with a common test and matched training size",
+    "Frozen methods on independent labelled data",
+    "Ranking versus review workload and tool coverage"
+  ],
+  "primary_classes": [
+    "reentrancy",
+    "unchecked"
+  ],
+  "secondary_classes": [
+    "arithmetic",
+    "timestamp"
+  ],
+  "decision_unit": "source file by vulnerability class",
+  "primary_methods": [
+    "raw_tfidf_logistic_regression",
+    "normalized_tfidf_logistic_regression",
+    "pattern_random_forest",
+    "pattern_lightgbm",
+    "slither"
+  ],
+  "optional_methods": [
+    "mlp",
+    "kan"
+  ],
+  "historical": {
+    "c1": "results/contracts/c1_20261022_141306",
+    "c2": "results/contracts/c2_20261024_004314",
+    "c3": "results/contracts/c3_20261022_163601",
+    "c4": "results/contracts/c4_20261024_011448",
+    "cross_corpus_status": "exploratory_target_inspected",
+    "dappscan_zero_semantics": "no published finding; not confirmed absence"
+  },
+  "external": {
+    "candidate_repository": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts",
+    "source_commit": "da079440bf2cf4fd803c864ef29aeea8a3da50c3",
+    "eligibility": "not_established",
+    "scoring_allowed": false,
+    "required_checks": [
+      "source counts and revisions",
+      "licence",
+      "previous SmartBugs-curated exposure",
+      "exact hashes",
+      "normalised matches",
+      "near duplicates",
+      "project and family links",
+      "label mapping and independent adjudication"
+    ],
+    "unknown_labels": "preserve_as_unknown"
+  },
+  "fixed_test": {
+    "status": "not_implemented",
+    "test_manifest": null,
+    "pools": [
+      "other_files_unrestricted",
+      "project_disjoint",
+      "clone_disjoint",
+      "joint_project_clone_disjoint"
+    ],
+    "exact_test_objects_in_train": false,
+    "match": [
+      "sample_count",
+      "positive_count_per_class"
+    ],
+    "training_size_rule": "minimum feasible common size per class and test; report infeasible rather than splitting dependency components",
+    "composition_checks": [
+      "compiler",
+      "code_length",
+      "library_origin",
+      "label_provenance"
+    ],
+    "sensitivity_thresholds_proposed": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "learning_curve_fractions": "fix after data feasibility and before model comparison",
+    "joint_disjoint_rule": "safe_group(train) intersection safe_group(T) must be empty; compute the full transitive project-union-clone graph on the frozen source population before cohort restriction.",
+    "regime_specific_rules": {
+      "other_files_unrestricted": "exclude exact test object IDs only",
+      "project_disjoint": "exclude all declared projects represented in T",
+      "clone_disjoint": "exclude all clone components represented in T",
+      "joint_project_clone_disjoint": "exclude every full transitive joint component intersecting T"
+    },
+    "never_relax_joint_components_to_fill_cells": true
+  },
+  "training": {
+    "seeds_proposed": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hyperparameters": "existing fixed settings or inner group-aware training-only tuning",
+    "external_model_selection": false
+  },
+  "metrics": {
+    "ranking": "sklearn.average_precision_score",
+    "review_fractions_proposed": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "ties": "expected precision/recall and feasible range under label-independent within-score-tie permutation; freeze exact implementation before scoring",
+    "tool_reports": [
+      "end_to_end_with_failures",
+      "conditional_common_success_subset"
+    ],
+    "additional": [
+      "prevalence",
+      "coverage",
+      "compile_errors",
+      "tool_errors",
+      "timeouts",
+      "runtime"
+    ]
+  },
+  "statistics": {
+    "paired": true,
+    "bootstrap_repetitions_proposed": 2000,
+    "resampling_unit": "joint project and clone component",
+    "few_clusters": "report individual groups and restrict inference; bootstrap is not a remedy"
+  },
+  "human_label_review": {
+    "status": "reviewer_not_assigned",
+    "cases_proposed": [
+      100,
+      150
+    ],
+    "families_proposed": [
+      20,
+      30
+    ],
+    "role": "independent subject specialist",
+    "blind_to_model_scores": true,
+    "ai_agent_is_not_independent_expert": true,
+    "sampling": "Record inclusion criteria and selection probabilities; use design weights for population estimates under unequal-probability sampling, otherwise restrict conclusions to the audited cases."
+  },
+  "freeze_prerequisites": [
+    "audited eligible external population",
+    "fixed class mapping",
+    "training and test manifests and hashes",
+    "grouping rules",
+    "fixed model configurations and tuning budget",
+    "ties and workload rules",
+    "statistics and exclusion rules"
+  ],
+  "required_outputs": [
+    "corpus_manifest",
+    "exclusions",
+    "fixed_test_splits",
+    "label_review",
+    "predictions",
+    "tool_status",
+    "tables",
+    "figures",
+    "run_manifest",
+    "environment",
+    "decision_log"
+  ],
+  "claims_not_supported_yet": [
+    "confirmed independent external performance",
+    "pure causal leakage effect",
+    "new final paper results",
+    "journal readiness"
+  ]
+}

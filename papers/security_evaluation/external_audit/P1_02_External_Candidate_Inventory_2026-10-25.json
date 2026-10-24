@@ -1,0 +1,386 @@
+{
+  "schema": "p1_external_candidate_preliminary_inventory_v1",
+  "audit_timestamp_utc": "2026-10-24T23:15:18Z",
+  "user_local_date": "2026-10-25",
+  "user_timezone": "Europe/Rome",
+  "stage": "P1.02 preparatory inventory; not an external evaluation",
+  "repository": {
+    "full_name": "fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts",
+    "url": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts",
+    "visibility": "public",
+    "default_branch": "main",
+    "head_commit": "da079440bf2cf4fd803c864ef29aeea8a3da50c3",
+    "head_commit_date_utc": "2025-08-25T12:29:53Z",
+    "tree_sha": "6c0d44ef03847129939d14cc612fdfc036cb30fc",
+    "tree_response_truncated": false,
+    "tree_entries": 4364,
+    "readme_git_blob_sha": "b0d06778cb1ee16ffa87610d9adbce848fcbb4d8",
+    "readme_bytes": 3411
+  },
+  "source_urls": {
+    "article": "https://link.springer.com/article/10.1007/s10664-026-10867-7",
+    "doi": "https://doi.org/10.1007/s10664-026-10867-7",
+    "readme": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/blob/da079440bf2cf4fd803c864ef29aeea8a3da50c3/README.md",
+    "head": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/commit/da079440bf2cf4fd803c864ef29aeea8a3da50c3",
+    "api_tree": "https://api.github.com/repos/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/git/trees/6c0d44ef03847129939d14cc612fdfc036cb30fc?recursive=1",
+    "api_metadata": "https://api.github.com/repos/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts",
+    "api_branch": "https://api.github.com/repos/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/branches/main",
+    "curated_label_schema": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/blob/da079440bf2cf4fd803c864ef29aeea8a3da50c3/gpt_analysis/sb_durieux_curated_results.json"
+  },
+  "license_observations": {
+    "github_license_field": null,
+    "license_copying_notice_files_in_complete_tree": [],
+    "readme_explicit_license": "none observed",
+    "article_license": "CC BY 4.0",
+    "repository_or_dataset_license_confirmed": false,
+    "per_contract_spdx_coverage": "not inspected",
+    "interpretation": "The article license must not be automatically assigned to repository code, annotations or third-party contracts. Redistribution conditions remain unresolved."
+  },
+  "provenance": {
+    "readme_sources": [
+      "SmartBugs Results",
+      "SmartBugs Curated",
+      "ZEUS safe",
+      "ZEUS vulnerable"
+    ],
+    "article_reported_instances": 2182,
+    "article_reported_annotation_process": "Manual line-level labeling using three evaluators and additional reviews; SmartBugs Results sampling was stratified using prior tool outputs, while final labels were manually assigned. ZEUS source was retrieved from Etherscan using addresses. SmartBugs Curated labels were rechecked.",
+    "article_overlap_handling_reported": "Address duplicates removed during SmartBugs Results sampling; this is not evidence of clone/project disjointness or independence from the current study."
+  },
+  "repository_inventory": {
+    "top_level_entries": [
+      "README.md",
+      "Survey",
+      "bytecode",
+      "calculate_metrics.py",
+      "compare_vulnerability.py",
+      "compile.py",
+      "contracts",
+      "csvs",
+      "further_validation.zip",
+      "get_total_vulnerabilities.py",
+      "gpt",
+      "gpt_analysis",
+      "improve_parsing_scripts",
+      "level_of_agreement",
+      "main.py",
+      "parse_vulnerability.py",
+      "performance",
+      "requirements.txt",
+      "smartbugs-results",
+      "stat_test.py",
+      "vulnerabilities_log.csv",
+      "vulnerabilities_log_without_arithmetic.csv",
+      "vulnerability_mapping.py"
+    ],
+    "solidity_source_file_count": 2181,
+    "unique_source_git_blob_ids": 2178,
+    "source_counts": {
+      "contracts/sb_results_contracts": {
+        "file_count": 1501,
+        "total_bytes": 20395616
+      },
+      "contracts/smartbugs_curated": {
+        "file_count": 142,
+        "total_bytes": 502451
+      },
+      "contracts/zeus_safe_contracts": {
+        "file_count": 231,
+        "total_bytes": 636564
+      },
+      "contracts/zeus_vulnerable_contracts": {
+        "file_count": 307,
+        "total_bytes": 1375140
+      }
+    },
+    "bytecode_file_count": 2105,
+    "bytecode_counts": {
+      "bytecode/smartbugs_curated": {
+        "file_count": 66,
+        "total_bytes": 267578
+      },
+      "bytecode/smartbugs_results": {
+        "file_count": 1501,
+        "total_bytes": 15726774
+      },
+      "bytecode/zeus_safe": {
+        "file_count": 231,
+        "total_bytes": 834122
+      },
+      "bytecode/zeus_vulnerable": {
+        "file_count": 307,
+        "total_bytes": 1602850
+      }
+    },
+    "compact_manifests": [
+      {
+        "path": "csvs/sample_of_interest.csv",
+        "source_url": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/blob/da079440bf2cf4fd803c864ef29aeea8a3da50c3/csvs/sample_of_interest.csv",
+        "bytes": 199782,
+        "sha256": "b9e17c5e88188f518491d381b4a2991b5809e8b356e7e861c50e33420d362fb6",
+        "git_blob_sha": "dc9a94575f28a5202ff7351503e260f76d4834f1",
+        "git_blob_verified": true,
+        "columns": [
+          "label",
+          "tag",
+          "contract"
+        ],
+        "rows": 2182,
+        "rows_by_source": {
+          "smartbugs_results": 1501,
+          "smartbugs_curated": 143,
+          "zeus_vulnerable": 307,
+          "zeus_safe": 231
+        },
+        "unique_source_contract_pairs_case_sensitive": 2180,
+        "unique_lowercase_contract_identifiers": 2167,
+        "duplicate_source_contract_keys": [
+          {
+            "source": "smartbugs_curated",
+            "contract": "0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839",
+            "count": 2
+          },
+          {
+            "source": "zeus_vulnerable",
+            "contract": "0x9220d625bd6bea95c865b3c4faf273bfbd6bc48a",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "path": "csvs/sample_of_interest_without_arithmetic.csv",
+        "source_url": "https://github.com/fsalzano/Empirical-Analysis-of-Vulnerability-Detection-Tools-for-Solidity-Smart-Contracts/blob/da079440bf2cf4fd803c864ef29aeea8a3da50c3/csvs/sample_of_interest_without_arithmetic.csv",
+        "bytes": 179251,
+        "sha256": "f27f26437e4220353c528a83e9b6a2a82cdb1c8fba000d7e1a2c874bb23985de",
+        "git_blob_sha": "d50457d2eb7e405528384a275d33cd31723bea01",
+        "git_blob_verified": true,
+        "columns": [
+          "label",
+          "tag",
+          "contract"
+        ],
+        "rows": 2182,
+        "rows_by_source": {
+          "smartbugs_results": 1501,
+          "smartbugs_curated": 143,
+          "zeus_vulnerable": 307,
+          "zeus_safe": 231
+        },
+        "unique_source_contract_pairs_case_sensitive": 2180,
+        "unique_lowercase_contract_identifiers": 2167,
+        "duplicate_source_contract_keys": [
+          {
+            "source": "smartbugs_curated",
+            "contract": "0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839",
+            "count": 2
+          },
+          {
+            "source": "zeus_vulnerable",
+            "contract": "0x9220d625bd6bea95c865b3c4faf273bfbd6bc48a",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "further_validation_zip": {
+      "bytes": 251550,
+      "git_blob_sha": "df12781854966eb30afff5861ad86f30bf0bbb8a",
+      "contents_inspected": false
+    }
+  },
+  "label_schema": {
+    "csv_columns": [
+      "label",
+      "tag",
+      "contract"
+    ],
+    "label_meaning": "Source dataset identifier, not vulnerability target.",
+    "tag_format": "A no marker or semicolon-separated line-number: vulnerability-class annotations; exact line indexing and multi-location grammar need an adapter audit.",
+    "contract_meaning": "Address-like or named file identifier; use source-aware keys.",
+    "derived_file_level_labels": "Not constructed. Any future class-wise reduction must declare no/unknown/unreviewed semantics.",
+    "json_schema_observed": {
+      "path": "string",
+      "lines": "list of line numbers",
+      "vulnerability": "string",
+      "name": "string"
+    },
+    "arithmetic_variant": "Separate with- and without-arithmetic manifests each contain 2,182 rows and identical source counts; annotation contents differ by arithmetic handling. Do not combine them as independent observations."
+  },
+  "metadata_overlap_and_consistency_checks": {
+    "scope": "Within candidate package only; Git blob equality and identifier matching, not normalized-source/AST/project auditing.",
+    "cross_source_lowercase_identifier_count": 13,
+    "cross_source_identifiers": [
+      {
+        "contract": "0x4fd997ed7c10dbd04e95d3730cd77d79513076f2",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x8ea6c8077d6316b46e449aec8fb60a606cf50eea",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x3ac26f27595effeb5e426bd093081ec30ebdd545",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x940e7d8fb34921c3c5bbb8b9792b1a0e4688fe9b",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x6e01ee36b522a824609b7f7dfb5e4aa8fbb48934",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x9828f591b21ee4ad4fd803fc7339588cb83a6b84",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x2a28cc275b458019910e3b8b8ee58f17eb6d38c8",
+        "sources": [
+          "smartbugs_results",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x941d225236464a25eb18076df7da6a91d0f95e9e",
+        "sources": [
+          "smartbugs_curated",
+          "smartbugs_results"
+        ]
+      },
+      {
+        "contract": "0xc3ef562cc403c8f9edf7c3826655fbf50f4ddde8",
+        "sources": [
+          "smartbugs_results",
+          "zeus_safe"
+        ]
+      },
+      {
+        "contract": "0xe47014f16c55ddd3add5b68b951e10fcea7da686",
+        "sources": [
+          "zeus_safe",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b",
+        "sources": [
+          "zeus_safe",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x39aa4006ee5941c0c0e41b924fdafcb2c4c918e8",
+        "sources": [
+          "zeus_safe",
+          "zeus_vulnerable"
+        ]
+      },
+      {
+        "contract": "0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5",
+        "sources": [
+          "zeus_safe",
+          "zeus_vulnerable"
+        ]
+      }
+    ],
+    "exact_git_blob_duplicate_groups": [
+      {
+        "git_blob_sha": "6c0132ca9a66563bacbb3dbe41208f6bd2253d02",
+        "paths": [
+          "contracts/zeus_safe_contracts/0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5.sol",
+          "contracts/zeus_vulnerable_contracts/0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5.sol"
+        ]
+      },
+      {
+        "git_blob_sha": "89a6073be1cb9cc00c130da2a896a38c28f24113",
+        "paths": [
+          "contracts/zeus_safe_contracts/0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b.sol",
+          "contracts/zeus_vulnerable_contracts/0xc9c1bfb27e97531ecfe005faa2b2ed4828b08a0b.sol"
+        ]
+      },
+      {
+        "git_blob_sha": "12b38c37b24a9058629ab2e763203eb385746f42",
+        "paths": [
+          "contracts/zeus_safe_contracts/0xe47014f16c55ddd3add5b68b951e10fcea7da686.sol",
+          "contracts/zeus_vulnerable_contracts/0xe47014f16c55ddd3add5b68b951e10fcea7da686.sol"
+        ]
+      }
+    ],
+    "manifest_source_file_reconciliation": [
+      {
+        "source": "smartbugs_results",
+        "unique_manifest_identifiers": 1501,
+        "unique_source_file_stems": 1501,
+        "manifest_identifiers_without_file_stem": [],
+        "source_file_stems_without_manifest_identifier": []
+      },
+      {
+        "source": "smartbugs_curated",
+        "unique_manifest_identifiers": 142,
+        "unique_source_file_stems": 142,
+        "manifest_identifiers_without_file_stem": [],
+        "source_file_stems_without_manifest_identifier": []
+      },
+      {
+        "source": "zeus_safe",
+        "unique_manifest_identifiers": 231,
+        "unique_source_file_stems": 231,
+        "manifest_identifiers_without_file_stem": [],
+        "source_file_stems_without_manifest_identifier": []
+      },
+      {
+        "source": "zeus_vulnerable",
+        "unique_manifest_identifiers": 306,
+        "unique_source_file_stems": 307,
+        "manifest_identifiers_without_file_stem": [],
+        "source_file_stems_without_manifest_identifier": [
+          "0xdac8da3e58c11b4e0e8dfaefe191107e143ac29b"
+        ]
+      }
+    ],
+    "conclusion": "2,182 manifest rows are not 2,182 unique contracts. There are 2,180 distinct source/contract pairs, 2,167 lowercase identifiers, 2,181 Solidity files, and 2,178 distinct source Git blobs."
+  },
+  "current_study_overlap": {
+    "status": "not tested",
+    "known_provenance_risk": "The current project historical C1 audit lists SmartBugs among its existing corpora; the candidate includes SmartBugs Curated. It cannot be accepted wholesale as independent.",
+    "local_context_reference": "results/contracts/c1_20261022_141306/audit.json at 2c2c7723cb9fa42ff46fb6f252652056a74f9223"
+  },
+  "unresolved_questions": [
+    "Resolve package-level and per-source licensing before redistribution.",
+    "Identify the release/snapshot intended by the 2026 article; the current main HEAD is dated 2025-08-25.",
+    "Reconcile duplicate manifest keys, cross-source identities, and one ZEUS vulnerable source file missing from the compact manifest.",
+    "Check original and normalized source hashes, bytecode normalization, clone families and project/deployment relationships against all current training, validation and prior test pools.",
+    "Decide which labels are confirmed, rejected, absent, unknown or out of scope; do not equate absence of a listed vulnerability with confirmed safety.",
+    "Verify annotation line numbering, source normalization, compiler versions, dependency resolution, and source-to-bytecode identity.",
+    "Inspect further_validation.zip metadata and its relevance before treating it as a separate source.",
+    "Freeze any eligible residual external cohort before evaluating models; report exclusions and coverage."
+  ],
+  "actions_not_performed": [
+    "model training",
+    "model or hyperparameter selection",
+    "prediction generation",
+    "comparative metrics",
+    "full contract corpus download",
+    "remote repository changes"
+  ],
+  "status": "CANDIDATE_ONLY_NOT_INDEPENDENCE_VERIFIED"
+}
