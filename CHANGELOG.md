@@ -30,6 +30,10 @@ K4 (DeFi exploits):
   every fit sets its own seed, so the outputs equal those of an uninterrupted
   run (checked on a reduced run). The manifest records `resumed` and the
   number of reused fits.
+* The day bootstrap of K4 weights a day drawn k times by k instead of
+  concatenating k copies of its rows. The resampled APs equal sklearn's on
+  the concatenated rows up to 1e-16 (`tests/test_k4_bootstrap.py`), and the
+  2,000 resamples take minutes instead of most of an hour.
 * `scripts/tools/k4_feature_diff.py` compares the features of the previous run
   with the recomputed ones and checks that the re-extracted inputs are
   byte-identical to the previous manifest (output for this release:

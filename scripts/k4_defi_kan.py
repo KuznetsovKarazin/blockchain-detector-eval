@@ -220,22 +220,46 @@ class FitCache:
         shutil.rmtree(self.dir)
 
 
+def _ap_sorted(y, wt, last):
+    """sklearn's average precision for rows sorted by descending score.
+
+    `last` indexes the last row of each run of equal scores (one threshold per
+    distinct score); `wt` are row weights, 0 for rows that are not drawn.
+    """
+    tp = np.cumsum(y * wt)[last]
+    fp = np.cumsum((1 - y) * wt)[last]
+    if tp[-1] <= 0:
+        return np.nan
+    ps = tp + fp
+    prec = np.divide(tp, ps, out=np.zeros_like(tp), where=ps != 0)
+    return float(np.sum(np.diff(tp / tp[-1], prepend=0.0) * prec))
+
+
 def boot_ci(df, ss, n=2000, seed=0, weighted=False):
     """90 % interval of the seed-mean AP, resampling days (the same days for every seed).
 
     `ss` is one score vector or a list of per-seed score vectors; the statistic
     is the mean over seeds of the AP, i.e. the same quantity as the point
-    estimate `mean of per-seed AP`.
+    estimate `mean of per-seed AP`. A day drawn k times enters with k times its
+    weight, which gives the AP of the concatenated resample without copying
+    rows (`tests/test_k4_bootstrap.py` checks this against sklearn).
     """
     ss = [ss] if isinstance(ss, np.ndarray) and ss.ndim == 1 else list(ss)
     rng = np.random.default_rng(seed)
-    days = df.day.unique()
-    idx = {d: np.flatnonzero(df.day.to_numpy() == d) for d in days}
-    y, w = df.y.to_numpy(), df.weight.to_numpy()
+    days = pd.Index(df.day.unique())
+    code = days.get_indexer(df.day)
+    y = df.y.to_numpy(float)
+    w = df.weight.to_numpy(float) if weighted else np.ones(len(df))
+    pre = []
+    for s in ss:
+        o = np.argsort(-s, kind="stable")
+        so = s[o]
+        pre.append((o, y[o], np.r_[np.flatnonzero(so[1:] != so[:-1]), len(so) - 1]))
     vals = []
     for _ in range(n):
-        ii = np.concatenate([idx[d] for d in rng.choice(days, len(days))])
-        vals.append(np.mean([ap(y[ii], s[ii], w[ii] if weighted else None) for s in ss]))
+        m = np.bincount(days.get_indexer(rng.choice(days.to_numpy(), len(days))), minlength=len(days))
+        wt = w * m[code]
+        vals.append(np.mean([_ap_sorted(yo, wt[o], last) for o, yo, last in pre]))
     return [float(np.nanpercentile(vals, 5)), float(np.nanpercentile(vals, 95))]
 
 
