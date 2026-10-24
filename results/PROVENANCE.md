@@ -36,8 +36,8 @@ development repository.
 
 ## Re-run on the public files
 
-`contracts/c4_PUBLICRUN` repeats the current C4 run `contracts/c4_20261024_011448`
-in the same way on the public files of `c2_20261024_004314` (commit `PUBCOMMIT`);
+`contracts/c4_20261024_012615` repeats the current C4 run `contracts/c4_20261024_011448`
+in the same way on the public files of `c2_20261024_004314` (commit `eb9fc2e`);
 its tables are identical to the original.
 
 Earlier:

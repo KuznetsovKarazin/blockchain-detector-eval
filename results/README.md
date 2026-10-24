@@ -31,7 +31,7 @@ underlying datasets.
 | C1 corpus audit | `contracts/c1_20261022_141306` | — |
 | C2 benchmark | `contracts/c2_20261024_004314` (pattern rows re-fitted after the pragma fix; lex rows copied from the two runs on the right after a fold check) | `c2_20261022_092004` and its `local_*` rows `c2_20261022_113242` (pattern feature read commented-out pragmas), `c2_20261021_160726` (order-dependent grouping) |
 | C3 Slither | `contracts/c3_20261022_163601` | `c3_20261022_142713` (one solc failure labelled tool_error), `c3_20261021_163759`, `c3_20261022_092255` |
-| C4 Slither vs ML | `contracts/c4_20261024_011448`; same tables re-run on the public inputs: `c4_PUBLICRUN` | `c4_20261022_164256` and its public re-run `c4_20261022_191915` (C2 inputs before the pragma fix), `c4_20261022_143422` (same numbers, inputs not all hashed), `c4_20261022_113408` (order-dependent top-k) |
+| C4 Slither vs ML | `contracts/c4_20261024_011448`; same tables re-run on the public inputs: `c4_20261024_012615` | `c4_20261022_164256` and its public re-run `c4_20261022_191915` (C2 inputs before the pragma fix), `c4_20261022_143422` (same numbers, inputs not all hashed), `c4_20261022_113408` (order-dependent top-k) |
 | B1 bridges | `bridges/b1_20261022_163601` | `b1_20261022_141005` (attack ranks depended on tie order), `b1_20261022_093114` (dataset prices), `b1_20261021_161056` |
 | B2 saturation, hybrids | `bridges/b2_20261022_164508` | `b2_20261022_142045`, `b2_20261022_094142`, `b2_20261021_162632` |
 | K1 KAN analysis | `kan/k1_{quantile,robust}_20261022_142521` | `k1_*_20261021_232204` (float64 LUT) |
