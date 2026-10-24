@@ -71,12 +71,16 @@ Usage
     python scripts/k4_defi_kan.py --seeds 5
     # models only, from the committed feature table (no AWS access needed):
     python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261024_080035/features.parquet
+    # continue an interrupted run in its own folder (finished fits are reused):
+    python scripts/k4_defi_kan.py --seeds 5 --resume results/kan/k4_<stamp>
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -181,6 +185,41 @@ def choose_prep(name, h, X, y, groups, idx, inner_folds=4):
     return best, res, sorted(set(groups[i_val]))
 
 
+class FitCache:
+    """Outputs of finished fits in `<run>/_cache`, so that `--resume` continues an
+    interrupted run. Every fit sets its own seed, so a reused output equals the
+    one a fresh run would compute. The folder is removed when the run ends."""
+
+    def __init__(self, run: Path):
+        self.dir = run / "_cache"
+        self.dir.mkdir(exist_ok=True)
+        self.reused = 0
+
+    def array(self, key, fn):
+        p = self.dir / f"{key}.npy"
+        if p.exists():
+            self.reused += 1
+            return np.load(p)
+        v = np.asarray(fn())
+        with open(p.with_name(p.name + ".tmp"), "wb") as f:
+            np.save(f, v)
+        os.replace(p.with_name(p.name + ".tmp"), p)
+        return v
+
+    def obj(self, key, fn):
+        p = self.dir / f"{key}.json"
+        if p.exists():
+            self.reused += 1
+            return json.loads(p.read_text())
+        v = fn()
+        p.with_name(p.name + ".tmp").write_text(json.dumps(v))
+        os.replace(p.with_name(p.name + ".tmp"), p)
+        return v
+
+    def clear(self):
+        shutil.rmtree(self.dir)
+
+
 def boot_ci(df, ss, n=2000, seed=0, weighted=False):
     """90 % interval of the seed-mean AP, resampling days (the same days for every seed).
 
@@ -214,12 +253,17 @@ def main():
     ap_.add_argument("--out", default="results/kan")
     ap_.add_argument("--days", nargs="*", help="smoke tests only: restrict to these days")
     ap_.add_argument("--features", help="features.parquet of an earlier run (skips the AWS extraction)")
+    ap_.add_argument("--resume", help="run folder of an interrupted run with the same options: continue it")
     a = ap_.parse_args()
-    run = Path(a.out) / time.strftime("k4_%Y%m%d_%H%M%S")
+    run = Path(a.resume) if a.resume else Path(a.out) / time.strftime("k4_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
+    cache = FitCache(run)
 
     incs = load_incidents()
-    df = pd.read_parquet(a.features) if a.features else load_days(a.days)
+    if a.resume:              # the feature table this run wrote before it was interrupted
+        df = pd.read_parquet(run / "features.parquet")
+    else:
+        df = pd.read_parquet(a.features) if a.features else load_days(a.days)
     X = transform(df)
     y = df.y.to_numpy()
     w = df.weight.to_numpy()
@@ -234,16 +278,18 @@ def main():
                         "test": int(df.day[te].nunique())},
                "strata": df.stratum.value_counts().to_dict(), "mlp_hidden": h}
     print(summary, flush=True)
-    df[["day", "hash", "stratum", "weight", "y", *FEATURES]].to_parquet(run / "features.parquet", index=False)
+    if not a.resume:
+        df[["day", "hash", "stratum", "weight", "y", *FEATURES]].to_parquet(run / "features.parquet", index=False)
 
     # ---- choose input normalisation for the neural models on validation ----
     prep = {}
     for m in ("mlp", "kan"):
         res = {}
         for p in ("quantile", "robust"):
-            set_seed(0)
-            mdl = make(m, 0, h, p).fit(X[tr], y[tr])
-            res[p] = ap(y[va], mdl.predict_score(X[va]))
+            def fit_val(m=m, p=p):
+                set_seed(0)
+                return ap(y[va], make(m, 0, h, p).fit(X[tr], y[tr]).predict_score(X[va]))
+            res[p] = cache.obj(f"prep_{m}_{p}", fit_val)
         prep[m] = max(res, key=lambda k: (np.nan_to_num(res[k], nan=-1), k == "quantile"))
         summary[f"prep_val_ap_{m}"] = res
     summary["prep"] = prep
@@ -259,9 +305,11 @@ def main():
             if name == "rule":
                 s = (df.has_flash * df.max_price_move).to_numpy(float)
             else:
-                set_seed(seed)
-                mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[fit_tr], y[fit_tr])
-                s = mdl.predict_score(X).astype(float)
+                def fit_all(name=name, seed=seed):
+                    set_seed(seed)
+                    mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[fit_tr], y[fit_tr])
+                    return mdl.predict_score(X).astype(float)
+                s = cache.array(f"temporal_{name}_{seed}", fit_all)
             scores[f"{name}_{seed}"] = s
             r = {"model": name, "seed": seed,
                  "val_ap": ap(y[va], s[va]), "test_ap": ap(y[te], s[te]),
@@ -309,7 +357,8 @@ def main():
     fold_prep, prep_rows = {}, []
     for m in ("mlp", "kan"):
         for k, (i_tr, _) in enumerate(outer):
-            p_k, res_k, inner_days = choose_prep(m, h, X, y, g, i_tr)
+            p_k, res_k, inner_days = cache.obj(f"fold_prep_{m}_{k}",
+                                               lambda m=m, i_tr=i_tr: list(choose_prep(m, h, X, y, g, i_tr)))
             fold_prep[(m, k)] = p_k
             prep_rows.append({"model": m, "fold": k, "prep": p_k, "inner_val_days": ";".join(inner_days),
                               **{f"inner_val_ap_{p}": v for p, v in res_k.items()}})
@@ -325,9 +374,11 @@ def main():
                 s_oof = (df.has_flash * df.max_price_move).to_numpy(float)
             else:
                 for k, (i_tr, i_te) in enumerate(outer):
-                    set_seed(seed)
-                    mdl = make(name, seed, h, fold_prep.get((name, k), "quantile")).fit(X[i_tr], y[i_tr])
-                    s_oof[i_te] = mdl.predict_score(X[i_te])
+                    def fit_fold(name=name, seed=seed, k=k, i_tr=i_tr, i_te=i_te):
+                        set_seed(seed)
+                        mdl = make(name, seed, h, fold_prep.get((name, k), "quantile")).fit(X[i_tr], y[i_tr])
+                        return mdl.predict_score(X[i_te])
+                    s_oof[i_te] = cache.array(f"ldo_{name}_{seed}_{k}", fit_fold)
             per_seed.append(s_oof)
         oof[name] = np.mean(per_seed, axis=0)
         rk = day_ranks(df, oof[name])
@@ -412,8 +463,10 @@ def main():
     write_manifest(run, script=Path(__file__).name, config=vars(a),
                    data_files=[Path(a.features)] if a.features else sorted(DERIVED.glob("*/*.parquet")),
                    extra={"defihacklabs_commit": "23c7bd83ccb4524972a9493617fcc8764ab6269b",
+                          "resumed": bool(a.resume), "fits_reused_after_interruption": cache.reused,
                           "aws": "s3://aws-public-blockchain/v1.0/eth/{transactions,logs,token_transfers}",
                           "split": {"train_end": TRAIN_END, "val_end": VAL_END}, "budgets_per_day": BUDGETS})
+    cache.clear()
     print("wrote", run)
 
 

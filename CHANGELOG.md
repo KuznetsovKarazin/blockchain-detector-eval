@@ -25,6 +25,11 @@ K4 (DeFi exploits):
 * The cohort is described as keyword-selected (README headings that name a
   price or oracle manipulation and PoCs that fork mainnet with a flash loan),
   not as a census of such exploits.
+* `k4_defi_kan.py --resume <run>` continues an interrupted run in its folder:
+  finished fits are cached in `<run>/_cache` (removed at the end) and reused;
+  every fit sets its own seed, so the outputs equal those of an uninterrupted
+  run (checked on a reduced run). The manifest records `resumed` and the
+  number of reused fits.
 * `scripts/tools/k4_feature_diff.py` compares the features of the previous run
   with the recomputed ones and checks that the re-extracted inputs are
   byte-identical to the previous manifest (output for this release:
