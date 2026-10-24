@@ -18,5 +18,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-dev.txt
+          pip install --no-deps -e .
+      - name: Package imports outside the source tree
+        run: cd /tmp && python -c "import bal; from bal.models.tabular import lightgbm; from bal.features.xchain_features import build_features; print(bal.__version__)"
       - name: Unit tests
         run: pytest -q

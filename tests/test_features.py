@@ -93,3 +93,10 @@ def test_near_duplicates_cover_brute_force_pairs():
     comp = near_duplicate_groups(texts, threshold=0.8)
     for i, j, _ in exact_pairs_check(texts, 0.8):
         assert comp[i] == comp[j]
+
+
+def test_pattern_version_ignores_commented_pragma():
+    from bal.features.contract_features import pattern_features
+    src = "// pragma solidity ^0.4.0;\n/* pragma solidity 0.5.0; */\npragma solidity ^0.8.0;\ncontract A {}"
+    f = pattern_features(src)
+    assert f["solc_version"] == 0.08 and f["pre_08"] == 0.0

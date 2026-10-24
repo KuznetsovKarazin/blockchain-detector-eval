@@ -17,9 +17,12 @@ results/**/*.npz
 !results/contracts/**/*.parquet
 !results/transactions/t1_20261022_v2/scores_labelled.npz
 !results/kan/k3_20261022_163604/scores.npz
+!results/kan/k4_20261023_200340/scores.npz
+!results/kan/k4_20261023_200340/features.parquet
 results/**/smoke*/
 
 # IDE / OS
 .vscode/
 .idea/
 .DS_Store
+data/derived/

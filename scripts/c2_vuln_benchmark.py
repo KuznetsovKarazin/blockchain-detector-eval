@@ -115,6 +115,40 @@ def run_fold(rep, model, Xtr, ytr, Xte, yte, seed, txt_tr=None, txt_te=None):
     return safe_ap(yte, s), safe_auc(yte, s), s
 
 
+def reuse_lex(runs, groups, assign):
+    """lex_* metrics and scores of earlier runs, after checking that their inputs are identical."""
+    KEY = ["dataset", "cls", "protocol", "seed", "file_id"]
+    met, oof, cross = {}, {}, None
+    for r in map(Path, reversed(runs)):                 # later runs win per protocol
+        g = pd.read_parquet(r / "groups.parquet")
+        # labels are compared when the old run has them (the public copies do not)
+        cols = ["file_id", "dataset", "path", "group", "comp", "safe_group", "local",
+                *[c for c in TARGET_CLASSES if c in g]]
+        if not g[cols].reset_index(drop=True).equals(groups[cols].reset_index(drop=True)):
+            raise SystemExit(f"{r}: groups / labels differ, lex rows cannot be reused")
+        old_a = pd.read_parquet(r / "assignments.parquet")
+        m = pd.read_csv(r / "metrics.csv")
+        o = pd.read_parquet(r / "oof_scores.parquet")
+        for proto in m[m.setting == "within"].protocol.unique():
+            new = assign[assign.protocol == proto].sort_values(KEY).reset_index(drop=True)
+            old = old_a[old_a.protocol == proto].sort_values(KEY).reset_index(drop=True)
+            if new.empty or proto in met:
+                continue
+            if not new[KEY + ["fold"]].equals(old[KEY + ["fold"]].astype(new[KEY + ["fold"]].dtypes)):
+                raise SystemExit(f"{r}: folds of {proto} differ, lex rows cannot be reused")
+            met[proto] = m[(m.protocol == proto) & m.rep.str.startswith("lex")]
+            oof[proto] = o[(o.protocol == proto) & o.rep.str.startswith("lex")]
+        if (r / "cross_scores.parquet").exists() and "cross" not in met:
+            met["cross"] = m[(m.setting == "cross") & m.rep.str.startswith("lex")]
+            c = pd.read_parquet(r / "cross_scores.parquet")
+            cross = c[c.rep.str.startswith("lex")]
+        print("reusing lex rows of", r, "for", sorted(met), flush=True)
+    missing = set(assign.protocol) - set(met)
+    if missing:
+        raise SystemExit(f"no reusable lex rows for {sorted(missing)}")
+    return {"metrics": pd.concat(met.values()), "oof": pd.concat(oof.values()), "cross": cross}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="results/contracts")
@@ -123,6 +157,10 @@ def main():
     ap.add_argument("--protocols", default=",".join(WITHIN_PROTOCOLS),
                     help="within-corpus protocols to run")
     ap.add_argument("--skip-cross", action="store_true")
+    ap.add_argument("--reuse-lex", nargs="*", default=[], metavar="RUN",
+                    help="copy the lex_* rows of earlier runs instead of refitting them (they do not "
+                         "depend on the pattern features); later runs win per protocol. The fold "
+                         "assignments and groups must be identical, otherwise the script stops")
     a = ap.parse_args()
     run = Path(a.out) / time.strftime("c2_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
@@ -197,6 +235,8 @@ def main():
                                                 "file_id": idx, "fold": fold_id}))
                     for rep, models in [("lex_raw", ["logreg"]), ("lex_norm", ["logreg"]),
                                         ("pat", WITHIN_PAT_MODELS)]:
+                        if a.reuse_lex and rep.startswith("lex"):
+                            continue
                         for mname in models:
                             S = np.zeros(len(y))
                             txt = sub["raw" if rep == "lex_raw" else "norm"].to_numpy()
@@ -225,6 +265,8 @@ def main():
             if ytr.sum() < 10 or yte.sum() < 3:
                 continue
             for rep, models in [("lex_raw", ["logreg"]), ("lex_norm", ["logreg"]), ("pat", pat_models)]:
+                if a.reuse_lex and rep.startswith("lex"):
+                    continue
                 for mname in models:
                     for seed in range(a.seeds if mname in STOCHASTIC else 1):
                         txt = "raw" if rep == "lex_raw" else "norm"
@@ -237,6 +279,13 @@ def main():
                             model=mname, seed=seed, auprc=ap_, roc_auc=auc_, n_test=int(len(yte)),
                             n_pos=int(yte.sum()), base_rate=float(yte.mean()))
 
+    groups = df[["dataset", "path", "group", "comp", "safe_group", "local", *TARGET_CLASSES]].rename_axis("file_id")
+    reused = reuse_lex(a.reuse_lex, groups.reset_index(), pd.concat(assign)) if a.reuse_lex else None
+    if reused is not None:
+        rows += reused["metrics"].to_dict("records")
+        oof.append(reused["oof"])
+        if not a.skip_cross:
+            cross.append(reused["cross"])
     met = pd.DataFrame(rows)
     atomic_to_csv(met, run / "metrics.csv", index=False)
     summ = (met.groupby(["setting", "train", "test", "protocol", "cls", "rep", "model"])
@@ -247,13 +296,13 @@ def main():
     pd.concat(oof).to_parquet(run / "oof_scores.parquet", index=False)
     if cross:
         pd.concat(cross).to_parquet(run / "cross_scores.parquet", index=False)
-    groups = df[["dataset", "path", "group", "comp", "safe_group", "local", *TARGET_CLASSES]].rename_axis("file_id")
     groups.reset_index().to_parquet(run / "groups.parquet", index=False)
     write_manifest(run, script=Path(__file__).name, config=vars(a),
                    data_sets={f"sources_{ds}": g.path for ds, g in df.groupby("dataset")}
                    | {"label_files": label_files()},
                    extra={"target_classes": TARGET_CLASSES, "within_protocols": WITHIN_PROTOCOLS,
-                          "within_pat_models": WITHIN_PAT_MODELS})
+                          "within_pat_models": WITHIN_PAT_MODELS,
+                          "lex_rows_copied_from": a.reuse_lex})
     print("wrote", run)
 
 

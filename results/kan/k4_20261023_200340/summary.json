@@ -1,0 +1,90 @@
+{
+  "n_rows": 337864,
+  "n_days": 49,
+  "n_incidents": 40,
+  "positives": {
+    "train": 18,
+    "val": 9,
+    "test": 13
+  },
+  "days": {
+    "train": 24,
+    "val": 12,
+    "test": 13
+  },
+  "strata": {
+    "background": 147000,
+    "flash": 106369,
+    "protocol": 84455,
+    "attack": 40
+  },
+  "mlp_hidden": 75,
+  "prep_val_ap_mlp": {
+    "quantile": 0.02242858655286152,
+    "robust": 0.18966694205518445
+  },
+  "prep_val_ap_kan": {
+    "quantile": 0.052606213501331586,
+    "robust": 0.07668097627733161
+  },
+  "prep": {
+    "mlp": "robust",
+    "kan": "robust"
+  },
+  "kan_relevance_vs_permutation_spearman": 0.3098901098901099,
+  "kan_relevance": {
+    "has_flash": 7.900392532348633,
+    "n_flash": 10.778547286987305,
+    "flash_to_pool": 3.557711362838745,
+    "max_price_move": 3.428724765777588,
+    "net_price_move": 3.844780683517456,
+    "n_pools": 3.480722427368164,
+    "n_contracts": 10.7630615234375,
+    "n_logs": 10.187326431274414,
+    "n_tokens": 7.189352035522461,
+    "profit_usd": 8.84620475769043,
+    "gas_used": 16.41554832458496,
+    "nonce": 18.863971710205078,
+    "value_eth": 8.038304328918457,
+    "to_created_today": 13.514809608459473
+  },
+  "kan_permutation_ap_drop_val": {
+    "has_flash": -0.06415702487262845,
+    "n_flash": 0.04150950812050597,
+    "flash_to_pool": 0.004094926158398848,
+    "max_price_move": 0.027689492424633894,
+    "net_price_move": -0.004903619695426395,
+    "n_pools": 0.004644941685112036,
+    "n_contracts": -0.03154673122524018,
+    "n_logs": 0.026326314148177724,
+    "n_tokens": -0.06882192167067103,
+    "profit_usd": 0.010744859063431006,
+    "gas_used": 0.025356006302900094,
+    "nonce": 0.011313326968469345,
+    "value_eth": -0.055763744637641444,
+    "to_created_today": 0.012443289751416398
+  },
+  "edge_checks": [
+    {
+      "feature": "nonce",
+      "relevance": 18.863971710205078,
+      "spearman_edge_vs_partial_dependence": 0.9999837446431211,
+      "spearman_unweighted_edge_sum_vs_pd": -0.9993350081276785,
+      "permutation_ap_drop_val": 0.019971023149610762
+    },
+    {
+      "feature": "gas_used",
+      "relevance": 16.41554832458496,
+      "spearman_edge_vs_partial_dependence": 0.9999985222402837,
+      "spearman_unweighted_edge_sum_vs_pd": -0.999797546918871,
+      "permutation_ap_drop_val": 0.017183945138249414
+    },
+    {
+      "feature": "to_created_today",
+      "relevance": 13.514809608459473,
+      "spearman_edge_vs_partial_dependence": 0.9999763558445397,
+      "spearman_unweighted_edge_sum_vs_pd": -0.9993335303679621,
+      "permutation_ap_drop_val": 0.01225099209702224
+    }
+  ]
+}

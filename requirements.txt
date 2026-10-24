@@ -10,3 +10,6 @@ lightgbm>=4.3
 torch>=2.3
 matplotlib>=3.8
 optuna>=4.0            # t3 hyper-parameter search
+threadpoolctl>=3.1      # k2: one thread for every BLAS pool
+fsspec>=2024.2         # k4: HTTPS reads of the AWS Ethereum dataset
+aiohttp>=3.9

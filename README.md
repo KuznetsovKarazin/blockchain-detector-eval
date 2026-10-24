@@ -8,7 +8,7 @@
 [![results: CC BY 4.0](https://img.shields.io/badge/results-CC%20BY%204.0-lightgrey)](results/LICENSE)
 ![CPU only](https://img.shields.io/badge/hardware-CPU%20only-orange)
 
-This repository evaluates detectors for three blockchain security tasks under
+This repository evaluates detectors for four blockchain security tasks under
 deployment-like protocols: future time periods, unseen addresses and projects,
 fixed false-alarm budgets, and released funds counted in USD. Each experiment
 pits learned models against strong simple baselines (tree ensembles,
@@ -22,13 +22,15 @@ manifest under `results/`.
 | **C · contracts** | How much of a vulnerability detector's benchmark score survives duplicate control, new projects, a different labelling regime and compilation failures? | SmartBugs-curated, SolidiFI, DAppSCAN | `c1` – `c4` |
 | **T · transactions** | Which models keep working on future periods and new addresses, and do label-free monitors notice when they stop? | Elliptic, Elliptic++ | `t1` – `t5` |
 | **K · KAN** | Do Kolmogorov–Arnold networks buy accuracy, explanations or cheaper inference over a same-size MLP? | Elliptic | `k1` – `k3` |
+| **K4 · DeFi exploits** | Can a model find a flash-loan price-manipulation exploit among the transactions of its day, at an alarm budget, and do KAN explanations say why? | DeFiHackLabs, AWS public Ethereum data | `k4` |
 
-> **Four findings in one line each**
+> **Five findings in one line each**
 >
 > 1. A bridge detector with ROC-AUC 0.99 can still alarm only after 95.5 % of the stolen value has left; two-condition rules alarm first.
 > 2. On a popular injected-bug benchmark (SolidiFI) the best models reach AUPRC 1.0 under every split, consistent with recognising the bug templates; on real audit labels AUPRC is 0.04–0.15.
 > 3. Tree ensembles beat graph neural networks on Elliptic under a strict temporal protocol, and every model collapses after the dark-market shutdown, unnoticed by label-free monitors.
 > 4. KANs show no stable advantage over a same-size MLP; their LUT form is faster than a spline KAN but still slower than the MLP.
+> 5. On 13 recent DeFi exploits, tree ensembles rank the attack near the top of its day, but alarm budgets set a year earlier are exceeded 2–10×, and the KAN learns the attacker's set-up rather than the manipulation.
 
 **Contents:** [Who this is for](#who-this-is-for) · [Results](#results) ·
 [What this project does NOT claim](#what-this-project-does-not-claim) ·
@@ -178,13 +180,33 @@ on validation. Details: [docs/FINDINGS_TRANSACTIONS_KAN.md](docs/FINDINGS_TRANSA
   importance (Spearman 0.33–0.39).
 * A lookup-table (LUT) KAN keeps 99.985 % of decisions at 8 points per
   interval with quantile inputs, but only 99.88 % with robust inputs
-  (re-measured on the current float32 LUT code). It is 1.4–2.8× faster than a
-  matched NumPy B-spline KAN, but a same-size MLP is 4.4× (batch 1) to 38×
-  (batch 1024) faster still. Timings cover the kernel only; the trained
-  models are saved with the run.
+  (re-measured on the current float32 LUT code). It is 1.6–3.5× faster than a
+  matched NumPy B-spline KAN, but a same-size MLP is 4.2× (batch 1) to 31×
+  (batch 1024) faster still (one thread, median of five runs). Timings cover
+  the kernel only; the trained models are saved with the run.
 * Preprocessing differs in one documented step: both models get the same
   fitted transform clipped to ±5, and the KAN input is then scaled by 0.6 to
   fit its spline grid.
+
+### DeFi exploits (K4): flash-loan price manipulation on Ethereum
+
+40 DeFiHackLabs exploits (2021–2026) against all other flash-loan
+transactions of the same days, transactions touching the same contracts and
+a background sample from the AWS public Ethereum data (338k kept
+transactions, weighted to about a million per day). Details:
+[docs/FINDINGS_DEFI.md](docs/FINDINGS_DEFI.md).
+
+* Temporal test (2025–2026, 13 attacks): LightGBM AP 0.228 [0.116, 0.439],
+  random forest 0.181, MLP 0.108, KAN 0.098 [0.029, 0.289]; a flash loan ×
+  price move rule is near random (0.002). Tree models put the median attack
+  at rank 3–5 of its day.
+* Alarm budgets set on 2024 do not hold on 2025–2026: a 1/day threshold gives
+  2.3–9.9 alarms per day.
+* The KAN mostly uses the attacker's set-up (fresh sender, contract deployed
+  the same day, gas), not the manipulation features. Its edge functions match
+  its partial dependence only when signed by the second layer (Spearman +1.0,
+  −1.0 for the plain first-layer sum).
+* Detection is after execution: all features come from the mined transaction.
 
 ---
 
@@ -205,12 +227,13 @@ on validation. Details: [docs/FINDINGS_TRANSACTIONS_KAN.md](docs/FINDINGS_TRANSA
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements-dev.txt        # exact versions: requirements-lock.txt
-pytest -q                                   # 41 unit tests, < 2 min on CPU
+pip install -r requirements-dev.txt        # or, for the published environment (Python 3.13): -r requirements-lock.txt
+pip install --no-deps -e .                  # the `bal` package itself, so that `from bal ...` works anywhere
+pytest -q                                   # 42 unit tests, < 2 min on CPU
 python scripts/00_fetch_data.py             # public sources at pinned commits → data/raw/
 ```
 
-Elliptic and Elliptic++ must be downloaded by hand (see [docs/DATA.md](docs/DATA.md)).
+Run all commands from the repository root. Elliptic and Elliptic++ must be downloaded by hand (see [docs/DATA.md](docs/DATA.md)).
 
 ```bash
 # bridges
@@ -232,6 +255,11 @@ python scripts/t5_ellipticpp_wallet_splits.py --data data/raw/ellipticpp
 python scripts/k1_kan_analysis.py --seeds 3 --prep quantile   # and --prep robust
 python scripts/k2_lut_latency.py
 python scripts/k3_kan_mlp_uncertainty.py --seeds 10
+# DeFi exploits (reads 49 days of public Ethereum data from AWS over HTTPS)
+python scripts/k4_extract_days.py --workers 1
+python scripts/k4_defi_kan.py --seeds 5
+# ... or the models only, from the committed feature table
+python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261023_200340/features.parquet
 ```
 
 All runs are CPU-only. Each run writes a manifest with the git commit, the
@@ -244,12 +272,12 @@ states its hypotheses.
 
 ```
 src/bal/
-  data/       elliptic.py, xchain.py (causal USD), contracts.py      loaders + fixed splits
-  features/   xchain_features.py (causal), contract_features.py (tokens, patterns, near-duplicates)
+  data/       elliptic.py, xchain.py (causal USD), contracts.py, defi.py  loaders + fixed splits
+  features/   xchain_features.py (causal), contract_features.py (tokens, patterns, near-duplicates), defi_features.py
   models/     kan.py (B-spline KAN + LUT inference), tabular.py, gnn.py, anomaly.py
   eval/       metrics.py, alarm.py (budget thresholds, loss accounting), labelshift.py, stats.py
   utils/      repro.py (seeds, manifests, atomic writes)
-scripts/      00_fetch_data.py, b*_ (bridges), c*_ (contracts), t*_ (transactions), k*_ (KAN)
+scripts/      00_fetch_data.py, b*_ (bridges), c*_ (contracts), t*_ (transactions), k*_ (KAN, DeFi)
 results/      one folder per run: metrics, folds, per-row scores where small, manifest
 docs/         PROTOCOLS.md, DATA.md, FINDINGS_*.md, AUDIT_RESPONSE.md
 tests/        GNN isolation, near-duplicates, thresholds and ties, loss accounting,

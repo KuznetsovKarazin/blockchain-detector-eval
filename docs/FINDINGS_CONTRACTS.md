@@ -5,17 +5,20 @@ Current runs (after the audit fixes of 2026-10-22, see [AUDIT_RESPONSE.md](AUDIT
 * `results/contracts/c1_20261022_141306`: corpus audit with the order-invariant
   near-duplicate grouping (replaces the first run of 2026-10-21: DAppSCAN
   4,993 components instead of 5,001, SolidiFI 214 instead of 222);
-* `results/contracts/c2_20261022_092004`: ML benchmark, 3 seeds, 5 folds, with
-  fixed near-duplicate groups, saved folds and per-file scores. Its `local_*`
-  rows are superseded by the next run;
-* `results/contracts/c2_20261022_113242`: `local_random` / `local_safe`, with
-  groups re-derived inside the local population;
+* `results/contracts/c2_20261024_004314`: ML benchmark, 3 seeds, 5 folds, with
+  fixed near-duplicate groups, saved folds and per-file scores. The pattern
+  rows were re-fitted after the pragma fix of 2026-10-23 (the compiler-version
+  features read commented-out pragmas; 10 of 6,587 DAppSCAN files change, no
+  SmartBugs or SolidiFI file). The lex rows do not depend on the patterns and
+  are copied from `c2_20261022_092004` and, for `local_random` / `local_safe`
+  (groups re-derived inside the local population), `c2_20261022_113242`,
+  after a check that groups and fold assignments are identical;
 * `results/contracts/c3_20261022_163601`: Slither 0.11.6, compiler chosen inside
   the pragma range, full diagnostic log of every file not analysed (`logs/`);
-* `results/contracts/c4_20261022_164256`: Slither and learned models compared
+* `results/contracts/c4_20261024_011448`: Slither and learned models compared
   on equal terms, top-k independent of file order.
 
-C2 runs predate the data digests in manifests; `manifest_data_posthoc.json`
+The two older C2 runs predate the data digests in manifests; `manifest_data_posthoc.json`
 in each run gives corpus digests computed afterwards at the pinned data
 commits.
 
@@ -45,10 +48,10 @@ reentrancy 1.7 %, unchecked 1.1 %, timestamp 0.5 % (2.6 / 2.1 / 1.4 / 0.7 % in t
 
 | Class | random | random_matched | project | safe | local_random | local_safe |
 |---|---|---|---|---|---|---|
-| reentrancy | 0.153 (pat/LGBM) | 0.148 | 0.131 | 0.058 | 0.124 | **0.090** |
-| unchecked | 0.146 (pat/RF) | 0.135 | 0.071 | 0.048 | 0.134 | **0.059** |
-| arithmetic | 0.120 (pat/RF) | 0.110 | 0.103 | 0.084 | 0.100 | **0.098** |
-| timestamp (33–36 positives) | 0.049 | 0.037 | 0.042 | 0.058 | 0.062 | 0.093 |
+| reentrancy | 0.150 (pat/LGBM) | 0.145 | 0.131 | 0.058 | 0.124 | **0.091** |
+| unchecked | 0.145 (pat/RF) | 0.135 | 0.071 | 0.048 | 0.135 | **0.059** |
+| arithmetic | 0.119 (pat/RF) | 0.110 | 0.104 | 0.085 | 0.099 | **0.099** |
+| timestamp (33–36 positives) | 0.049 | 0.038 | 0.042 | 0.050 | 0.067 | 0.093 |
 
 How to read the protocols:
 
@@ -88,10 +91,10 @@ lower nor upper bounds.
 | SolidiFI → SmartBugs | timestamp | 0.035 | 0.586 (lex_norm) | 16.8× |
 | SolidiFI → SmartBugs | unchecked | 0.364 | 0.707 (pat/LightGBM) | 1.9× |
 | SolidiFI → SmartBugs | arithmetic | 0.105 | 0.542 (pat/KAN) | 5.2× |
-| DAppSCAN → SmartBugs | unchecked | 0.364 | 0.735 (pat/RF) | 2.0× |
+| DAppSCAN → SmartBugs | unchecked | 0.364 | 0.733 (pat/RF) | 2.0× |
 | DAppSCAN → SmartBugs | reentrancy | 0.217 | 0.617 (lex_raw) | 2.8× |
 | SolidiFI → DAppSCAN | all four | 0.04–0.15 | 0.09–0.22 | 1.3–2.4× |
-| DAppSCAN → SolidiFI | timestamp | 0.143 | 0.989 (pat/KAN) | 6.9× |
+| DAppSCAN → SolidiFI | timestamp | 0.143 | 0.988 (pat/KAN) | 6.9× |
 
 "Best" is chosen on the target itself, so this table is exploratory: it shows
 what the representations can reach, not the score of a model frozen on source
@@ -144,7 +147,7 @@ true positives over all tie orders where it is not fixed.
 | Class | k | Slither AUPRC | Slither P / R at k | Best model AUPRC | That model's P / R at k |
 |---|---|---|---|---|---|
 | reentrancy | 38 | 0.728 | 0.76 / 0.94 | 0.784 (lex_raw, SolidiFI) | 0.70 / 0.85 (26–27 of 31 found) |
-| unchecked | 57 | 0.885 | 0.90 / 0.98 | 0.735 (pat/RF, DAppSCAN) | 0.61 / 0.67 |
+| unchecked | 57 | 0.885 | 0.90 / 0.98 | 0.733 (pat/RF, DAppSCAN) | 0.64 / 0.71 |
 | timestamp | 23 | 0.217 | 0.22 / 1.00 | 0.586 (lex_norm, SolidiFI) | 0.22 / 1.00 |
 
 For reentrancy the best model ranks better overall (higher AUPRC), yet at

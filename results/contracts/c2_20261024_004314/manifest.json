@@ -1,0 +1,78 @@
+{
+  "script": "c2_vuln_benchmark.py",
+  "created_utc": "2026-10-24T01:14:44Z",
+  "git_commit": "40e792530b98dd8a83f291d95197d7cd55d981d0",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/c2_vuln_benchmark.py",
+    "scripts/k4_defi_kan.py"
+  ],
+  "diff_sha256": "c67f4ec3d30dc28bc0c250768e94d1d3e9f78ce045fcf3da97a20c3b88b3db3b",
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "out": "results/contracts",
+    "seeds": 3,
+    "models": "rf,lgbm,mlp,kan",
+    "protocols": "random,random_matched,project,safe,local_random,local_safe",
+    "skip_cross": false,
+    "reuse_lex": [
+      "results/contracts/c2_20261022_092004",
+      "results/contracts/c2_20261022_113242"
+    ]
+  },
+  "data": {},
+  "data_sets": {
+    "sources_dappscan": {
+      "n_files": 6587,
+      "sha256": "9f70899ecbc96a4122b747eb288911c9318155c3c4d21ffe0646f75f2d165ba2"
+    },
+    "sources_smartbugs": {
+      "n_files": 143,
+      "sha256": "584dbdf1f0ab5f174b9089e25adcabd92ffb90f93405caa466397a0d3874c575"
+    },
+    "sources_solidifi": {
+      "n_files": 350,
+      "sha256": "e66a314c3ce619e77c5554dc0c66dfa852e3bd1d93894ade7fd29c0cc19160a8"
+    },
+    "label_files": {
+      "n_files": 949,
+      "sha256": "af5b4368ce9d1d0b7e35d775ed468fa2b59e2eaae91a909e0faa37de0b28dc28"
+    }
+  },
+  "target_classes": [
+    "reentrancy",
+    "arithmetic",
+    "timestamp",
+    "unchecked"
+  ],
+  "within_protocols": [
+    "random",
+    "random_matched",
+    "project",
+    "safe",
+    "local_random",
+    "local_safe"
+  ],
+  "within_pat_models": [
+    "rf",
+    "lgbm"
+  ],
+  "lex_rows_copied_from": [
+    "results/contracts/c2_20261022_092004",
+    "results/contracts/c2_20261022_113242"
+  ]
+}

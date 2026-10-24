@@ -187,30 +187,35 @@ the KAN over a same-size MLP was found on Elliptic.** The first-pass
 
 ## 6. Clean inference-cost measurement (K2, idle machine, 1 thread)
 
-`results/kan/k2_20261022_144836` (re-measured on the current float32 LUT
-code; supersedes `k2_20261022_021810`): KAN 165→8→1, grid 5, quantile
-inputs (13,280 parameters) against the parameter-matched MLP 165→80→1
-(13,361). Median µs per transaction, 300 repetitions, one thread, no other
-job running. The trained models and threshold are in `models.pkl`, so the
-measurement can be repeated without training
-(`--models results/kan/k2_20261022_144836/models.pkl`).
+KAN 165→8→1, grid 5, quantile inputs (13,280 parameters) against the
+parameter-matched MLP 165→80→1 (13,361), both loaded from
+`results/kan/k2_20261022_144836/models.pkl` (no retraining). Five timing runs
+`results/kan/k2_20261024_{011451,011806,011911,012008,012105}`, each 300
+repetitions, on an idle Intel Xeon @ 2.10 GHz (4 cores), torch 2.14.1, NumPy
+2.5.4. Every library thread pool (OpenMP, OpenBLAS of NumPy and SciPy, torch
+intra- and inter-op) is limited to one thread with `threadpoolctl` during the
+timing; each run's `info.json` records the CPU and the thread pools as they
+were while timing. Median µs per transaction over the five runs (range in
+brackets):
 
 | Path | batch 1 | batch 32 | batch 1024 |
 |---|---|---|---|
-| KAN float, PyTorch | 353.5 | 38.5 | 30.4 |
-| KAN float, NumPy (matched baseline) | 113.2 | 26.0 | 37.2 |
-| **KAN LUT, NumPy, 8 points/interval** | **78.3** | 17.0 | 13.1 |
-| MLP, PyTorch | **17.9** | **0.91** | **0.34** |
+| KAN float, PyTorch | 304.6 (221–335) | 33.2 | 30.5 |
+| KAN float, NumPy (matched baseline) | 115.7 (87–117) | 29.9 | 42.2 |
+| **KAN LUT, NumPy, 8 points/interval** | **73.0** (51–101) | 13.8 | 12.2 |
+| MLP, PyTorch | **17.2** (13.5–17.6) | **0.92** | **0.40** |
 
 LUT decision agreement with the float KAN on 16,670 test transactions:
 99.93 % (4 points/interval, 12 decisions differ), 99.988 % (8, 16 and 32
-points, 2 differ), the same as before the float32 change; memory 0.24–1.9 MB
-against 53 KB for the float weights. Single timings vary by about ±20 %
-between runs (old run: 70.7 µs for the LUT at batch 1).
+points, 2 differ), identical in all five runs; memory 0.24–1.9 MB against
+53 KB for the float weights. Batch-1 timings of the NumPy paths vary by up to
+±30 % between runs; larger batches by less than ±15 %. The superseded run
+`k2_20261022_144836` (one run, thread count set only through torch) gave
+78.3 / 17.9 µs for LUT / MLP at batch 1.
 
-* LUT vs matched float B-spline (both NumPy): 1.4× faster at batch 1,
-  2.8× at batch 1024. The LUT advantage is real but modest in interpreted code.
-* The matched MLP is 4.4× faster than the LUT-KAN at batch 1 and 38× faster at
+* LUT vs matched float B-spline (both NumPy): 1.6× faster at batch 1,
+  3.5× at batch 1024. The LUT advantage is real but modest in interpreted code.
+* The matched MLP is 4.2× faster than the LUT-KAN at batch 1 and 31× faster at
   batch 1024 on this CPU. A deployment argument for KAN on Elliptic-scale
   inputs therefore needs compiled LUT kernels (the lut-kan toolchain) or MCU
   targets, not Python; this is the planned next step.

@@ -4,7 +4,9 @@ K2  Clean inference-cost measurement for the Elliptic KAN (HK.4).
 K1 timed the LUT while other experiments were running. This script trains
 one KAN (width 8, grid 5, quantile inputs, seed 0 — the best matched
 configuration of K1) and times, on an otherwise idle machine with one
-thread, four inference paths on identical inputs:
+thread (threadpoolctl limits every BLAS / OpenMP pool to 1 during timing;
+the CPU model and the thread pools are recorded), four inference paths on
+identical inputs:
 
     float_torch   KAN forward in PyTorch (B-spline basis evaluated each call)
     float_numpy   the same B-spline KAN re-implemented in NumPy (matched baseline)
@@ -34,9 +36,12 @@ import time
 from pathlib import Path
 
 os.environ.setdefault("OMP_NUM_THREADS", "1")
+os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
+os.environ.setdefault("MKL_NUM_THREADS", "1")
 
 import numpy as np          # noqa: E402
 import pandas as pd         # noqa: E402
+from threadpoolctl import threadpool_info, threadpool_limits   # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
@@ -96,9 +101,21 @@ def timeit(fn, x, reps):
     return float(np.median(ts) * 1e6)
 
 
+def cpu_model() -> str:
+    try:
+        for line in Path("/proc/cpuinfo").read_text().splitlines():
+            if line.startswith("model name"):
+                return line.split(":", 1)[1].strip()
+    except OSError:
+        pass
+    import platform
+    return platform.processor() or platform.machine()
+
+
 def main():
     import torch
     torch.set_num_threads(1)
+    torch.set_num_interop_threads(1)
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data/raw/elliptic")
     ap.add_argument("--out", default="results/kan")
@@ -133,6 +150,8 @@ def main():
     assert np.abs(np_fwd(Z[:2000]).squeeze(-1) - ref[:2000]).max() < 1e-3
 
     rows = []
+    limiter = threadpool_limits(limits=1)          # every BLAS / OpenMP pool, NumPy included
+    pools = threadpool_info()
     paths = {"float_torch": lambda z: kan.net(torch.tensor(z)),
              "float_numpy": np_fwd,
              "mlp_torch": None}
@@ -147,6 +166,7 @@ def main():
         for ppi, L in luts.items():
             rows.append({"path": f"lut_numpy_ppi{ppi}", "batch": B, "us": timeit(L.forward, zb, a.reps)})
         print(rows[-1], flush=True)
+    limiter.unregister()
     lat = pd.DataFrame(rows)
     lat["us_per_tx"] = lat.us / lat.batch
     lat.to_csv(run / "latency.csv", index=False)
@@ -163,14 +183,18 @@ def main():
     acc.to_csv(run / "lut_agreement.csv", index=False)
     info = {"kan_params": kan.n_params(), "mlp_params": mlp.n_params(), "mlp_hidden": h,
             "float_bytes": int(sum(p.numel() * 4 for p in kan.net.parameters())),
-            "threads": 1, "reps": a.reps, "cpu": os.cpu_count()}
+            "threads": 1, "reps": a.reps, "cpu_count": os.cpu_count(), "cpu_model": cpu_model(),
+            "torch": torch.__version__, "numpy": np.__version__, "torch_threads": torch.get_num_threads(),
+            "threadpools_during_timing": pools}
     dump_json(info, run / "info.json")
     print(lat.pivot(index="path", columns="batch", values="us_per_tx").round(2).to_string())
     print(acc.to_string())
     print(info)
     write_manifest(run, script=Path(__file__).name, config=vars(a),
                    data_files=[Path(a.data) / f for f in ("elliptic_txs_features.csv", "elliptic_txs_classes.csv")]
-                   + ([a.models] if a.models else []))
+                   + ([a.models] if a.models else []),
+                   extra={"cpu_model": info["cpu_model"], "threadpools_during_timing": pools,
+                          "torch_threads": info["torch_threads"]})
     print("wrote", run)
 
 

@@ -1,0 +1,78 @@
+{
+  "script": "k2_lut_latency.py",
+  "created_utc": "2026-10-24T01:16:39Z",
+  "git_commit": "40e792530b98dd8a83f291d95197d7cd55d981d0",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/c2_vuln_benchmark.py",
+    "scripts/k4_defi_kan.py"
+  ],
+  "diff_sha256": "5feb7daab8aa2bae6ba9e9dcb0f152557135d5bed68de53b084240a35547e3c3",
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "data": "data/raw/elliptic",
+    "out": "results/kan",
+    "reps": 300,
+    "models": "results/kan/k2_20261022_144836/models.pkl"
+  },
+  "data": {
+    "data/raw/elliptic/elliptic_txs_features.csv": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0",
+    "data/raw/elliptic/elliptic_txs_classes.csv": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493",
+    "results/kan/k2_20261022_144836/models.pkl": "2c6028fd3c523a2fbb32704b54debceed358e775f78bd22f85021af6e63e4da9"
+  },
+  "data_sets": {},
+  "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "threadpools_during_timing": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "torch_threads": 1
+}

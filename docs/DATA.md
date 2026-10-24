@@ -9,6 +9,7 @@ into `data/raw/` (git-ignored):
 | smartbugs/smartbugs-curated | 230e649123477eff332742a59a1c7cc6dc286cab | C |
 | DependableSystemsLab/SolidiFI-benchmark | 4b0573e1b3f7031396de6f48f7f3e7380222ad3a | C |
 | InPlusLab/DAppSCAN | 66a56619c44770e05c2db600fa6468115ff0dcd5 | C |
+| SunWeb3Sec/DeFiHackLabs | 23c7bd83ccb4524972a9493617fcc8764ab6269b | K4 |
 
 Manual download (not hosted on GitHub):
 
@@ -34,10 +35,26 @@ them (`bal.data.elliptic.load_scores`, `scripts/c4_slither_vs_ml.py`).
 | DAppSCAN | no licence file in the repository | file paths, near-duplicate groups, fold ids and scores; no labels |
 | Elliptic | no licence stated in a form we could verify; obtain it from the Kaggle page and follow its terms | per-node model scores in dataset order, without ids, labels or time steps (a SHA-256 of the labels checks the local copy) |
 | Elliptic++ | no licence file in the repository | aggregate metrics only |
+| DeFiHackLabs | Apache-2.0 (repository `LICENSE`) | incident list with dates, PoC paths and attack transaction hashes (`k4_*/incidents.csv`) |
+| AWS Public Blockchain Data (`s3://aws-public-blockchain/v1.0/eth/`) | public Ethereum chain data in the AWS Registry of Open Data; no account needed | per-transaction features, strata, weights and model scores of the kept transactions (`k4_*/features.parquet`, `scores.npz`); the per-day extracts in `data/derived/k4/` are rebuilt by `scripts/k4_extract_days.py` and not committed |
 
 Code: MIT (`LICENSE`). Results and documentation (`results/`, `docs/`):
 CC BY 4.0 (`results/LICENSE`). Users of the data must cite and follow the
 terms of each original source.
+
+## DeFi exploit days (K4)
+
+`scripts/k4_extract_days.py` reads `transactions`, `logs` and
+`token_transfers` of each incident day (and of the next or previous day when
+an attack transaction is not found) over HTTPS with column projection, 49 days in
+total. Traces are not read, so
+internal ETH transfers are invisible. Flash loans are recognised by events
+(Aave v1/v2/v3, Balancer / ERC-3156, Morpho, Uniswap V3 `Flash`, dYdX
+withdraw + deposit) and by the Uniswap V2 flash-swap pattern (the pair pays
+out before it is paid). Prices: Uniswap V2 `Sync` and V3 `Swap` only; the
+USD value of WETH comes from the USDC/WETH V2 pool of the day.
+`python scripts/k4_defi_kan.py --features results/kan/k4_20261023_200340/features.parquet`
+re-runs the models without the extraction.
 
 ## Bridge event construction (B)
 

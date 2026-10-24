@@ -90,6 +90,35 @@ amount of leakage.
   minor first); every file has a status (ok, compile_error, timeout,
   tool_error, unsupported_pragma; OR ranges in pragmas are honoured) and metrics are given end-to-end and for analysed files only.
 
+## K4 — Flash-loan price-manipulation exploits (Ethereum)
+
+* Unit: one transaction. Positives: the attack transactions linked by the
+  selected DeFiHackLabs entries; every other transaction of an incident day
+  is a negative, in strata (all flash-loan transactions; transactions
+  touching the attacked contracts, sampled; uniform background, sampled)
+  with weight = stratum population / kept rows. Transactions of other
+  DeFiHackLabs exploits are removed.
+* Temporal split by incident date: train ≤ 2023-12-31, validation 2024,
+  test 2025–2026. Leave-protocol-out: GroupKFold(8) by incident day,
+  out-of-fold scores, no thresholds.
+* Features are causal at transaction level: pool state before the
+  transaction comes from the last state event of an earlier transaction of
+  the same day (or, for a V2 pool without one, from its first swap in the
+  transaction). They are available only after the block is mined.
+* MLP / KAN input normalisation (quantile or robust) is chosen per model on
+  validation AP; the MLP hidden width matches the KAN parameter count.
+* Budgets: 1 and 10 alarms per day. The threshold is a conservative observed
+  validation score whose weighted alarms per validation day do not exceed the
+  budget; achieved validation and test rates are reported
+  (`thresholds.csv`, `temporal_summary.csv`).
+* AP = sklearn `average_precision_score`, on the kept rows and
+  population-weighted; 90 % intervals by bootstrap over test days
+  (2,000 resamples) of the seed-averaged score. Rank of an attack among its
+  day's weighted transactions, ties counted half.
+* KAN edge check: signed edge path (first-layer function × mean slope of the
+  second-layer function, summed over hidden units) against partial dependence
+  of the logit on validation rows, and relevance against permutation AP drop.
+
 ## B — Cross-chain bridge outflows
 
 * Event stream: every release of funds on Ethereum by the bridge (matched

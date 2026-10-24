@@ -29,6 +29,7 @@ SOURCES = {
     "smartbugs-curated": ("smartbugs/smartbugs-curated", "230e649123477eff332742a59a1c7cc6dc286cab", "C"),
     "SolidiFI-benchmark": ("DependableSystemsLab/SolidiFI-benchmark", "4b0573e1b3f7031396de6f48f7f3e7380222ad3a", "C"),
     "DAppSCAN": ("InPlusLab/DAppSCAN", "66a56619c44770e05c2db600fa6468115ff0dcd5", "C"),
+    "DeFiHackLabs": ("SunWeb3Sec/DeFiHackLabs", "23c7bd83ccb4524972a9493617fcc8764ab6269b", "K4"),
 }
 
 MANUAL = """

@@ -123,7 +123,8 @@ PATTERNS = {
 
 
 def _version(src: str) -> float:
-    m = re.search(r"pragma\s+solidity\s*[\^>=<~ ]*\s*(\d+)\.(\d+)", src)
+    """major + minor / 100 of the first active `pragma solidity` (comments removed)."""
+    m = re.search(r"pragma\s+solidity\s*[\^>=<~ ]*\s*(\d+)\.(\d+)", strip_comments(src))
     if not m:
         return np.nan
     return int(m.group(1)) + int(m.group(2)) / 100.0
