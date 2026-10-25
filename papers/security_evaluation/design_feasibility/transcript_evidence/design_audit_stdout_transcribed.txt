@@ -1,0 +1,55 @@
+Original completed tool output from audit_designs.py audit:
+                                   n  count_pass  all_pass  train_min  train_max  re_test_min  re_test_max  un_test_min  un_test_max
+scope                    fraction
+full                     0.01      5           0         0        994       1057            0            3            0            1
+                         0.02      5           0         0        823        952            2            5            1            2
+                         0.05      5           0         0        559        737            3            7            2            4
+                         0.10      5           0         0        301        430           10           17            5           11
+                         0.20      5           0         0        205        234           17           25            8           17
+giant                    0.01      5           0         0       1179       1179            0            1            0            1
+                         0.02      5           0         0       1179       1179            1            3            0            1
+                         0.05      5           0         0       1179       1179            2            9            0            5
+                         0.10      5           0         0       1179       1179            7           11            1            7
+                         0.20      5           0         0       1179       1179           15           19            4           12
+outside                  0.10      5           0         0       5747       5793            0            4            1            4
+                         0.20      5           0         0       5602       5655            2            9            2            7
+                         0.50      5           0         0       5491       5504            9           16            9           12
+                         0.75      5           0         0       5432       5442           20           26           14           18
+                         0.90      5           2         2       5418       5422           27           30           18           22
+                         1.00      5           5         0       5408       5408           31           31           22           22
+outside_whole_components 0.10      5           0         0       6425       6509            2            5            1            3
+                         0.20      5           0         0       6294       6389            6           10            2            5
+                         0.50      5           0         0       5930       6051           15           17            7           14
+
+Original subsequent detail output:
+                                                               72                 74
+test_id                                         outside_p90_seed2  outside_p90_seed4
+scope                                                     outside            outside
+fraction                                                      0.9                0.9
+design_seed                                                     2                  4
+n_test                                                       1062               1062
+test_coverage_full_population                            0.161227           0.161227
+test_giant_fraction                                           0.0                0.0
+test_components                                               213                216
+test_largest_component_fraction                          0.036723            0.03484
+test_inverse_simpson_components                         73.860118          75.340281
+distinct_raw_training_pools                                     4                  4
+all_pools_identical                                         False              False
+unrestricted_joint_removed_n                                  103                107
+unrestricted_joint_removed_fraction                      0.018643           0.019367
+reentrancy_test_positive_proxy                                 29                 27
+reentrancy_positive_test_components                            29                 27
+reentrancy_positive_inverse_simpson_components               29.0               27.0
+reentrancy_matched_train_n                                   5422               5418
+reentrancy_matched_train_positive_proxy                        83                 84
+unchecked_test_positive_proxy                                  20                 22
+unchecked_positive_test_components                             18                 19
+unchecked_positive_inverse_simpson_components           15.384615          16.133333
+unchecked_matched_train_n                                    5422               5418
+unchecked_matched_train_positive_proxy                         53                 52
+computationally_feasible_both_classes                        True               True
+count_screen_both_classes                                    True               True
+dispersion_screen                                            True               True
+nontrivial_restriction_contrast                              True               True
+all_operational_screens_pass                                 True               True
+all screens 2

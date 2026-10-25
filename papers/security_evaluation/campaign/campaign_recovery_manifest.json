@@ -1,0 +1,51 @@
+{
+  "schema": "campaign_source_recovery_from_tool_transcript_v1",
+  "recovered_utc": "2026-10-25T12:10:05.502889+00:00",
+  "source": "Previously executed apply_patch calls retained in agent conversation, reconstructed without redesign",
+  "files": {
+    "campaign/run_development.py": {
+      "sha256": "b1d51e51e0ee81a38929e61d32532db684ffd2f0febbf2e9d40835b4c140730c",
+      "size_bytes": 35834
+    },
+    "campaign/create_pilot_integration_bundle.py": {
+      "sha256": "71b5b50e4fd64a7e3d1978cb6a6fc01dac56dd4f3c82009f3149d14b92ca94da",
+      "size_bytes": 2470
+    },
+    "tests/test_security_campaign.py": {
+      "sha256": "551be27fb5a5fcf08f9d42dc94a6ba1f5f2c60cb4cf551d905887ffd0f45513e",
+      "size_bytes": 9101
+    }
+  },
+  "verification_after_recovery": "Python AST syntax parse only; no tests/models rerun",
+  "original_run_artifacts": "MISSING after workspace loss; no predictions, manifests or timing files fabricated",
+  "byte_identity_note": "Actual recovered byte hashes recorded. No surviving original source hash was available here for an independent byte-for-byte comparison.",
+  "historical_tool_output_observations": {
+    "tests": "16 passed in 1.55s before loss",
+    "integration_run_fingerprint": "92d2d845b5fbbc5b57b118bd26c92ccf59f0a1b19fef14245150f821819565ca",
+    "integration_job_id": "300a597104f7cc1ed1e0a528",
+    "test_id": "already_scored_pilot_T",
+    "class": "reentrancy",
+    "seed": 0,
+    "regime": "joint_project_clone_disjoint",
+    "method": "raw_tfidf_lr",
+    "n_train": 1179,
+    "n_test": 1082,
+    "resume_attempt_directories": 1,
+    "max_absolute_score_difference_vs_original_pilot": 0.0,
+    "prediction_columns": [
+      "file_id",
+      "score",
+      "status"
+    ],
+    "main_campaign_was_run": false
+  },
+  "restore_mapping": {
+    "campaign/": "papers/security_evaluation/campaign/",
+    "tests/test_security_campaign.py": "tests/test_security_campaign.py"
+  },
+  "missing_paths": [
+    "campaign/integration_bundle_20261025_v1",
+    "campaign/integration_run_20261025_v1"
+  ],
+  "experiments_after_loss": 0
+}

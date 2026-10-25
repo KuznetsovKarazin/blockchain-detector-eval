@@ -1,0 +1,17 @@
+{
+  "recovery_origin": "Reconstructed from visible original create commands and exact subsequent string-replacement edit commands. Original source hashes were not printed, so identity cannot be verified against original hash. No audit/model/test rerun during recovery.",
+  "files": {
+    "/tmp/security-cycle2-recovery/design_feasibility/audit_designs.py": {
+      "bytes": 17344,
+      "sha256": "ea4f40dcd4da089436c38436fe54be50a08cff66f002e36e9b3c07873ec2216e"
+    },
+    "/tmp/security-cycle2-recovery/design_feasibility/audit_designs_original_audit_snapshot.py": {
+      "bytes": 16104,
+      "sha256": "93a76a67e9396268e07dddbdbe7a2c36cb4191decc1314bdad8c506eefb7782b"
+    },
+    "/tmp/security-cycle2-recovery/tests/test_security_design.py": {
+      "bytes": 2532,
+      "sha256": "73a8e596910f205ee991614714d191c9fe58e312f234a80783aa7b815bca12cd"
+    }
+  }
+}

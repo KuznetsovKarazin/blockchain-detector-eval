@@ -1,0 +1,16 @@
+Exporter existed in audit_designs.py with actions audit/export. Original audit outputs remained immutable; exporter-only changes later added common test rows, gzip compression and input verification. No export was executed.
+
+CLI:
+python papers/security_evaluation/design_feasibility/audit_designs.py export --audit-dir papers/security_evaluation/design_feasibility/audit_20261025_v1 --out SELECTED_BUNDLE --select outside_p90_seed2 --decision DOCUMENTED_REASON
+
+Requires all operational screens pass for selected IDs, nonempty decision, artifact hashes unchanged, used loader/feature-code hashes unchanged, all7080 source hashes unchanged, all label-input hashes unchanged, both full-order proxy-label int8 SHA256 hashes unchanged.
+
+Bundle schema security_development_design_bundle_v1.
+Purpose development_only; external_scoring_allowed false.
+Membership selected_memberships.csv.gz compressed gzip mtime0, columns test_id,class,seed,regime,role,file_id,path,group,comp,joint_id.
+Common test rows use class*, seed-1, regime common_test.
+Training rows cover classes reentrancy/unchecked, seeds0..4, all4 regimes.
+Exact perbinaryclass counts matched by min across regimes; ranking salt from original helper security-fixed-t-development-v1 and seed/class/label. Full joint exclusions retained.
+Bundle carries source_inventory.csv(full7080with file_sha256), label_input_hashes.json, audit_config.json, design_summary.csv, hashes, dataset commits, source graph SHA256, proxy-label vector digests, original audit manifest hash, selection reason and exporter source snapshot/hash.
+Selection metadata: candidate_membership_uses_labels=false, selection_uses_proxy_label_counts=true, selection_uses_model_scores=false.
+No existing bundle can be overwritten. No scoring is performed by exporter.

@@ -1,0 +1,35 @@
+RECOVERY STATUS — 25 October 2026
+
+This directory contains source code and README reconstructed from this agent's
+successful apply_patch tool-call transcripts after the scratch workspace lost
+its ordinary files during publication. The original cycle-2 graph outputs,
+source snapshots and verification JSONs (approximately 61 MB) are not present.
+No experiment has been rerun as part of this source recovery.
+
+The README records real original runs and checks reported before the loss. Its
+references to saved run directories describe the pre-loss state, not files
+included in this recovery directory. Do not relabel the recalled numerical
+summary as a recovered original CSV or original measured run manifest.
+
+The original generator/verifier/comparison SHA-256 values were stored inside
+now-missing run files and were not printed in the tool transcript. Therefore
+byte identity of these reconstructed sources to the original files is not yet
+independently verified. New SHA-256 values identify the recovered files only.
+Known dependency: scanner SHA256
+6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd.
+Original code root HEAD observed before cycle2 was
+25a191df4a7fdcd0e0aede3c09e33fc0be6a6b29.
+
+Recorded original resource measurements (not new measurements):
+legacy runtime 86.16381999799978 s, max_rss_kib 721508;
+string-aware runtime 110.94119880199924 s, max_rss_kib 742308.
+Recorded original typed edges:
+upstream_project 21149; candidate_identifier 13; identical_raw_source 6124;
+syntactic_address 80; normalized_shingle legacy133888 / corrected133874.
+All12 graph verification passes and historical7080 path/project matches were
+printed successfully before the workspace loss.
+
+Root agent will combine this source recovery with other recovered tasks and
+create one durable checkpoint. This agent has not uploaded a separate Library
+artifact. Restore these files under papers/security_evaluation/dependency_audit
+in a complete repository before execution; ROOT is derived from that location.

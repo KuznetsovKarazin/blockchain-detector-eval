@@ -1,0 +1,86 @@
+{
+  "status": "transcript_recovery_of_completed_real_run_NOT_original_manifest",
+  "original_run": "papers/security_evaluation/normalization_audit/run_20261025_v1",
+  "original_artifacts_unavailable": true,
+  "experiments_rerun": false,
+  "total_records": 24131,
+  "normalized_changed": 92,
+  "scanner_errors": 0,
+  "utf8_replacement_files": 1,
+  "utf8_replacement_source": "reference:dappscan",
+  "multiline_literal_files": 0,
+  "runtime_seconds_observed": 37.049596726000345,
+  "last_tests_observed": "17 passed in 0.44s",
+  "original_config_sha256": "23ae96139c6d38245b9a3eb7189dd29448512e647510a76db357287fd3418abe",
+  "original_source_normalization_audit_csv_sha256": "789053f0213c61cf84efe45520d0944f1baea25d83d8682af41f9e4286956799",
+  "original_comment_order_diagnostic_csv_sha256": "540dad4c73a59b6cd8f803c070c7857a62699b3ca6cdff7ccb0fab05687f0389",
+  "source_summary": [
+    {
+      "source": "candidate:smartbugs_curated",
+      "records": 142,
+      "changed": 0,
+      "changed_with_literal_marker": 0,
+      "changed_comment_order": 0
+    },
+    {
+      "source": "candidate:smartbugs_results",
+      "records": 1501,
+      "changed": 33,
+      "changed_with_literal_marker": 21,
+      "changed_comment_order": 12
+    },
+    {
+      "source": "candidate:zeus_safe",
+      "records": 231,
+      "changed": 1,
+      "changed_with_literal_marker": 1,
+      "changed_comment_order": 0
+    },
+    {
+      "source": "candidate:zeus_vulnerable",
+      "records": 307,
+      "changed": 1,
+      "changed_with_literal_marker": 1,
+      "changed_comment_order": 0
+    },
+    {
+      "source": "reference:dappscan",
+      "records": 21457,
+      "changed": 50,
+      "changed_with_literal_marker": 27,
+      "changed_comment_order": 23
+    },
+    {
+      "source": "reference:smartbugs",
+      "records": 143,
+      "changed": 0,
+      "changed_with_literal_marker": 0,
+      "changed_comment_order": 0
+    },
+    {
+      "source": "reference:solidifi",
+      "records": 350,
+      "changed": 7,
+      "changed_with_literal_marker": 0,
+      "changed_comment_order": 7
+    }
+  ],
+  "comment_order_mechanism_confirmed": 42,
+  "source_recovery": {
+    "audit_normalization.py": {
+      "sha256": "152664bd049c44b9bf751cc466a2c501c695a99c34c6e28168cba5dd36730cc8",
+      "restored_from": "earlier exact tool patch text",
+      "hash_matches_recorded_original": "Original independent hash not present in available tool output; reconstructed exact patch text only."
+    },
+    "solidity_scanner.py": {
+      "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+      "restored_from": "earlier exact tool patch text",
+      "hash_matches_recorded_original": true
+    },
+    "diagnose_legacy_comment_order.py": {
+      "sha256": "abeefd6014d7dbce38c229bedfa01c859c7e99934ef0d698438ad55b294c344a",
+      "restored_from": "earlier exact tool patch text",
+      "hash_matches_recorded_original": true
+    }
+  }
+}
