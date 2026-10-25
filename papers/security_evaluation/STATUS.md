@@ -1,43 +1,56 @@
-# Article 1 status — 25 October 2026
+# Article 1 status on 25 October 2026
 
 Working title: **Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation**.
 
-## Verified starting point
+The first development cycle is complete. It produced a four-regime matched fixed-test pilot, an exhaustive external lexical/source audit, a blank specialist review packet, workload metric code, and measured CPU resource costs. It did not produce a confirmed independent external test or a submission-ready article.
 
-Repository: `KuznetsovKarazin/blockchain-detector-eval`; branch: `paper/security-evaluation`.
-Book/source baseline: `2c2c7723cb9fa42ff46fb6f252652056a74f9223`.
-At the initial check, the paper branch and main were identical. This starter package is an additive continuation in the paper branch. The main branch and historical experiment outputs are not modified by this work.
+## Current task state
 
-## Task state
-
-| Task | State | Evidence / next condition |
+| Task | State | Evidence and remaining condition |
 | --- | --- | --- |
-| P1.01 protocol | Draft saved, not frozen | `protocol.json`; resolve cohort eligibility, grouping and exact configurations before external scoring |
-| P1.02 external data | Preliminary inventory completed; independence unresolved | `external_audit/`; reconcile identities and labels, check cross-corpus hashes/clones/projects, establish redistribution terms |
-| P1.03 controlled comparison | Existing folds audited; new fixed-T experiment not implemented | `preflight/`; construct four pools from actual groups and file identities |
-| P1.04 confirmatory external evaluation | Not run | Freeze models and eligible test manifest first |
-| P1.05 labels/workload | Historical C3/C4 available; new human audit not performed | Blind review package and an independent subject specialist are needed |
-| P1.06 final analysis/manuscript | Not ready | Depends on controlled and external results |
+| P1.01 protocol | v0.2 draft, main freeze pending | `protocol.json`, `DECISIONS.md`; external eligibility and main test design unresolved |
+| P1.02 external data | Source and exhaustive lexical audit completed | `external_audit/SOURCE_AUDIT_2026-10-25.md`; family provenance, source disputes and annotation semantics still require review |
+| P1.03 controlled comparison | Four-regime development pilot completed | `runs/dev_fixed_t_20261025_v1/`; one test component and only three unchecked proxy positives prevent a broad main-study conclusion |
+| P1.04 external confirmation | Not run | `external.scoring_allowed=false`; models must not be selected using external results |
+| P1.05 workload and labels | Metric implementation tested; review packet prepared | 106 file-class cases from 25 proxy components, 51 initial second-reader cases, zero completed human reviews |
+| P1.06 article and final analysis | Not ready | Needs eligible cohort, expert decisions, frozen main design and appropriate independent units |
 
-No models were trained, no external scores were computed, and no new accuracy/AP claim is made by this starter package.
+## Controlled pilot
 
-## New readiness findings
+One fixed test contains 1,082 DAppSCAN files and 21 reentrancy proxy positives. Every training regime has 1,179 files and 31 proxy positives. The model is the fixed historical raw TF-IDF/LR configuration with one paired sampling seed. No test file enters any training set. Joint-disjointness preserves the full transitive historical project-union-clone graph before any cohort restriction.
 
-For DAppSCAN/reentrancy/seed 0, the historical `safe` fold with training size 1,179 generates 5,408/6,587 = 82.10% of OOF predictions. The corresponding minimum-sized `random_matched` fold generates 1,318/6,587 = 20.01%. Other training-fold sizes also differ. The old control therefore does not match how much of the test population is scored by small-training models. This is a reanalysis of split metadata, not a causal estimate of leakage or a new model experiment.
+| Training regime | AP against proxy labels |
+| --- | ---: |
+| Other files unrestricted | 0.076554 |
+| Project disjoint | 0.028044 |
+| Clone disjoint | 0.027697 |
+| Joint project and clone disjoint | 0.038475 |
 
-The Salzano candidate's pinned repository has 2,182 compact-manifest rows, 2,180 distinct source/contract pairs, 2,181 Solidity paths and 2,178 distinct Solidity Git blobs. These quantities describe different units. Duplicate keys, cross-source identities and one source/manifest mismatch must be reconciled. Folder names `safe` and `vulnerable` do not substitute for final class labels. No residual cohort is yet designated independent.
+Test prevalence is 0.019409. These are descriptive results on one observed dependency component, not a causal leakage estimate or inference over new projects. Joint AP exceeds project and clone AP here, so monotonic worsening is not established. The same test contains only three unchecked proxy positives. A metadata-only two-class analysis and separately identified post-hoc floor-workload calculation are preserved. The original pilot's ceiling-budget settings and outputs remain unchanged.
 
-## Historical provenance limitation
+All four models converged. Input validation and the four fits/scorings took 19.95 seconds, with cumulative peak RSS 394.42 MiB. Full source snapshots, configuration, inputs, memberships and predictions without copied third-party labels are saved. An additional automated implementation review recomputed AP/workload and checked regime exclusions; it is not a substitute for human vulnerability assessment.
 
-The selected C2 manifest records execution at commit `40e792530b98dd8a83f291d95197d7cd55d981d0` with `git_dirty=true`, a diff hash and reused lexical rows. The present snapshot preserves the historical outputs and current source; it is not by itself proof of a clean recreation of every historical run. Retain this distinction. New runs require a clean commit or the complete source patch/archive, plus environment and input hashes.
+## External candidate
 
-## Next executable work
+The audit compared 2,181 candidate paths with 21,950 reference paths, including all 21,457 upstream DAppSCAN files. The 2,182 compact-manifest rows correspond to 2,180 source/identifier keys. Seventeen candidate paths need reconciliation: fourteen out-of-range source-location records, two differing repeated-key annotations, and one missing manifest row. A likely ZEUS identifier transcription mismatch is quarantined, not silently repaired.
 
-1. Reconcile the external source/manifest identities; obtain original corpus snapshots locally and perform exact/normalised/clone/project overlap checks.
-2. Inspect the actual schema of `results/contracts/c2_20261024_004314/groups.parquet` and `assignments.parquet`. Build fixed T and four feasible training pools; match training object and positive counts without splitting joint dependency components.
-3. Prepare blinded label-review records with evidence. AI checks do not replace an independent human reviewer.
-4. Run one development-only pilot with one class, one model and two valid matched regimes; record runtime, RAM and cache size.
-5. Freeze the main protocol before external scoring.
+There are 142 exact-byte overlaps, all curated; 148 normalized overlaps; and 208 direct lexical overlaps at Jaccard 0.8. These are different tests of dependency. The diagnostic flow excluding prior-curated sources, unresolved records and repeated identities leaves 1,998 files, with 46 source-reported reentrancy positives and 200 unchecked positives. These counts are provisional, not an approved final test. The residual still contains 65 directly and 186 transitively linked files in 11 proxy components; see the source audit for details. The preferred response is to restrict training where feasible, not to remove inconvenient test cases.
 
-New results belong under `papers/security_evaluation/runs/<unique_run_id>/`. Preserve `results/contracts/`. Record unsuccessful runs and infeasible cells. Store third-party raw data outside tracked paper outputs unless redistribution is explicitly permitted.
+The exhaustive screen took 88.54 seconds and approximately 614 MiB peak RSS. It removes LSH candidate omission for the chosen lexical representation. String-unaware legacy comment removal, lossy normalization, missing real-world project provenance and incomplete source rights remain explicit limits. Proxy component counts do not establish independent families.
 
+## Resource feasibility
+
+`runs/resource_profile_20261025_v1/` profiles the four declared ML methods on the fixed joint pool without reading test annotations or computing performance metrics. Raw LR, normalized LR, RF and LightGBM took 5.10, 2.74, 5.65 and 5.30 seconds respectively including preprocessing and prediction; cumulative peak RSS was 322.16 MiB. A linear projection for 4 regimes × 2 classes × 5 paired sampling seeds × 4 methods is about 12.5 minutes for one test and one size point. This is a projection from one pool, not a full-campaign measurement. It excludes Slither, source audit, expert assessment, bootstrap, additional test populations and learning curves. GPU and paid model APIs are not required for these baselines.
+
+The executable pilot, audit and resource-profile reproduction commands are in the paper README and individual run READMEs. Do not mistake the 160-fit projection for completion of the main grid: the main test needs revision before that grid is scientifically useful.
+
+## Next concrete work
+
+1. Resolve the external source identity and annotation disputes, keeping all evidence and explicit unknowns. Apply the blank review packet with a named primary assessor and independent Solidity specialist.
+2. Inspect dependency edges and deployed/project families; perform a string-aware normalization sensitivity check. Build any training restrictions on the full transitive frozen graph, retaining test coverage and composition.
+3. Design the main fixed-test comparisons with sufficient positive cases and independently informative components. Report infeasible cells; do not split components merely to obtain training data. Keep this development pilot separate.
+4. Freeze eligible populations, label mappings, configurations, workload rounding and inference scope before any external model scoring. Then run the declared model set.
+
+## Provenance
+
+The branch was cloned at starter commit `f3e5bccd124def4e1f3e60478ad928a71acd5b53`; book baseline is `2c2c7723cb9fa42ff46fb6f252652056a74f9223`. Historical C1–C4 outputs are unchanged. They retain their original dirty/reused-result provenance limitations. New computations preserve complete used source snapshots, not just hashes of an unsaved diff. See `PROVENANCE_LEDGER.csv` and `VALIDITY_NOTES.md`.

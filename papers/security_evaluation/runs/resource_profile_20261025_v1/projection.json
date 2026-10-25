@@ -1,0 +1,28 @@
+{
+  "regimes": 4,
+  "classes": 2,
+  "paired_sampling_seeds": 5,
+  "evaluations_per_method": 40,
+  "total_fits": 160,
+  "scope": "one fixed T and one training-size point; sequential no feature-cache reuse",
+  "excluded": [
+    "data retrieval and audit",
+    "expert review",
+    "Slither",
+    "bootstrap",
+    "additional tests or learning-curve sizes",
+    "hyperparameter tuning"
+  ],
+  "model_seconds_for_40_evaluations": {
+    "raw_tfidf_lr": 204.15163572000893,
+    "normalized_tfidf_lr": 109.68669531997875,
+    "pattern_rf": 226.00422447998426,
+    "pattern_lightgbm": 212.04556916
+  },
+  "total_model_seconds_for_160_evaluations": 751.888124679972,
+  "interpretation": "Linear extrapolation from one joint-disjoint training pool, one class and one seed. Not a runtime guarantee; other pools, vocabulary and class can change cost.",
+  "setup_seconds_measured_once": 1.8077473439998357,
+  "peak_rss_mib_for_sequential_profile": 322.16015625,
+  "gpu_required": false,
+  "total_model_minutes_for_160_evaluations": 12.5314687446662
+}

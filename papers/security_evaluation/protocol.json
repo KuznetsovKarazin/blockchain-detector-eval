@@ -1,6 +1,6 @@
 {
-  "schema": "security_evaluation_protocol_v0.1",
-  "status": "draft_not_frozen",
+  "schema": "security_evaluation_protocol_v0.2",
+  "status": "draft_external_not_frozen_development_specified",
   "prepared_local_date": "2026-10-25",
   "timezone": "Europe/Rome",
   "working_title": "Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation",
@@ -58,11 +58,20 @@
       "project and family links",
       "label mapping and independent adjudication"
     ],
-    "unknown_labels": "preserve_as_unknown"
+    "unknown_labels": "preserve_as_unknown",
+    "audit_state": "full_source_lexical_audit_completed_eligibility_unresolved",
+    "latest_audit": "external_audit/source_audit_full_20261025",
+    "diagnostic_residual_not_frozen": {
+      "files": 1998,
+      "reentrancy_source_reported_positives": 46,
+      "unchecked_source_reported_positives": 200,
+      "transitively_linked_to_reference_files": 186,
+      "connected_proxy_components": 11
+    }
   },
   "fixed_test": {
-    "status": "not_implemented",
-    "test_manifest": null,
+    "status": "development_pilot_complete_main_design_pending",
+    "test_manifest": "runs/dev_fixed_t_20261025_v1/memberships.csv",
     "pools": [
       "other_files_unrestricted",
       "project_disjoint",
@@ -94,7 +103,22 @@
       "clone_disjoint": "exclude all clone components represented in T",
       "joint_project_clone_disjoint": "exclude every full transitive joint component intersecting T"
     },
-    "never_relax_joint_components_to_fill_cells": true
+    "never_relax_joint_components_to_fill_cells": true,
+    "development_design": {
+      "population": "Historical 6587 DAppSCAN files, exact paths aligned to frozen 7080-row all-corpus groups.",
+      "selection": "SHA256 salt security-fixed-t-development-v1, then path; ceil(0.2 * 5408)=1082 files. Saved before scoring.",
+      "class": "reentrancy",
+      "model": "raw_tfidf_logistic_regression",
+      "sampling_seed": 0,
+      "joint_graph": "Full original 7080-row graph; never recompute after cohort restriction.",
+      "matching": "For each binary proxy-label value, sample the minimum count across the four eligible pools; then use identical counts in all regimes.",
+      "interpretation": "Development feasibility and runtime only. One joint test component; descriptive paired results, no inferential interval.",
+      "coverage": "Report 5408-component population, selected T, and full 6587 DAppSCAN population separately.",
+      "not_a_holdout": "Historical development data were already inspected. This pilot is not an untouched confirmation.",
+      "workload_amendment": "Original pre-scoring pilot used ceil; floor workload recomputed post hoc without refitting. See VALIDITY_NOTES.md.",
+      "unchecked_feasibility_warning": "Same T has only 3 unchecked proxy positives; not sufficient evidence for a broad two-class conclusion."
+    },
+    "joint_disjoint_scope": "Relative to frozen observed lexical clone graph; semantic and full-upstream family independence are not implied."
   },
   "training": {
     "seeds_proposed": [
@@ -104,8 +128,51 @@
       3,
       4
     ],
-    "hyperparameters": "existing fixed settings or inner group-aware training-only tuning",
-    "external_model_selection": false
+    "hyperparameters": "Fixed historical settings; zero hyperparameter search in the development pilot and proposed primary set. Main specification still requires freeze.",
+    "external_model_selection": false,
+    "deterministic_repeats": "Raw and normalized LR need a rerun only when the training sample changes; seed indexes paired sampling as well as estimator randomness.",
+    "model_selection_policy": "Report every declared primary model; no external winner selection.",
+    "configurations": {
+      "tfidf": {
+        "token_pattern": "\\S+",
+        "ngram_range": [
+          1,
+          3
+        ],
+        "min_df": 2,
+        "max_features": 50000,
+        "sublinear_tf": true,
+        "lowercase": false
+      },
+      "logistic_regression": {
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "class_weight": "balanced",
+        "scaler": "StandardScaler(with_mean=False) fit on train only"
+      },
+      "random_forest": {
+        "n_estimators": 500,
+        "class_weight": "balanced_subsample",
+        "min_samples_leaf": 1,
+        "n_jobs": 4
+      },
+      "lightgbm": {
+        "n_estimators": 400,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "subsample": 0.8,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8,
+        "class_weight": "balanced",
+        "n_jobs": 4
+      },
+      "slither": {
+        "version": "0.11.6",
+        "detector_mapping_source": "scripts/c3_slither_baseline.py",
+        "compiler_policy": "Must be specified and checked before new external execution; historical hard-coded compiler catalogue is not automatically current."
+      }
+    }
   },
   "metrics": {
     "ranking": "sklearn.average_precision_score",
@@ -114,7 +181,7 @@
       0.1,
       0.2
     ],
-    "ties": "expected precision/recall and feasible range under label-independent within-score-tie permutation; freeze exact implementation before scoring",
+    "ties": "Uniform tie permutation: expected positive/unknown review counts and attainable TP range. With unknown labels, ratio of expected TP to expected reviewed known labels is not called expected precision.",
     "tool_reports": [
       "end_to_end_with_failures",
       "conditional_common_success_subset"
@@ -126,16 +193,23 @@
       "tool_errors",
       "timeouts",
       "runtime"
-    ]
+    ],
+    "review_budget_rule": "floor(q * N_total); actual reviewed count capped at successfully scored files. Unknown labels consume workload.",
+    "failure_policy": "Preserve status and missing score. Report success-conditional ranking and common-success comparisons; pipeline known-positive recall includes failed known positives in its denominator. Do not impute safe scores or AP to failures.",
+    "label_policy": "Confirmed negative, source-reported negative, unknown, and DAppSCAN no-published-finding proxy are distinct. Proxy-label performance is explicitly labelled.",
+    "zero_positive_policy": "AP and recall undefined if no positive labels; no zero performance substitution.",
+    "implementation": "evaluation_metrics.py"
   },
   "statistics": {
     "paired": true,
     "bootstrap_repetitions_proposed": 2000,
     "resampling_unit": "joint project and clone component",
-    "few_clusters": "report individual groups and restrict inference; bootstrap is not a remedy"
+    "few_clusters": "report individual groups and restrict inference; bootstrap is not a remedy",
+    "development_pilot": "No confidence intervals or hypothesis tests: selected T spans one frozen joint component.",
+    "main_inference_pending": "Freeze admissible inference after counting independent test components; publish cluster sizes and concentration, including when inference is unsupported."
   },
   "human_label_review": {
-    "status": "reviewer_not_assigned",
+    "status": "packet_prepared_reviewers_not_assigned",
     "cases_proposed": [
       100,
       150
@@ -147,7 +221,13 @@
     "role": "independent subject specialist",
     "blind_to_model_scores": true,
     "ai_agent_is_not_independent_expert": true,
-    "sampling": "Record inclusion criteria and selection probabilities; use design weights for population estimates under unequal-probability sampling, otherwise restrict conclusions to the audited cases."
+    "sampling": "Record inclusion criteria and selection probabilities; use design weights for population estimates under unequal-probability sampling, otherwise restrict conclusions to the audited cases.",
+    "packet": "external_audit/source_audit_full_20261025/review_packet",
+    "actual_cases": 106,
+    "actual_proxy_components": 25,
+    "initial_second_reader_cases": 51,
+    "completed_human_reviews": 0,
+    "first_packet_design": "purposive_diagnostic_no_population_error_estimation"
   },
   "freeze_prerequisites": [
     "audited eligible external population",
@@ -156,7 +236,10 @@
     "grouping rules",
     "fixed model configurations and tuning budget",
     "ties and workload rules",
-    "statistics and exclusion rules"
+    "statistics and exclusion rules",
+    "independent expert label adjudication state and documented exceptions",
+    "normalization and clone-screening limitations acknowledged",
+    "external scoring gate implemented and verified"
   ],
   "required_outputs": [
     "corpus_manifest",
@@ -176,5 +259,6 @@
     "pure causal leakage effect",
     "new final paper results",
     "journal readiness"
-  ]
+  ],
+  "amendments": "DECISIONS.md"
 }

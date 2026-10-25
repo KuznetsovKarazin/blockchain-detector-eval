@@ -1,5 +1,13 @@
 # Reproduce the P1.02 candidate metadata audit
 
+The next source-level audit is documented in
+[`SOURCE_AUDIT_2026-10-25.md`](SOURCE_AUDIT_2026-10-25.md). It adds source/label
+reconciliation and exhaustive lexical overlap screening against all uncapped
+reference sources. Results and source snapshots are in
+`source_audit_full_20261025/`; a blank independent-review reference packet is in
+its `review_packet/` subdirectory. The source-label key is not redistributed.
+The external cohort remains provisional and no model scoring was performed.
+
 `audit_candidate_metadata.py` uses Python 3.9+ and the standard library only. It inspects repository paths, Git blob IDs, byte sizes, source identifiers and contract identifiers. It never parses the CSV `tag` annotations and does not produce training targets or model metrics.
 
 The audit is **within the external candidate only**. It does not establish independence from any development or test corpus in the current study.

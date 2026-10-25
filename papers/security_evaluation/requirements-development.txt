@@ -1,0 +1,10 @@
+# Minimal CPU environment for the new audit, metrics and LR development pilot.
+# Historical C1-C4 environments remain documented in their own manifests.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+pyarrow==23.0.1
+psutil==7.2.2
+lightgbm==4.6.0
+pytest>=8

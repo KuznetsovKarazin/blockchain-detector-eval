@@ -1,0 +1,68 @@
+{
+  "schema": "security_fixed_t_development_v1",
+  "status": "development_only_not_confirmatory",
+  "created_utc": "2026-10-25T08:08:57.979319+00:00",
+  "class": "reentrancy",
+  "seed": 0,
+  "source_population": "All historical C2 7080 rows for graph; DAppSCAN 6587 rows for training/test",
+  "clone_partition": "results/contracts/c2_20261024_004314/groups.parquet; normalized-token LSH candidates + verified Jaccard >=0.8",
+  "joint_partition": "full transitive project union clone graph before all restrictions",
+  "test_selection": {
+    "population": "largest DAppSCAN joint component; size descending then joint ID",
+    "fraction": 0.2,
+    "rounding": "ceil",
+    "ranking": "sha256(salt + \"|\" + path), then path",
+    "salt": "security-fixed-t-development-v1",
+    "uses_labels_or_scores": false
+  },
+  "training": {
+    "regimes": [
+      "other_files_unrestricted",
+      "project_disjoint",
+      "clone_disjoint",
+      "joint_project_clone_disjoint"
+    ],
+    "count_matching": "minimum per binary proxy label over all four pools",
+    "ranking": "shared deterministic SHA256 path rank within proxy class; seed=0",
+    "infeasible_rule": "any matched class count zero; do not relax components",
+    "tuning_budget": 0
+  },
+  "representation": {
+    "type": "raw_text from historical contract_features.py",
+    "tfidf": {
+      "token_pattern": "\\S+",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true,
+      "lowercase": false
+    },
+    "scaler": "StandardScaler(with_mean=False), fit on training only"
+  },
+  "model": {
+    "type": "LogisticRegression",
+    "C": 1.0,
+    "max_iter": 3000,
+    "class_weight": "balanced",
+    "random_state": 0,
+    "solver": "lbfgs",
+    "tol": 0.0001
+  },
+  "metrics": {
+    "ap": "sklearn.average_precision_score",
+    "budgets": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "budget_rounding": "ceil(fraction * all test files)",
+    "ties": "uniform permutation within exact-score boundary tie; expectation and attainable TP range",
+    "label_semantics": "DAppSCAN proxy finding vs no published finding; not verified vulnerabilities/negatives"
+  },
+  "uncertainty": "No confidence interval: selected test lies in one joint component",
+  "external_scoring": false,
+  "repeat_stopping": "one seed, one class, all four regimes; no score-based selection"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "security_resource_profile_run_v1",
+  "status": "complete_resource_only",
+  "started_utc": "2026-10-25T08:17:38.405181+00:00",
+  "prepared_utc": "2026-10-25T08:17:40.197689+00:00",
+  "git_commit": "f3e5bccd124def4e1f3e60478ad928a71acd5b53",
+  "git_dirty": true,
+  "source_snapshots": {
+    "papers/security_evaluation/resource_profile.py": "82d2ce459db305530d19dad99b7e8bbb9c58e478cd83cbde047e9b37d745681a",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "src/bal/models/tabular.py": "04122d57ae500958389c320a66100315fd928b85f2d8966f90ffc4a1f1e25136"
+  },
+  "data_commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+  "config_sha256": "612c975584ecf9d8072c36797bbc62242bd9237da3556929957d256029ba2f87",
+  "development_inputs": {
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/manifest.json": "2a78f4091bdb8178905e5652b74b5e5fdacf751192b95e9f121ddcbb131d753e",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/memberships.csv": "9f6281fa2343c997f3771e76e1d76ec4e84f94889e60ae6ee99e7fc52f6c1e1d",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4"
+  },
+  "n_train": 1179,
+  "training_positive_proxy": 31,
+  "n_test_source_only": 1082,
+  "test_annotation_files_read": 0,
+  "test_labels_used": false,
+  "external_scores_computed": false,
+  "accuracy_metrics_computed": false,
+  "predictions_saved": false,
+  "training_label_semantics": "published SWC-107 finding versus no published finding; proxy only",
+  "input_output_hashes": {
+    "selected_source_hashes.csv": "66f571f346a4ffbbe6f3f9c72d42d41c0ea1720c6935383acfbd6b9c56139612",
+    "training_annotation_hashes.json": "5a24082ab47806d8c51af87f796d862c0396e2af3127c975d2c92e55a018f319",
+    "environment.json": "b806407e6e0801779897a2e0f930d62c0954da084408dec29600ec0201ec1e67"
+  },
+  "setup_seconds": 1.8077473439998357,
+  "measurement_started_utc": "2026-10-25T08:17:40.213201+00:00",
+  "finished_utc": "2026-10-25T08:17:59.380610+00:00",
+  "measurement_seconds": 19.166782201000387,
+  "process_peak_rss_mib_cumulative": 322.16015625,
+  "output_hashes": {
+    "resource_measurements.csv": "66887413160fdc48d659c0b2ad0fddb6e5c0b26f812596b69f27b139755d2bd1",
+    "threadpools_by_method.json": "5695109c5b2af6354fe130fdde6a67dea05c2594f9ce1a8dae38214831369b37",
+    "projection.json": "aee95d206e367e6252e481e673aa81bf3c0cfc3cd7aeb65f349717998d21094c"
+  }
+}

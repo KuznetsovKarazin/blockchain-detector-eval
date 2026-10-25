@@ -1,0 +1,5 @@
+regime,class,seed,n_train,positive_proxy_train,n_test,positive_proxy_test,prevalence_proxy,ap_proxy,coverage,fit_and_score_seconds,vocabulary_size,iterations,converged,process_peak_rss_mib_cumulative
+other_files_unrestricted,reentrancy,0,1179,31,1082,21,0.019408502772643253,0.07655424987414029,1.0,3.6289026089998515,50000,15,True,343.70703125
+project_disjoint,reentrancy,0,1179,31,1082,21,0.019408502772643253,0.028043977975104183,1.0,4.774369389000185,50000,82,True,385.8359375
+clone_disjoint,reentrancy,0,1179,31,1082,21,0.019408502772643253,0.027697435416565053,1.0,3.9609196199999133,50000,25,True,385.8359375
+joint_project_clone_disjoint,reentrancy,0,1179,31,1082,21,0.019408502772643253,0.03847493192872584,1.0,5.651748135000162,50000,171,True,394.421875

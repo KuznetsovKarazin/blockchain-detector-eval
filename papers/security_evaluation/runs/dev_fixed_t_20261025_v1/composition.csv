@@ -1,0 +1,12 @@
+population,n,projects,clone_components,joint_components,nonempty_lines_median,nonempty_lines_q25,nonempty_lines_q75,library_declaration_screen_n,library_path_screen_n,library_origin_status,any_swc_annotation_n
+full_dappscan,6587,608,4993,227,39.0,15.0,114.0,829,1043,unverified_screen_only,948
+largest_joint,5408,343,3926,1,36.0,15.0,102.0,619,896,unverified_screen_only,600
+common_test,1082,297,942,1,35.0,14.0,98.0,137,192,unverified_screen_only,107
+pool:other_files_unrestricted,5505,604,4333,227,40.0,15.0,117.0,692,851,unverified_screen_only,841
+pool:project_disjoint,1362,311,1223,227,60.0,19.0,183.0,244,184,unverified_screen_only,411
+pool:clone_disjoint,4706,590,4051,227,42.0,16.0,121.0,547,657,unverified_screen_only,788
+pool:joint_project_clone_disjoint,1179,265,1067,226,60.0,19.0,180.0,210,147,unverified_screen_only,348
+train:other_files_unrestricted,1179,416,1085,117,42.0,16.0,120.0,161,178,unverified_screen_only,176
+train:project_disjoint,1179,290,1069,214,60.0,19.0,183.5,209,157,unverified_screen_only,357
+train:clone_disjoint,1179,403,1126,125,43.0,16.0,124.0,143,158,unverified_screen_only,196
+train:joint_project_clone_disjoint,1179,265,1067,226,60.0,19.0,180.0,210,147,unverified_screen_only,348

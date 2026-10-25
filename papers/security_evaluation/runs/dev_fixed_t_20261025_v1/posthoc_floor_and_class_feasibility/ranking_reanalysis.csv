@@ -1,0 +1,5 @@
+regime,ap_proxy,trapezoidal_pr_area_proxy,coverage,label_regime
+other_files_unrestricted,0.07655424987414029,0.0597086008399763,1.0,proxy
+project_disjoint,0.028043977975104183,0.022036387816566787,1.0,proxy
+clone_disjoint,0.027697435416565053,0.024490466693458134,1.0,proxy
+joint_project_clone_disjoint,0.03847493192872584,0.030096007652548717,1.0,proxy

@@ -1,0 +1,10 @@
+evidence_id,source,kind,status,permitted_claim,limitation
+C1,results/contracts/c1_20261022_141306,historical_book_result,preserved,Descriptive corpus and clone audit,Approximate clone candidate search and normalization limitations
+C2,results/contracts/c2_20261024_004314,historical_book_result,preserved,Exploratory protocol and transfer comparison,Dirty historical provenance and partly reused lexical rows; no causal isolation
+C3,results/contracts/c3_20261022_163601,historical_book_result,preserved,Historical Slither coverage and mapped findings,Selected corpora and class mapping only
+C4,results/contracts/c4_20261024_011448,historical_book_result,preserved,Exploratory equal-workload comparison,Models selected using target results
+P1-START,preflight/,paper_preparation,completed,Historical split feasibility diagnostics,No new model training
+P1-EXT,external_audit/,new_paper_audit,automatic_audit_completed_eligibility_pending,Identity and overlap screening,No independent-family guarantee or external scoring
+P1-DEV,runs/,new_development_experiment,development_pilot_completed_main_design_pending,Matched fixed-test feasibility and measured resource use,Proxy labels and one joint test component; not confirmatory
+P1-HUMAN,external_audit/,independent_human_review,not_performed,No claim until specialist review,AI assistance is not independent expert adjudication
+P1-FINAL,protocol.json,new_confirmatory_experiment,blocked_by_freeze,No final external performance claim,Eligible cohort and frozen specification required

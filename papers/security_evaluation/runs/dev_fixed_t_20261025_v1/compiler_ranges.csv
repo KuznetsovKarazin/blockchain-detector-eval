@@ -1,0 +1,1858 @@
+population,compiler_range_literal,n
+full_dappscan,^0.8.0,612
+full_dappscan,^0.6.0,438
+full_dappscan,0.6.12,383
+full_dappscan,^0.5.16,268
+full_dappscan,^0.4.24,195
+full_dappscan,0.8.10,163
+full_dappscan,0.4.24,162
+full_dappscan,^0.6.12,147
+full_dappscan,0.7.6,140
+full_dappscan,^0.5.0,132
+full_dappscan,0.5.11,116
+full_dappscan,^0.8.4,113
+full_dappscan,^0.4.18,111
+full_dappscan,0.8.6,109
+full_dappscan,0.6.11,105
+full_dappscan,0.6.9,105
+full_dappscan,0.8.4,99
+full_dappscan,>=0.5.0,87
+full_dappscan,0.7.5,84
+full_dappscan,^0.7.0,78
+full_dappscan,0.6.6,78
+full_dappscan,0.8.7,78
+full_dappscan,^0.5.9,71
+full_dappscan,0.5.12,70
+full_dappscan,>=0.6.0 <0.8.0,61
+full_dappscan,>=0.6.10 <0.8.0,58
+full_dappscan,^0.5.4,57
+full_dappscan,>=0.4.21 <0.6.0,56
+full_dappscan,0.8.9,54
+full_dappscan,=0.6.12,53
+full_dappscan,^0.6.6,53
+full_dappscan,^0.4.15,52
+full_dappscan,>=0.4.24,52
+full_dappscan,=0.7.6,50
+full_dappscan,0.6.10,46
+full_dappscan,missing,46
+full_dappscan,^0.4.23,45
+full_dappscan,>=0.8.0,44
+full_dappscan,^0.4.25,43
+full_dappscan,^0.8.7,43
+full_dappscan,>=0.5.0 <0.6.0,37
+full_dappscan,0.8.13,37
+full_dappscan,^0.4.11,37
+full_dappscan,^0.8.2,37
+full_dappscan,^0.8.6,36
+full_dappscan,0.8.3,36
+full_dappscan,^0.4.21,34
+full_dappscan,0.5.4,34
+full_dappscan,^0.5.2,33
+full_dappscan,^0.7.4,33
+full_dappscan,0.5.10,33
+full_dappscan,=0.8.4,32
+full_dappscan,^0.7.6,32
+full_dappscan,0.4.23,32
+full_dappscan,^0.4.6,31
+full_dappscan,^0.4.17,31
+full_dappscan,>=0.6.0 <0.7.0,30
+full_dappscan,^0.4.8,30
+full_dappscan,0.8.11,29
+full_dappscan,0.5.17,29
+full_dappscan,0.8.0,28
+full_dappscan,^0.6.10,28
+full_dappscan,0.5.13,28
+full_dappscan,^0.6.2,28
+full_dappscan,0.5.16,27
+full_dappscan,^0.8.3,26
+full_dappscan,^0.7.3,25
+full_dappscan,^0.5.3,25
+full_dappscan,0.5.8,24
+full_dappscan,0.7.0,24
+full_dappscan,>=0.6.11,23
+full_dappscan,>=0.6.2,23
+full_dappscan,^0.7.1,22
+full_dappscan,0.4.25,22
+full_dappscan,0.5.9,21
+full_dappscan,>0.5.0 <0.8.0,21
+full_dappscan,^0.5.13,21
+full_dappscan,0.8.12,20
+full_dappscan,^0.6.8,20
+full_dappscan,0.5.14,20
+full_dappscan,>=0.7.0 <0.8.0,19
+full_dappscan,>=0.7.0,19
+full_dappscan,^0.4.10,19
+full_dappscan,=0.6.6,19
+full_dappscan,>=0.4.22 <0.8.0,19
+full_dappscan,^0.8.10,18
+full_dappscan,^0.5.17,18
+full_dappscan,>=0.6.0,18
+full_dappscan,>=0.6.10 <=0.8.10,17
+full_dappscan,^0.6.7,17
+full_dappscan,>=0.8.0 <0.9.0,16
+full_dappscan,>=0.4.0,15
+full_dappscan,>=0.4.22 <0.9.0,15
+full_dappscan,^0.4.0,14
+full_dappscan,>=0.6.12,13
+full_dappscan,^0.5.12,13
+full_dappscan,=0.6.10,13
+full_dappscan,=0.5.16,13
+full_dappscan,^0.6.11,13
+full_dappscan,^0.4.4,13
+full_dappscan,>=0.8.0 <=0.8.10,12
+full_dappscan,^0.5.5,12
+full_dappscan,>=0.8.4 <0.9.0,11
+full_dappscan,^0.4.13,10
+full_dappscan,^0.5.15,10
+full_dappscan,^0.4.19,9
+full_dappscan,0.5.0,8
+full_dappscan,>= 0.7.0,8
+full_dappscan,^0.4.7,7
+full_dappscan,^0.8.9,7
+full_dappscan,^0.8.11,7
+full_dappscan,0.8.5,7
+full_dappscan,>=0.5.16,7
+full_dappscan,0.7.4,6
+full_dappscan,>=0.7.6,6
+full_dappscan,0.4.21,6
+full_dappscan,^0.5.8,6
+full_dappscan,"""0.8.13""",6
+full_dappscan,>=0.7.2,5
+full_dappscan,^0.4.1,5
+full_dappscan,>=0.4.25 <0.7.0,5
+full_dappscan,0.7.3,5
+full_dappscan,0.4.18,5
+full_dappscan,^0.4.16,5
+full_dappscan,^0.4.14,4
+full_dappscan,^0.8.8,4
+full_dappscan,^0.8.1,4
+full_dappscan,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,4
+full_dappscan,>=0.5.0 <0.8.0,4
+full_dappscan,^0.8.5,4
+full_dappscan,0.6.7,3
+full_dappscan,>=0.6.2 <0.8.0,3
+full_dappscan,0.6.0,3
+full_dappscan,>=0.4.21 <0.7.0,3
+full_dappscan,^0.6,3
+full_dappscan,0.6.8,3
+full_dappscan,^0.6.5,3
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+full_dappscan,=0.8.6,3
+full_dappscan,>=0.6.6,3
+full_dappscan,0.5.3,3
+full_dappscan,0.8.2,3
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+full_dappscan,>=0.4.22,3
+full_dappscan,>= 0.8.0,3
+full_dappscan,>=0.6.0 <0.9.0,2
+full_dappscan,^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;0.6.6;0.6.6,2
+full_dappscan,^0.4.12,2
+full_dappscan,>0.5.0 <0.9.0,2
+full_dappscan,>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0,2
+full_dappscan,=0.6.11,2
+full_dappscan,>=0.5.16 <0.8.0,2
+full_dappscan,>= 0.5.0 <0.6.0,2
+full_dappscan,>=0.5.0 <0.7.0,2
+full_dappscan,^0.5.11,2
+full_dappscan,<0.6.0 >=0.4.24,2
+full_dappscan,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,2
+full_dappscan,>0.4.13,2
+full_dappscan,^0.8.0;^0.8.0;>=0.6.0,2
+full_dappscan,>=0.8.4 <0.8.11,2
+full_dappscan,>=0.8.4,2
+full_dappscan,0.4.15,2
+full_dappscan,>=0.7.4,2
+full_dappscan,^0.6.12;^0.6.12,2
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+full_dappscan,^0.7.5,2
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+full_dappscan,^0.6.0;0.6.12,2
+full_dappscan,>=0.7.0 <0.9.0,2
+full_dappscan,^0.4.24;^0.4.24,2
+full_dappscan,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+full_dappscan,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24,1
+full_dappscan,^0.4.9,1
+full_dappscan,>=0.6.9 <0.8.0,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+full_dappscan,0.4.19,1
+full_dappscan,>=0.4.21 <0.9.0,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+full_dappscan,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+full_dappscan,>=0.4.23,1
+full_dappscan,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24,1
+full_dappscan,>=0.7.6 <0.9.0,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+full_dappscan,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.3,1
+full_dappscan,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+full_dappscan,=0.8.9,1
+full_dappscan,^0.6.0;^0.6.0;^0.6.0;>=0.6.0;>=0.6.0,1
+full_dappscan,^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;>=0.6.0,1
+full_dappscan,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+full_dappscan,>=0.5.0 <0.9.0,1
+full_dappscan,^0.8.0;^0.8.0;0.8.9;^0.8.0,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+full_dappscan,= 0.5.16,1
+full_dappscan,0.6.12;0.6.12,1
+full_dappscan,^0.8.0;^0.8.0,1
+full_dappscan,^0.5.0;^0.5.0;^0.5.5;^0.5.0,1
+full_dappscan,^0.6.9,1
+full_dappscan,>=0.4.22 <=0.6.12,1
+full_dappscan,^0.8.0;^0.8.0;0.8.9,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+full_dappscan,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+full_dappscan,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0;>=0.6.2 <0.8.0;^0.6.0;^0.6.0;^0.6.0,1
+full_dappscan,=0.8.11,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+full_dappscan,>=0.5.12,1
+full_dappscan,^0.4.23;^0.4.11,1
+full_dappscan,>=0.6.6 <0.9.0,1
+full_dappscan,^0.6.0;^0.6.0;^0.6.2;^0.6.2;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.12,1
+full_dappscan,>0.6.6,1
+full_dappscan,>=0.5.0;>=0.6.0;>=0.6.2;>=0.6.2;>=0.5.0;>=0.6.6;>=0.5.0;>=0.5.0;>=0.5.0;>=0.6.6,1
+full_dappscan,>=0.5.0;>=0.5.0;>=0.5.0;=0.6.12;=0.6.12;=0.6.12;=0.6.12;>=0.5.0;>=0.5.0;>=0.6.2;>=0.6.2;=0.6.12;=0.6.12,1
+full_dappscan,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+full_dappscan,>0.4.18,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0,1
+full_dappscan,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+full_dappscan,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+full_dappscan,=0.8.0,1
+full_dappscan,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+full_dappscan,^0.5.17;>=0.4.22 <0.6.0,1
+full_dappscan,<0.6.0 >=0.4.21,1
+full_dappscan,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+full_dappscan,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+full_dappscan,=0.8.12,1
+full_dappscan,"""0.8.0""",1
+full_dappscan,>=0.5.0;>=0.5.0;>=0.4.0;>=0.5.0,1
+full_dappscan,>=0.6.8,1
+full_dappscan,<=0.7.0,1
+full_dappscan,>=0.8.8 <0.8.9,1
+full_dappscan,<=0.8.10,1
+full_dappscan,>=0.6.6 <0.8.11,1
+full_dappscan,>=0.7.5,1
+full_dappscan,>=0.5.0;>=0.5.0;0.6.9;0.6.9;0.6.9;0.6.9;>=0.5.0;>=0.5.0;>=0.5.0;0.6.9,1
+full_dappscan,0.4.10,1
+full_dappscan,^0.5.7,1
+full_dappscan,>=0.6.11 <=0.6.12,1
+full_dappscan,0.4.11,1
+full_dappscan,^0.5.2;^0.5.2;^0.5.2;0.5.3;0.5.3,1
+full_dappscan,^0.5.2;^0.5.2;0.5.3;0.5.3,1
+full_dappscan,= 0.6.6,1
+full_dappscan,^0.4.2,1
+full_dappscan,^0.6.4,1
+full_dappscan,>=0.4.24 <0.7.0,1
+largest_joint,^0.8.0,497
+largest_joint,^0.6.0,360
+largest_joint,0.6.12,318
+largest_joint,^0.5.16,258
+largest_joint,^0.4.24,178
+largest_joint,0.4.24,155
+largest_joint,0.7.6,128
+largest_joint,^0.5.0,119
+largest_joint,0.8.6,109
+largest_joint,0.6.11,104
+largest_joint,0.6.9,104
+largest_joint,0.8.10,104
+largest_joint,^0.6.12,103
+largest_joint,^0.4.18,102
+largest_joint,>=0.5.0,86
+largest_joint,0.6.6,78
+largest_joint,^0.8.4,77
+largest_joint,0.5.11,73
+largest_joint,^0.5.9,71
+largest_joint,0.5.12,70
+largest_joint,^0.7.0,63
+largest_joint,>=0.6.10 <0.8.0,58
+largest_joint,^0.5.4,57
+largest_joint,0.7.5,56
+largest_joint,>=0.4.24,52
+largest_joint,>=0.6.0 <0.8.0,51
+largest_joint,=0.6.12,51
+largest_joint,0.8.4,47
+largest_joint,>=0.4.21 <0.6.0,46
+largest_joint,0.6.10,45
+largest_joint,^0.6.6,43
+largest_joint,0.8.9,42
+largest_joint,0.8.7,41
+largest_joint,>=0.5.0 <0.6.0,36
+largest_joint,0.8.3,36
+largest_joint,0.5.4,34
+largest_joint,0.5.10,33
+largest_joint,>=0.8.0,33
+largest_joint,^0.4.15,32
+largest_joint,=0.8.4,32
+largest_joint,^0.8.2,32
+largest_joint,^0.4.11,32
+largest_joint,0.4.23,32
+largest_joint,^0.5.2,32
+largest_joint,=0.7.6,31
+largest_joint,^0.4.6,31
+largest_joint,^0.7.4,31
+largest_joint,missing,30
+largest_joint,^0.7.6,28
+largest_joint,0.5.13,28
+largest_joint,0.5.16,27
+largest_joint,^0.4.8,26
+largest_joint,^0.5.3,25
+largest_joint,0.8.13,25
+largest_joint,0.7.0,24
+largest_joint,^0.6.2,24
+largest_joint,>=0.6.2,23
+largest_joint,^0.6.10,23
+largest_joint,^0.8.6,23
+largest_joint,>=0.6.0 <0.7.0,23
+largest_joint,>=0.6.11,23
+largest_joint,0.5.8,23
+largest_joint,^0.7.1,22
+largest_joint,^0.8.3,21
+largest_joint,>0.5.0 <0.8.0,21
+largest_joint,^0.5.13,21
+largest_joint,0.5.9,21
+largest_joint,0.5.14,20
+largest_joint,^0.6.8,20
+largest_joint,0.8.0,19
+largest_joint,=0.6.6,19
+largest_joint,>=0.7.0 <0.8.0,19
+largest_joint,>=0.4.22 <0.8.0,19
+largest_joint,>=0.7.0,19
+largest_joint,^0.4.23,19
+largest_joint,^0.8.10,18
+largest_joint,0.8.12,18
+largest_joint,>=0.6.0,17
+largest_joint,>=0.6.10 <=0.8.10,17
+largest_joint,^0.4.10,17
+largest_joint,^0.5.17,17
+largest_joint,^0.6.7,17
+largest_joint,0.4.25,17
+largest_joint,^0.4.25,17
+largest_joint,>=0.8.0 <0.9.0,16
+largest_joint,>=0.4.22 <0.9.0,15
+largest_joint,>=0.4.0,14
+largest_joint,0.5.17,14
+largest_joint,>=0.6.12,13
+largest_joint,=0.5.16,13
+largest_joint,0.8.11,13
+largest_joint,=0.6.10,13
+largest_joint,>=0.8.0 <=0.8.10,12
+largest_joint,^0.5.5,12
+largest_joint,^0.4.4,11
+largest_joint,^0.4.13,10
+largest_joint,^0.5.12,10
+largest_joint,^0.4.17,10
+largest_joint,^0.5.15,10
+largest_joint,>= 0.7.0,8
+largest_joint,^0.4.19,8
+largest_joint,^0.4.7,7
+largest_joint,>=0.5.16,7
+largest_joint,0.5.0,7
+largest_joint,"""0.8.13""",6
+largest_joint,0.4.21,6
+largest_joint,^0.4.0,6
+largest_joint,^0.8.7,6
+largest_joint,>=0.7.6,6
+largest_joint,0.7.4,5
+largest_joint,0.4.18,5
+largest_joint,^0.4.1,5
+largest_joint,0.8.5,5
+largest_joint,>=0.4.25 <0.7.0,5
+largest_joint,^0.4.16,4
+largest_joint,^0.4.21,4
+largest_joint,^0.5.8,4
+largest_joint,^0.4.14,4
+largest_joint,0.7.3,4
+largest_joint,0.5.3,3
+largest_joint,0.6.8,3
+largest_joint,0.8.2,3
+largest_joint,>=0.4.21 <0.7.0,3
+largest_joint,>=0.6.2 <0.8.0,3
+largest_joint,0.6.7,3
+largest_joint,^0.6.5,3
+largest_joint,>= 0.8.0,3
+largest_joint,>=0.4.22,3
+largest_joint,>=0.6.6,3
+largest_joint,^0.6,3
+largest_joint,0.4.15,2
+largest_joint,^0.6.12;^0.6.12,2
+largest_joint,^0.4.24;^0.4.24,2
+largest_joint,^0.8.9,2
+largest_joint,0.6.0,2
+largest_joint,>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0,2
+largest_joint,^0.4.12,2
+largest_joint,^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;0.6.6;0.6.6,2
+largest_joint,>=0.7.4,2
+largest_joint,>=0.5.16 <0.8.0,2
+largest_joint,>=0.5.0 <0.7.0,2
+largest_joint,^0.5.11,2
+largest_joint,=0.6.11,2
+largest_joint,^0.8.1,2
+largest_joint,^0.6.0;0.6.12,2
+largest_joint,>=0.8.4 <0.8.11,2
+largest_joint,<0.6.0 >=0.4.24,2
+largest_joint,>= 0.5.0 <0.6.0,2
+largest_joint,^0.6.11,2
+largest_joint,>=0.6.0 <0.9.0,2
+largest_joint,>=0.8.4,2
+largest_joint,>=0.6.9 <0.8.0,1
+largest_joint,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24,1
+largest_joint,>0.5.0 <0.9.0,1
+largest_joint,>=0.4.21 <0.9.0,1
+largest_joint,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24,1
+largest_joint,= 0.5.16,1
+largest_joint,>=0.5.0 <0.9.0,1
+largest_joint,^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;>=0.6.0,1
+largest_joint,^0.6.0;^0.6.0;^0.6.0;>=0.6.0;>=0.6.0,1
+largest_joint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+largest_joint,>=0.5.0;>=0.6.0;>=0.6.2;>=0.6.2;>=0.5.0;>=0.6.6;>=0.5.0;>=0.5.0;>=0.5.0;>=0.6.6,1
+largest_joint,^0.8.0;^0.8.0,1
+largest_joint,>=0.5.0;>=0.5.0;>=0.5.0;=0.6.12;=0.6.12;=0.6.12;=0.6.12;>=0.5.0;>=0.5.0;>=0.6.2;>=0.6.2;=0.6.12;=0.6.12,1
+largest_joint,^0.6.0;^0.6.0;^0.6.2;^0.6.2;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.12,1
+largest_joint,>0.6.6,1
+largest_joint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0;>=0.6.2 <0.8.0;^0.6.0;^0.6.0;^0.6.0,1
+largest_joint,>=0.5.0 <0.8.0,1
+largest_joint,>=0.5.12,1
+largest_joint,>=0.4.23,1
+largest_joint,>=0.7.6 <0.9.0,1
+largest_joint,>0.4.18,1
+largest_joint,^0.6.9,1
+largest_joint,^0.8.0;^0.8.0;^0.8.0,1
+largest_joint,^0.7.5,1
+largest_joint,^0.5.0;^0.5.0;^0.5.5;^0.5.0,1
+largest_joint,"""0.8.0""",1
+largest_joint,<=0.8.10,1
+largest_joint,>=0.6.6 <0.8.11,1
+largest_joint,>=0.7.5,1
+largest_joint,>=0.5.0;>=0.5.0;0.6.9;0.6.9;0.6.9;0.6.9;>=0.5.0;>=0.5.0;>=0.5.0;0.6.9,1
+largest_joint,>=0.5.0;>=0.5.0;>=0.4.0;>=0.5.0,1
+largest_joint,<0.6.0 >=0.4.21,1
+largest_joint,>=0.4.22 <=0.6.12,1
+largest_joint,^0.5.7,1
+largest_joint,>=0.6.11 <=0.6.12,1
+largest_joint,0.4.11,1
+largest_joint,0.4.10,1
+largest_joint,^0.5.2;^0.5.2;^0.5.2;0.5.3;0.5.3,1
+largest_joint,^0.5.2;^0.5.2;0.5.3;0.5.3,1
+largest_joint,= 0.6.6,1
+largest_joint,^0.6.4,1
+largest_joint,>=0.4.24 <0.7.0,1
+common_test,^0.8.0,111
+common_test,^0.6.0,79
+common_test,0.6.12,51
+common_test,^0.5.16,49
+common_test,^0.4.24,35
+common_test,0.7.6,31
+common_test,0.4.24,22
+common_test,^0.6.12,22
+common_test,^0.4.18,21
+common_test,0.8.10,21
+common_test,^0.5.0,21
+common_test,0.8.6,20
+common_test,0.6.11,19
+common_test,0.6.9,17
+common_test,>=0.5.0,16
+common_test,>=0.6.10 <0.8.0,16
+common_test,0.6.6,16
+common_test,0.5.12,15
+common_test,0.5.11,15
+common_test,>=0.4.24,15
+common_test,^0.5.4,14
+common_test,^0.5.9,13
+common_test,>=0.4.21 <0.6.0,12
+common_test,0.6.10,11
+common_test,^0.7.0,11
+common_test,^0.8.4,10
+common_test,>=0.6.0 <0.8.0,10
+common_test,0.8.7,10
+common_test,=0.6.12,9
+common_test,^0.6.6,9
+common_test,0.8.9,9
+common_test,^0.4.11,9
+common_test,0.5.8,9
+common_test,^0.8.2,9
+common_test,>=0.6.11,9
+common_test,^0.5.2,8
+common_test,0.5.16,8
+common_test,0.7.0,8
+common_test,^0.8.3,8
+common_test,^0.7.4,8
+common_test,=0.6.6,7
+common_test,0.8.4,7
+common_test,0.5.13,7
+common_test,^0.4.6,7
+common_test,^0.6.2,7
+common_test,^0.4.8,7
+common_test,0.7.5,7
+common_test,>=0.6.0 <0.7.0,6
+common_test,^0.6.7,6
+common_test,0.8.13,6
+common_test,0.5.4,6
+common_test,^0.7.6,6
+common_test,missing,6
+common_test,=0.7.6,6
+common_test,0.5.10,6
+common_test,>=0.7.0,5
+common_test,^0.6.10,5
+common_test,^0.4.15,5
+common_test,^0.8.6,5
+common_test,>=0.5.0 <0.6.0,5
+common_test,0.5.9,5
+common_test,0.8.11,5
+common_test,0.8.3,5
+common_test,^0.5.3,5
+common_test,0.4.23,5
+common_test,>=0.6.2,4
+common_test,^0.4.23,4
+common_test,>=0.6.10 <=0.8.10,4
+common_test,^0.5.13,4
+common_test,>=0.7.0 <0.8.0,4
+common_test,>=0.4.0,4
+common_test,=0.8.4,4
+common_test,=0.5.16,4
+common_test,"""0.8.13""",4
+common_test,>=0.8.0,3
+common_test,=0.6.10,3
+common_test,^0.4.4,3
+common_test,>=0.4.22 <0.8.0,3
+common_test,^0.5.17,3
+common_test,^0.4.1,3
+common_test,^0.4.19,3
+common_test,^0.6.8,3
+common_test,0.8.0,3
+common_test,^0.4.17,3
+common_test,^0.5.8,3
+common_test,^0.5.12,3
+common_test,0.5.0,2
+common_test,^0.5.15,2
+common_test,0.4.25,2
+common_test,^0.6.5,2
+common_test,0.5.14,2
+common_test,>=0.5.16,2
+common_test,^0.4.7,2
+common_test,^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;0.6.6;0.6.6,2
+common_test,>=0.4.21 <0.7.0,2
+common_test,>=0.7.6,2
+common_test,^0.4.0,2
+common_test,>=0.8.0 <0.9.0,2
+common_test,0.8.12,1
+common_test,>=0.4.22 <0.9.0,1
+common_test,^0.6.0;^0.6.0;^0.6.0;>=0.6.0;>=0.6.0,1
+common_test,>=0.4.22,1
+common_test,>= 0.8.0,1
+common_test,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24,1
+common_test,^0.4.21,1
+common_test,^0.8.7,1
+common_test,>0.5.0 <0.9.0,1
+common_test,^0.8.10,1
+common_test,>=0.6.6,1
+common_test,>0.6.6,1
+common_test,>=0.6.12,1
+common_test,0.7.4,1
+common_test,>=0.5.0;>=0.5.0;>=0.5.0;=0.6.12;=0.6.12;=0.6.12;=0.6.12;>=0.5.0;>=0.5.0;>=0.6.2;>=0.6.2;=0.6.12;=0.6.12,1
+common_test,>=0.6.0,1
+common_test,^0.8.0;^0.8.0,1
+common_test,0.5.17,1
+common_test,>0.4.18,1
+common_test,^0.8.0;^0.8.0;^0.8.0,1
+common_test,^0.6.0;0.6.12,1
+common_test,<0.6.0 >=0.4.21,1
+common_test,^0.7.1,1
+common_test,^0.4.10,1
+common_test,>=0.8.0 <=0.8.10,1
+common_test,^0.5.5,1
+common_test,>=0.8.4 <0.8.11,1
+common_test,>=0.7.5,1
+common_test,^0.6,1
+common_test,0.4.18,1
+common_test,^0.4.14,1
+common_test,=0.6.11,1
+common_test,^0.5.2;^0.5.2;0.5.3;0.5.3,1
+pool:other_files_unrestricted,^0.8.0,501
+pool:other_files_unrestricted,^0.6.0,359
+pool:other_files_unrestricted,0.6.12,332
+pool:other_files_unrestricted,^0.5.16,219
+pool:other_files_unrestricted,^0.4.24,160
+pool:other_files_unrestricted,0.8.10,142
+pool:other_files_unrestricted,0.4.24,140
+pool:other_files_unrestricted,^0.6.12,125
+pool:other_files_unrestricted,^0.5.0,111
+pool:other_files_unrestricted,0.7.6,109
+pool:other_files_unrestricted,^0.8.4,103
+pool:other_files_unrestricted,0.5.11,101
+pool:other_files_unrestricted,0.8.4,92
+pool:other_files_unrestricted,^0.4.18,90
+pool:other_files_unrestricted,0.8.6,89
+pool:other_files_unrestricted,0.6.9,88
+pool:other_files_unrestricted,0.6.11,86
+pool:other_files_unrestricted,0.7.5,77
+pool:other_files_unrestricted,>=0.5.0,71
+pool:other_files_unrestricted,0.8.7,68
+pool:other_files_unrestricted,^0.7.0,67
+pool:other_files_unrestricted,0.6.6,62
+pool:other_files_unrestricted,^0.5.9,58
+pool:other_files_unrestricted,0.5.12,55
+pool:other_files_unrestricted,>=0.6.0 <0.8.0,51
+pool:other_files_unrestricted,^0.4.15,47
+pool:other_files_unrestricted,0.8.9,45
+pool:other_files_unrestricted,^0.6.6,44
+pool:other_files_unrestricted,>=0.4.21 <0.6.0,44
+pool:other_files_unrestricted,=0.6.12,44
+pool:other_files_unrestricted,=0.7.6,44
+pool:other_files_unrestricted,^0.5.4,43
+pool:other_files_unrestricted,^0.4.25,43
+pool:other_files_unrestricted,^0.8.7,42
+pool:other_files_unrestricted,>=0.6.10 <0.8.0,42
+pool:other_files_unrestricted,>=0.8.0,41
+pool:other_files_unrestricted,^0.4.23,41
+pool:other_files_unrestricted,missing,40
+pool:other_files_unrestricted,>=0.4.24,37
+pool:other_files_unrestricted,0.6.10,35
+pool:other_files_unrestricted,^0.4.21,33
+pool:other_files_unrestricted,>=0.5.0 <0.6.0,32
+pool:other_files_unrestricted,0.8.3,31
+pool:other_files_unrestricted,^0.8.6,31
+pool:other_files_unrestricted,0.8.13,31
+pool:other_files_unrestricted,0.5.17,28
+pool:other_files_unrestricted,0.5.4,28
+pool:other_files_unrestricted,^0.4.11,28
+pool:other_files_unrestricted,^0.4.17,28
+pool:other_files_unrestricted,=0.8.4,28
+pool:other_files_unrestricted,^0.8.2,28
+pool:other_files_unrestricted,0.4.23,27
+pool:other_files_unrestricted,0.5.10,27
+pool:other_files_unrestricted,^0.7.6,26
+pool:other_files_unrestricted,^0.7.4,25
+pool:other_files_unrestricted,^0.7.3,25
+pool:other_files_unrestricted,0.8.0,25
+pool:other_files_unrestricted,^0.5.2,25
+pool:other_files_unrestricted,0.8.11,24
+pool:other_files_unrestricted,>=0.6.0 <0.7.0,24
+pool:other_files_unrestricted,^0.4.6,24
+pool:other_files_unrestricted,^0.4.8,23
+pool:other_files_unrestricted,^0.6.10,23
+pool:other_files_unrestricted,0.5.13,21
+pool:other_files_unrestricted,>0.5.0 <0.8.0,21
+pool:other_files_unrestricted,^0.7.1,21
+pool:other_files_unrestricted,^0.6.2,21
+pool:other_files_unrestricted,0.4.25,20
+pool:other_files_unrestricted,^0.5.3,20
+pool:other_files_unrestricted,0.8.12,19
+pool:other_files_unrestricted,>=0.6.2,19
+pool:other_files_unrestricted,0.5.16,19
+pool:other_files_unrestricted,0.5.14,18
+pool:other_files_unrestricted,^0.8.3,18
+pool:other_files_unrestricted,^0.4.10,18
+pool:other_files_unrestricted,>=0.6.0,17
+pool:other_files_unrestricted,^0.8.10,17
+pool:other_files_unrestricted,^0.5.13,17
+pool:other_files_unrestricted,^0.6.8,17
+pool:other_files_unrestricted,0.5.9,16
+pool:other_files_unrestricted,0.7.0,16
+pool:other_files_unrestricted,>=0.4.22 <0.8.0,16
+pool:other_files_unrestricted,^0.5.17,15
+pool:other_files_unrestricted,0.5.8,15
+pool:other_files_unrestricted,>=0.7.0 <0.8.0,15
+pool:other_files_unrestricted,>=0.7.0,14
+pool:other_files_unrestricted,>=0.8.0 <0.9.0,14
+pool:other_files_unrestricted,>=0.6.11,14
+pool:other_files_unrestricted,>=0.4.22 <0.9.0,14
+pool:other_files_unrestricted,^0.6.11,13
+pool:other_files_unrestricted,>=0.6.10 <=0.8.10,13
+pool:other_files_unrestricted,=0.6.6,12
+pool:other_files_unrestricted,>=0.6.12,12
+pool:other_files_unrestricted,^0.4.0,12
+pool:other_files_unrestricted,>=0.8.4 <0.9.0,11
+pool:other_files_unrestricted,^0.5.5,11
+pool:other_files_unrestricted,>=0.4.0,11
+pool:other_files_unrestricted,^0.6.7,11
+pool:other_files_unrestricted,>=0.8.0 <=0.8.10,11
+pool:other_files_unrestricted,^0.4.4,10
+pool:other_files_unrestricted,^0.5.12,10
+pool:other_files_unrestricted,=0.6.10,10
+pool:other_files_unrestricted,^0.4.13,10
+pool:other_files_unrestricted,=0.5.16,9
+pool:other_files_unrestricted,^0.5.15,8
+pool:other_files_unrestricted,>= 0.7.0,8
+pool:other_files_unrestricted,^0.8.11,7
+pool:other_files_unrestricted,0.8.5,7
+pool:other_files_unrestricted,^0.8.9,7
+pool:other_files_unrestricted,^0.4.19,6
+pool:other_files_unrestricted,0.4.21,6
+pool:other_files_unrestricted,0.5.0,6
+pool:other_files_unrestricted,^0.4.7,5
+pool:other_files_unrestricted,0.7.4,5
+pool:other_files_unrestricted,0.7.3,5
+pool:other_files_unrestricted,>=0.5.16,5
+pool:other_files_unrestricted,>=0.7.2,5
+pool:other_files_unrestricted,>=0.4.25 <0.7.0,5
+pool:other_files_unrestricted,^0.4.16,5
+pool:other_files_unrestricted,^0.8.8,4
+pool:other_files_unrestricted,^0.8.5,4
+pool:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,4
+pool:other_files_unrestricted,^0.8.1,4
+pool:other_files_unrestricted,>=0.7.6,4
+pool:other_files_unrestricted,0.4.18,4
+pool:other_files_unrestricted,>=0.5.0 <0.8.0,4
+pool:other_files_unrestricted,=0.8.6,3
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+pool:other_files_unrestricted,0.8.2,3
+pool:other_files_unrestricted,0.5.3,3
+pool:other_files_unrestricted,0.6.8,3
+pool:other_files_unrestricted,^0.5.8,3
+pool:other_files_unrestricted,^0.4.14,3
+pool:other_files_unrestricted,0.6.7,3
+pool:other_files_unrestricted,>=0.6.2 <0.8.0,3
+pool:other_files_unrestricted,0.6.0,3
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+pool:other_files_unrestricted,^0.4.12,2
+pool:other_files_unrestricted,^0.4.24;^0.4.24,2
+pool:other_files_unrestricted,^0.6,2
+pool:other_files_unrestricted,>=0.5.16 <0.8.0,2
+pool:other_files_unrestricted,>=0.5.0 <0.7.0,2
+pool:other_files_unrestricted,<0.6.0 >=0.4.24,2
+pool:other_files_unrestricted,^0.8.0;^0.8.0;>=0.6.0,2
+pool:other_files_unrestricted,>=0.7.0 <0.9.0,2
+pool:other_files_unrestricted,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,2
+pool:other_files_unrestricted,^0.4.1,2
+pool:other_files_unrestricted,>=0.8.4,2
+pool:other_files_unrestricted,^0.6.12;^0.6.12,2
+pool:other_files_unrestricted,>=0.7.4,2
+pool:other_files_unrestricted,0.4.15,2
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+pool:other_files_unrestricted,>= 0.5.0 <0.6.0,2
+pool:other_files_unrestricted,^0.5.11,2
+pool:other_files_unrestricted,^0.7.5,2
+pool:other_files_unrestricted,>=0.6.0 <0.9.0,2
+pool:other_files_unrestricted,>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0,2
+pool:other_files_unrestricted,"""0.8.13""",2
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+pool:other_files_unrestricted,>=0.4.22,2
+pool:other_files_unrestricted,>= 0.8.0,2
+pool:other_files_unrestricted,>=0.6.6,2
+pool:other_files_unrestricted,>0.4.13,2
+pool:other_files_unrestricted,>=0.7.6 <0.9.0,1
+pool:other_files_unrestricted,>=0.6.9 <0.8.0,1
+pool:other_files_unrestricted,>=0.4.21 <0.9.0,1
+pool:other_files_unrestricted,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24,1
+pool:other_files_unrestricted,0.4.19,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:other_files_unrestricted,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:other_files_unrestricted,^0.4.9,1
+pool:other_files_unrestricted,>=0.5.0 <0.9.0,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;0.8.9;^0.8.0,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:other_files_unrestricted,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+pool:other_files_unrestricted,= 0.5.16,1
+pool:other_files_unrestricted,>=0.4.23,1
+pool:other_files_unrestricted,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+pool:other_files_unrestricted,>=0.4.21 <0.7.0,1
+pool:other_files_unrestricted,>=0.6.6 <0.9.0,1
+pool:other_files_unrestricted,^0.4.23;^0.4.11,1
+pool:other_files_unrestricted,^0.6.9,1
+pool:other_files_unrestricted,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+pool:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.5;^0.5.0,1
+pool:other_files_unrestricted,^0.6.0;0.6.12,1
+pool:other_files_unrestricted,>=0.5.0;>=0.6.0;>=0.6.2;>=0.6.2;>=0.5.0;>=0.6.6;>=0.5.0;>=0.5.0;>=0.5.0;>=0.6.6,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:other_files_unrestricted,=0.8.11,1
+pool:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:other_files_unrestricted,=0.8.9,1
+pool:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.3,1
+pool:other_files_unrestricted,^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;>=0.6.0,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+pool:other_files_unrestricted,^0.6.0;^0.6.0;^0.6.2;^0.6.2;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.12,1
+pool:other_files_unrestricted,0.6.12;0.6.12,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;0.8.9,1
+pool:other_files_unrestricted,>=0.5.12,1
+pool:other_files_unrestricted,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0;>=0.6.2 <0.8.0;^0.6.0;^0.6.0;^0.6.0,1
+pool:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:other_files_unrestricted,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+pool:other_files_unrestricted,>=0.4.22 <=0.6.12,1
+pool:other_files_unrestricted,=0.8.0,1
+pool:other_files_unrestricted,>=0.6.6 <0.8.11,1
+pool:other_files_unrestricted,^0.5.17;>=0.4.22 <0.6.0,1
+pool:other_files_unrestricted,>=0.6.8,1
+pool:other_files_unrestricted,>=0.5.0;>=0.5.0;0.6.9;0.6.9;0.6.9;0.6.9;>=0.5.0;>=0.5.0;>=0.5.0;0.6.9,1
+pool:other_files_unrestricted,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:other_files_unrestricted,=0.8.12,1
+pool:other_files_unrestricted,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:other_files_unrestricted,<=0.7.0,1
+pool:other_files_unrestricted,"""0.8.0""",1
+pool:other_files_unrestricted,>=0.5.0;>=0.5.0;>=0.4.0;>=0.5.0,1
+pool:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:other_files_unrestricted,>=0.8.8 <0.8.9,1
+pool:other_files_unrestricted,<=0.8.10,1
+pool:other_files_unrestricted,>=0.8.4 <0.8.11,1
+pool:other_files_unrestricted,^0.5.7,1
+pool:other_files_unrestricted,^0.6.5,1
+pool:other_files_unrestricted,0.4.10,1
+pool:other_files_unrestricted,0.4.11,1
+pool:other_files_unrestricted,=0.6.11,1
+pool:other_files_unrestricted,>=0.6.11 <=0.6.12,1
+pool:other_files_unrestricted,= 0.6.6,1
+pool:other_files_unrestricted,^0.5.2;^0.5.2;^0.5.2;0.5.3;0.5.3,1
+pool:other_files_unrestricted,^0.6.4,1
+pool:other_files_unrestricted,^0.4.2,1
+pool:other_files_unrestricted,>=0.4.24 <0.7.0,1
+pool:other_files_unrestricted,>0.5.0 <0.9.0,1
+pool:project_disjoint,^0.8.0,126
+pool:project_disjoint,^0.6.0,91
+pool:project_disjoint,0.6.12,76
+pool:project_disjoint,0.8.10,66
+pool:project_disjoint,0.8.4,64
+pool:project_disjoint,^0.6.12,50
+pool:project_disjoint,0.5.11,45
+pool:project_disjoint,^0.8.7,39
+pool:project_disjoint,0.8.7,38
+pool:project_disjoint,^0.8.4,36
+pool:project_disjoint,^0.4.21,30
+pool:project_disjoint,0.7.5,28
+pool:project_disjoint,^0.4.23,26
+pool:project_disjoint,^0.4.25,26
+pool:project_disjoint,^0.7.3,25
+pool:project_disjoint,^0.4.17,24
+pool:project_disjoint,0.5.17,21
+pool:project_disjoint,>0.5.0 <0.8.0,21
+pool:project_disjoint,^0.4.15,20
+pool:project_disjoint,=0.7.6,19
+pool:project_disjoint,^0.4.24,18
+pool:project_disjoint,0.8.11,16
+pool:project_disjoint,^0.5.16,16
+pool:project_disjoint,missing,16
+pool:project_disjoint,^0.7.0,16
+pool:project_disjoint,^0.4.18,16
+pool:project_disjoint,^0.5.0,14
+pool:project_disjoint,^0.8.6,13
+pool:project_disjoint,^0.4.11,12
+pool:project_disjoint,0.7.6,12
+pool:project_disjoint,0.8.9,12
+pool:project_disjoint,0.8.13,12
+pool:project_disjoint,^0.6.11,11
+pool:project_disjoint,0.4.24,11
+pool:project_disjoint,^0.7.6,11
+pool:project_disjoint,>=0.8.4 <0.9.0,11
+pool:project_disjoint,>=0.8.0,11
+pool:project_disjoint,^0.6.6,10
+pool:project_disjoint,>=0.4.21 <0.6.0,10
+pool:project_disjoint,>=0.6.0 <0.8.0,10
+pool:project_disjoint,0.8.0,9
+pool:project_disjoint,^0.4.0,8
+pool:project_disjoint,^0.8.2,7
+pool:project_disjoint,>=0.6.0 <0.7.0,7
+pool:project_disjoint,^0.8.11,7
+pool:project_disjoint,0.8.5,7
+pool:project_disjoint,^0.8.9,6
+pool:project_disjoint,0.5.13,6
+pool:project_disjoint,^0.6.2,6
+pool:project_disjoint,>=0.4.22 <0.9.0,5
+pool:project_disjoint,^0.8.3,5
+pool:project_disjoint,>=0.6.12,5
+pool:project_disjoint,0.5.8,5
+pool:project_disjoint,0.4.25,5
+pool:project_disjoint,>=0.7.2,5
+pool:project_disjoint,^0.6.10,5
+pool:project_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,4
+pool:project_disjoint,^0.8.8,4
+pool:project_disjoint,^0.8.5,4
+pool:project_disjoint,0.7.4,4
+pool:project_disjoint,^0.4.8,4
+pool:project_disjoint,0.5.16,3
+pool:project_disjoint,^0.4.4,3
+pool:project_disjoint,^0.5.12,3
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+pool:project_disjoint,>=0.5.0 <0.8.0,3
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+pool:project_disjoint,0.6.11,3
+pool:project_disjoint,=0.8.6,3
+pool:project_disjoint,0.6.6,3
+pool:project_disjoint,>=0.5.16 <0.8.0,2
+pool:project_disjoint,^0.7.4,2
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+pool:project_disjoint,^0.4.10,2
+pool:project_disjoint,=0.6.12,2
+pool:project_disjoint,^0.8.1,2
+pool:project_disjoint,0.6.0,2
+pool:project_disjoint,0.8.12,2
+pool:project_disjoint,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,2
+pool:project_disjoint,>0.4.13,2
+pool:project_disjoint,0.8.6,2
+pool:project_disjoint,>=0.4.22 <0.8.0,2
+pool:project_disjoint,>=0.7.0 <0.9.0,2
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+pool:project_disjoint,>=0.5.0,2
+pool:project_disjoint,^0.8.0;^0.8.0;>=0.6.0,2
+pool:project_disjoint,^0.5.8,2
+pool:project_disjoint,^0.4.16,1
+pool:project_disjoint,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+pool:project_disjoint,=0.8.11,1
+pool:project_disjoint,^0.7.5,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:project_disjoint,>=0.4.0,1
+pool:project_disjoint,^0.4.9,1
+pool:project_disjoint,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:project_disjoint,0.4.18,1
+pool:project_disjoint,0.4.19,1
+pool:project_disjoint,0.6.9,1
+pool:project_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:project_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.3,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+pool:project_disjoint,^0.8.0;^0.8.0;0.8.9;^0.8.0,1
+pool:project_disjoint,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+pool:project_disjoint,=0.8.9,1
+pool:project_disjoint,>=0.5.0 <0.6.0,1
+pool:project_disjoint,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:project_disjoint,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+pool:project_disjoint,=0.8.12,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:project_disjoint,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+pool:project_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:project_disjoint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+pool:project_disjoint,0.6.10,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:project_disjoint,^0.8.0;^0.8.0;0.8.9,1
+pool:project_disjoint,^0.4.23;^0.4.11,1
+pool:project_disjoint,>=0.6.6 <0.9.0,1
+pool:project_disjoint,^0.4.19,1
+pool:project_disjoint,>=0.6.2 <0.8.0,1
+pool:project_disjoint,0.6.12;0.6.12,1
+pool:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:project_disjoint,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+pool:project_disjoint,>=0.6.8,1
+pool:project_disjoint,^0.5.17;>=0.4.22 <0.6.0,1
+pool:project_disjoint,^0.5.17,1
+pool:project_disjoint,>=0.8.0 <0.9.0,1
+pool:project_disjoint,0.5.0,1
+pool:project_disjoint,<=0.7.0,1
+pool:project_disjoint,>=0.8.8 <0.8.9,1
+pool:project_disjoint,^0.5.2,1
+pool:project_disjoint,>=0.6.0,1
+pool:project_disjoint,=0.8.0,1
+pool:project_disjoint,^0.6.4,1
+pool:project_disjoint,^0.4.2,1
+pool:project_disjoint,0.7.3,1
+pool:project_disjoint,>0.5.0 <0.9.0,1
+pool:clone_disjoint,^0.8.0,380
+pool:clone_disjoint,0.6.12,299
+pool:clone_disjoint,^0.6.0,261
+pool:clone_disjoint,^0.5.16,176
+pool:clone_disjoint,^0.4.24,142
+pool:clone_disjoint,0.4.24,128
+pool:clone_disjoint,0.8.10,115
+pool:clone_disjoint,^0.6.12,106
+pool:clone_disjoint,^0.5.0,100
+pool:clone_disjoint,^0.8.4,99
+pool:clone_disjoint,0.7.6,96
+pool:clone_disjoint,0.5.11,95
+pool:clone_disjoint,0.8.4,86
+pool:clone_disjoint,0.8.6,83
+pool:clone_disjoint,0.6.9,82
+pool:clone_disjoint,0.6.11,78
+pool:clone_disjoint,^0.4.18,74
+pool:clone_disjoint,0.7.5,67
+pool:clone_disjoint,0.8.7,63
+pool:clone_disjoint,^0.7.0,58
+pool:clone_disjoint,^0.5.9,57
+pool:clone_disjoint,0.5.12,47
+pool:clone_disjoint,=0.7.6,44
+pool:clone_disjoint,0.8.9,43
+pool:clone_disjoint,^0.4.25,43
+pool:clone_disjoint,^0.4.15,42
+pool:clone_disjoint,0.6.6,42
+pool:clone_disjoint,^0.8.7,41
+pool:clone_disjoint,>=0.6.10 <0.8.0,40
+pool:clone_disjoint,^0.5.4,40
+pool:clone_disjoint,^0.4.23,40
+pool:clone_disjoint,>=0.8.0,39
+pool:clone_disjoint,missing,37
+pool:clone_disjoint,=0.6.12,36
+pool:clone_disjoint,^0.6.6,35
+pool:clone_disjoint,>=0.4.21 <0.6.0,34
+pool:clone_disjoint,^0.4.21,33
+pool:clone_disjoint,0.6.10,33
+pool:clone_disjoint,>=0.5.0,32
+pool:clone_disjoint,>=0.6.0 <0.8.0,30
+pool:clone_disjoint,0.8.13,29
+pool:clone_disjoint,^0.8.6,28
+pool:clone_disjoint,^0.8.2,28
+pool:clone_disjoint,0.8.3,27
+pool:clone_disjoint,0.5.4,27
+pool:clone_disjoint,0.5.17,27
+pool:clone_disjoint,^0.7.6,26
+pool:clone_disjoint,0.4.23,26
+pool:clone_disjoint,>=0.4.24,26
+pool:clone_disjoint,>=0.5.0 <0.6.0,25
+pool:clone_disjoint,0.8.0,25
+pool:clone_disjoint,^0.4.17,25
+pool:clone_disjoint,^0.7.3,25
+pool:clone_disjoint,^0.4.11,24
+pool:clone_disjoint,^0.7.4,24
+pool:clone_disjoint,0.8.11,24
+pool:clone_disjoint,0.5.10,24
+pool:clone_disjoint,>=0.6.0 <0.7.0,23
+pool:clone_disjoint,=0.8.4,23
+pool:clone_disjoint,^0.5.2,22
+pool:clone_disjoint,^0.6.10,22
+pool:clone_disjoint,^0.4.6,22
+pool:clone_disjoint,^0.7.1,21
+pool:clone_disjoint,^0.5.3,20
+pool:clone_disjoint,>0.5.0 <0.8.0,20
+pool:clone_disjoint,0.4.25,19
+pool:clone_disjoint,^0.4.8,19
+pool:clone_disjoint,0.8.12,19
+pool:clone_disjoint,0.5.13,18
+pool:clone_disjoint,^0.4.10,18
+pool:clone_disjoint,0.5.14,18
+pool:clone_disjoint,^0.6.8,17
+pool:clone_disjoint,^0.8.3,17
+pool:clone_disjoint,^0.8.10,16
+pool:clone_disjoint,^0.6.2,16
+pool:clone_disjoint,>=0.7.0 <0.8.0,15
+pool:clone_disjoint,^0.5.13,15
+pool:clone_disjoint,>=0.8.0 <0.9.0,14
+pool:clone_disjoint,>=0.7.0,14
+pool:clone_disjoint,0.5.9,14
+pool:clone_disjoint,0.5.16,14
+pool:clone_disjoint,>=0.6.11,14
+pool:clone_disjoint,>=0.6.10 <=0.8.10,13
+pool:clone_disjoint,^0.6.11,13
+pool:clone_disjoint,^0.5.17,13
+pool:clone_disjoint,>=0.6.0,13
+pool:clone_disjoint,^0.4.0,12
+pool:clone_disjoint,0.7.0,12
+pool:clone_disjoint,0.5.8,12
+pool:clone_disjoint,>=0.8.0 <=0.8.10,11
+pool:clone_disjoint,>=0.8.4 <0.9.0,11
+pool:clone_disjoint,=0.6.10,10
+pool:clone_disjoint,^0.5.5,10
+pool:clone_disjoint,^0.6.7,10
+pool:clone_disjoint,^0.5.12,10
+pool:clone_disjoint,>=0.6.12,9
+pool:clone_disjoint,^0.4.13,8
+pool:clone_disjoint,>=0.4.22 <0.8.0,8
+pool:clone_disjoint,=0.6.6,7
+pool:clone_disjoint,^0.8.9,7
+pool:clone_disjoint,>= 0.7.0,7
+pool:clone_disjoint,0.8.5,7
+pool:clone_disjoint,^0.8.11,7
+pool:clone_disjoint,^0.4.19,6
+pool:clone_disjoint,=0.5.16,6
+pool:clone_disjoint,^0.4.7,5
+pool:clone_disjoint,^0.5.15,5
+pool:clone_disjoint,0.5.0,5
+pool:clone_disjoint,>=0.7.2,5
+pool:clone_disjoint,0.7.4,5
+pool:clone_disjoint,0.7.3,5
+pool:clone_disjoint,^0.4.16,5
+pool:clone_disjoint,^0.8.1,4
+pool:clone_disjoint,^0.8.5,4
+pool:clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,4
+pool:clone_disjoint,>=0.5.0 <0.8.0,4
+pool:clone_disjoint,^0.8.8,4
+pool:clone_disjoint,0.4.21,4
+pool:clone_disjoint,0.8.2,3
+pool:clone_disjoint,=0.8.6,3
+pool:clone_disjoint,>=0.4.22 <0.9.0,3
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+pool:clone_disjoint,0.6.0,3
+pool:clone_disjoint,0.4.18,3
+pool:clone_disjoint,0.5.3,3
+pool:clone_disjoint,^0.4.4,3
+pool:clone_disjoint,0.6.7,3
+pool:clone_disjoint,^0.4.14,3
+pool:clone_disjoint,>=0.4.0,2
+pool:clone_disjoint,^0.4.12,2
+pool:clone_disjoint,>=0.6.0 <0.9.0,2
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+pool:clone_disjoint,^0.4.24;^0.4.24,2
+pool:clone_disjoint,>=0.7.6,2
+pool:clone_disjoint,^0.4.1,2
+pool:clone_disjoint,<0.6.0 >=0.4.24,2
+pool:clone_disjoint,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,2
+pool:clone_disjoint,^0.8.0;^0.8.0;>=0.6.0,2
+pool:clone_disjoint,>0.4.13,2
+pool:clone_disjoint,>= 0.5.0 <0.6.0,2
+pool:clone_disjoint,0.6.8,2
+pool:clone_disjoint,>=0.8.4,2
+pool:clone_disjoint,>=0.7.0 <0.9.0,2
+pool:clone_disjoint,^0.6.12;^0.6.12,2
+pool:clone_disjoint,>=0.7.4,2
+pool:clone_disjoint,>=0.6.2,2
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+pool:clone_disjoint,^0.7.5,2
+pool:clone_disjoint,>=0.6.6,2
+pool:clone_disjoint,^0.5.8,2
+pool:clone_disjoint,^0.6,2
+pool:clone_disjoint,>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0,2
+pool:clone_disjoint,^0.4.9,1
+pool:clone_disjoint,>=0.4.21 <0.9.0,1
+pool:clone_disjoint,^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;^0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24;0.4.24,1
+pool:clone_disjoint,= 0.5.16,1
+pool:clone_disjoint,^0.8.0;^0.8.0;0.8.9;^0.8.0,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:clone_disjoint,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+pool:clone_disjoint,>=0.7.6 <0.9.0,1
+pool:clone_disjoint,>=0.4.23,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+pool:clone_disjoint,>=0.6.9 <0.8.0,1
+pool:clone_disjoint,0.4.19,1
+pool:clone_disjoint,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:clone_disjoint,=0.8.9,1
+pool:clone_disjoint,^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;>=0.6.0,1
+pool:clone_disjoint,>=0.5.0 <0.9.0,1
+pool:clone_disjoint,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:clone_disjoint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+pool:clone_disjoint,>=0.6.2 <0.8.0,1
+pool:clone_disjoint,>= 0.8.0,1
+pool:clone_disjoint,>=0.6.6 <0.9.0,1
+pool:clone_disjoint,^0.6.0;^0.6.0;^0.6.2;^0.6.2;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.2;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.0;^0.6.12,1
+pool:clone_disjoint,>=0.4.22 <=0.6.12,1
+pool:clone_disjoint,^0.6.9,1
+pool:clone_disjoint,^0.5.0;^0.5.0;^0.5.5;^0.5.0,1
+pool:clone_disjoint,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+pool:clone_disjoint,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.3,1
+pool:clone_disjoint,=0.8.11,1
+pool:clone_disjoint,>=0.5.12,1
+pool:clone_disjoint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0;>=0.6.2 <0.8.0;^0.6.0;^0.6.0;^0.6.0,1
+pool:clone_disjoint,^0.4.23;^0.4.11,1
+pool:clone_disjoint,^0.8.0;^0.8.0;0.8.9,1
+pool:clone_disjoint,>=0.5.0;>=0.6.0;>=0.6.2;>=0.6.2;>=0.5.0;>=0.6.6;>=0.5.0;>=0.5.0;>=0.5.0;>=0.6.6,1
+pool:clone_disjoint,>=0.5.16,1
+pool:clone_disjoint,0.6.12;0.6.12,1
+pool:clone_disjoint,0.4.15,1
+pool:clone_disjoint,=0.8.12,1
+pool:clone_disjoint,<=0.8.10,1
+pool:clone_disjoint,>=0.8.8 <0.8.9,1
+pool:clone_disjoint,=0.8.0,1
+pool:clone_disjoint,>=0.8.4 <0.8.11,1
+pool:clone_disjoint,>=0.5.0;>=0.5.0;0.6.9;0.6.9;0.6.9;0.6.9;>=0.5.0;>=0.5.0;>=0.5.0;0.6.9,1
+pool:clone_disjoint,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+pool:clone_disjoint,>=0.6.6 <0.8.11,1
+pool:clone_disjoint,<=0.7.0,1
+pool:clone_disjoint,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:clone_disjoint,"""0.8.0""",1
+pool:clone_disjoint,>=0.5.0;>=0.5.0;>=0.4.0;>=0.5.0,1
+pool:clone_disjoint,>=0.6.8,1
+pool:clone_disjoint,^0.5.17;>=0.4.22 <0.6.0,1
+pool:clone_disjoint,^0.5.11,1
+pool:clone_disjoint,>=0.5.0 <0.7.0,1
+pool:clone_disjoint,>=0.6.11 <=0.6.12,1
+pool:clone_disjoint,>=0.4.25 <0.7.0,1
+pool:clone_disjoint,0.4.10,1
+pool:clone_disjoint,0.4.11,1
+pool:clone_disjoint,^0.5.7,1
+pool:clone_disjoint,^0.6.5,1
+pool:clone_disjoint,>=0.4.22,1
+pool:clone_disjoint,=0.6.11,1
+pool:clone_disjoint,^0.5.2;^0.5.2;^0.5.2;0.5.3;0.5.3,1
+pool:clone_disjoint,^0.4.2,1
+pool:clone_disjoint,^0.6.4,1
+pool:clone_disjoint,>=0.5.16 <0.8.0,1
+pool:clone_disjoint,>=0.4.24 <0.7.0,1
+pool:clone_disjoint,>0.5.0 <0.9.0,1
+pool:joint_project_clone_disjoint,^0.8.0,115
+pool:joint_project_clone_disjoint,^0.6.0,78
+pool:joint_project_clone_disjoint,0.6.12,65
+pool:joint_project_clone_disjoint,0.8.10,59
+pool:joint_project_clone_disjoint,0.8.4,52
+pool:joint_project_clone_disjoint,^0.6.12,44
+pool:joint_project_clone_disjoint,0.5.11,43
+pool:joint_project_clone_disjoint,0.8.7,37
+pool:joint_project_clone_disjoint,^0.8.7,37
+pool:joint_project_clone_disjoint,^0.8.4,36
+pool:joint_project_clone_disjoint,^0.4.21,30
+pool:joint_project_clone_disjoint,0.7.5,28
+pool:joint_project_clone_disjoint,^0.4.23,26
+pool:joint_project_clone_disjoint,^0.4.25,26
+pool:joint_project_clone_disjoint,^0.7.3,25
+pool:joint_project_clone_disjoint,^0.4.17,21
+pool:joint_project_clone_disjoint,^0.4.15,20
+pool:joint_project_clone_disjoint,=0.7.6,19
+pool:joint_project_clone_disjoint,^0.4.24,17
+pool:joint_project_clone_disjoint,missing,16
+pool:joint_project_clone_disjoint,0.8.11,16
+pool:joint_project_clone_disjoint,0.5.17,15
+pool:joint_project_clone_disjoint,^0.7.0,15
+pool:joint_project_clone_disjoint,^0.5.0,13
+pool:joint_project_clone_disjoint,^0.8.6,13
+pool:joint_project_clone_disjoint,0.7.6,12
+pool:joint_project_clone_disjoint,0.8.9,12
+pool:joint_project_clone_disjoint,0.8.13,12
+pool:joint_project_clone_disjoint,^0.6.11,11
+pool:joint_project_clone_disjoint,>=0.8.0,11
+pool:joint_project_clone_disjoint,>=0.8.4 <0.9.0,11
+pool:joint_project_clone_disjoint,^0.5.16,10
+pool:joint_project_clone_disjoint,>=0.6.0 <0.8.0,10
+pool:joint_project_clone_disjoint,>=0.4.21 <0.6.0,10
+pool:joint_project_clone_disjoint,^0.6.6,10
+pool:joint_project_clone_disjoint,0.8.0,9
+pool:joint_project_clone_disjoint,^0.4.18,9
+pool:joint_project_clone_disjoint,^0.4.0,8
+pool:joint_project_clone_disjoint,0.4.24,7
+pool:joint_project_clone_disjoint,>=0.6.0 <0.7.0,7
+pool:joint_project_clone_disjoint,^0.8.11,7
+pool:joint_project_clone_disjoint,^0.4.11,5
+pool:joint_project_clone_disjoint,0.4.25,5
+pool:joint_project_clone_disjoint,^0.8.2,5
+pool:joint_project_clone_disjoint,^0.8.9,5
+pool:joint_project_clone_disjoint,>=0.7.2,5
+pool:joint_project_clone_disjoint,^0.6.10,5
+pool:joint_project_clone_disjoint,^0.8.3,5
+pool:joint_project_clone_disjoint,^0.8.5,4
+pool:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,4
+pool:joint_project_clone_disjoint,^0.4.8,4
+pool:joint_project_clone_disjoint,^0.8.8,4
+pool:joint_project_clone_disjoint,^0.6.2,4
+pool:joint_project_clone_disjoint,^0.7.6,4
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+pool:joint_project_clone_disjoint,^0.5.12,3
+pool:joint_project_clone_disjoint,=0.8.6,3
+pool:joint_project_clone_disjoint,>=0.5.0 <0.8.0,3
+pool:joint_project_clone_disjoint,=0.6.12,2
+pool:joint_project_clone_disjoint,^0.7.4,2
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+pool:joint_project_clone_disjoint,^0.4.10,2
+pool:joint_project_clone_disjoint,^0.8.1,2
+pool:joint_project_clone_disjoint,>=0.7.0 <0.9.0,2
+pool:joint_project_clone_disjoint,0.8.12,2
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;>=0.6.0,2
+pool:joint_project_clone_disjoint,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,2
+pool:joint_project_clone_disjoint,>0.4.13,2
+pool:joint_project_clone_disjoint,^0.5.8,2
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+pool:joint_project_clone_disjoint,0.8.5,2
+pool:joint_project_clone_disjoint,^0.4.4,2
+pool:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.3,1
+pool:joint_project_clone_disjoint,^0.4.16,1
+pool:joint_project_clone_disjoint,^0.4.9,1
+pool:joint_project_clone_disjoint,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:joint_project_clone_disjoint,0.4.19,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+pool:joint_project_clone_disjoint,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+pool:joint_project_clone_disjoint,>=0.4.0,1
+pool:joint_project_clone_disjoint,=0.8.9,1
+pool:joint_project_clone_disjoint,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:joint_project_clone_disjoint,>=0.5.0 <0.6.0,1
+pool:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:joint_project_clone_disjoint,0.6.9,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;0.8.9;^0.8.0,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+pool:joint_project_clone_disjoint,>=0.5.0,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+pool:joint_project_clone_disjoint,=0.8.11,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+pool:joint_project_clone_disjoint,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+pool:joint_project_clone_disjoint,=0.8.12,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+pool:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+pool:joint_project_clone_disjoint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+pool:joint_project_clone_disjoint,0.6.11,1
+pool:joint_project_clone_disjoint,0.7.4,1
+pool:joint_project_clone_disjoint,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+pool:joint_project_clone_disjoint,^0.8.0;^0.8.0;0.8.9,1
+pool:joint_project_clone_disjoint,0.6.10,1
+pool:joint_project_clone_disjoint,^0.4.23;^0.4.11,1
+pool:joint_project_clone_disjoint,^0.4.19,1
+pool:joint_project_clone_disjoint,>=0.6.6 <0.9.0,1
+pool:joint_project_clone_disjoint,0.6.12;0.6.12,1
+pool:joint_project_clone_disjoint,^0.7.5,1
+pool:joint_project_clone_disjoint,0.6.0,1
+pool:joint_project_clone_disjoint,>=0.8.8 <0.8.9,1
+pool:joint_project_clone_disjoint,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+pool:joint_project_clone_disjoint,>=0.6.8,1
+pool:joint_project_clone_disjoint,^0.5.17;>=0.4.22 <0.6.0,1
+pool:joint_project_clone_disjoint,<=0.7.0,1
+pool:joint_project_clone_disjoint,^0.5.17,1
+pool:joint_project_clone_disjoint,0.5.0,1
+pool:joint_project_clone_disjoint,=0.8.0,1
+pool:joint_project_clone_disjoint,^0.5.2,1
+pool:joint_project_clone_disjoint,>=0.6.0,1
+pool:joint_project_clone_disjoint,^0.4.2,1
+pool:joint_project_clone_disjoint,0.5.8,1
+pool:joint_project_clone_disjoint,0.7.3,1
+pool:joint_project_clone_disjoint,>0.5.0 <0.9.0,1
+train:other_files_unrestricted,^0.8.0,110
+train:other_files_unrestricted,0.6.12,73
+train:other_files_unrestricted,^0.6.0,58
+train:other_files_unrestricted,^0.5.16,50
+train:other_files_unrestricted,^0.6.12,34
+train:other_files_unrestricted,^0.4.24,33
+train:other_files_unrestricted,0.8.10,31
+train:other_files_unrestricted,^0.8.4,30
+train:other_files_unrestricted,0.4.24,30
+train:other_files_unrestricted,0.7.6,28
+train:other_files_unrestricted,0.6.9,27
+train:other_files_unrestricted,^0.5.0,24
+train:other_files_unrestricted,0.8.4,22
+train:other_files_unrestricted,>=0.5.0,20
+train:other_files_unrestricted,0.5.11,20
+train:other_files_unrestricted,0.6.11,20
+train:other_files_unrestricted,0.7.5,16
+train:other_files_unrestricted,=0.7.6,14
+train:other_files_unrestricted,0.8.7,14
+train:other_files_unrestricted,>=0.6.10 <0.8.0,14
+train:other_files_unrestricted,^0.7.0,14
+train:other_files_unrestricted,^0.4.18,13
+train:other_files_unrestricted,>=0.4.21 <0.6.0,12
+train:other_files_unrestricted,0.6.6,12
+train:other_files_unrestricted,0.8.9,11
+train:other_files_unrestricted,0.5.4,11
+train:other_files_unrestricted,0.8.6,11
+train:other_files_unrestricted,=0.6.12,11
+train:other_files_unrestricted,>=0.4.24,10
+train:other_files_unrestricted,^0.8.7,10
+train:other_files_unrestricted,>=0.6.0 <0.8.0,10
+train:other_files_unrestricted,missing,9
+train:other_files_unrestricted,^0.4.25,9
+train:other_files_unrestricted,0.8.3,9
+train:other_files_unrestricted,^0.5.9,9
+train:other_files_unrestricted,>=0.7.0 <0.8.0,8
+train:other_files_unrestricted,0.5.12,8
+train:other_files_unrestricted,^0.4.6,8
+train:other_files_unrestricted,>=0.5.0 <0.6.0,7
+train:other_files_unrestricted,^0.8.6,7
+train:other_files_unrestricted,^0.8.2,7
+train:other_files_unrestricted,^0.5.4,7
+train:other_files_unrestricted,^0.4.15,7
+train:other_files_unrestricted,^0.6.6,7
+train:other_files_unrestricted,^0.4.23,7
+train:other_files_unrestricted,0.8.13,7
+train:other_files_unrestricted,^0.4.21,7
+train:other_files_unrestricted,=0.8.4,7
+train:other_files_unrestricted,0.8.0,7
+train:other_files_unrestricted,^0.7.6,6
+train:other_files_unrestricted,0.5.10,6
+train:other_files_unrestricted,>=0.6.2,6
+train:other_files_unrestricted,0.5.16,6
+train:other_files_unrestricted,^0.4.11,6
+train:other_files_unrestricted,^0.4.8,6
+train:other_files_unrestricted,0.4.23,6
+train:other_files_unrestricted,0.6.10,6
+train:other_files_unrestricted,^0.6.8,6
+train:other_files_unrestricted,0.5.14,5
+train:other_files_unrestricted,>0.5.0 <0.8.0,5
+train:other_files_unrestricted,^0.8.10,5
+train:other_files_unrestricted,^0.6.11,5
+train:other_files_unrestricted,>=0.8.0,5
+train:other_files_unrestricted,^0.6.10,5
+train:other_files_unrestricted,0.5.13,5
+train:other_files_unrestricted,0.5.17,5
+train:other_files_unrestricted,>=0.4.22 <0.9.0,5
+train:other_files_unrestricted,^0.5.3,4
+train:other_files_unrestricted,^0.5.2,4
+train:other_files_unrestricted,^0.4.17,4
+train:other_files_unrestricted,^0.7.4,4
+train:other_files_unrestricted,>=0.7.0,4
+train:other_files_unrestricted,0.8.12,4
+train:other_files_unrestricted,^0.8.3,4
+train:other_files_unrestricted,^0.4.4,3
+train:other_files_unrestricted,0.8.11,3
+train:other_files_unrestricted,0.5.8,3
+train:other_files_unrestricted,=0.5.16,3
+train:other_files_unrestricted,>=0.8.0 <=0.8.10,3
+train:other_files_unrestricted,>=0.8.0 <0.9.0,3
+train:other_files_unrestricted,=0.6.6,3
+train:other_files_unrestricted,0.4.21,3
+train:other_files_unrestricted,^0.8.8,3
+train:other_files_unrestricted,^0.7.1,3
+train:other_files_unrestricted,^0.5.17,3
+train:other_files_unrestricted,>=0.6.0 <0.7.0,3
+train:other_files_unrestricted,>=0.7.2,3
+train:other_files_unrestricted,^0.4.10,3
+train:other_files_unrestricted,^0.7.3,3
+train:other_files_unrestricted,>=0.6.11,3
+train:other_files_unrestricted,>=0.8.4 <0.9.0,3
+train:other_files_unrestricted,>=0.4.25 <0.7.0,3
+train:other_files_unrestricted,^0.5.5,3
+train:other_files_unrestricted,>=0.4.0,3
+train:other_files_unrestricted,>=0.6.10 <=0.8.10,2
+train:other_files_unrestricted,>=0.5.16,2
+train:other_files_unrestricted,^0.8.0;^0.8.0;>=0.6.0,2
+train:other_files_unrestricted,0.8.5,2
+train:other_files_unrestricted,0.6.7,2
+train:other_files_unrestricted,0.7.0,2
+train:other_files_unrestricted,^0.6.2,2
+train:other_files_unrestricted,^0.8.9,2
+train:other_files_unrestricted,>=0.4.22 <0.8.0,2
+train:other_files_unrestricted,>=0.6.0,2
+train:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,1
+train:other_files_unrestricted,^0.6.7,1
+train:other_files_unrestricted,>=0.7.6 <0.9.0,1
+train:other_files_unrestricted,^0.4.16,1
+train:other_files_unrestricted,^0.4.9,1
+train:other_files_unrestricted,0.6.0,1
+train:other_files_unrestricted,>=0.7.6,1
+train:other_files_unrestricted,^0.4.13,1
+train:other_files_unrestricted,^0.4.19,1
+train:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+train:other_files_unrestricted,=0.8.11,1
+train:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+train:other_files_unrestricted,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:other_files_unrestricted,=0.8.9,1
+train:other_files_unrestricted,^0.8.11,1
+train:other_files_unrestricted,0.7.3,1
+train:other_files_unrestricted,^0.6.12;^0.6.12,1
+train:other_files_unrestricted,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,1
+train:other_files_unrestricted,>=0.6.6,1
+train:other_files_unrestricted,0.4.25,1
+train:other_files_unrestricted,=0.8.12,1
+train:other_files_unrestricted,^0.5.15,1
+train:other_files_unrestricted,^0.5.8,1
+train:other_files_unrestricted,>=0.6.12,1
+train:other_files_unrestricted,>=0.5.0;>=0.6.0;>=0.6.2;>=0.6.2;>=0.5.0;>=0.6.6;>=0.5.0;>=0.5.0;>=0.5.0;>=0.6.6,1
+train:other_files_unrestricted,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+train:other_files_unrestricted,>=0.8.4,1
+train:other_files_unrestricted,>= 0.5.0 <0.6.0,1
+train:other_files_unrestricted,>=0.6.0 <0.9.0,1
+train:other_files_unrestricted,>=0.8.8 <0.8.9,1
+train:other_files_unrestricted,0.8.2,1
+train:other_files_unrestricted,>0.4.13,1
+train:other_files_unrestricted,>=0.6.11 <=0.6.12,1
+train:other_files_unrestricted,^0.5.2;^0.5.2;^0.5.2;0.5.3;0.5.3,1
+train:other_files_unrestricted,>=0.5.0 <0.7.0,1
+train:other_files_unrestricted,0.4.18,1
+train:other_files_unrestricted,0.5.3,1
+train:other_files_unrestricted,^0.4.0,1
+train:other_files_unrestricted,= 0.6.6,1
+train:other_files_unrestricted,>= 0.7.0,1
+train:other_files_unrestricted,^0.5.11,1
+train:project_disjoint,^0.8.0,105
+train:project_disjoint,^0.6.0,78
+train:project_disjoint,0.6.12,70
+train:project_disjoint,0.8.10,58
+train:project_disjoint,0.8.4,54
+train:project_disjoint,^0.6.12,47
+train:project_disjoint,0.5.11,38
+train:project_disjoint,^0.8.7,36
+train:project_disjoint,^0.8.4,34
+train:project_disjoint,0.8.7,31
+train:project_disjoint,^0.4.21,28
+train:project_disjoint,0.7.5,23
+train:project_disjoint,^0.4.17,22
+train:project_disjoint,^0.4.23,21
+train:project_disjoint,^0.7.3,20
+train:project_disjoint,^0.4.25,19
+train:project_disjoint,^0.4.24,17
+train:project_disjoint,0.5.17,17
+train:project_disjoint,>0.5.0 <0.8.0,17
+train:project_disjoint,^0.4.15,17
+train:project_disjoint,=0.7.6,15
+train:project_disjoint,^0.5.16,14
+train:project_disjoint,missing,14
+train:project_disjoint,^0.4.18,14
+train:project_disjoint,0.8.11,12
+train:project_disjoint,^0.7.0,12
+train:project_disjoint,^0.4.11,12
+train:project_disjoint,^0.5.0,11
+train:project_disjoint,0.8.9,11
+train:project_disjoint,^0.8.6,11
+train:project_disjoint,>=0.8.4 <0.9.0,11
+train:project_disjoint,0.7.6,11
+train:project_disjoint,^0.6.11,10
+train:project_disjoint,>=0.8.0,10
+train:project_disjoint,0.4.24,9
+train:project_disjoint,^0.6.6,9
+train:project_disjoint,0.8.13,9
+train:project_disjoint,>=0.4.21 <0.6.0,9
+train:project_disjoint,>=0.6.0 <0.8.0,9
+train:project_disjoint,^0.7.6,8
+train:project_disjoint,0.8.0,7
+train:project_disjoint,>=0.6.0 <0.7.0,7
+train:project_disjoint,0.8.5,7
+train:project_disjoint,^0.4.0,7
+train:project_disjoint,^0.8.2,6
+train:project_disjoint,^0.8.11,6
+train:project_disjoint,^0.6.2,5
+train:project_disjoint,>=0.4.22 <0.9.0,5
+train:project_disjoint,>=0.6.12,5
+train:project_disjoint,>=0.7.2,5
+train:project_disjoint,0.4.25,5
+train:project_disjoint,^0.8.3,5
+train:project_disjoint,0.5.13,5
+train:project_disjoint,^0.4.8,4
+train:project_disjoint,^0.6.10,4
+train:project_disjoint,^0.8.5,4
+train:project_disjoint,^0.8.9,4
+train:project_disjoint,^0.8.8,4
+train:project_disjoint,^0.4.4,3
+train:project_disjoint,0.5.16,3
+train:project_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,3
+train:project_disjoint,0.6.6,3
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+train:project_disjoint,0.6.11,3
+train:project_disjoint,0.5.8,3
+train:project_disjoint,>=0.5.0 <0.8.0,3
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+train:project_disjoint,=0.8.6,3
+train:project_disjoint,0.8.12,2
+train:project_disjoint,>0.4.13,2
+train:project_disjoint,0.7.4,2
+train:project_disjoint,^0.8.1,2
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+train:project_disjoint,>=0.5.0,2
+train:project_disjoint,=0.6.12,2
+train:project_disjoint,^0.4.10,2
+train:project_disjoint,^0.5.12,2
+train:project_disjoint,^0.7.4,2
+train:project_disjoint,^0.5.8,2
+train:project_disjoint,0.8.6,2
+train:project_disjoint,^0.8.0;^0.8.0;>=0.6.0,2
+train:project_disjoint,>=0.7.0 <0.9.0,2
+train:project_disjoint,>=0.5.16 <0.8.0,2
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+train:project_disjoint,=0.8.11,1
+train:project_disjoint,>=0.4.0,1
+train:project_disjoint,^0.4.9,1
+train:project_disjoint,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+train:project_disjoint,>=0.5.0 <0.6.0,1
+train:project_disjoint,=0.8.9,1
+train:project_disjoint,0.6.9,1
+train:project_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:project_disjoint,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+train:project_disjoint,0.6.0,1
+train:project_disjoint,^0.4.16,1
+train:project_disjoint,0.4.19,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+train:project_disjoint,0.4.18,1
+train:project_disjoint,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+train:project_disjoint,^0.7.5,1
+train:project_disjoint,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+train:project_disjoint,>=0.4.22 <0.8.0,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+train:project_disjoint,0.6.12;0.6.12,1
+train:project_disjoint,>=0.6.2 <0.8.0,1
+train:project_disjoint,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+train:project_disjoint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+train:project_disjoint,>=0.6.6 <0.9.0,1
+train:project_disjoint,^0.8.0;^0.8.0;0.8.9,1
+train:project_disjoint,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+train:project_disjoint,0.6.10,1
+train:project_disjoint,^0.4.23;^0.4.11,1
+train:project_disjoint,^0.4.19,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+train:project_disjoint,=0.8.12,1
+train:project_disjoint,^0.5.17,1
+train:project_disjoint,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,1
+train:project_disjoint,0.5.0,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+train:project_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+train:project_disjoint,<=0.7.0,1
+train:project_disjoint,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+train:project_disjoint,>=0.6.8,1
+train:project_disjoint,>=0.6.0,1
+train:project_disjoint,>=0.8.8 <0.8.9,1
+train:project_disjoint,=0.8.0,1
+train:project_disjoint,^0.4.2,1
+train:project_disjoint,0.7.3,1
+train:project_disjoint,>0.5.0 <0.9.0,1
+train:clone_disjoint,^0.8.0,96
+train:clone_disjoint,0.6.12,81
+train:clone_disjoint,^0.6.0,58
+train:clone_disjoint,^0.5.16,48
+train:clone_disjoint,^0.6.12,35
+train:clone_disjoint,0.8.10,32
+train:clone_disjoint,0.4.24,32
+train:clone_disjoint,^0.8.4,29
+train:clone_disjoint,^0.4.24,28
+train:clone_disjoint,0.6.9,27
+train:clone_disjoint,^0.5.0,26
+train:clone_disjoint,0.6.11,24
+train:clone_disjoint,0.7.6,24
+train:clone_disjoint,0.8.4,23
+train:clone_disjoint,0.5.11,19
+train:clone_disjoint,=0.7.6,18
+train:clone_disjoint,0.7.5,15
+train:clone_disjoint,>=0.6.10 <0.8.0,14
+train:clone_disjoint,0.8.7,13
+train:clone_disjoint,^0.4.18,13
+train:clone_disjoint,^0.8.7,13
+train:clone_disjoint,^0.5.9,13
+train:clone_disjoint,0.8.6,13
+train:clone_disjoint,^0.7.0,12
+train:clone_disjoint,0.8.9,12
+train:clone_disjoint,0.6.6,12
+train:clone_disjoint,missing,11
+train:clone_disjoint,0.5.4,11
+train:clone_disjoint,>=0.4.21 <0.6.0,11
+train:clone_disjoint,^0.4.25,10
+train:clone_disjoint,>=0.5.0,10
+train:clone_disjoint,=0.8.4,10
+train:clone_disjoint,^0.5.4,10
+train:clone_disjoint,^0.4.23,9
+train:clone_disjoint,0.5.12,9
+train:clone_disjoint,0.8.3,9
+train:clone_disjoint,^0.4.21,9
+train:clone_disjoint,=0.6.12,9
+train:clone_disjoint,>=0.7.0 <0.8.0,8
+train:clone_disjoint,^0.8.2,8
+train:clone_disjoint,^0.4.15,8
+train:clone_disjoint,0.8.13,7
+train:clone_disjoint,>=0.4.24,7
+train:clone_disjoint,>=0.5.0 <0.6.0,7
+train:clone_disjoint,^0.4.8,7
+train:clone_disjoint,^0.7.6,7
+train:clone_disjoint,^0.4.6,7
+train:clone_disjoint,^0.8.6,7
+train:clone_disjoint,0.8.0,7
+train:clone_disjoint,^0.6.8,7
+train:clone_disjoint,0.5.10,6
+train:clone_disjoint,^0.8.10,6
+train:clone_disjoint,>=0.8.0,6
+train:clone_disjoint,0.5.14,6
+train:clone_disjoint,>=0.6.0 <0.8.0,6
+train:clone_disjoint,^0.6.6,6
+train:clone_disjoint,0.4.23,6
+train:clone_disjoint,^0.4.10,5
+train:clone_disjoint,^0.4.11,5
+train:clone_disjoint,>=0.7.0,5
+train:clone_disjoint,^0.6.11,5
+train:clone_disjoint,^0.7.4,5
+train:clone_disjoint,0.8.12,5
+train:clone_disjoint,0.6.10,5
+train:clone_disjoint,>0.5.0 <0.8.0,5
+train:clone_disjoint,^0.4.17,5
+train:clone_disjoint,^0.7.1,5
+train:clone_disjoint,>=0.6.0 <0.7.0,5
+train:clone_disjoint,0.5.17,5
+train:clone_disjoint,0.8.11,4
+train:clone_disjoint,>=0.8.4 <0.9.0,4
+train:clone_disjoint,^0.6.10,4
+train:clone_disjoint,^0.7.3,4
+train:clone_disjoint,^0.5.3,4
+train:clone_disjoint,>=0.8.0 <=0.8.10,4
+train:clone_disjoint,>=0.6.11,4
+train:clone_disjoint,0.5.16,4
+train:clone_disjoint,^0.8.3,4
+train:clone_disjoint,0.5.9,4
+train:clone_disjoint,>=0.8.0 <0.9.0,3
+train:clone_disjoint,0.5.13,3
+train:clone_disjoint,0.5.8,3
+train:clone_disjoint,=0.6.6,3
+train:clone_disjoint,0.8.5,3
+train:clone_disjoint,>=0.6.10 <=0.8.10,3
+train:clone_disjoint,^0.5.2,3
+train:clone_disjoint,>=0.7.2,3
+train:clone_disjoint,^0.8.8,3
+train:clone_disjoint,^0.5.17,3
+train:clone_disjoint,=0.6.10,2
+train:clone_disjoint,^0.5.5,2
+train:clone_disjoint,^0.5.13,2
+train:clone_disjoint,>=0.6.2,2
+train:clone_disjoint,>=0.4.22 <0.8.0,2
+train:clone_disjoint,^0.8.0;^0.8.0;>=0.6.0,2
+train:clone_disjoint,>=0.6.0,2
+train:clone_disjoint,>=0.4.22 <0.9.0,2
+train:clone_disjoint,^0.4.13,2
+train:clone_disjoint,0.6.7,2
+train:clone_disjoint,=0.5.16,2
+train:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+train:clone_disjoint,0.4.21,2
+train:clone_disjoint,0.7.0,2
+train:clone_disjoint,^0.6.2,2
+train:clone_disjoint,^0.8.9,2
+train:clone_disjoint,>=0.7.6 <0.9.0,1
+train:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+train:clone_disjoint,^0.4.9,1
+train:clone_disjoint,0.6.0,1
+train:clone_disjoint,>=0.7.6,1
+train:clone_disjoint,^0.4.16,1
+train:clone_disjoint,^0.5.12,1
+train:clone_disjoint,^0.4.19,1
+train:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,1
+train:clone_disjoint,=0.8.11,1
+train:clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+train:clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:clone_disjoint,=0.8.9,1
+train:clone_disjoint,^0.8.11,1
+train:clone_disjoint,^0.6.7,1
+train:clone_disjoint,>=0.6.6,1
+train:clone_disjoint,^0.4.23;^0.4.11,1
+train:clone_disjoint,0.4.25,1
+train:clone_disjoint,=0.8.12,1
+train:clone_disjoint,^0.5.8,1
+train:clone_disjoint,>=0.6.12,1
+train:clone_disjoint,>=0.5.16,1
+train:clone_disjoint,>=0.5.0;>=0.6.0;>=0.6.2;>=0.6.2;>=0.5.0;>=0.6.6;>=0.5.0;>=0.5.0;>=0.5.0;>=0.6.6,1
+train:clone_disjoint,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+train:clone_disjoint,^0.6.12;^0.6.12,1
+train:clone_disjoint,0.7.3,1
+train:clone_disjoint,>=0.8.4,1
+train:clone_disjoint,>=0.8.8 <0.8.9,1
+train:clone_disjoint,0.8.2,1
+train:clone_disjoint,>=0.6.0 <0.9.0,1
+train:clone_disjoint,>0.4.13,1
+train:clone_disjoint,^0.5.2;^0.5.2;^0.5.2;0.5.3;0.5.3,1
+train:clone_disjoint,>=0.5.0 <0.7.0,1
+train:clone_disjoint,>= 0.5.0 <0.6.0,1
+train:clone_disjoint,>=0.6.11 <=0.6.12,1
+train:clone_disjoint,^0.4.0,1
+train:clone_disjoint,>= 0.7.0,1
+train:clone_disjoint,0.5.3,1
+train:clone_disjoint,^0.4.4,1
+train:joint_project_clone_disjoint,^0.8.0,115
+train:joint_project_clone_disjoint,^0.6.0,78
+train:joint_project_clone_disjoint,0.6.12,65
+train:joint_project_clone_disjoint,0.8.10,59
+train:joint_project_clone_disjoint,0.8.4,52
+train:joint_project_clone_disjoint,^0.6.12,44
+train:joint_project_clone_disjoint,0.5.11,43
+train:joint_project_clone_disjoint,0.8.7,37
+train:joint_project_clone_disjoint,^0.8.7,37
+train:joint_project_clone_disjoint,^0.8.4,36
+train:joint_project_clone_disjoint,^0.4.21,30
+train:joint_project_clone_disjoint,0.7.5,28
+train:joint_project_clone_disjoint,^0.4.23,26
+train:joint_project_clone_disjoint,^0.4.25,26
+train:joint_project_clone_disjoint,^0.7.3,25
+train:joint_project_clone_disjoint,^0.4.17,21
+train:joint_project_clone_disjoint,^0.4.15,20
+train:joint_project_clone_disjoint,=0.7.6,19
+train:joint_project_clone_disjoint,^0.4.24,17
+train:joint_project_clone_disjoint,missing,16
+train:joint_project_clone_disjoint,0.8.11,16
+train:joint_project_clone_disjoint,0.5.17,15
+train:joint_project_clone_disjoint,^0.7.0,15
+train:joint_project_clone_disjoint,^0.5.0,13
+train:joint_project_clone_disjoint,^0.8.6,13
+train:joint_project_clone_disjoint,0.7.6,12
+train:joint_project_clone_disjoint,0.8.9,12
+train:joint_project_clone_disjoint,0.8.13,12
+train:joint_project_clone_disjoint,^0.6.11,11
+train:joint_project_clone_disjoint,>=0.8.0,11
+train:joint_project_clone_disjoint,>=0.8.4 <0.9.0,11
+train:joint_project_clone_disjoint,^0.5.16,10
+train:joint_project_clone_disjoint,>=0.6.0 <0.8.0,10
+train:joint_project_clone_disjoint,>=0.4.21 <0.6.0,10
+train:joint_project_clone_disjoint,^0.6.6,10
+train:joint_project_clone_disjoint,0.8.0,9
+train:joint_project_clone_disjoint,^0.4.18,9
+train:joint_project_clone_disjoint,^0.4.0,8
+train:joint_project_clone_disjoint,0.4.24,7
+train:joint_project_clone_disjoint,>=0.6.0 <0.7.0,7
+train:joint_project_clone_disjoint,^0.8.11,7
+train:joint_project_clone_disjoint,^0.4.11,5
+train:joint_project_clone_disjoint,0.4.25,5
+train:joint_project_clone_disjoint,^0.8.2,5
+train:joint_project_clone_disjoint,^0.8.9,5
+train:joint_project_clone_disjoint,>=0.7.2,5
+train:joint_project_clone_disjoint,^0.6.10,5
+train:joint_project_clone_disjoint,^0.8.3,5
+train:joint_project_clone_disjoint,^0.8.5,4
+train:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,4
+train:joint_project_clone_disjoint,^0.4.8,4
+train:joint_project_clone_disjoint,^0.8.8,4
+train:joint_project_clone_disjoint,^0.6.2,4
+train:joint_project_clone_disjoint,^0.7.6,4
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.11,3
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,3
+train:joint_project_clone_disjoint,^0.5.12,3
+train:joint_project_clone_disjoint,=0.8.6,3
+train:joint_project_clone_disjoint,>=0.5.0 <0.8.0,3
+train:joint_project_clone_disjoint,=0.6.12,2
+train:joint_project_clone_disjoint,^0.7.4,2
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.2,2
+train:joint_project_clone_disjoint,^0.4.10,2
+train:joint_project_clone_disjoint,^0.8.1,2
+train:joint_project_clone_disjoint,>=0.7.0 <0.9.0,2
+train:joint_project_clone_disjoint,0.8.12,2
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;>=0.6.0,2
+train:joint_project_clone_disjoint,>=0.6.8;>=0.6.8;>=0.6.8;>=0.6.8,2
+train:joint_project_clone_disjoint,>0.4.13,2
+train:joint_project_clone_disjoint,^0.5.8,2
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9,2
+train:joint_project_clone_disjoint,0.8.5,2
+train:joint_project_clone_disjoint,^0.4.4,2
+train:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.3,1
+train:joint_project_clone_disjoint,^0.4.16,1
+train:joint_project_clone_disjoint,^0.4.9,1
+train:joint_project_clone_disjoint,^0.8.0;0.8.4;0.8.4;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+train:joint_project_clone_disjoint,0.4.19,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4;0.8.4,1
+train:joint_project_clone_disjoint,>=0.5.0 <0.7.0;>=0.5.0 <0.7.0;^0.5.10,1
+train:joint_project_clone_disjoint,>=0.4.0,1
+train:joint_project_clone_disjoint,=0.8.9,1
+train:joint_project_clone_disjoint,>=0.6.0 <0.8.0;>=0.6.4;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.4.0;0.6.12;0.6.12,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+train:joint_project_clone_disjoint,>=0.5.0 <0.6.0,1
+train:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:joint_project_clone_disjoint,0.6.9,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;0.8.9;^0.8.0,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.6,1
+train:joint_project_clone_disjoint,>=0.5.0,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;0.8.9;0.8.9,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;0.8.9;^0.8.0;^0.8.0;^0.8.0;0.8.9;0.8.9;0.8.9;0.8.9,1
+train:joint_project_clone_disjoint,=0.8.11,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.7,1
+train:joint_project_clone_disjoint,^0.6.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;^0.6.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;^0.6.0,1
+train:joint_project_clone_disjoint,=0.8.12,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0;^0.8.0,1
+train:joint_project_clone_disjoint,^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0,1
+train:joint_project_clone_disjoint,>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.0 <0.8.0;>=0.6.2 <0.8.0;>=0.6.0 <0.8.0;0.7.6,1
+train:joint_project_clone_disjoint,0.6.11,1
+train:joint_project_clone_disjoint,0.7.4,1
+train:joint_project_clone_disjoint,0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12;0.6.12,1
+train:joint_project_clone_disjoint,^0.8.0;^0.8.0;0.8.9,1
+train:joint_project_clone_disjoint,0.6.10,1
+train:joint_project_clone_disjoint,^0.4.23;^0.4.11,1
+train:joint_project_clone_disjoint,^0.4.19,1
+train:joint_project_clone_disjoint,>=0.6.6 <0.9.0,1
+train:joint_project_clone_disjoint,0.6.12;0.6.12,1
+train:joint_project_clone_disjoint,^0.7.5,1
+train:joint_project_clone_disjoint,0.6.0,1
+train:joint_project_clone_disjoint,>=0.8.8 <0.8.9,1
+train:joint_project_clone_disjoint,^0.5.0;>=0.4.24 <0.7.0;^0.5.0;^0.5.0;^0.5.5;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;^0.5.0;0.5.17,1
+train:joint_project_clone_disjoint,>=0.6.8,1
+train:joint_project_clone_disjoint,^0.5.17;>=0.4.22 <0.6.0,1
+train:joint_project_clone_disjoint,<=0.7.0,1
+train:joint_project_clone_disjoint,^0.5.17,1
+train:joint_project_clone_disjoint,0.5.0,1
+train:joint_project_clone_disjoint,=0.8.0,1
+train:joint_project_clone_disjoint,^0.5.2,1
+train:joint_project_clone_disjoint,>=0.6.0,1
+train:joint_project_clone_disjoint,^0.4.2,1
+train:joint_project_clone_disjoint,0.5.8,1
+train:joint_project_clone_disjoint,0.7.3,1
+train:joint_project_clone_disjoint,>0.5.0 <0.9.0,1

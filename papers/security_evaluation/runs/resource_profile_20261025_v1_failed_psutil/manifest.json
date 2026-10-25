@@ -1,0 +1,38 @@
+{
+  "schema": "security_resource_profile_run_v1",
+  "status": "failed_resource_measurement",
+  "started_utc": "2026-10-25T08:15:36.212927+00:00",
+  "prepared_utc": "2026-10-25T08:15:38.470943+00:00",
+  "git_commit": "f3e5bccd124def4e1f3e60478ad928a71acd5b53",
+  "git_dirty": true,
+  "source_snapshots": {
+    "papers/security_evaluation/resource_profile.py": "a0b0bbdd9c9f406301269a447a8daf507ac233bb70eabd806e6efd4d303bf023",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "src/bal/models/tabular.py": "04122d57ae500958389c320a66100315fd928b85f2d8966f90ffc4a1f1e25136"
+  },
+  "data_commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+  "config_sha256": "da7cd62599bdf4f6ce7ce10c6608a1856e210a667b5164a6c9e72143450bc42c",
+  "development_inputs": {
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/manifest.json": "2a78f4091bdb8178905e5652b74b5e5fdacf751192b95e9f121ddcbb131d753e",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/memberships.csv": "9f6281fa2343c997f3771e76e1d76ec4e84f94889e60ae6ee99e7fc52f6c1e1d",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4"
+  },
+  "n_train": 1179,
+  "training_positive_proxy": 31,
+  "n_test_source_only": 1082,
+  "test_annotation_files_read": 0,
+  "test_labels_used": false,
+  "external_scores_computed": false,
+  "accuracy_metrics_computed": false,
+  "predictions_saved": false,
+  "training_label_semantics": "published SWC-107 finding versus no published finding; proxy only",
+  "input_output_hashes": {
+    "selected_source_hashes.csv": "66f571f346a4ffbbe6f3f9c72d42d41c0ea1720c6935383acfbd6b9c56139612",
+    "training_annotation_hashes.json": "5a24082ab47806d8c51af87f796d862c0396e2af3127c975d2c92e55a018f319",
+    "environment.json": "0614eae398c6a47c701fc66b8f46ce86a1526304651ef871c6bd74a235f697d3"
+  },
+  "setup_seconds": 2.274037247999331,
+  "measurement_started_utc": "2026-10-25T08:15:38.487328+00:00",
+  "failure": "psutil.NoSuchProcess at instantaneous RSS collection under PID namespace after raw LR fit/predict; no accuracy metrics or test labels used"
+}

@@ -1,0 +1,5 @@
+method,seed,n_train,n_test_source_only,n_features,train_preprocessing_seconds,test_preprocessing_seconds,fit_seconds,predict_seconds,method_total_seconds,process_peak_rss_mib_cumulative,instantaneous_rss_status,configured_native_threads,iterations,convergence_warning,warnings
+raw_tfidf_lr,0,1179,1082,50000,2.947391026999867,1.052264871999796,1.09771703899969,0.0014056460004212568,5.103790893000223,322.16015625,not_measured_pid_namespace_incompatible_with_psutil,1,171,False,
+normalized_tfidf_lr,0,1179,1082,7275,1.56200929500028,1.0424553299999388,0.13198979800017696,0.0009171709998554434,2.742167382999469,322.16015625,not_measured_pid_namespace_incompatible_with_psutil,1,84,False,
+pattern_rf,0,1179,1082,43,2.6632430310000927,1.6420710369993685,1.2496176320000814,0.08750080200024968,5.6501056119996065,322.16015625,not_measured_pid_namespace_incompatible_with_psutil,4,500,False,
+pattern_lightgbm,0,1179,1082,43,3.242572707000363,1.664453988999412,0.3805581409997103,0.008542448999833141,5.301139229,322.16015625,not_measured_pid_namespace_incompatible_with_psutil,4,400,False,"X does not have valid feature names, but LGBMClassifier was fitted with feature names"

@@ -1,0 +1,9 @@
+diagnostic_stage,class,files,coverage_of_all_paths,source_reported_positive_files_pending_review,positive_proxy_components_080,all_proxy_components_080,unknown_source_identity_or_location,direct_normalized_overlap_with_upstream,direct_jaccard_ge_080_overlap_with_upstream
+all_candidate_paths,reentrancy,2181,1.0,77,58,1113,17,148,208
+all_candidate_paths,unchecked,2181,1.0,259,165,1113,17,148,208
+after_excluding_previously_used_curated_source,reentrancy,2039,0.9348922512608895,47,44,1017,16,6,66
+after_excluding_previously_used_curated_source,unchecked,2039,0.9348922512608895,208,134,1017,16,6,66
+after_quarantining_source_reconciliation_issues,reentrancy,2023,0.9275561668959194,47,44,1006,0,6,66
+after_quarantining_source_reconciliation_issues,unchecked,2023,0.9275561668959194,208,134,1006,0,6,66
+after_quarantining_repeated_identifiers_or_exact_source_identity,reentrancy,1998,0.9160935350756534,46,43,995,0,5,65
+after_quarantining_repeated_identifiers_or_exact_source_identity,unchecked,1998,0.9160935350756534,200,129,995,0,5,65

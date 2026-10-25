@@ -1,0 +1,28 @@
+{
+  "schema": "fixed_t_posthoc_metadata_and_budget_v1",
+  "started_utc": "2026-10-25T08:11:31.905498+00:00",
+  "status": "complete",
+  "source_pilot": "papers/security_evaluation/runs/dev_fixed_t_20261025_v1",
+  "purpose": "Metadata-only class feasibility; post-hoc floor-budget reanalysis of existing predictions",
+  "budget_amendment": "Original pilot used ceil; floor policy was aligned after pilot scores became available. Original files unchanged.",
+  "external_scores_computed": false,
+  "models_fitted": 0,
+  "input_hashes": {
+    "predictions.csv": "23c33c1602dea2347c1d268c6510bf0f4146ab769df8b4eacb6ac04675255d48",
+    "memberships.csv": "9f6281fa2343c997f3771e76e1d76ec4e84f94889e60ae6ee99e7fc52f6c1e1d"
+  },
+  "code_hashes": {
+    "papers/security_evaluation/code/analyze_fixed_t_development.py": "bd0b178c8bf4e0f870897c0724fbd3cd4112b4b7a5dbd9030e1ec0fad57f9b0f",
+    "papers/security_evaluation/evaluation_metrics.py": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d",
+    "papers/security_evaluation/code/fixed_t_development.py": "3558dd6c0280ef1e2c33fc1333f7f4785e5f5d91d838451a21b80e8c2f33043d",
+    "src/bal/data/contracts.py": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "finished_utc": "2026-10-25T08:11:34.712993+00:00",
+  "output_hashes": {
+    "class_feasibility.csv": "b2108b5ca0669fefb5caa7766593649e0cc4c31a3221a367e56b9f0e4ba7bf23",
+    "floor_metrics.json": "99dd5378736f54ecc71d0849ac40609b8b40091384f64f4ceedd3a1c22db9eb2",
+    "floor_workload.csv": "117207375f78b471083e575e35527c6a9c39cbe7d9af8efe6069f4474d052e0e",
+    "ranking_reanalysis.csv": "c96f802e53171e1cbc985d16ec1abbaff5fd7a2b52a32a38c9e0506a64f317ee"
+  }
+}

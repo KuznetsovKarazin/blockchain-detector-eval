@@ -1,0 +1,78 @@
+{
+  "schema": "p1_candidate_dependency_reachability_v1",
+  "script_sha256": "6a01accb78d525199251440fbf03b170c2b51c7820df6decc77df1d45c926c61",
+  "candidate_metadata_sha256": "74964ccbca4344ad9817f614b0349bcd1d9a602e7d539ca5582d8ea663e453f4",
+  "threshold": 0.8,
+  "rows": [
+    {
+      "stage": "all_candidate_paths",
+      "class": "reentrancy",
+      "files": 2181,
+      "directly_connected_files": 208,
+      "transitively_connected_files": 329,
+      "transitively_connected_proxy_components": 108,
+      "source_positive_files": 77,
+      "source_positive_files_in_connected_components": 36,
+      "source_positive_connected_components": 19
+    },
+    {
+      "stage": "all_candidate_paths",
+      "class": "unchecked",
+      "files": 2181,
+      "directly_connected_files": 208,
+      "transitively_connected_files": 329,
+      "transitively_connected_proxy_components": 108,
+      "source_positive_files": 259,
+      "source_positive_files_in_connected_components": 53,
+      "source_positive_connected_components": 33
+    },
+    {
+      "stage": "noncurated",
+      "class": "reentrancy",
+      "files": 2039,
+      "directly_connected_files": 66,
+      "transitively_connected_files": 187,
+      "transitively_connected_proxy_components": 12,
+      "source_positive_files": 47,
+      "source_positive_files_in_connected_components": 6,
+      "source_positive_connected_components": 5
+    },
+    {
+      "stage": "noncurated",
+      "class": "unchecked",
+      "files": 2039,
+      "directly_connected_files": 66,
+      "transitively_connected_files": 187,
+      "transitively_connected_proxy_components": 12,
+      "source_positive_files": 208,
+      "source_positive_files_in_connected_components": 2,
+      "source_positive_connected_components": 2
+    },
+    {
+      "stage": "diagnostic_residual",
+      "class": "reentrancy",
+      "files": 1998,
+      "directly_connected_files": 65,
+      "transitively_connected_files": 186,
+      "transitively_connected_proxy_components": 11,
+      "source_positive_files": 46,
+      "source_positive_files_in_connected_components": 5,
+      "source_positive_connected_components": 4
+    },
+    {
+      "stage": "diagnostic_residual",
+      "class": "unchecked",
+      "files": 1998,
+      "directly_connected_files": 65,
+      "transitively_connected_files": 186,
+      "transitively_connected_proxy_components": 11,
+      "source_positive_files": 200,
+      "source_positive_files_in_connected_components": 2,
+      "source_positive_connected_components": 2
+    }
+  ],
+  "status": "diagnostic_not_frozen_not_independent",
+  "rule": "Mark every candidate component with any direct candidate-to-upstream Jaccard>=0.8 edge, then propagate membership to all candidate files in the component.",
+  "next_step": "Derive the full upstream training exclusion manifest from all transitive component memberships, rather than removing only direct neighbors; prefer restricting training before changing the candidate test population.",
+  "limitation": "Saved candidate component IDs permit these counts, but full upstream memberships must be exported by the source audit before a training exclusion manifest is frozen. Lexical normalization and project/address provenance limits remain."
+}

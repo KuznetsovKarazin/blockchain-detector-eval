@@ -1,0 +1,55 @@
+{
+  "schema": "security_fixed_t_run_v1",
+  "status": "complete_development_only",
+  "started_utc": "2026-10-25T08:08:57.979319+00:00",
+  "prepared_utc": "2026-10-25T08:09:03.635984+00:00",
+  "git_commit": "f3e5bccd124def4e1f3e60478ad928a71acd5b53",
+  "git_dirty": true,
+  "source_snapshots": {
+    "papers/security_evaluation/code/fixed_t_development.py": "3558dd6c0280ef1e2c33fc1333f7f4785e5f5d91d838451a21b80e8c2f33043d",
+    "src/bal/data/contracts.py": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "input_files": {
+    "results/contracts/c2_20261024_004314/groups.parquet": "46d43eb88b73d75940df060d103e40f1cff1c5ca466080adbe02892f8e362c97",
+    "results/contracts/c2_20261024_004314/assignments.parquet": "88c3bcbe59989ce854be35f45685aa0f61dcfac98ce181f97069cade8a051309"
+  },
+  "data_commits": {
+    "smartbugs-curated": "230e649123477eff332742a59a1c7cc6dc286cab",
+    "SolidiFI-benchmark": "4b0573e1b3f7031396de6f48f7f3e7380222ad3a",
+    "DAppSCAN": "66a56619c44770e05c2db600fa6468115ff0dcd5"
+  },
+  "config_sha256": "0d700f08893be7264c9917f0c9b60a7785442f21c4eb5d5cfeae2e66e30eabd3",
+  "membership_sha256": "9f6281fa2343c997f3771e76e1d76ec4e84f94889e60ae6ee99e7fc52f6c1e1d",
+  "source_inventory_sha256": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+  "label_inputs_sha256": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4",
+  "proxy_labels_sha256_int8_full_order": "7b1fd23e9b8f79cb0127214f3afe629b7f374ba49e536e16a8370473a4c9a57a",
+  "full_graph_n": 7080,
+  "dappscan_n": 6587,
+  "selected_component_n": 5408,
+  "test_n": 1082,
+  "test_positive_proxy": 21,
+  "test_coverage_of_dappscan": 0.16426294215879764,
+  "test_joint_components": 1,
+  "matched_training_n": 1179,
+  "matched_training_positive_proxy": 31,
+  "external_scores_computed": false,
+  "limitations": [
+    "One development test from one joint component; no population inference",
+    "Proxy labels are not confirmed negative/positive adjudications",
+    "Historical clone grouping uses probabilistic LSH candidate discovery",
+    "Equal size and proxy positives do not equalize all training composition",
+    "Library fields are screening heuristics, not verified origins"
+  ],
+  "scoring_started_utc": "2026-10-25T08:09:53.281125+00:00",
+  "finished_utc": "2026-10-25T08:10:11.339658+00:00",
+  "total_validation_and_scoring_seconds": 19.947413916000187,
+  "process_peak_rss_mib": 394.421875,
+  "all_models_converged": true,
+  "output_hashes": {
+    "pilot_metrics.csv": "1e2b119c6bd82c497da295249d918469ea727e27cf8fe8d4078b72dcf6d836da",
+    "workload_metrics.csv": "57382a617f005a15e446105a54b010b437bfabfe94e044637ea55c656c865131",
+    "predictions.csv": "23c33c1602dea2347c1d268c6510bf0f4146ab769df8b4eacb6ac04675255d48"
+  },
+  "artifact_bytes_before_final_manifest": 4308580
+}
