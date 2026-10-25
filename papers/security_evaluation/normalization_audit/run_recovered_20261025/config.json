@@ -1,0 +1,45 @@
+{
+  "schema": "security_comment_normalization_sensitivity_v1",
+  "status": "frozen_before_scanner_audit_and_corrected_graph",
+  "frozen_utc": "2026-10-25T12:14:16.495891+00:00",
+  "population_records": 24131,
+  "population_by_source": {
+    "reference:dappscan": 21457,
+    "reference:solidifi": 350,
+    "candidate:smartbugs_results": 1501,
+    "candidate:smartbugs_curated": 142,
+    "candidate:zeus_safe": 231,
+    "candidate:zeus_vulnerable": 307,
+    "reference:smartbugs": 143
+  },
+  "scope": "Full pinned candidate 2181 plus uncapped references 21950; no cohort restriction",
+  "changed_factor": "Comment recognition only; historical TOKEN_RE, KEEP and ID/NUM mapping retained",
+  "literal_representation": "Source strings retained; historical regex still tokenizes their contents and omits quote delimiters",
+  "scanner_semantics": {
+    "quotes": [
+      "single",
+      "double"
+    ],
+    "escapes": "Backslash consumes the following character lexically",
+    "prefixes": "hex and unicode preserved as preceding ordinary characters",
+    "comments": "// ends at CR or LF or EOF; /* ends at first */; no nesting",
+    "replacement": "Every comment character becomes space except CR/LF; character positions preserved",
+    "multiline_literals": "Retained and counted without deciding compiler validity",
+    "unterminated_string_or_block": "Explicit error; corrected stream unavailable; no fallback or repair"
+  },
+  "input_decoding": "UTF-8; strict decode checked, errors=replace fallback matches inherited loader and is flagged",
+  "comparison": "SHA256 and direct equality of normalized strings for successfully scanned records",
+  "error_graph_rule": "Quarantine unavailable corrected streams; report lost records and inability to certify links through them",
+  "example_policy": "First 20 changed paths per source and all errors; metadata pointers only, no source snippets",
+  "inputs": {
+    "papers/security_evaluation/external_audit/source_audit_full_20261025/candidate_source_metadata.csv": "74964ccbca4344ad9817f614b0349bcd1d9a602e7d539ca5582d8ea663e453f4",
+    "papers/security_evaluation/external_audit/source_audit_full_20261025/upstream_source_metadata.csv": "47d359ff0a30f09909f2f452ac60e16ad9aadc271fec4163ba2d852e28072003"
+  },
+  "code": {
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "papers/security_evaluation/normalization_audit/audit_normalization.py": "152664bd049c44b9bf751cc466a2c501c695a99c34c6e28168cba5dd36730cc8",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "external_scoring": false,
+  "semantic_equivalence_claim": false
+}

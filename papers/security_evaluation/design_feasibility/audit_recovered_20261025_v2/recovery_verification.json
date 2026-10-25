@@ -1,0 +1,20 @@
+{
+  "status": "reproduced_visible_transcript_evidence",
+  "candidate_designs": 95,
+  "aggregate_rows_verified": 19,
+  "passing_ids_verified": [
+    "outside_p90_seed2",
+    "outside_p90_seed4"
+  ],
+  "original95row_output_recovered": false,
+  "new_run_regenerated_from_recovered_source_and_pinned_inputs": true,
+  "model_scores_read": false,
+  "models_trained": 0,
+  "overlap_of_two_selected_tests": {
+    "intersection_n": 961,
+    "union_n": 1163,
+    "jaccard": 0.826311263972485,
+    "shared_fraction_of_each_test": 0.9048964218455744
+  },
+  "source_sha256": "ea4f40dcd4da089436c38436fe54be50a08cff66f002e36e9b3c07873ec2216e"
+}

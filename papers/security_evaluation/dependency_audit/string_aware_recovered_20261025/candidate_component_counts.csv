@@ -1,0 +1,13 @@
+normalization,grouping,threshold,class,test_files,test_proxy_components,source_positive_files,positive_proxy_components,test_files_connected_to_historical_training,positive_test_files_connected,test_scan_error_files
+string_aware,base,0.7,reentrancy,1998,859,46,40,463,8,0
+string_aware,base,0.7,unchecked,1998,859,200,119,463,2,0
+string_aware,base,0.8,reentrancy,1998,995,46,43,186,5,0
+string_aware,base,0.8,unchecked,1998,995,200,129,186,2,0
+string_aware,base,0.9,reentrancy,1998,1158,46,44,26,3,0
+string_aware,base,0.9,unchecked,1998,1158,200,146,26,2,0
+string_aware,address_expanded,0.7,reentrancy,1998,859,46,40,463,8,0
+string_aware,address_expanded,0.7,unchecked,1998,859,200,119,463,2,0
+string_aware,address_expanded,0.8,reentrancy,1998,995,46,43,186,5,0
+string_aware,address_expanded,0.8,unchecked,1998,995,200,129,186,2,0
+string_aware,address_expanded,0.9,reentrancy,1998,1158,46,44,26,3,0
+string_aware,address_expanded,0.9,unchecked,1998,1158,200,146,26,2,0

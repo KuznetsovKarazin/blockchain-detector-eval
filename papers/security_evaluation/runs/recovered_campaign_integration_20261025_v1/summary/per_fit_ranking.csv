@@ -1,0 +1,2 @@
+job_id,test_id,class,seed,regime,method,training_membership_sha256,test_joint_components,status,label_regime,physical_fit,ap_proxy,trapezoidal_pr_area_proxy,prevalence_proxy,coverage,n_test,runtime_seconds,convergence_warning,error_type
+300a597104f7cc1ed1e0a528,already_scored_pilot_T,reentrancy,0,joint_project_clone_disjoint,raw_tfidf_lr,7f7af5450ba94d57e8a21d50529053d7bfaf959da8d4e6e56aa7eee7db65e81b,1,complete,proxy,True,0.03847493192872584,0.030096007652548717,0.019408502772643253,1.0,1082,5.74736140800087,False,

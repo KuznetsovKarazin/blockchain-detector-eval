@@ -1,6 +1,6 @@
 {
-  "schema": "security_evaluation_protocol_v0.2",
-  "status": "draft_external_not_frozen_development_specified",
+  "schema": "security_evaluation_protocol_v0.3",
+  "status": "draft_external_not_frozen_second_development_audits",
   "prepared_local_date": "2026-10-25",
   "timezone": "Europe/Rome",
   "working_title": "Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation",
@@ -67,10 +67,61 @@
       "unchecked_source_reported_positives": 200,
       "transitively_linked_to_reference_files": 186,
       "connected_proxy_components": 11
+    },
+    "full_dependency_sensitivity": {
+      "directory": "dependency_audit/",
+      "nodes": 24131,
+      "normalizers": [
+        "legacy",
+        "string_aware"
+      ],
+      "grouping": [
+        "base",
+        "address_expanded"
+      ],
+      "thresholds": [
+        0.7,
+        0.8,
+        0.9
+      ],
+      "independently_verified_partitions": 12,
+      "retained_historical_dappscan": [
+        418,
+        691,
+        1085
+      ],
+      "reentrancy_proxy_positives": [
+        17,
+        23,
+        29
+      ],
+      "unchecked_proxy_positives": [
+        15,
+        18,
+        22
+      ],
+      "normalization_training_retention_changes": 0,
+      "candidate_cohort_still_provisional": true,
+      "model_scoring": false
+    },
+    "graph_scope_ablation": {
+      "directory": "dependency_audit/graph_scope_ablation_recovered_20261025",
+      "threshold": 0.8,
+      "same_historical_population_exhaustive_graph_changes_dappscan_partition": false,
+      "uncapped_reference_population_alone_gives_selected_train_counts": [
+        13,
+        10
+      ],
+      "adding_candidate_changes_selected_train_counts": false,
+      "historical_and_uncapped_giant_sizes": [
+        5408,
+        5879
+      ],
+      "interpretation": "conditional graph-scope attribution for these designs; not semantic family validation"
     }
   },
   "fixed_test": {
-    "status": "development_pilot_complete_main_design_pending",
+    "status": "development_pilot_complete_expanded_graph_comparison_infeasible",
     "test_manifest": "runs/dev_fixed_t_20261025_v1/memberships.csv",
     "pools": [
       "other_files_unrestricted",
@@ -118,7 +169,48 @@
       "workload_amendment": "Original pre-scoring pilot used ceil; floor workload recomputed post hoc without refitting. See VALIDITY_NOTES.md.",
       "unchecked_feasibility_warning": "Same T has only 3 unchecked proxy positives; not sufficient evidence for a broad two-class conclusion."
     },
-    "joint_disjoint_scope": "Relative to frozen observed lexical clone graph; semantic and full-upstream family independence are not implied."
+    "joint_disjoint_scope": "Relative to frozen observed lexical clone graph; semantic and full-upstream family independence are not implied.",
+    "design_feasibility": {
+      "audit": "design_feasibility/audit_recovered_20261025_v2",
+      "candidate_designs": 95,
+      "passed_historical_operational_screens": [
+        "outside_p90_seed2",
+        "outside_p90_seed4"
+      ],
+      "test_files_each": 1062,
+      "test_intersection_files": 961,
+      "test_selection": "candidate membership hash-selected without labels; subsequent selection uses proxy-label counts after pilot; development only",
+      "operational_screens_are_power_calculation": false,
+      "independent_replications": false,
+      "full_population_coverage": 0.16122665856991042,
+      "expanded_graph_crosscheck": {
+        "directory": "design_feasibility/expanded_sensitivity_recovered_20261025_v1",
+        "threshold": 0.8,
+        "passed_designs": 0,
+        "candidate_designs": 95,
+        "selected_remaining_joint_train": [
+          13,
+          10
+        ],
+        "selected_reentrancy_proxy_positives": [
+          0,
+          1
+        ],
+        "selected_unchecked_proxy_positives": [
+          1,
+          0
+        ],
+        "comparative_training_allowed": false,
+        "gate": "design_feasibility/expanded_sensitivity_recovered_20261025_v1/CAMPAIGN_GATE.json",
+        "thresholds": [
+          0.7,
+          0.8,
+          0.9
+        ],
+        "evaluated_combinations": 1140,
+        "passed_combinations": 0
+      }
+    }
   },
   "training": {
     "seeds_proposed": [
@@ -172,7 +264,8 @@
         "detector_mapping_source": "scripts/c3_slither_baseline.py",
         "compiler_policy": "Must be specified and checked before new external execution; historical hard-coded compiler catalogue is not automatically current."
       }
-    }
+    },
+    "comparative_development_campaign": "BLOCKED_EXPANDED_DEPENDENCE; 320 logical jobs prepared, zero comparative fits"
   },
   "metrics": {
     "ranking": "sklearn.average_precision_score",
@@ -260,5 +353,22 @@
     "new final paper results",
     "journal readiness"
   ],
-  "amendments": "DECISIONS.md"
+  "amendments": "DECISIONS.md",
+  "normalization_sensitivity": {
+    "historical_implementation_unchanged": true,
+    "audit": "normalization_audit/run_recovered_20261025",
+    "records": 24131,
+    "changed_normalized_streams": 92,
+    "scanner_errors": 0,
+    "verified_against_pre_loss_csv_sha256": true,
+    "isolated_change": "string-aware comment recognition; historical token and identifier normalization retained",
+    "model_scoring": false
+  },
+  "recovery": {
+    "notice": "RECOVERY_2026-10-25.md",
+    "first_cycle_public_commit": "caac45a39a8c1349ec1e9fa449437d1c611a483c",
+    "recovered_code_public_commit": "1a8f4011d374e228f940be85e25386f17778ce25",
+    "original_second_cycle_output_files": "lost; fresh reruns use distinct directories",
+    "human_reviews_completed": 0
+  }
 }

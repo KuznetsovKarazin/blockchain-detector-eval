@@ -1,0 +1,32 @@
+{
+  "schema": "security_development_campaign_manifest_v1",
+  "status": "prepared_no_scores",
+  "prepared_utc": "2026-10-25T12:17:07.252768+00:00",
+  "git_commit": "1a8f4011d374e228f940be85e25386f17778ce25",
+  "git_dirty": true,
+  "data_commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+  "config_sha256": "eceeb23d67a7e4694d4a56a35e24601ccf090be39fc55f0c9e03da95fb7e4230",
+  "source_hashes": {
+    "papers/security_evaluation/campaign/run_development.py": "b1d51e51e0ee81a38929e61d32532db684ffd2f0febbf2e9d40835b4c140730c",
+    "papers/security_evaluation/evaluation_metrics.py": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "input_hashes": {
+    "inputs/design_manifest.json": "250091cfab90bbae1f40d6e2d037370e72c041a91faf4c92dc8ce5efced449bc",
+    "inputs/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4",
+    "inputs/selected_annotation_hashes.json": "ebec7e533de92e3b395d50c3b34321e4c8525b3a8df1ce0fa11eb8e1f3d0de1a",
+    "inputs/selected_inventory.csv": "a3b18bc92cc82fcc7f5b8a2be030f4e2d3fe9f13f367e0e0669a2184baa1403f",
+    "inputs/selected_memberships.csv.gz": "ccc019e21fe305611d4e17669e7d7bbb9b839cee89195a0c89e961f2aa198d56",
+    "inputs/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da"
+  },
+  "environment_sha256": "9b74f5ddd4c5da5d7d56f9df7930bb66e5dcdc7d5defe42d37737171ce377031",
+  "historical_groups_sha256": "46d43eb88b73d75940df060d103e40f1cff1c5ca466080adbe02892f8e362c97",
+  "logical_jobs": 160,
+  "planned_physical_fits": 144,
+  "label_vector_hashes": {
+    "reentrancy": "18c55db94e514735319b9e6e92e3e7ade77b71316852f2657865b29e997dca9b",
+    "unchecked": "1c83458729a4309f2af67bcbdddb8a2f17b69eb68b7fd29d30303a8791930576"
+  },
+  "external_scores_computed": false,
+  "run_fingerprint": "5fb20b6b88f911674632cdc7cef5eab8f3eaa9e7a5292d3bc9be8011315c86fa"
+}

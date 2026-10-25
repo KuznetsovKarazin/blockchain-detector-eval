@@ -1,0 +1,27 @@
+{
+  "schema": "security_runner_integration_bundle_v1",
+  "purpose": "development_only",
+  "external_scoring_allowed": false,
+  "train_allowed": true,
+  "decision": "Runner integration only on the previously scored pilot; not the selected main campaign",
+  "data_commits": {
+    "DAppSCAN": "66a56619c44770e05c2db600fa6468115ff0dcd5"
+  },
+  "membership_file": "selected_memberships.csv",
+  "permitted_test_ids": [
+    "already_scored_pilot_T"
+  ],
+  "seeds": [
+    0
+  ],
+  "classes": [
+    "reentrancy"
+  ],
+  "origin_pilot_manifest_sha256": "2a78f4091bdb8178905e5652b74b5e5fdacf751192b95e9f121ddcbb131d753e",
+  "adapter_source_sha256": "71b5b50e4fd64a7e3d1978cb6a6fc01dac56dd4f3c82009f3149d14b92ca94da",
+  "hashes": {
+    "selected_memberships.csv": "bfa8fd991811fa360f112ffb9a42aeff26213e0b989f9c2c055b5f6f1b4dc202",
+    "source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+    "label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4"
+  }
+}

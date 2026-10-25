@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checks": {
+    "legacy_A_B_same_DApp_partition": true,
+    "string_aware_A_B_same_DApp_partition": true,
+    "legacy_C_D_same_two_test_raw_training_counts": true,
+    "string_aware_C_D_same_two_test_raw_training_counts": true
+  },
+  "source_snapshot_matches_frozen_config": true
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "expanded_graph_campaign_gate_v1",
+  "created_utc": "2026-10-25T12:20:49.207128+00:00",
+  "status": "BLOCKED_EXPANDED_DEPENDENCE",
+  "comparative_training_allowed": false,
+  "external_scoring_allowed": false,
+  "selected_test_ids": [
+    "outside_p90_seed2",
+    "outside_p90_seed4"
+  ],
+  "failed_expanded_operational_screens": true,
+  "historical_joint_training_intersects_expanded_test_components": true,
+  "reason": "Historical-graph joint exclusions do not establish expanded source-family separation. Preserve frozen bundles as diagnostic provenance; do not score a purported independent campaign.",
+  "original_bundle_manifests_unchanged": true,
+  "models_trained": 0,
+  "model_scores_read": false,
+  "next_condition": "Review expanded graph and redefine/freeze scientific scope or construct valid new manifests without relaxing components",
+  "input_hashes": {
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025": {
+      "nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+      "memberships.csv": "c3c983ffb7a68c72f405231de9b9355b785f0e5fa8e12057aae49033a5002e75",
+      "config_before_graph.json": "b3aca1ee05a9044f5ef37f7cdf1e0675e8b1d2676da51d2d997cab0ab834cdcd",
+      "summary.json": "e07c1d7629803b110a408a3d0376e780be433977e2481383dac1da9c49329a2c"
+    },
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025": {
+      "nodes.csv": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0",
+      "memberships.csv": "f224391efd4ddaab224c0e48398f203281e7fa71fe71352b563a94c64473b210",
+      "config_before_graph.json": "87fbf559d84dfd46286a89adb2cb553508fddcf3bdcdeb8bfacef594db1b917c",
+      "summary.json": "2158784b7c0604b6f92fe28ddfe046844413ec134f62a5b551887696a4984e2e"
+    }
+  },
+  "selected_bundle_manifest_hashes": {
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed2_recovered_v2": "250091cfab90bbae1f40d6e2d037370e72c041a91faf4c92dc8ce5efced449bc",
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2": "5e4d8343de1d96359bc94c786b71a59a264a8d628911d9ba54ef9c1f430a9206"
+  },
+  "outputs": {
+    "all95_joint_sensitivity.csv": "b91ce1f4f308ff7c95f0159a408d22f9de7b674f41a3a27f8d576803ad47b2a1",
+    "selected_training_overlap.csv": "b1832deebad3046334abc7401110764ac3dde545d5c5a27eb2e9fbefb6fe51b1",
+    "selected_test_expanded_memberships.csv": "b7bd31c830eb4a327524a035e90fdc376a17503602efe0e79ad0698ee75dd780"
+  }
+}

@@ -1,0 +1,8 @@
+source,records,scanned_ok,scanner_errors,normalized_changed,normalized_unchanged,utf8_replacement_files,multiline_literal_files,changed_with_literal_marker,changed_other_legacy_comment_behavior
+candidate:smartbugs_curated,142,142,0,0,142,0,0,0,0
+candidate:smartbugs_results,1501,1501,0,33,1468,0,0,21,12
+candidate:zeus_safe,231,231,0,1,230,0,0,1,0
+candidate:zeus_vulnerable,307,307,0,1,306,0,0,1,0
+reference:dappscan,21457,21457,0,50,21407,1,0,27,23
+reference:smartbugs,143,143,0,0,143,0,0,0,0
+reference:solidifi,350,350,0,7,343,0,0,0,7

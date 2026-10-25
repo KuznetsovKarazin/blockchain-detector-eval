@@ -1,0 +1,15 @@
+{
+  "schema": "security_campaign_execution_assessment_v1",
+  "assessment_kind": "expanded_graph_comparative_check",
+  "bundle_manifest_sha256": "5e4d8343de1d96359bc94c786b71a59a264a8d628911d9ba54ef9c1f430a9206",
+  "execution_allowed": false,
+  "expanded_graph_check": "failed",
+  "test_ids": [
+    "outside_p90_seed4"
+  ],
+  "reason": "Historical-graph joint exclusions do not establish expanded source-family separation. Preserve frozen bundles as diagnostic provenance; do not score a purported independent campaign.",
+  "evidence_gate_path": "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2/CAMPAIGN_GATE.json",
+  "evidence_hashes": {
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2/CAMPAIGN_GATE.json": "99a0e4d1a58d7a6fa48e42b27a52879af65156eb86282ec7bbbbe79010559e6c"
+  }
+}

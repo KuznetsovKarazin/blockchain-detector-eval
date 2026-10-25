@@ -1,0 +1,114 @@
+{
+  "status": "complete_no_scoring",
+  "prepared_utc": "2026-10-25T12:14:16.516959+00:00",
+  "config_sha256": "3385102d2431d5867e350802147934c46ee5a8f63bb371e6c4d6dab5bb0e8893",
+  "started_utc": "2026-10-25T12:14:33.198844+00:00",
+  "completed_utc": "2026-10-25T12:15:16.110934+00:00",
+  "total_records": 24131,
+  "normalized_changed": 92,
+  "scanner_errors": 0,
+  "source_summary": [
+    {
+      "source": "candidate:smartbugs_curated",
+      "records": 142,
+      "scanned_ok": 142,
+      "scanner_errors": 0,
+      "normalized_changed": 0,
+      "normalized_unchanged": 142,
+      "utf8_replacement_files": 0,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 0,
+      "changed_other_legacy_comment_behavior": 0
+    },
+    {
+      "source": "candidate:smartbugs_results",
+      "records": 1501,
+      "scanned_ok": 1501,
+      "scanner_errors": 0,
+      "normalized_changed": 33,
+      "normalized_unchanged": 1468,
+      "utf8_replacement_files": 0,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 21,
+      "changed_other_legacy_comment_behavior": 12
+    },
+    {
+      "source": "candidate:zeus_safe",
+      "records": 231,
+      "scanned_ok": 231,
+      "scanner_errors": 0,
+      "normalized_changed": 1,
+      "normalized_unchanged": 230,
+      "utf8_replacement_files": 0,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 1,
+      "changed_other_legacy_comment_behavior": 0
+    },
+    {
+      "source": "candidate:zeus_vulnerable",
+      "records": 307,
+      "scanned_ok": 307,
+      "scanner_errors": 0,
+      "normalized_changed": 1,
+      "normalized_unchanged": 306,
+      "utf8_replacement_files": 0,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 1,
+      "changed_other_legacy_comment_behavior": 0
+    },
+    {
+      "source": "reference:dappscan",
+      "records": 21457,
+      "scanned_ok": 21457,
+      "scanner_errors": 0,
+      "normalized_changed": 50,
+      "normalized_unchanged": 21407,
+      "utf8_replacement_files": 1,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 27,
+      "changed_other_legacy_comment_behavior": 23
+    },
+    {
+      "source": "reference:smartbugs",
+      "records": 143,
+      "scanned_ok": 143,
+      "scanner_errors": 0,
+      "normalized_changed": 0,
+      "normalized_unchanged": 143,
+      "utf8_replacement_files": 0,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 0,
+      "changed_other_legacy_comment_behavior": 0
+    },
+    {
+      "source": "reference:solidifi",
+      "records": 350,
+      "scanned_ok": 350,
+      "scanner_errors": 0,
+      "normalized_changed": 7,
+      "normalized_unchanged": 343,
+      "utf8_replacement_files": 0,
+      "multiline_literal_files": 0,
+      "changed_with_literal_marker": 0,
+      "changed_other_legacy_comment_behavior": 7
+    }
+  ],
+  "runtime_seconds": 42.9380359880015,
+  "peak_rss_mib": 137.59765625,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "pandas": "2.2.3"
+  },
+  "outputs": {
+    "source_normalization_audit.csv": "789053f0213c61cf84efe45520d0944f1baea25d83d8682af41f9e4286956799",
+    "example_metadata.csv": "221d24a5b224ab1c05d557902d3ba03f224a54523a01851b5e41ada44d4a2f0c",
+    "source_summary.csv": "318855973999b929c91b7ed7ea5e8052217a8b09cbc7f671318fae375e169e23"
+  },
+  "limitations": [
+    "Isolated lexical sensitivity, not compiler validation or semantic equivalence",
+    "Preserved literals remain subject to the historical lossy token representation",
+    "Scanner errors cannot become empty streams or legacy fallbacks",
+    "No model training, comparative scores or external performance computed"
+  ]
+}

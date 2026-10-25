@@ -1,0 +1,14 @@
+{
+  "schema": "article1_final_checks_v1",
+  "tests_command": ".venv/bin/python -m pytest -q tests/test_security_fixed_t.py tests/test_security_metrics.py tests/test_security_campaign.py tests/test_security_design.py tests/test_security_normalization.py tests/test_features.py",
+  "tests_passed": 81,
+  "tests_failed": 0,
+  "runtime_seconds_reported_by_pytest": 1.74,
+  "git_diff_check": "git -c core.whitespace=cr-at-eol diff --cached --check; preserve original CSV CRLF bytes and hashes",
+  "external_model_evaluations": 0,
+  "new_comparative_campaign_fits": 0,
+  "completed_human_reviews": 0,
+  "runner_sha256": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59",
+  "automated_independent_review": "REVIEW.md",
+  "qualification": "Implementation checks; not independent expert vulnerability adjudication"
+}

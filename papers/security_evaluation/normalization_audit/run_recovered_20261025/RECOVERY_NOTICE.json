@@ -1,0 +1,17 @@
+{
+  "status": "new_execution_after_workspace_recovery",
+  "original_run": "run_20261025_v1",
+  "new_run": "run_recovered_20261025",
+  "reason": "Original workspace artifacts disappeared; sources were reconstructed from prior tool patch text. This is a new, explicitly identified execution, not the recovered original manifest.",
+  "source_recovery_evidence": "../RECOVERY_EVIDENCE.json",
+  "source_commit": "caac45a39a8c1349ec1e9fa449437d1c611a483c",
+  "scanner_sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+  "original_scanner_sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+  "current_config_sha256": "3385102d2431d5867e350802147934c46ee5a8f63bb371e6c4d6dab5bb0e8893",
+  "expected_observed_records": 24131,
+  "expected_observed_changed_streams": 92,
+  "expected_observed_scanner_errors": 0,
+  "original_metadata_sha256_from_tool_output": "789053f0213c61cf84efe45520d0944f1baea25d83d8682af41f9e4286956799",
+  "no_external_scoring": true,
+  "tests": "17 passed in 0.47s before preparation"
+}

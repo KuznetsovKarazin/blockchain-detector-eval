@@ -1,0 +1,13 @@
+{
+  "schema": "recovered_campaign_integration_verification_v1",
+  "verified_utc": "2026-10-25T12:16:21.149065+00:00",
+  "original_predictions_sha256": "23c33c1602dea2347c1d268c6510bf0f4146ab769df8b4eacb6ac04675255d48",
+  "recovered_integration_predictions_sha256": "79e5b969d99684452279a596863ae4a56b2af92c2c7f6ae7283b4d24493294df",
+  "max_absolute_score_difference": 0.0,
+  "resumed_without_new_fit": true,
+  "fit_attempt_count": 1,
+  "recovery_status": "New identified run after workspace loss; lost original integration outputs were not fabricated",
+  "test_status": "Already-scored original development pilot; not a new untouched test",
+  "main_campaign_scored": false,
+  "external_scores_computed": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "post_audit_diagnostic_no_stream_changes",
+  "script_sha256": "abeefd6014d7dbce38c229bedfa01c859c7e99934ef0d698438ad55b294c344a",
+  "input_metadata_sha256": "789053f0213c61cf84efe45520d0944f1baea25d83d8682af41f9e4286956799",
+  "records_examined": 42,
+  "mechanism_confirmed": 42,
+  "source_counts": {
+    "reference:dappscan": 23,
+    "reference:solidifi": 7,
+    "candidate:smartbugs_results": 12
+  },
+  "output_sha256": "540dad4c73a59b6cd8f803c070c7857a62699b3ca6cdff7ccb0fab05687f0389"
+}

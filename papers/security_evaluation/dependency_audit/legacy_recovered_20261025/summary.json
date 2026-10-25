@@ -1,0 +1,56 @@
+{
+  "schema": "full_dependency_graph_result_v1",
+  "started_utc": "2026-10-25T12:16:22.998482+00:00",
+  "finished_utc": "2026-10-25T12:18:00.570636+00:00",
+  "config_sha256": "b3aca1ee05a9044f5ef37f7cdf1e0675e8b1d2676da51d2d997cab0ab834cdcd",
+  "normalization": "legacy",
+  "nodes": 24131,
+  "candidate_test_files": 1998,
+  "historical_train_files": 7080,
+  "edge_type_counts": {
+    "upstream_project": 21149,
+    "candidate_identifier": 13,
+    "identical_raw_source": 6124,
+    "syntactic_address": 80,
+    "normalized_shingle": 133888
+  },
+  "normalization_scan_errors": 0,
+  "invariants": [
+    {
+      "graph": "base_070",
+      "intersection_of_retained_train_and_candidate_components": 0,
+      "historical_train_partition_count": 7080
+    },
+    {
+      "graph": "base_080",
+      "intersection_of_retained_train_and_candidate_components": 0,
+      "historical_train_partition_count": 7080
+    },
+    {
+      "graph": "base_090",
+      "intersection_of_retained_train_and_candidate_components": 0,
+      "historical_train_partition_count": 7080
+    },
+    {
+      "graph": "address_expanded_070",
+      "intersection_of_retained_train_and_candidate_components": 0,
+      "historical_train_partition_count": 7080
+    },
+    {
+      "graph": "address_expanded_080",
+      "intersection_of_retained_train_and_candidate_components": 0,
+      "historical_train_partition_count": 7080
+    },
+    {
+      "graph": "address_expanded_090",
+      "intersection_of_retained_train_and_candidate_components": 0,
+      "historical_train_partition_count": 7080
+    }
+  ],
+  "threshold_exclusion_monotonicity": "pass",
+  "all_recorded_edges_connected": "pass",
+  "runtime_seconds": 97.59051349800211,
+  "max_rss_kib": 723664,
+  "status": "diagnostic_full_graph_and_training_exclusions_not_external_eligibility_freeze",
+  "no_model_scoring": true
+}

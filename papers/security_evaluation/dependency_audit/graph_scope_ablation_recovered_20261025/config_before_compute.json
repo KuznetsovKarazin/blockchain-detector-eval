@@ -1,0 +1,28 @@
+{
+  "schema": "graph_scope_ablation_v1",
+  "threshold": 0.8,
+  "normalizations": [
+    "legacy",
+    "string_aware"
+  ],
+  "scope_A": "observed original7080 safe_group, historical LSH/CRC32 and recorded provenance limits",
+  "scope_B": "exhaustive edges on the same historical7080 files",
+  "scope_C": "exhaustive edges on uncapped21950 upstream files",
+  "scope_D": "exhaustive edges on all24131 upstream plus external files",
+  "grouping_policy": "base: project, identical raw bytes, candidate identifiers; regenerate stars within each selected population",
+  "lexical_policy": "induce complete normalized-shingle edge list at0.8; no model scoring",
+  "interpretation": "A\u2192B bundles grouping algorithm/representation/provenance differences, not isolated causal LSH effect; B\u2192C and C\u2192D isolate added nodes and incident relations under fixed lexical rule",
+  "inputs": {
+    "/tmp/security-recovery-repo/results/contracts/c2_20261024_004314/groups.parquet": "46d43eb88b73d75940df060d103e40f1cff1c5ca466080adbe02892f8e362c97",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/edges.csv": "0e195343844454480616b5339d1448ee3abf4f387f786a0244b0e59e6498e0e5",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/memberships.csv": "c3c983ffb7a68c72f405231de9b9355b785f0e5fa8e12057aae49033a5002e75",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/nodes.csv": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/edges.csv": "847882e8b09c6bc2bdf53df0a37b5f1f5d8027d3ed71c652a5a0e84efc620237",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/memberships.csv": "f224391efd4ddaab224c0e48398f203281e7fa71fe71352b563a94c64473b210",
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed2_recovered_v2/selected_memberships.csv.gz": "ccc019e21fe305611d4e17669e7d7bbb9b839cee89195a0c89e961f2aa198d56",
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2/selected_memberships.csv.gz": "b05d820f3e8e86291a221257088b0dc5e00da7e94a91146ffab0079c2dc96cbb"
+  },
+  "script_sha256": "4426a3ed2d4a9df47e5a762c7a633e2cf68c9308b4c554a8d7158036029747de",
+  "no_model_scoring": true
+}

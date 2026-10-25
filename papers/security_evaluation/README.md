@@ -30,3 +30,9 @@ The blank reviewer forms contain references and our assessment fields. Original 
 `PROVENANCE_LEDGER.csv` distinguishes historical book results, new audits, development measurements, and unperformed confirmation. The new pilot controls test identities and training object/positive counts. Its training composition still differs, so its AP differences are not a pure causal estimate of leakage. Joint-disjointness refers to the frozen observed dependency graph, not proven semantic independence.
 
 `evaluation_metrics.py` preserves unknown labels and failures. It reports conditional AP with coverage and full-population known-positive recall at review budgets. Failed files never receive a fabricated safe score. The original pilot used ceiling budget rounding; the separately marked reanalysis and proposed main protocol use floor rounding.
+
+## Second-cycle audits and manuscript
+
+`manuscript/DRAFT.md` is a working article draft, not a completed external evaluation. The string-aware normalization check, full graph sensitivity and 95-design feasibility audit are in `normalization_audit/`, `dependency_audit/` and `design_feasibility/`. Their READMEs document commands and recovery provenance. `dependency_audit/graph_scope_ablation_recovered_20261025/` distinguishes exhaustive screening from population expansion.
+
+All 1,140 combinations of the 95 proposed tests and 12 graph variants fail the declared operational screens. The two prepared comparative campaigns are blocked by an executable assessment gate; their configurations are evidence of preparation, not completed fits. The exact published pilot reproduction remains separately supported. See `campaign/` and `review_cycle2/REVIEW.md` for implementation and guard verification. No external model scores or human expert judgments have been added.

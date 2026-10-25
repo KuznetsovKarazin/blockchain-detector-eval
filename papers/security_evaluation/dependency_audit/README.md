@@ -1,5 +1,12 @@
 # Full dependency graphs and training feasibility
 
+Current evidence comes from fresh recovery-verification runs in
+`legacy_recovered_20261025/` and `string_aware_recovered_20261025/`. The original
+cycle-2 output files were lost during workspace cleanup. These new runs
+reproduce the previously recorded counts and have new provenance, measurements
+and independent verification. `RECOVERY_VERIFICATION.json` records that
+distinction; byte identity to the lost graph files is not claimed.
+
 This cycle makes the training restriction executable. The diagnostic external
 population remains fixed at 1,998 files. The graph is built **before** that
 restriction, over all 24,131 source files: 2,181 external candidate paths plus
@@ -57,19 +64,21 @@ Two grouping policies are reported for every threshold:
   assert verified deployment identity. In these data, they do not change the
   components or any training retention decision.
 
-`legacy_full_20261025/` reproduces the historical regex comment-removal rule.
-`string_aware_full_20261025/` uses the independently tested scanner from
-`normalization_audit/solidity_scanner.py`. Its scope is limited to comment
-handling inside string literals; token extraction and identifier/numeric-literal
-collapse remain unchanged. UTF-8 decode replacement follows the inherited
-loader policy; the separate normalization inventory flags one affected file.
+`legacy_recovered_20261025/` reproduces the historical regex comment-removal rule.
+`string_aware_recovered_20261025/` uses the independently tested scanner from
+`normalization_audit/solidity_scanner.py`. It recognizes actual line and block
+comment boundaries while preserving quoted
+strings, including block-like text inside line comments. Token extraction and
+identifier/numeric-literal collapse remain unchanged. UTF-8 decode replacement
+follows the inherited loader policy; the separate normalization inventory flags
+one affected file.
 
 The scanner changes 92 normalized streams and reports no lexical scan errors
 on any of the 24,131 files. At threshold 0.7 it removes 14 lexical edges and
 changes two canonical component representatives. At 0.8 and 0.9 the edge sets
 and partitions are unchanged. **No historical training-retention decision
-changes at any of the three thresholds.** Both sets of results are preserved;
-the historical artifacts are not overwritten. This is a measured sensitivity
+changes at any of the three thresholds.** Both new sets of results are preserved;
+the historical first-cycle artifacts are not overwritten. This is a measured sensitivity
 result for these particular sources, not proof of semantic clone correctness.
 
 All 2,181 legacy candidate component IDs at threshold 0.8 reproduce the previous
@@ -120,23 +129,31 @@ and regenerating the private provisional annotation manifest from the external
 audit. Use new output directories; existing runs are never overwritten.
 
 ```bash
+python papers/security_evaluation/external_audit/audit_external_sources.py \
+  --full-upstream --out data/derived/external_source_audit_for_dependency \
+  --private-out data/derived/security_external_recovered_20261025
 python papers/security_evaluation/dependency_audit/run_dependency_audit.py \
-  --normalization legacy --out /path/to/new-legacy-run
+  --normalization legacy \
+  --private-labels data/derived/security_external_recovered_20261025/provisional_label_manifest.csv \
+  --out /path/to/new-legacy-run
 python papers/security_evaluation/dependency_audit/run_dependency_audit.py \
   --normalization string_aware \
+  --private-labels data/derived/security_external_recovered_20261025/provisional_label_manifest.csv \
   --scanner papers/security_evaluation/normalization_audit/solidity_scanner.py \
   --out /path/to/new-corrected-run
 python papers/security_evaluation/dependency_audit/verify_dependency_audit.py /path/to/new-legacy-run
 python papers/security_evaluation/dependency_audit/verify_dependency_audit.py /path/to/new-corrected-run
 python papers/security_evaluation/dependency_audit/compare_dependency_runs.py \
   --legacy /path/to/new-legacy-run --corrected /path/to/new-corrected-run \
-  --scanner-audit papers/security_evaluation/normalization_audit/run_20261025_v1/source_normalization_audit.csv \
+  --scanner-audit papers/security_evaluation/normalization_audit/run_recovered_20261025/source_normalization_audit.csv \
   --prior-candidate papers/security_evaluation/external_audit/source_audit_full_20261025/candidate_source_metadata.csv \
   --out /path/to/new-comparison
 ```
 
-The measured complete graph runs took 86.16 seconds and 110.94 seconds, with
-maximum resident sizes of approximately 705 MiB and 725 MiB for legacy and
-string-aware normalization respectively. These measurements include input
+The fresh complete graph runs took 97.59 seconds and 124.03 seconds, with
+maximum resident sizes of approximately 707 MiB and 695 MiB for legacy and
+string-aware normalization respectively. The earlier pre-loss measurements
+remain historical observations in `RECOVERY_NOTICE.txt`; they are not the
+resource measurements of these new runs. These measurements include input
 loading, provenance export and graph construction in this environment. Snapshot
 copies are evidence artifacts; use the original script path for execution.

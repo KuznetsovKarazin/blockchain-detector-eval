@@ -1,0 +1,42 @@
+{
+  "schema": "security_development_campaign_manifest_v1",
+  "status": "complete_development",
+  "prepared_utc": "2026-10-25T12:14:53.855950+00:00",
+  "git_commit": "5270cfe3c4f5404d82aa537da906287aac2386d9",
+  "git_dirty": true,
+  "data_commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+  "config_sha256": "77663be07c5e110906df1eba61aff1136fd5b81c027f9062f7b5f08f2169af62",
+  "source_hashes": {
+    "papers/security_evaluation/campaign/run_development.py": "b1d51e51e0ee81a38929e61d32532db684ffd2f0febbf2e9d40835b4c140730c",
+    "papers/security_evaluation/evaluation_metrics.py": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "input_hashes": {
+    "inputs/design_manifest.json": "afc4392ee15931a8859d071db540e87df799fa87071a4a39b10bc77460ea3e43",
+    "inputs/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4",
+    "inputs/selected_annotation_hashes.json": "c7a82e8700da190c50a600f2bf3bfe1c511ef4b796645355d62ff57d9753e08b",
+    "inputs/selected_inventory.csv": "7393c81e3f3357987584a23eada0474287976a8a468445caf8b83d7d5e7c95b5",
+    "inputs/selected_memberships.csv": "bfa8fd991811fa360f112ffb9a42aeff26213e0b989f9c2c055b5f6f1b4dc202",
+    "inputs/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da"
+  },
+  "environment_sha256": "9b74f5ddd4c5da5d7d56f9df7930bb66e5dcdc7d5defe42d37737171ce377031",
+  "historical_groups_sha256": "46d43eb88b73d75940df060d103e40f1cff1c5ca466080adbe02892f8e362c97",
+  "logical_jobs": 1,
+  "planned_physical_fits": 1,
+  "label_vector_hashes": {
+    "reentrancy": "803806d0589382e8c06816a155615a40494cdc3393af814ae2b49ddbc780ed09"
+  },
+  "external_scores_computed": false,
+  "run_fingerprint": "198dc814a3bc16cc425ff11b0c40115c13e0681959281644eb83521efd14df3c",
+  "last_resumed_utc": "2026-10-25T12:16:20.209406+00:00",
+  "last_finished_utc": "2026-10-25T12:16:20.220231+00:00",
+  "completed_logical_jobs": 1,
+  "failed_logical_jobs": 0,
+  "output_hashes": {
+    "summary/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "summary/per_fit_ranking.csv": "db4a720f014ca2293e1e6e21205b73d1c54ebd225de756b6656cc1dcd70bf831",
+    "summary/per_fit_workload.csv": "e576d43a2da358b2047d91f18c55b1024330dea392919121e21fcb4dd5784ed0",
+    "summary/per_test_seed_summary.csv": "115dcea2c869bc555abbda3a065536f4795d90864e506d3937f7ff30cccd2b3d",
+    "summary/per_test_workload_summary.csv": "e2e300f8291b22e1910c59c718d2dbee0fe681ebb04e8fafc2cb319ae298d35e"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "script_sha256": "95400b382314dbcdce52e6577435c044d580141fea1603deb92d82aa0cdf297f",
+  "normalization_stream_changes": 92,
+  "scanner_audit_stream_hashes_match_all24131": true,
+  "legacy_base_matches_prior_candidate_components_all2181": true,
+  "same_raw_population_and_candidate1998": true,
+  "no_model_outcomes_used": true,
+  "rows": [
+    {
+      "grouping": "base",
+      "threshold": 0.7,
+      "legacy_lexical_edges": 133888,
+      "corrected_lexical_edges": 133874,
+      "lexical_edges_removed": 14,
+      "lexical_edges_added": 0,
+      "nodes_with_changed_canonical_component_representative": 2,
+      "training_retention_decisions_changed": 0,
+      "legacy_retained_train": 836,
+      "corrected_retained_train": 836
+    },
+    {
+      "grouping": "address_expanded",
+      "threshold": 0.7,
+      "legacy_lexical_edges": 133888,
+      "corrected_lexical_edges": 133874,
+      "lexical_edges_removed": 14,
+      "lexical_edges_added": 0,
+      "nodes_with_changed_canonical_component_representative": 2,
+      "training_retention_decisions_changed": 0,
+      "legacy_retained_train": 836,
+      "corrected_retained_train": 836
+    },
+    {
+      "grouping": "base",
+      "threshold": 0.8,
+      "legacy_lexical_edges": 108591,
+      "corrected_lexical_edges": 108591,
+      "lexical_edges_removed": 0,
+      "lexical_edges_added": 0,
+      "nodes_with_changed_canonical_component_representative": 0,
+      "training_retention_decisions_changed": 0,
+      "legacy_retained_train": 1175,
+      "corrected_retained_train": 1175
+    },
+    {
+      "grouping": "address_expanded",
+      "threshold": 0.8,
+      "legacy_lexical_edges": 108591,
+      "corrected_lexical_edges": 108591,
+      "lexical_edges_removed": 0,
+      "lexical_edges_added": 0,
+      "nodes_with_changed_canonical_component_representative": 0,
+      "training_retention_decisions_changed": 0,
+      "legacy_retained_train": 1175,
+      "corrected_retained_train": 1175
+    },
+    {
+      "grouping": "base",
+      "threshold": 0.9,
+      "legacy_lexical_edges": 90065,
+      "corrected_lexical_edges": 90065,
+      "lexical_edges_removed": 0,
+      "lexical_edges_added": 0,
+      "nodes_with_changed_canonical_component_representative": 0,
+      "training_retention_decisions_changed": 0,
+      "legacy_retained_train": 1570,
+      "corrected_retained_train": 1570
+    },
+    {
+      "grouping": "address_expanded",
+      "threshold": 0.9,
+      "legacy_lexical_edges": 90065,
+      "corrected_lexical_edges": 90065,
+      "lexical_edges_removed": 0,
+      "lexical_edges_added": 0,
+      "nodes_with_changed_canonical_component_representative": 0,
+      "training_retention_decisions_changed": 0,
+      "legacy_retained_train": 1570,
+      "corrected_retained_train": 1570
+    }
+  ],
+  "address_policy": [
+    {
+      "normalization": "legacy",
+      "threshold": 0.7,
+      "nodes_with_changed_representative": 0,
+      "train_retention_changes": 0
+    },
+    {
+      "normalization": "legacy",
+      "threshold": 0.8,
+      "nodes_with_changed_representative": 0,
+      "train_retention_changes": 0
+    },
+    {
+      "normalization": "legacy",
+      "threshold": 0.9,
+      "nodes_with_changed_representative": 0,
+      "train_retention_changes": 0
+    },
+    {
+      "normalization": "string_aware",
+      "threshold": 0.7,
+      "nodes_with_changed_representative": 0,
+      "train_retention_changes": 0
+    },
+    {
+      "normalization": "string_aware",
+      "threshold": 0.8,
+      "nodes_with_changed_representative": 0,
+      "train_retention_changes": 0
+    },
+    {
+      "normalization": "string_aware",
+      "threshold": 0.9,
+      "nodes_with_changed_representative": 0,
+      "train_retention_changes": 0
+    }
+  ]
+}

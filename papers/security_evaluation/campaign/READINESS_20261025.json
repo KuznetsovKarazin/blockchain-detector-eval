@@ -1,0 +1,84 @@
+{
+  "schema": "security_campaign_readiness_v1",
+  "status": "BLOCKED_EXPANDED_DEPENDENCE_NO_COMPARATIVE_FITS",
+  "runner_sha256": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59",
+  "scientific_gate_path": "papers/security_evaluation/design_feasibility/expanded_sensitivity_recovered_20261025_v1/CAMPAIGN_GATE.json",
+  "scientific_gate_sha256": "99a0e4d1a58d7a6fa48e42b27a52879af65156eb86282ec7bbbbe79010559e6c",
+  "operational_block_checks": [
+    {
+      "run": "papers/security_evaluation/runs/historical_graph_outside_seed2_prepared_20261025_v1",
+      "version": "v1",
+      "blocked_before_training": true,
+      "reason": "Historical-graph joint exclusions do not establish expanded source-family separation. Preserve frozen bundles as diagnostic provenance; do not score a purported independent campaign.",
+      "frozen_config_and_manifest_unchanged": true,
+      "fit_directories": 0
+    },
+    {
+      "run": "papers/security_evaluation/runs/historical_graph_outside_seed2_blocked_20261025_v2",
+      "version": "v2",
+      "blocked_before_training": true,
+      "reason": "Historical-graph joint exclusions do not establish expanded source-family separation. Preserve frozen bundles as diagnostic provenance; do not score a purported independent campaign.",
+      "frozen_config_and_manifest_unchanged": true,
+      "fit_directories": 0
+    },
+    {
+      "run": "papers/security_evaluation/runs/historical_graph_outside_seed4_prepared_20261025_v1",
+      "version": "v1",
+      "blocked_before_training": true,
+      "reason": "Historical-graph joint exclusions do not establish expanded source-family separation. Preserve frozen bundles as diagnostic provenance; do not score a purported independent campaign.",
+      "frozen_config_and_manifest_unchanged": true,
+      "fit_directories": 0
+    },
+    {
+      "run": "papers/security_evaluation/runs/historical_graph_outside_seed4_blocked_20261025_v2",
+      "version": "v2",
+      "blocked_before_training": true,
+      "reason": "Historical-graph joint exclusions do not establish expanded source-family separation. Preserve frozen bundles as diagnostic provenance; do not score a purported independent campaign.",
+      "frozen_config_and_manifest_unchanged": true,
+      "fit_directories": 0
+    }
+  ],
+  "primary_expanded_graph_counts": [
+    {
+      "test_id": "outside_p90_seed2",
+      "graph_normalization": "legacy",
+      "expanded_joint_train_n": 13,
+      "reentrancy_expanded_joint_train_positive_proxy": 0,
+      "unchecked_expanded_joint_train_positive_proxy": 1,
+      "joint_count_and_dispersion_screens_pass": false
+    },
+    {
+      "test_id": "outside_p90_seed4",
+      "graph_normalization": "legacy",
+      "expanded_joint_train_n": 10,
+      "reentrancy_expanded_joint_train_positive_proxy": 1,
+      "unchecked_expanded_joint_train_positive_proxy": 0,
+      "joint_count_and_dispersion_screens_pass": false
+    },
+    {
+      "test_id": "outside_p90_seed2",
+      "graph_normalization": "string_aware",
+      "expanded_joint_train_n": 13,
+      "reentrancy_expanded_joint_train_positive_proxy": 0,
+      "unchecked_expanded_joint_train_positive_proxy": 1,
+      "joint_count_and_dispersion_screens_pass": false
+    },
+    {
+      "test_id": "outside_p90_seed4",
+      "graph_normalization": "string_aware",
+      "expanded_joint_train_n": 10,
+      "reentrancy_expanded_joint_train_positive_proxy": 1,
+      "unchecked_expanded_joint_train_positive_proxy": 0,
+      "joint_count_and_dispersion_screens_pass": false
+    }
+  ],
+  "prepared_logical_grid_size": 320,
+  "planned_physical_fits_after_lr_deduplication": 288,
+  "comparative_fits_executed": 0,
+  "external_models_scored": 0,
+  "scope": "The two fixed tests were selected after the pilot using proxy-class-count screens. Each contains 1,062 outside-giant files, 16.12% of the historical 6,587-file DAppSCAN population. They share 961 files, 90.49% of each test, and are not independent replications. Constraints valid on the historical 7,080-object graph fail expanded-source separation. Do not run the comparative grid.",
+  "reproduction": "The new recovered_campaign_integration_20261025_v1 reproduces the previously scored raw-LR/reentrancy/seed-0 pilot exactly: maximum absolute score difference 0; resume leaves one attempt. This is diagnostic reproduction, not independence validation.",
+  "execution_exception": "Only the original pilot memberships, class, model and seed, together with the unchanged published prediction SHA-256, permit diagnostic reproduction. New comparative execution requires a separate passing immutable expanded-graph assessment; an asserted approval cannot override a failed computed gate.",
+  "focused_guard_tests_passed": 22,
+  "unblocking_requires": "New valid data/manifests and scientific scope, complete graph checks, a new immutable passing assessment, then a new prepared run. Do not edit existing frozen configurations."
+}

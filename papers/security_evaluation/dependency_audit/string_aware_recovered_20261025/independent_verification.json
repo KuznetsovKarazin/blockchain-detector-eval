@@ -1,0 +1,59 @@
+{
+  "schema": "dependency_graph_independent_verification_v1",
+  "verifier_sha256": "1dc123269fc6ac663bc2e63366972ae9c16777cf8c770cb4feb5ea97f6ff9d77",
+  "method": "scipy undirected connected_components, compared canonical minimum-node partitions; independent train-label joins",
+  "graphs": [
+    {
+      "graph": "base_070",
+      "scipy_components": 1156,
+      "exact_membership_partition_match": true,
+      "retained_train": 836,
+      "train_test_component_intersection": 0,
+      "aggregate_positive_counts_match": true
+    },
+    {
+      "graph": "base_080",
+      "scipy_components": 1343,
+      "exact_membership_partition_match": true,
+      "retained_train": 1175,
+      "train_test_component_intersection": 0,
+      "aggregate_positive_counts_match": true
+    },
+    {
+      "graph": "base_090",
+      "scipy_components": 1556,
+      "exact_membership_partition_match": true,
+      "retained_train": 1570,
+      "train_test_component_intersection": 0,
+      "aggregate_positive_counts_match": true
+    },
+    {
+      "graph": "address_expanded_070",
+      "scipy_components": 1156,
+      "exact_membership_partition_match": true,
+      "retained_train": 836,
+      "train_test_component_intersection": 0,
+      "aggregate_positive_counts_match": true
+    },
+    {
+      "graph": "address_expanded_080",
+      "scipy_components": 1343,
+      "exact_membership_partition_match": true,
+      "retained_train": 1175,
+      "train_test_component_intersection": 0,
+      "aggregate_positive_counts_match": true
+    },
+    {
+      "graph": "address_expanded_090",
+      "scipy_components": 1556,
+      "exact_membership_partition_match": true,
+      "retained_train": 1570,
+      "train_test_component_intersection": 0,
+      "aggregate_positive_counts_match": true
+    }
+  ],
+  "source_snapshots_match": true,
+  "historical_paths_datasets_projects_match_original_C2_all7080": true,
+  "historical_manifest_sha256": "46d43eb88b73d75940df060d103e40f1cff1c5ca466080adbe02892f8e362c97",
+  "status": "pass"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "recovered_execution_matches_original_observed_counts_and_available_output_hashes",
+  "outputs": {
+    "source_normalization_audit.csv": {
+      "sha256": "789053f0213c61cf84efe45520d0944f1baea25d83d8682af41f9e4286956799",
+      "original_sha256_from_tool_output": "789053f0213c61cf84efe45520d0944f1baea25d83d8682af41f9e4286956799",
+      "identical_to_original_digest": true
+    },
+    "comment_order_diagnostic.csv": {
+      "sha256": "540dad4c73a59b6cd8f803c070c7857a62699b3ca6cdff7ccb0fab05687f0389",
+      "original_sha256_from_tool_output": "540dad4c73a59b6cd8f803c070c7857a62699b3ca6cdff7ccb0fab05687f0389",
+      "identical_to_original_digest": true
+    }
+  },
+  "counts": [
+    24131,
+    92,
+    0
+  ],
+  "original_runtime_seconds": 37.049596726000345,
+  "new_runtime_seconds": 42.9380359880015,
+  "runtime_note": "Wall time differs under the current execution environment; no count or deterministic output divergence.",
+  "original_config_reconstructed": false,
+  "new_config_frozen_before_execution": true
+}

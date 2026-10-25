@@ -1,0 +1,49 @@
+{
+  "schema": "full_dependency_graph_config_v1",
+  "started_utc": "2026-10-25T12:16:22.998482+00:00",
+  "repo_head": "1a8f4011d374e228f940be85e25386f17778ce25",
+  "normalization": "legacy",
+  "source_hashes": {
+    "papers/security_evaluation/dependency_audit/run_dependency_audit.py": "ecf32f32e4dbd3de9625d3baa7c90f5328b8589745ff77d0cc2d527b6dee11ad",
+    "src/bal/data/contracts.py": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "upstream_pins": {
+    "DAppSCAN": {
+      "commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+      "clean": true
+    },
+    "smartbugs-curated": {
+      "commit": "230e649123477eff332742a59a1c7cc6dc286cab",
+      "clean": true
+    },
+    "SolidiFI-benchmark": {
+      "commit": "4b0573e1b3f7031396de6f48f7f3e7380222ad3a",
+      "clean": true
+    },
+    "salzano": {
+      "commit": "da079440bf2cf4fd803c864ef29aeea8a3da50c3",
+      "clean": true
+    }
+  },
+  "thresholds": [
+    0.7,
+    0.8,
+    0.9
+  ],
+  "candidate_metadata_sha256": "74964ccbca4344ad9817f614b0349bcd1d9a602e7d539ca5582d8ea663e453f4",
+  "private_labels_sha256": "72fceb79cacca51253eabdb7e3ed26a54e7863f4b5be4430071ef9b14d5d0236",
+  "candidate_rule": "fixed diagnostic1998; not final eligibility",
+  "population": "full uncapped21950 upstream plus2181 external; restrict AFTER graph",
+  "base_edges": "upstream projects, within-external lowercase identifiers, identical raw bytes, lexical Jaccard",
+  "address_expanded_edges": "base plus equal20byte address basenames across sources; chain unknown, conservative dependency proxy",
+  "scan_error_policy": "keep nodes/project/address/raw-hash edges; omit lexical edges; quarantine scan-error training nodes; independence remains unresolved",
+  "shingles": "normalized token5gram sets; BLAKE2b128; exhaustive sparse intersections; no LSH",
+  "no_model_scoring": true,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}

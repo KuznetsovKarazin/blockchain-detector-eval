@@ -1,0 +1,7 @@
+{
+  "status": "fresh_recovery_verification_runs_not_restored_original_outputs",
+  "candidate_metadata_matches_tracked_prior_exactly": true,
+  "candidate_metadata_sha256": "74964ccbca4344ad9817f614b0349bcd1d9a602e7d539ca5582d8ea663e453f4",
+  "private_label_manifest_path": "data/derived/security_external_recovered_20261025/provisional_label_manifest.csv",
+  "private_label_manifest_sha256": "72fceb79cacca51253eabdb7e3ed26a54e7863f4b5be4430071ef9b14d5d0236"
+}

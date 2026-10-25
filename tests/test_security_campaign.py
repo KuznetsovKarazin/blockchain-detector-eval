@@ -170,3 +170,91 @@ def test_aggregation_keeps_tests_separate_and_never_pools_scores(tmp_path):
     assert set(summary.index) == {"T1", "T2"}
     assert summary.loc["T1", "mean_per_seed_ap_proxy_conditional_on_success"] == pytest.approx(0.3)
     assert summary.loc["T2", "mean_per_seed_ap_proxy_conditional_on_success"] == pytest.approx(0.9)
+
+
+@pytest.mark.parametrize("assessment", [None, {"schema": "security_campaign_execution_assessment_v1",
+    "bundle_manifest_sha256": "placeholder", "execution_allowed": False, "reason": "expanded graph failed"}])
+def test_missing_or_failed_execution_assessment_blocks_before_model_data_loading(tmp_path, monkeypatch, assessment):
+    from types import SimpleNamespace
+    (tmp_path / "inputs").mkdir()
+    campaign.dump(tmp_path / "inputs/design_manifest.json", {"purpose": "development_only"})
+    config = {}
+    if assessment is not None:
+        assessment["bundle_manifest_sha256"] = campaign.sha(tmp_path / "inputs/design_manifest.json")
+        campaign.dump(tmp_path / "inputs/execution_assessment.json", assessment)
+        config["execution_assessment_sha256"] = campaign.sha(tmp_path / "inputs/execution_assessment.json")
+    campaign.dump(tmp_path / "config.json", config)
+    campaign.dump(tmp_path / "manifest.json", {"config_sha256": campaign.sha(tmp_path / "config.json")})
+    def prohibited(*args):
+        raise AssertionError("Model inputs must not load after a failed gate")
+    monkeypatch.setattr(campaign, "validate_run", prohibited)
+    monkeypatch.setattr(campaign, "fit_predict", prohibited)
+    with pytest.raises(campaign.ExecutionBlocked):
+        campaign.run(SimpleNamespace(out=tmp_path, max_fits=None, retry_failed=False))
+
+
+def test_execution_assessment_wrong_bundle_or_changed_evidence_is_rejected(tmp_path, monkeypatch):
+    monkeypatch.setattr(campaign, "ROOT", tmp_path)
+    (tmp_path / "evidence.json").write_text("{}")
+    assessment = {"schema": "security_campaign_execution_assessment_v1", "bundle_manifest_sha256": "a",
+                  "execution_allowed": True, "assessment_kind": "expanded_graph_comparative_check",
+                  "expanded_graph_check": "passed", "all_training_memberships_checked": True,
+                  "joint_overlap_count": 0, "test_ids": ["T"],
+                  "evidence_hashes": {"evidence.json": campaign.sha(tmp_path / "evidence.json")}}
+    with pytest.raises(campaign.ExecutionBlocked, match="different selected bundle"):
+        campaign.validate_execution_assessment(assessment, {"test_ids": ["T"]}, "b")
+    (tmp_path / "evidence.json").write_text('{"changed":true}')
+    with pytest.raises(ValueError, match="Hash mismatch"):
+        campaign.validate_execution_assessment(assessment, {"test_ids": ["T"]}, "a")
+
+
+def test_asserting_passed_cannot_override_a_computed_failed_graph_gate(tmp_path, monkeypatch):
+    monkeypatch.setattr(campaign, "ROOT", tmp_path)
+    gate = {"schema": "expanded_graph_campaign_gate_v1", "comparative_training_allowed": False,
+            "failed_expanded_operational_screens": True,
+            "historical_joint_training_intersects_expanded_test_components": True}
+    campaign.dump(tmp_path / "gate.json", gate)
+    assessment = {"schema": "security_campaign_execution_assessment_v1", "bundle_manifest_sha256": "a",
+                  "execution_allowed": True, "assessment_kind": "expanded_graph_comparative_check",
+                  "expanded_graph_check": "passed", "all_training_memberships_checked": True,
+                  "joint_overlap_count": 0, "test_ids": ["T"], "evidence_gate_path": "gate.json",
+                  "evidence_hashes": {"gate.json": campaign.sha(tmp_path / "gate.json")}}
+    with pytest.raises(campaign.ExecutionBlocked, match="Computed expanded-graph gate blocks"):
+        campaign.validate_execution_assessment(assessment, {"test_ids": ["T"]}, "a")
+
+
+def test_new_computed_bundle_gate_overrides_a_previous_ready_configuration(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+    bundle, out = tmp_path / "bundle", tmp_path / "run"
+    bundle.mkdir(); (out / "inputs").mkdir(parents=True)
+    campaign.dump(out / "inputs/design_manifest.json", {"purpose": "development_only"})
+    bundle_hash = campaign.sha(out / "inputs/design_manifest.json")
+    campaign.dump(bundle / "CAMPAIGN_GATE.json", {
+        "comparative_training_allowed": False, "reason": "newly observed expanded overlap",
+        "selected_bundle_manifest_hashes": {"selected": bundle_hash}})
+    campaign.dump(out / "config.json", {"bundle_path_at_preparation": str(bundle)})
+    campaign.dump(out / "manifest.json", {"config_sha256": campaign.sha(out / "config.json")})
+    def prohibited(*args):
+        raise AssertionError("Model input loading must not start")
+    monkeypatch.setattr(campaign, "validate_run", prohibited)
+    with pytest.raises(campaign.ExecutionBlocked, match="newly observed expanded overlap"):
+        campaign.run(SimpleNamespace(out=out, max_fits=None, retry_failed=False))
+
+
+def test_exact_reproduction_exception_rejects_unseen_memberships_and_accepts_original():
+    pilot = campaign.ROOT / campaign.HISTORICAL_PILOT
+    if not (pilot / "predictions.csv").exists():
+        pytest.skip("Published development pilot artifacts not present")
+    members = pd.read_csv(pilot / "memberships.csv")
+    train = members[(members.role == "train") & (members.regime == campaign.REGIMES[3])]
+    job = {"class": "reentrancy", "seed": 0, "method": "raw_tfidf_lr", "regime": campaign.REGIMES[3],
+           "train_ids": sorted(map(int, train.file_id)),
+           "test_ids": sorted(map(int, members.loc[members.role == "test", "file_id"]))}
+    config = {"model_config": campaign.model_config(), "jobs": [job]}
+    campaign.validate_exact_reproduction(config)
+    config["jobs"] = [{**job, "test_ids": [999999]}]
+    with pytest.raises(campaign.ExecutionBlocked, match="not the exact previously scored pilot"):
+        campaign.validate_exact_reproduction(config)
+    config["jobs"] = [{**job, "class": "unchecked"}]
+    with pytest.raises(campaign.ExecutionBlocked, match="previously scored class/model/seed"):
+        campaign.validate_exact_reproduction(config)

@@ -43,6 +43,12 @@ BASE_BUNDLE = ("source_inventory.csv", "label_input_hashes.json")
 CODE = ("papers/security_evaluation/campaign/run_development.py",
         "papers/security_evaluation/evaluation_metrics.py", "src/bal/features/contract_features.py")
 PACKAGES = ("numpy", "pandas", "scipy", "scikit-learn", "lightgbm", "pyarrow", "threadpoolctl")
+HISTORICAL_PILOT = "papers/security_evaluation/runs/dev_fixed_t_20261025_v1"
+HISTORICAL_PREDICTIONS_SHA256 = "23c33c1602dea2347c1d268c6510bf0f4146ab769df8b4eacb6ac04675255d48"
+
+
+class ExecutionBlocked(ValueError):
+    """A scientific execution gate failed before loading model inputs or fitting."""
 
 
 def utc():
@@ -261,6 +267,132 @@ def environment():
             "threadpools": threadpool_info()}
 
 
+def validate_exact_reproduction(config):
+    """An integration label alone cannot authorise an unseen comparative test."""
+    pilot = ROOT / HISTORICAL_PILOT
+    if sha(pilot / "predictions.csv") != HISTORICAL_PREDICTIONS_SHA256:
+        raise ExecutionBlocked("Original published pilot predictions changed or are unavailable")
+    original = json.loads((pilot / "manifest.json").read_text())
+    if sha(pilot / "memberships.csv") != original["membership_sha256"]:
+        raise ExecutionBlocked("Original reproduction memberships changed")
+    members = pd.read_csv(pilot / "memberships.csv")
+    test_ids = sorted(map(int, members.loc[members.role == "test", "file_id"]))
+    if config["model_config"] != model_config():
+        raise ExecutionBlocked("Reproduction model settings differ from fixed historical settings")
+    for job in config["jobs"]:
+        if job["class"] != "reentrancy" or job["seed"] != 0 or job["method"] != "raw_tfidf_lr":
+            raise ExecutionBlocked("Exact pilot reproduction permits only the previously scored class/model/seed")
+        train = members[(members.role == "train") & (members.regime == job["regime"])]
+        if job["test_ids"] != test_ids or job["train_ids"] != sorted(map(int, train.file_id)):
+            raise ExecutionBlocked("Requested memberships are not the exact previously scored pilot")
+
+
+def validate_execution_assessment(assessment, config, bundle_hash, *, allow_blocked=False):
+    if assessment.get("schema") != "security_campaign_execution_assessment_v1":
+        raise ExecutionBlocked("Missing or unsupported execution assessment")
+    if assessment.get("bundle_manifest_sha256") != bundle_hash:
+        raise ExecutionBlocked("Execution assessment belongs to a different selected bundle")
+    if assessment.get("execution_allowed") is not True:
+        if allow_blocked:
+            return False
+        raise ExecutionBlocked(assessment.get("reason", "Comparative execution has not passed its scientific gate"))
+    evidence = assessment.get("evidence_hashes", {})
+    if not evidence:
+        raise ExecutionBlocked("Allowed assessment must bind verifiable evidence hashes")
+    verify_hashes(ROOT, evidence)
+    kind = assessment.get("assessment_kind")
+    if kind == "exact_historical_pilot_reproduction":
+        validate_exact_reproduction(config)
+    elif kind == "expanded_graph_comparative_check":
+        if (assessment.get("expanded_graph_check") != "passed" or
+                assessment.get("all_training_memberships_checked") is not True or
+                assessment.get("joint_overlap_count") != 0 or
+                set(assessment.get("test_ids", [])) != set(config["test_ids"])):
+            raise ExecutionBlocked("Expanded graph assessment failed or does not cover every configured test/training membership")
+        gate_path = assessment.get("evidence_gate_path")
+        if gate_path not in evidence:
+            raise ExecutionBlocked("Expanded assessment lacks a hash-bound computed graph gate")
+        gate = json.loads((ROOT / gate_path).read_text())
+        if (gate.get("schema") != "expanded_graph_campaign_gate_v1" or
+                gate.get("comparative_training_allowed") is not True or
+                gate.get("failed_expanded_operational_screens") is not False or
+                gate.get("historical_joint_training_intersects_expanded_test_components") is not False or
+                not set(config["test_ids"]).issubset(gate.get("selected_test_ids", [])) or
+                bundle_hash not in gate.get("selected_bundle_manifest_hashes", {}).values()):
+            raise ExecutionBlocked("Computed expanded-graph gate blocks this selected bundle")
+        for directory, files in gate.get("input_hashes", {}).items():
+            verify_hashes(ROOT, {f"{directory}/{name}": value for name, value in files.items()})
+        if not gate.get("outputs"):
+            raise ExecutionBlocked("Computed graph gate must retain its auditable check outputs")
+        verify_hashes((ROOT / gate_path).parent, gate["outputs"])
+    else:
+        raise ExecutionBlocked("Unknown assessment kind cannot authorise fitting")
+    return True
+
+
+def local_bundle_gate(bundle, bundle_hash):
+    path = Path(bundle) / "CAMPAIGN_GATE.json"
+    if not path.is_file():
+        return None
+    gate = json.loads(path.read_text())
+    if bundle_hash not in gate.get("selected_bundle_manifest_hashes", {}).values():
+        raise ExecutionBlocked("Bundle gate does not identify this frozen bundle manifest")
+    return path, gate
+
+
+def make_execution_assessment(design, bundle_hash, config, assessment_path=None, bundle=None):
+    computed = local_bundle_gate(bundle, bundle_hash) if bundle is not None else None
+    if computed is not None and computed[1].get("comparative_training_allowed") is not True:
+        path, gate = computed
+        if assessment_path is not None and json.loads(Path(assessment_path).read_text()).get("execution_allowed") is True:
+            raise ExecutionBlocked("An asserted approval cannot override the computed failed bundle gate")
+        relative = str(path.resolve().relative_to(ROOT))
+        assessment = {"schema": "security_campaign_execution_assessment_v1",
+                      "assessment_kind": "expanded_graph_comparative_check",
+                      "bundle_manifest_sha256": bundle_hash, "execution_allowed": False,
+                      "expanded_graph_check": "failed", "test_ids": config["test_ids"],
+                      "reason": gate.get("reason", "Computed expanded dependence blocks comparative execution"),
+                      "evidence_gate_path": relative, "evidence_hashes": {relative: sha(path)}}
+    elif assessment_path is not None:
+        assessment = json.loads(Path(assessment_path).read_text())
+    elif design.get("schema") == "security_runner_integration_bundle_v1":
+        # This exception is validated against exact, already-scored memberships;
+        # it does not depend on the source-wide independence claim.
+        assessment = {"schema": "security_campaign_execution_assessment_v1",
+                      "assessment_kind": "exact_historical_pilot_reproduction",
+                      "bundle_manifest_sha256": bundle_hash, "execution_allowed": True,
+                      "reason": "Diagnostic reproduction of previously scored fixed pilot predictions only",
+                      "evidence_hashes": {f"{HISTORICAL_PILOT}/{name}": sha(ROOT / HISTORICAL_PILOT / name)
+                                          for name in ("predictions.csv", "manifest.json", "memberships.csv")}}
+    else:
+        assessment = {"schema": "security_campaign_execution_assessment_v1",
+                      "assessment_kind": "expanded_graph_comparative_check",
+                      "bundle_manifest_sha256": bundle_hash, "execution_allowed": False,
+                      "expanded_graph_check": "pending", "test_ids": config["test_ids"],
+                      "reason": "Prepared diagnostic design only; expanded graph assessment is required before new comparative fits",
+                      "evidence_hashes": {}}
+    validate_execution_assessment(assessment, config, bundle_hash, allow_blocked=True)
+    return assessment
+
+
+def check_execution_gate(out):
+    """Fail closed before model data loading. Legacy comparative configs lack a gate."""
+    config = json.loads((out / "config.json").read_text())
+    manifest = json.loads((out / "manifest.json").read_text())
+    if sha(out / "config.json") != manifest["config_sha256"]:
+        raise ExecutionBlocked("Frozen configuration changed")
+    if config.get("bundle_path_at_preparation"):
+        computed = local_bundle_gate(config["bundle_path_at_preparation"], sha(out / "inputs/design_manifest.json"))
+        if computed is not None and computed[1].get("comparative_training_allowed") is not True:
+            raise ExecutionBlocked(computed[1].get("reason", "Computed bundle gate forbids comparative training"))
+    assessment_hash = config.get("execution_assessment_sha256")
+    assessment_path = out / "inputs/execution_assessment.json"
+    if not assessment_hash or not assessment_path.is_file() or sha(assessment_path) != assessment_hash:
+        raise ExecutionBlocked("No valid hash-frozen execution assessment; prepare a new gated run")
+    assessment = json.loads(assessment_path.read_text())
+    return validate_execution_assessment(assessment, config, sha(out / "inputs/design_manifest.json"))
+
+
 def prepare(args):
     out, bundle = args.out, args.bundle
     if out.exists():
@@ -305,12 +437,18 @@ def prepare(args):
               "uncertainty": "No CI in this runner; one/few dependency components cannot support broad inference",
               "lr_repetition": "reuse exact ordered train/test membership across seeds/regimes for deterministic lbfgs",
               "jobs": jobs, "bundle_path_at_preparation": str(bundle), "prepared_utc": utc()}
+    assessment = make_execution_assessment(design, sha(bundle / "design_manifest.json"), config,
+                                           getattr(args, "assessment", None), bundle=bundle)
     out.mkdir(parents=True)
     (out / "inputs").mkdir()
     for name in ("design_manifest.json", *required):
         shutil.copy2(bundle / name, out / "inputs" / name)
+    if (bundle / "CAMPAIGN_GATE.json").is_file():
+        shutil.copy2(bundle / "CAMPAIGN_GATE.json", out / "inputs/CAMPAIGN_GATE.json")
     selected.to_csv(out / "inputs/selected_inventory.csv", index=False)
     dump(out / "inputs/selected_annotation_hashes.json", annotation_hashes)
+    dump(out / "inputs/execution_assessment.json", assessment)
+    config["execution_assessment_sha256"] = sha(out / "inputs/execution_assessment.json")
     code_hashes = {}
     for relative in CODE:
         dest = out / "code_snapshot" / relative
@@ -325,12 +463,13 @@ def prepare(args):
                 "input_hashes": {str(p.relative_to(out)): sha(p) for p in sorted((out / "inputs").glob("*"))},
                 "environment_sha256": sha(out / "environment.json"), "historical_groups_sha256": sha(ROOT / HISTORY),
                 "logical_jobs": len(jobs), "planned_physical_fits": sum(j["reuse_from"] is None for j in jobs),
+                "execution_allowed": assessment["execution_allowed"],
                 "label_vector_hashes": {cls: fingerprint([(int(i), labels[int(i)][cls]) for i in sorted(selected_ids)]) for cls in classes},
                 "external_scores_computed": False}
     manifest["run_fingerprint"] = fingerprint({k: manifest[k] for k in
                                               ("config_sha256", "source_hashes", "input_hashes", "environment_sha256", "historical_groups_sha256")})
     dump(out / "manifest.json", manifest)
-    print(json.dumps({k: manifest[k] for k in ("status", "logical_jobs", "planned_physical_fits", "run_fingerprint")}))
+    print(json.dumps({k: manifest[k] for k in ("status", "logical_jobs", "planned_physical_fits", "execution_allowed", "run_fingerprint")}))
 
 
 def validate_run(out):
@@ -538,6 +677,7 @@ def aggregate(out, config, manifest):
 
 def run(args):
     out = args.out
+    check_execution_gate(out)
     manifest, config, selected, labels = validate_run(out)
     sources = {int(i): source_path(row.path).read_text(encoding="utf-8", errors="replace") for i, row in selected.iterrows()}
     manifest.update(status="running_development", last_resumed_utc=utc())
@@ -586,6 +726,7 @@ def main():
     prep.add_argument("--methods", nargs="+", default=list(METHODS))
     prep.add_argument("--regimes", nargs="+", default=list(REGIMES))
     prep.add_argument("--test-ids", nargs="+")
+    prep.add_argument("--assessment", type=Path, help="Immutable scientific assessment tied to this bundle; absent means blocked comparative execution")
     execute = commands.add_parser("run")
     execute.add_argument("--out", type=Path, required=True)
     execute.add_argument("--max-fits", type=int, help="Execution cap only; does not change the frozen campaign")

@@ -1,4 +1,4 @@
-# Validity checks for the first development cycle
+# Validity checks for Article 1 development
 
 ## What has been checked
 
@@ -25,3 +25,15 @@ The test belongs to one joint component. No confidence interval, bootstrap infer
 ## Workload rounding amendment
 
 The pilot configuration used ceiling rounding for review budgets and was saved before scoring. A parallel general metric implementation used floor rounding. The mismatch was noticed after the original pilot had begun. The original configuration and results are preserved. A separately labelled post-hoc analysis applies floor rounding to the same saved predictions; it does not refit models. Floor rounding remains the proposed main-study rule and is recorded in `protocol.json`.
+
+## Expanded graph and blocked comparisons
+
+The string-aware audit reproduces 92 changed streams out of 24,131 and zero scanner failures. Its complete table matches the recorded pre-loss hash. Across 12 full-graph partitions, independent connected-component checks and label joins match the reported exclusions. Correction removes 14 lexical edges at 0.7, none at 0.8/0.9, and changes no historical training-retention decision. This supports robustness to the isolated comment-parser correction, not robustness to all lexical representations.
+
+Both operationally feasible historical tests fail the full-graph comparison: at 0.8 only 13/10 eligible training files remain, each lacking positives for one primary class. All 95 candidates fail the original screens. The 320 logical comparative jobs were prepared but not executed; no model scores are available from them. The two test sets also overlap by 90.49%, and their count-based selection follows the already observed pilot. Neither is independent confirmation.
+
+The historical and expanded graphs initially differ in source population, candidate retrieval and shingle representation. The difference must not be attributed solely to uncapping DAppSCAN. An exhaustive graph on a restricted population needs regenerated project/equality links: simply removing nodes from star-encoded group edges can falsely split a group when its anchor disappears. The graph-scope ablation, when reported, preserves these relations before comparing populations.
+
+Recovery checks and independent automated implementation reviews are distinct from human vulnerability adjudication. Completed human reviews remain zero. No external candidate model performance was computed.
+
+The completed 0.8 ablation compares the saved historical graph, exhaustive screening on the same 7,080 sources, the full 21,950-reference graph and the 24,131-source graph. The first two give identical projected DAppSCAN partitions and selected training sizes. The 21,950-reference stage already produces 13/10 eligible training files; adding candidate sources leaves these counts unchanged. Thus, within this controlled comparison, the additional upstream reference paths account for the selected designs' collapse. This does not establish semantic identity of lexical edges or universal infeasibility.

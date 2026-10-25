@@ -8,3 +8,8 @@ P1-EXT,external_audit/,new_paper_audit,automatic_audit_completed_eligibility_pen
 P1-DEV,runs/,new_development_experiment,development_pilot_completed_main_design_pending,Matched fixed-test feasibility and measured resource use,Proxy labels and one joint test component; not confirmatory
 P1-HUMAN,external_audit/,independent_human_review,not_performed,No claim until specialist review,AI assistance is not independent expert adjudication
 P1-FINAL,protocol.json,new_confirmatory_experiment,blocked_by_freeze,No final external performance claim,Eligible cohort and frozen specification required
+P1-NORM,normalization_audit/run_recovered_20261025,new_recovered_audit,verified_matching_recorded_csv_hash,92 lexical-stream changes in24131paths,String-aware comment parsing does not prove semantic equivalence
+P1-GRAPH,dependency_audit/,new_recovered_full_graph_audit,12_partitions_independently_verified,Conditional full-transitive training restrictions at3thresholds,Project/family/network and annotation eligibility remain unresolved
+P1-DESIGN,design_feasibility/audit_recovered_20261025_v2,new_recovered_design_audit,95_candidates_2_pass_historical_screens,Operational count and concentration feasibility only,Postpilot label-count selection; overlapping narrow test populations
+P1-RECOVERY,RECOVERY_2026-10-25.md,provenance_notice,sources_recovered_outputs_rerun,Clearly identified recovery verification,Original second-cycle result files lost
+P1-DRAFT,manuscript/DRAFT.md,development_manuscript,draft_not_submission_ready,Synthesis of completed development evidence,No expert adjudication or independent external performance

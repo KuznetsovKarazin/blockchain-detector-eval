@@ -1,0 +1,21 @@
+{
+  "schema": "expanded_graph_design_sensitivity_v1",
+  "created_utc": "2026-10-25T12:20:39.427814+00:00",
+  "source_audit": "papers/security_evaluation/design_feasibility/audit_recovered_20261025_v2",
+  "candidate_test_membership_sha256": "dcb329c17164b69fabd4a4aea4140c37ea141523d4b66267656a056e7959e16d",
+  "graphs": [
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025"
+  ],
+  "bundle_manifest_hashes": {
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed2_recovered_v2": "250091cfab90bbae1f40d6e2d037370e72c041a91faf4c92dc8ce5efced449bc",
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2": "5e4d8343de1d96359bc94c786b71a59a264a8d628911d9ba54ef9c1f430a9206"
+  },
+  "rule": "Existing T unchanged; exclude all original DAppSCAN training nodes whose fullgraph component intersects T; quarantine scanner-error training nodes",
+  "scope": "joint-only sensitivity, no clone-only redesign or score-based selection",
+  "screens": "same operational counts/dispersion as design audit, not statistical power",
+  "no_models_trained": true,
+  "no_model_scores_read": true,
+  "source_sha256": "20e92760becd09391d58d11040c5645c6e54fdea0def9791eea70fb951488ddc",
+  "audit_source_sha256": "ea4f40dcd4da089436c38436fe54be50a08cff66f002e36e9b3c07873ec2216e"
+}

@@ -1,0 +1,7 @@
+from,to,old_components,new_components,old_components_split_across_new,new_components_merging_multiple_old
+A_observed,B_historical_legacy,227,227,0,0
+B_historical_legacy,C_uncapped_reference_legacy,227,198,0,1
+C_uncapped_reference_legacy,D_with_candidate_legacy,198,197,0,1
+A_observed,B_historical_string_aware,227,227,0,0
+B_historical_string_aware,C_uncapped_reference_string_aware,227,198,0,1
+C_uncapped_reference_string_aware,D_with_candidate_string_aware,198,197,0,1

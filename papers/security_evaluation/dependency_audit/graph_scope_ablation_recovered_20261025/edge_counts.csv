@@ -1,0 +1,7 @@
+graph,population_nodes,normalized_shingle,upstream_project,candidate_identifier,identical_raw_source
+B_historical_legacy,7080,5623,6279,0,460
+C_uncapped_reference_legacy,21950,66770,21149,0,5979
+D_with_candidate_legacy,24131,108591,21149,13,6124
+B_historical_string_aware,7080,5623,6279,0,460
+C_uncapped_reference_string_aware,21950,66770,21149,0,5979
+D_with_candidate_string_aware,24131,108591,21149,13,6124

@@ -1,0 +1,27 @@
+{
+  "schema": "dependency_recovery_verification_v1",
+  "status": "fresh_rerun_verified",
+  "original_graph_output_files_lost": true,
+  "original_graph_file_byte_identity_claimed": false,
+  "comparison_basis": "Earlier observed numerical counts printed in tool results; preserved first-cycle candidate metadata; independent normalized-source inventory",
+  "checks": [
+    {
+      "normalization": "legacy",
+      "summary_sha256": "e07c1d7629803b110a408a3d0376e780be433977e2481383dac1da9c49329a2c",
+      "all_prior_recorded_retention_counts_reproduced": true,
+      "independent_graph_verification": "pass",
+      "runtime_seconds_new_measurement": 97.59051349800211,
+      "max_rss_kib_new_measurement": 723664
+    },
+    {
+      "normalization": "string_aware",
+      "summary_sha256": "2158784b7c0604b6f92fe28ddfe046844413ec134f62a5b551887696a4984e2e",
+      "all_prior_recorded_retention_counts_reproduced": true,
+      "independent_graph_verification": "pass",
+      "runtime_seconds_new_measurement": 124.03448742299952,
+      "max_rss_kib_new_measurement": 712016
+    }
+  ],
+  "comparison_verification_sha256": "633799dabea0a406b687c06927fe238744679e727ea396945e06a07f1cc1330d",
+  "no_model_scoring": true
+}

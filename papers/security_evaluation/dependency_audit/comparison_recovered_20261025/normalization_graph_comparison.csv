@@ -1,0 +1,7 @@
+grouping,threshold,legacy_lexical_edges,corrected_lexical_edges,lexical_edges_removed,lexical_edges_added,nodes_with_changed_canonical_component_representative,training_retention_decisions_changed,legacy_retained_train,corrected_retained_train
+base,0.7,133888,133874,14,0,2,0,836,836
+address_expanded,0.7,133888,133874,14,0,2,0,836,836
+base,0.8,108591,108591,0,0,0,0,1175,1175
+address_expanded,0.8,108591,108591,0,0,0,0,1175,1175
+base,0.9,90065,90065,0,0,0,0,1570,1570
+address_expanded,0.9,90065,90065,0,0,0,0,1570,1570
