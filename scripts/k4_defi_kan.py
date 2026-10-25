@@ -1,7 +1,13 @@
 """
-K4  Can a KAN flag flash-loan price-manipulation exploits among the
-transactions of the same day, at an alarm budget per day, and do its edge
-functions say why?
+K4  Can a KAN flag the attack transactions of a keyword-selected cohort of
+DeFi exploits involving flash loans among the transactions of the same day,
+at an alarm budget per day, and do its edge functions say why?
+
+The cohort is the selection rule of `bal.data.defi.load_incidents`: mainnet
+PoC with a flash loan whose README heading contains a price / oracle
+keyword. The heading decides, not a check of the attack mechanics, so the
+cohort is not a set of verified price-manipulation attacks (it includes, for
+example, a rounding bug whose heading mentions a price).
 
 Data: incident days from `k4_extract_days.py` (DeFiHackLabs @23c7bd8 incidents,
 AWS Ethereum transactions / logs / token transfers). Positives are the linked
@@ -26,8 +32,11 @@ Protocol (fixed before the run)
   test 2025-2026. Features are transformed by log1p (signed for profit);
   MLP / KAN input normalisation (quantile or robust) is chosen on validation
   AP, per model.
-* Leave-protocol-out: 8 folds grouped by incident day (no incident in train
-  and test), out-of-fold scores, threshold-free metrics only.
+* Leave-days-out: 8 folds grouped by incident day (no incident day in both
+  train and test; the grouping key is the day, not the protocol), out-of-fold
+  scores, threshold-free metrics only. MLP / KAN normalisation is re-chosen
+  inside every outer fold on an inner day-grouped split of its training rows
+  (`choose_prep`), never on labels of the held-out days.
 * Models: logistic regression, random forest, LightGBM, MLP [d, h, 1] with the
   parameter count of the KAN [d, 8, 1] (grid 5), the rule score
   `has_flash * max_price_move`. Neural models and trees: 5 seeds.
@@ -62,12 +71,16 @@ Usage
     python scripts/k4_defi_kan.py --seeds 5
     # models only, from the committed feature table (no AWS access needed):
     python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261024_080035/features.parquet
+    # continue an interrupted run in its own folder (finished fits are reused):
+    python scripts/k4_defi_kan.py --seeds 5 --resume results/kan/k4_<stamp>
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -154,22 +167,99 @@ def make(name, seed, h, prep="quantile"):
     return TorchClassifier("mlp", hidden=(h,), seed=seed, prep=prep)
 
 
+def choose_prep(name, h, X, y, groups, idx, inner_folds=4):
+    """Normalisation of an MLP / KAN chosen on the training rows `idx` only.
+
+    The rows are split by day (GroupKFold, first split of `inner_folds`); both
+    normalisations are fitted with seed 0 on the inner training days and
+    compared by AP on the inner validation days (ties: quantile).
+    """
+    i_fit, i_val = next(GroupKFold(inner_folds).split(X[idx], y[idx], groups[idx]))
+    i_fit, i_val = idx[i_fit], idx[i_val]
+    res = {}
+    for p in ("quantile", "robust"):
+        set_seed(0)
+        mdl = make(name, 0, h, p).fit(X[i_fit], y[i_fit])
+        res[p] = ap(y[i_val], mdl.predict_score(X[i_val]))
+    best = max(res, key=lambda k: (np.nan_to_num(res[k], nan=-1), k == "quantile"))
+    return best, res, sorted(set(groups[i_val]))
+
+
+class FitCache:
+    """Outputs of finished fits in `<run>/_cache`, so that `--resume` continues an
+    interrupted run. Every fit sets its own seed, so a reused output equals the
+    one a fresh run would compute. The folder is removed when the run ends."""
+
+    def __init__(self, run: Path):
+        self.dir = run / "_cache"
+        self.dir.mkdir(exist_ok=True)
+        self.reused = 0
+
+    def array(self, key, fn):
+        p = self.dir / f"{key}.npy"
+        if p.exists():
+            self.reused += 1
+            return np.load(p)
+        v = np.asarray(fn())
+        with open(p.with_name(p.name + ".tmp"), "wb") as f:
+            np.save(f, v)
+        os.replace(p.with_name(p.name + ".tmp"), p)
+        return v
+
+    def obj(self, key, fn):
+        p = self.dir / f"{key}.json"
+        if p.exists():
+            self.reused += 1
+            return json.loads(p.read_text())
+        v = fn()
+        p.with_name(p.name + ".tmp").write_text(json.dumps(v))
+        os.replace(p.with_name(p.name + ".tmp"), p)
+        return v
+
+    def clear(self):
+        shutil.rmtree(self.dir)
+
+
+def _ap_sorted(y, wt, last):
+    """sklearn's average precision for rows sorted by descending score.
+
+    `last` indexes the last row of each run of equal scores (one threshold per
+    distinct score); `wt` are row weights, 0 for rows that are not drawn.
+    """
+    tp = np.cumsum(y * wt)[last]
+    fp = np.cumsum((1 - y) * wt)[last]
+    if tp[-1] <= 0:
+        return np.nan
+    ps = tp + fp
+    prec = np.divide(tp, ps, out=np.zeros_like(tp), where=ps != 0)
+    return float(np.sum(np.diff(tp / tp[-1], prepend=0.0) * prec))
+
+
 def boot_ci(df, ss, n=2000, seed=0, weighted=False):
     """90 % interval of the seed-mean AP, resampling days (the same days for every seed).
 
     `ss` is one score vector or a list of per-seed score vectors; the statistic
     is the mean over seeds of the AP, i.e. the same quantity as the point
-    estimate `mean of per-seed AP`.
+    estimate `mean of per-seed AP`. A day drawn k times enters with k times its
+    weight, which gives the AP of the concatenated resample without copying
+    rows (`tests/test_k4_bootstrap.py` checks this against sklearn).
     """
     ss = [ss] if isinstance(ss, np.ndarray) and ss.ndim == 1 else list(ss)
     rng = np.random.default_rng(seed)
-    days = df.day.unique()
-    idx = {d: np.flatnonzero(df.day.to_numpy() == d) for d in days}
-    y, w = df.y.to_numpy(), df.weight.to_numpy()
+    days = pd.Index(df.day.unique())
+    code = days.get_indexer(df.day)
+    y = df.y.to_numpy(float)
+    w = df.weight.to_numpy(float) if weighted else np.ones(len(df))
+    pre = []
+    for s in ss:
+        o = np.argsort(-s, kind="stable")
+        so = s[o]
+        pre.append((o, y[o], np.r_[np.flatnonzero(so[1:] != so[:-1]), len(so) - 1]))
     vals = []
     for _ in range(n):
-        ii = np.concatenate([idx[d] for d in rng.choice(days, len(days))])
-        vals.append(np.mean([ap(y[ii], s[ii], w[ii] if weighted else None) for s in ss]))
+        m = np.bincount(days.get_indexer(rng.choice(days.to_numpy(), len(days))), minlength=len(days))
+        wt = w * m[code]
+        vals.append(np.mean([_ap_sorted(yo, wt[o], last) for o, yo, last in pre]))
     return [float(np.nanpercentile(vals, 5)), float(np.nanpercentile(vals, 95))]
 
 
@@ -187,12 +277,17 @@ def main():
     ap_.add_argument("--out", default="results/kan")
     ap_.add_argument("--days", nargs="*", help="smoke tests only: restrict to these days")
     ap_.add_argument("--features", help="features.parquet of an earlier run (skips the AWS extraction)")
+    ap_.add_argument("--resume", help="run folder of an interrupted run with the same options: continue it")
     a = ap_.parse_args()
-    run = Path(a.out) / time.strftime("k4_%Y%m%d_%H%M%S")
+    run = Path(a.resume) if a.resume else Path(a.out) / time.strftime("k4_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
+    cache = FitCache(run)
 
     incs = load_incidents()
-    df = pd.read_parquet(a.features) if a.features else load_days(a.days)
+    if a.resume:              # the feature table this run wrote before it was interrupted
+        df = pd.read_parquet(run / "features.parquet")
+    else:
+        df = pd.read_parquet(a.features) if a.features else load_days(a.days)
     X = transform(df)
     y = df.y.to_numpy()
     w = df.weight.to_numpy()
@@ -207,16 +302,18 @@ def main():
                         "test": int(df.day[te].nunique())},
                "strata": df.stratum.value_counts().to_dict(), "mlp_hidden": h}
     print(summary, flush=True)
-    df[["day", "hash", "stratum", "weight", "y", *FEATURES]].to_parquet(run / "features.parquet", index=False)
+    if not a.resume:
+        df[["day", "hash", "stratum", "weight", "y", *FEATURES]].to_parquet(run / "features.parquet", index=False)
 
     # ---- choose input normalisation for the neural models on validation ----
     prep = {}
     for m in ("mlp", "kan"):
         res = {}
         for p in ("quantile", "robust"):
-            set_seed(0)
-            mdl = make(m, 0, h, p).fit(X[tr], y[tr])
-            res[p] = ap(y[va], mdl.predict_score(X[va]))
+            def fit_val(m=m, p=p):
+                set_seed(0)
+                return ap(y[va], make(m, 0, h, p).fit(X[tr], y[tr]).predict_score(X[va]))
+            res[p] = cache.obj(f"prep_{m}_{p}", fit_val)
         prep[m] = max(res, key=lambda k: (np.nan_to_num(res[k], nan=-1), k == "quantile"))
         summary[f"prep_val_ap_{m}"] = res
     summary["prep"] = prep
@@ -232,9 +329,11 @@ def main():
             if name == "rule":
                 s = (df.has_flash * df.max_price_move).to_numpy(float)
             else:
-                set_seed(seed)
-                mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[fit_tr], y[fit_tr])
-                s = mdl.predict_score(X).astype(float)
+                def fit_all(name=name, seed=seed):
+                    set_seed(seed)
+                    mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[fit_tr], y[fit_tr])
+                    return mdl.predict_score(X).astype(float)
+                s = cache.array(f"temporal_{name}_{seed}", fit_all)
             scores[f"{name}_{seed}"] = s
             r = {"model": name, "seed": seed,
                  "val_ap": ap(y[va], s[va]), "test_ap": ap(y[te], s[te]),
@@ -273,8 +372,21 @@ def main():
     agg.to_csv(run / "temporal_summary.csv")
     print(agg.round(3).to_string(), flush=True)
 
-    # ---- leave-protocol-out --------------------------------------------------
+    # ---- leave-days-out (folds grouped by incident day) -----------------------
+    # The MLP / KAN normalisation is chosen again inside every outer fold, on an
+    # inner day-grouped split of that fold's training rows only, so no label of
+    # a held-out day enters any choice made for it (`prep_choice_by_fold.csv`).
     g = df.day.to_numpy()
+    outer = list(GroupKFold(a.folds).split(X, y, g))
+    fold_prep, prep_rows = {}, []
+    for m in ("mlp", "kan"):
+        for k, (i_tr, _) in enumerate(outer):
+            p_k, res_k, inner_days = cache.obj(f"fold_prep_{m}_{k}",
+                                               lambda m=m, i_tr=i_tr: list(choose_prep(m, h, X, y, g, i_tr)))
+            fold_prep[(m, k)] = p_k
+            prep_rows.append({"model": m, "fold": k, "prep": p_k, "inner_val_days": ";".join(inner_days),
+                              **{f"inner_val_ap_{p}": v for p, v in res_k.items()}})
+    pd.DataFrame(prep_rows).to_csv(run / "prep_choice_by_fold.csv", index=False)
     lpo = []
     oof = {n: np.zeros(len(df)) for n in names}
     for name in names:
@@ -285,10 +397,12 @@ def main():
             if name == "rule":
                 s_oof = (df.has_flash * df.max_price_move).to_numpy(float)
             else:
-                for k, (i_tr, i_te) in enumerate(GroupKFold(a.folds).split(X, y, g)):
-                    set_seed(seed)
-                    mdl = make(name, seed, h, prep.get(name, "quantile")).fit(X[i_tr], y[i_tr])
-                    s_oof[i_te] = mdl.predict_score(X[i_te])
+                for k, (i_tr, i_te) in enumerate(outer):
+                    def fit_fold(name=name, seed=seed, k=k, i_tr=i_tr, i_te=i_te):
+                        set_seed(seed)
+                        mdl = make(name, seed, h, fold_prep.get((name, k), "quantile")).fit(X[i_tr], y[i_tr])
+                        return mdl.predict_score(X[i_te])
+                    s_oof[i_te] = cache.array(f"ldo_{name}_{seed}_{k}", fit_fold)
             per_seed.append(s_oof)
         oof[name] = np.mean(per_seed, axis=0)
         rk = day_ranks(df, oof[name])
@@ -304,7 +418,7 @@ def main():
                     "median_day_rank": float(rk["rank"].median()),
                     "share_rank_le_10": float((rk["rank"] <= 10).mean())})
         print(lpo[-1], flush=True)
-    pd.DataFrame(lpo).to_csv(run / "leave_protocol_out.csv", index=False)
+    pd.DataFrame(lpo).to_csv(run / "leave_days_out.csv", index=False)
 
     # ---- KAN edge functions vs perturbation ----------------------------------
     import torch
@@ -373,8 +487,10 @@ def main():
     write_manifest(run, script=Path(__file__).name, config=vars(a),
                    data_files=[Path(a.features)] if a.features else sorted(DERIVED.glob("*/*.parquet")),
                    extra={"defihacklabs_commit": "23c7bd83ccb4524972a9493617fcc8764ab6269b",
+                          "resumed": bool(a.resume), "fits_reused_after_interruption": cache.reused,
                           "aws": "s3://aws-public-blockchain/v1.0/eth/{transactions,logs,token_transfers}",
                           "split": {"train_end": TRAIN_END, "val_end": VAL_END}, "budgets_per_day": BUDGETS})
+    cache.clear()
     print("wrote", run)
 
 

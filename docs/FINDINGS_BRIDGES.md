@@ -1,6 +1,6 @@
 # B — Bridge attacks without attack labels
 
-Current runs (after the audit fixes of 2026-10-22, see [AUDIT_RESPONSE.md](AUDIT_RESPONSE.md)):
+Current runs (after the audit fixes of 2026-10-22, see [archive/AUDIT_RESPONSE.md](archive/AUDIT_RESPONSE.md)):
 `results/bridges/b1_20261022_163601` (7 detectors × 3 views × 5 seeds for
 stochastic detectors, rules, transfer) and `results/bridges/b2_20261022_164508`
 (per-feature tail scores, rule ∨ detector hybrids). Superseded runs:

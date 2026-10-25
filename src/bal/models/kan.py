@@ -131,11 +131,13 @@ class KAN(nn.Module):
 
     @torch.no_grad()
     def input_relevance(self) -> np.ndarray:
-        """Per-input relevance of the first layer: mean |phi_ij| range over j.
+        """Per-input relevance of the first layer: range of phi_ji summed over the hidden units j.
 
-        Range (max - min) of each univariate function over the grid, summed
-        over outgoing edges. A function that is flat contributes nothing
-        regardless of its weights.
+        Range (max - min) of each complete edge function (SiLU base term plus
+        spline term, as in `edge_values`) over the grid, summed over the
+        outgoing edges of input i (not averaged; with a fixed width the two
+        differ by a constant factor). A function that is flat contributes
+        nothing regardless of its weights.
         """
         _, phi = self.edge_functions(0)
         rng = phi.max(axis=2) - phi.min(axis=2)        # (out, in)

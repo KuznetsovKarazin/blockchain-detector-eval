@@ -30,12 +30,12 @@ manifest under `results/`.
 > 2. On a popular injected-bug benchmark (SolidiFI) the best models reach AUPRC 1.0 under every split, consistent with recognising the bug templates; on real audit labels AUPRC is 0.04–0.15.
 > 3. Tree ensembles beat graph neural networks on Elliptic under a strict temporal protocol, and every model collapses after the dark-market shutdown, unnoticed by label-free monitors.
 > 4. KANs show no stable advantage over a same-size MLP; their LUT form is faster than a spline KAN but still slower than the MLP.
-> 5. On 13 recent DeFi exploits, tree ensembles rank the attack near the top of its day, but alarm budgets set a year earlier are exceeded 2–19×, and the KAN learns the attacker's set-up rather than the manipulation.
+> 5. On 13 recent DeFi exploits (a keyword-selected cohort), tree ensembles rank the attack near the top of its day, but alarm budgets set a year earlier are exceeded up to about 16×, and the KAN leans on the attacker's set-up more than on the manipulation.
 
 **Contents:** [Who this is for](#who-this-is-for) · [Results](#results) ·
 [What this project does NOT claim](#what-this-project-does-not-claim) ·
 [Quick start](#quick-start) · [Repository layout](#repository-layout) ·
-[Reviews](#reviews) · [Citation](#citation) · [References](#references) ·
+[Changes](#changes) · [Citation](#citation) · [References](#references) ·
 [License](#license)
 
 ---
@@ -190,22 +190,26 @@ on validation. Details: [docs/FINDINGS_TRANSACTIONS_KAN.md](docs/FINDINGS_TRANSA
 
 ### DeFi exploits (K4): flash-loan price manipulation on Ethereum
 
-40 DeFiHackLabs exploits (2021–2026) against all other flash-loan
-transactions of the same days, transactions touching the same contracts and
-a background sample from the AWS public Ethereum data (338k kept
-transactions, weighted to about a million per day). Details:
+40 DeFiHackLabs exploits (2021–2026), selected by keywords in their
+headings (price or oracle manipulation, mainnet fork, flash loan), against
+all other flash-loan transactions of the same days, transactions touching
+the same contracts and a background sample from the AWS public Ethereum data
+(338k kept transactions, weighted to 0.9–2.3 million per day). Details:
 [docs/FINDINGS_DEFI.md](docs/FINDINGS_DEFI.md).
 
-* Temporal test (2025–2026, 13 attacks; mean AP over seeds): LightGBM 0.230
-  [0.106, 0.423], random forest 0.189, MLP 0.101, KAN 0.072 [0.029, 0.178],
-  logistic regression 0.022; a flash loan × price move rule is near random
-  (0.002). Tree models put the median attack at rank 3–6 of its day.
+* Temporal test (2025–2026, 13 attacks; mean AP over seeds): LightGBM 0.212
+  [0.092, 0.398], random forest 0.209, KAN 0.140 [0.048, 0.303], MLP 0.094,
+  logistic regression 0.026; a flash loan × price move rule ranks attacks
+  far down (0.002) and alarms on none. Tree models put the median attack at
+  rank 5–7 of its day. KAN vs matched MLP is inconclusive (overlapping
+  intervals; the order reverses on seed-averaged scores).
 * Alarm budgets set on 2024 do not hold on 2025–2026: a 1/day threshold gives
-  2.0–18.9 alarms per day.
-* The KAN mostly uses the attacker's set-up (fresh sender, contract deployed
-  the same day, gas), not the manipulation features. Its edge functions match
-  its partial dependence only when signed by the second layer (Spearman +1.0,
-  −1.0 for the plain first-layer sum).
+  1.8–15.7 alarms per day.
+* The KAN's most relevant inputs are the attacker's set-up (fresh sender,
+  contract deployed the same day, gas), ahead of the flash-loan size and the
+  price moves; permutation importance agrees only in part (Spearman 0.19).
+  Its edge functions match its partial dependence only when signed by the
+  second layer (Spearman +1.0, −1.0 for the plain first-layer sum).
 * Detection is after execution: all features come from the mined transaction.
 
 ---
@@ -259,7 +263,7 @@ python scripts/k3_kan_mlp_uncertainty.py --seeds 10
 python scripts/k4_extract_days.py --workers 1
 python scripts/k4_defi_kan.py --seeds 5
 # ... or the models only, from the committed feature table
-python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261024_080035/features.parquet
+python scripts/k4_defi_kan.py --seeds 5 --features results/kan/k4_20261024_204829/features.parquet
 ```
 
 All runs are CPU-only. Each run writes a manifest with the git commit, the
@@ -279,21 +283,19 @@ src/bal/
   utils/      repro.py (seeds, manifests, atomic writes)
 scripts/      00_fetch_data.py, b*_ (bridges), c*_ (contracts), t*_ (transactions), k*_ (KAN, DeFi)
 results/      one folder per run: metrics, folds, per-row scores where small, manifest
-docs/         PROTOCOLS.md, DATA.md, FINDINGS_*.md, AUDIT_RESPONSE.md
+docs/         PROTOCOLS.md, DATA.md, FINDINGS_*.md, archive/ (earlier review notes)
 tests/        GNN isolation, near-duplicates, thresholds and ties, loss accounting,
               causal features, label shift, KAN/LUT exactness, solc selection, aggregation
 ```
 
-## Reviews
+## Changes
 
-Three independent read-only reviews (2026-10-22) found defects in GAT
-attention, near-duplicate grouping, threshold and rank ties, compiler
-selection, price timing, repeated aggregation and manifest coverage, and
-several interpretations stronger than the evidence. All were fixed or
-reworded and the affected experiments re-run.
-[docs/AUDIT_RESPONSE.md](docs/AUDIT_RESPONSE.md) lists each finding, the fix,
-its test and the old → new numbers; [results/README.md](results/README.md)
-lists the current and superseded runs.
+[CHANGELOG.md](CHANGELOG.md) lists each release: defects found and fixed,
+the regression tests that cover them and the runs that were repeated.
+[results/README.md](results/README.md) lists the current and superseded runs;
+the large superseded K4 runs are kept only in the release that produced them.
+Earlier review notes are kept in
+[docs/archive/AUDIT_RESPONSE.md](docs/archive/AUDIT_RESPONSE.md).
 
 ## Citation
 
@@ -301,9 +303,10 @@ lists the current and superseded runs.
 @software{blockchain_detector_eval,
   title  = {blockchain-detector-eval: When Can You Trust a Blockchain
             Anomaly Detector, and What Does It Cost to Run?},
-  author = {Kuznetsov, Oleksandr},
-  year   = {2026},
-  url    = {https://github.com/KuznetsovKarazin/blockchain-detector-eval}
+  author  = {Kuznetsov, Oleksandr},
+  year    = {2026},
+  version = {0.6.0},
+  url     = {https://github.com/KuznetsovKarazin/blockchain-detector-eval}
 }
 ```
 

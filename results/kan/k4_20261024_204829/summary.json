@@ -1,0 +1,110 @@
+{
+  "n_rows": 337871,
+  "n_days": 49,
+  "n_incidents": 40,
+  "positives": {
+    "train": 18,
+    "val": 9,
+    "test": 13
+  },
+  "days": {
+    "train": 24,
+    "val": 12,
+    "test": 13
+  },
+  "strata": {
+    "background": 147000,
+    "flash": 106376,
+    "protocol": 84455,
+    "attack": 40
+  },
+  "mlp_hidden": 75,
+  "prep_val_ap_mlp": {
+    "quantile": 0.05938948446086901,
+    "robust": 0.23287317832016752
+  },
+  "prep_val_ap_kan": {
+    "quantile": 0.14335906293738812,
+    "robust": 0.11577346018127176
+  },
+  "prep": {
+    "mlp": "robust",
+    "kan": "quantile"
+  },
+  "kan_relevance_vs_permutation_spearman": 0.18681318681318684,
+  "kan_relevance": {
+    "has_flash": 2.425142288208008,
+    "n_flash": 8.612695693969727,
+    "flash_to_pool": 6.708803176879883,
+    "max_price_move": 4.629335403442383,
+    "net_price_move": 3.6926188468933105,
+    "n_pools": 5.979310035705566,
+    "n_contracts": 4.4036102294921875,
+    "n_logs": 5.588607311248779,
+    "n_tokens": 2.852952480316162,
+    "profit_usd": 6.406954765319824,
+    "gas_used": 9.750422477722168,
+    "nonce": 12.66118049621582,
+    "value_eth": 4.793044567108154,
+    "to_created_today": 11.143806457519531
+  },
+  "kan_permutation_ap_drop_val": {
+    "has_flash": 0.04619826632897679,
+    "n_flash": 0.0007474892676629707,
+    "flash_to_pool": 0.0012524775623665753,
+    "max_price_move": 0.0008389255341836113,
+    "net_price_move": 0.03219380158641901,
+    "n_pools": 0.012076757640230112,
+    "n_contracts": 0.006803652422945774,
+    "n_logs": 0.010926243790874717,
+    "n_tokens": -0.000461179210587849,
+    "profit_usd": 0.0015169542880516882,
+    "gas_used": 0.07497089456225654,
+    "nonce": 0.018073268161383816,
+    "value_eth": 0.02270702827349037,
+    "to_created_today": 0.12454403402608687
+  },
+  "kan_permutation_ap_drop_val_sd": {
+    "has_flash": 0.03711026688103685,
+    "n_flash": 0.0270855585900331,
+    "flash_to_pool": 0.01716898904974925,
+    "max_price_move": 0.001086597612936801,
+    "net_price_move": 0.03573584871051594,
+    "n_pools": 0.02349955114094323,
+    "n_contracts": 0.011984271120272885,
+    "n_logs": 0.0035240750895204967,
+    "n_tokens": 0.0007591315242143089,
+    "profit_usd": 0.01922951388675746,
+    "gas_used": 0.03818535766731634,
+    "nonce": 0.02574438595090502,
+    "value_eth": 0.02755100014077128,
+    "to_created_today": 0.005688184728741854
+  },
+  "n_permutations": 20,
+  "edge_checks": [
+    {
+      "feature": "nonce",
+      "relevance": 12.66118049621582,
+      "spearman_edge_vs_partial_dependence": 0.9999955667208513,
+      "spearman_unweighted_edge_sum_vs_pd": -0.999994088961135,
+      "permutation_ap_drop_val": 0.018073268161383816,
+      "permutation_ap_drop_val_sd": 0.02574438595090502
+    },
+    {
+      "feature": "to_created_today",
+      "relevance": 11.143806457519531,
+      "spearman_edge_vs_partial_dependence": 1.0,
+      "spearman_unweighted_edge_sum_vs_pd": -0.9999955667208513,
+      "permutation_ap_drop_val": 0.12454403402608687,
+      "permutation_ap_drop_val_sd": 0.005688184728741854
+    },
+    {
+      "feature": "gas_used",
+      "relevance": 9.750422477722168,
+      "spearman_edge_vs_partial_dependence": 0.9999748780848234,
+      "spearman_unweighted_edge_sum_vs_pd": -0.9999512339293631,
+      "permutation_ap_drop_val": 0.07497089456225654,
+      "permutation_ap_drop_val_sd": 0.03818535766731634
+    }
+  ]
+}

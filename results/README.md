@@ -1,7 +1,8 @@
 # Runs
 
 Current runs, as cited in `docs/FINDINGS_*.md`. Every other run folder is kept
-for the record and is superseded.
+for the record and is superseded, except the superseded K4 runs (50–100 MB
+each), which are kept only in the release named in the table.
 
 The runs were produced in the development repository before this public
 release. Their manifests record that repository's commit. Runs made before
@@ -37,4 +38,4 @@ underlying datasets.
 | K1 KAN analysis | `kan/k1_{quantile,robust}_20261022_142521` | `k1_*_20261021_232204` (float64 LUT) |
 | K2 LUT latency | timing: `kan/k2_20261024_011451`, `…_011806`, `…_011911`, `…_012008`, `…_012105` (one thread, threadpoolctl); models: `kan/k2_20261022_144836/models.pkl` | timing of `k2_20261022_144836` (threads limited through torch only), `k2_20261022_021810` (float64 LUT) |
 | K3 KAN vs MLP, 10 seeds | `kan/k3_20261022_163604` (incl. per-seed `scores.npz`) | `k3_20261022_113301` (same numbers, scores not saved) |
-| K4 DeFi flash-loan exploits | `kan/k4_20261024_080035` (incl. `features.parquet`, `scores.npz`) | `k4_20261023_200340` (`has_flash` from the stratum, `to_created_today` saw later creations) |
+| K4 DeFi flash-loan exploits | `kan/k4_20261024_204829` (incl. `features.parquet`, `scores.npz`); feature check against the previous run: `kan/k4_feature_diff_v0.6.0` | `k4_20261024_080035` (pool token pairs from the whole day; prep chosen outside the held-out folds; modified working tree; in release 0.5.1), `k4_20261023_200340` (`has_flash` from the stratum, `to_created_today` saw later creations; in release 0.5.0) |

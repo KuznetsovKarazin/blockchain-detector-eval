@@ -26,7 +26,7 @@ data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:456:37
                                     ^----------------------------------------^
 
 Traceback (most recent call last):
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 639, in _run_solc
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 639, in _run_solc
     ret: dict = json.loads(stdout)
                 ~~~~~~~~~~^^^^^^^^
   File "/usr/lib/python3.13/json/__init__.py", line 352, in loads
@@ -42,35 +42,35 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/tmp/claude-0/venv2/bin/slither", line 6, in <module>
+  File "<venv>/bin/slither", line 6, in <module>
     sys.exit(main())
              ~~~~^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 815, in main
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 815, in main
     main_impl(all_detector_classes=detectors, all_printer_classes=printers)
     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 936, in main_impl
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 936, in main_impl
     ) = process_all(filename, args, detector_classes, printer_classes)
         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/slither/__main__.py", line 100, in process_all
+  File "<venv>/lib/python3.13/site-packages/slither/__main__.py", line 100, in process_all
     compilations = compile_all(target, **vars(args))
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 870, in compile_all
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 870, in compile_all
     compilations.append(CryticCompile(target, **kwargs))
                         ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 279, in __init__
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 279, in __init__
     self._compile(**kwargs)
     ~~~~~~~~~~~~~^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 725, in _compile
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/crytic_compile.py", line 725, in _compile
     self._platform.compile(self, **kwargs)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 195, in compile
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 195, in compile
     targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 324, in _get_targets_json
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 324, in _get_targets_json
     return _run_solc(
         compilation_unit,
     ...<6 lines>...
         force_legacy_json=force_legacy_json,
     )
-  File "/tmp/claude-0/venv2/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 642, in _run_solc
+  File "<venv>/lib/python3.13/site-packages/crytic_compile/platform/solc.py", line 642, in _run_solc
     raise InvalidCompilation(f"Invalid solc compilation {stderr}")
 crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation data/raw/smartbugs-curated/dataset/access_control/parity_wallet_bug_1.sol:18:1: Error: Source file requires different compiler version (current compiler is 0.4.11+commit.68ef5810.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
 pragma solidity 0.4.9; /* originally ^0.4.9, but doesn't compile with ^0.4.11 */

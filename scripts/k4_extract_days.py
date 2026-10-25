@@ -21,9 +21,13 @@ is read when an attack transaction is not found there) this script reads
 * the contracts created that day with the position of their creating
   transaction (`creations.parquet`), so that "called contract created
   earlier" can be decided per transaction;
-* the day's pool state events (V2 `Sync`, V3 `Swap`) and the token pair of
-  each V2 pool, so that pre-transaction prices are known (state before the
-  transaction = last event of an earlier transaction of the same day);
+* the day's pool state events (V2 `Sync`, V3 `Swap`), so that pre-transaction
+  prices are known (state before the transaction = last event of an earlier
+  transaction of the same day);
+* the first transfer of each token into or out of each V2 pool
+  (`pair_tokens.parquet`), from which the features rebuild the token pair of a
+  pool as known at the end of each transaction (`pairs.parquet`, the
+  whole-day map of runs up to v0.5.1, is still written for comparison);
 * the WETH price in USD from the USDC/WETH V2 pool.
 
 Transactions of any other DeFiHackLabs exploit are dropped, so they are
@@ -83,6 +87,20 @@ def _creations(tx: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame({"address": c.receipt_contract_address.str.lower().to_numpy(),
                          "block_number": c.block_number.to_numpy(),
                          "transaction_index": c.transaction_index.to_numpy()})
+
+
+def add_pair_tokens(date):
+    """Add pair_tokens.parquet to an older extract (reads the day's token transfers only)."""
+    out = OUT / date
+    if (out / "pair_tokens.parquet").exists():
+        return date
+    tt = _read("token_transfers", date, TT_COLS).to_pandas()
+    for c in ("token_address", "from_address", "to_address"):
+        tt[c] = "0x" + tt[c].str[-40:].str.lower()
+    st = pd.read_parquet(out / "state.parquet")
+    D.pair_tokens(tt, set(st.loc[st.topic0 == D.T_SYNC, "address"])).to_parquet(out / "pair_tokens.parquet",
+                                                                                  index=False)
+    return date
 
 
 def update_day(date, exclude):
@@ -170,8 +188,10 @@ def extract_day(date, attack_txs, exclude, providers, args):
                     tt[tt.to_address.isin(v2)][["to_address", "token_address"]].set_axis(["pair", "token"], axis=1)])
     pt = pt.drop_duplicates().groupby("pair").token.agg(lambda s: sorted(set(s)))
     pt = pt[pt.map(len) == 2]
+    # day-level map of the older runs (kept for comparison, not used by the features)
     pd.DataFrame({"pair": pt.index, "token0": pt.map(lambda x: x[0]).values,
                   "token1": pt.map(lambda x: x[1]).values}).to_parquet(out / "pairs.parquet", index=False)
+    D.pair_tokens(tt, v2).to_parquet(out / "pair_tokens.parquet", index=False)
     info = {"date": date, "n_tx": int(len(tx)), "n_success": int(len(ok)), "population": pop, "kept": kept,
             "attack_found": sorted(found), "attack_missing": sorted(set(attack_txs) - found),
             "n_excluded_other_exploits": len(set(tx.hash) & exclude),
@@ -189,6 +209,8 @@ def main():
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--update", action="store_true",
                     help="only add creations.parquet / exclusion counts to existing day extracts")
+    ap.add_argument("--pair-tokens", action="store_true",
+                    help="only add pair_tokens.parquet to existing day extracts")
     a = ap.parse_args()
     incs = D.load_incidents(a.root)
     all_mainnet = D.load_incidents(a.root, price_only=False)
@@ -205,6 +227,12 @@ def main():
     if a.only:
         days = {d: v for d, v in days.items() if d in a.only}
     print(len(incs), "incidents on", len(days), "days")
+    if a.pair_tokens:
+        dates = sorted(p.parent.name for p in OUT.glob("*/done.json"))
+        with ProcessPoolExecutor(a.workers) as ex:
+            for d in ex.map(add_pair_tokens, dates):
+                print(d, "pair_tokens", flush=True)
+        return
     if a.update:
         dates = sorted(p.parent.name for p in OUT.glob("*/done.json"))
         txs_of = {}

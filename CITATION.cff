@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it."
 title: "blockchain-detector-eval: when can you trust a blockchain anomaly detector, and what does it cost to run?"
 type: software
-version: "0.5.1"
-date-released: "2026-10-24"
+version: "0.6.0"
+date-released: "2026-10-25"
 authors:
   - family-names: "Kuznetsov"
     given-names: "Oleksandr"

@@ -42,7 +42,7 @@
       "internal_api": "openmp",
       "num_threads": 1,
       "prefix": "libgomp",
-      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/torch/lib/libgomp.so.1",
+      "filepath": "<venv>/lib/python3.13/site-packages/torch/lib/libgomp.so.1",
       "version": null
     },
     {
@@ -50,7 +50,7 @@
       "internal_api": "openblas",
       "num_threads": 1,
       "prefix": "libscipy_openblas",
-      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "filepath": "<venv>/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
       "version": "0.3.31.dev",
       "threading_layer": "pthreads",
       "architecture": "SkylakeX"
@@ -60,7 +60,7 @@
       "internal_api": "openblas",
       "num_threads": 1,
       "prefix": "libscipy_openblas",
-      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "filepath": "<venv>/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
       "version": "0.3.34.106.0",
       "threading_layer": "pthreads",
       "architecture": "SkylakeX"
@@ -70,7 +70,7 @@
       "internal_api": "openmp",
       "num_threads": 1,
       "prefix": "libgomp",
-      "filepath": "/tmp/claude-0/venv2/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "filepath": "<venv>/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
       "version": null
     }
   ],

@@ -4,7 +4,12 @@ Transaction features for flash-loan price-manipulation detection (K4).
 Every feature uses only the transaction itself (its logs and token transfers)
 and the pool state before it: the last V2 `Sync` / V3 `Swap` of an earlier
 transaction on the same day (earlier transactions of the same block count as
-earlier). Nothing is taken from later transactions, labels or incident text.
+earlier). Pool metadata is causal too: a contract counts as a V2 pool for a
+transaction once it has emitted a `Sync` up to the end of that transaction
+(or a V2 `Swap` in it), and the token pair of a pool is the set of exactly two
+tokens that moved into or out of it up to the end of that transaction
+(`causal_pairs`). Nothing is taken from later transactions, labels or
+incident text.
 
 Features
 --------
@@ -63,6 +68,27 @@ def _price_rows(ev: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(out, columns=["address", "pos", "log_index", "price", "r0", "r1"])
 
 
+def causal_pairs(pt: pd.DataFrame, tt: pd.DataFrame, lg: pd.DataFrame, tx_end: pd.Series) -> pd.DataFrame:
+    """Token pair (token0 < token1) of every V2 pool a transaction touches, as known at its end.
+
+    `pt` is `pair_tokens.parquet` (first transfer of each token into or out of
+    each V2 pool that day). A pool is mapped for a transaction if exactly two
+    tokens have moved into or out of it up to the last log of that transaction;
+    transfers of later transactions, even of the same block, are not used.
+    Index: (tx, address).
+    """
+    touched = pd.concat([tt[["transaction_hash", "from_address"]].set_axis(["tx", "address"], axis=1),
+                         tt[["transaction_hash", "to_address"]].set_axis(["tx", "address"], axis=1),
+                         lg[["transaction_hash", "address"]].set_axis(["tx", "address"], axis=1)])
+    touched = touched[touched.address.isin(set(pt.pair))].drop_duplicates()
+    m = touched.merge(pt.rename(columns={"pair": "address"}), on="address")
+    m = m[D.chain_key(m.block_number, m.log_index) <= m.tx.map(tx_end).to_numpy()]
+    g = m.groupby(["tx", "address"]).token.agg(lambda s_: sorted(set(s_)))
+    g = g[g.map(len) == 2]
+    return pd.DataFrame({"token0": g.map(lambda x: x[0]), "token1": g.map(lambda x: x[1])},
+                        index=g.index if len(g) else pd.MultiIndex.from_tuples([], names=["tx", "address"]))
+
+
 def _flash_loans(lg: pd.DataFrame, tt: pd.DataFrame, pairs: pd.DataFrame) -> pd.DataFrame:
     """transaction_hash, token, amount of every flash loan visible in the logs."""
     rows = []
@@ -92,19 +118,19 @@ def day_features(day_dir: str | Path) -> pd.DataFrame:
     lg = pd.read_parquet(d / "logs.parquet")
     tt = pd.read_parquet(d / "transfers.parquet")
     st = pd.read_parquet(d / "state.parquet")
-    pairs = pd.read_parquet(d / "pairs.parquet").set_index("pair")
-    # pairs whose transfers in the day file include their own LP token: take the
-    # two other tokens from the kept transactions' transfers
-    v2_pairs = set(st.loc[st.topic0 == D.T_SYNC, "address"])
-    pt = pd.concat([tt[tt.from_address.isin(v2_pairs)][["from_address", "token_address"]].set_axis(["pair", "token"], axis=1),
-                    tt[tt.to_address.isin(v2_pairs)][["to_address", "token_address"]].set_axis(["pair", "token"], axis=1)])
-    pt = pt[pt.pair != pt.token].drop_duplicates().groupby("pair").token.agg(lambda s: sorted(set(s)))
-    pt = pt[pt.map(len) == 2]
-    extra = pd.DataFrame({"token0": pt.map(lambda x: x[0]), "token1": pt.map(lambda x: x[1])})
-    pairs = pd.concat([pairs, extra[~extra.index.isin(pairs.index)]])
     tx["pos"] = _pos(tx.block_number, tx.transaction_index)
     pos = tx.set_index("hash").pos
     lg["pos"] = lg.transaction_hash.map(pos)
+    # end of each transaction on the day's event order (block, log index); a
+    # transaction without logs ends before any event of its block
+    last_log = pd.concat([lg[["transaction_hash", "log_index"]],
+                          tt[["transaction_hash", "log_index"]]]).groupby("transaction_hash").log_index.max()
+    tx_end = pd.Series(D.chain_key(tx.block_number, tx.hash.map(last_log).fillna(-1)), index=tx.hash.to_numpy())
+    # V2 pools and their token pairs as known at the end of each transaction
+    sync = st[st.topic0 == D.T_SYNC]
+    v2_since = pd.Series(D.chain_key(sync.block_number, sync.log_index), index=sync.address.to_numpy())
+    v2_since = v2_since.groupby(level=0).min()
+    pairs = causal_pairs(pd.read_parquet(d / "pair_tokens.parquet"), tt, lg, tx_end)
 
     # pool prices inside each kept tx, and the last price before it
     own = _price_rows(lg[lg.topic0.isin(D.STATE_TOPICS)])
@@ -144,15 +170,18 @@ def day_features(day_dir: str | Path) -> pd.DataFrame:
     # flash loans and their size relative to the touched V2 pools before the tx
     fl = _flash_loans(lg, tt, pairs)
     v2 = own.dropna(subset=["pre_r0"]).drop_duplicates(["tx", "address"])
-    v2 = v2.join(pairs, on="address", how="inner")
+    v2 = v2.join(pairs, on=["tx", "address"], how="inner")
     res = pd.concat([v2[["tx", "token0", "pre_r0"]].set_axis(["tx", "token", "reserve"], axis=1),
                      v2[["tx", "token1", "pre_r1"]].set_axis(["tx", "token", "reserve"], axis=1)])
     res = res.groupby(["tx", "token"]).reserve.max()
     # one rule for every transaction, the same as in the extraction (not the stratum)
-    flash_tx = D.flash_hashes(lg, tt, v2_pairs)
+    flash_tx = D.flash_hashes(lg, tt, set(v2_since.index), v2_since=v2_since, tx_end=tx_end)
     # V2 flash swaps: first out-transfer of the pair before any in-transfer
-    t_in = tt[tt.to_address.isin(pairs.index)].groupby(["transaction_hash", "to_address"]).log_index.min()
-    t_out = tt[tt.from_address.isin(pairs.index)].sort_values("log_index").groupby(
+    known = pairs.index
+    t_in = tt[pd.MultiIndex.from_arrays([tt.transaction_hash, tt.to_address]).isin(known)].groupby(
+        ["transaction_hash", "to_address"]).log_index.min()
+    t_out = tt[pd.MultiIndex.from_arrays([tt.transaction_hash, tt.from_address]).isin(known)].sort_values(
+        "log_index").groupby(
         ["transaction_hash", "from_address"]).agg(first=("log_index", "min"), token=("token_address", "first"),
                                                   amount=("value", "first"))
     t_in.index.names = t_out.index.names = ["tx", "pair"]
