@@ -1,4 +1,4 @@
-> **Publication checkpoint, 26 October 2026:** 29 compressed graph-output paths remain absent after a publication-review block and temporary environment reset. Computations and validation below were completed before that reset. Read [publication status](revision1/PUBLICATION_STATUS.md) before reproducing this checkout.
+> **Artifact availability, 26 October 2026:** these figures are publicly available. The compressed graph outputs remain excluded from the public checkout; local recovery and its verification are documented in the [current publication status](../../revision1/PUBLICATION_STATUS.md).
 
 # Figure provenance
 
