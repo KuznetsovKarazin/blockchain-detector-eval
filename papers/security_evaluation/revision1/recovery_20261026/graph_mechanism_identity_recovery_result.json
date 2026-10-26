@@ -1,0 +1,76 @@
+{
+  "schema": "graph_artifact_recovery_result_v1",
+  "stage": "identity",
+  "status": "complete",
+  "created_utc": "2026-10-26T08:14:13.844615+00:00",
+  "runtime_seconds": 24.61574243899986,
+  "details": {
+    "recomputed_directory": "recomputed"
+  },
+  "fresh_run_config_sha256": "5db0e35e2ab16eccc548fb99394f8e02156a1a7b3c5b3d603a320e6edabfe169",
+  "comparisons": [
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/config_before_compute.json",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/identity_stage_v1/recomputed/config_before_compute.json",
+      "expected_sha256": "3a06034a6b2ef950adf8fcee1f8d9fe985fe173e4774b3aa26d2dde1ec73eb4b",
+      "actual_sha256": "3a06034a6b2ef950adf8fcee1f8d9fe985fe173e4774b3aa26d2dde1ec73eb4b",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "fdb5b453c0c65ecf4e2ef449e88749eb1f9b5502",
+      "original_path_existed_before_restore": true,
+      "restored": false
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/run_mechanism.py",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/identity_stage_v1/recomputed/run_mechanism.py",
+      "expected_sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+      "actual_sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "77a9526c9eeaa455d782e98b46f56e2bbe1c0a56",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/identity_control_concentration.csv",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/identity_stage_v1/recomputed/identity_control_concentration.csv",
+      "expected_sha256": "e1f2514e548e7d2d6fd68917c47b3820e12d5b0846f1d020ba1e002be07fd282",
+      "actual_sha256": "e1f2514e548e7d2d6fd68917c47b3820e12d5b0846f1d020ba1e002be07fd282",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "e519f642a16eabeaf60e3cc06dc0b18e9fb33004",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/identity_controls.py",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/identity_stage_v1/recomputed/identity_controls.py",
+      "expected_sha256": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242",
+      "actual_sha256": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "d0e4acde4ea05c92fd1bd33a3e7feb4639209d83",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/memberships.csv.gz",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/identity_stage_v1/recomputed/memberships.csv.gz",
+      "expected_sha256": "96ee133ff79dbd6e04dcc2d214d5bf579623c74e6787b08504dc3e12ae864aab",
+      "actual_sha256": "96ee133ff79dbd6e04dcc2d214d5bf579623c74e6787b08504dc3e12ae864aab",
+      "sha256_match": true,
+      "expected_git_blob_sha": "eadbabb3ae7ad3113d4d036486a4e9a9aa1dafa7",
+      "actual_git_blob_sha": "eadbabb3ae7ad3113d4d036486a4e9a9aa1dafa7",
+      "original_path_existed_before_restore": false,
+      "restored": true,
+      "git_blob_sha_match": true
+    }
+  ],
+  "restored_files": 1,
+  "no_model_scoring": true,
+  "no_upload": true,
+  "provenance": "new local recomputation; byte identity only where both original recorded hashes match; original timings/configurations remain immutable"
+}

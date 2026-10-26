@@ -1,0 +1,1388 @@
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py b/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py
+@@ -0,0 +1,305 @@
++"""Versioned feature adapters only: no classifier, external scoring or labels.
++
++Historical token/pattern definitions with one corrected comment scan. Pattern
++counts still see literal contents by declaration; only pragma extraction masks
++strings. These are source heuristics, not AST or semantic vulnerability facts.
++"""
++from __future__ import annotations
++from dataclasses import dataclass
++import hashlib
++import json
++from pathlib import Path
++import re
++import sys
++from typing import Sequence
++
++import numpy as np
++from scipy import sparse
++from sklearn.feature_extraction.text import TfidfVectorizer
++from sklearn.preprocessing import StandardScaler
++from sklearn.exceptions import NotFittedError
++
++ROOT = Path(__file__).resolve().parents[5]
++sys.path.insert(0, str(ROOT / 'src'))
++sys.path.insert(0, str(ROOT / 'papers/security_evaluation/normalization_audit'))
++from bal.features.contract_features import KEEP, TOKEN_RE, PATTERNS, PATTERN_NAMES
++from solidity_scanner import scan_comments, normalize_scanned_text, SolidityScanError
++
++REPRESENTATIONS = ('raw', 'normalized', 'pattern43')
++TFIDF_PARAMETERS = dict(token_pattern=r'\S+', ngram_range=(1, 3), min_df=2,
++                        max_features=50000, sublinear_tf=True, lowercase=False)
++SCALER_PARAMETERS = dict(with_mean=False)
++
++@dataclass(frozen=True)
++class SourceRecord:
++    sample_id: str
++    role: str
++    source: str | bytes
++
++@dataclass
++class PreparedBatch:
++    representation: str
++    records: tuple[SourceRecord, ...]
++    row_ids: tuple[str, ...]
++    texts: tuple[str, ...]
++    patterns: np.ndarray | None
++    coverage: list[dict]
++
++@dataclass
++class TransformedBatch:
++    matrix: object
++    row_ids: tuple[str, ...]
++    coverage: list[dict]
++    state_sha256: str | None
++
++class TrainingInputError(ValueError):
++    def __init__(self, message, coverage):
++        self.coverage = coverage
++        super().__init__(message)
++
++
++def mask_literal_contents(scanned: str) -> str:
++    """Mask quotes only after a successful scan; preserve offsets/newlines."""
++    chars = list(scanned)
++    i = 0
++    while i < len(scanned):
++        if scanned[i] not in '\"\'':
++            i += 1
++            continue
++        quote, start = scanned[i], i
++        i += 1
++        while i < len(scanned):
++            if scanned[i] == '\\':
++                i += 2
++            elif scanned[i] == quote:
++                i += 1
++                break
++            else:
++                i += 1
++        for j in range(start, min(i, len(scanned))):
++            if chars[j] not in '\r\n':
++                chars[j] = ' '
++    return ''.join(chars)
++
++
++def pattern_from_scanned(scanned: str) -> tuple[np.ndarray, dict]:
++    """Exactly 38 historical regexes + 5 declared summary features.
++
++    Never call a helper that strips comments a second time. Regex patterns and
++    call-before-write remain literal-sensitive and non-AST heuristics. Version
++    is taken from the first *active* pragma (literal contents excluded).
++    """
++    loc = max(1, sum(bool(line.strip()) for line in scanned.splitlines()))
++    result = {}
++    for name, regex in PATTERNS.items():
++        count = len(re.findall(regex, scanned, re.M if name == 'unchecked_call_stmt' else 0))
++        result[name] = 100.0 * count / loc
++    calls = 0
++    for function_part in re.split(r'\bfunction\b', scanned)[1:]:
++        call = re.search(r'\.call\.value\s*\(|\.call\s*\{[^}]*value|\.send\s*\(|\.transfer\s*\(', function_part)
++        if call and re.search(r'\w+\s*\[[^\]]+\]\s*(=|-=|\+=)', function_part[call.end():]):
++            calls += 1
++    result['call_before_write'] = 100.0 * calls / loc
++    pragma = re.search(r'\bpragma\s+solidity\s*[\^>=<~ ]*\s*(\d+)\.(\d+)', mask_literal_contents(scanned))
++    version = int(pragma.group(1)) + int(pragma.group(2)) / 100.0 if pragma else None
++    result['solc_version'] = float(version) if version is not None else 0.0
++    result['pre_08'] = float(version is not None and version < .08)
++    result['loc'] = float(np.log1p(loc))
++    result['n_functions'] = float(np.log1p(len(re.findall(r'\bfunction\b', scanned))))
++    values = np.asarray([result[name] for name in PATTERN_NAMES], dtype=np.float32)
++    if len(values) != 43 or not np.isfinite(values).all():
++        raise ValueError('Pattern definition/finite-value invariant failed')
++    return values, {'nonblank_scanned_lines': loc, 'pragma_version_missing': version is None,
++                    'pattern_literal_contents_retained': True}
++
++
++def prepare(records: Sequence[SourceRecord], representation: str) -> PreparedBatch:
++    if representation not in REPRESENTATIONS:
++        raise ValueError('Unknown representation')
++    records = tuple(records)
++    if any(not isinstance(r, SourceRecord) or not isinstance(r.sample_id, str) or not r.sample_id or r.role not in ('train', 'external') for r in records):
++        raise ValueError('Unique named records with explicit train/external role are required')
++    if len({r.sample_id for r in records}) != len(records):
++        raise ValueError('Duplicate sample identity')
++    texts, patterns, row_ids, coverage = [], [], [], []
++    for record in records:
++        if not isinstance(record.source, (bytes, str)):
++            raise TypeError('Source must be bytes or text')
++        raw = record.source if isinstance(record.source, bytes) else record.source.encode('utf-8')
++        status = dict(sample_id=record.sample_id, role=record.role,
++                      source_sha256=hashlib.sha256(raw).hexdigest(),
++                      preprocessing_status='ready', matrix_row=None,
++                      model_scoring_performed=False)
++        try:
++            source = raw.decode('utf-8', errors='strict')
++            scanned = scan_comments(source)
++            tokens = TOKEN_RE.findall(scanned.text)
++            status.update(raw_token_count=len(tokens), line_comments=scanned.line_comments,
++                          block_comments=scanned.block_comments, string_literals=scanned.string_literals)
++            if not tokens:
++                status['preprocessing_status'] = 'empty_token_stream'
++            else:
++                status['matrix_row'] = len(row_ids)
++                row_ids.append(record.sample_id)
++                if representation == 'pattern43':
++                    vector, extra = pattern_from_scanned(scanned.text)
++                    patterns.append(vector)
++                    status.update(extra)
++                else:
++                    texts.append(' '.join(tokens) if representation == 'raw' else normalize_scanned_text(scanned.text))
++        except UnicodeDecodeError:
++            status['preprocessing_status'] = 'decode_error'
++        except SolidityScanError as exc:
++            status.update(preprocessing_status='scanner_error', scanner_error_code=exc.code,
++                          scanner_error_line=exc.line, scanner_error_column=exc.column)
++        coverage.append(status)
++    matrix = np.vstack(patterns) if patterns else np.empty((0, 43), dtype=np.float32)
++    return PreparedBatch(representation, records, tuple(row_ids), tuple(texts),
++                         matrix if representation == 'pattern43' else None, coverage)
++
++
++def feature_definitions() -> dict:
++    regexes = [dict(index=i, name=name, regex=regex,
++                    flags='MULTILINE' if name == 'unchecked_call_stmt' else '',
++                    value='100 * regex match count / max(1, nonblank scanned lines)')
++               for i, (name, regex) in enumerate(PATTERNS.items())]
++    summaries = {
++        'call_before_write': '100 * count of lexical function segments containing value-call then mapping assignment / nonblank scanned lines; not AST or flow analysis',
++        'solc_version': 'first active pragma major + minor/100, strings masked; missing/unrecognized => 0',
++        'pre_08': '1 iff recognized active pragma version < .08, else 0',
++        'loc': 'log1p(max(1, nonblank lines after corrected comment scanning))',
++        'n_functions': 'log1p(word-boundary function count after corrected scanning; literals retained)',
++    }
++    return dict(schema='external_B_feature_definitions_v1', feature_names=list(PATTERN_NAMES),
++                regex_features=regexes,
++                summary_features=[dict(index=38+i, name=name, value=definition) for i, (name, definition) in enumerate(summaries.items())],
++                token_regex=TOKEN_RE.pattern, normalization_keep=sorted(KEEP),
++                comment_policy='single corrected string-aware scan; no legacy second strip',
++                lexical_literal_policy='contents retained with historical token regex',
++                pattern_literal_policy='contents retained for counts; masked only for active pragma version',
++                pattern_line_policy='comment blanking preserves physical newlines; comment-only lines excluded',
++                limitations=['no AST or type analysis', 'quoted inert code may affect pattern counts',
++                             'call-before-write function segmentation is lexical, not actual control flow',
++                             'compiler acceptance and semantic vulnerability are not established'])
++
++
++class TrainOnlyTfidf:
++    """One fit on explicitly training-role records; every later use transforms.
++
++    This interface prevents accidental role/refit mistakes, not a caller falsely
++    relabelling an external record as training. The input-manifest verifier must
++    provide the fixed training identities. Invalid training inputs fail closed.
++    """
++    def __init__(self, representation: str):
++        if representation not in ('raw', 'normalized'):
++            raise ValueError('TFIDF supports raw or normalized only')
++        self.representation = representation
++        self._vectorizer = None
++        self._scaler = None
++        self._training_ids = None
++        self._training_source_sha256 = None
++
++    def fit_transform_training(self, records: Sequence[SourceRecord]) -> TransformedBatch:
++        if self._vectorizer is not None:
++            raise RuntimeError('Adapter already fitted; refitting is prohibited')
++        records = tuple(records)
++        if not records or any(not isinstance(record, SourceRecord) or record.role != 'train' for record in records):
++            raise ValueError('Fit accepts a nonempty explicitly training-only batch')
++        prepared = prepare(records, self.representation)
++        if any(row['preprocessing_status'] != 'ready' for row in prepared.coverage):
++            raise TrainingInputError('Invalid training sources; no silent training-row exclusion', prepared.coverage)
++        vectorizer = TfidfVectorizer(**TFIDF_PARAMETERS)
++        try:
++            values = vectorizer.fit_transform(prepared.texts)
++        except ValueError as exc:
++            raise TrainingInputError('Training vocabulary unavailable: ' + str(exc), prepared.coverage) from exc
++        if (values.getnnz(axis=1) == 0).any():
++            raise TrainingInputError('Training rows have no retained vocabulary features', prepared.coverage)
++        scaler = StandardScaler(**SCALER_PARAMETERS)
++        values = scaler.fit_transform(values)
++        self._vectorizer, self._scaler = vectorizer, scaler
++        self._training_ids = prepared.row_ids
++        self._training_source_sha256 = tuple(r['source_sha256'] for r in prepared.coverage)
++        return self._result(values, prepared)
++
++    def transform(self, records: Sequence[SourceRecord]) -> TransformedBatch:
++        if self._vectorizer is None:
++            raise NotFittedError('Training-only fit is required first')
++        records = tuple(records)
++        if any(not isinstance(r, SourceRecord) for r in records):
++            raise ValueError('Explicit SourceRecord inputs required')
++        if any(r.role == 'external' and r.sample_id in self._training_ids for r in records):
++            raise ValueError('External identity overlaps training identity')
++        prepared = prepare(records, self.representation)
++        training_hashes = dict(zip(self._training_ids, self._training_source_sha256))
++        for row in prepared.coverage:
++            if row['role'] == 'train' and (row['sample_id'] not in training_hashes or
++                                          row['source_sha256'] != training_hashes[row['sample_id']]):
++                raise ValueError('Training transform identity/source differs from fitted training provenance')
++        before = self.state_sha256()
++        if prepared.texts:
++            values = self._scaler.transform(self._vectorizer.transform(prepared.texts))
++        else:
++            values = sparse.csr_matrix((0, len(self._vectorizer.vocabulary_)), dtype=np.float64)
++        if before != self.state_sha256():
++            raise RuntimeError('Transform unexpectedly changed fitted state')
++        return self._result(values, prepared)
++
++    def _result(self, matrix, prepared):
++        nnz = np.asarray(matrix.getnnz(axis=1)).ravel()
++        coverage = [dict(row) for row in prepared.coverage]
++        for row in coverage:
++            i = row['matrix_row']
++            row['representation_status'] = (row['preprocessing_status'] if i is None else
++                                            'ready' if nnz[i] else 'zero_vocabulary_vector')
++            row['feature_ready'] = i is not None and bool(nnz[i])
++        return TransformedBatch(matrix, prepared.row_ids, coverage, self.state_sha256())
++
++    def state_sha256(self):
++        if self._vectorizer is None:
++            raise NotFittedError('No training-fitted state')
++        header = dict(representation=self.representation, tfidf=TFIDF_PARAMETERS,
++                      scaler=SCALER_PARAMETERS, vocabulary=sorted((word, int(index)) for word, index in self._vectorizer.vocabulary_.items()),
++                      training_ids=self._training_ids, training_source_sha256=self._training_source_sha256)
++        h = hashlib.sha256(json.dumps(header, sort_keys=True, separators=(',', ':')).encode())
++        for values in [self._vectorizer.idf_, self._scaler.mean_, self._scaler.var_, self._scaler.scale_, np.asarray(self._scaler.n_samples_seen_)]:
++            array = np.asarray(values)
++            h.update(str(array.dtype).encode()); h.update(str(array.shape).encode()); h.update(array.tobytes())
++        return h.hexdigest()
++
++    def training_state_metadata(self):
++        digest = self.state_sha256()
++        return dict(state_sha256=digest, representation=self.representation,
++                    training_ids=list(self._training_ids), training_source_sha256=list(self._training_source_sha256),
++                    vocabulary_size=len(self._vectorizer.vocabulary_), fit_rows=int(self._scaler.n_samples_seen_),
++                    fitted_on='training_manifest_only', external_fit_allowed=False)
++
++
++class Pattern43:
++    """Stateless 43-feature matrix for RF/LGBM; no data-fitted scaler needed."""
++    def fit_transform_training(self, records: Sequence[SourceRecord]) -> TransformedBatch:
++        """Training-cohort guard; extracts features without fitting parameters."""
++        records = tuple(records)
++        if not records or any(not isinstance(r, SourceRecord) or r.role != 'train' for r in records):
++            raise ValueError('Pattern training preparation requires training-role records')
++        result = self.transform(records)
++        if any(row['preprocessing_status'] != 'ready' for row in result.coverage):
++            raise TrainingInputError('Invalid pattern training sources; no silent training-row exclusion', result.coverage)
++        return result
++
++    def transform(self, records: Sequence[SourceRecord]) -> TransformedBatch:
++        prepared = prepare(records, 'pattern43')
++        coverage = [dict(row, representation_status=row['preprocessing_status'],
++                         feature_ready=row['preprocessing_status'] == 'ready') for row in prepared.coverage]
++        return TransformedBatch(prepared.patterns, prepared.row_ids, coverage, None)
++
++
++def adapter_for_method(method: str):
++    """Construct an unfitted representation adapter, never a classifier."""
++    if method == 'raw_tfidf_lr':
++        return TrainOnlyTfidf('raw')
++    if method == 'normalized_tfidf_lr':
++        return TrainOnlyTfidf('normalized')
++    if method in ('pattern_rf', 'pattern_lgbm'):
++        return Pattern43()
++    raise ValueError('Method is outside the four declared B methods')
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/check_coverage.py b/papers/security_evaluation/revision1/external_protocol/adapters_v1/check_coverage.py
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/check_coverage.py
+@@ -0,0 +1,112 @@
++"""Read-only fixed-manifest feature preprocessing; no vocabulary/model fit.
++
++Only metadata and hashes are written. The external provisional labels, private
++review keys, human answers and model scores are never opened by this command.
++"""
++import argparse
++from collections import Counter
++import hashlib
++import importlib.metadata
++import json
++from pathlib import Path
++import platform
++import resource
++import shutil
++import subprocess
++import time
++
++import numpy as np
++import pandas as pd
++
++from adapters import ROOT, SourceRecord, prepare, REPRESENTATIONS
++
++PINS = {'DAppSCAN':'66a56619c44770e05c2db600fa6468115ff0dcd5',
++        'salzano':'da079440bf2cf4fd803c864ef29aeea8a3da50c3',
++        'smartbugs-curated':'230e649123477eff332742a59a1c7cc6dc286cab',
++        'SolidiFI-benchmark':'4b0573e1b3f7031396de6f48f7f3e7380222ad3a'}
++
++def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
++
++def load_verified_records(packet, root=ROOT):
++    """Require original public hashes, fixed membership/roles and source bytes."""
++    for name, digest in json.loads((packet/'public_file_hashes.json').read_text()).items():
++        if sha(packet/name) != digest:
++            raise ValueError('Frozen packet hash changed: '+name)
++    train = pd.read_csv(packet/'training_manifest.csv', keep_default_na=False)
++    test = pd.read_csv(packet/'external_cohort_manifest.csv', keep_default_na=False)
++    if len(train)!=691 or len(test)!=1998 or set(train.component)&set(test.address_expanded_080):
++        raise ValueError('Fixed membership/graph separation mismatch')
++    if not train.path.is_unique or not test.path.is_unique or not pd.concat([train.node_id,test.node_id]).is_unique:
++        raise ValueError('Duplicate source identity')
++    records = []
++    inventory = []
++    for role, frame in [('train',train),('external',test)]:
++        for row in frame.itertuples():
++            path = root/row.path if role=='train' else root/'data/raw/salzano'/row.path
++            if not path.resolve().is_relative_to((root/'data/raw').resolve()):
++                raise ValueError('Source path outside pinned input trees')
++            data = path.read_bytes()
++            expected = row.file_sha256 if role=='train' else row.file_hash
++            if hashlib.sha256(data).hexdigest()!=expected:
++                raise ValueError('Source byte hash changed: '+str(path))
++            records.append(SourceRecord(str(row.node_id),role,data))
++            inventory.append(dict(sample_id=str(row.node_id),role=role,path=row.path,source_sha256=expected))
++    return records, inventory
++
++
++def main():
++    ap=argparse.ArgumentParser(description=__doc__)
++    ap.add_argument('--packet',type=Path,default=ROOT/'papers/security_evaluation/revision1/external_protocol/packet_probability_20261025_v1')
++    ap.add_argument('--out',type=Path,required=True)
++    args=ap.parse_args();start=time.monotonic()
++    if args.out.exists():raise FileExistsError('A new output directory is required')
++    base=Path(__file__).parent
++    plan=json.loads((base/'adapter_plan.json').read_text())
++    for name,digest in plan['source_sha256'].items():
++        if sha(ROOT/name)!=digest:raise ValueError('Predeclared adapter source changed: '+name)
++    for name,digest in plan['input_sha256'].items():
++        if sha(ROOT/name)!=digest:raise ValueError('Predeclared adapter input changed: '+name)
++    pins={}
++    for name,pin in PINS.items():
++        path=ROOT/'data/raw'/name
++        head=subprocess.check_output(['git','-C',str(path),'rev-parse','HEAD'],text=True).strip()
++        clean=not subprocess.check_output(['git','-C',str(path),'status','--porcelain'],text=True).strip()
++        if head!=pin or not clean:raise ValueError('Upstream pin/tree changed: '+name)
++        pins[name]=dict(commit=head,clean=clean)
++    records,inventory=load_verified_records(args.packet)
++    args.out.mkdir(parents=True)
++    shutil.copy2(base/'adapter_plan.json',args.out/'plan_before_preprocessing.json')
++    snapshot=args.out/'source_snapshot';snapshot.mkdir()
++    for name in plan['source_sha256']:
++        source=ROOT/name
++        shutil.copy2(source,snapshot/source.name)
++    rows=[]
++    for representation in REPRESENTATIONS:
++        prepared=prepare(records,representation)
++        for item in prepared.coverage:
++            row=dict(item,representation=representation)
++            index=row['matrix_row']
++            if index is not None:
++                vector=prepared.patterns[index] if representation=='pattern43' else prepared.texts[index].encode()
++                raw=vector.tobytes() if isinstance(vector,np.ndarray) else vector
++                row['representation_sha256']=hashlib.sha256(raw).hexdigest()
++                row['finite_pattern_values']=bool(np.isfinite(vector).all()) if representation=='pattern43' else None
++            rows.append(row)
++    coverage=pd.DataFrame(rows)
++    coverage=coverage.merge(pd.DataFrame(inventory)[['sample_id','role','path']],on=['sample_id','role'],validate='many_to_one')
++    coverage.to_csv(args.out/'preprocessing_coverage.csv',index=False)
++    summary=dict(schema='external_B_adapter_coverage_v1',scope='preprocessing only; no learned vocabulary/scaler/classifier fitted on real inputs',
++                 input_files=len(records),representations=list(REPRESENTATIONS),
++                 coverage=coverage.groupby(['role','representation','preprocessing_status']).size().rename('files').reset_index().to_dict('records'),
++                 pattern_missing_pragma=coverage[coverage.representation=='pattern43'].groupby('role').pragma_version_missing.sum().astype(int).to_dict(),
++                 upstream_pins=pins,packet_sha256=sha(args.packet/'packet_manifest.json'),adapter_plan_sha256=sha(base/'adapter_plan.json'),
++                 output_sha256={'preprocessing_coverage.csv':sha(args.out/'preprocessing_coverage.csv')},
++                 environment=dict(python=platform.python_version(),packages={n:importlib.metadata.version(n) for n in ['numpy','pandas','scipy','scikit-learn']}),
++                 elapsed_seconds=time.monotonic()-start,peak_ram_mib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,
++                 training_labels_read=False,external_source_annotations_read=False,human_judgments_read=False,
++                 real_training_vocabularies_fitted=0,external_vocabularies_fitted=0,model_fits_or_predictions=0,
++                 toolchain_execution=False,protocol_freeze_performed=False)
++    (args.out/'summary.json').write_text(json.dumps(summary,indent=2,allow_nan=False)+'\n')
++    print(json.dumps(summary))
++
++if __name__=='__main__':main()
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/test_adapters.py b/papers/security_evaluation/revision1/external_protocol/adapters_v1/test_adapters.py
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/test_adapters.py
+@@ -0,0 +1,190 @@
++"""Synthetic fixtures only; no actual external fit, prediction or judgment."""
++import hashlib
++import json
++from pathlib import Path
++import sys
++import unittest
++
++import numpy as np
++from sklearn.exceptions import NotFittedError
++
++sys.path.insert(0, str(Path(__file__).parent))
++import adapters as a
++from bal.features.contract_features import pattern_features
++
++
++def rec(i, source, role='train'):
++    return a.SourceRecord(i, role, source)
++
++
++class AdapterTests(unittest.TestCase):
++    def test_exact_43_feature_names_and_definitions(self):
++        d = a.feature_definitions()
++        self.assertEqual(len(d['feature_names']), 43)
++        self.assertEqual(len(d['regex_features']), 38)
++        self.assertEqual([r['name'] for r in d['regex_features']] + [r['name'] for r in d['summary_features']], d['feature_names'])
++
++    def test_clean_fixture_preserves_historical_feature_formulas(self):
++        source = 'pragma solidity ^0.5.0;\ncontract C {\n function f() public {\n msg.sender.send(1);\n balance[msg.sender] -= 1;\n }\n}'
++        actual = a.Pattern43().transform([rec('clean', source)]).matrix[0]
++        expected = [pattern_features(source)[name] for name in a.PATTERN_NAMES]
++        np.testing.assert_allclose(actual, expected, rtol=1e-6)
++
++    def test_block_marker_inside_line_comment_does_not_hide_active_code(self):
++        source = '// /* inert opening marker\ncontract C { function f() public { to.call.value(1)(""); balances[msg.sender] -= 1; } }'
++        row = a.Pattern43().transform([rec('comment-order', source)]).matrix[0]
++        self.assertGreater(row[a.PATTERN_NAMES.index('call_value')], 0)
++        self.assertGreater(row[a.PATTERN_NAMES.index('call_before_write')], 0)
++
++    def test_literal_comment_markers_never_trigger_second_comment_strip(self):
++        source = 'contract C { string u = "https://host/*literal*/"; function f() public { to.send(1); } }'
++        row = a.Pattern43().transform([rec('url', source)]).matrix[0]
++        self.assertGreater(row[a.PATTERN_NAMES.index('send')], 0)
++        self.assertGreater(row[a.PATTERN_NAMES.index('n_functions')], 0)
++
++    def test_pragma_excludes_quoted_and_commented_declarations(self):
++        source = '// pragma solidity ^0.4.0;\nstring fake = "pragma solidity ^0.5.0;";\npragma solidity ^0.8.7;\ncontract C {}'
++        row = a.Pattern43().transform([rec('pragma', source)]).matrix[0]
++        self.assertAlmostEqual(float(row[a.PATTERN_NAMES.index('solc_version')]), .08, places=6)
++        self.assertEqual(row[a.PATTERN_NAMES.index('pre_08')], 0)
++
++    def test_literal_sensitive_pattern_policy_is_explicit_and_stable(self):
++        source = 'contract C { string inert = "function to.send(1)"; }'
++        result = a.Pattern43().transform([rec('literal', source)])
++        self.assertGreater(result.matrix[0, a.PATTERN_NAMES.index('send')], 0)
++        self.assertTrue(result.coverage[0]['pattern_literal_contents_retained'])
++        self.assertTrue(result.coverage[0]['pragma_version_missing'])
++
++    def test_corrected_comment_scan_preserves_physical_line_denominator(self):
++        source = 'contract C { /* first\ncomment */ function f() public {} }'
++        result = a.Pattern43().transform([rec('lines', source)])
++        self.assertEqual(result.coverage[0]['nonblank_scanned_lines'], 2)
++        self.assertAlmostEqual(result.matrix[0, a.PATTERN_NAMES.index('loc')], np.log1p(2), places=6)
++
++    def test_raw_and_normalized_keep_corrected_historical_token_rules(self):
++        source = 'contract Unique { uint arbitraryName = 123; string s = "//kept"; }'
++        raw = a.prepare([rec('x', source)], 'raw').texts[0]
++        norm = a.prepare([rec('x', source)], 'normalized').texts[0]
++        self.assertIn('arbitraryName', raw)
++        self.assertNotIn('arbitraryName', norm)
++        self.assertIn('NUM', norm)
++        self.assertIn('kept', raw)
++        self.assertIn('contract', norm)
++
++    def test_error_coverage_preserves_every_identity_and_matrix_mapping(self):
++        rows = [rec('valid', 'contract C {}', 'external'), rec('decode', b'\xff', 'external'),
++                rec('scan', '/* unfinished', 'external'), rec('empty', '// only comment', 'external')]
++        result = a.Pattern43().transform(rows)
++        self.assertEqual(result.row_ids, ('valid',))
++        self.assertEqual(result.matrix.shape, (1, 43))
++        self.assertEqual([r['preprocessing_status'] for r in result.coverage], ['ready', 'decode_error', 'scanner_error', 'empty_token_stream'])
++        self.assertEqual([r['matrix_row'] for r in result.coverage], [0, None, None, None])
++        self.assertTrue(all(not r['model_scoring_performed'] for r in result.coverage))
++
++    def test_vocabulary_idf_and_scaler_fit_only_train_and_transform_is_immutable(self):
++        for representation in ('raw', 'normalized'):
++            fit = a.TrainOnlyTfidf(representation)
++            train = [rec('tr1', 'contract common {}'), rec('tr2', 'contract common { uint a; }'), rec('tr3', 'contract common { uint b; }')]
++            result = fit.fit_transform_training(train)
++            before = fit.state_sha256()
++            variance = fit._scaler.var_.copy(); idf = fit._vectorizer.idf_.copy()
++            out = fit.transform([rec('ex', 'contract HELDOUT_ONLY { address ONLY_EXTERNAL; }', 'external')])
++            self.assertEqual(before, fit.state_sha256())
++            np.testing.assert_array_equal(variance, fit._scaler.var_)
++            np.testing.assert_array_equal(idf, fit._vectorizer.idf_)
++            self.assertNotIn('HELDOUT_ONLY', fit._vectorizer.vocabulary_)
++            self.assertEqual(fit.training_state_metadata()['fit_rows'], 3)
++            self.assertEqual(result.matrix.shape[1], out.matrix.shape[1])
++
++    def test_external_or_mixed_fit_rejected(self):
++        for rows in ([rec('ex', 'common', 'external')], [rec('tr', 'common'), rec('ex', 'common', 'external')]):
++            with self.assertRaises(ValueError):a.TrainOnlyTfidf('raw').fit_transform_training(rows)
++
++    def test_refit_and_external_identity_overlap_rejected(self):
++        fit = a.TrainOnlyTfidf('raw'); train = [rec('tr1', 'common'), rec('tr2', 'common')]
++        fit.fit_transform_training(train)
++        with self.assertRaises(RuntimeError):fit.fit_transform_training(train)
++        with self.assertRaises(ValueError):fit.transform([rec('tr1', 'common', 'external')])
++
++    def test_transform_before_fit_rejected(self):
++        with self.assertRaises(NotFittedError):a.TrainOnlyTfidf('raw').transform([rec('ex', 'common', 'external')])
++
++    def test_invalid_training_input_does_not_silently_drop_or_fit(self):
++        fit = a.TrainOnlyTfidf('raw')
++        with self.assertRaises(a.TrainingInputError) as caught:
++            fit.fit_transform_training([rec('ok', 'common'), rec('bad', '"unfinished')])
++        self.assertEqual(caught.exception.coverage[1]['preprocessing_status'], 'scanner_error')
++        with self.assertRaises(NotFittedError):fit.state_sha256()
++
++    def test_unavailable_training_vocabulary_fails_closed(self):
++        with self.assertRaises(a.TrainingInputError):
++            a.TrainOnlyTfidf('raw').fit_transform_training([rec('a', 'distinctA'), rec('b', 'distinctB')])
++
++    def test_zero_vocabulary_external_vector_is_flagged_not_safe_score(self):
++        fit = a.TrainOnlyTfidf('raw'); fit.fit_transform_training([rec('a', 'common'), rec('b', 'common')])
++        result = fit.transform([rec('ex', 'completely_unseen', 'external')])
++        self.assertEqual(result.matrix.nnz, 0)
++        self.assertEqual(result.coverage[0]['representation_status'], 'zero_vocabulary_vector')
++        self.assertFalse(result.coverage[0]['feature_ready'])
++        self.assertNotIn('score', result.coverage[0])
++
++    def test_empty_transform_and_bad_rows_keep_feature_dimension(self):
++        fit = a.TrainOnlyTfidf('raw'); fit.fit_transform_training([rec('a', 'common'), rec('b', 'common')])
++        empty = fit.transform([]); bad = fit.transform([rec('bad', b'\xff', 'external')])
++        self.assertEqual(empty.matrix.shape, (0, 1)); self.assertEqual(bad.matrix.shape, (0, 1))
++        self.assertEqual(len(bad.coverage), 1)
++
++    def test_duplicate_identity_or_unknown_role_rejected(self):
++        with self.assertRaises(ValueError):a.prepare([rec('same', 'a'), rec('same', 'b')], 'raw')
++        with self.assertRaises(ValueError):a.prepare([rec('x', 'a', 'unspecified')], 'raw')
++
++    def test_feature_definition_file_matches_code(self):
++        path = Path(__file__).parent / 'feature_definitions.json'
++        self.assertEqual(json.loads(path.read_text()), a.feature_definitions())
++
++
++
++class FactoryAndInputTests(unittest.TestCase):
++    def test_four_methods_map_to_declared_unfitted_representations(self):
++        self.assertIsInstance(a.adapter_for_method('raw_tfidf_lr'), a.TrainOnlyTfidf)
++        self.assertIsInstance(a.adapter_for_method('normalized_tfidf_lr'), a.TrainOnlyTfidf)
++        self.assertIsInstance(a.adapter_for_method('pattern_rf'), a.Pattern43)
++        self.assertIsInstance(a.adapter_for_method('pattern_lgbm'), a.Pattern43)
++        with self.assertRaises(ValueError):a.adapter_for_method('unregistered')
++
++    def test_manifest_hash_mismatch_rejected_before_source_access(self):
++        import tempfile
++        import check_coverage
++        with tempfile.TemporaryDirectory() as folder:
++            packet=Path(folder)
++            (packet/'protected.csv').write_text('changed')
++            (packet/'public_file_hashes.json').write_text(json.dumps({'protected.csv':hashlib.sha256(b'original').hexdigest()}))
++            with self.assertRaisesRegex(ValueError,'Frozen packet hash changed'):
++                check_coverage.load_verified_records(packet)
++
++    def test_numeric_sample_id_is_not_an_implicit_identity(self):
++        with self.assertRaises(ValueError):a.prepare([a.SourceRecord(1,'train','common')], 'raw')
++
++
++class TrainingProvenanceAmendmentTests(unittest.TestCase):
++    def test_pattern_training_guard_never_drops_invalid_source(self):
++        adapter=a.Pattern43()
++        with self.assertRaises(a.TrainingInputError):
++            adapter.fit_transform_training([rec('valid','contract C {}'),rec('invalid','/* unfinished')])
++        with self.assertRaises(ValueError):
++            adapter.fit_transform_training([rec('external','contract C {}','external')])
++        valid=adapter.fit_transform_training([rec('a','contract C {}'),rec('b','contract D {}')])
++        self.assertEqual(valid.row_ids,('a','b'))
++        self.assertEqual(valid.matrix.shape,(2,43))
++        self.assertIsNone(valid.state_sha256)
++
++    def test_changed_or_unknown_training_provenance_is_rejected(self):
++        adapter=a.TrainOnlyTfidf('raw')
++        adapter.fit_transform_training([rec('a','common'),rec('b','common')])
++        with self.assertRaisesRegex(ValueError,'fitted training provenance'):
++            adapter.transform([rec('a','common changed')])
++        with self.assertRaisesRegex(ValueError,'fitted training provenance'):
++            adapter.transform([rec('unknown','common')])
++        self.assertEqual(adapter.transform([rec('a','common')]).row_ids,('a',))
++
++if __name__ == '__main__':unittest.main()
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/conftest.py b/papers/security_evaluation/revision1/external_protocol/adapters_v1/conftest.py
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/conftest.py
+@@ -0,0 +1,2 @@
++"""Archived test sources are provenance, not additional executable test modules."""
++collect_ignore_glob = ['coverage_*/source_snapshot/test_*.py', 'current_source_snapshot/test_*.py']
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json b/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json
+@@ -0,0 +1,488 @@
++{
++  "schema": "external_B_feature_definitions_v1",
++  "feature_names": [
++    "call_value",
++    "low_level_call",
++    "send",
++    "transfer",
++    "delegatecall",
++    "staticcall",
++    "callcode",
++    "unchecked_call_stmt",
++    "checked_send",
++    "block_timestamp",
++    "now",
++    "block_number",
++    "blockhash",
++    "difficulty",
++    "keccak_rand",
++    "tx_origin",
++    "tx_origin_eq",
++    "msg_sender",
++    "only_owner",
++    "selfdestruct",
++    "plus_eq",
++    "minus_eq",
++    "mul_op",
++    "safemath",
++    "unchecked_block",
++    "require",
++    "assert",
++    "revert",
++    "for_loop",
++    "while_loop",
++    "mapping",
++    "payable",
++    "modifier_def",
++    "event_emit",
++    "assembly",
++    "balance_read",
++    "approve",
++    "transfer_from",
++    "call_before_write",
++    "solc_version",
++    "pre_08",
++    "loc",
++    "n_functions"
++  ],
++  "regex_features": [
++    {
++      "index": 0,
++      "name": "call_value",
++      "regex": "\\.call\\.value\\s*\\(|\\.call\\s*\\{[^}]*value\\s*:",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 1,
++      "name": "low_level_call",
++      "regex": "\\.call\\s*[\\(\\{]",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 2,
++      "name": "send",
++      "regex": "\\.send\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 3,
++      "name": "transfer",
++      "regex": "\\.transfer\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 4,
++      "name": "delegatecall",
++      "regex": "\\.delegatecall\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 5,
++      "name": "staticcall",
++      "regex": "\\.staticcall\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 6,
++      "name": "callcode",
++      "regex": "\\.callcode\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 7,
++      "name": "unchecked_call_stmt",
++      "regex": "^\\s*[\\w\\.\\[\\]]+\\.(call|send|delegatecall)\\s*[\\(\\{][^;]*;\\s*$",
++      "flags": "MULTILINE",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 8,
++      "name": "checked_send",
++      "regex": "(require|assert|if)\\s*\\(\\s*!?\\s*[\\w\\.\\[\\]]+\\.(send|call)",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 9,
++      "name": "block_timestamp",
++      "regex": "\\bblock\\.timestamp\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 10,
++      "name": "now",
++      "regex": "\\bnow\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 11,
++      "name": "block_number",
++      "regex": "\\bblock\\.number\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 12,
++      "name": "blockhash",
++      "regex": "\\bblockhash\\s*\\(|block\\.blockhash",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 13,
++      "name": "difficulty",
++      "regex": "block\\.difficulty|block\\.prevrandao",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 14,
++      "name": "keccak_rand",
++      "regex": "keccak256\\s*\\(\\s*abi\\.encodePacked\\s*\\(\\s*(now|block\\.)",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 15,
++      "name": "tx_origin",
++      "regex": "\\btx\\.origin\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 16,
++      "name": "tx_origin_eq",
++      "regex": "tx\\.origin\\s*==|==\\s*tx\\.origin",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 17,
++      "name": "msg_sender",
++      "regex": "\\bmsg\\.sender\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 18,
++      "name": "only_owner",
++      "regex": "\\bonlyOwner\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 19,
++      "name": "selfdestruct",
++      "regex": "\\b(selfdestruct|suicide)\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 20,
++      "name": "plus_eq",
++      "regex": "\\+=",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 21,
++      "name": "minus_eq",
++      "regex": "-=",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 22,
++      "name": "mul_op",
++      "regex": "[^\\*/]\\*[^\\*/=]",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 23,
++      "name": "safemath",
++      "regex": "\\bSafeMath\\b|\\.add\\s*\\(|\\.sub\\s*\\(|\\.mul\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 24,
++      "name": "unchecked_block",
++      "regex": "\\bunchecked\\s*\\{",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 25,
++      "name": "require",
++      "regex": "\\brequire\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 26,
++      "name": "assert",
++      "regex": "\\bassert\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 27,
++      "name": "revert",
++      "regex": "\\brevert\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 28,
++      "name": "for_loop",
++      "regex": "\\bfor\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 29,
++      "name": "while_loop",
++      "regex": "\\bwhile\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 30,
++      "name": "mapping",
++      "regex": "\\bmapping\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 31,
++      "name": "payable",
++      "regex": "\\bpayable\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 32,
++      "name": "modifier_def",
++      "regex": "\\bmodifier\\s+\\w+",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 33,
++      "name": "event_emit",
++      "regex": "\\bemit\\s+\\w+",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 34,
++      "name": "assembly",
++      "regex": "\\bassembly\\s*\\{",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 35,
++      "name": "balance_read",
++      "regex": "\\.balance\\b",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 36,
++      "name": "approve",
++      "regex": "\\bapprove\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    },
++    {
++      "index": 37,
++      "name": "transfer_from",
++      "regex": "\\btransferFrom\\s*\\(",
++      "flags": "",
++      "value": "100 * regex match count / max(1, nonblank scanned lines)"
++    }
++  ],
++  "summary_features": [
++    {
++      "index": 38,
++      "name": "call_before_write",
++      "value": "100 * count of lexical function segments containing value-call then mapping assignment / nonblank scanned lines; not AST or flow analysis"
++    },
++    {
++      "index": 39,
++      "name": "solc_version",
++      "value": "first active pragma major + minor/100, strings masked; missing/unrecognized => 0"
++    },
++    {
++      "index": 40,
++      "name": "pre_08",
++      "value": "1 iff recognized active pragma version < .08, else 0"
++    },
++    {
++      "index": 41,
++      "name": "loc",
++      "value": "log1p(max(1, nonblank lines after corrected comment scanning))"
++    },
++    {
++      "index": 42,
++      "name": "n_functions",
++      "value": "log1p(word-boundary function count after corrected scanning; literals retained)"
++    }
++  ],
++  "token_regex": "[A-Za-z_][A-Za-z0-9_]*|0x[0-9a-fA-F]+|\\d+|==|!=|<=|>=|&&|\\|\\||\\+\\+|--|\\+=|-=|\\*=|/=|[{}()\\[\\];,.=<>+\\-*/%!&|^~?:]",
++  "normalization_keep": [
++    "SafeMath",
++    "abi",
++    "abstract",
++    "add",
++    "address",
++    "anonymous",
++    "assembly",
++    "assert",
++    "balance",
++    "block",
++    "blockhash",
++    "bool",
++    "break",
++    "byte",
++    "bytes",
++    "bytes32",
++    "bytes4",
++    "call",
++    "callcode",
++    "calldata",
++    "catch",
++    "coinbase",
++    "constant",
++    "constructor",
++    "continue",
++    "contract",
++    "data",
++    "days",
++    "decode",
++    "delegatecall",
++    "delete",
++    "difficulty",
++    "div",
++    "do",
++    "ecrecover",
++    "else",
++    "emit",
++    "encode",
++    "encodePacked",
++    "encodeWithSelector",
++    "encodeWithSignature",
++    "enum",
++    "ether",
++    "event",
++    "external",
++    "fallback",
++    "false",
++    "finney",
++    "for",
++    "function",
++    "gas",
++    "gasleft",
++    "gaslimit",
++    "gasprice",
++    "gwei",
++    "hours",
++    "if",
++    "immutable",
++    "indexed",
++    "int",
++    "int256",
++    "interface",
++    "internal",
++    "is",
++    "keccak256",
++    "length",
++    "library",
++    "mapping",
++    "memory",
++    "minutes",
++    "mod",
++    "modifier",
++    "msg",
++    "mul",
++    "new",
++    "now",
++    "number",
++    "onlyOwner",
++    "origin",
++    "override",
++    "owner",
++    "payable",
++    "pop",
++    "pragma",
++    "private",
++    "public",
++    "pure",
++    "push",
++    "receive",
++    "require",
++    "return",
++    "returns",
++    "revert",
++    "seconds",
++    "selfdestruct",
++    "send",
++    "sender",
++    "sha256",
++    "sha3",
++    "sig",
++    "solidity",
++    "staticcall",
++    "storage",
++    "string",
++    "struct",
++    "sub",
++    "suicide",
++    "super",
++    "szabo",
++    "this",
++    "throw",
++    "timestamp",
++    "transfer",
++    "true",
++    "try",
++    "tx",
++    "uint",
++    "uint128",
++    "uint16",
++    "uint256",
++    "uint32",
++    "uint64",
++    "uint8",
++    "unchecked",
++    "using",
++    "value",
++    "view",
++    "virtual",
++    "weeks",
++    "wei",
++    "while",
++    "years"
++  ],
++  "comment_policy": "single corrected string-aware scan; no legacy second strip",
++  "lexical_literal_policy": "contents retained with historical token regex",
++  "pattern_literal_policy": "contents retained for counts; masked only for active pragma version",
++  "pattern_line_policy": "comment blanking preserves physical newlines; comment-only lines excluded",
++  "limitations": [
++    "no AST or type analysis",
++    "quoted inert code may affect pattern counts",
++    "call-before-write function segmentation is lexical, not actual control flow",
++    "compiler acceptance and semantic vulnerability are not established"
++  ]
++}
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json b/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json
+@@ -0,0 +1,143 @@
++{
++  "schema": "external_B_adapter_plan_v1",
++  "date": "2026-10-26",
++  "status": "implemented_proposal_not_protocol_freeze",
++  "purpose": "final feature engineering, synthetic fit tests, and read-only real-source preprocessing coverage",
++  "external_scoring_allowed": false,
++  "actual_human_judgments": 0,
++  "real_training_fit_allowed_in_coverage_command": false,
++  "methods": {
++    "raw_tfidf_lr": {
++      "tfidf": {
++        "token_pattern": "\\S+",
++        "ngram_range": [
++          1,
++          3
++        ],
++        "min_df": 2,
++        "max_features": 50000,
++        "sublinear_tf": true,
++        "lowercase": false
++      },
++      "scaler": {
++        "with_mean": false
++      },
++      "estimator": {
++        "C": 1,
++        "max_iter": 3000,
++        "class_weight": "balanced",
++        "solver": "lbfgs",
++        "tol": 0.0001,
++        "random_state": 0
++      },
++      "seeds": [
++        0
++      ]
++    },
++    "normalized_tfidf_lr": {
++      "same_as": "raw_tfidf_lr",
++      "representation": "string-aware scanner then historical identifier/number normalization",
++      "seeds": [
++        0
++      ]
++    },
++    "pattern_rf": {
++      "n_estimators": 500,
++      "class_weight": "balanced_subsample",
++      "min_samples_leaf": 1,
++      "n_jobs": 4,
++      "seeds": [
++        0,
++        1,
++        2,
++        3,
++        4
++      ]
++    },
++    "pattern_lgbm": {
++      "n_estimators": 400,
++      "learning_rate": 0.05,
++      "num_leaves": 31,
++      "subsample": 0.8,
++      "subsample_freq": 1,
++      "colsample_bytree": 0.8,
++      "class_weight": "balanced",
++      "n_jobs": 4,
++      "seeds": [
++        0,
++        1,
++        2,
++        3,
++        4
++      ]
++    }
++  },
++  "tfidf_effective_parameters": {
++    "analyzer": "word",
++    "binary": false,
++    "decode_error": "strict",
++    "dtype": "numpy.float64",
++    "encoding": "utf-8",
++    "input": "content",
++    "lowercase": false,
++    "max_df": 1.0,
++    "max_features": 50000,
++    "min_df": 2,
++    "ngram_range": [
++      1,
++      3
++    ],
++    "norm": "l2",
++    "preprocessor": null,
++    "smooth_idf": true,
++    "stop_words": null,
++    "strip_accents": null,
++    "sublinear_tf": true,
++    "token_pattern": "\\S+",
++    "tokenizer": null,
++    "use_idf": true,
++    "vocabulary": null
++  },
++  "sparse_scaler_effective_parameters": {
++    "copy": true,
++    "with_mean": false,
++    "with_std": true
++  },
++  "pattern_model_scaler": "none; fixed43 float32 features as historical tree-model inputs",
++  "fit_policy": "one fit on explicit training-role manifest records only; transform never mutates vocabulary,idf or scaler; duplicate external/train identity rejected",
++  "failed_input_policy": "invalid training preprocessing aborts fit; external failed rows retain coverage/status with no matrix row; zero-vocabulary vectors flagged feature_ready=false, never synthetic safe scores",
++  "pattern_definition_policy": "38 unchanged historical regexes plus5 summary features; corrected comment scan exactly once, physical line boundaries preserved; literal contents retained for counts, masked only for active pragma version",
++  "source_sha256": {
++    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
++    "papers/security_evaluation/revision1/external_protocol/adapters_v1/check_coverage.py": "4dba03f29e03f787e3b474d4417aaf06e7048c0a667e75282aee4caa9343d204",
++    "papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
++    "papers/security_evaluation/revision1/external_protocol/adapters_v1/test_adapters.py": "afe8d1c4d09e6e8e52d75b9570b60b8c18c3e2ee2b91c7c6ea18f8593cb97d38",
++    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
++    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
++    "papers/security_evaluation/revision1/external_protocol/adapters_v1/conftest.py": "ab60cee00c6b5805354d363869468ae7fd5a6e9890e0d995d769a6f846c245d5"
++  },
++  "input_sha256": {
++    "papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6",
++    "papers/security_evaluation/revision1/external_protocol/packet_probability_20261025_v1/packet_manifest.json": "9d2ab1a17afff716cb2abbc4100b47a66c8df1021eb4abbcec6a878dc1f694c7",
++    "papers/security_evaluation/revision1/external_protocol/packet_probability_20261025_v1/public_file_hashes.json": "b65b31e61ee90e0441126f2f1682c2fd24a0bf447ce80864cdde2cb3dc635dbc",
++    "papers/security_evaluation/revision1/external_protocol/packet_probability_20261025_v1/training_manifest.csv": "6f6e6d6ec0b4af217bd417e0bc86cd45fb956c53d2fd94ff38d4b18534599b83",
++    "papers/security_evaluation/revision1/external_protocol/packet_probability_20261025_v1/external_cohort_manifest.csv": "2679b9d6c098f489345a3bcd74c79694ea5e27e5e034f98f54e0367e2f0e331f"
++  },
++  "environment_before_coverage": {
++    "python": "3.12.14",
++    "packages": {
++      "numpy": "2.3.5",
++      "pandas": "2.2.3",
++      "scipy": "1.17.0",
++      "scikit-learn": "1.8.0",
++      "pytest": "8.4.2"
++    }
++  },
++  "additional_conditions": "existing human, semantic, toolchain, weighted-performance and prospective-freeze gates remain closed; this plan does not authorize scoring",
++  "post_coverage_api_amendment": "api_amendment_after_coverage.json",
++  "coverage_lineage": {
++    "original_coverage_plan": "coverage_20261026_v1/plan_before_preprocessing.json",
++    "original_coverage_plan_sha256": "a24dbae53ec17120a876c9e919130e655803e6d13450e32dfa85534bd868f6ec",
++    "pure_representation_functions_unchanged": true
++  }
++}
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/api_amendment_after_coverage.json b/papers/security_evaluation/revision1/external_protocol/adapters_v1/api_amendment_after_coverage.json
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/api_amendment_after_coverage.json
+@@ -0,0 +1,26 @@
++{
++  "schema": "external_B_adapter_api_amendment_v1",
++  "date": "2026-10-26",
++  "trigger": "independent engineering review before protocol freeze",
++  "changes": [
++    "Pattern43.fit_transform_training now refuses invalid or external-role training records; no fitted parameters",
++    "train-role TFIDF transforms require known fitted identity and unchanged source hash",
++    "direct unittest entrypoint moved after all synthetic test classes",
++    "Local pytest collection excludes archived test-source copies to avoid duplicate module imports"
++  ],
++  "original_coverage_outputs_preserved": true,
++  "original_plan_sha256": "a24dbae53ec17120a876c9e919130e655803e6d13450e32dfa85534bd868f6ec",
++  "current_plan_sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
++  "original_adapter_sha256": "7955d1e0b8177c99a6ebeadb357465c24016bbcfa3c68bbc685aadbbe62a8806",
++  "current_adapter_sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
++  "unchanged_representation_function_ast_sha256": {
++    "mask_literal_contents": "b0caf6c49f1bdaef8e4c5b755cb82d0ee070b63a847d314316acc4be8a2a363d",
++    "pattern_from_scanned": "bc4726b986485a91df1068434c71e68c9d3613fb0e26396746986bdb0daddfeb",
++    "prepare": "2d7de0cc3aa7db1c27e1aff6d132a3b288320eaaebce9343f74340c51ccc4336",
++    "feature_definitions": "8245c2e7dd55f00eab747e7fd357b48c64be55efa3a774a0faad3e02cbbcc145"
++  },
++  "additional_real_source_pass_needed": false,
++  "reason_no_repeat": "Only training/API provenance guards changed; actual preprocessing functions/scanner/regex definitions are unchanged and their original full-source coverage is preserved",
++  "real_fits_or_predictions": 0,
++  "protocol_freeze_performed": false
++}
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/README.md b/papers/security_evaluation/revision1/external_protocol/adapters_v1/README.md
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/README.md
+@@ -0,0 +1,48 @@
++# B feature adapters, version 1
++
++This directory completes the representation-adapter proposal for the four methods in the existing B draft. It does not freeze or alter that draft, authorize external scoring, establish semantic class mappings, or supply human assessments. All fitting tests use synthetic strings. Real files are used only for read-only preprocessing and hash/coverage checks.
++
++## API and fitted-state boundary
++
++`SourceRecord(sample_id, role, source)` requires a unique string identity, an explicit `train` or `external` role and source bytes/text. `load_verified_records` in `check_coverage.py` constructs these records from the fixed public 691-training and 1,998-external manifests, checking membership, component exclusion, source byte hashes and identities. The coverage command also verifies the four pinned clean upstream repositories. No private annotation key, proxy label, human response or model score is opened.
++
++`adapter_for_method` returns the following unfitted objects:
++
++| Declared B method | Representation adapter | Fitted preprocessing |
++|---|---|---|
++| `raw_tfidf_lr` | `TrainOnlyTfidf('raw')` | Training-only vocabulary/IDF, then sparse StandardScaler |
++| `normalized_tfidf_lr` | `TrainOnlyTfidf('normalized')` | Training-only vocabulary/IDF, then sparse StandardScaler |
++| `pattern_rf` | `Pattern43()` | None; fixed 43 float32 features |
++| `pattern_lgbm` | `Pattern43()` | None; same fixed 43 features |
++
++For TF-IDF, `fit_transform_training` accepts only training-role records and permits one successful fit per object. Pattern43 exposes the same training entrypoint as a strict cohort-validation/extraction wrapper, without fitting parameters. Any invalid training input or unusable training vocabulary aborts; it never silently excludes a training row. `transform` checks that external identities do not overlap training identities and applies only the saved vocabulary/IDF/scaler. A digest covers training IDs/source hashes, vocabulary, IDF and all scaler arrays; each transform verifies that this state is unchanged. Transforming a train-role record also requires its identity and source hash to match the fitted training provenance. Source-role checks cannot prevent a caller from deliberately mislabelling an external file as training, so the verified manifest loader is part of the input contract.
++
++The lexical settings are the historical token regex, whitespace-token TF-IDF with 1–3 grams, min_df=2, max_features=50,000, sublinear_tf=True and lowercase=False, followed by StandardScaler(with_mean=False). `adapter_plan.json` records every effective sklearn preprocessing parameter, package version and the unchanged four model configurations from the B draft. No classifier is created or fitted by this adapter module. Model configuration inclusion records the proposal; it is not an execution permission.
++
++## Exact lexical and pattern definitions
++
++`feature_definitions.json` records all 43 names, exact regular expressions/order, normalizers, summary formulas, token regex and normalization KEEP set. Both lexical representations invoke the corrected string-aware comment scanner exactly once. Raw preserves historical tokens; normalized applies the same historical identifier/number rules. Literal contents remain tokenized, as specified by the corrected scanner's existing scope.
++
++The pattern adapter uses the exact historical 38 regular expressions plus five summary formulas: call_before_write, solc_version, pre_08, log1p(nonblank scanned lines), and log1p(function word count). It implements these directly on the scanned text and never calls a historical helper that strips comments again. Otherwise a comment-like sequence within a quoted string could reintroduce the known bug. Physical line boundaries are preserved; comment-only lines do not enter the denominator.
++
++Pattern counts deliberately retain literal contents, keeping their declared lexical-heuristic meaning. Thus inert quoted code can contribute matches. Only the pragma summary masks quoted strings, so a quoted `pragma solidity` does not become an active compiler version. Missing/unrecognized active pragma keeps the historical numeric fallback (version=0, pre_08=0), with a separate coverage flag. This is not a Solidity parser; function segmentation in call_before_write is lexical and may span constructs beyond a real function body. No count establishes a vulnerability. Corrected comments, retained physical lines and active pragma handling are explicit preprocessing changes, so full numerical equivalence to the old buggy adapter is not claimed.
++
++## Errors and coverage
++
++Every input has a coverage row. Invalid UTF-8, unfinished strings/comments and empty token streams are explicit preprocessing failures. Valid matrix rows carry their sample IDs and original matrix-row mapping; failed rows have no synthetic feature vector. A post-vocabulary all-zero external row is retained with `representation_status='zero_vocabulary_vector'` and `feature_ready=false`; a future scorer must not invent a safe prediction for it. An empty/entirely failed external batch returns a 0×V matrix and its complete error coverage. Models are never invoked by these operations.
++
++`coverage_20261026_v1` records a single real-input preprocessing pass under its saved plan and copied code. A subsequent independent review requested stricter pattern-training and training-identity API guards. These are recorded in `api_amendment_after_coverage.json`; the original coverage outputs and snapshot are preserved, while `adapter_plan.json` and `current_source_snapshot` describe the final API. AST hashes verify that every pure representation function is unchanged, so no second real-source pass was needed. That command does not fit even a training vocabulary. Consequently it can establish source/token/pattern availability, but cannot establish final TF-IDF nonzero-vector coverage, compiler/tool success, model scores, accuracy or runtime. Those require the later authorized execution stage.
++
++## Tests and recovery
++
++Run the synthetic adapter and input-guard tests:
++
++```bash
++.venv/bin/python -m pytest -q papers/security_evaluation/revision1/external_protocol/adapters_v1
++```
++
++Tests cover clean historical formulas, comment-order failures, quoted comment markers, active versus quoted pragmas, declared literal-sensitive counts, line denominators, raw/normalized tokens, errors and identity mapping, training-only vocabulary/IDF/scaler, state immutability, refit/overlap refusal, empty/OOV handling and manifest hash mismatches. There are no real human labels or external model fits in the fixtures. The final suite contains 24 tests, including the independent-review guard amendments.
++
++`private_restoration_receipt.json` records exact restoration of the original 180-case coordinator key, 180 renamed source copies (170 distinct files), training proxy key and separate 17 identity-evidence cases. The original public packet is unchanged. All deterministic regenerated public artifacts, including packet_manifest.json, match original hashes; a newly generated plan timestamp exists only in an ignored reproduction directory. Review working forms remain blank, and the 17 identity cases remain quarantined. Private materials must remain ignored and must not be published.
++
++The original B freeze/score gates remain unchanged. Independent engineering review, weighted-performance tooling, verified toolchain artifacts and their final prospective integration still need assessment at the protocol level. Named independent specialists, human protocol/class-mapping sign-off, a prospective freeze, sealed reviews and adjudication are not completed by these adapters.
+diff --git a/papers/security_evaluation/revision1/external_protocol/adapters_v1/private_restoration_receipt.json b/papers/security_evaluation/revision1/external_protocol/adapters_v1/private_restoration_receipt.json
+new file mode 100644
+--- /dev/null
++++ b/papers/security_evaluation/revision1/external_protocol/adapters_v1/private_restoration_receipt.json
+@@ -0,0 +1,29 @@
++{
++  "schema": "external_B_private_packet_restoration_v1",
++  "date": "2026-10-26",
++  "current_repository_head": "e011968",
++  "original_public_packet_unchanged": true,
++  "private_sampling_key_sha256": "4d83a0a5e0da36490807b0612b1c9e95ac18bc0891aa150d33ae09eb60b9dcc5",
++  "sampling_key_matches_frozen": true,
++  "source_copies_verified": 180,
++  "unique_source_files": 170,
++  "public_reproduction_compared": {
++    "adjudication_blank.csv": true,
++    "executed_build_packet.py": true,
++    "external_cohort_manifest.csv": true,
++    "identity_reviewer_1_blank.csv": true,
++    "identity_reviewer_2_blank.csv": true,
++    "packet_manifest.json": true,
++    "reviewer_1_blank.csv": true,
++    "reviewer_2_blank.csv": true,
++    "stratum_allocation.csv": true,
++    "training_exclusion_manifest.csv": true,
++    "training_manifest.csv": true
++  },
++  "sampling_plan_timestamp_difference": "new restoration run only; original preselection plan unchanged",
++  "identity_evidence_all17_exact_match": true,
++  "human_judgments_generated": 0,
++  "model_fits_or_scores": 0,
++  "private_root": "data/derived/revision1_external_review_probability_20261025_v1",
++  "private_data_remains_ignored": true
++}

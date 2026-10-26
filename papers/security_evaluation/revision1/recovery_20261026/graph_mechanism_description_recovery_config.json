@@ -1,0 +1,65 @@
+{
+  "schema": "graph_artifact_recovery_v1",
+  "created_utc": "2026-10-26T08:15:30.342044+00:00",
+  "stage": "description",
+  "scope": [
+    "run unchanged describe_mechanism.py against original immutable tables; all 24131 raw-source hashes checked by original implementation"
+  ],
+  "source_hashes": {
+    "papers/security_evaluation/revision1/recovery_20261026/recover_graph_artifacts.py": "b959969f2e66dcbe747c88069e1fda3fe8e483b2555693ab0ca50c0cc7c4e4dd",
+    "papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+    "papers/security_evaluation/revision1/graph_mechanism/describe_mechanism.py": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff",
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  "checked_inputs": [
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/component_curves.csv",
+      "sha256": "c72b5ac20e41e47a22478b8af701431078ef34353644b7c65dcf9c8633cce4a2",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/fixed_test_feasibility.csv",
+      "sha256": "ea735cd45bcdf7de84271e9937e5d5124dd71060f6a951278be8dd1bd923af91",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/articulation_projects.csv",
+      "sha256": "bc893050059a7d9567d4676777a115a87b649ad47cf10cb4a485c8e44dd1fca2",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/bridges.csv",
+      "sha256": "f1a9ef14189bfbf534a4637a2c7b856da56649eef51013c8850eab4294c599c2",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_graph_summary.csv",
+      "sha256": "ccace1a7e28f9a222c2f526816f4d4b103947c74c1264edbdd80c341d7fc2e56",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv",
+      "sha256": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/describe_mechanism.py",
+      "sha256": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/normalization_audit/solidity_scanner.py",
+      "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+      "match": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "restoration_policy": "only a previously missing path listed in publication_omissions.json, matching old SHA256 and Git blob SHA1; never overwrite an existing file",
+  "no_model_scoring": true,
+  "no_network_or_upload": true
+}

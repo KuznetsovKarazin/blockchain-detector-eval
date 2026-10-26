@@ -1,0 +1,12 @@
+{
+  "schema": "author_private_recovery_bundle_receipt_v1",
+  "filename": "Article_1_Derived_Recovery_2026-10-26.zip",
+  "bytes": 12907084,
+  "sha256": "9bc454eeb4a124145cd847703aa55cf69957e9dea902f9d9427c715e1da7a723",
+  "files": 42,
+  "byte_exact_gzip_paths": 23,
+  "new_canonical_npz_paths": 6,
+  "public_deposit": false,
+  "roundtrip_verified": true,
+  "private_delivery_saved": true
+}

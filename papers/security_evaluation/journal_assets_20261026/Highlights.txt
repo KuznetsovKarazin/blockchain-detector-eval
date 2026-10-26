@@ -1,0 +1,5 @@
+- Uncapped sources leave 13 and 10 training files for two fixed tests.
+- Normalized project–clone closure connects 95.95% of DAppSCAN at Jaccard 0.8.
+- Raw-byte and normalized identity yield different dependency components.
+- Training selection changes proxy-label scores on a reused historical test.
+- External auditing reveals overlap and unresolved annotation mappings.

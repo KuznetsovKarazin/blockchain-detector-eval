@@ -1,0 +1,442 @@
+{
+  "schema": "canonical_representation_reproduction_package_v1",
+  "status": "complete_verified_local_package",
+  "packaging_config_sha256": "f715cfd1f34a09223bbef89a86ea69534f35178746d6805e503534775357054d",
+  "entries": [
+    {
+      "variant": "corrected_file_normalized",
+      "nodes": 24131,
+      "saved_pairs": 2039310,
+      "original_missing_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/lexical_edges.npz",
+      "original_lost_npz_sha256": "26b4a0e22b8ce6b46343316efbff212a3d8a4ba9be4c92f46758861a0991c106",
+      "original_lost_git_blob_sha1": "37eb9474266c022b094983078ec919d6d652614a",
+      "original_frozen_config_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/config_before_outputs.json",
+      "original_frozen_config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+      "fresh_replay_path": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_normalized/lexical_edges.npz",
+      "fresh_replay_npz_sha256": "fe5df2449e7bf9ea43365dffb64425f8eeb2e967366ecd1829d690071e06872d",
+      "new_canonical_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_normalized/lexical_edges.npz",
+      "new_canonical_npz_sha256": "1fd6cc2aeb7749864ab21a60147f147022309fef0e8dceb41b5ee7ceebc84f5e",
+      "new_canonical_array_bytes_sha256": "ff5b35ffd52b6df7b815be5a5ea91991cf647fd8699f96a7838581a047776e06",
+      "byte_size": 3071088,
+      "duplicates": 0,
+      "sorting": "strictly increasing left*24131+right",
+      "full_unordered_row_identity_with_fresh_replay": true,
+      "node_vector_identical_to_fresh_replay": true,
+      "original_full_unordered_edge_identity_established": false,
+      "identical_reported_result_lineage": [
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/training_feasibility.csv",
+          "sha256": "cb37382ba2720b4048a6f495d747efdc008810097dfe19adbe503b42e2897750"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/memberships.csv.gz",
+          "sha256": "e57d3ed9ca2595284c594d479f8259daef39dbbeae5d937a9c354051e7480d05"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/edge_counts.csv",
+          "sha256": "441b3c94cde45c208c62cd620d481c5949e84f4b0636b3dbd91e17514cf5e49d"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/component_concentration.csv",
+          "sha256": "5c574ab95d04e2283e58ba5166666738c45254d9417fe326a725596c3cb0b471"
+        }
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "<i4",
+          "shape": [
+            2039310
+          ],
+          "raw_little_endian_sha256": "bc7f7df4c4958e6ae41bfe13fd346355f194065f19a2f2fb4d64fb5ef7a55556"
+        },
+        "right": {
+          "dtype": "<i4",
+          "shape": [
+            2039310
+          ],
+          "raw_little_endian_sha256": "8765cb885c732859478ae08de6f4b6a7a5065d1f4a93723179fb1e754b9a36c8"
+        },
+        "intersection": {
+          "dtype": "<i4",
+          "shape": [
+            2039310
+          ],
+          "raw_little_endian_sha256": "45182970bf551d740dee375a0a1477340c558df2c55abfd28df9f32092b35b67"
+        },
+        "node_shingle_sizes": {
+          "dtype": "<i4",
+          "shape": [
+            24131
+          ],
+          "raw_little_endian_sha256": "c9fca4eef788d48fda16f9a0e4d23085247b95496082e7a0c27cdb9404ecc64a"
+        }
+      }
+    },
+    {
+      "variant": "corrected_file_preserved",
+      "nodes": 24131,
+      "saved_pairs": 278628,
+      "original_missing_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/lexical_edges.npz",
+      "original_lost_npz_sha256": "3235bfee86cb33670ebb19c6d2a56c71421a8283be97e758c8e016a9a4cf9294",
+      "original_lost_git_blob_sha1": "d935804eae92520f0eca0554c9e672f40c57738e",
+      "original_frozen_config_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/config_before_outputs.json",
+      "original_frozen_config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+      "fresh_replay_path": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_preserved/lexical_edges.npz",
+      "fresh_replay_npz_sha256": "6945afd38daf139410d46791389d07f83b15533b6bd448d462d42aaf9d720f59",
+      "new_canonical_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_preserved/lexical_edges.npz",
+      "new_canonical_npz_sha256": "144d2593537987453efdb1f32709cd282c68d6920faa3c8dee934256b3babc49",
+      "new_canonical_array_bytes_sha256": "73380adc0bdcdc74a871c155c49b874ca5c02d0b368a9c28f1f96642b817d04b",
+      "byte_size": 421109,
+      "duplicates": 0,
+      "sorting": "strictly increasing left*24131+right",
+      "full_unordered_row_identity_with_fresh_replay": true,
+      "node_vector_identical_to_fresh_replay": true,
+      "original_full_unordered_edge_identity_established": false,
+      "identical_reported_result_lineage": [
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/training_feasibility.csv",
+          "sha256": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/memberships.csv.gz",
+          "sha256": "d65f57808d898002ba561b8ce776adaf47048633467b120c87d4bde1a7f963f4"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/edge_counts.csv",
+          "sha256": "1f94dec956e9b83481e6512a54b1cd5499b09630b120f8a8d3c1bc1511d3a091"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/component_concentration.csv",
+          "sha256": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb"
+        }
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "<i4",
+          "shape": [
+            278628
+          ],
+          "raw_little_endian_sha256": "8c70d0ecfe39e2791284c1b099a72be92aa91000a1387394fa736362603ed34b"
+        },
+        "right": {
+          "dtype": "<i4",
+          "shape": [
+            278628
+          ],
+          "raw_little_endian_sha256": "5fc17482f46e8fa7e4de6fff98040b08e4fedbba85ebeba68cc409361849ee2d"
+        },
+        "intersection": {
+          "dtype": "<i4",
+          "shape": [
+            278628
+          ],
+          "raw_little_endian_sha256": "e4f418661d3c07b8ea0363f4c40eebe377f95924f1e3655ba0aeaa2b6fa45bf7"
+        },
+        "node_shingle_sizes": {
+          "dtype": "<i4",
+          "shape": [
+            24131
+          ],
+          "raw_little_endian_sha256": "7ec1e4faaef429bd9a619e06d5abfb392c33942166ae2164e70c2f0dd2e57cc2"
+        }
+      }
+    },
+    {
+      "variant": "library_interface_masked_normalized",
+      "nodes": 24131,
+      "saved_pairs": 1021065,
+      "original_missing_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/lexical_edges.npz",
+      "original_lost_npz_sha256": "f7f45c3709e0fec35a0e6bcd9543820fa27ef6941dee9e455b79d3f9ffdc4c83",
+      "original_lost_git_blob_sha1": "064d9b2553436702849e4b569434d32d354989bb",
+      "original_frozen_config_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/config_before_outputs.json",
+      "original_frozen_config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+      "fresh_replay_path": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_normalized/lexical_edges.npz",
+      "fresh_replay_npz_sha256": "13b682ce2f0f5348fb214bea3cd38725e9cf42d37a0ae70530c38d57cbbc75d3",
+      "new_canonical_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_normalized/lexical_edges.npz",
+      "new_canonical_npz_sha256": "0f825c64d2d8603f570790f81a2347afbb954624c75d6d73635b5655f05743aa",
+      "new_canonical_array_bytes_sha256": "8e6a15f902cdd55491ffbaff412ba8bc2d0a556a4f643e8dd383b3da11349392",
+      "byte_size": 1206079,
+      "duplicates": 0,
+      "sorting": "strictly increasing left*24131+right",
+      "full_unordered_row_identity_with_fresh_replay": true,
+      "node_vector_identical_to_fresh_replay": true,
+      "original_full_unordered_edge_identity_established": false,
+      "identical_reported_result_lineage": [
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/training_feasibility.csv",
+          "sha256": "c9a87d4b3a6408f5fcae5f1d86000d96bc2a1d1853751d0753518ee4f244d8c5"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/memberships.csv.gz",
+          "sha256": "4adcd3daa7dda64e1876faf31ef6857bbf9d334792eca10d9717f6b1f5c190cf"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/edge_counts.csv",
+          "sha256": "6608e06f758a15f7816bb4799a691e323004ec76d1ee5a730d63d0438c51c37f"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/component_concentration.csv",
+          "sha256": "55de361798f826e6c70d831020ff95f553c48db0f0a4ce28754228c61f28d300"
+        }
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "<i4",
+          "shape": [
+            1021065
+          ],
+          "raw_little_endian_sha256": "5cba84699b2b0f5e7e0e217bd034f1fe558b4f81ebb8efd9522cd02f0b10625e"
+        },
+        "right": {
+          "dtype": "<i4",
+          "shape": [
+            1021065
+          ],
+          "raw_little_endian_sha256": "cda7e4b785c6162b6d6dcb0086b4e6d54157a1db7bb21136832de0bbf1fa66d7"
+        },
+        "intersection": {
+          "dtype": "<i4",
+          "shape": [
+            1021065
+          ],
+          "raw_little_endian_sha256": "ded4f93d911f05c38fc1342d70ea031a41a26c1c310e51b407a2e2af4ea3fa86"
+        },
+        "node_shingle_sizes": {
+          "dtype": "<i4",
+          "shape": [
+            24131
+          ],
+          "raw_little_endian_sha256": "ac023658107e4c9929d2a873c33cca11c01afcd4043f11d2b4de98f703902aa9"
+        }
+      }
+    },
+    {
+      "variant": "library_interface_masked_preserved",
+      "nodes": 24131,
+      "saved_pairs": 158076,
+      "original_missing_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/lexical_edges.npz",
+      "original_lost_npz_sha256": "df69e1de52134cb0d7de111305c0a10b82133afefb552586605654e31792847a",
+      "original_lost_git_blob_sha1": "731cea30bd16363d15c1b45a9cee21ec53a87222",
+      "original_frozen_config_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/config_before_outputs.json",
+      "original_frozen_config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+      "fresh_replay_path": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_preserved/lexical_edges.npz",
+      "fresh_replay_npz_sha256": "ad3cc9c9cd899d3f00cf120c7bb0b39694fd097511f113b0e94d0d2637bb4cc3",
+      "new_canonical_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_preserved/lexical_edges.npz",
+      "new_canonical_npz_sha256": "5b352378d895f6527ad1ad67e4a30cfaf4d83b2d2ce0e3e19e436b1c468e4342",
+      "new_canonical_array_bytes_sha256": "24388b1838715cb7168c5db06a3461d0633b249a640174fb0b0ac4205ebb59b5",
+      "byte_size": 252195,
+      "duplicates": 0,
+      "sorting": "strictly increasing left*24131+right",
+      "full_unordered_row_identity_with_fresh_replay": true,
+      "node_vector_identical_to_fresh_replay": true,
+      "original_full_unordered_edge_identity_established": false,
+      "identical_reported_result_lineage": [
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/training_feasibility.csv",
+          "sha256": "ef65942256d277e063170525744ef8ceb99f4b22775b15721b332581d168a2c2"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/memberships.csv.gz",
+          "sha256": "9da0b1ed4710b7abf4c65cac4c6f2332fdc861cb89b830eae1dc95648c632eff"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/edge_counts.csv",
+          "sha256": "fd4e8028fc3f986823dfc798cb6e48321392dc6b037cd0acc778a6aa82789adb"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/component_concentration.csv",
+          "sha256": "35126c1aa8384d4812842666be006f3d5c73e9e961d482498ea0e28d9a6f3e04"
+        }
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "<i4",
+          "shape": [
+            158076
+          ],
+          "raw_little_endian_sha256": "3b91ea1415b760fcee4b028ef8f1b6dda0da35bd78f210bf52250dd7d6a78cf2"
+        },
+        "right": {
+          "dtype": "<i4",
+          "shape": [
+            158076
+          ],
+          "raw_little_endian_sha256": "8ec7b3c3b63c094bc1e603955c2e28aa6803e64a1e82135c12bce92eef04610e"
+        },
+        "intersection": {
+          "dtype": "<i4",
+          "shape": [
+            158076
+          ],
+          "raw_little_endian_sha256": "59094e3cec0515bb3aa24ad8570ad796e3a9a12954f6692efad6222be6ca4367"
+        },
+        "node_shingle_sizes": {
+          "dtype": "<i4",
+          "shape": [
+            24131
+          ],
+          "raw_little_endian_sha256": "5c615770c929bb6f981a5e2faac935a201bdc854647ef43a25dac5397eeb7005"
+        }
+      }
+    },
+    {
+      "variant": "library_interface_segmented_normalized",
+      "nodes": 24131,
+      "saved_pairs": 966320,
+      "original_missing_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/lexical_edges.npz",
+      "original_lost_npz_sha256": "5a63afb5d49cdc7e759ac3d7ece1365481c3672b41e18f5702260f331d9ae670",
+      "original_lost_git_blob_sha1": "b625098536266526849a04c2ebffea486d186ef5",
+      "original_frozen_config_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/config_before_outputs.json",
+      "original_frozen_config_sha256": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a",
+      "fresh_replay_path": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_normalized/lexical_edges.npz",
+      "fresh_replay_npz_sha256": "7cceafefcd48f01ad437885c9802234c9ee5fd783c851aeb80c45eca29b006b5",
+      "new_canonical_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_segmented_normalized/lexical_edges.npz",
+      "new_canonical_npz_sha256": "dfffa4635f973d57fbc8c8756d3130e8a1c78c1b6162acd4443a51c241dc1418",
+      "new_canonical_array_bytes_sha256": "301653fc3134d7149887cdb2066ac7a0e9fe701fd38b965d8b7b749770184156",
+      "byte_size": 1154046,
+      "duplicates": 0,
+      "sorting": "strictly increasing left*24131+right",
+      "full_unordered_row_identity_with_fresh_replay": true,
+      "node_vector_identical_to_fresh_replay": true,
+      "original_full_unordered_edge_identity_established": false,
+      "identical_reported_result_lineage": [
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/training_feasibility.csv",
+          "sha256": "4c55774cdda6703c7a57a7553110f6121eb1275c6f18b268227e33f718a437d6"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/memberships.csv.gz",
+          "sha256": "75d47a3974ab16ba80100c1e042e8952fb1f9bfd88f45a0f93b005cef422e7c5"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/edge_changes_from_concatenated.csv",
+          "sha256": "6f52c474395ccd72d703f8d5926a85a4e7be1ea602658b7ba04f30451ff815fa"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/edge_counts.csv",
+          "sha256": "e79c0ed511c2de752366676bdf82c886d2b09b3250228fa0f78c047af2a0dba2"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/component_concentration.csv",
+          "sha256": "0680f3ab14f4a5b2fefb1f9a248166cdd0db32707cdb7b080df3ed8cd7d2c571"
+        }
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "<i4",
+          "shape": [
+            966320
+          ],
+          "raw_little_endian_sha256": "8b1ee70e2317a0400bbebea97e4711ef7f9cd6a58244750de57fbf6ccdcadd02"
+        },
+        "right": {
+          "dtype": "<i4",
+          "shape": [
+            966320
+          ],
+          "raw_little_endian_sha256": "6e98812fbb0d615e3135f0d39fb50f15dc65c82f021a65275b3e9d258b90553b"
+        },
+        "intersection": {
+          "dtype": "<i4",
+          "shape": [
+            966320
+          ],
+          "raw_little_endian_sha256": "c663730c41efc20ecedc1437b268b5fb97e7323b24671be4bdcccc8b518a844d"
+        },
+        "node_shingle_sizes": {
+          "dtype": "<i4",
+          "shape": [
+            24131
+          ],
+          "raw_little_endian_sha256": "1dbea73c0be0decfac28c1d20b62307127c6a8d388c8f66a187444477ea901e9"
+        }
+      }
+    },
+    {
+      "variant": "library_interface_segmented_preserved",
+      "nodes": 24131,
+      "saved_pairs": 158381,
+      "original_missing_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/lexical_edges.npz",
+      "original_lost_npz_sha256": "7e9407838268752af34e65fd72c5e46f6a3565369b65e4e27922b10b2e700459",
+      "original_lost_git_blob_sha1": "a749cc26e8157437468b3f81ea1e8fcea3f2ac76",
+      "original_frozen_config_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/config_before_outputs.json",
+      "original_frozen_config_sha256": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a",
+      "fresh_replay_path": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_preserved/lexical_edges.npz",
+      "fresh_replay_npz_sha256": "ecd093b8253ca9fbd6e53d01c3b7388ae86b5ad7d0f580d3061e401a573f3d7d",
+      "new_canonical_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_segmented_preserved/lexical_edges.npz",
+      "new_canonical_npz_sha256": "87e6b65addc87aa8c0fa1eec9442c09d9f5712506c6ca1fa1120106430106534",
+      "new_canonical_array_bytes_sha256": "76a2d734e66ebdaecd73797d46e5468878497f348c515fd270a3a32944505959",
+      "byte_size": 252724,
+      "duplicates": 0,
+      "sorting": "strictly increasing left*24131+right",
+      "full_unordered_row_identity_with_fresh_replay": true,
+      "node_vector_identical_to_fresh_replay": true,
+      "original_full_unordered_edge_identity_established": false,
+      "identical_reported_result_lineage": [
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/training_feasibility.csv",
+          "sha256": "b958111e7e2e294c9a1f0a1d4150e3858dbdbf0758917f4f6106c3bb8b8cc446"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/memberships.csv.gz",
+          "sha256": "cf212589053ec987f2f5a0719d044a2737b07dc94d78019b0f9fd0551e014f4d"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/edge_changes_from_concatenated.csv",
+          "sha256": "3e4bd184f4f8efecaed2f1ce583dc2bf23aef0d2b1112e4e633156a4a8847de2"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/edge_counts.csv",
+          "sha256": "6384c5b0297ce0a7cea709024858f8dece7e0d28aa0813e152fa7badc9f7aaff"
+        },
+        {
+          "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/component_concentration.csv",
+          "sha256": "273c8b9acdb39db2cb33692181c3af0fbc5232ad6241026cb3434f3744b14898"
+        }
+      ],
+      "arrays": {
+        "left": {
+          "dtype": "<i4",
+          "shape": [
+            158381
+          ],
+          "raw_little_endian_sha256": "13cef9f824dc26d8695a4b977a056729c4ab50f2c478ccd3028a49e332bfe61e"
+        },
+        "right": {
+          "dtype": "<i4",
+          "shape": [
+            158381
+          ],
+          "raw_little_endian_sha256": "d710416d3edb823ef311db627115aeda644d3937436d6e876bb0ba3633eaa2b7"
+        },
+        "intersection": {
+          "dtype": "<i4",
+          "shape": [
+            158381
+          ],
+          "raw_little_endian_sha256": "be164cdf23322ef3061f418fe8eeccb3951371191eff04ea19c7637334075195"
+        },
+        "node_shingle_sizes": {
+          "dtype": "<i4",
+          "shape": [
+            24131
+          ],
+          "raw_little_endian_sha256": "d538e6decd71d5553c55ba400d4d68cee22de09a0b4b1701253dbe5e9567f247"
+        }
+      }
+    }
+  ],
+  "reported_component_partitions_preserved": 120,
+  "existing_result_csvs_byte_identical": 20,
+  "independent_validation": {
+    "union_find_primary_reconstructions": 12,
+    "literal_shingle_pair_checks": 600,
+    "receipt_path": "papers/security_evaluation/revision1/recovery_20261026/REPRESENTATION_INDEPENDENT_CHECK.json",
+    "receipt_sha256": "ed82dfc3049241beddde19ea59e7a2f9070ea20f15ab5cbf07d4fb1ac8e64761",
+    "transfer_to_sorted_archive": "Every complete row and node size is unchanged, so existing predicate checks apply"
+  },
+  "claim": "New independently verified computational reproduction; original complete unordered edge-list identity cannot be proved from surviving artifacts",
+  "no_model_scoring": true,
+  "no_upload": true,
+  "no_git_mutation": true
+}

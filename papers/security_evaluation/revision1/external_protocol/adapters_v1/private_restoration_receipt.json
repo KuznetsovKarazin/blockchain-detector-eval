@@ -1,0 +1,29 @@
+{
+  "schema": "external_B_private_packet_restoration_v1",
+  "date": "2026-10-26",
+  "current_repository_head": "e011968",
+  "original_public_packet_unchanged": true,
+  "private_sampling_key_sha256": "4d83a0a5e0da36490807b0612b1c9e95ac18bc0891aa150d33ae09eb60b9dcc5",
+  "sampling_key_matches_frozen": true,
+  "source_copies_verified": 180,
+  "unique_source_files": 170,
+  "public_reproduction_compared": {
+    "adjudication_blank.csv": true,
+    "executed_build_packet.py": true,
+    "external_cohort_manifest.csv": true,
+    "identity_reviewer_1_blank.csv": true,
+    "identity_reviewer_2_blank.csv": true,
+    "packet_manifest.json": true,
+    "reviewer_1_blank.csv": true,
+    "reviewer_2_blank.csv": true,
+    "stratum_allocation.csv": true,
+    "training_exclusion_manifest.csv": true,
+    "training_manifest.csv": true
+  },
+  "sampling_plan_timestamp_difference": "new restoration run only; original preselection plan unchanged",
+  "identity_evidence_all17_exact_match": true,
+  "human_judgments_generated": 0,
+  "model_fits_or_scores": 0,
+  "private_root": "data/derived/revision1_external_review_probability_20261025_v1",
+  "private_data_remains_ignored": true
+}

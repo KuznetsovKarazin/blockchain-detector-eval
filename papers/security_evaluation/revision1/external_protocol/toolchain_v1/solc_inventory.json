@@ -1,0 +1,716 @@
+{
+  "candidate_version_slots": 3900,
+  "compiler_executions_on_sources": 0,
+  "completed_utc": "2026-10-26T08:26:31.563913+00:00",
+  "documentation_url": "https://docs.soliditylang.org/en/latest/installing-solidity.html#static-binaries",
+  "download_plan_sha256": "36fb133c89d315fe18b52d9f5d4b5df10089d62e8b65c7092918b12a7ba47331",
+  "execution_scope": "--version only; no contract processing",
+  "installed_versions": 30,
+  "metadata_api_sha256": "c80e29e74307ea9a154f8eea15de027586513031a9a5d611ffd194e0c0ac0475",
+  "metadata_api_url": "https://api.github.com/repos/argotorg/solc-bin/commits/gh-pages",
+  "official_list_sha256": "b44c1d0e598ed0bcbf4ee49c86c5ae85b63718c1591689b02d12d7a11d45a2ac",
+  "official_list_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/list.json",
+  "official_repo": "https://github.com/argotorg/solc-bin",
+  "official_repo_commit": "c04c6cdc827bbdcc7bd65689fa76b63a238b223f",
+  "planned_rows": 2650,
+  "planner_sha256": "e6db64c3b1061ab86944b412c73743ba897cbbc710b77963398ca746a2fb5e38",
+  "platform": "linux-amd64",
+  "prepared_utc": "2026-10-26T08:25:39.934097+00:00",
+  "primary_mirror_observation": "https://binaries.soliditylang.org/linux-amd64/list.json returned HTTP403; used official repository linked by Solidity documentation",
+  "releases": [
+    {
+      "artifact_bytes": 4711240,
+      "artifact_sha256": "07f89753cdda28054bb6f159a21911716caeb43b3c7659a25f1f2d9dd17bc827",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.4.19+commit.c4cbbb05",
+      "keccak256_official": "0x7310233685fca42969a942384662203fe3150098c20a3285ed702f769873661b",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.4.19",
+      "long_version": "0.4.19+commit.c4cbbb05",
+      "official_path": "solc-linux-amd64-v0.4.19+commit.c4cbbb05",
+      "sha256": "07f89753cdda28054bb6f159a21911716caeb43b3c7659a25f1f2d9dd17bc827",
+      "version": "0.4.19",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.4.19",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:46.353764+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.19+commit.c4cbbb05.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 4789064,
+      "artifact_sha256": "905228505420cd31e6393e09ea685b87585b62c4339d3addc0a3049bebbc4332",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.4.21+commit.dfe3193c",
+      "keccak256_official": "0x18830ee60c27e630558ed4dc26543800ecd1189aab3d42f3ef0bcba9ced97a26",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.4.21",
+      "long_version": "0.4.21+commit.dfe3193c",
+      "official_path": "solc-linux-amd64-v0.4.21+commit.dfe3193c",
+      "sha256": "905228505420cd31e6393e09ea685b87585b62c4339d3addc0a3049bebbc4332",
+      "version": "0.4.21",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.4.21",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:46.579267+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.21+commit.dfe3193c.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 5026632,
+      "artifact_sha256": "665675b9e0431c2572d59d6a7112afbdc752732ea0ce9aecf1a1855f28e02a09",
+      "candidate_plan_slots": 6,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.4.24+commit.e67f0147",
+      "keccak256_official": "0x9dc72f961d7dbe7c3d3cc380955b994dd5fffdf4020d217cbe45d349d25aadb5",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.4.24",
+      "long_version": "0.4.24+commit.e67f0147",
+      "official_path": "solc-linux-amd64-v0.4.24+commit.e67f0147",
+      "sha256": "665675b9e0431c2572d59d6a7112afbdc752732ea0ce9aecf1a1855f28e02a09",
+      "version": "0.4.24",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.4.24",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:46.488620+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.24+commit.e67f0147.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 4973312,
+      "artifact_sha256": "c9b268750506b88fe71371100050e9dd1e7edcf8f69da34d1cd09557ecb24580",
+      "candidate_plan_slots": 15,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.4.25+commit.59dbf8f1",
+      "keccak256_official": "0x3daf486a85a9ed33b63c7e9f89e40f46c528340b3d096f3ccd84bce60a9d1d59",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.4.25",
+      "long_version": "0.4.25+commit.59dbf8f1",
+      "official_path": "solc-linux-amd64-v0.4.25+commit.59dbf8f1",
+      "sha256": "c9b268750506b88fe71371100050e9dd1e7edcf8f69da34d1cd09557ecb24580",
+      "version": "0.4.25",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.4.25",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:46.554071+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.25+commit.59dbf8f1.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 5235472,
+      "artifact_sha256": "5d577b3f7918dd735ab157e2f37a21d06c90469f13868359874f15184f2fa4d0",
+      "candidate_plan_slots": 2063,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.4.26+commit.4563c3fc",
+      "keccak256_official": "0x5ee9bf00d10e712f1d43b94df82a17c4a2382a622f41ef67757f83fcbb0a604c",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.4.26",
+      "long_version": "0.4.26+commit.4563c3fc",
+      "official_path": "solc-linux-amd64-v0.4.26+commit.4563c3fc",
+      "sha256": "5d577b3f7918dd735ab157e2f37a21d06c90469f13868359874f15184f2fa4d0",
+      "version": "0.4.26",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.4.26",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:52.642507+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.26+commit.4563c3fc.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 5055232,
+      "artifact_sha256": "c1bb15b520f5076aebd7aa9ef4ce5fa245b6f210a91cbd2064b9e383e6510e08",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.5.0+commit.1d4f565a",
+      "keccak256_official": "0x7189e393d88774aa4b82ea081f871fa50812c85eaa46f5555169dbcb6d0aff66",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.5.0",
+      "long_version": "0.5.0+commit.1d4f565a",
+      "official_path": "solc-linux-amd64-v0.5.0+commit.1d4f565a",
+      "sha256": "c1bb15b520f5076aebd7aa9ef4ce5fa245b6f210a91cbd2064b9e383e6510e08",
+      "version": "0.5.0",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.5.0",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:52.863441+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.5.0+commit.1d4f565a.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 5849856,
+      "artifact_sha256": "87146a7b284b1c9067a915930c0c6af7c99ff9dd1807e3680367fc03a59e83bf",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.5.2+commit.1df8f40c",
+      "keccak256_official": "0x636748ef7a5915f5ceacf3d4ae173b66deb129db22b1b6b6e2e502efe7a0e302",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.5.2",
+      "long_version": "0.5.2+commit.1df8f40c",
+      "official_path": "solc-linux-amd64-v0.5.2+commit.1df8f40c",
+      "sha256": "87146a7b284b1c9067a915930c0c6af7c99ff9dd1807e3680367fc03a59e83bf",
+      "version": "0.5.2",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.5.2",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:52.861659+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.5.2+commit.1df8f40c.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 6850368,
+      "artifact_sha256": "58fbe9bbb709277957fd12b922530f03cf558cf803b72333a2d76d54757885d1",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.5.8+commit.23d335f2",
+      "keccak256_official": "0xb389dda6ab00851f358e3cbc63225446ad25e040d41aa5f6d0e9652c091eb8f2",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.5.8",
+      "long_version": "0.5.8+commit.23d335f2",
+      "official_path": "solc-linux-amd64-v0.5.8+commit.23d335f2",
+      "sha256": "58fbe9bbb709277957fd12b922530f03cf558cf803b72333a2d76d54757885d1",
+      "version": "0.5.8",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.5.8",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:52.909043+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.5.8+commit.23d335f2.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 8007728,
+      "artifact_sha256": "c35ce7a4d3ffa5747c178b1e24c8541b2e5d8a82c1db3719eb4433a1f19e16f3",
+      "candidate_plan_slots": 374,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.5.17+commit.d19bba13",
+      "keccak256_official": "0x7e3f9626d004adbe0b835b08ebec2c0373f46dbccc0b2b36119c545ec27ff701",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.5.17",
+      "long_version": "0.5.17+commit.d19bba13",
+      "official_path": "solc-linux-amd64-v0.5.17+commit.d19bba13",
+      "sha256": "c35ce7a4d3ffa5747c178b1e24c8541b2e5d8a82c1db3719eb4433a1f19e16f3",
+      "version": "0.5.17",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.5.17",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:59.644900+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.5.17+commit.d19bba13.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 7962672,
+      "artifact_sha256": "5c4b30da18b0fa5f1ae3183127a4dcd64a279fcc15e16a477b0841d576770283",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.6.0+commit.26b70077",
+      "keccak256_official": "0xb93ada00cffdf9bedc152f8a095c7694cbf16f9f0d0be5d27ec44814fb4b67b8",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.6.0",
+      "long_version": "0.6.0+commit.26b70077",
+      "official_path": "solc-linux-amd64-v0.6.0+commit.26b70077",
+      "sha256": "5c4b30da18b0fa5f1ae3183127a4dcd64a279fcc15e16a477b0841d576770283",
+      "version": "0.6.0",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.6.0",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:59.190166+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.6.0+commit.26b70077.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 9322576,
+      "artifact_sha256": "eb42bef5784a0dec0f1b54c260b376deb0495940bfd474c44b5be31c0b634603",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.6.9+commit.3e3065ac",
+      "keccak256_official": "0x8a2ed47fa7e1df9ee005ef76ae177619c5f4e7ef2fca378d910787834edf66a4",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.6.9",
+      "long_version": "0.6.9+commit.3e3065ac",
+      "official_path": "solc-linux-amd64-v0.6.9+commit.3e3065ac",
+      "sha256": "eb42bef5784a0dec0f1b54c260b376deb0495940bfd474c44b5be31c0b634603",
+      "version": "0.6.9",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.6.9",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:59.632926+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.6.9+commit.3e3065ac.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 9343056,
+      "artifact_sha256": "68c414ba78325570a34817a829b1f3c62a18985708a2509729b50f79829a374b",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.6.10+commit.00c0fcaf",
+      "keccak256_official": "0x21fcb7912ee577def32c50261fe40b7b5f47e31889a66eb24f5c0173b76430aa",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.6.10",
+      "long_version": "0.6.10+commit.00c0fcaf",
+      "official_path": "solc-linux-amd64-v0.6.10+commit.00c0fcaf",
+      "sha256": "68c414ba78325570a34817a829b1f3c62a18985708a2509729b50f79829a374b",
+      "version": "0.6.10",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.6.10",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:25:59.238267+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.6.10+commit.00c0fcaf.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 9404496,
+      "artifact_sha256": "2e091d5f13bea0bc445c7f674d5cf8c9e42a3d4e35e1e50f00f4dd44898505aa",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.6.11+commit.5ef660b1",
+      "keccak256_official": "0xb86c9264dcf7f5c95fdae2152e585e0ae27cca7473eb3846a8529bd7f201b031",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.6.11",
+      "long_version": "0.6.11+commit.5ef660b1",
+      "official_path": "solc-linux-amd64-v0.6.11+commit.5ef660b1",
+      "sha256": "2e091d5f13bea0bc445c7f674d5cf8c9e42a3d4e35e1e50f00f4dd44898505aa",
+      "version": "0.6.11",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.6.11",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:06.153674+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.6.11+commit.5ef660b1.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 9474128,
+      "artifact_sha256": "f6cb519b01dabc61cab4c184a3db11aa591d18151e362fcae850e42cffdfb09a",
+      "candidate_plan_slots": 451,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.6.12+commit.27d51765",
+      "keccak256_official": "0x29aa693df3ed607f8dad19d47eac620c3db0e3f80eca94500b22c0f9975e6cb7",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.6.12",
+      "long_version": "0.6.12+commit.27d51765",
+      "official_path": "solc-linux-amd64-v0.6.12+commit.27d51765",
+      "sha256": "f6cb519b01dabc61cab4c184a3db11aa591d18151e362fcae850e42cffdfb09a",
+      "version": "0.6.12",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.6.12",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:06.120001+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.6.12+commit.27d51765.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 9506896,
+      "artifact_sha256": "117454791903d34587b7b07626c03253c6d4472b6f09f72ee007cf1f220b49e9",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.7.0+commit.9e61f92b",
+      "keccak256_official": "0x2835bcea8a4bd76205a1734604747c3418039a78395034be4e25323689c34921",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.7.0",
+      "long_version": "0.7.0+commit.9e61f92b",
+      "official_path": "solc-linux-amd64-v0.7.0+commit.9e61f92b",
+      "sha256": "117454791903d34587b7b07626c03253c6d4472b6f09f72ee007cf1f220b49e9",
+      "version": "0.7.0",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.7.0",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:06.006656+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.7.0+commit.9e61f92b.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 11192752,
+      "artifact_sha256": "e0fa6a8347a52bc6ec351e22537e645be06eb5041894460b1a9114f3732e9d07",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.7.4+commit.3f05b770",
+      "keccak256_official": "0xc0276f1a865e4403c24172c53a540b5c6177d1aa52e0631b2d4689c5347f51b5",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.7.4",
+      "long_version": "0.7.4+commit.3f05b770",
+      "official_path": "solc-linux-amd64-v0.7.4+commit.3f05b770",
+      "sha256": "e0fa6a8347a52bc6ec351e22537e645be06eb5041894460b1a9114f3732e9d07",
+      "version": "0.7.4",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.7.4",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:06.014495+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.7.4+commit.3f05b770.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 11286992,
+      "artifact_sha256": "96fb22134c10939334c62c8c0a668b712696f8f81426e6fcf042f0e709e7aa1e",
+      "candidate_plan_slots": 28,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.7.5+commit.eb77ed08",
+      "keccak256_official": "0x843edb5865c0668a6c7047af388ab8d3a6286006fe8ea8b3c3b2da1a873fd633",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.7.5",
+      "long_version": "0.7.5+commit.eb77ed08",
+      "official_path": "solc-linux-amd64-v0.7.5+commit.eb77ed08",
+      "sha256": "96fb22134c10939334c62c8c0a668b712696f8f81426e6fcf042f0e709e7aa1e",
+      "version": "0.7.5",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.7.5",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:13.226085+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.7.5+commit.eb77ed08.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 11260472,
+      "artifact_sha256": "bd69ea85427bf2f4da74cb426ad951dd78db9dfdd01d791208eccc2d4958a6bb",
+      "candidate_plan_slots": 349,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.7.6+commit.7338295f",
+      "keccak256_official": "0x995f7d67d87a936dca9922389e6bdbfd2febb3aabe52beed5a43f73fb45a5146",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.7.6",
+      "long_version": "0.7.6+commit.7338295f",
+      "official_path": "solc-linux-amd64-v0.7.6+commit.7338295f",
+      "sha256": "bd69ea85427bf2f4da74cb426ad951dd78db9dfdd01d791208eccc2d4958a6bb",
+      "version": "0.7.6",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.7.6",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:12.783643+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.7.6+commit.7338295f.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 11346488,
+      "artifact_sha256": "64016310a57caf1af76a3610f1f94c8848c04c9673e7fa268492e608918a4bdc",
+      "candidate_plan_slots": 10,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.0+commit.c7dfd78e",
+      "keccak256_official": "0xcbc4fc0c2aa7976afd378608aa5702e2d53d5df325c0c29c894386e5cfe7d327",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.0",
+      "long_version": "0.8.0+commit.c7dfd78e",
+      "official_path": "solc-linux-amd64-v0.8.0+commit.c7dfd78e",
+      "sha256": "64016310a57caf1af76a3610f1f94c8848c04c9673e7fa268492e608918a4bdc",
+      "version": "0.8.0",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.0",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:13.170229+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.0+commit.c7dfd78e.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 11833912,
+      "artifact_sha256": "f7115ccaf11899dcf3aaa888949f8614421f2d10af65a74870bcfd67010da7f8",
+      "candidate_plan_slots": 9,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.4+commit.c7e474f2",
+      "keccak256_official": "0xd13637ffb69029cae89a865066e78772d3264c0d05674c973a637c768f588f61",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.4",
+      "long_version": "0.8.4+commit.c7e474f2",
+      "official_path": "solc-linux-amd64-v0.8.4+commit.c7e474f2",
+      "sha256": "f7115ccaf11899dcf3aaa888949f8614421f2d10af65a74870bcfd67010da7f8",
+      "version": "0.8.4",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.4",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:13.005522+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.4+commit.c7e474f2.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 12026424,
+      "artifact_sha256": "bd782007a7d50500d22703145ace6d44c916c853cd0d0fcb2caeab9fa5fa33e7",
+      "candidate_plan_slots": 2,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.5+commit.a4f2e591",
+      "keccak256_official": "0x81b1b9610c05be13dd2294f1419c095131763187914358501d85789c3c051ad6",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.5",
+      "long_version": "0.8.5+commit.a4f2e591",
+      "official_path": "solc-linux-amd64-v0.8.5+commit.a4f2e591",
+      "sha256": "bd782007a7d50500d22703145ace6d44c916c853cd0d0fcb2caeab9fa5fa33e7",
+      "version": "0.8.5",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.5",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:19.586463+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.5+commit.a4f2e591.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 12051000,
+      "artifact_sha256": "abd5c4f3f262bc3ed7951b968c63f98e83f66d9a5c3568ab306eac49250aec3e",
+      "candidate_plan_slots": 4,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.6+commit.11564f7e",
+      "keccak256_official": "0xd82f930c3db5da803c7b634bfca624279967da3a53bee1e2cef5b74057438a2d",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.6",
+      "long_version": "0.8.6+commit.11564f7e",
+      "official_path": "solc-linux-amd64-v0.8.6+commit.11564f7e",
+      "sha256": "abd5c4f3f262bc3ed7951b968c63f98e83f66d9a5c3568ab306eac49250aec3e",
+      "version": "0.8.6",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.6",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:19.718167+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.6+commit.11564f7e.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 12141112,
+      "artifact_sha256": "003d75383e45212f9812d0b6add90329fd3b239e6c378d2882f61f9345896d99",
+      "candidate_plan_slots": 37,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.7+commit.e28d00a7",
+      "keccak256_official": "0x0163c110432e288bef6ef2c7e7c043e887459f5aee018cfa8f5a95f1a5d32746",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.7",
+      "long_version": "0.8.7+commit.e28d00a7",
+      "official_path": "solc-linux-amd64-v0.8.7+commit.e28d00a7",
+      "sha256": "003d75383e45212f9812d0b6add90329fd3b239e6c378d2882f61f9345896d99",
+      "version": "0.8.7",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.7",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:19.426772+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.7+commit.e28d00a7.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 12358200,
+      "artifact_sha256": "e677b1216b136c61e38934a3de3a8e67de3f733d7ab28f0f046bd4a078b0cbb0",
+      "candidate_plan_slots": 1,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.8+commit.dddeac2f",
+      "keccak256_official": "0xd2f57fd0233d9ba2bccfb29498da59ee02c0433e07b9a99bcbd789b0cadfe99b",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.8",
+      "long_version": "0.8.8+commit.dddeac2f",
+      "official_path": "solc-linux-amd64-v0.8.8+commit.dddeac2f",
+      "sha256": "e677b1216b136c61e38934a3de3a8e67de3f733d7ab28f0f046bd4a078b0cbb0",
+      "version": "0.8.8",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.8",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:19.775491+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.8+commit.dddeac2f.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 12366392,
+      "artifact_sha256": "f851f11fad37496baabaf8d6cb5c057ca0d9754fddb7a351ab580d7fd728cb94",
+      "candidate_plan_slots": 19,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.9+commit.e5eed63a",
+      "keccak256_official": "0xc3a70946c825ecd5d7ce2db1ff2e9a608f1319e8912cc10bd1be9d171617066e",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.9",
+      "long_version": "0.8.9+commit.e5eed63a",
+      "official_path": "solc-linux-amd64-v0.8.9+commit.e5eed63a",
+      "sha256": "f851f11fad37496baabaf8d6cb5c057ca0d9754fddb7a351ab580d7fd728cb94",
+      "version": "0.8.9",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.9",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:26.704387+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.9+commit.e5eed63a.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 13787704,
+      "artifact_sha256": "c7effacf28b9d64495f81b75228fbf4266ac0ec87e8f1adc489ddd8a4dd06d89",
+      "candidate_plan_slots": 18,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.10+commit.fc410830",
+      "keccak256_official": "0x915372f0d78e22a4fd337d3b0f13a7fe5aac57ec120639e7ebd066571a8e4420",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.10",
+      "long_version": "0.8.10+commit.fc410830",
+      "official_path": "solc-linux-amd64-v0.8.10+commit.fc410830",
+      "sha256": "c7effacf28b9d64495f81b75228fbf4266ac0ec87e8f1adc489ddd8a4dd06d89",
+      "version": "0.8.10",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.10",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:26.848546+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.10+commit.fc410830.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 13922872,
+      "artifact_sha256": "717c239f3a1dc3a4834c16046a0b4b9f46964665c8ffa82051a6d09fe741cd4f",
+      "candidate_plan_slots": 10,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.11+commit.d7f03943",
+      "keccak256_official": "0x222e13f9ebf5119083e555823669a7e537475450986bd1d095124e240d98e21c",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.11",
+      "long_version": "0.8.11+commit.d7f03943",
+      "official_path": "solc-linux-amd64-v0.8.11+commit.d7f03943",
+      "sha256": "717c239f3a1dc3a4834c16046a0b4b9f46964665c8ffa82051a6d09fe741cd4f",
+      "version": "0.8.11",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.11",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:26.808497+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.11+commit.d7f03943.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 13992504,
+      "artifact_sha256": "556c3ec44faf8ff6b67933fa8a8a403abe82c978d6e581dbfec4bd07360bfbf3",
+      "candidate_plan_slots": 3,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.12+commit.f00d7308",
+      "keccak256_official": "0xe18e051fd3770fc0f2678ea2975b33212feba0f5bdbece0aef0ac96265a218a7",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.12",
+      "long_version": "0.8.12+commit.f00d7308",
+      "official_path": "solc-linux-amd64-v0.8.12+commit.f00d7308",
+      "sha256": "556c3ec44faf8ff6b67933fa8a8a403abe82c978d6e581dbfec4bd07360bfbf3",
+      "version": "0.8.12",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.12",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:26.490079+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.12+commit.f00d7308.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 14156344,
+      "artifact_sha256": "a805dffa86ccd8ed5c9cd18ffcfcca6ff46f635216aa7fc0246546f7be413d62",
+      "candidate_plan_slots": 5,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.13+commit.abaa5c0e",
+      "keccak256_official": "0x789ce72e01f83cf052b543d6f0508c2ed2adae7ed40ea37913d9bd90166040ce",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.13",
+      "long_version": "0.8.13+commit.abaa5c0e",
+      "official_path": "solc-linux-amd64-v0.8.13+commit.abaa5c0e",
+      "sha256": "a805dffa86ccd8ed5c9cd18ffcfcca6ff46f635216aa7fc0246546f7be413d62",
+      "version": "0.8.13",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.13",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:31.533196+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.13+commit.abaa5c0e.Linux.g++\n"
+      }
+    },
+    {
+      "artifact_bytes": 15434456,
+      "artifact_sha256": "d5f23436f443edb85d8e76906d12f0a86ce0490e7663a9e608efeb7a93f149ef",
+      "candidate_plan_slots": 485,
+      "checksum_verified": true,
+      "download_url": "https://raw.githubusercontent.com/argotorg/solc-bin/c04c6cdc827bbdcc7bd65689fa76b63a238b223f/linux-amd64/solc-linux-amd64-v0.8.26+commit.8a97fa7a",
+      "keccak256_official": "0x9d138fc8bb5c20b4aaaa3a868d16eb897584ce8536a5c3a466d718e47ccbafb7",
+      "local_path": "data/derived/security_toolchain_v1/solc/solc-0.8.26",
+      "long_version": "0.8.26+commit.8a97fa7a",
+      "official_path": "solc-linux-amd64-v0.8.26+commit.8a97fa7a",
+      "sha256": "d5f23436f443edb85d8e76906d12f0a86ce0490e7663a9e608efeb7a93f149ef",
+      "version": "0.8.26",
+      "version_probe": {
+        "argv": [
+          "data/derived/security_toolchain_v1/solc/solc-0.8.26",
+          "--version"
+        ],
+        "executed_utc": "2026-10-26T08:26:31.546787+00:00",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.8.26+commit.8a97fa7a.Linux.g++\n"
+      }
+    }
+  ],
+  "required_versions_only": true,
+  "schema": "verified_solc_inventory_v1",
+  "source_rows": 2689,
+  "status": "verified_version_inventory_only"
+}

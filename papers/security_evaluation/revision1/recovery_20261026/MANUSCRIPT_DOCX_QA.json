@@ -1,0 +1,21 @@
+{
+  "schema": "article1_docx_qa_v2",
+  "date": "2026-10-26",
+  "status": "pass",
+  "source": "papers/security_evaluation/manuscript/DRAFT_REVISION2.md",
+  "source_sha256": "9b29d820a8f20a1ad6fd7bfece0b9fe322322680a1b25d023773f7804daa08ce",
+  "builder_sha256": "3de8ed7bb984107bf8f42aec341ced60c577b0b0beb1e6e07cab054bf0586c77",
+  "docx_filename": "Article_1_Revision_2_2026-10-26.docx",
+  "docx_sha256": "6fdd4b2b254eae49ba744cdea1ce9626adb99fe9829115ed475a2a69271e683a",
+  "pages": 18,
+  "tables": 5,
+  "figures": 6,
+  "all_pages_visually_reviewed": true,
+  "corrections": [
+    "Table rows cannot split across pages",
+    "Uniform explicit bibliography spacing",
+    "Public compressed output availability qualified"
+  ],
+  "saved_before_publication": true,
+  "scope": "Visual and computational QA, not final author approval or editorial review."
+}

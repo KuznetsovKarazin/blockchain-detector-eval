@@ -1,0 +1,44 @@
+{
+  "schema": "graph_artifact_recovery_v1",
+  "created_utc": "2026-10-26T08:13:49.268172+00:00",
+  "stage": "identity",
+  "scope": [
+    "run unchanged identity_controls.py in fresh child directory; compare every stable output"
+  ],
+  "source_hashes": {
+    "papers/security_evaluation/revision1/recovery_20261026/recover_graph_artifacts.py": "b959969f2e66dcbe747c88069e1fda3fe8e483b2555693ab0ca50c0cc7c4e4dd",
+    "papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+    "papers/security_evaluation/revision1/graph_mechanism/identity_controls.py": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242"
+  },
+  "checked_inputs": [
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls.py",
+      "sha256": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py",
+      "sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv",
+      "sha256": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/nodes.csv",
+      "sha256": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0",
+      "match": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "restoration_policy": "only a previously missing path listed in publication_omissions.json, matching old SHA256 and Git blob SHA1; never overwrite an existing file",
+  "no_model_scoring": true,
+  "no_network_or_upload": true
+}

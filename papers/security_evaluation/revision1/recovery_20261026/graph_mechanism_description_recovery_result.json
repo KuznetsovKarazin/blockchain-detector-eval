@@ -1,0 +1,89 @@
+{
+  "schema": "graph_artifact_recovery_result_v1",
+  "stage": "description",
+  "status": "complete",
+  "created_utc": "2026-10-26T08:16:04.818012+00:00",
+  "runtime_seconds": 34.53732148800009,
+  "details": {
+    "recomputed_directory": "recomputed",
+    "all_source_hashes_verified_by_original_code": true
+  },
+  "fresh_run_config_sha256": "31891f879092f616a2707874788f9041664011f57a4c446fbc6bc79163f26db0",
+  "comparisons": [
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/ranked_bridge_evidence.csv",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/description_stage_v1/recomputed/ranked_bridge_evidence.csv",
+      "expected_sha256": "c162ae7562d4ca98c41acee656abab347b0d14bfdb1df546c5bc580ff9a79bc5",
+      "actual_sha256": "c162ae7562d4ca98c41acee656abab347b0d14bfdb1df546c5bc580ff9a79bc5",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "ecd8d3bd1056a68fd96b9e9409d95e5a6e928466",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/solidity_scanner.py",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/description_stage_v1/recomputed/solidity_scanner.py",
+      "expected_sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+      "actual_sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "35c240c7b130206eed4bdc88446f096c3fbd3f5f",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/config_before_describe.json",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/description_stage_v1/recomputed/config_before_describe.json",
+      "expected_sha256": "56294e8ed56ab4ded03b9ce8af2a4435700900f954de59a309f7d57a15b4c853",
+      "actual_sha256": "055d435059bea30c8ba967137d50b0354756aabfe09fb2ca20b3fbc2b871afae",
+      "sha256_match": false,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "a839de52fc8c257c510be8784922cbf5cf25cdd7",
+      "original_path_existed_before_restore": true,
+      "restored": false
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/source_declaration_heuristics.csv.gz",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/description_stage_v1/recomputed/source_declaration_heuristics.csv.gz",
+      "expected_sha256": "3692f032b347037c78d1373b7e7027d82039766389e256a9692d8ce494ffcb2a",
+      "actual_sha256": "3692f032b347037c78d1373b7e7027d82039766389e256a9692d8ce494ffcb2a",
+      "sha256_match": true,
+      "expected_git_blob_sha": "6a1b36e58cd61cb1298007ed59871f4eb6ecc91b",
+      "actual_git_blob_sha": "6a1b36e58cd61cb1298007ed59871f4eb6ecc91b",
+      "original_path_existed_before_restore": false,
+      "restored": true,
+      "git_blob_sha_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/describe_mechanism.py",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/description_stage_v1/recomputed/describe_mechanism.py",
+      "expected_sha256": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff",
+      "actual_sha256": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "70237d5a0647ecabdb0e25ff911f248e2624eff5",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/heuristic_aggregate_counts.csv",
+      "recomputed_path": "data/derived/recovery_20261026/graph_mechanism/description_stage_v1/recomputed/heuristic_aggregate_counts.csv",
+      "expected_sha256": "b7ecf8cf04ca48f7c21d322104047e2360bf9ac37b7c75cdcfefc8f90291b4f8",
+      "actual_sha256": "b7ecf8cf04ca48f7c21d322104047e2360bf9ac37b7c75cdcfefc8f90291b4f8",
+      "sha256_match": true,
+      "expected_git_blob_sha": null,
+      "actual_git_blob_sha": "75258170d5c65ff19f020f8e45cf464e52c8e2d1",
+      "original_path_existed_before_restore": true,
+      "restored": false,
+      "existing_frozen_file_match": true
+    }
+  ],
+  "restored_files": 1,
+  "no_model_scoring": true,
+  "no_upload": true,
+  "provenance": "new local recomputation; byte identity only where both original recorded hashes match; original timings/configurations remain immutable"
+}

@@ -1,0 +1,464 @@
+{
+  "schema": "independent_full_canonical_npz_schema_content_audit_v1",
+  "status": "pass",
+  "auditor_source_sha256": "10efda6191c28a854a6eaaaf0f6bfd04b01517e683846bd57efa3c9d8b5c0c83",
+  "manifest_sha256": "662b91e95bf21a78a6652c32386305d4af3b1ec1e2283ba721ffed71cc2b8756",
+  "packaging_config_sha256": "f715cfd1f34a09223bbef89a86ea69534f35178746d6805e503534775357054d",
+  "archives_checked": 6,
+  "arrays_checked": 24,
+  "archive_bytes_fully_accounted_for": 6357241,
+  "edge_rows_exhaustively_checked": 4621780,
+  "checks": [
+    {
+      "variant": "corrected_file_normalized",
+      "archive_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_normalized/lexical_edges.npz",
+      "archive_sha256": "1fd6cc2aeb7749864ab21a60147f147022309fef0e8dceb41b5ee7ceebc84f5e",
+      "archive_bytes": 3071088,
+      "nodes": 24131,
+      "edge_rows": 2039310,
+      "arrays": [
+        {
+          "name": "left",
+          "shape": [
+            2039310
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 8157240,
+          "sha256": "bc7f7df4c4958e6ae41bfe13fd346355f194065f19a2f2fb4d64fb5ef7a55556",
+          "minimum": 0,
+          "maximum": 24114,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "right",
+          "shape": [
+            2039310
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 8157240,
+          "sha256": "8765cb885c732859478ae08de6f4b6a7a5065d1f4a93723179fb1e754b9a36c8",
+          "minimum": 8,
+          "maximum": 24130,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "intersection",
+          "shape": [
+            2039310
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 8157240,
+          "sha256": "45182970bf551d740dee375a0a1477340c558df2c55abfd28df9f32092b35b67",
+          "minimum": 1,
+          "maximum": 2962,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "node_shingle_sizes",
+          "shape": [
+            24131
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 96524,
+          "sha256": "c9fca4eef788d48fda16f9a0e4d23085247b95496082e7a0c27cdb9404ecc64a",
+          "minimum": 0,
+          "maximum": 4035,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        }
+      ],
+      "all_zip_and_npy_bytes_accounted_for": true,
+      "zip_entries_exactly_four_numeric_arrays": true,
+      "no_archive_comments_extra_fields_hidden_entries_or_trailers": true,
+      "no_object_string_or_pickle_arrays": true,
+      "np_load_allow_pickle": false,
+      "all_rows_nonnegative_in_bounds_aligned_unique_lexsorted": true,
+      "all_intersections_positive_and_bounded_by_both_set_sizes": true,
+      "all_containment_candidates_at_least_070": true,
+      "complete_row_bijection_against_fresh_replay": true,
+      "node_sizes_equal_fresh_replay": true,
+      "surviving_result_lineage_hashes_valid": true,
+      "original_missing_archive_still_absent": true
+    },
+    {
+      "variant": "corrected_file_preserved",
+      "archive_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_preserved/lexical_edges.npz",
+      "archive_sha256": "144d2593537987453efdb1f32709cd282c68d6920faa3c8dee934256b3babc49",
+      "archive_bytes": 421109,
+      "nodes": 24131,
+      "edge_rows": 278628,
+      "arrays": [
+        {
+          "name": "left",
+          "shape": [
+            278628
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 1114512,
+          "sha256": "8c70d0ecfe39e2791284c1b099a72be92aa91000a1387394fa736362603ed34b",
+          "minimum": 0,
+          "maximum": 24094,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "right",
+          "shape": [
+            278628
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 1114512,
+          "sha256": "5fc17482f46e8fa7e4de6fff98040b08e4fedbba85ebeba68cc409361849ee2d",
+          "minimum": 8,
+          "maximum": 24130,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "intersection",
+          "shape": [
+            278628
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 1114512,
+          "sha256": "e4f418661d3c07b8ea0363f4c40eebe377f95924f1e3655ba0aeaa2b6fa45bf7",
+          "minimum": 1,
+          "maximum": 7593,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "node_shingle_sizes",
+          "shape": [
+            24131
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 96524,
+          "sha256": "7ec1e4faaef429bd9a619e06d5abfb392c33942166ae2164e70c2f0dd2e57cc2",
+          "minimum": 0,
+          "maximum": 9944,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        }
+      ],
+      "all_zip_and_npy_bytes_accounted_for": true,
+      "zip_entries_exactly_four_numeric_arrays": true,
+      "no_archive_comments_extra_fields_hidden_entries_or_trailers": true,
+      "no_object_string_or_pickle_arrays": true,
+      "np_load_allow_pickle": false,
+      "all_rows_nonnegative_in_bounds_aligned_unique_lexsorted": true,
+      "all_intersections_positive_and_bounded_by_both_set_sizes": true,
+      "all_containment_candidates_at_least_070": true,
+      "complete_row_bijection_against_fresh_replay": true,
+      "node_sizes_equal_fresh_replay": true,
+      "surviving_result_lineage_hashes_valid": true,
+      "original_missing_archive_still_absent": true
+    },
+    {
+      "variant": "library_interface_masked_normalized",
+      "archive_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_normalized/lexical_edges.npz",
+      "archive_sha256": "0f825c64d2d8603f570790f81a2347afbb954624c75d6d73635b5655f05743aa",
+      "archive_bytes": 1206079,
+      "nodes": 24131,
+      "edge_rows": 1021065,
+      "arrays": [
+        {
+          "name": "left",
+          "shape": [
+            1021065
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 4084260,
+          "sha256": "5cba84699b2b0f5e7e0e217bd034f1fe558b4f81ebb8efd9522cd02f0b10625e",
+          "minimum": 0,
+          "maximum": 24108,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "right",
+          "shape": [
+            1021065
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 4084260,
+          "sha256": "cda7e4b785c6162b6d6dcb0086b4e6d54157a1db7bb21136832de0bbf1fa66d7",
+          "minimum": 8,
+          "maximum": 24130,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "intersection",
+          "shape": [
+            1021065
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 4084260,
+          "sha256": "ded4f93d911f05c38fc1342d70ea031a41a26c1c310e51b407a2e2af4ea3fa86",
+          "minimum": 1,
+          "maximum": 2762,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "node_shingle_sizes",
+          "shape": [
+            24131
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 96524,
+          "sha256": "ac023658107e4c9929d2a873c33cca11c01afcd4043f11d2b4de98f703902aa9",
+          "minimum": 0,
+          "maximum": 3652,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        }
+      ],
+      "all_zip_and_npy_bytes_accounted_for": true,
+      "zip_entries_exactly_four_numeric_arrays": true,
+      "no_archive_comments_extra_fields_hidden_entries_or_trailers": true,
+      "no_object_string_or_pickle_arrays": true,
+      "np_load_allow_pickle": false,
+      "all_rows_nonnegative_in_bounds_aligned_unique_lexsorted": true,
+      "all_intersections_positive_and_bounded_by_both_set_sizes": true,
+      "all_containment_candidates_at_least_070": true,
+      "complete_row_bijection_against_fresh_replay": true,
+      "node_sizes_equal_fresh_replay": true,
+      "surviving_result_lineage_hashes_valid": true,
+      "original_missing_archive_still_absent": true
+    },
+    {
+      "variant": "library_interface_masked_preserved",
+      "archive_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_preserved/lexical_edges.npz",
+      "archive_sha256": "5b352378d895f6527ad1ad67e4a30cfaf4d83b2d2ce0e3e19e436b1c468e4342",
+      "archive_bytes": 252195,
+      "nodes": 24131,
+      "edge_rows": 158076,
+      "arrays": [
+        {
+          "name": "left",
+          "shape": [
+            158076
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 632304,
+          "sha256": "3b91ea1415b760fcee4b028ef8f1b6dda0da35bd78f210bf52250dd7d6a78cf2",
+          "minimum": 0,
+          "maximum": 24094,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "right",
+          "shape": [
+            158076
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 632304,
+          "sha256": "8ec7b3c3b63c094bc1e603955c2e28aa6803e64a1e82135c12bce92eef04610e",
+          "minimum": 8,
+          "maximum": 24130,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "intersection",
+          "shape": [
+            158076
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 632304,
+          "sha256": "59094e3cec0515bb3aa24ad8570ad796e3a9a12954f6692efad6222be6ca4367",
+          "minimum": 1,
+          "maximum": 7200,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "node_shingle_sizes",
+          "shape": [
+            24131
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 96524,
+          "sha256": "5c615770c929bb6f981a5e2faac935a201bdc854647ef43a25dac5397eeb7005",
+          "minimum": 0,
+          "maximum": 9151,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        }
+      ],
+      "all_zip_and_npy_bytes_accounted_for": true,
+      "zip_entries_exactly_four_numeric_arrays": true,
+      "no_archive_comments_extra_fields_hidden_entries_or_trailers": true,
+      "no_object_string_or_pickle_arrays": true,
+      "np_load_allow_pickle": false,
+      "all_rows_nonnegative_in_bounds_aligned_unique_lexsorted": true,
+      "all_intersections_positive_and_bounded_by_both_set_sizes": true,
+      "all_containment_candidates_at_least_070": true,
+      "complete_row_bijection_against_fresh_replay": true,
+      "node_sizes_equal_fresh_replay": true,
+      "surviving_result_lineage_hashes_valid": true,
+      "original_missing_archive_still_absent": true
+    },
+    {
+      "variant": "library_interface_segmented_normalized",
+      "archive_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_segmented_normalized/lexical_edges.npz",
+      "archive_sha256": "dfffa4635f973d57fbc8c8756d3130e8a1c78c1b6162acd4443a51c241dc1418",
+      "archive_bytes": 1154046,
+      "nodes": 24131,
+      "edge_rows": 966320,
+      "arrays": [
+        {
+          "name": "left",
+          "shape": [
+            966320
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 3865280,
+          "sha256": "8b1ee70e2317a0400bbebea97e4711ef7f9cd6a58244750de57fbf6ccdcadd02",
+          "minimum": 0,
+          "maximum": 24108,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "right",
+          "shape": [
+            966320
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 3865280,
+          "sha256": "6e98812fbb0d615e3135f0d39fb50f15dc65c82f021a65275b3e9d258b90553b",
+          "minimum": 8,
+          "maximum": 24130,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "intersection",
+          "shape": [
+            966320
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 3865280,
+          "sha256": "c663730c41efc20ecedc1437b268b5fb97e7323b24671be4bdcccc8b518a844d",
+          "minimum": 1,
+          "maximum": 2758,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "node_shingle_sizes",
+          "shape": [
+            24131
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 96524,
+          "sha256": "1dbea73c0be0decfac28c1d20b62307127c6a8d388c8f66a187444477ea901e9",
+          "minimum": 0,
+          "maximum": 3648,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        }
+      ],
+      "all_zip_and_npy_bytes_accounted_for": true,
+      "zip_entries_exactly_four_numeric_arrays": true,
+      "no_archive_comments_extra_fields_hidden_entries_or_trailers": true,
+      "no_object_string_or_pickle_arrays": true,
+      "np_load_allow_pickle": false,
+      "all_rows_nonnegative_in_bounds_aligned_unique_lexsorted": true,
+      "all_intersections_positive_and_bounded_by_both_set_sizes": true,
+      "all_containment_candidates_at_least_070": true,
+      "complete_row_bijection_against_fresh_replay": true,
+      "node_sizes_equal_fresh_replay": true,
+      "surviving_result_lineage_hashes_valid": true,
+      "original_missing_archive_still_absent": true
+    },
+    {
+      "variant": "library_interface_segmented_preserved",
+      "archive_path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_segmented_preserved/lexical_edges.npz",
+      "archive_sha256": "87e6b65addc87aa8c0fa1eec9442c09d9f5712506c6ca1fa1120106430106534",
+      "archive_bytes": 252724,
+      "nodes": 24131,
+      "edge_rows": 158381,
+      "arrays": [
+        {
+          "name": "left",
+          "shape": [
+            158381
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 633524,
+          "sha256": "13cef9f824dc26d8695a4b977a056729c4ab50f2c478ccd3028a49e332bfe61e",
+          "minimum": 0,
+          "maximum": 24094,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "right",
+          "shape": [
+            158381
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 633524,
+          "sha256": "d710416d3edb823ef311db627115aeda644d3937436d6e876bb0ba3633eaa2b7",
+          "minimum": 8,
+          "maximum": 24130,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "intersection",
+          "shape": [
+            158381
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 633524,
+          "sha256": "be164cdf23322ef3061f418fe8eeccb3951371191eff04ea19c7637334075195",
+          "minimum": 1,
+          "maximum": 7196,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        },
+        {
+          "name": "node_shingle_sizes",
+          "shape": [
+            24131
+          ],
+          "dtype": "<i4",
+          "raw_bytes": 96524,
+          "sha256": "d538e6decd71d5553c55ba400d4d68cee22de09a0b4b1701253dbe5e9567f247",
+          "minimum": 0,
+          "maximum": 9138,
+          "npy_header_exact_fixed_schema": true,
+          "no_trailing_npy_bytes": true
+        }
+      ],
+      "all_zip_and_npy_bytes_accounted_for": true,
+      "zip_entries_exactly_four_numeric_arrays": true,
+      "no_archive_comments_extra_fields_hidden_entries_or_trailers": true,
+      "no_object_string_or_pickle_arrays": true,
+      "np_load_allow_pickle": false,
+      "all_rows_nonnegative_in_bounds_aligned_unique_lexsorted": true,
+      "all_intersections_positive_and_bounded_by_both_set_sizes": true,
+      "all_containment_candidates_at_least_070": true,
+      "complete_row_bijection_against_fresh_replay": true,
+      "node_sizes_equal_fresh_replay": true,
+      "surviving_result_lineage_hashes_valid": true,
+      "original_missing_archive_still_absent": true
+    }
+  ],
+  "declared_reported_partitions": 120,
+  "declared_identical_result_csvs": 20,
+  "content_conclusion": "Only integer derived graph records and the fixed ZIP/NPY schema metadata; no source-body, private-key, label, score or arbitrary text payload fields/entries",
+  "independence": "Separate byte parser and graph-record lookup; does not import packaging or generation functions; automated code audit, not human vulnerability adjudication",
+  "historical_identity_limit": "Original six NPZ archives are lost. This verifies the new package against its fresh replay, not complete unordered identity with the historical originals.",
+  "no_upload_or_publication_performed": true,
+  "no_model_scoring_or_human_judgments_created": true
+}

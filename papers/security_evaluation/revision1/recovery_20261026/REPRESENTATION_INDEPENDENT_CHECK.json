@@ -1,0 +1,97 @@
+{
+  "schema": "independent_recomputed_representation_verification_v1",
+  "status": "pass",
+  "wrapper_sha256": "44e2a0bee0fe6ba168fbb1b7bb798cf57f7cea7adcb2aaaf19a6abaebdc00c9f",
+  "reports": [
+    {
+      "kind": "primary",
+      "unchanged_verifier_sha256": "4cfe938a8005a863a2f075a312cfc62dc5d63e301228ec79230bcb5964252098",
+      "view_config_sha256": "9e15fc8c13e1961966e56e1a5f20a1908638b797ffe99c9397e951c3a7831575",
+      "report": {
+        "status": "pass",
+        "script_sha256": "4cfe938a8005a863a2f075a312cfc62dc5d63e301228ec79230bcb5964252098",
+        "config_sha256": "9e15fc8c13e1961966e56e1a5f20a1908638b797ffe99c9397e951c3a7831575",
+        "checks": [
+          {
+            "variant": "corrected_file_normalized",
+            "all_edge_endpoints_connected": true,
+            "threshold_refinement": true,
+            "primary_graphs_independently_reconstructed": 2,
+            "literal_shingle_pairs_verified": 100,
+            "empty_nodes_have_no_lexical_edges": true,
+            "nonempty_corrected_baseline_edges_identical": 133859,
+            "legacy_empty_empty_lexical_edges_omitted": 15,
+            "prior_baseline_partition_at_080_unchanged": false
+          },
+          {
+            "variant": "corrected_file_preserved",
+            "all_edge_endpoints_connected": true,
+            "threshold_refinement": true,
+            "primary_graphs_independently_reconstructed": 2,
+            "literal_shingle_pairs_verified": 100,
+            "empty_nodes_have_no_lexical_edges": true
+          },
+          {
+            "variant": "library_interface_masked_normalized",
+            "all_edge_endpoints_connected": true,
+            "threshold_refinement": true,
+            "primary_graphs_independently_reconstructed": 2,
+            "literal_shingle_pairs_verified": 100,
+            "empty_nodes_have_no_lexical_edges": true
+          },
+          {
+            "variant": "library_interface_masked_preserved",
+            "all_edge_endpoints_connected": true,
+            "threshold_refinement": true,
+            "primary_graphs_independently_reconstructed": 2,
+            "literal_shingle_pairs_verified": 100,
+            "empty_nodes_have_no_lexical_edges": true
+          }
+        ],
+        "independence_claim": "None; verified persisted lexical graph calculations only"
+      }
+    },
+    {
+      "kind": "segmented",
+      "unchanged_verifier_sha256": "3993d8a2d27fff52fdde34801f9ad73d736934f0f32d0f7091cb412ec9b3d655",
+      "view_config_sha256": "4c2bfecb98f16dc599d29fbcffe8cf3ece22c93d9e771559e6c994bf429944de",
+      "report": {
+        "status": "pass",
+        "script_sha256": "3993d8a2d27fff52fdde34801f9ad73d736934f0f32d0f7091cb412ec9b3d655",
+        "config_sha256": "4c2bfecb98f16dc599d29fbcffe8cf3ece22c93d9e771559e6c994bf429944de",
+        "common_output_sha256": {
+          "boundary_diagnostics.csv": "8fed02c281b291eb1dfa41a8ad70f136cbee4428dd2b1c3aac3c56cb263bdbea",
+          "nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+          "structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa",
+          "training_label_input_hashes.json": "6ab252ba5ebf9cb364bbe56cdc1fdacd73dfc1a5c3135859faaac465d4d4a418",
+          "manifest.json": "f843091fd1eb2f62ff032fbcff6e9cc53d1379a7a14599f0f27ea9790dc0945c"
+        },
+        "executed_source_snapshots_match_config": true,
+        "checks": [
+          {
+            "variant": "library_interface_segmented_normalized",
+            "all_graph_edges_connected": true,
+            "threshold_refinement": true,
+            "independent_primary_union_find_graphs": 2,
+            "independent_literal_segment_pairs_checked": 100,
+            "node_shingle_counts_match_diagnostics": true,
+            "empty_nodes_have_no_lexical_edges": true
+          },
+          {
+            "variant": "library_interface_segmented_preserved",
+            "all_graph_edges_connected": true,
+            "threshold_refinement": true,
+            "independent_primary_union_find_graphs": 2,
+            "independent_literal_segment_pairs_checked": 100,
+            "node_shingle_counts_match_diagnostics": true,
+            "empty_nodes_have_no_lexical_edges": true
+          }
+        ],
+        "claim": "Persisted lexical graph calculations verified; semantic independence unestablished"
+      }
+    }
+  ],
+  "original_edge_archive_byte_identity_claimed": false,
+  "no_model_scoring": true,
+  "purpose": "Validate newly recomputed edges, unchanged reported partitions and literal shingles; no original full edge-array comparison is possible"
+}

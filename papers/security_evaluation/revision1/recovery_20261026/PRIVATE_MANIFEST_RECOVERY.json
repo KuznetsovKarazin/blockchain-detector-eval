@@ -1,0 +1,16 @@
+{
+  "status": "exact_hash_recovery",
+  "generator": "papers/security_evaluation/external_audit/audit_external_sources.py",
+  "generator_sha256": "bc0339047d5a87fe36cd046a9cd64c6ad2c1ac0ca78f0fe37e1d4cedfbb0d772",
+  "executed_prefix_ends_before": "train = load_all(...)",
+  "annotation_csv_sha256": "b9e17c5e88188f518491d381b4a2991b5809e8b356e7e861c50e33420d362fb6",
+  "provisional_label_manifest_sha256": "72fceb79cacca51253eabdb7e3ed26a54e7863f4b5be4430071ef9b14d5d0236",
+  "restored_paths": [
+    "data/derived/security_external_full_20261025/provisional_label_manifest.csv",
+    "data/derived/security_external_recovered_20261025/provisional_label_manifest.csv"
+  ],
+  "source_records": 2181,
+  "label_rows": 4362,
+  "frozen_candidate_order_and_identity_match": true,
+  "raw_annotations_in_public_outputs": false
+}

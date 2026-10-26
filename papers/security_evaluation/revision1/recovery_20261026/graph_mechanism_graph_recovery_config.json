@@ -1,0 +1,79 @@
+{
+  "schema": "graph_artifact_recovery_v1",
+  "created_utc": "2026-10-26T08:13:49.448760+00:00",
+  "stage": "graph",
+  "scope": [
+    "main frozen config: thresholds/seeds unchanged",
+    "recompute all four complete-cohort membership tables and .80 contractions, plus five population rankings; do not rerun 45 sampled-cohort label aggregates"
+  ],
+  "source_hashes": {
+    "papers/security_evaluation/revision1/recovery_20261026/recover_graph_artifacts.py": "b959969f2e66dcbe747c88069e1fda3fe8e483b2555693ab0ca50c0cc7c4e4dd",
+    "papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d"
+  },
+  "checked_inputs": [
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py",
+      "sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/test_mechanism.py",
+      "sha256": "88f10e68732502322fa6f538f52efecb01f88039502449941439d044d1714a78",
+      "match": true
+    },
+    {
+      "path": "src/bal/data/contracts.py",
+      "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv",
+      "sha256": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/edges.csv",
+      "sha256": "0e195343844454480616b5339d1448ee3abf4f387f786a0244b0e59e6498e0e5",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/memberships.csv",
+      "sha256": "c3c983ffb7a68c72f405231de9b9355b785f0e5fa8e12057aae49033a5002e75",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/nodes.csv",
+      "sha256": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/edges.csv",
+      "sha256": "847882e8b09c6bc2bdf53df0a37b5f1f5d8027d3ed71c652a5a0e84efc620237",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/memberships.csv",
+      "sha256": "f224391efd4ddaab224c0e48398f203281e7fa71fe71352b563a94c64473b210",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/design_feasibility/selected_outside_p90_seed2_recovered_v2/selected_memberships.csv.gz",
+      "sha256": "ccc019e21fe305611d4e17669e7d7bbb9b839cee89195a0c89e961f2aa198d56",
+      "match": true
+    },
+    {
+      "path": "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2/selected_memberships.csv.gz",
+      "sha256": "b05d820f3e8e86291a221257088b0dc5e00da7e94a91146ffab0079c2dc96cbb",
+      "match": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  },
+  "restoration_policy": "only a previously missing path listed in publication_omissions.json, matching old SHA256 and Git blob SHA1; never overwrite an existing file",
+  "no_model_scoring": true,
+  "no_network_or_upload": true
+}

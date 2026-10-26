@@ -1,0 +1,33 @@
+{
+  "schema": "synthetic_performance_engineering_receipt_v1",
+  "status": "complete_synthetic_only",
+  "config_sha256": "fde4c7446509d6b8998a469fceb9fb1f4d8401d4a65d3de53b2fd481daae49c4",
+  "source_hashes": {
+    "performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "synthetic_inputs.py": "a879f974eac2c06bb30a98a9a57598ecc588a51e47810f2aeb4d0f9632abd99e",
+    "run_synthetic.py": "8b3b677c8bdd7c1ead9cffdf8f5e23d242faf8c662ff542e71e1544c6e9b8cae",
+    "test_performance.py": "8200c11f407fc2e3e59983bd335f441ded0244f043876e103bb4f6095c7cbd7b",
+    "README.md": "7d6ac5267cecd0a89092fc75d30a6e4d902a6b3a4fcc424a837293e2652435b9",
+    "REFERENCES.json": "09083f4a0f71e007d85afb597c4fa0da27263e7da403d4cb57ce43625211ad6a",
+    "review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  "protected_protocol_hashes": {
+    "protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6",
+    "PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "validate_gate.py": "ceb8730ce451950f2981548d5e87db8d14608258ab9f73fe80f7076476594a9b"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "actual_external_scores_read_or_created": false,
+  "actual_human_key_opened": false,
+  "models_fitted": 0,
+  "output_hashes": {
+    "fictional_unknown_reference_results.json": "0bba40552982031350e84a6a083d5e5675402132884228bf12e1e28258929366",
+    "fictional_complete_reference_results.json": "d3edb3e5732fe8b3be66b29e3409fdab2f370e23b8082a350a36d7fc62427bef"
+  }
+}

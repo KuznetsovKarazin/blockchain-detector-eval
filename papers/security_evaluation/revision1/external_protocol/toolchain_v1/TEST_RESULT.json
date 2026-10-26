@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "command": ".venv/bin/python -m pytest -q papers/security_evaluation/revision1/external_protocol/toolchain_v1/test_toolchain.py",
+  "tests_passed": 7,
+  "tests_failed": 0,
+  "actual_solc_or_slither_invocations_in_tests": 0,
+  "contract_processing": false
+}

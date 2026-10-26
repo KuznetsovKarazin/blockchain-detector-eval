@@ -1,0 +1,141 @@
+{
+  "schema": "graph_mechanism_recovery_20261026_v1",
+  "status": "all_15_missing_graph_artifacts_restored_byte_exact_locally",
+  "checkpoint": "e011968b4d92f407cc515993ef91441444c9fee0",
+  "restored_files": 15,
+  "restored_bytes": 5131586,
+  "verification": [
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/source_declaration_heuristics.csv.gz",
+      "bytes": 1299890,
+      "sha256": "3692f032b347037c78d1373b7e7027d82039766389e256a9692d8ce494ffcb2a",
+      "git_blob_sha": "6a1b36e58cd61cb1298007ed59871f4eb6ecc91b",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/memberships.csv.gz",
+      "bytes": 1221392,
+      "sha256": "96ee133ff79dbd6e04dcc2d214d5bf579623c74e6787b08504dc3e12ae864aab",
+      "git_blob_sha": "eadbabb3ae7ad3113d4d036486a4e9a9aa1dafa7",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_legacy_historical_7080_080.csv.gz",
+      "bytes": 57681,
+      "sha256": "dd63d5c98df60f39d4d6e2e70e232f478e21296fb4d965b191b5f06e1b5612f0",
+      "git_blob_sha": "280b7f9ebfbac881a387aed9133884daeddbe399",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_full_dappscan_21457_080.csv.gz",
+      "bytes": 117564,
+      "sha256": "dba5c0028bf05d6ca156b3b31dfa2edc96afdbb3f0032f2a8978699cfcb1c2f7",
+      "git_blob_sha": "e1d8ec2d9608eb89825ae664c36a317133940d72",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_full_upstream_21950_080.csv.gz",
+      "bytes": 120785,
+      "sha256": "4a8d076df6981d500b330202fbad64565f3da27e1dece677fd9e86fd3e591729",
+      "git_blob_sha": "0f91b9f46f6d5a7a16b5342f5986e84725b07342",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_historical_7080_080.csv.gz",
+      "bytes": 57653,
+      "sha256": "f34568a6b3ecfef174e6b914e9317e788f35493b43dfd32c7a441a44f0e7b4cc",
+      "git_blob_sha": "665a84d2cdab6571787454162d643dbdd3f04e57",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_combined_24131.csv.gz",
+      "bytes": 371343,
+      "sha256": "ca63751f247bef44b20757151cbbcc27dbc2a9e20addc4e8a949e7e9b8a3bc7e",
+      "git_blob_sha": "e0fbed782d9973a0a245756ed037c544d937280d",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_dappscan_21457.csv.gz",
+      "bytes": 194692,
+      "sha256": "9dc60a4bebc3c62e06bb695348787d971883bf4d4daea3110933188bba730482",
+      "git_blob_sha": "34502ddfdb3546cb2b0805b646952bf1c37cdb51",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_upstream_21950.csv.gz",
+      "bytes": 198988,
+      "sha256": "f3a775781e9f43d9ca6cd138c6709092429329797f7f7c6ab9a21d2d1afbb350",
+      "git_blob_sha": "c0696bc003c43a0d1c5dedffb4e3cb04c0326d5d",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_historical_7080.csv.gz",
+      "bytes": 69121,
+      "sha256": "41223f391a7e0a20862fe561e00b83879489bfab6eb6b1b9ebd23f298e4a0b79",
+      "git_blob_sha": "7942e6bc0e582974b4a4fac02a68a4c74c705dd1",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_combined_24131.csv.gz",
+      "bytes": 406739,
+      "sha256": "714c1df6ba7d17f69350d63e8d68ec364483bf409046503b78972ce047761e3e",
+      "git_blob_sha": "f3a3f985a3841529f113b9cec0f67ddd5a3e6a15",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_dappscan_21457.csv.gz",
+      "bytes": 194692,
+      "sha256": "40af75b018293b4ace948b0dc1f503c0d03a56a0ca0bc35bad4035352eb557f3",
+      "git_blob_sha": "9c6f71c2ad9d92f6551e940f7ad0e2c420e3fb25",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_upstream_21950.csv.gz",
+      "bytes": 198988,
+      "sha256": "f99108f060cf22d3e0edf1a69ce092cbcdf950402e069ffa2aa8a3dab606a69f",
+      "git_blob_sha": "c21b26b5c21a0d60d5861a4837451116e34f1911",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_historical_7080.csv.gz",
+      "bytes": 69121,
+      "sha256": "7040ecf440dfaec29e4dc9be39cdae7676e93a393f200759814aaee8ed60f825",
+      "git_blob_sha": "c126852a216fece7af6fce5079f949d0bdb07d13",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/population_ranks.csv.gz",
+      "bytes": 552937,
+      "sha256": "694bab33b4a726d5c60bb32a39509df09f29cf0bb5d275759308690d723c2927",
+      "git_blob_sha": "4be3ebd6f5786f41828ffaf6658bc76fe3cf3890",
+      "original_sha256_match": true,
+      "original_git_blob_match": true
+    }
+  ],
+  "stable_output_comparisons": 26,
+  "exact_sha256_comparisons": 25,
+  "permitted_metadata_difference": "Fresh description config records absolute input paths instead of original relative paths. Source code, numeric CSVs, gzip source inventory and source hashes are exact; old config remains untouched.",
+  "no_existing_frozen_file_overwritten": true,
+  "no_model_fits_or_scores": true,
+  "no_external_upload_or_publication": true,
+  "new_run_dirs": [
+    "data/derived/recovery_20261026/graph_mechanism/graph_stage_v1",
+    "data/derived/recovery_20261026/graph_mechanism/identity_stage_v1",
+    "data/derived/recovery_20261026/graph_mechanism/description_stage_v1"
+  ],
+  "report": "GRAPH_MECHANISM_RECOVERY.md"
+}

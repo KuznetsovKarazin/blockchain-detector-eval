@@ -1,0 +1,27 @@
+{
+  "schema": "independent_external_B_synthetic_review_result_v1",
+  "returncode": 0,
+  "passed": true,
+  "elapsed_seconds": 6.239682730999448,
+  "sources_unchanged_during_run": true,
+  "source_sha256": {
+    "papers/security_evaluation/revision1/recovery_20261026/run_engineering_independent.py": "df9e514ef50214639936c249b9cc3e8e1824936406a27c7dc31883e8d6839a52",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_independent.py": "08fba776bdab56aa320add3cde23f9442d0545a8a0df2d64b1b8caac159b7837",
+    "papers/security_evaluation/revision1/recovery_20261026/conftest.py": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d",
+    "papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/api_amendment_after_coverage.json": "646bdfe5a8d94c78c1be606ff8876fcd9eaa19628e50cc454f865ee17ce9658c",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "papers/security_evaluation/revision1/external_protocol/toolchain_v1/manifest.json": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/coverage_20261026_v1/source_snapshot/adapters.py": "7955d1e0b8177c99a6ebeadb357465c24016bbcfa3c68bbc685aadbbe62a8806"
+  },
+  "plan_sha256": "84e2a48018c78bd651d6c4fe5aa57be0ae5adf76f6347a0799ce26cd3e54defa",
+  "stdout_sha256": "b0d5104c9bdf32ecd8295724edf8a5cc74f776300ea0012cdfc5eb791d834c5c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "synthetic_inputs_only": true,
+  "actual_model_or_external_results": false
+}

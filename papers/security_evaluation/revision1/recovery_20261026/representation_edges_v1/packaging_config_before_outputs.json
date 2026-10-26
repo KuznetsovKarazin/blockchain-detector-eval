@@ -1,0 +1,43 @@
+{
+  "schema": "canonical_representation_edge_packaging_v1",
+  "scientific_status": "new independently verified computational reproduction; not historical edge-array recovery",
+  "script_sha256": "2ad2cb6a90d6acbaa9310283d0cf03e60789fe00ecd61898ede369c4c68a59ac",
+  "replay_root": "data/derived/representation_recovery_20261026_v1",
+  "replay_configuration_sha256": "c73112147b03c4662301481dc29f7bba8b769a4264f46f1bf214b01ce0e96937",
+  "recovery_receipt_sha256": "48a1e569c8956f8a0390b942779af0811a6bea857bf87151773dd1c032b114a2",
+  "independent_verification_sha256": "ed82dfc3049241beddde19ea59e7a2f9070ea20f15ab5cbf07d4fb1ac8e64761",
+  "row_order": "ascending (left,right); same permutation for left,right,intersection",
+  "node_vector": "node_shingle_sizes stays in node_id order0..24130",
+  "array_encoding": "one-dimensional little-endian int32; NumPy .npy version1.0; no pickle",
+  "zip_encoding": {
+    "entry_order": [
+      "left.npy",
+      "right.npy",
+      "intersection.npy",
+      "node_shingle_sizes.npy"
+    ],
+    "timestamp": [
+      1980,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "compression": "deflate",
+    "compression_level": 9,
+    "create_system": 3,
+    "external_attr": 2172649472,
+    "extra": "",
+    "comment": ""
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "zlib_compiled": "1.3.2",
+    "zlib_runtime": "1.3.2"
+  },
+  "no_model_scoring": true,
+  "no_upload": true,
+  "no_git_mutation": true
+}

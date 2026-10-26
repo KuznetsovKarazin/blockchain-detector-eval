@@ -1,0 +1,184 @@
+{
+  "schema": "fixed_frame_probability_performance_engineering_v1",
+  "class": "reentrancy",
+  "score_coverage": 1.0,
+  "full_queue_files": 1998,
+  "all_selected_cases": 180,
+  "selected_class_cases": 90,
+  "sampling_design": "independent_stratified_SRSWOR_file_by_class",
+  "reference": "named_expert_adjudication_conditional_not_infallible_truth",
+  "ap": {
+    "point": null,
+    "estimator": "nonlinear_survey_weighted_AP_plugin_not_unbiased",
+    "unknown_sample_outcomes": 1,
+    "interval": null,
+    "safe_AP_bound_if_population_has_positive": [
+      0.0,
+      1.0
+    ],
+    "coverage_scope": "design_approximate_fixed_finite_frame_scores_and_reference_process_not_family_generalization",
+    "invalid_replicates": 0,
+    "no_positive_replicates": 0,
+    "replicates_requested": 2000,
+    "replicate_values": [],
+    "bootstrap_coverage_guaranteed": false,
+    "status": "suppressed_unknown_outcomes_no_complete_case_deletion"
+  },
+  "workload": [
+    {
+      "review_fraction": 0.05,
+      "review_count_requested": 99,
+      "boundary_score": 0.950950950950951,
+      "tie_count": 1,
+      "slots_from_tie": 1,
+      "estimand": "expected_recovered_reference_positive_count_under_uniform_boundary_tie",
+      "queue_n": 1998,
+      "review_count": 99,
+      "point_HT_total_unclipped": null,
+      "point_design_variance": null,
+      "point_outside_finite_support": false,
+      "unknown_sample_n": 1,
+      "unknown_cases_dropped": false,
+      "HT_estimated_unknown_lower_endpoint": {
+        "estimate": 44.4,
+        "design_variance_estimate": 919.8872727272726,
+        "standard_error_estimate": 30.32964346521852
+      },
+      "HT_estimated_unknown_upper_endpoint": {
+        "estimate": 66.6,
+        "design_variance_estimate": 1347.741818181818,
+        "standard_error_estimate": 36.711603318049434
+      },
+      "endpoint_estimates_are_not_hard_population_bounds": true,
+      "finite_population_logical_bounds": [
+        2.0,
+        97.0
+      ],
+      "logical_bounds_include_unsampled_and_unknown_reference_outcomes": true,
+      "approximate_normal_interval_or_unknown_envelope_raw": [
+        -15.045008855768906,
+        138.55342031809803
+      ],
+      "approximate_interval_support_intersection": [
+        0.0,
+        99.0
+      ],
+      "point_estimate_clipped": false,
+      "nominal_level": 0.95,
+      "noncensus_zero_estimated_variance": false,
+      "interval_coverage_guaranteed": false,
+      "interval_caveat": "Design-normal approximation can under-cover with rare/zero observed findings; zero sample variance is not evidence of absent unsampled findings. Logical bounds remain separate.",
+      "variance_scope": "annotation_sampling_for_tie_averaged_yield; excludes realized_tie_randomization_variance_and_model_training_variability",
+      "new_family_inference": false
+    },
+    {
+      "review_fraction": 0.1,
+      "review_count_requested": 199,
+      "boundary_score": 0.9009009009009009,
+      "tie_count": 1,
+      "slots_from_tie": 1,
+      "estimand": "expected_recovered_reference_positive_count_under_uniform_boundary_tie",
+      "queue_n": 1998,
+      "review_count": 199,
+      "point_HT_total_unclipped": null,
+      "point_design_variance": null,
+      "point_outside_finite_support": false,
+      "unknown_sample_n": 1,
+      "unknown_cases_dropped": false,
+      "HT_estimated_unknown_lower_endpoint": {
+        "estimate": 44.4,
+        "design_variance_estimate": 919.8872727272726,
+        "standard_error_estimate": 30.32964346521852
+      },
+      "HT_estimated_unknown_upper_endpoint": {
+        "estimate": 66.6,
+        "design_variance_estimate": 1347.741818181818,
+        "standard_error_estimate": 36.711603318049434
+      },
+      "endpoint_estimates_are_not_hard_population_bounds": true,
+      "finite_population_logical_bounds": [
+        2.0,
+        193.0
+      ],
+      "logical_bounds_include_unsampled_and_unknown_reference_outcomes": true,
+      "approximate_normal_interval_or_unknown_envelope_raw": [
+        -15.045008855768906,
+        138.55342031809803
+      ],
+      "approximate_interval_support_intersection": [
+        0.0,
+        138.55342031809803
+      ],
+      "point_estimate_clipped": false,
+      "nominal_level": 0.95,
+      "noncensus_zero_estimated_variance": false,
+      "interval_coverage_guaranteed": false,
+      "interval_caveat": "Design-normal approximation can under-cover with rare/zero observed findings; zero sample variance is not evidence of absent unsampled findings. Logical bounds remain separate.",
+      "variance_scope": "annotation_sampling_for_tie_averaged_yield; excludes realized_tie_randomization_variance_and_model_training_variability",
+      "new_family_inference": false
+    },
+    {
+      "review_fraction": 0.2,
+      "review_count_requested": 399,
+      "boundary_score": 0.8008008008008008,
+      "tie_count": 1,
+      "slots_from_tie": 1,
+      "estimand": "expected_recovered_reference_positive_count_under_uniform_boundary_tie",
+      "queue_n": 1998,
+      "review_count": 399,
+      "point_HT_total_unclipped": null,
+      "point_design_variance": null,
+      "point_outside_finite_support": false,
+      "unknown_sample_n": 1,
+      "unknown_cases_dropped": false,
+      "HT_estimated_unknown_lower_endpoint": {
+        "estimate": 111.0,
+        "design_variance_estimate": 2139.272727272728,
+        "standard_error_estimate": 46.25227267143451
+      },
+      "HT_estimated_unknown_upper_endpoint": {
+        "estimate": 133.2,
+        "design_variance_estimate": 2502.9490909090914,
+        "standard_error_estimate": 50.029482217079675
+      },
+      "endpoint_estimates_are_not_hard_population_bounds": true,
+      "finite_population_logical_bounds": [
+        5.0,
+        387.0
+      ],
+      "logical_bounds_include_unsampled_and_unknown_reference_outcomes": true,
+      "approximate_normal_interval_or_unknown_envelope_raw": [
+        20.34721136086216,
+        231.25598331066323
+      ],
+      "approximate_interval_support_intersection": [
+        20.34721136086216,
+        231.25598331066323
+      ],
+      "point_estimate_clipped": false,
+      "nominal_level": 0.95,
+      "noncensus_zero_estimated_variance": false,
+      "interval_coverage_guaranteed": false,
+      "interval_caveat": "Design-normal approximation can under-cover with rare/zero observed findings; zero sample variance is not evidence of absent unsampled findings. Logical bounds remain separate.",
+      "variance_scope": "annotation_sampling_for_tie_averaged_yield; excludes realized_tie_randomization_variance_and_model_training_variability",
+      "new_family_inference": false
+    }
+  ],
+  "bootstrap": {
+    "method": "Rao_Wu_single_stage_SRSWOR_FPC",
+    "replicates": 2000,
+    "seed": 20261026,
+    "census_strata_fixed": true,
+    "noncensus_n1_rejected": true
+  },
+  "model_fits_performed": 0,
+  "execution_gate_override": false,
+  "limitations": [
+    "Nonlinear AP plug-in is not unbiased",
+    "AP percentile and workload normal intervals are design approximations without established rare-positive coverage",
+    "Unknown reference outcomes never deleted or treated as known negatives",
+    "No new-project/family confidence interval or model-training uncertainty",
+    "No cross-class paired inference: file-by-class sample overlaps need separate covariance treatment",
+    "Complete successful full-queue scores required; failed-score fallback is not implemented"
+  ]
+}

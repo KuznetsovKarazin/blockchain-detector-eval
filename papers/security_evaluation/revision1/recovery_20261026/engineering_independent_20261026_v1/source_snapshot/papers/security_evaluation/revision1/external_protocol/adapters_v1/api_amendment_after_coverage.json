@@ -1,0 +1,26 @@
+{
+  "schema": "external_B_adapter_api_amendment_v1",
+  "date": "2026-10-26",
+  "trigger": "independent engineering review before protocol freeze",
+  "changes": [
+    "Pattern43.fit_transform_training now refuses invalid or external-role training records; no fitted parameters",
+    "train-role TFIDF transforms require known fitted identity and unchanged source hash",
+    "direct unittest entrypoint moved after all synthetic test classes",
+    "Local pytest collection excludes archived test-source copies to avoid duplicate module imports"
+  ],
+  "original_coverage_outputs_preserved": true,
+  "original_plan_sha256": "a24dbae53ec17120a876c9e919130e655803e6d13450e32dfa85534bd868f6ec",
+  "current_plan_sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+  "original_adapter_sha256": "7955d1e0b8177c99a6ebeadb357465c24016bbcfa3c68bbc685aadbbe62a8806",
+  "current_adapter_sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+  "unchanged_representation_function_ast_sha256": {
+    "mask_literal_contents": "b0caf6c49f1bdaef8e4c5b755cb82d0ee070b63a847d314316acc4be8a2a363d",
+    "pattern_from_scanned": "bc4726b986485a91df1068434c71e68c9d3613fb0e26396746986bdb0daddfeb",
+    "prepare": "2d7de0cc3aa7db1c27e1aff6d132a3b288320eaaebce9343f74340c51ccc4336",
+    "feature_definitions": "8245c2e7dd55f00eab747e7fd357b48c64be55efa3a774a0faad3e02cbbcc145"
+  },
+  "additional_real_source_pass_needed": false,
+  "reason_no_repeat": "Only training/API provenance guards changed; actual preprocessing functions/scanner/regex definitions are unchanged and their original full-source coverage is preserved",
+  "real_fits_or_predictions": 0,
+  "protocol_freeze_performed": false
+}

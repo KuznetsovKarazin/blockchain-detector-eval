@@ -1,0 +1,30 @@
+{
+  "completed_utc": "2026-10-26T08:27:14.549521+00:00",
+  "contract_analyses": 0,
+  "dependency_artifacts": 47,
+  "dependency_lock_sha256": "31b79480abe3369c468046cf59d99785630989b1ab0539551a0692bf29d27613",
+  "executable": "data/derived/security_toolchain_v1/python_env/bin/slither",
+  "executable_sha256": "a0e23541a7bbe4ececb6b4f54bb28f46bf645acd6467c0be6af6ecd72ce80bab",
+  "installed_freeze_sha256": "1dc7a50d02fb2faa99a5901e5c358d062b8554eacd17faabdb368504bb0ee25a",
+  "machine": "x86_64",
+  "pip_check_stdout": "No broken requirements found.\n",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "primary_project_url": "https://pypi.org/project/slither-analyzer/0.11.6/",
+  "provenance_scope": "Artifact SHA256 verified against official PyPI JSON. PyPI reports Trusted Publishing for the Slither release; no independent Sigstore verification performed.",
+  "python_artifact_manifest_sha256": "ce788fd4b890395c72963f693fc1ad58ad0a5369ec01c20242c044b9b4cfc687",
+  "python_env": "data/derived/security_toolchain_v1/python_env",
+  "python_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "python_version": "Python 3.12.14",
+  "slither_version": "0.11.6",
+  "status": "verified_version_inventory_only",
+  "version_probe": {
+    "argv": [
+      "data/derived/security_toolchain_v1/python_env/bin/slither",
+      "--version"
+    ],
+    "executed_utc": "2026-10-26T08:27:14.431732+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "0.11.6\n"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "external_toolchain_inventory_manifest_v1",
+  "status": "verified_executable_inventory_only",
+  "verified_utc": "2026-10-26T08:28:33.926264+00:00",
+  "execution_permission": "version probes only",
+  "solc_versions": 30,
+  "slither_version": "0.11.6",
+  "locked_python_wheels": 47,
+  "all_official_checksums_match": true,
+  "all_full_solc_build_identifiers_match": true,
+  "planned_source_rows": 2650,
+  "all_source_rows": 2689,
+  "candidate_version_slots": 3900,
+  "unplanned_source_rows": 39,
+  "unplanned_rows_remain_unavailable": true,
+  "compiler_plan_candidate_order_unchanged": true,
+  "isolated_python_without_system_site_packages": true,
+  "compiler_executions_on_sources": 0,
+  "slither_analyses": 0,
+  "model_scoring": false,
+  "compilation_success_coverage_established": false,
+  "external_readiness_or_semantic_signoff": false,
+  "private_artifact_root": "data/derived/security_toolchain_v1",
+  "source_and_planner_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/toolchain_v1/provision_toolchain.py": "04dc6a6c25fc2f5b620b8a5311851f34c636b4c6fd5c425b8bf101d0d80741aa",
+    "papers/security_evaluation/revision1/external_protocol/toolchain_v1/verify_toolchain.py": "afabaa40be10ad7f954507bad67403c44bc26fd052eb82338ed99731628bcc17",
+    "papers/security_evaluation/revision1/external_protocol/compiler_policy.py": "535a915f5de643a36d6d61fdc51a73fa44e21c1250c5272c5b50a577f3baf122",
+    "papers/security_evaluation/revision1/external_protocol/input_readiness_20261025_v1/compiler_plans.csv": "e6db64c3b1061ab86944b412c73743ba897cbbc710b77963398ca746a2fb5e38"
+  },
+  "output_sha256": {
+    "solc_download_plan.json": "36fb133c89d315fe18b52d9f5d4b5df10089d62e8b65c7092918b12a7ba47331",
+    "solc_inventory.json": "afbd0dda64302bcccc1fc0bc5cad32458790d6995a16e0d43930bb05c2aa2a00",
+    "python_artifacts.json": "ce788fd4b890395c72963f693fc1ad58ad0a5369ec01c20242c044b9b4cfc687",
+    "requirements.lock": "31b79480abe3369c468046cf59d99785630989b1ab0539551a0692bf29d27613",
+    "installed_freeze.txt": "1dc7a50d02fb2faa99a5901e5c358d062b8554eacd17faabdb368504bb0ee25a",
+    "slither_inventory.json": "96cffd72c0c1dcddb1c11d7403c50507a6e400ace6ee0ba56f0cbbc5ed80ae3e",
+    "required_version_inventory.csv": "4a2f35dbdad658fdd5a75482431719a6f53cf0b4b9673b31bf73bf2a37b368d4"
+  },
+  "limitations": [
+    "File pragma plans do not establish imported dependency compatibility.",
+    "Version probes do not establish successful compilation or detector execution.",
+    "Linux x86_64 and Python3.12 wheel environment only; no universal platform lock.",
+    "PyPI artifact checksums checked; independent Sigstore verification was not performed."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "sampling_preserved_results_verification_v1",
+  "local_git_head": "e011968b4d92f407cc515993ef91441444c9fee0",
+  "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+  "prediction_files_verified": 360,
+  "result_manifests_verified": 360,
+  "fit_artifacts_verified_against_saved_resume_hashes": 1800,
+  "result_artifacts_verified_against_per_fit_hashes": 1440,
+  "fit_files_verified_against_public_clone_git_index": 1800,
+  "summary_files_verified": 7,
+  "unchanged_current_and_snapshot_sources": {
+    "papers/security_evaluation/revision1/sampling_variance/run_sampling_variance.py": "79ae4b059d2fc164864737c3ecc432af285652f8e826d86321f4bce72b174d6d",
+    "papers/security_evaluation/revision1/sampling_variance/random_ranking_reference.py": "60fc9bdd02faaffb61b19601b3a6f148521c76748c78d08a1eb14dc2b14037d6",
+    "papers/security_evaluation/revision1/sampling_variance/test_sampling_variance.py": "e1665641faa6ad49a8754a987eb8bcd21aab51a6fb0168983c74d417af2d83ba",
+    "tests/test_security_random_ranking_reference.py": "ee3a2f9b0593961700973335fa391bf38e01da64271888d867733f37db2ec21f",
+    "papers/security_evaluation/revision1/sampling_variance/PROTOCOL.md": "6cff41be419e07a53bb5803e7c86bf8a5f9313cd454c4ade28fb0d7f82a8a152",
+    "papers/security_evaluation/campaign/run_development.py": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59",
+    "papers/security_evaluation/code/fixed_t_development.py": "3558dd6c0280ef1e2c33fc1333f7f4785e5f5d91d838451a21b80e8c2f33043d",
+    "papers/security_evaluation/evaluation_metrics.py": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d",
+    "src/bal/data/contracts.py": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "fits_executed": 0,
+  "all_checks_passed": true
+}

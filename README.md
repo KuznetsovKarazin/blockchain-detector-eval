@@ -1,4 +1,4 @@
-> **First-review article checkpoint:** the manuscript and text results are available, but 29 compressed graph-output paths remain absent after a publication-review block and environment reset. See [publication status](papers/security_evaluation/revision1/PUBLICATION_STATUS.md).
+> **Article 1 update, 26 October 2026:** raw/private inputs and 23 gzip artifacts are verified locally; six original NPZ files remain unrecovered and have separately identified new reproductions. Compressed artifacts remain excluded from the public update after automatic publication review rejected their upload. See [current publication status](papers/security_evaluation/revision1/PUBLICATION_STATUS.md).
 
 # blockchain-detector-eval
 
@@ -10,7 +10,7 @@
 [![results: CC BY 4.0](https://img.shields.io/badge/results-CC%20BY%204.0-lightgrey)](results/LICENSE)
 ![CPU only](https://img.shields.io/badge/hardware-CPU%20only-orange)
 
-**Article 1 research revision:** [current manuscript](papers/security_evaluation/manuscript/DRAFT_REVISION1.md), [scientific artifact guide](papers/security_evaluation/revision1/README.md), and [status](papers/security_evaluation/STATUS.md). The revision completes dependency-mechanism analyses and a 20-draw historical-test model diagnostic (360 logical evaluations / 282 physical fits). External expert assessment remains prospective; no external model scores or human judgments are reported. The historical book results below remain unchanged.
+**Article 1 research revision:** [current manuscript](papers/security_evaluation/manuscript/DRAFT_REVISION2.md), [scientific artifact guide](papers/security_evaluation/revision1/README.md), and [status](papers/security_evaluation/STATUS.md). The revision completes dependency-mechanism analyses and a 20-draw historical-test model diagnostic (360 logical evaluations / 282 physical fits). Versioned external adapters, selected weighted-performance primitives and a verified toolchain are now available; [their tested scope and remaining conditions](papers/security_evaluation/revision1/external_protocol/ENGINEERING_READINESS_20261026.md) remain explicit. External expert assessment remains prospective; no external model scores or human judgments are reported. The historical book results below remain unchanged.
 
 This repository evaluates detectors for four blockchain security tasks under
 deployment-like protocols: future time periods, unseen addresses and projects,

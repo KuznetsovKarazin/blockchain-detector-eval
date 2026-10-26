@@ -1,0 +1,470 @@
+{
+  "status": "complete",
+  "comparisons": [
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/training_feasibility.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_normalized/training_feasibility.csv",
+      "expected_sha256": "cb37382ba2720b4048a6f495d747efdc008810097dfe19adbe503b42e2897750",
+      "actual_sha256": "cb37382ba2720b4048a6f495d747efdc008810097dfe19adbe503b42e2897750",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "bc8308eac71fd2f529b5ec1914ff84bbb67a36af",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/lexical_edges.npz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_normalized/lexical_edges.npz",
+      "expected_sha256": "26b4a0e22b8ce6b46343316efbff212a3d8a4ba9be4c92f46758861a0991c106",
+      "actual_sha256": "fe5df2449e7bf9ea43365dffb64425f8eeb2e967366ecd1829d690071e06872d",
+      "expected_git_blob_sha1": "37eb9474266c022b094983078ec919d6d652614a",
+      "actual_git_blob_sha1": "f47b05f1fe7cec89c55b57e2b1503871e6d42f73",
+      "restored": false,
+      "sha256_match": false,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/memberships.csv.gz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/exact_candidates/corrected_file_normalized/memberships.csv.gz",
+      "expected_sha256": "e57d3ed9ca2595284c594d479f8259daef39dbbeae5d937a9c354051e7480d05",
+      "actual_sha256": "e57d3ed9ca2595284c594d479f8259daef39dbbeae5d937a9c354051e7480d05",
+      "expected_git_blob_sha1": "14e1a538aff991561113fac36e2fa082ceefdda1",
+      "actual_git_blob_sha1": "14e1a538aff991561113fac36e2fa082ceefdda1",
+      "restored": true,
+      "sha256_match": true,
+      "git_blob_match": true,
+      "gzip_historical_mtime": 1792940443
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/edge_counts.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_normalized/edge_counts.csv",
+      "expected_sha256": "441b3c94cde45c208c62cd620d481c5949e84f4b0636b3dbd91e17514cf5e49d",
+      "actual_sha256": "441b3c94cde45c208c62cd620d481c5949e84f4b0636b3dbd91e17514cf5e49d",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "726a441e6423686801772261d9dd57e1e581c090",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/component_concentration.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_normalized/component_concentration.csv",
+      "expected_sha256": "5c574ab95d04e2283e58ba5166666738c45254d9417fe326a725596c3cb0b471",
+      "actual_sha256": "5c574ab95d04e2283e58ba5166666738c45254d9417fe326a725596c3cb0b471",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "797b8fdaaa970ce6b00ba663e94b095a4e428750",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/training_feasibility.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_preserved/training_feasibility.csv",
+      "expected_sha256": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302",
+      "actual_sha256": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "d446bc061293f9c328ba062cbb719d0cb2e56aeb",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/lexical_edges.npz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_preserved/lexical_edges.npz",
+      "expected_sha256": "3235bfee86cb33670ebb19c6d2a56c71421a8283be97e758c8e016a9a4cf9294",
+      "actual_sha256": "6945afd38daf139410d46791389d07f83b15533b6bd448d462d42aaf9d720f59",
+      "expected_git_blob_sha1": "d935804eae92520f0eca0554c9e672f40c57738e",
+      "actual_git_blob_sha1": "f57df9454efbac488c2c56e5fe66dd7b09453afb",
+      "restored": false,
+      "sha256_match": false,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/memberships.csv.gz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/exact_candidates/corrected_file_preserved/memberships.csv.gz",
+      "expected_sha256": "d65f57808d898002ba561b8ce776adaf47048633467b120c87d4bde1a7f963f4",
+      "actual_sha256": "d65f57808d898002ba561b8ce776adaf47048633467b120c87d4bde1a7f963f4",
+      "expected_git_blob_sha1": "4b3dcfa0ce6e48741cd830d54e1304af2660d22c",
+      "actual_git_blob_sha1": "4b3dcfa0ce6e48741cd830d54e1304af2660d22c",
+      "restored": true,
+      "sha256_match": true,
+      "git_blob_match": true,
+      "gzip_historical_mtime": 1792940519
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/edge_counts.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_preserved/edge_counts.csv",
+      "expected_sha256": "1f94dec956e9b83481e6512a54b1cd5499b09630b120f8a8d3c1bc1511d3a091",
+      "actual_sha256": "1f94dec956e9b83481e6512a54b1cd5499b09630b120f8a8d3c1bc1511d3a091",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "f670fbc29a88aac814a5bdc26ca7d9868b638310",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/component_concentration.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/corrected_file_preserved/component_concentration.csv",
+      "expected_sha256": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb",
+      "actual_sha256": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "e2cf5c0984061b6dbee3ad5800efe75ef9a5dba8",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/training_feasibility.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_normalized/training_feasibility.csv",
+      "expected_sha256": "c9a87d4b3a6408f5fcae5f1d86000d96bc2a1d1853751d0753518ee4f244d8c5",
+      "actual_sha256": "c9a87d4b3a6408f5fcae5f1d86000d96bc2a1d1853751d0753518ee4f244d8c5",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "e2df9240d91be8461ce27e8ece8e3c107632e866",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/lexical_edges.npz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_normalized/lexical_edges.npz",
+      "expected_sha256": "f7f45c3709e0fec35a0e6bcd9543820fa27ef6941dee9e455b79d3f9ffdc4c83",
+      "actual_sha256": "13b682ce2f0f5348fb214bea3cd38725e9cf42d37a0ae70530c38d57cbbc75d3",
+      "expected_git_blob_sha1": "064d9b2553436702849e4b569434d32d354989bb",
+      "actual_git_blob_sha1": "f41926e7a2226fef0b0f113347b9b9b2e7289b0c",
+      "restored": false,
+      "sha256_match": false,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/memberships.csv.gz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/exact_candidates/library_interface_masked_normalized/memberships.csv.gz",
+      "expected_sha256": "4adcd3daa7dda64e1876faf31ef6857bbf9d334792eca10d9717f6b1f5c190cf",
+      "actual_sha256": "4adcd3daa7dda64e1876faf31ef6857bbf9d334792eca10d9717f6b1f5c190cf",
+      "expected_git_blob_sha1": "2d4dada52d6c6aeb4f373487cb0e92de91cd23f0",
+      "actual_git_blob_sha1": "2d4dada52d6c6aeb4f373487cb0e92de91cd23f0",
+      "restored": true,
+      "sha256_match": true,
+      "git_blob_match": true,
+      "gzip_historical_mtime": 1792940583
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/edge_counts.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_normalized/edge_counts.csv",
+      "expected_sha256": "6608e06f758a15f7816bb4799a691e323004ec76d1ee5a730d63d0438c51c37f",
+      "actual_sha256": "6608e06f758a15f7816bb4799a691e323004ec76d1ee5a730d63d0438c51c37f",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "7ba3a3727731ac89ae9c75d4ecd308be3c344176",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/component_concentration.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_normalized/component_concentration.csv",
+      "expected_sha256": "55de361798f826e6c70d831020ff95f553c48db0f0a4ce28754228c61f28d300",
+      "actual_sha256": "55de361798f826e6c70d831020ff95f553c48db0f0a4ce28754228c61f28d300",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "e3e6ed63a7a390a255d07b145d440c5d3daa04f9",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/training_feasibility.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_preserved/training_feasibility.csv",
+      "expected_sha256": "ef65942256d277e063170525744ef8ceb99f4b22775b15721b332581d168a2c2",
+      "actual_sha256": "ef65942256d277e063170525744ef8ceb99f4b22775b15721b332581d168a2c2",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "c6569c6c446f3189fff1e48d38bf56297e194041",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/lexical_edges.npz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_preserved/lexical_edges.npz",
+      "expected_sha256": "df69e1de52134cb0d7de111305c0a10b82133afefb552586605654e31792847a",
+      "actual_sha256": "ad3cc9c9cd899d3f00cf120c7bb0b39694fd097511f113b0e94d0d2637bb4cc3",
+      "expected_git_blob_sha1": "731cea30bd16363d15c1b45a9cee21ec53a87222",
+      "actual_git_blob_sha1": "6ebde0968d77840c4ca05cbe4557aa616e6e229f",
+      "restored": false,
+      "sha256_match": false,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/memberships.csv.gz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/exact_candidates/library_interface_masked_preserved/memberships.csv.gz",
+      "expected_sha256": "9da0b1ed4710b7abf4c65cac4c6f2332fdc861cb89b830eae1dc95648c632eff",
+      "actual_sha256": "9da0b1ed4710b7abf4c65cac4c6f2332fdc861cb89b830eae1dc95648c632eff",
+      "expected_git_blob_sha1": "e20c5fc2de7180f6f1e853a45edbb000caff49e5",
+      "actual_git_blob_sha1": "e20c5fc2de7180f6f1e853a45edbb000caff49e5",
+      "restored": true,
+      "sha256_match": true,
+      "git_blob_match": true,
+      "gzip_historical_mtime": 1792940639
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/edge_counts.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_preserved/edge_counts.csv",
+      "expected_sha256": "fd4e8028fc3f986823dfc798cb6e48321392dc6b037cd0acc778a6aa82789adb",
+      "actual_sha256": "fd4e8028fc3f986823dfc798cb6e48321392dc6b037cd0acc778a6aa82789adb",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "52a7688b9f7e9e602b2108e065c71dcf1de65a20",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/component_concentration.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/primary/library_interface_masked_preserved/component_concentration.csv",
+      "expected_sha256": "35126c1aa8384d4812842666be006f3d5c73e9e961d482498ea0e28d9a6f3e04",
+      "actual_sha256": "35126c1aa8384d4812842666be006f3d5c73e9e961d482498ea0e28d9a6f3e04",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "0a21fd0c51b4dae7adb1895daae11313e4a685f1",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/training_feasibility.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_normalized/training_feasibility.csv",
+      "expected_sha256": "4c55774cdda6703c7a57a7553110f6121eb1275c6f18b268227e33f718a437d6",
+      "actual_sha256": "4c55774cdda6703c7a57a7553110f6121eb1275c6f18b268227e33f718a437d6",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "7b896250dbc45d261f2e044e9b6f5690a86d325e",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/lexical_edges.npz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_normalized/lexical_edges.npz",
+      "expected_sha256": "5a63afb5d49cdc7e759ac3d7ece1365481c3672b41e18f5702260f331d9ae670",
+      "actual_sha256": "7cceafefcd48f01ad437885c9802234c9ee5fd783c851aeb80c45eca29b006b5",
+      "expected_git_blob_sha1": "b625098536266526849a04c2ebffea486d186ef5",
+      "actual_git_blob_sha1": "fa1c6197dede42db37dc4646cf9666f3d5c19c94",
+      "restored": false,
+      "sha256_match": false,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/memberships.csv.gz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/exact_candidates/library_interface_segmented_normalized/memberships.csv.gz",
+      "expected_sha256": "75d47a3974ab16ba80100c1e042e8952fb1f9bfd88f45a0f93b005cef422e7c5",
+      "actual_sha256": "75d47a3974ab16ba80100c1e042e8952fb1f9bfd88f45a0f93b005cef422e7c5",
+      "expected_git_blob_sha1": "9e56a6c77dcfc31a6e410966d71b187dd68b7d66",
+      "actual_git_blob_sha1": "9e56a6c77dcfc31a6e410966d71b187dd68b7d66",
+      "restored": true,
+      "sha256_match": true,
+      "git_blob_match": true,
+      "gzip_historical_mtime": 1792941177
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/edge_changes_from_concatenated.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_normalized/edge_changes_from_concatenated.csv",
+      "expected_sha256": "6f52c474395ccd72d703f8d5926a85a4e7be1ea602658b7ba04f30451ff815fa",
+      "actual_sha256": "6f52c474395ccd72d703f8d5926a85a4e7be1ea602658b7ba04f30451ff815fa",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "20d7e6fa2a07c45ec64a2980b5a8a7c12dfb3f14",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/edge_counts.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_normalized/edge_counts.csv",
+      "expected_sha256": "e79c0ed511c2de752366676bdf82c886d2b09b3250228fa0f78c047af2a0dba2",
+      "actual_sha256": "e79c0ed511c2de752366676bdf82c886d2b09b3250228fa0f78c047af2a0dba2",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "951ccd7a06f3a6ba661ebe8b15a90f55836e0f21",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/component_concentration.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_normalized/component_concentration.csv",
+      "expected_sha256": "0680f3ab14f4a5b2fefb1f9a248166cdd0db32707cdb7b080df3ed8cd7d2c571",
+      "actual_sha256": "0680f3ab14f4a5b2fefb1f9a248166cdd0db32707cdb7b080df3ed8cd7d2c571",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "17bc225319dc98e86b00f0747685dfbb3b4a4cb7",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/training_feasibility.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_preserved/training_feasibility.csv",
+      "expected_sha256": "b958111e7e2e294c9a1f0a1d4150e3858dbdbf0758917f4f6106c3bb8b8cc446",
+      "actual_sha256": "b958111e7e2e294c9a1f0a1d4150e3858dbdbf0758917f4f6106c3bb8b8cc446",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "795dbeb25b2d5a4b42e4aa20d021cad4db0674cc",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/lexical_edges.npz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_preserved/lexical_edges.npz",
+      "expected_sha256": "7e9407838268752af34e65fd72c5e46f6a3565369b65e4e27922b10b2e700459",
+      "actual_sha256": "ecd093b8253ca9fbd6e53d01c3b7388ae86b5ad7d0f580d3061e401a573f3d7d",
+      "expected_git_blob_sha1": "a749cc26e8157437468b3f81ea1e8fcea3f2ac76",
+      "actual_git_blob_sha1": "10d69f3fec8fcddefdd69eaa13d43037a0733aac",
+      "restored": false,
+      "sha256_match": false,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/memberships.csv.gz",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/exact_candidates/library_interface_segmented_preserved/memberships.csv.gz",
+      "expected_sha256": "cf212589053ec987f2f5a0719d044a2737b07dc94d78019b0f9fd0551e014f4d",
+      "actual_sha256": "cf212589053ec987f2f5a0719d044a2737b07dc94d78019b0f9fd0551e014f4d",
+      "expected_git_blob_sha1": "8743f789f19d9e8dc83aa749156849a2beafab6d",
+      "actual_git_blob_sha1": "8743f789f19d9e8dc83aa749156849a2beafab6d",
+      "restored": true,
+      "sha256_match": true,
+      "git_blob_match": true,
+      "gzip_historical_mtime": 1792941231
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/edge_changes_from_concatenated.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_preserved/edge_changes_from_concatenated.csv",
+      "expected_sha256": "3e4bd184f4f8efecaed2f1ce583dc2bf23aef0d2b1112e4e633156a4a8847de2",
+      "actual_sha256": "3e4bd184f4f8efecaed2f1ce583dc2bf23aef0d2b1112e4e633156a4a8847de2",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "6da15d75880d7f21518969ab86edbc03067c5be6",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/edge_counts.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_preserved/edge_counts.csv",
+      "expected_sha256": "6384c5b0297ce0a7cea709024858f8dece7e0d28aa0813e152fa7badc9f7aaff",
+      "actual_sha256": "6384c5b0297ce0a7cea709024858f8dece7e0d28aa0813e152fa7badc9f7aaff",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "0fa5ed690e48f3ee3dd388c1be46364170234918",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    },
+    {
+      "original_path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/component_concentration.csv",
+      "candidate": "data/derived/representation_recovery_20261026_v1/segmented/library_interface_segmented_preserved/component_concentration.csv",
+      "expected_sha256": "273c8b9acdb39db2cb33692181c3af0fbc5232ad6241026cb3434f3744b14898",
+      "actual_sha256": "273c8b9acdb39db2cb33692181c3af0fbc5232ad6241026cb3434f3744b14898",
+      "expected_git_blob_sha1": null,
+      "actual_git_blob_sha1": "41419c97b3d5552d421471aa07b00e2ed0c2a068",
+      "restored": false,
+      "sha256_match": true,
+      "git_blob_match": false,
+      "gzip_historical_mtime": null
+    }
+  ],
+  "missing_artifacts_checked": 12,
+  "artifacts_matching_both_original_hashes": 6,
+  "restored": 6,
+  "no_model_scoring": true,
+  "caveat": "If NPZ hash differs, matching aggregate tables and memberships does not by itself prove original full edge-list equality",
+  "recovery_configuration_sha256": "c73112147b03c4662301481dc29f7bba8b769a4264f46f1bf214b01ce0e96937",
+  "wrapper_sha256": "bbca9e41fd12a7d0802362dcd0c9c788ed96c799c0990ee261ad533a19897225",
+  "new_canonical_graphs": {
+    "primary/library_interface_masked_normalized": {
+      "schema": "sorted_edges_and_node_sizes_little_endian_int32_v1",
+      "array_order": [
+        "left",
+        "right",
+        "intersection",
+        "node_shingle_sizes"
+      ],
+      "canonical_sha256": "8e6a15f902cdd55491ffbaff412ba8bc2d0a556a4f643e8dd383b3da11349392",
+      "edges": 1021065,
+      "purpose": "New recovery provenance only; no original canonical edge digest survives for comparison"
+    },
+    "primary/corrected_file_preserved": {
+      "schema": "sorted_edges_and_node_sizes_little_endian_int32_v1",
+      "array_order": [
+        "left",
+        "right",
+        "intersection",
+        "node_shingle_sizes"
+      ],
+      "canonical_sha256": "73380adc0bdcdc74a871c155c49b874ca5c02d0b368a9c28f1f96642b817d04b",
+      "edges": 278628,
+      "purpose": "New recovery provenance only; no original canonical edge digest survives for comparison"
+    },
+    "primary/library_interface_masked_preserved": {
+      "schema": "sorted_edges_and_node_sizes_little_endian_int32_v1",
+      "array_order": [
+        "left",
+        "right",
+        "intersection",
+        "node_shingle_sizes"
+      ],
+      "canonical_sha256": "24388b1838715cb7168c5db06a3461d0633b249a640174fb0b0ac4205ebb59b5",
+      "edges": 158076,
+      "purpose": "New recovery provenance only; no original canonical edge digest survives for comparison"
+    },
+    "primary/corrected_file_normalized": {
+      "schema": "sorted_edges_and_node_sizes_little_endian_int32_v1",
+      "array_order": [
+        "left",
+        "right",
+        "intersection",
+        "node_shingle_sizes"
+      ],
+      "canonical_sha256": "ff5b35ffd52b6df7b815be5a5ea91991cf647fd8699f96a7838581a047776e06",
+      "edges": 2039310,
+      "purpose": "New recovery provenance only; no original canonical edge digest survives for comparison"
+    },
+    "segmented/library_interface_segmented_normalized": {
+      "schema": "sorted_edges_and_node_sizes_little_endian_int32_v1",
+      "array_order": [
+        "left",
+        "right",
+        "intersection",
+        "node_shingle_sizes"
+      ],
+      "canonical_sha256": "301653fc3134d7149887cdb2066ac7a0e9fe701fd38b965d8b7b749770184156",
+      "edges": 966320,
+      "purpose": "New recovery provenance only; no original canonical edge digest survives for comparison"
+    },
+    "segmented/library_interface_segmented_preserved": {
+      "schema": "sorted_edges_and_node_sizes_little_endian_int32_v1",
+      "array_order": [
+        "left",
+        "right",
+        "intersection",
+        "node_shingle_sizes"
+      ],
+      "canonical_sha256": "76a2d734e66ebdaecd73797d46e5468878497f348c515fd270a3a32944505959",
+      "edges": 158381,
+      "purpose": "New recovery provenance only; no original canonical edge digest survives for comparison"
+    }
+  }
+}

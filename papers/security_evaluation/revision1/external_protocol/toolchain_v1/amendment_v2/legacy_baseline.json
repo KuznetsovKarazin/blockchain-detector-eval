@@ -1,0 +1,9 @@
+{
+  "status": "pre_amendment_snapshot",
+  "legacy_files_sha256": {
+    "verify_toolchain.py": "afabaa40be10ad7f954507bad67403c44bc26fd052eb82338ed99731628bcc17",
+    "provision_toolchain.py": "04dc6a6c25fc2f5b620b8a5311851f34c636b4c6fd5c425b8bf101d0d80741aa",
+    "manifest.json": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6"
+  },
+  "legacy_receipt_rewritten": false
+}

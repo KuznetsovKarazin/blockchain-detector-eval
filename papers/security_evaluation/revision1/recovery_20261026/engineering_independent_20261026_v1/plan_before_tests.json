@@ -1,0 +1,47 @@
+{
+  "schema": "independent_external_B_synthetic_review_v1",
+  "frozen_utc": "2026-10-26T08:40:21.555063+00:00",
+  "command": [
+    "/tmp/security-recovery-repo/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_independent.py"
+  ],
+  "source_sha256": {
+    "papers/security_evaluation/revision1/recovery_20261026/run_engineering_independent.py": "df9e514ef50214639936c249b9cc3e8e1824936406a27c7dc31883e8d6839a52",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_independent.py": "08fba776bdab56aa320add3cde23f9442d0545a8a0df2d64b1b8caac159b7837",
+    "papers/security_evaluation/revision1/recovery_20261026/conftest.py": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d",
+    "papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/api_amendment_after_coverage.json": "646bdfe5a8d94c78c1be606ff8876fcd9eaa19628e50cc454f865ee17ce9658c",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "papers/security_evaluation/revision1/external_protocol/toolchain_v1/manifest.json": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/coverage_20261026_v1/source_snapshot/adapters.py": "7955d1e0b8177c99a6ebeadb357465c24016bbcfa3c68bbc685aadbbe62a8806"
+  },
+  "synthetic_inputs_only": true,
+  "real_human_judgments_read": false,
+  "independently_verified_unchanged_representation_functions": {
+    "mask_literal_contents": true,
+    "pattern_from_scanned": true,
+    "prepare": true,
+    "feature_definitions": true
+  },
+  "real_models_fitted_or_scored": 0,
+  "real_source_preprocessing": false,
+  "external_protocol_gate_overridden": false,
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "pytest": "8.4.2"
+    }
+  }
+}

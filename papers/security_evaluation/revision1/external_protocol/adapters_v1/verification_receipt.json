@@ -1,0 +1,40 @@
+{
+  "schema": "external_B_adapter_verification_v1",
+  "date": "2026-10-26",
+  "observed_tests": "24 passed in 1.85s",
+  "test_command": ".venv/bin/python -m pytest -q papers/security_evaluation/revision1/external_protocol/adapters_v1",
+  "tests_use_synthetic_sources_only": true,
+  "real_source_preprocessing_files": 2689,
+  "real_source_vocabulary_or_scaler_fits": 0,
+  "classifier_fits_or_predictions": 0,
+  "human_judgments_completed": 0,
+  "frozen_public_packet_hashes_verified": 12,
+  "original_draft_unchanged": true,
+  "source_and_snapshot_hashes_verified": true,
+  "independent_engineering_review": "requested; separate reviewer owns review evidence",
+  "artifact_sha256": {
+    "adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "check_coverage.py": "4dba03f29e03f787e3b474d4417aaf06e7048c0a667e75282aee4caa9343d204",
+    "test_adapters.py": "afe8d1c4d09e6e8e52d75b9570b60b8c18c3e2ee2b91c7c6ea18f8593cb97d38",
+    "conftest.py": "ab60cee00c6b5805354d363869468ae7fd5a6e9890e0d995d769a6f846c245d5",
+    "feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "api_amendment_after_coverage.json": "646bdfe5a8d94c78c1be606ff8876fcd9eaa19628e50cc454f865ee17ce9658c",
+    "README.md": "1774d5796cea829d2d63d0ee2cf43cc6aff05c2a69fa55169d18f5afea4eb898",
+    "private_restoration_receipt.json": "c1f8a409cfcd58faf40e671a33155259f2b2b78583a261c3ea575225088a5341",
+    "implementation.patch": "93874dad046be115cebce846c63092fc65d59783e6e8bdc17f2f59073410be8e",
+    "coverage_20261026_v1/summary.json": "2d331ddd64e0fb621a99f49c547cffe3231036e79a9193773b89f46aa0dd242d"
+  },
+  "remaining_conditions": [
+    "independent adapter/integration review",
+    "weighted-performance and toolchain integration reviewed separately",
+    "class/detector semantic sign-off",
+    "named two independent reviewers and review-protocol sign-off",
+    "prospective protocol freeze",
+    "actual independent sealed reviews and adjudication; unchanged-input revalidation before external scoring"
+  ],
+  "test_summary_note": "Updated after independent-review API guards; archived test copies excluded from collection",
+  "post_coverage_api_amendment": "api_amendment_after_coverage.json",
+  "original_coverage_source_snapshot_preserved": true,
+  "current_source_snapshot_verified": true
+}

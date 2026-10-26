@@ -1,0 +1,40 @@
+{
+  "schema": "sampling_membership_recovery_v1",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pandas": "2.2.3",
+  "source": "frozen config job membership arrays",
+  "models_refitted": 0,
+  "predictions_changed": false,
+  "records": [
+    {
+      "run": "run_20261025_v1",
+      "rows": 95402,
+      "training_rows": 94320,
+      "test_rows": 1082,
+      "draw_regime_cells": 80,
+      "bytes": 274671,
+      "sha256": "f6e79ecb693ced2d0a4f4b627bc919f19f84dd17b384ecfc9d0ef73e7edd4786",
+      "git_blob_sha1": "e49ac7d9bdb79946ff772c4d5fe3bdd57cd53f44",
+      "uncompressed_sha256": "33aae9f14bb18a58c063496d30db21dd0fd24260a1cdfdb8d661e19c4d2157fb",
+      "frozen_config_sha256": "6dac22c9d34c5b455202f828197ed8b5090610bf2e052a99e320e931939ddc21",
+      "byte_exact_public_match": true,
+      "restored": true,
+      "already_exact": false
+    },
+    {
+      "run": "run_20261025_v2",
+      "rows": 95402,
+      "training_rows": 94320,
+      "test_rows": 1082,
+      "draw_regime_cells": 80,
+      "bytes": 274671,
+      "sha256": "f6e79ecb693ced2d0a4f4b627bc919f19f84dd17b384ecfc9d0ef73e7edd4786",
+      "git_blob_sha1": "e49ac7d9bdb79946ff772c4d5fe3bdd57cd53f44",
+      "uncompressed_sha256": "33aae9f14bb18a58c063496d30db21dd0fd24260a1cdfdb8d661e19c4d2157fb",
+      "frozen_config_sha256": "7dfa1acb2bcca5bad07e2a7c1a0e0dea569f1ec22328bed089fc1090c18534d0",
+      "byte_exact_public_match": true,
+      "restored": true,
+      "already_exact": false
+    }
+  ]
+}

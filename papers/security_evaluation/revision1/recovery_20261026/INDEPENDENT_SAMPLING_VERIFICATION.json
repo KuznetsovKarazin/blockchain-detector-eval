@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+  "logical_evaluations": 360,
+  "physical_fits": 282,
+  "independent_ap_recalculations": 360,
+  "independent_tie_workload_recalculations": 1080,
+  "failed_evaluations": 0,
+  "random_ranking_exact_ap_mean": 0.025363028220700266,
+  "interpretation": "Fixed historical test; conditional training variation, not independent project inference",
+  "schema": "independent_sampling_recovery_arithmetic_v1",
+  "verifier_sha256": "e19c6e145703c4f0e3c9d897d24fb0643ad9766d1f4a848c3510858e1aacbc83",
+  "public_git_index_files_verified": 1800,
+  "fits_executed": 0,
+  "source_human_judgments_created": 0
+}

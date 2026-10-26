@@ -1,0 +1,30 @@
+{
+  "verified_date": "2026-10-26",
+  "primary_formula_source": {
+    "authors": "Household Finance and Consumption Network",
+    "title": "Household Finance and Consumption Survey: Methodological report for the 2021 wave",
+    "publisher": "European Central Bank, Statistics Paper Series No.45",
+    "year": 2023,
+    "section": "7.2, printed pages52–53 (PDF pages56–57), especially weight equation and7.2.1",
+    "url": "https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps45~4bbcfb02eb.en.pdf",
+    "verified_content": "Single-stage strata sampled without replacement; w*=w(1-lambda+lambda*n/m*r), lambda=sqrt(m*(1-f)/(n-1)); m=n-1. This directly yields the implemented finite-correction weights.",
+    "supports_AP_interval_coverage": false
+  },
+  "original_method": {
+    "authors": "J.N.K. Rao and C.F.J. Wu",
+    "title": "Resampling Inference with Complex Survey Data",
+    "journal": "Journal of the American Statistical Association83(401),231–241",
+    "year": 1988,
+    "doi": "10.1080/01621459.1988.10478591",
+    "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1988.10478591",
+    "verification": "Publisher abstract confirms stratified SRSWOR and standard variance recovery in the linear case; full paper not retrieved. Do not attribute an AP percentile coverage theorem."
+  },
+  "primary_weight_rescaling_history": {
+    "authors": "J.N.K. Rao, C.F.J. Wu and K. Yue",
+    "title": "Some Recent Work on Resampling Methods for Complex Surveys",
+    "journal": "Survey Methodology18(2),209–217",
+    "year": 1992,
+    "url": "https://www150.statcan.gc.ca/n1/pub/12-001-x/1992002/article/14486-eng.pdf",
+    "verification": "Rendered and inspected printed pages214–215, equation3.4. The displayed historical WR weight formula does not itself contain the finite-population correction used here; that explicit specialization is documented by the ECB report."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "article1_post_recovery_verification_v1",
+  "date": "2026-10-26",
+  "status": "pass",
+  "passed_tests": 251,
+  "suites": [
+    {
+      "receipt": "papers/security_evaluation/revision1/recovery_20261026/combined_tests_20261026.xml",
+      "tests": 237,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "7d5d68ab2c00b03c4ec3dbeb959fd25e15b87166a1a08062438096368a38bc24",
+      "files": [
+        "papers.security_evaluation.revision1.external_protocol.adapters_v1.test_adapters.AdapterTests",
+        "papers.security_evaluation.revision1.external_protocol.adapters_v1.test_adapters.FactoryAndInputTests",
+        "papers.security_evaluation.revision1.external_protocol.adapters_v1.test_adapters.TrainingProvenanceAmendmentTests",
+        "papers.security_evaluation.revision1.external_protocol.performance_v1.test_performance",
+        "papers.security_evaluation.revision1.external_protocol.test_compiler_policy",
+        "papers.security_evaluation.revision1.external_protocol.test_external_protocol",
+        "papers.security_evaluation.revision1.external_protocol.test_input_readiness",
+        "papers.security_evaluation.revision1.external_protocol.test_review_estimators",
+        "papers.security_evaluation.revision1.graph_mechanism.test_describe",
+        "papers.security_evaluation.revision1.graph_mechanism.test_mechanism",
+        "papers.security_evaluation.revision1.recovery_20261026.test_engineering_independent",
+        "papers.security_evaluation.revision1.representations.test_representations",
+        "papers.security_evaluation.revision1.sampling_variance.test_sampling_variance",
+        "tests.test_security_campaign",
+        "tests.test_security_design",
+        "tests.test_security_fixed_t",
+        "tests.test_security_metrics",
+        "tests.test_security_normalization",
+        "tests.test_security_random_ranking_reference",
+        "tests.test_security_random_ranking_reference_v2",
+        "tests.test_solc_selection"
+      ]
+    },
+    {
+      "receipt": "papers/security_evaluation/revision1/recovery_20261026/toolchain_tests_20261026.xml",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "e7f294ee1fb8841c009c4dbb871c54cdf759de855c6a3af985419373efd7930d",
+      "files": [
+        "papers.security_evaluation.revision1.external_protocol.toolchain_v1.test_toolchain",
+        "papers.security_evaluation.revision1.external_protocol.toolchain_v1.test_toolchain_v2"
+      ]
+    }
+  ],
+  "new_real_model_fits": 0,
+  "external_scores": 0,
+  "human_judgments": 0,
+  "scope": "Code regression checks and synthetic tests; prior scientific outputs separately verified in recorded recovery receipts. Not independent human review or completed external evaluation."
+}

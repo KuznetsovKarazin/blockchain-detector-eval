@@ -1,0 +1,21 @@
+{
+  "schema": "toolchain_reverification_receipt_v2",
+  "status": "pass",
+  "verified_utc": "2026-10-26T08:51:32.590889+00:00",
+  "verifier_sha256": "8c719b72fb7a98178cbffed68c2ad873af4358898e52444241e8f406dd76e5b1",
+  "python_optimization_level": 1,
+  "legacy_manifest_sha256": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6",
+  "legacy_baseline_sha256": "87e89080c7b2e697aef9cceb0143907aea94fa961334be7411408b62a754533b",
+  "legacy_receipt_rewritten": false,
+  "validation_files_written": 0,
+  "solc_artifacts_checked": 30,
+  "python_wheels_checked": 47,
+  "artifact_and_metadata_hashes_match": true,
+  "recorded_full_solc_build_identifiers_match": true,
+  "tool_invocations_in_this_verification": 0,
+  "compilations": 0,
+  "slither_analyses": 0,
+  "external_readiness_or_semantic_signoff": false,
+  "verification_scope": "Read-only revalidation against frozen metadata and artifact bytes; no fresh tool execution or network access",
+  "receipt_write": "explicit_exclusive_create"
+}
