@@ -1,0 +1,31 @@
+{
+  "book_archive_sha256": "ace75a3e19cc36c4684092583b72ae56deb839f5dafa84a6c57929d30d9b10da",
+  "draft_commit": "07673edcbd7dea2f732d66a867fcb90213c9f500",
+  "tokenization": "lowercase ASCII alphanumeric; unique contiguous token ngrams; entire draft and chapter text including tables/references",
+  "rows": [
+    {
+      "chapter": 10,
+      "docx_sha256": "b52ffce85dc07e28f5743d5d6833bef269c518e26512c7b484c17f0d7c77fa1d",
+      "shared_unique_4grams": 1,
+      "shared_unique_5grams": 0
+    },
+    {
+      "chapter": 13,
+      "docx_sha256": "fccf0fa3b87273e5ada4caf9ae5db0820900fc51d16268fdfbba1c939c0280cc",
+      "shared_unique_4grams": 3,
+      "shared_unique_5grams": 0
+    },
+    {
+      "chapter": 15,
+      "docx_sha256": "2c94c54529c5ff17c68cd2e88e8c1692664a7dc75d206b5ec78815bb464fcd3e",
+      "shared_unique_4grams": 1,
+      "shared_unique_5grams": 0
+    },
+    {
+      "chapter": 17,
+      "docx_sha256": "0102c8cf54613ba42ce37750a0d2e40540f3e3b02a5c2b9b246e2b5380d56f56",
+      "shared_unique_4grams": 2,
+      "shared_unique_5grams": 1
+    }
+  ]
+}

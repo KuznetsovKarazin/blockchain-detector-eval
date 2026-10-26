@@ -1,21 +1,39 @@
+> **Publication checkpoint, 26 October 2026:** 29 compressed graph-output paths remain absent after a publication-review block and temporary environment reset. Computations and validation below were completed before that reset. Read [publication status](revision1/PUBLICATION_STATUS.md) before reproducing this checkout.
+
 # Article 1 status on 25 October 2026
 
-Working title: **Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation**.
+Current manuscript title: **Population Coverage and Dependency-Aware Evaluation of Smart Contract Vulnerability Detectors**. Earlier cycles used *Project Dependence and Label Provenance in Smart Contract Vulnerability Evaluation*.
 
-The first development cycle and the second-cycle normalization/dependency/design audits are complete. The package contains a matched fixed-test pilot, exhaustive source and dependency audits, a blank specialist review packet, metric and campaign code, and a working manuscript. It does not contain confirmed independent external performance or a submission-ready article. Recovery and new-run provenance are explicit in `RECOVERY_2026-10-25.md`.
+Revision 1 is complete as a graph-mechanism and conditional model-stability study. It adds systematic population/threshold/representation experiments, 20 paired training draws for four methods, source-verified related work, figures and the revised manuscript [DRAFT_REVISION1.md](manuscript/DRAFT_REVISION1.md). Start with [revision1/README.md](revision1/README.md) for scientific evidence and reproduction paths. The earlier pilot and two audit cycles remain intact. External expert validation is prospective: zero human judgments and zero external model scores. Neither the main protocol nor protocol B has been given a new overall freeze. Recovery history remains in `RECOVERY_2026-10-25.md`.
 
 ## Current task state
 
 | Task | State | Evidence and remaining condition |
 | --- | --- | --- |
-| P1.01 protocol | v0.3 draft, main freeze pending | `protocol.json`, `DECISIONS.md`; external eligibility and main test design unresolved |
-| P1.02 external data | Source and exhaustive lexical audit completed | `external_audit/SOURCE_AUDIT_2026-10-25.md`; family provenance, source disputes and annotation semantics still require review |
-| P1.03 controlled comparison | Four-regime development pilot completed | `runs/dev_fixed_t_20261025_v1/`; one test component and only three unchecked proxy positives prevent a broad main-study conclusion |
-| P1.04 external confirmation | Not run | `external.scoring_allowed=false`; models must not be selected using external results |
-| P1.05 workload and labels | Metric implementation tested; review packet prepared | 106 file-class cases from 25 proxy components, 51 initial second-reader cases, zero completed human reviews |
-| P1.06 article and final analysis | Development manuscript drafted; not ready for submission | `manuscript/DRAFT.md`; needs eligible cohort, expert decisions, frozen main design and appropriate independent units |
+| P1.01 protocol | v0.3 draft and B draft; overall freeze pending | Existing execution gates remain closed; module configurations document completed diagnostics, not an external validation freeze |
+| P1.02 data and dependence | Source audit, graph mechanisms and representation sensitivities completed | `revision1/graph_mechanism/`, `revision1/representations/`; semantic-family identity and annotation disputes remain unresolved |
+| P1.03 controlled comparison | Conditional historical-test sampling experiment completed | `revision1/sampling_variance/run_20261025_v2/`: 320 main-panel plus 40 estimator-seed logical evaluations; 282 physical fits; no failures |
+| P1.04 external confirmation | Prepared, not run | `revision1/external_protocol/`: fixed diagnostic 1,998-file test and 691-file training manifest; `external_scoring_allowed=false` |
+| P1.05 workload and labels | Computation verified; human review pending | New probability packet: 180 file-class cases, 170 files, 17 strata, both reviewers assigned every case; zero completed judgments. Earlier purposive 106-case packet preserved separately |
+| P1.06 article and analysis | Revised scientific manuscript and figures prepared | `manuscript/DRAFT_REVISION1.md`, `manuscript/REVISION1_EVIDENCE_MAP.md`, `manuscript/figures_revision1/`; no submission, registration or DOI created |
 
-## Controlled pilot
+## Revision 1 findings and their scope
+
+The mechanism experiment evaluates 3,822 graphs: 49 populations, 13 thresholds from 0.70 to 1.00, three grouping rules and two comment normalizers. Five predeclared hash rankings supply nested 10–100% DAppSCAN source-coverage curves without label-based selection. At Jaccard 0.8, the complete DAppSCAN population has 20,588/21,457 files (95.95%) in the joint giant, versus 5.28% with project relations alone and 0.47% with clone relations alone. The earlier 89.25% is a different denominator: 5,879/6,587 historical files projected through the complete graph.
+
+The result depends strongly on the representation. Project membership plus exact raw-byte equality connects 3,608/21,457 files (16.82%), while project membership plus exact normalized-stream equality connects 19,321 (90.05%). Approximate near-match edges are therefore not required for a giant under this lossy normalization. Proper project contraction and independent removal checks identify 26 weighted articulation projects and 55 simple bridges at 0.8; removing one project separates at most 82 additional DAppSCAN files, excluding that project's own files. These are conditional graph mechanisms, not a proof of semantic identity or a formal percolation threshold.
+
+The alternative representation study preserves all 24,131 nodes and known structural relations. Identifier/number preservation, explicit library/interface masking, containment and a segment-boundary control are separate, recorded sensitivities. The explicit no-empty-shingle baseline changes the historical DAppSCAN projection of the giant from 5,879 to 5,858 and the external-training count from 691 to 712 (711 informative sources). This is an intentional empty-representation policy change; it does not overwrite the earlier baseline or silently alter protocol B. Masking is structural lexical extraction, not validated semantic library removal.
+
+The completed sampling experiment keeps the original 1,082-file test, 21 reentrancy proxy positives and one historical joint component fixed. Each training set has 1,179 files and 31 positives. The main panel has 20 paired training draws × four regimes × four methods, with estimator seed zero; a separate 40-evaluation panel varies the two tree estimators' seeds on the fixed joint pool. All 360 logical evaluations completed through 282 physical fits with zero failures or convergence warnings. The joint pool has only one unique training membership and its repeated main-panel results reuse the same fit. All four raw-LR draw-zero prediction vectors reproduce the pilot exactly.
+
+For raw LR, project-minus-joint AP averages +0.003573 across draws, with descriptive 2.5%/97.5% quantiles −0.012647/+0.018556 and 12/20 positive differences. Thus the earlier single-draw ordering is not stable to training-subset selection. These are conditional training-variation summaries, not confidence intervals for unseen projects or causal leakage effects. The exact expected AP for a uniform strict random ranking is 0.025363, versus prevalence 0.019409. All scores remain against proxy labels. The unused `run_20261025_v1` preflight has no scores; the executed run is `run_20261025_v2`.
+
+`revision1/independent_verification.json` records graph/cut, identity-control, representation, probability-sampling and model-metric checks, including 360 independent AP and 1,080 tie-aware workload recalculations. Actual resume verification preserved all 1,800 physical-fit artifact hashes and summary outputs without fitting again. The final revision checks pass 168 tests: 166 in the combined suite plus two input-readiness tests; the 28 external-engineering tests are included, not added again. Automated verification is not human vulnerability adjudication.
+
+The prospective external packet contains 180 probability-sampled cases from 170 files and 17 source/class/status strata, with known inclusion probabilities and design weights. Both independent specialists would review all cases. A separate 17-case identity census preserves unresolved records; it is not pooled with the probability sample or the earlier purposive packet. All human forms remain blank. The engineering package has 28 passing tests and verifies lexical readiness of all 2,689 train/test sources. Deterministic compile plans cover 1,968 external and 682 training files, but no compiler or Slither was executed. See `revision1/external_protocol/ENGINEERING_READINESS.md`: training/transform adapters, model-level weighted AP/workload uncertainty, verified executables, semantic mapping and named experts remain prerequisites.
+
+## Historical first-cycle controlled pilot
 
 One fixed test contains 1,082 DAppSCAN files and 21 reentrancy proxy positives. Every training regime has 1,179 files and 31 proxy positives. The model is the fixed historical raw TF-IDF/LR configuration with one paired sampling seed. No test file enters any training set. Joint-disjointness preserves the full transitive historical project-union-clone graph before any cohort restriction.
 
@@ -64,14 +82,15 @@ Of 95 deterministic development test designs, two pass the recorded historical c
 
 The recovered campaign integration reproduces the original joint-pilot predictions exactly, with maximum absolute score difference zero. Resuming it creates no additional fit attempt. This verifies implementation and recovery; it is not a new independent experiment.
 
-See `normalization_audit/`, `dependency_audit/`, `design_feasibility/`, and `review_cycle2/` for configurations, source snapshots, outputs, comparison checks and automated review. No independent human vulnerability judgments have been added. The final focused implementation suite passes 81 tests; the additional automated review exercised 14 execution-guard cases without fitting models.
+See `normalization_audit/`, `dependency_audit/`, `design_feasibility/`, and `review_cycle2/` for configurations, source snapshots, outputs, comparison checks and automated review. No independent human vulnerability judgments have been added. The second-cycle focused implementation suite passed 81 tests; the additional automated review exercised 14 execution-guard cases without fitting models.
 
 ## Next concrete work
 
-1. Resolve the external source identity and annotation disputes, keeping all evidence and explicit unknowns. Apply the blank review packet with a named primary assessor and independent Solidity specialist.
-2. Inspect dependency edges and deployed/project families; perform a string-aware normalization sensitivity check. Build any training restrictions on the full transitive frozen graph, retaining test coverage and composition.
-3. Review graph-scope and edge-discovery sensitivity, then choose a defensible population or explicitly narrow the research question. The current 95 designs are infeasible under the expanded graph at 0.8; do not split components merely to fill cells or run the blocked comparison. Keep the completed pilot separate.
-4. Freeze eligible populations, label mappings, configurations, workload rounding and inference scope before any external model scoring. Then run the declared model set.
+1. Finalize and review protocol B's feature adapters, compiler inventory/policies, weighted metrics and semantic class mapping. Its executable guard lists the remaining prerequisites; a compile plan is not a successful compilation.
+2. Name two independent specialists and sign off the review protocol before expert judgments. Resolve the identity census separately, retain unknowns, and seal both initial review sets before adjudication.
+3. Freeze eligible populations, inputs, configurations, label semantics, workload policy and inference scope prospectively before external model scoring. The current 691-file training manifest is not silently replaced by a more favorable representation sensitivity.
+4. Keep the two outside-giant comparative campaigns blocked. The completed 20-draw experiment addresses variation on the original historical test only and does not reopen those campaigns or create independent test families.
+5. Complete journal-specific presentation and related-work checks and disclose the book/Zenodo relationship. No manuscript submission, correspondence or DOI registration is implied by the research package.
 
 ## Provenance
 

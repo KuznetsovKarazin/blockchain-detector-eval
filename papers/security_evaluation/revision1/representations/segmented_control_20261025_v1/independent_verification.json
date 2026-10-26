@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "script_sha256": "3993d8a2d27fff52fdde34801f9ad73d736934f0f32d0f7091cb412ec9b3d655",
+  "config_sha256": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a",
+  "common_output_sha256": {
+    "boundary_diagnostics.csv": "8fed02c281b291eb1dfa41a8ad70f136cbee4428dd2b1c3aac3c56cb263bdbea",
+    "nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa",
+    "training_label_input_hashes.json": "6ab252ba5ebf9cb364bbe56cdc1fdacd73dfc1a5c3135859faaac465d4d4a418",
+    "manifest.json": "5676a0bc7fb6fa98bc3ed602a84fcf7228649c626475371af30fedd66422219b"
+  },
+  "executed_source_snapshots_match_config": true,
+  "checks": [
+    {
+      "variant": "library_interface_segmented_normalized",
+      "all_graph_edges_connected": true,
+      "threshold_refinement": true,
+      "independent_primary_union_find_graphs": 2,
+      "independent_literal_segment_pairs_checked": 100,
+      "node_shingle_counts_match_diagnostics": true,
+      "empty_nodes_have_no_lexical_edges": true
+    },
+    {
+      "variant": "library_interface_segmented_preserved",
+      "all_graph_edges_connected": true,
+      "threshold_refinement": true,
+      "independent_primary_union_find_graphs": 2,
+      "independent_literal_segment_pairs_checked": 100,
+      "node_shingle_counts_match_diagnostics": true,
+      "empty_nodes_have_no_lexical_edges": true
+    }
+  ],
+  "claim": "Persisted lexical graph calculations verified; semantic independence unestablished"
+}

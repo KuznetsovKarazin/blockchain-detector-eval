@@ -1,0 +1,125 @@
+{
+  "schema": "revision1_publication_omissions_v1",
+  "date": "2026-10-26",
+  "original_local_commit": "333daf76ddb628c5670fbcabc7f2644629db7dcc",
+  "original_expected_tree": "b6f276313b157c96715034e7d0ddb778abd1d0b4",
+  "omitted": [
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/source_declaration_heuristics.csv.gz",
+      "git_blob_sha": "6a1b36e58cd61cb1298007ed59871f4eb6ecc91b"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/memberships.csv.gz",
+      "git_blob_sha": "eadbabb3ae7ad3113d4d036486a4e9a9aa1dafa7"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_legacy_historical_7080_080.csv.gz",
+      "git_blob_sha": "280b7f9ebfbac881a387aed9133884daeddbe399"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_full_dappscan_21457_080.csv.gz",
+      "git_blob_sha": "e1d8ec2d9608eb89825ae664c36a317133940d72"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_full_upstream_21950_080.csv.gz",
+      "git_blob_sha": "0f91b9f46f6d5a7a16b5342f5986e84725b07342"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_historical_7080_080.csv.gz",
+      "git_blob_sha": "665a84d2cdab6571787454162d643dbdd3f04e57"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_combined_24131.csv.gz",
+      "git_blob_sha": "e0fbed782d9973a0a245756ed037c544d937280d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_dappscan_21457.csv.gz",
+      "git_blob_sha": "34502ddfdb3546cb2b0805b646952bf1c37cdb51"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_upstream_21950.csv.gz",
+      "git_blob_sha": "c0696bc003c43a0d1c5dedffb4e3cb04c0326d5d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_historical_7080.csv.gz",
+      "git_blob_sha": "7942e6bc0e582974b4a4fac02a68a4c74c705dd1"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_combined_24131.csv.gz",
+      "git_blob_sha": "f3a3f985a3841529f113b9cec0f67ddd5a3e6a15"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_dappscan_21457.csv.gz",
+      "git_blob_sha": "9c6f71c2ad9d92f6551e940f7ad0e2c420e3fb25"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_upstream_21950.csv.gz",
+      "git_blob_sha": "c21b26b5c21a0d60d5861a4837451116e34f1911"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_historical_7080.csv.gz",
+      "git_blob_sha": "c126852a216fece7af6fce5079f949d0bdb07d13"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/population_ranks.csv.gz",
+      "git_blob_sha": "4be3ebd6f5786f41828ffaf6658bc76fe3cf3890"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/lexical_edges.npz",
+      "git_blob_sha": "37eb9474266c022b094983078ec919d6d652614a"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/memberships.csv.gz",
+      "git_blob_sha": "14e1a538aff991561113fac36e2fa082ceefdda1"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/lexical_edges.npz",
+      "git_blob_sha": "d935804eae92520f0eca0554c9e672f40c57738e"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/memberships.csv.gz",
+      "git_blob_sha": "4b3dcfa0ce6e48741cd830d54e1304af2660d22c"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/lexical_edges.npz",
+      "git_blob_sha": "064d9b2553436702849e4b569434d32d354989bb"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/memberships.csv.gz",
+      "git_blob_sha": "2d4dada52d6c6aeb4f373487cb0e92de91cd23f0"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/lexical_edges.npz",
+      "git_blob_sha": "731cea30bd16363d15c1b45a9cee21ec53a87222"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/memberships.csv.gz",
+      "git_blob_sha": "e20c5fc2de7180f6f1e853a45edbb000caff49e5"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/lexical_edges.npz",
+      "git_blob_sha": "b625098536266526849a04c2ebffea486d186ef5"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/memberships.csv.gz",
+      "git_blob_sha": "9e56a6c77dcfc31a6e410966d71b187dd68b7d66"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/lexical_edges.npz",
+      "git_blob_sha": "a749cc26e8157437468b3f81ea1e8fcea3f2ac76"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/memberships.csv.gz",
+      "git_blob_sha": "8743f789f19d9e8dc83aa749156849a2beafab6d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/memberships.csv.gz",
+      "git_blob_sha": "e49ac7d9bdb79946ff772c4d5fe3bdd57cd53f44"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/memberships.csv.gz",
+      "git_blob_sha": "e49ac7d9bdb79946ff772c4d5fe3bdd57cd53f44"
+    }
+  ],
+  "reason": "Publication review block followed by temporary environment reset; no bypass attempted."
+}

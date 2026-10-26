@@ -1,0 +1,18 @@
+{
+  "schema": "identity_graph_controls_v1",
+  "source_sha256": {
+    "identity_controls.py": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242",
+    "run_mechanism.py": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d"
+  },
+  "input_sha256": {
+    "/tmp/security-recovery-repo/papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+    "/tmp/security-recovery-repo/papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/nodes.csv": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0"
+  },
+  "variants": {
+    "project_raw_equality": "project/identifier groups plus rawbyte equality only, no lexical links",
+    "project_normalized_stream_nonempty": "project/identifier, rawbyte equality, identical normalized text SHA256 excluding empty normalized streams",
+    "project_normalized_stream_with_empty": "same but empty normalized text equality included explicitly"
+  },
+  "rationale": "Jaccard1 is normalized token5gram SET equality, not rawbyte equality or ordered normalized-stream equality; controls do not replace original graph",
+  "no_model_scoring": true
+}

@@ -1,0 +1,11 @@
+representation,metric,threshold,lexical_pairs
+corrected_file_normalized,jaccard,0.7,133859
+corrected_file_normalized,jaccard,0.8,108576
+corrected_file_normalized,jaccard,0.9,90050
+corrected_file_normalized,jaccard,0.95,81433
+corrected_file_normalized,jaccard,0.99,74200
+corrected_file_normalized,containment,0.7,2039310
+corrected_file_normalized,containment,0.8,986747
+corrected_file_normalized,containment,0.9,393710
+corrected_file_normalized,containment,0.95,256579
+corrected_file_normalized,containment,0.99,168543

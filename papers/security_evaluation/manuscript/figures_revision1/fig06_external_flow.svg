@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="561.24pt" height="141.912pt" viewBox="0 0 561.24 141.912" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-25T20:13:13.144506</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 141.912 
+L 561.24 141.912 
+L 561.24 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 12.6684 100.538784 
+L 127.5048 100.538784 
+Q 131.87952 100.538784 131.87952 96.4584 
+L 131.87952 37.80288 
+Q 131.87952 33.722496 127.5048 33.722496 
+L 12.6684 33.722496 
+Q 8.29368 33.722496 8.29368 37.80288 
+L 8.29368 96.4584 
+Q 8.29368 100.538784 12.6684 100.538784 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #eef4f8; stroke: #0072b2; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 136.07107 68.40576 
+Q 138.989617 68.40576 140.79013 68.40576 
+" clip-path="url(#p40757cdacf)" style="fill: none; stroke: #444444; stroke-linecap: round"/>
+    <path d="M 135.99013 66.00576 
+L 140.79013 68.40576 
+L 135.99013 70.80576 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #444444; stroke: #444444; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 149.3784 100.538784 
+L 264.2148 100.538784 
+Q 268.58952 100.538784 268.58952 96.4584 
+L 268.58952 37.80288 
+Q 268.58952 33.722496 264.2148 33.722496 
+L 149.3784 33.722496 
+Q 145.00368 33.722496 145.00368 37.80288 
+L 145.00368 96.4584 
+Q 145.00368 100.538784 149.3784 100.538784 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #eef4f8; stroke: #0072b2; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 272.78107 68.40576 
+Q 275.699617 68.40576 277.50013 68.40576 
+" clip-path="url(#p40757cdacf)" style="fill: none; stroke: #444444; stroke-linecap: round"/>
+    <path d="M 272.70013 66.00576 
+L 277.50013 68.40576 
+L 272.70013 70.80576 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #444444; stroke: #444444; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 286.0884 100.538784 
+L 400.9248 100.538784 
+Q 405.29952 100.538784 405.29952 96.4584 
+L 405.29952 37.80288 
+Q 405.29952 33.722496 400.9248 33.722496 
+L 286.0884 33.722496 
+Q 281.71368 33.722496 281.71368 37.80288 
+L 281.71368 96.4584 
+Q 281.71368 100.538784 286.0884 100.538784 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #eef4f8; stroke: #0072b2; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 409.49107 68.40576 
+Q 412.409617 68.40576 414.21013 68.40576 
+" clip-path="url(#p40757cdacf)" style="fill: none; stroke: #444444; stroke-linecap: round"/>
+    <path d="M 409.41013 66.00576 
+L 414.21013 68.40576 
+L 409.41013 70.80576 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #444444; stroke: #444444; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 422.7984 100.538784 
+L 537.6348 100.538784 
+Q 542.00952 100.538784 542.00952 96.4584 
+L 542.00952 37.80288 
+Q 542.00952 33.722496 537.6348 33.722496 
+L 422.7984 33.722496 
+Q 418.42368 33.722496 418.42368 37.80288 
+L 418.42368 96.4584 
+Q 418.42368 100.538784 422.7984 100.538784 
+z
+" clip-path="url(#p40757cdacf)" style="fill: #eef4f8; stroke: #0072b2; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="70.0866" y="64.743646" transform="rotate(-0 70.0866 64.743646)">2,181</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="70.0866" y="86.190637" transform="rotate(-0 70.0866 86.190637)">Candidate paths</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="206.7966" y="64.743646" transform="rotate(-0 206.7966 64.743646)">2,039</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(188.805038 81.151622)">Curated</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(170.091366 91.229653)">source excluded</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="343.5066" y="64.743646" transform="rotate(-0 343.5066 64.743646)">2,023</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(326.259647 81.151622)">Identity</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(300.755194 91.229653)">issues quarantined</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle" x="480.2166" y="64.743646" transform="rotate(-0 480.2166 64.743646)">1,998</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(458.750194 81.151622)">Repeated</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(437.583319 91.229653)">identities excluded</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="280.62" y="122.980896" transform="rotate(-0 280.62 122.980896)">Diagnostic source cohort; independent expert adjudication is still pending</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p40757cdacf">
+   <rect x="7.2" y="7.2" width="546.84" height="127.512"/>
+  </clipPath>
+ </defs>
+</svg>

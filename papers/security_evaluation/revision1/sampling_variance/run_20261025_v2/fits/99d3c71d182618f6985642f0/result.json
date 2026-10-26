@@ -1,0 +1,18 @@
+{
+  "job_id": "99d3c71d182618f6985642f0",
+  "status": "complete",
+  "started_utc": "2026-10-25T15:09:17.375242+00:00",
+  "finished_utc": "2026-10-25T15:09:22.122360+00:00",
+  "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+  "artifact_hashes": {
+    "attempt_001/started.json": "f51333578041561dbad5e0816a64f9853e3f525a95ea503c7655fb61aee786b2",
+    "attempt_001/predictions.csv": "877503cad00f2ba7799697f5a43bec6bc1a64813ec673eb94b0f36c2b3e2ff0b",
+    "attempt_001/resources.json": "413d83bc29f91310d24790a947d0b927f5a7231b18662b6fc9339ef845164bca",
+    "attempt_001/evaluation.json": "d8b360e2cad91924392164806d31f1d60fae5e4cd19c828cc24efaceff2f4f71"
+  },
+  "predictions_path": "attempt_001/predictions.csv",
+  "evaluation_path": "attempt_001/evaluation.json",
+  "resources_path": "attempt_001/resources.json",
+  "physical_fit": true,
+  "error": null
+}

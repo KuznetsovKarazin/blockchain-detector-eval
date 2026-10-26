@@ -1,0 +1,31 @@
+{
+  "status": "post_output_descriptive_summary",
+  "script_sha256": "444f4589d4a96331d57cfe8ec1872c4ce98afadc4666cfff35e356ab3e87f40a",
+  "input_sha256": {
+    "run_20261025_v1/config_before_outputs.json": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+    "run_20261025_v1/corrected_file_normalized/component_concentration.csv": "5c574ab95d04e2283e58ba5166666738c45254d9417fe326a725596c3cb0b471",
+    "run_20261025_v1/corrected_file_normalized/training_feasibility.csv": "cb37382ba2720b4048a6f495d747efdc008810097dfe19adbe503b42e2897750",
+    "run_20261025_v1/corrected_file_preserved/component_concentration.csv": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb",
+    "run_20261025_v1/corrected_file_preserved/training_feasibility.csv": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302",
+    "run_20261025_v1/library_interface_masked_normalized/component_concentration.csv": "55de361798f826e6c70d831020ff95f553c48db0f0a4ce28754228c61f28d300",
+    "run_20261025_v1/library_interface_masked_normalized/training_feasibility.csv": "c9a87d4b3a6408f5fcae5f1d86000d96bc2a1d1853751d0753518ee4f244d8c5",
+    "run_20261025_v1/library_interface_masked_preserved/component_concentration.csv": "35126c1aa8384d4812842666be006f3d5c73e9e961d482498ea0e28d9a6f3e04",
+    "run_20261025_v1/library_interface_masked_preserved/training_feasibility.csv": "ef65942256d277e063170525744ef8ceb99f4b22775b15721b332581d168a2c2",
+    "segmented_control_20261025_v1/config_before_outputs.json": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a",
+    "segmented_control_20261025_v1/library_interface_segmented_normalized/component_concentration.csv": "0680f3ab14f4a5b2fefb1f9a248166cdd0db32707cdb7b080df3ed8cd7d2c571",
+    "segmented_control_20261025_v1/library_interface_segmented_normalized/training_feasibility.csv": "4c55774cdda6703c7a57a7553110f6121eb1275c6f18b268227e33f718a437d6",
+    "segmented_control_20261025_v1/library_interface_segmented_preserved/component_concentration.csv": "273c8b9acdb39db2cb33692181c3af0fbc5232ad6241026cb3434f3744b14898",
+    "segmented_control_20261025_v1/library_interface_segmented_preserved/training_feasibility.csv": "b958111e7e2e294c9a1f0a1d4150e3858dbdbf0758917f4f6106c3bb8b8cc446",
+    "run_20261025_v1/library_interface_masked_normalized/memberships.csv.gz": "4adcd3daa7dda64e1876faf31ef6857bbf9d334792eca10d9717f6b1f5c190cf",
+    "segmented_control_20261025_v1/library_interface_segmented_normalized/memberships.csv.gz": "75d47a3974ab16ba80100c1e042e8952fb1f9bfd88f45a0f93b005cef422e7c5",
+    "run_20261025_v1/library_interface_masked_preserved/memberships.csv.gz": "9da0b1ed4710b7abf4c65cac4c6f2332fdc861cb89b830eae1dc95648c632eff",
+    "segmented_control_20261025_v1/library_interface_segmented_preserved/memberships.csv.gz": "cf212589053ec987f2f5a0719d044a2737b07dc94d78019b0f9fd0551e014f4d",
+    "segmented_control_20261025_v1/boundary_diagnostics.csv": "8fed02c281b291eb1dfa41a8ad70f136cbee4428dd2b1c3aac3c56cb263bdbea"
+  },
+  "output_sha256": {
+    "primary_comparison.csv": "c40f0367f47dd13e699178e8c178ba6cbbc0a0779cb4fe854be72feacbd1b0bb",
+    "all_threshold_comparison.csv": "81f06aaeee1aaeb7cb3d347726f16a158ef80cbd72ff68452465a8400cae0c0f",
+    "segmented_control_20261025_v1/partition_changes_from_concatenated.csv": "3e6875642c4d530eee54580b5351dd5e085d7e4091b5d22b1236e47f02bc311b",
+    "segmented_control_20261025_v1/boundary_summary.csv": "7c067ae286b7f26fda33408fa4ea32a1c8daf69323dc0de8bb0a9aaa530bc31b"
+  }
+}

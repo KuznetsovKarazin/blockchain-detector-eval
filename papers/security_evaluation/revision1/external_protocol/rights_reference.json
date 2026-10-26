@@ -1,0 +1,13 @@
+{
+  "reference": "../related_work/license_checks.json",
+  "reference_sha256": "e161c1e0d95bea16b18a8e57ef44dae93cf94f736179fbc5aa5e7ca08a208b67",
+  "datasets_checked": [
+    "DAppSCAN",
+    "salzano"
+  ],
+  "root_global_license_found": false,
+  "article_license_not_extended_to_repository": true,
+  "raw_sources_and_row_annotations_kept_ignored_private": true,
+  "redistribution_permission": "unresolved",
+  "no_legal_permission_determination": true
+}

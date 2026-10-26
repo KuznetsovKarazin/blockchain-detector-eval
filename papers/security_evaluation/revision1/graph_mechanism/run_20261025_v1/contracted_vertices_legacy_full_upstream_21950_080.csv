@@ -1,0 +1,802 @@
+vertex,project_key,dapp_files,all_files,degree
+0,project:dapp:Ackee_Blockchain-GoodGhosting,27,27,28
+1,project:dapp:Ackee_Blockchain-Layer_Zero,17,17,1
+2,project:dapp:Ackee_Blockchain-Zunami_protocol,32,32,0
+3,project:dapp:BlockSec-blocksec_aloe_1.1_signed,31,31,7
+4,project:dapp:BlockSec-blocksec_alpaca_v1.0_signed,362,362,108
+5,project:dapp:BlockSec-blocksec_coordinape_v1.1_signed,23,23,4
+6,project:dapp:BlockSec-blocksec_impossible_finance_swap_v1.2,25,25,44
+7,project:dapp:BlockSec-blocksec_multichain_vemult_v1.0_signed,2,2,0
+8,project:dapp:BlockSec-blocksec_stnd_v1.7_signed,122,122,130
+9,project:dapp:Blockchain Labs NZ-Beam,4,4,27
+10,project:dapp:Blockchain Labs NZ-BitHero,20,20,36
+11,project:dapp:Blockchain Labs NZ-Earth,3,3,7
+12,project:dapp:Blockchain Labs NZ-Ecomi,4,4,31
+13,project:dapp:Blockchain Labs NZ-Gifto,6,6,6
+14,project:dapp:Blockchain Labs NZ-Leverj,9,9,31
+15,project:dapp:Blockchain Labs NZ-SynchroLife,2,2,7
+16,project:dapp:Blockchain Labs NZ-Zipper,5,5,32
+17,project:dapp:Byterocket-AsyncArt v2[05.26.2020],7,7,3
+18,project:dapp:Byterocket-Invictus Capital Fund Contract[01.27.2022],7,7,30
+19,project:dapp:Byterocket-Orbit DeFi[05.29.2022],59,59,12
+20,project:dapp:Byterocket-RealityCards v1[05.19.2020],7,7,27
+21,project:dapp:Callisto_Network-Axiemon Token Security Audit,1,1,6
+22,project:dapp:Callisto_Network-Big Doge Coin Security Audit,1,1,6
+23,project:dapp:Callisto_Network-Fantom Token (FTM) Security Audit Report,1,1,0
+24,project:dapp:Callisto_Network-IDEX Security Audit,19,19,8
+25,project:dapp:Callisto_Network-Jarvis+ Token (JAR) Security Audit,1,1,0
+26,project:dapp:Callisto_Network-Linear Token (LINA) Token Security Audit Report,1,1,0
+27,project:dapp:Callisto_Network-MaxiMine Token (MXM) Security Audit,1,1,0
+28,project:dapp:Callisto_Network-McAfeeDex Security Audit,1,1,0
+29,project:dapp:Callisto_Network-Monsta Infinite Inception Security Audit Report,4,4,13
+30,project:dapp:Callisto_Network-Monsta Infinite Token Security Audit,4,4,13
+31,project:dapp:Callisto_Network-Shield Protocol Token (SHIELD) Security Audit,2,2,4
+32,project:dapp:Callisto_Network-Wildfire Token Security Audit,1,1,8
+33,project:dapp:Callisto_Network-Worthpad Security Audit Report,3,3,0
+34,project:dapp:Chainsecurity-Angle Protocol,85,85,11
+35,project:dapp:Chainsecurity-Angle Protocol  Borrowing Module,67,67,25
+36,project:dapp:Chainsecurity-Compound  cToken unredacted,82,82,60
+37,project:dapp:Chainsecurity-MakerDAO  G-UNI LP Oracle,2,2,0
+38,project:dapp:Chainsecurity-Oasis  Multiply Smart Contracts,38,38,46
+39,project:dapp:Chainsecurity-POA Network  OmniBridge,56,56,41
+40,project:dapp:Chainsecurity-Primitive Finance  Core engine smart contracts,39,39,65
+41,project:dapp:Chainsulting-1inch,79,79,26
+42,project:dapp:Chainsulting-ApeCoin,5,5,77
+43,project:dapp:Chainsulting-Curate-project,4,4,18
+44,project:dapp:Chainsulting-Curate-project2,4,4,18
+45,project:dapp:Chainsulting-DIA-project1,2,2,0
+46,project:dapp:Chainsulting-DSLA Protocol-project1,8,8,27
+47,project:dapp:Chainsulting-FIN,1,1,1
+48,project:dapp:Chainsulting-Furucombo-project2,49,49,101
+49,project:dapp:Chainsulting-GSPI Club-project1,110,110,70
+50,project:dapp:Chainsulting-GSPI Club-project2,125,125,118
+51,project:dapp:Chainsulting-GSPI Club-project3,2,2,0
+52,project:dapp:Chainsulting-Global Rockstar,269,269,53
+53,project:dapp:Chainsulting-MakiSwap,125,125,118
+54,project:dapp:Chainsulting-NOM,1,1,1
+55,project:dapp:Chainsulting-Oiler Network-project2,5,5,2
+56,project:dapp:Chainsulting-SPICE,226,226,35
+57,project:dapp:Chainsulting-SWAPP Protocol-project1,126,126,103
+58,project:dapp:Chainsulting-SWAPP Protocol-project2,169,169,112
+59,project:dapp:Chainsulting-Shopping-project1,110,110,70
+60,project:dapp:Chainsulting-Shopping-project2,125,125,118
+61,project:dapp:Chainsulting-Touch Social,1,1,0
+62,project:dapp:Chainsulting-UNILAYERX,134,134,93
+63,project:dapp:Coinbae-Barnbridge_Bond,16,16,90
+64,project:dapp:Coinbae-Barnbridge_Staking_Pool,15,15,90
+65,project:dapp:Coinbae-Barnbridge_Vault,15,15,90
+66,project:dapp:Coinbae-Barnbridge_YieldFarmLP,15,15,90
+67,project:dapp:Coinbae-Barnbridge_YieldFarming,15,15,90
+68,project:dapp:Coinbae-Deus_Finance_DEAStaking,4,4,52
+69,project:dapp:Coinbae-Deus_Finance_Vault,1,1,0
+70,project:dapp:Coinbae-Grumpee.Finance_Token,1,1,2
+71,project:dapp:Coinbae-Hakka_Finance_wHakka,1,1,0
+72,project:dapp:Coinbae-Pud.Fi Masterchef_Audit,8,8,58
+73,project:dapp:Coinbae-Pud.Fi Strategy_Bacdai,11,11,49
+74,project:dapp:Coinbae-SpaceMonkey,8,8,76
+75,project:dapp:Coinbae-TapCoins_Token_Contract,1,1,0
+76,project:dapp:Coinfabrik-Avalaunch Audit Allocation Staking and Cooldown feature,26,26,74
+77,project:dapp:Coinfabrik-Avalaunch Audit Allocation Staking and Sales,32,32,66
+78,project:dapp:Coinfabrik-Avalaunch XAVA Protocol Audit,26,26,74
+79,project:dapp:Coinfabrik-Beluga Pay (BBI) Security Audit,1,1,0
+80,project:dapp:Coinfabrik-Bitpara Smart Contract Audit,1,1,0
+81,project:dapp:Coinfabrik-Casper CST Token Sale Security Audit,8,8,31
+82,project:dapp:Coinfabrik-DMToken Security Audit V2 2019 Updated,1,1,1
+83,project:dapp:Coinfabrik-DreamTeam Smart Contracts Audit for Players Compensation,9,9,32
+84,project:dapp:Coinfabrik-DreamTeam Token Audit,9,9,32
+85,project:dapp:Coinfabrik-EMDX – Protocol Audit,80,80,11
+86,project:dapp:Coinfabrik-EMDX – Token Contracts Audit,3,3,27
+87,project:dapp:Coinfabrik-EasyPool Smart Contract Security Audit,21,21,46
+88,project:dapp:Coinfabrik-EasyPool Smart Contract Security Audit v2,21,21,46
+89,"project:dapp:Coinfabrik-MintingFactoryV2, BaseUpgradableMarketplace & KODAV3UpgradableGatedMarketplace",82,82,17
+90,project:dapp:Coinfabrik-Nahmii Security Audit,104,104,0
+91,project:dapp:Coinfabrik-Polymath Core Audit,180,180,37
+92,project:dapp:Coinfabrik-RCN Network Smart Contract Audit,18,18,0
+93,project:dapp:Coinfabrik-Rightmesh Token Sale Smart Contract Audit (Master),3,3,15
+94,project:dapp:Coinfabrik-Security Audit for Patientory (PTOY) Token ICO,72,72,7
+95,project:dapp:Coinfabrik-Security Audit – Send (SDT) Token Sale ICO Smart Contract,18,18,15
+96,project:dapp:Coinfabrik-Smart Contract Audit REAL Estate Crypto Token,19,19,15
+97,project:dapp:Coinfabrik-Timvi Smart Contract Audit,33,33,22
+98,project:dapp:Coinfabrik-Woonkly Security Audit (DEX STAKE),10,10,0
+99,project:dapp:Coinfabrik-Worldbit Token Sale Smart Contract Audit,21,21,8
+100,project:dapp:Coinfabrik-YFFII Smart Contract Audit,1,1,0
+101,project:dapp:Coinspect-Incognito Audit,18,18,5
+102,project:dapp:Coinspect-Liquity Audit,84,84,117
+103,project:dapp:Coinspect-Tempus Audit,47,47,12
+104,project:dapp:Cystack-AOC BEP-20 - v1.3,13,13,76
+105,project:dapp:Cystack-AOC ERC-20 V2 - v1.2,13,13,76
+106,project:dapp:HAECHI_AUDIT-Badger,1,1,0
+107,project:dapp:HAECHI_AUDIT-Eco_Defi,1,1,0
+108,project:dapp:HAECHI_AUDIT-Fractional,152,152,113
+109,project:dapp:HAECHI_AUDIT-Lixir,2,2,0
+110,project:dapp:HAECHI_AUDIT-MetaSpace,1,1,0
+111,project:dapp:HAECHI_AUDIT-Pickle_Finance,70,70,79
+112,project:dapp:HAECHI_AUDIT-Stacker_Venture,1,1,0
+113,project:dapp:Hacken-A2DAO,1,1,0
+114,project:dapp:Hacken-Amoss,1,1,0
+115,project:dapp:Hacken-Argon Foundation,2,2,0
+116,project:dapp:Hacken-Arkania Protocol,6,6,0
+117,project:dapp:Hacken-Binosaur,1,1,0
+118,project:dapp:Hacken-Bitcoin SB-V2,3,3,0
+119,project:dapp:Hacken-Bolide-V1,21,21,50
+120,project:dapp:Hacken-Bolide-V2,21,21,50
+121,project:dapp:Hacken-Bolide-V3,28,28,50
+122,project:dapp:Hacken-BullRun Finance,1,1,0
+123,project:dapp:Hacken-CGU,8,8,76
+124,project:dapp:Hacken-Centrality,1,1,0
+125,project:dapp:Hacken-Chimeras,1,1,0
+126,project:dapp:Hacken-Codex on Althash,9,9,1
+127,project:dapp:Hacken-Constellation Network,1,1,0
+128,project:dapp:Hacken-Crodex,22,22,45
+129,project:dapp:Hacken-DeHealth HLT Network,2,2,0
+130,project:dapp:Hacken-Deflyball-V2,4,4,21
+131,project:dapp:Hacken-Diamond Back,1,1,0
+132,project:dapp:Hacken-Edain Technologies AG,3,3,27
+133,project:dapp:Hacken-Etherlite,73,73,45
+134,project:dapp:Hacken-Fidometa-V1,3,3,1
+135,project:dapp:Hacken-Fidometa-V2,4,4,1
+136,project:dapp:Hacken-FoilNetwork,1,1,0
+137,project:dapp:Hacken-Forbitspace,12,12,33
+138,project:dapp:Hacken-GOGOcoin,33,33,21
+139,project:dapp:Hacken-Galeon,1,1,0
+140,project:dapp:Hacken-Game of Silks,2,2,0
+141,project:dapp:Hacken-Green House,2,2,2
+142,project:dapp:Hacken-Ground Zero,1,1,0
+143,project:dapp:Hacken-Hedgey Finance-V1,1,1,0
+144,project:dapp:Hacken-Hedgey Finance-V3,4,4,0
+145,project:dapp:Hacken-Hyksos,2,2,0
+146,project:dapp:Hacken-Kingdom Raids,19,19,27
+147,project:dapp:Hacken-Kyber Network-V1,1,1,0
+148,project:dapp:Hacken-Kyte.One,1,1,0
+149,project:dapp:Hacken-LunaFi,1,1,0
+150,project:dapp:Hacken-Mafagafo,2,2,0
+151,project:dapp:Hacken-Mate,3,3,0
+152,project:dapp:Hacken-MetagamZ,2,2,0
+153,project:dapp:Hacken-Mozart Finance,1,1,0
+154,project:dapp:Hacken-Nasdex,1,1,0
+155,project:dapp:Hacken-Nimbus-V2,2,2,0
+156,project:dapp:Hacken-Oracula,1,1,0
+157,project:dapp:Hacken-Overnight,71,71,35
+158,project:dapp:Hacken-Pera Finance,1,1,0
+159,project:dapp:Hacken-PolkaBridge,44,44,52
+160,project:dapp:Hacken-Powerbomb-V1,14,14,0
+161,project:dapp:Hacken-QANplatform,1,1,0
+162,project:dapp:Hacken-RedFox-V4,1,1,1
+163,project:dapp:Hacken-RedFox-V5,18,18,50
+164,project:dapp:Hacken-RedFox-V6,1,1,0
+165,project:dapp:Hacken-Retreeb,1,1,0
+166,project:dapp:Hacken-RichQUACK,6,6,52
+167,project:dapp:Hacken-SOAR-V1,1,1,2
+168,project:dapp:Hacken-Samurai Legends,7,7,0
+169,project:dapp:Hacken-Seedefi Fund,1,1,0
+170,project:dapp:Hacken-Sekuritance,1,1,0
+171,project:dapp:Hacken-SnapEx,1,1,0
+172,project:dapp:Hacken-SpaceDoge,1,1,8
+173,project:dapp:Hacken-Splash,29,29,4
+174,project:dapp:Hacken-StudentCoin,1,1,0
+175,project:dapp:Hacken-Talent Protocol,1,1,0
+176,project:dapp:Hacken-Tenderize,82,82,1
+177,project:dapp:Hacken-The Next War,8,8,0
+178,project:dapp:Hacken-Torekko,4,4,13
+179,project:dapp:Hacken-Travelcare,6,6,74
+180,project:dapp:Hacken-TrustSwap-V1,1,1,0
+181,project:dapp:Hacken-VYNKSAFE,1,1,0
+182,project:dapp:Hacken-Valhalla,29,29,74
+183,project:dapp:Hacken-WOWSwap-V2,2,2,0
+184,project:dapp:Hacken-ZIXXAR INTERNATIONAL DISTRIBUTION SRL,1,1,0
+185,project:dapp:Hacken-thrivecoin,14,14,2
+186,project:dapp:ImmuneBytes-Aqar Chain-Audit Report,1,1,1
+187,project:dapp:ImmuneBytes-Aqar Chain-Final Audit Report,1,1,1
+188,project:dapp:ImmuneBytes-Bird Money(MasterChef)-Audit Report,3,3,27
+189,project:dapp:ImmuneBytes-Bird Money-Final Audit Report,3,3,27
+190,project:dapp:ImmuneBytes-BonFi(Legendary)- Final Audit Report,1,1,3
+191,project:dapp:ImmuneBytes-BonFi(Legendary)-Audit Report,1,1,3
+192,project:dapp:ImmuneBytes-BonFi(Liquidity)-Audit Report,1,1,3
+193,project:dapp:ImmuneBytes-BonFi(Liquidity)-Final Audit Report,1,1,3
+194,project:dapp:ImmuneBytes-HaggleX-Audit Report,1,1,1
+195,project:dapp:ImmuneBytes-HaggleX-Final Audit Report,1,1,1
+196,project:dapp:ImmuneBytes-LeadWallet Audit Report,2,2,1
+197,project:dapp:ImmuneBytes-LeadWallet Final Audit Report,2,2,1
+198,project:dapp:ImmuneBytes-MahaDAO (ArthController.sol)-Audit Report,1,1,1
+199,project:dapp:ImmuneBytes-MahaDAO (Genesis.sol)-Audit Report,188,188,132
+200,project:dapp:ImmuneBytes-NFY Trading Platform-Final Audit Report,12,12,27
+201,project:dapp:ImmuneBytes-Pluteus-Audit Report,1,1,6
+202,project:dapp:ImmuneBytes-Pluteus-Final Audit Report,1,1,6
+203,project:dapp:ImmuneBytes-PolyTrade-Audit Report(Lender Portal),3,3,0
+204,project:dapp:ImmuneBytes-SIGH Finance-Audit Report,143,143,129
+205,project:dapp:ImmuneBytes-SIGH Finance-Final Audit Report,143,143,129
+206,project:dapp:ImmuneBytes-Sheesha Finance- Audit Report,3,3,0
+207,project:dapp:ImmuneBytes-SportsIcon-Audit Report,1,1,0
+208,project:dapp:ImmuneBytes-WadzPay-Audit Report,1,1,0
+209,project:dapp:Inspex-Admin & Poll,13,13,2
+210,project:dapp:Inspex-AutoCompound,8,8,0
+211,project:dapp:Inspex-AutoCompoundVault,1,1,0
+212,"project:dapp:Inspex-AutoStake, ThorusMaster & Token",8,8,5
+213,project:dapp:Inspex-BlocksSpace,5,5,3
+214,project:dapp:Inspex-CakeMaxi,1,1,3
+215,"project:dapp:Inspex-FairLaunch, Token, Vault & Workers",62,62,57
+216,project:dapp:Inspex-Infinitee Vault,2,2,9
+217,project:dapp:Inspex-Lending,1,1,2
+218,project:dapp:Inspex-MDEX Integration,1,1,2
+219,project:dapp:Inspex-Optimized Worker,115,115,44
+220,project:dapp:Inspex-Otoro,5,5,0
+221,project:dapp:Inspex-Revenue Sharing Pool & Shield,13,13,29
+222,"project:dapp:Inspex-SimpliChef, Token, ZapBSC & Broker",56,56,140
+223,project:dapp:Inspex-SpookySwap Integration & Fantom Expansion,170,170,58
+224,"project:dapp:Inspex-StakingPool, Vault, Strategy & VotingEscrow",42,42,24
+225,project:dapp:Inspex-SuperLauncher V.2,2,2,0
+226,project:dapp:Inspex-ThorusDummy,13,13,10
+227,project:dapp:Inspex-Token,13,13,2
+228,project:dapp:Inspex-Token & Vesting,3,3,3
+229,"project:dapp:Inspex-Tokens, Farm & Shop",19,19,3
+230,project:dapp:Inspex-Vault,13,13,0
+231,project:dapp:Inspex-WSwap,2,2,5
+232,project:dapp:Inspex-WUSDMaster,6,6,4
+233,project:dapp:Inspex-WusdAaveStrategy,5,5,4
+234,project:dapp:Inspex-YES contracts,2,2,0
+235,project:dapp:Inspex-xALPACA,35,35,12
+236,project:dapp:Iosiro-1inch Exchange Staking Rewards Smart Contract Audit,1,1,0
+237,project:dapp:Iosiro-AMO Crowdsale Smart Contract Audit,2,2,1
+238,project:dapp:Iosiro-CHAINSQUARE Smart Contract Audit,1,1,3
+239,project:dapp:Iosiro-Cloudbric Crowdsale Smart Contract Audit,2,2,1
+240,project:dapp:Iosiro-Dala Crowdsale Smart Contract Audit,64,64,12
+241,project:dapp:Iosiro-Etherparty Smart Contract Audit,2,2,0
+242,project:dapp:Iosiro-FLUX Token Smart Contract Audit,1,1,3
+243,project:dapp:Iosiro-KOK Token Smart Contract Audit,1,1,3
+244,"project:dapp:Iosiro-Nexus Mutual Stacked Risk, On-chain MCR, and Swap Operator Smart Contract Audit",155,155,96
+245,project:dapp:Iosiro-SNX FlashBurn Smart Contract Audit,7,7,9
+246,project:dapp:Iosiro-Set Protocol Exchange Issuance Smart Contract Audit,1,1,0
+247,project:dapp:Iosiro-Synthetix Alkaid Release Smart Contract Audit,336,336,34
+248,project:dapp:Iosiro-Synthetix Alnitak Release Smart Contract Audit,1132,1132,35
+249,project:dapp:Iosiro-Synthetix Aloith Release Smart Contract Audit,469,469,34
+250,project:dapp:Iosiro-Synthetix Alphard Release Smart Contract Audit,3,3,7
+251,project:dapp:Iosiro-Synthetix Didpha Release Smart Contract Audit,3,3,7
+252,project:dapp:Iosiro-Synthetix Fomalhaut Release Smart Contract Audit,511,511,31
+253,project:dapp:Iosiro-Synthetix Kaus Release Smart Contract Audit,1,1,5
+254,project:dapp:Iosiro-Synthetix Menkalinan Release Smart Contract Audit,1,1,0
+255,project:dapp:Iosiro-Synthetix Mirfak Release Smart Contract Audit,1,1,5
+256,project:dapp:Iosiro-Synthetix Phase 2 Smart Contract Audit,4,4,2
+257,project:dapp:Iosiro-Synthetix Sargas Release Smart Contract Audit,1,1,4
+258,project:dapp:Iosiro-Synthetix Shaula Release Smart Contract Audit,934,934,35
+259,project:dapp:Iosiro-Synthetix Vest Tool Smart Contract Audit,1,1,0
+260,project:dapp:Iosiro-TMC Token Smart Contract Audit,1,1,3
+261,project:dapp:Iosiro-Thales Airdrop and Staking Smart Contract Audit,1,1,0
+262,project:dapp:Iosiro-Timvi Governance Token and Distribution DAO Smart Contract Audit,1,1,0
+263,project:dapp:Iosiro-Timvi Smart Contract Audit,2,2,1
+264,project:dapp:Iosiro-ixo Smart Contract Audit,24,24,34
+265,project:dapp:New_Alchemy_Security_Audit-AUX Platform Security Audit,3,3,0
+266,project:dapp:New_Alchemy_Security_Audit-ICOVO Smart Contract Audit,3,3,1
+267,project:dapp:New_Alchemy_Security_Audit-Right Mesh Smart Contract Audit,223,223,62
+268,project:dapp:New_Alchemy_Security_Audit-The Abyss DAICO Smart Contract Audit (New),23,23,0
+269,project:dapp:New_Alchemy_Security_Audit-The Rouge Project Smart Contract Audit,1,1,0
+270,project:dapp:PeckShield-AaveV3,109,109,91
+271,project:dapp:PeckShield-AirSwap,47,47,95
+272,project:dapp:PeckShield-Arche,4,4,0
+273,project:dapp:PeckShield-Atlantis,110,110,111
+274,project:dapp:PeckShield-BNPL,38,38,94
+275,project:dapp:PeckShield-BabySwap,44,44,84
+276,project:dapp:PeckShield-Buffer,9,9,2
+277,project:dapp:PeckShield-COGI,10,10,27
+278,project:dapp:PeckShield-COIN98,1,1,0
+279,project:dapp:PeckShield-Convex_Frax,44,44,8
+280,project:dapp:PeckShield-CryptoHeroes,5,5,31
+281,project:dapp:PeckShield-CryptoZoan,1,1,0
+282,project:dapp:PeckShield-DSG,60,60,45
+283,project:dapp:PeckShield-DarkCrypto,52,52,93
+284,project:dapp:PeckShield-Donut,15,15,14
+285,project:dapp:PeckShield-Double,11,11,0
+286,project:dapp:PeckShield-Duet,38,38,22
+287,project:dapp:PeckShield-Duet_Bond,15,15,11
+288,project:dapp:PeckShield-ERC20_AGRO,1,1,4
+289,project:dapp:PeckShield-ERC20_FAT,1,1,1
+290,project:dapp:PeckShield-ERC20_LuckyChip,36,36,70
+291,project:dapp:PeckShield-FarmHero,7,7,1
+292,project:dapp:PeckShield-Hegic(v8888),16,16,3
+293,project:dapp:PeckShield-Hegic_HardCore_Beta,41,41,2
+294,project:dapp:PeckShield-Holdefi,9,9,20
+295,project:dapp:PeckShield-HoneyFarm1.01,2,2,0
+296,project:dapp:PeckShield-IronLend,29,29,54
+297,project:dapp:PeckShield-Kalmar,30,30,57
+298,project:dapp:PeckShield-KaoyaSwap,8,8,5
+299,project:dapp:PeckShield-LensProtocol,47,47,7
+300,project:dapp:PeckShield-LuckyChip,24,24,64
+301,project:dapp:PeckShield-LuckyToken,1,1,1
+302,project:dapp:PeckShield-Metatime,14,14,11
+303,project:dapp:PeckShield-MilkySwap,38,38,72
+304,project:dapp:PeckShield-OlympusDAO,6,6,0
+305,project:dapp:PeckShield-OneSwap,20,20,54
+306,project:dapp:PeckShield-OpenLeverage1.0,64,64,44
+307,project:dapp:PeckShield-Pandora,82,82,56
+308,project:dapp:PeckShield-PikaPerpV2,10,10,6
+309,project:dapp:PeckShield-Plexus,10,10,27
+310,project:dapp:PeckShield-PlutosNetworkv3,19,19,80
+311,project:dapp:PeckShield-PlutosV1,10,10,0
+312,project:dapp:PeckShield-Qubit,36,36,23
+313,project:dapp:PeckShield-Rikkei,84,84,72
+314,project:dapp:PeckShield-ShibaNova,44,44,96
+315,project:dapp:PeckShield-Spherium,1,1,0
+316,project:dapp:PeckShield-StackerVC,9,9,1
+317,project:dapp:PeckShield-SushiSwap,20,20,55
+318,project:dapp:PeckShield-TranchessV1.1,49,49,9
+319,project:dapp:PeckShield-TranchessV2,95,95,14
+320,project:dapp:PeckShield-Tranchessv1.0,38,38,3
+321,project:dapp:PeckShield-USR,30,30,6
+322,project:dapp:PeckShield-VeChain,5,5,0
+323,project:dapp:PeckShield-Venus,93,93,110
+324,project:dapp:PeckShield-XSwap,17,17,40
+325,project:dapp:PeckShield-btdotfinance,19,19,4
+326,project:dapp:PeckShield-dodo,27,27,50
+327,project:dapp:PeckShield-starkex,259,259,65
+328,project:dapp:PepperSec-Aira-Robonomic,14,14,25
+329,project:dapp:PepperSec-KICKTOKEN,2,2,0
+330,project:dapp:PepperSec-POA-DPOS,45,45,33
+331,project:dapp:PepperSec-POA-Network-Bridge,28,28,31
+332,project:dapp:PepperSec-POA-Network-Wizard,112,112,30
+333,project:dapp:QuillAudits-1inch-Cumulative Merkle Drop,7,7,4
+334,project:dapp:QuillAudits-1inch-Farming,10,10,2
+335,project:dapp:QuillAudits-1inch-Fee Collector,5,5,3
+336,project:dapp:QuillAudits-1inch-Fixed Rate Swap,2,2,4
+337,project:dapp:QuillAudits-1inch-FixedFeeSwap,2,2,4
+338,project:dapp:QuillAudits-1inch-Limit Order Protocol,17,17,6
+339,project:dapp:QuillAudits-1inch-token,5,5,14
+340,project:dapp:QuillAudits-AAVE-Governance Crosschain Bridges V1,13,13,50
+341,project:dapp:QuillAudits-AAVE-Governance Crosschain Bridges V3,13,13,50
+342,project:dapp:QuillAudits-AAVE-Incentives Proposal,33,33,42
+343,project:dapp:QuillAudits-AAVE-ParaSwap Adapter,112,112,119
+344,project:dapp:QuillAudits-ACYC Token Smart Contracts,10,10,90
+345,project:dapp:QuillAudits-AIDUS Smart Contract,1,1,0
+346,project:dapp:QuillAudits-AQEX Token Smart Contract,5,5,71
+347,project:dapp:QuillAudits-ASVA Smart Contract,1,1,0
+348,project:dapp:QuillAudits-AVX Smart Contract,1,1,3
+349,project:dapp:QuillAudits-Abyss Finance-Abyss Eth2 Depositor,2,2,1
+350,project:dapp:QuillAudits-AgriUT Smart Contract,7,7,0
+351,project:dapp:QuillAudits-Akropolis-Vesting,24,24,29
+352,project:dapp:QuillAudits-Akt.io Smart Contract,1,1,0
+353,project:dapp:QuillAudits-Algovest,5,5,57
+354,project:dapp:QuillAudits-Alium Finance Smart Contract,20,20,57
+355,project:dapp:QuillAudits-AliumSwap Smart Contract,26,26,51
+356,project:dapp:QuillAudits-Amplify Smart Contract,48,48,21
+357,project:dapp:QuillAudits-Amplify Smart Contract (vesting),1,1,1
+358,project:dapp:QuillAudits-Amplify voting Smart Contract,1,1,0
+359,project:dapp:QuillAudits-Amplify_Child_Token_Smart_Contract,1,1,1
+360,project:dapp:QuillAudits-April Smart Contract,1,1,4
+361,project:dapp:QuillAudits-Avatar Art Market Smart Contract,17,17,29
+362,project:dapp:QuillAudits-B-Cube-B-Cube,5,5,27
+363,project:dapp:QuillAudits-BCUBE Smart Contract,9,9,27
+364,project:dapp:QuillAudits-Backed Smart Contract,2,2,0
+365,project:dapp:QuillAudits-BasketCoin Smart Contract,1,1,0
+366,project:dapp:QuillAudits-Big League Smart Contract,1,1,1
+367,project:dapp:QuillAudits-BigDog Smart Contract,1,1,1
+368,project:dapp:QuillAudits-Binamon Energy Smart Contract,1,1,1
+369,project:dapp:QuillAudits-Binamon Z1 Smart Contract,1,1,1
+370,project:dapp:QuillAudits-BitDiamond Smart Contract,1,1,2
+371,project:dapp:QuillAudits-BitSliced Smart Contract,1,1,0
+372,project:dapp:QuillAudits-Bitbook Smart Contract V2,1,1,0
+373,project:dapp:QuillAudits-Bitbook Staking Smart Contracts V2,1,1,0
+374,project:dapp:QuillAudits-BollyStake Smart Contract (new),1,1,0
+375,project:dapp:QuillAudits-Bollycoin staking Smart Contract,1,1,0
+376,project:dapp:QuillAudits-Bond Appetit-Bond Appetit,60,60,36
+377,project:dapp:QuillAudits-Bridge Network Smart Contract,1,1,1
+378,project:dapp:QuillAudits-BscDragon Smart Contract,1,1,1
+379,project:dapp:QuillAudits-BsktEthLPPool Smart Contract,1,1,0
+380,project:dapp:QuillAudits-Burst Token Smart Contract,1,1,1
+381,project:dapp:QuillAudits-Buttercup Smart Contract,1,1,4
+382,project:dapp:QuillAudits-C.R.E.A.M. Finance-Compound Protocol,83,83,60
+383,project:dapp:QuillAudits-C.R.E.A.M. Finance-Flashloan,76,76,60
+384,project:dapp:QuillAudits-COX,1,1,0
+385,project:dapp:QuillAudits-Catharsis Smart Contract,2,2,0
+386,project:dapp:QuillAudits-Ceres Token Smart Contract,1,1,0
+387,project:dapp:QuillAudits-Champions League Smart Contract,1,1,8
+388,project:dapp:QuillAudits-Checkdot Smart Contract,5,5,69
+389,project:dapp:QuillAudits-Checkdot Smart Contract _New - QuillAudits,1,1,1
+390,project:dapp:QuillAudits-Checkdot Smart Contract _new,1,1,1
+391,project:dapp:QuillAudits-Chronic Token Smart Contract,1,1,8
+392,project:dapp:QuillAudits-Citrus Smart Contract,1,1,0
+393,project:dapp:QuillAudits-CoinDogg Smart Contract,1,1,0
+394,project:dapp:QuillAudits-CoinMama Token Smart Contract,1,1,0
+395,project:dapp:QuillAudits-CoinPoker Smart Contract,4,4,1
+396,project:dapp:QuillAudits-Crazy Snake Smart Contract,2,2,27
+397,project:dapp:QuillAudits-CronosPad Smart Contract,1,1,0
+398,project:dapp:QuillAudits-CryptoBatz Smart Contract,4,4,0
+399,project:dapp:QuillAudits-CryptoGamez Smart Contract,1,1,3
+400,project:dapp:QuillAudits-DEFINE Token Smart Contract,16,16,114
+401,project:dapp:QuillAudits-DOXY - v1.3,1,1,0
+402,project:dapp:QuillAudits-Dare Smart Contract,1,1,10
+403,project:dapp:QuillAudits-Dfyn Smart Contract,9,9,10
+404,project:dapp:QuillAudits-DictatorDOGE Smart Contract,1,1,1
+405,project:dapp:QuillAudits-FalconSwap Smart Contract,1,1,1
+406,project:dapp:QuillAudits-Fundum Smart Contract,1,1,0
+407,project:dapp:QuillAudits-FutiraCoin Smart Contract,1,1,0
+408,project:dapp:QuillAudits-GARFIELD Smart Contract,1,1,1
+409,project:dapp:QuillAudits-GameZilla Token Smart Contract,1,1,3
+410,project:dapp:QuillAudits-GearBox Protocol-GearBox Protocol,56,56,31
+411,project:dapp:QuillAudits-Glonk Smart Contract,1,1,8
+412,project:dapp:QuillAudits-GoGocoin Smart Contract,14,14,21
+413,project:dapp:QuillAudits-HE - v1.2,4,4,0
+414,project:dapp:QuillAudits-Keep3r.Network-Keep3r.Network,3,3,27
+415,project:dapp:QuillAudits-LTO Network-Token Sale,3,3,25
+416,project:dapp:QuillAudits-Lido-Aave stETH,111,111,126
+417,project:dapp:QuillAudits-Lido-Aragon Voting,1,1,1
+418,project:dapp:QuillAudits-Lido-Deposit Security Module,44,44,6
+419,project:dapp:QuillAudits-Lido-Lido KSM,23,23,0
+420,project:dapp:QuillAudits-Lido-Lido Protocol,56,56,8
+421,project:dapp:QuillAudits-Lido-Withdrawals Manager Stub,3,3,0
+422,project:dapp:QuillAudits-Lido-WstETH,39,39,6
+423,project:dapp:QuillAudits-Lido-stETH Price Feed,1,1,0
+424,project:dapp:QuillAudits-Lido-stETH Price Oracle,4,4,0
+425,project:dapp:QuillAudits-Locklet Smart Contract,3,3,0
+426,project:dapp:QuillAudits-MGPToken Smart Contract,1,1,1
+427,project:dapp:QuillAudits-Magic Cube Smart Contract,1,1,1
+428,project:dapp:QuillAudits-MatrixETF Smart Contract,17,17,2
+429,project:dapp:QuillAudits-MetaGameStarter Smart Contract,19,19,9
+430,project:dapp:QuillAudits-MetaWaferse Smart Contract,1,1,3
+431,project:dapp:QuillAudits-MiniDOGE Smart Contract,1,1,1
+432,project:dapp:QuillAudits-Moonship Smart Contract,1,1,1
+433,project:dapp:QuillAudits-MrWeb Finance Smart Contract,1,1,0
+434,project:dapp:QuillAudits-Nexity Network Smart Contract,1,1,0
+435,project:dapp:QuillAudits-NomadLand Smart Contract,1,1,0
+436,project:dapp:QuillAudits-Pickle Finance-All Strategies,2,2,1
+437,project:dapp:QuillAudits-Pickle Finance-Strategy-Curve-scrv-v4_1,1,1,1
+438,project:dapp:QuillAudits-PieDAO-ExperiPie,36,36,1
+439,project:dapp:QuillAudits-RICE - v1.2,1,1,0
+440,project:dapp:QuillAudits-Reality Cards-Reality Cards,33,33,28
+441,project:dapp:QuillAudits-SpiritSwap-SpiritSwap,1,1,3
+442,project:dapp:QuillAudits-SushiSwap-BentoBox,30,30,18
+443,project:dapp:QuillAudits-VIDB - v1.0,1,1,0
+444,project:dapp:QuillAudits-Yearn Finance-Generic Lender,39,39,39
+445,project:dapp:QuillAudits-Yearn Finance-Maker Dai Delegate,9,9,3
+446,project:dapp:QuillAudits-Yearn Finance-SNX,11,11,13
+447,project:dapp:QuillAudits-Yearn Finance-Stablecoins 3pool,5,5,1
+448,project:dapp:QuillAudits-Yearn Finance-Vault V2 (Solidity part),1,1,0
+449,project:dapp:QuillAudits-Yearn Finance-Yearn Protocol V1,35,35,16
+450,project:dapp:QuillAudits-Yearn Finance-Yearn Strategy SSB,3,3,5
+451,project:dapp:QuillAudits-Yearn Finance-Yearn Vaults V3,7,7,0
+452,project:dapp:QuillAudits-Yearn Finance-Yoracle.Link,8,8,27
+453,project:dapp:QuillAudits-Yearn Finance-ySwaps,203,203,29
+454,project:dapp:QuillAudits-ZortCoin Smart Contract,1,1,0
+455,project:dapp:QuillAudits-biffy_love_audit.pdf,1,1,0
+456,project:dapp:QuillAudits-coalichain,4,4,0
+457,project:dapp:Runtime_Vеrification-ElementFinance,295,295,82
+458,project:dapp:Runtime_Vеrification-Element_Finance_Governance_Security_Audit_Report,31,31,53
+459,project:dapp:Runtime_Vеrification-GnosisSafe,26,26,39
+460,project:dapp:Runtime_Vеrification-StakeWise,22,22,1
+461,project:dapp:Runtime_Vеrification-Stakefish_BatchDeposit,3,3,31
+462,project:dapp:Runtime_Vеrification-Tracer_Perpetual_Pools_V2,27,27,0
+463,project:dapp:Runtime_Vеrification-stakefish_ethereum_staking_audit_report,17,17,83
+464,project:dapp:SlowMist-Booster-Protocol_智能安全审计报告,33,33,0
+465,project:dapp:SlowMist-CFFv2 Smart Contract Security Audit Report,56,56,78
+466,project:dapp:SlowMist-DODO-MiningV3 and NFT Smart Contract Security Audit Report,261,261,57
+467,project:dapp:SlowMist-DODO-NFTPool Smart Contract Security Audit Report,175,175,56
+468,project:dapp:SlowMist-ForTube2.0 Smart Contract Security Audit Report,21,21,47
+469,project:dapp:SlowMist-SmoothyV1 Smart Contract Security Audit Report,17,17,10
+470,project:dapp:SlowMist-Starcrazy Smart Contract Security Audit Report,55,55,36
+471,project:dapp:SlowMist-eden-network Smart Contract Security Audit Report,61,61,86
+472,project:dapp:SlowMist-wault.finance(WUSD) Smart Contract Security Audit Report,3,3,4
+473,project:dapp:Smartdec-BCShop Smart Contracts Security Analysis,112,112,27
+474,project:dapp:Smartdec-Boomstarter Smart Contracts Security Review,17,17,32
+475,project:dapp:Smartdec-Opium Smart Contracts Security Analysis,37,37,42
+476,project:dapp:Smartdec-SONM Smart Contracts Security Analysis,21,21,34
+477,project:dapp:Smartdec-TokenBridge (by POA Network) Smart Contracts Security Analysis,63,63,31
+478,project:dapp:Smartdec-РumaPay Smart Contracts Security Analysis,4,4,27
+479,project:dapp:Solidified-2Key [14.10.2019],218,218,68
+480,project:dapp:Solidified-Aztec Element Bridge,72,72,18
+481,project:dapp:Solidified-Aztec Lido Bridge,72,72,18
+482,project:dapp:Solidified-CultosCoin (2),1,1,0
+483,project:dapp:Solidified-Origin Governance,101,101,44
+484,project:dapp:Solidity_Finance-OKLG - Smart Contract,39,39,6
+485,project:dapp:Solidity_Finance-RevomonVR Smart Contract,12,12,0
+486,project:dapp:Trail_of_Bits-0x-protocol,219,219,47
+487,project:dapp:Trail_of_Bits-88mph,71,71,56
+488,project:dapp:Trail_of_Bits-API3,124,124,10
+489,project:dapp:Trail_of_Bits-BalancerCore,11,11,9
+490,project:dapp:Trail_of_Bits-CompliFi,49,49,27
+491,project:dapp:Trail_of_Bits-FraxFinance,207,207,133
+492,project:dapp:Trail_of_Bits-FraxQ42021,448,448,142
+493,project:dapp:Trail_of_Bits-FujiProtocol,59,59,41
+494,project:dapp:Trail_of_Bits-Liquity,56,56,89
+495,project:dapp:Trail_of_Bits-LiquityProtocolandStabilityPoolFinalReport,75,75,116
+496,project:dapp:Trail_of_Bits-MapleFinance,41,41,0
+497,project:dapp:Trail_of_Bits-Opyn,33,33,6
+498,project:dapp:Trail_of_Bits-Opyn-Gamma-Protocol,98,98,118
+499,project:dapp:Trail_of_Bits-OriginDollar,64,64,36
+500,project:dapp:Trail_of_Bits-PerpetualProtocolV2,8,8,0
+501,project:dapp:Trail_of_Bits-Primitive,39,39,64
+502,project:dapp:Trail_of_Bits-RocketPool,98,98,22
+503,project:dapp:Trail_of_Bits-SeaportProtocol,35,35,7
+504,project:dapp:Trail_of_Bits-TokenCard,24,24,10
+505,project:dapp:Trail_of_Bits-UniswapV3Core,64,64,61
+506,project:dapp:Trail_of_Bits-YieldProtocol,45,45,29
+507,project:dapp:Trail_of_Bits-YieldV2,41,41,17
+508,project:dapp:Trail_of_Bits-ampleforth,3,3,0
+509,project:dapp:Trail_of_Bits-aztec,79,79,38
+510,project:dapp:Trail_of_Bits-dharma-smartwallet,49,49,8
+511,project:dapp:Trail_of_Bits-golem,12,12,6
+512,project:dapp:Trail_of_Bits-hermez,27,27,16
+513,project:dapp:Trail_of_Bits-livepeer,47,47,33
+514,project:dapp:Trail_of_Bits-origin,25,25,36
+515,project:dapp:Trail_of_Bits-setprotocol,205,205,14
+516,project:dapp:consensys-0x_Exchange_v4,474,474,48
+517,project:dapp:consensys-0x_Protocol_v2,104,104,19
+518,project:dapp:consensys-0x_v3_Staking,240,240,43
+519,project:dapp:consensys-1inch_Liquidity_Protocol,35,35,24
+520,project:dapp:consensys-AZTEC_Protocol,115,115,42
+521,project:dapp:consensys-Aave_Protocol_V2,71,71,97
+522,project:dapp:consensys-Amp,26,26,10
+523,project:dapp:consensys-AragonBlack_Fundraising,20,20,1
+524,project:dapp:consensys-AragonOS_and_Aragon_Apps,122,122,37
+525,project:dapp:consensys-Balancer_Finance,28,28,9
+526,project:dapp:consensys-Bounties_Network,7,7,27
+527,project:dapp:consensys-Brickblock,37,37,10
+528,project:dapp:consensys-Connext NXTP — Noncustodial Xchain Transfer Protocol,12,12,53
+529,project:dapp:consensys-DeFi_Saver,126,126,48
+530,project:dapp:consensys-Definer,28,28,25
+531,project:dapp:consensys-ENS_Permanent_Registrar,15,15,61
+532,project:dapp:consensys-Fei_Labs_Flywheel_v2_xTRIBE_xERC4626,26,26,3
+533,project:dapp:consensys-Fei_Protocol,80,80,79
+534,project:dapp:consensys-Fei_Protocol_v2_Phase_1,137,137,44
+535,project:dapp:consensys-Gamma,19,19,2
+536,project:dapp:consensys-Gitcoin_Token_Distribution,6,6,53
+537,project:dapp:consensys-GrowthDeFi WHEAT,32,32,3
+538,project:dapp:consensys-Growth_Defi_V1,61,61,4
+539,project:dapp:consensys-Idle_Finance,17,17,6
+540,project:dapp:consensys-MCDEX_Mai_Protocol_V2,39,39,10
+541,project:dapp:consensys-Modular_Interactive_Crowdsale,81,81,38
+542,project:dapp:consensys-OmiseGo_MoreVP,106,106,23
+543,project:dapp:consensys-Paxos,2,2,0
+544,project:dapp:consensys-PoolTogether,88,88,9
+545,project:dapp:consensys-PoolTogether_LootBox_and_MultipleWinners_Strategy,13,13,0
+546,project:dapp:consensys-PoolTogether_Pods,33,33,44
+547,project:dapp:consensys-PoolTogether_Sushi_and_Yearn_V2_Yield_Sources,8,8,2
+548,project:dapp:consensys-Rocketpool,96,96,11
+549,project:dapp:consensys-Skale_Network,50,50,18
+550,project:dapp:consensys-Skale_Token,49,49,14
+551,project:dapp:consensys-Skyweaver,19,19,25
+552,project:dapp:consensys-Slockit_Incubed3,3,3,16
+553,project:dapp:consensys-TCR,7,7,31
+554,project:dapp:consensys-The_LAO,47,47,18
+555,project:dapp:consensys-Thesis_tBTC_and_Keep,37,37,30
+556,project:dapp:consensys-Umbra_Smart_Contracts,7,7,1
+557,project:dapp:consensys-Zer0_zAuction,33,33,98
+558,project:dapp:consensys-Zer0_zBanc,77,77,8
+559,project:dapp:consensys-Zer0_zNS,11,11,0
+560,project:dapp:consensys-iExec_PoCo,48,48,0
+561,project:dapp:consensys-pSTAKE Finance,34,34,9
+562,project:dapp:consensys-rICO,1,1,0
+563,project:dapp:openzeppelin-1inch_Fixed_Rate_Swap,1,1,1
+564,project:dapp:openzeppelin-1inch_Limit_Order_Protocol,1,1,0
+565,project:dapp:openzeppelin-ACO_Protocol,20,20,108
+566,project:dapp:openzeppelin-Alpha_Finance_Homora_V2,2,2,0
+567,project:dapp:openzeppelin-Arcade_City_token,2,2,0
+568,project:dapp:openzeppelin-Audius_Contracts,3,3,0
+569,project:dapp:openzeppelin-BarnBridge_Smart_Yield_Bonds,1,1,0
+570,project:dapp:openzeppelin-Basic_Attention_Token,1,1,0
+571,project:dapp:openzeppelin-Blockchain_Capital_Token,5,5,1
+572,project:dapp:openzeppelin-COSMOS_Fundraiser,2,2,7
+573,project:dapp:openzeppelin-Celo_Contracts_Audit_Release_4,278,278,18
+574,project:dapp:openzeppelin-Coinfix_Token,1,1,0
+575,project:dapp:openzeppelin-Compound_Open_Oracle,2,2,0
+576,project:dapp:openzeppelin-Decentraland_MANA_Token,3,3,0
+577,project:dapp:openzeppelin-EIP-4337-Ethereum_Account_Abstraction,1,1,0
+578,project:dapp:openzeppelin-Endaoment,5,5,0
+579,project:dapp:openzeppelin-EtherCamp_Hacker_Gold,11,11,0
+580,project:dapp:openzeppelin-EtherCamp_ProjectKudos_public_code,1,1,0
+581,project:dapp:openzeppelin-Fei_Protocol,11,11,10
+582,project:dapp:openzeppelin-Fuel_Token,2,2,0
+583,project:dapp:openzeppelin-Golem_Network_Token,2,2,0
+584,project:dapp:openzeppelin-Holdefi,6,6,0
+585,project:dapp:openzeppelin-Hubii_Token,2,2,11
+586,project:dapp:openzeppelin-Kin_Token,1,1,0
+587,project:dapp:openzeppelin-Moeda_Token,2,2,0
+588,project:dapp:openzeppelin-Notional,7,7,3
+589,project:dapp:openzeppelin-Notional_Governance_Contracts_v2,1,1,0
+590,project:dapp:openzeppelin-OpenBazaar’s_Escrow,6,6,23
+591,project:dapp:openzeppelin-Optimism,98,98,25
+592,project:dapp:openzeppelin-Opyn_Contracts,11,11,23
+593,project:dapp:openzeppelin-Opyn_Gamma_Protocol,69,69,110
+594,project:dapp:openzeppelin-Origin_Dollar,86,86,42
+595,project:dapp:openzeppelin-PROPS_Rewards_Engine_Contracts,18,18,1
+596,project:dapp:openzeppelin-Polymath,11,11,32
+597,project:dapp:openzeppelin-PoolTogether,19,19,7
+598,project:dapp:openzeppelin-Recoverable_Wallet,1,1,0
+599,project:dapp:openzeppelin-Ribbon_Finance,28,28,5
+600,project:dapp:openzeppelin-Saddle_Contracts,12,12,0
+601,project:dapp:openzeppelin-Solo_Margin_Protocol,45,45,3
+602,project:dapp:openzeppelin-SuperDAO_Promissory_Token,3,3,0
+603,project:dapp:openzeppelin-Tally_SafeGuard_Audit,9,9,22
+604,project:dapp:openzeppelin-UMA,90,90,23
+605,project:dapp:openzeppelin-UMA_Across_V2,25,25,0
+606,project:dapp:openzeppelin-WeTrust_ROSCA_contract_code,3,3,7
+607,project:dapp:openzeppelin-iExec_RLC_Token,2,2,0
+608,project:sb:dataset/access_control/FibonacciBalance.sol,0,1,0
+609,project:sb:dataset/access_control/arbitrary_location_write_simple.sol,0,1,0
+610,project:sb:dataset/access_control/incorrect_constructor_name1.sol,0,1,2
+611,project:sb:dataset/access_control/incorrect_constructor_name2.sol,0,1,2
+612,project:sb:dataset/access_control/incorrect_constructor_name3.sol,0,1,2
+613,project:sb:dataset/access_control/mapping_write.sol,0,1,0
+614,project:sb:dataset/access_control/multiowned_vulnerable.sol,0,1,0
+615,project:sb:dataset/access_control/mycontract.sol,0,1,0
+616,project:sb:dataset/access_control/parity_wallet_bug_1.sol,0,1,1
+617,project:sb:dataset/access_control/parity_wallet_bug_2.sol,0,1,1
+618,project:sb:dataset/access_control/phishable.sol,0,1,0
+619,project:sb:dataset/access_control/proxy.sol,0,1,0
+620,project:sb:dataset/access_control/rubixi.sol,0,1,0
+621,project:sb:dataset/access_control/simple_suicide.sol,0,1,0
+622,project:sb:dataset/access_control/unprotected0.sol,0,1,0
+623,project:sb:dataset/access_control/wallet_02_refund_nosub.sol,0,1,2
+624,project:sb:dataset/access_control/wallet_03_wrong_constructor.sol,0,1,2
+625,project:sb:dataset/access_control/wallet_04_confused_sign.sol,0,1,2
+626,project:sb:dataset/arithmetic/BECToken.sol,0,1,0
+627,project:sb:dataset/arithmetic/insecure_transfer.sol,0,1,0
+628,project:sb:dataset/arithmetic/integer_overflow_1.sol,0,1,0
+629,project:sb:dataset/arithmetic/integer_overflow_add.sol,0,1,0
+630,project:sb:dataset/arithmetic/integer_overflow_benign_1.sol,0,1,0
+631,project:sb:dataset/arithmetic/integer_overflow_mapping_sym_1.sol,0,1,0
+632,project:sb:dataset/arithmetic/integer_overflow_minimal.sol,0,1,0
+633,project:sb:dataset/arithmetic/integer_overflow_mul.sol,0,1,0
+634,project:sb:dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol,0,1,0
+635,project:sb:dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol,0,1,0
+636,project:sb:dataset/arithmetic/overflow_simple_add.sol,0,1,0
+637,project:sb:dataset/arithmetic/overflow_single_tx.sol,0,1,0
+638,project:sb:dataset/arithmetic/timelock.sol,0,1,0
+639,project:sb:dataset/arithmetic/token.sol,0,1,0
+640,project:sb:dataset/arithmetic/tokensalechallenge.sol,0,1,0
+641,project:sb:dataset/bad_randomness/blackjack.sol,0,1,0
+642,project:sb:dataset/bad_randomness/etheraffle.sol,0,1,0
+643,project:sb:dataset/bad_randomness/guess_the_random_number.sol,0,1,0
+644,project:sb:dataset/bad_randomness/lottery.sol,0,1,0
+645,project:sb:dataset/bad_randomness/lucky_doubler.sol,0,1,0
+646,project:sb:dataset/bad_randomness/old_blockhash.sol,0,1,0
+647,project:sb:dataset/bad_randomness/random_number_generator.sol,0,1,0
+648,project:sb:dataset/bad_randomness/smart_billions.sol,0,1,0
+649,project:sb:dataset/denial_of_service/auction.sol,0,1,0
+650,project:sb:dataset/denial_of_service/dos_address.sol,0,1,0
+651,project:sb:dataset/denial_of_service/dos_number.sol,0,1,0
+652,project:sb:dataset/denial_of_service/dos_simple.sol,0,1,0
+653,project:sb:dataset/denial_of_service/list_dos.sol,0,1,0
+654,project:sb:dataset/denial_of_service/send_loop.sol,0,1,0
+655,project:sb:dataset/front_running/ERC20.sol,0,1,0
+656,project:sb:dataset/front_running/FindThisHash.sol,0,1,0
+657,project:sb:dataset/front_running/eth_tx_order_dependence_minimal.sol,0,1,0
+658,project:sb:dataset/front_running/odds_and_evens.sol,0,1,0
+659,project:sb:dataset/other/crypto_roulette.sol,0,1,0
+660,project:sb:dataset/other/name_registrar.sol,0,1,0
+661,project:sb:dataset/other/open_address_lottery.sol,0,1,0
+662,project:sb:dataset/reentrancy/0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol,0,1,4
+663,project:sb:dataset/reentrancy/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4.sol,0,1,4
+664,project:sb:dataset/reentrancy/0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol,0,1,4
+665,project:sb:dataset/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol,0,1,4
+666,project:sb:dataset/reentrancy/0x561eac93c92360949ab1f1403323e6db345cbf31.sol,0,1,4
+667,project:sb:dataset/reentrancy/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol,0,1,4
+668,project:sb:dataset/reentrancy/0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol,0,1,4
+669,project:sb:dataset/reentrancy/0x7a8721a9d64c74da899424c1b52acbf58ddc9782.sol,0,1,0
+670,project:sb:dataset/reentrancy/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol,0,1,4
+671,project:sb:dataset/reentrancy/0x8c7777c45481dba411450c228cb692ac3d550344.sol,0,1,5
+672,project:sb:dataset/reentrancy/0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol,0,1,4
+673,project:sb:dataset/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol,0,1,3
+674,project:sb:dataset/reentrancy/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol,0,1,1
+675,project:sb:dataset/reentrancy/0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol,0,1,4
+676,project:sb:dataset/reentrancy/0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol,0,1,5
+677,project:sb:dataset/reentrancy/0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol,0,1,4
+678,project:sb:dataset/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol,0,1,5
+679,project:sb:dataset/reentrancy/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol,0,1,1
+680,project:sb:dataset/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol,0,1,4
+681,project:sb:dataset/reentrancy/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol,0,1,4
+682,project:sb:dataset/reentrancy/etherbank.sol,0,1,0
+683,project:sb:dataset/reentrancy/etherstore.sol,0,1,0
+684,project:sb:dataset/reentrancy/modifier_reentrancy.sol,0,1,0
+685,project:sb:dataset/reentrancy/reentrance.sol,0,1,0
+686,project:sb:dataset/reentrancy/reentrancy_bonus.sol,0,1,0
+687,project:sb:dataset/reentrancy/reentrancy_cross_function.sol,0,1,0
+688,project:sb:dataset/reentrancy/reentrancy_dao.sol,0,1,0
+689,project:sb:dataset/reentrancy/reentrancy_insecure.sol,0,1,0
+690,project:sb:dataset/reentrancy/reentrancy_simple.sol,0,1,0
+691,project:sb:dataset/reentrancy/simple_dao.sol,0,1,0
+692,project:sb:dataset/reentrancy/spank_chain_payment.sol,0,1,0
+693,project:sb:dataset/short_addresses/short_address_example.sol,0,1,0
+694,project:sb:dataset/time_manipulation/ether_lotto.sol,0,1,0
+695,project:sb:dataset/time_manipulation/governmental_survey.sol,0,1,0
+696,project:sb:dataset/time_manipulation/lottopollo.sol,0,1,0
+697,project:sb:dataset/time_manipulation/roulette.sol,0,1,0
+698,project:sb:dataset/time_manipulation/timed_crowdsale.sol,0,1,0
+699,project:sb:dataset/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol,0,1,1
+700,project:sb:dataset/unchecked_low_level_calls/0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9.sol,0,1,0
+701,project:sb:dataset/unchecked_low_level_calls/0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol,0,1,0
+702,project:sb:dataset/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol,0,1,4
+703,project:sb:dataset/unchecked_low_level_calls/0x39cfd754c85023648bf003bea2dd498c5612abfa.sol,0,1,4
+704,project:sb:dataset/unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol,0,1,4
+705,project:sb:dataset/unchecked_low_level_calls/0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859.sol,0,1,1
+706,project:sb:dataset/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol,0,1,1
+707,project:sb:dataset/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3.sol,0,1,5
+708,project:sb:dataset/unchecked_low_level_calls/0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol,0,1,0
+709,project:sb:dataset/unchecked_low_level_calls/0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol,0,1,5
+710,project:sb:dataset/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol,0,1,0
+711,project:sb:dataset/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol,0,1,0
+712,project:sb:dataset/unchecked_low_level_calls/0x5aa88d2901c68fda244f1d0584400368d2c8e739.sol,0,1,1
+713,project:sb:dataset/unchecked_low_level_calls/0x610495793564aed0f9c7fc48dc4c7c9151d34fd6.sol,0,1,1
+714,project:sb:dataset/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol,0,1,4
+715,project:sb:dataset/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol,0,1,0
+716,project:sb:dataset/unchecked_low_level_calls/0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4.sol,0,1,7
+717,project:sb:dataset/unchecked_low_level_calls/0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37.sol,0,1,1
+718,project:sb:dataset/unchecked_low_level_calls/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.sol,0,1,7
+719,project:sb:dataset/unchecked_low_level_calls/0x7d09edb07d23acb532a82be3da5c17d9d85806b4.sol,0,1,1
+720,project:sb:dataset/unchecked_low_level_calls/0x806a6bd219f162442d992bdc4ee6eba1f2c5a707.sol,0,1,7
+721,project:sb:dataset/unchecked_low_level_calls/0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol,0,1,0
+722,project:sb:dataset/unchecked_low_level_calls/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol,0,1,0
+723,project:sb:dataset/unchecked_low_level_calls/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol,0,1,4
+724,project:sb:dataset/unchecked_low_level_calls/0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol,0,1,0
+725,project:sb:dataset/unchecked_low_level_calls/0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol,0,1,0
+726,project:sb:dataset/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol,0,1,0
+727,project:sb:dataset/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol,0,1,4
+728,project:sb:dataset/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol,0,1,0
+729,project:sb:dataset/unchecked_low_level_calls/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol,0,1,2
+730,project:sb:dataset/unchecked_low_level_calls/0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol,0,1,1
+731,project:sb:dataset/unchecked_low_level_calls/0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol,0,1,0
+732,project:sb:dataset/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol,0,1,0
+733,project:sb:dataset/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52.sol,0,1,2
+734,project:sb:dataset/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol,0,1,2
+735,project:sb:dataset/unchecked_low_level_calls/0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol,0,1,7
+736,project:sb:dataset/unchecked_low_level_calls/0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol,0,1,5
+737,project:sb:dataset/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol,0,1,7
+738,project:sb:dataset/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol,0,1,0
+739,project:sb:dataset/unchecked_low_level_calls/0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf.sol,0,1,7
+740,project:sb:dataset/unchecked_low_level_calls/0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87.sol,0,1,7
+741,project:sb:dataset/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol,0,1,3
+742,project:sb:dataset/unchecked_low_level_calls/0xec329ffc97d75fe03428ae155fc7793431487f63.sol,0,1,0
+743,project:sb:dataset/unchecked_low_level_calls/0xf2570186500a46986f3139f65afedc2afe4f445d.sol,0,1,0
+744,project:sb:dataset/unchecked_low_level_calls/0xf29ebe930a539a60279ace72c707cba851a57707.sol,0,1,0
+745,project:sb:dataset/unchecked_low_level_calls/0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e.sol,0,1,7
+746,project:sb:dataset/unchecked_low_level_calls/etherpot_lotto.sol,0,1,0
+747,project:sb:dataset/unchecked_low_level_calls/king_of_the_ether_throne.sol,0,1,0
+748,project:sb:dataset/unchecked_low_level_calls/lotto.sol,0,1,0
+749,project:sb:dataset/unchecked_low_level_calls/mishandled.sol,0,1,0
+750,project:sb:dataset/unchecked_low_level_calls/unchecked_return_value.sol,0,1,0
+751,project:solidifi:1,0,7,0
+752,project:solidifi:10,0,7,0
+753,project:solidifi:11,0,7,1
+754,project:solidifi:12,0,7,0
+755,project:solidifi:13,0,7,2
+756,project:solidifi:14,0,7,0
+757,project:solidifi:15,0,7,2
+758,project:solidifi:16,0,7,0
+759,project:solidifi:17,0,7,0
+760,project:solidifi:18,0,7,0
+761,project:solidifi:19,0,7,0
+762,project:solidifi:2,0,7,1
+763,project:solidifi:20,0,7,0
+764,project:solidifi:21,0,7,0
+765,project:solidifi:22,0,7,1
+766,project:solidifi:23,0,7,0
+767,project:solidifi:24,0,7,0
+768,project:solidifi:25,0,7,0
+769,project:solidifi:26,0,7,0
+770,project:solidifi:27,0,7,0
+771,project:solidifi:28,0,7,1
+772,project:solidifi:29,0,7,0
+773,project:solidifi:3,0,7,1
+774,project:solidifi:30,0,7,0
+775,project:solidifi:31,0,7,0
+776,project:solidifi:32,0,7,0
+777,project:solidifi:33,0,7,1
+778,project:solidifi:34,0,7,0
+779,project:solidifi:35,0,7,0
+780,project:solidifi:36,0,7,1
+781,project:solidifi:37,0,7,0
+782,project:solidifi:38,0,7,1
+783,project:solidifi:39,0,7,1
+784,project:solidifi:4,0,7,0
+785,project:solidifi:40,0,7,0
+786,project:solidifi:41,0,7,2
+787,project:solidifi:42,0,7,1
+788,project:solidifi:43,0,7,1
+789,project:solidifi:44,0,7,1
+790,project:solidifi:45,0,7,0
+791,project:solidifi:46,0,7,0
+792,project:solidifi:47,0,7,0
+793,project:solidifi:48,0,7,1
+794,project:solidifi:49,0,7,1
+795,project:solidifi:5,0,7,1
+796,project:solidifi:50,0,7,0
+797,project:solidifi:6,0,7,1
+798,project:solidifi:7,0,7,1
+799,project:solidifi:8,0,7,1
+800,project:solidifi:9,0,7,0

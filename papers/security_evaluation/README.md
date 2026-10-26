@@ -1,6 +1,14 @@
+> **Publication checkpoint, 26 October 2026:** 29 compressed graph-output paths remain absent after a publication-review block and temporary environment reset. Computations and validation below were completed before that reset. Read [publication status](revision1/PUBLICATION_STATUS.md) before reproducing this checkout.
+
 # Security evaluation study
 
-This directory continues the book experiments as a separate article study. Start with `STATUS.md`, `protocol.json`, `DECISIONS.md`, and `VALIDITY_NOTES.md`. The protocol is still a draft and external model scoring is blocked. Historical `results/contracts/` outputs are unchanged.
+This directory continues the book experiments as a separate article study. The current manuscript is [DRAFT_REVISION1.md](manuscript/DRAFT_REVISION1.md), *Population Coverage and Dependency-Aware Evaluation of Smart Contract Vulnerability Detectors*. Start with [STATUS.md](STATUS.md) and [revision1/README.md](revision1/README.md), then `protocol.json`, `DECISIONS.md` and `VALIDITY_NOTES.md`. The overall protocol remains a draft and external model scoring is blocked. Historical `results/contracts/` outputs and earlier paper runs are unchanged.
+
+## Completed revision 1
+
+The revision contains 3,822 population/threshold/grouping graphs, identity and lexical-representation controls, project-contracted bridge diagnostics, and a completed historical-test sampling experiment. The latter uses 20 paired training draws for four methods and four regimes, plus a separate estimator-seed panel: 360 logical evaluations, 282 physical fits and no failures. It measures conditional variation on the original 1,082-file/21-positive test, not independent external performance. See [the model results](revision1/sampling_variance/run_20261025_v2/RESULTS.md) and [the mechanism report](revision1/graph_mechanism/REPORT.md).
+
+[The external protocol package](revision1/external_protocol/README.md) fixes a prospective 1,998-file cohort and prepares a 180-case probability sample for two independent specialists. All human forms are blank; external fits and scores remain zero. The previous purposive packet and blocked outside-giant campaigns remain separate. [Independent verification](revision1/independent_verification.json), [the evidence map](manuscript/REVISION1_EVIDENCE_MAP.md), and [figure provenance](manuscript/figures_revision1/README.md) connect the revised article to its artifacts.
 
 ## Reproduce the development pilot
 
@@ -33,6 +41,6 @@ The blank reviewer forms contain references and our assessment fields. Original 
 
 ## Second-cycle audits and manuscript
 
-`manuscript/DRAFT.md` is a working article draft, not a completed external evaluation. The string-aware normalization check, full graph sensitivity and 95-design feasibility audit are in `normalization_audit/`, `dependency_audit/` and `design_feasibility/`. Their READMEs document commands and recovery provenance. `dependency_audit/graph_scope_ablation_recovered_20261025/` distinguishes exhaustive screening from population expansion.
+`manuscript/DRAFT.md` preserves the earlier working draft; `manuscript/DRAFT_REVISION1.md` is the current revision. Neither reports a completed external evaluation. The second-cycle string-aware normalization check, full graph sensitivity and 95-design feasibility audit are in `normalization_audit/`, `dependency_audit/` and `design_feasibility/`. Their READMEs document commands and recovery provenance. `dependency_audit/graph_scope_ablation_recovered_20261025/` distinguishes exhaustive screening from population expansion.
 
 All 1,140 combinations of the 95 proposed tests and 12 graph variants fail the declared operational screens. The two prepared comparative campaigns are blocked by an executable assessment gate; their configurations are evidence of preparation, not completed fits. The exact published pilot reproduction remains separately supported. See `campaign/` and `review_cycle2/REVIEW.md` for implementation and guard verification. No external model scores or human expert judgments have been added.

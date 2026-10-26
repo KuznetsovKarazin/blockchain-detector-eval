@@ -1,0 +1,10 @@
+{
+  "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+  "all_1800_fit_artifacts_unchanged": true,
+  "summary_artifacts_unchanged": true,
+  "no_additional_fit_attempts": true,
+  "first_scoring_wall_seconds": 1287.36117,
+  "first_completed_utc": "2026-10-25T15:17:55.902547+00:00",
+  "resume_command": "python papers/security_evaluation/revision1/sampling_variance/run_sampling_variance.py run --out papers/security_evaluation/revision1/sampling_variance/run_20261025_v2",
+  "executed_source_and_input_hashes_validated": true
+}

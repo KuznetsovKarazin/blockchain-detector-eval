@@ -1,0 +1,114 @@
+{
+  "schema": "quarantined_identity_evidence_receipt_v1",
+  "identity_cases": 17,
+  "existing_quarantine_preserved": true,
+  "cohort_reentry_allowed": false,
+  "raw_annotations_publicly_redistributed": false,
+  "source_csv_sha256": "b9e17c5e88188f518491d381b4a2991b5809e8b356e7e861c50e33420d362fb6",
+  "code_sha256": "c979e73dd0845ffaddd63b87633cf9fe17fa147b7b53762c5b38c018f834756c",
+  "private_evidence_root": "data/derived/revision1_external_review_probability_20261025_v1/identity_evidence",
+  "cases": [
+    {
+      "identity_case_id": "Q01",
+      "source_sha256": "2796c0ebed36fed0ab52b583ec2a74785420f2a29c38a8f28ecdccbc22640ea0",
+      "private_evidence_sha256": "4a024e9c3c7259d37b5218003ca3f6dc5ebb98127613d62e70e71acb37ad6ea6",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q02",
+      "source_sha256": "919c4df94371f2ae7edd9944ecf5fad005a528a3e13ee98dc7b7c6cf04620559",
+      "private_evidence_sha256": "91285c5e1c914699960d0e5f6811e5cb3539b4a52bfd434bf8d73a4aa1abdb54",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q03",
+      "source_sha256": "69a900730af61db7bf9e563255f732b6616566366a1d6d323e7c80924581d35d",
+      "private_evidence_sha256": "85fd38c22884ba80a49c1cd3264f2ae044f6331c80d74cf10fe1387d08be876d",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q04",
+      "source_sha256": "5fcb2be244d72af8278a406038134191b8fe0fffd3ca2f52245e4d43368efa0c",
+      "private_evidence_sha256": "35a537880ba300d33df69a071ca63a2c415c4d5b48b9390c022242686071b319",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q05",
+      "source_sha256": "4eb749bda7166d4be4b67956f8c121ef27dc139378d259f1e7687db968b2c60a",
+      "private_evidence_sha256": "18d8d987c36d2c5115fbd5bc3217faaf1801db5c3a550d26ee443c8bf10e0b71",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q06",
+      "source_sha256": "fffce4cb5381256741f67a996334df377074cd6729743d4f3caaaff50df59341",
+      "private_evidence_sha256": "6676b544e08970c7285363b40670eff5dd2aa4be3e62ceb0d517b28a1750a809",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q07",
+      "source_sha256": "cb6427bb743b2dc1647a146d60e28d3da9d3397bc81c437032e5ac5744038f92",
+      "private_evidence_sha256": "392a390fc9dcf43b254d6f5b93e37f215d909f9908409684c518a2ffffe509ae",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q08",
+      "source_sha256": "1114b161bb2c7ee9f2a0d8bf3b60e56b617bda1a3dcde436ad6f14c7acbe617a",
+      "private_evidence_sha256": "95790f69b5f8722f7af32e1d7cc3979deecdd3bbce2b6a746c6bc13d2fb4a7f5",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q09",
+      "source_sha256": "db71d5e85c2a1b799885afdca80dfed9cfbe3f20b3e2851b8b1cc3c6a73913e7",
+      "private_evidence_sha256": "bd3010a723dcedd7db31a2861e9389f952f74ae9b5d1a315475d9ff6dd4a03e2",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q10",
+      "source_sha256": "94129664bc7de98f5d64e1ba3f10d5b413c5feddbc6023596dd880cdfc0ac980",
+      "private_evidence_sha256": "a578cbd202228bcdce9be9c2554b66e3483ba2d704aeeb4a99e9d9e9bb8dbfc9",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q11",
+      "source_sha256": "7e0af2e701fd18fb9d436482ae722a03a53e90fd93ef51575633eccf1c34bcd6",
+      "private_evidence_sha256": "8d77366420e24548f8b4b4e36e84cc9991fcb383bb0638ca2b50762924c39ee4",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q12",
+      "source_sha256": "3c617467b187c04375dadacab0069cbba46b82ea8edb86e1e74d3eddfd1d1e95",
+      "private_evidence_sha256": "80a36206e28684928533650a9a85c4fbe25b916e9b342b38054e160078c48149",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q13",
+      "source_sha256": "8278e8ba69f95d4beb7e67717bfa2ea39d442924934c408798b132542cff9f09",
+      "private_evidence_sha256": "384f9588d69d02634126278a50bd635a7a2d4ca66264fd3eeebde48ccbb4781e",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q14",
+      "source_sha256": "1a2ab2ea9940960e70c31753be7faddbda46309a805c6beb66f0b7c82ad1de85",
+      "private_evidence_sha256": "4c82c24fcc394d604fdbf9b29dc091a9674c77a4c168e1edae26538af0030ca6",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q15",
+      "source_sha256": "686d01916593513db62ae9ed60db3b5c556e1cde6a222cf3f0172e14bbaa567f",
+      "private_evidence_sha256": "3fe73a6765a5f3e1bcd6c9840c407d01d99a263b036b416b0e402c1604058aca",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q16",
+      "source_sha256": "afca236910b37ed8e681b3222ee7e7f99d565202869bcb5fd8d9b980d989d476",
+      "private_evidence_sha256": "873edfb9e547b21eda7d670e866ea033bef0a27e5599b2dca556cd1416f94a6b",
+      "human_decision_present": false
+    },
+    {
+      "identity_case_id": "Q17",
+      "source_sha256": "70686e5c74ea12d7289f6563ed19191462142fe0c308bb4270a58e90b4d38486",
+      "private_evidence_sha256": "8eadfc325a4bd97fee76690f925c38e87fe934f4b37400d0c4daf70422a04ae8",
+      "human_decision_present": false
+    }
+  ]
+}

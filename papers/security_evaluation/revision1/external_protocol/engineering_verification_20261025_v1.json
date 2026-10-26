@@ -1,0 +1,48 @@
+{
+  "schema": "external_B_engineering_verification_v1",
+  "date": "2026-10-25",
+  "test_command": ".venv/bin/python -m pytest -q papers/security_evaluation/revision1/external_protocol",
+  "observed_pytest_summary": "28 passed in 4.33s",
+  "python_version": "3.12.14",
+  "gate": {
+    "phase": "score",
+    "allowed": false,
+    "blockers": [
+      "freeze:class_mapping_semantic_signoff",
+      "freeze:compiler_inventory_and_policy_tests_complete",
+      "freeze:feature_adapters_and_regression_tests_complete",
+      "freeze:human_review_protocol_signed_off",
+      "freeze:named_independent_human_reviewers",
+      "freeze:survey_weighted_performance_and_interval_tests_complete",
+      "missing:reviewer_1_name",
+      "missing:reviewer_2_name",
+      "protocol_not_prospectively_frozen",
+      "score:adjudication_complete_with_unknowns_retained",
+      "score:both_initial_human_review_sets_complete_and_sealed",
+      "score:protocol_frozen_before_human_judgments_and_scores",
+      "score:source_and_configuration_hashes_unchanged"
+    ],
+    "models_executed": 0
+  },
+  "actual_human_judgments": 0,
+  "external_model_fits_or_scores": 0,
+  "compiler_or_slither_executions": 0,
+  "frozen_packet_changed": false,
+  "source_and_test_sha256": {
+    "build_identity_evidence.py": "c979e73dd0845ffaddd63b87633cf9fe17fa147b7b53762c5b38c018f834756c",
+    "build_packet.py": "742911c1915b500c2f1881e7c765941d8afb3cfa8b3a78f8603a033fdf37cc3c",
+    "compiler_policy.py": "535a915f5de643a36d6d61fdc51a73fa44e21c1250c5272c5b50a577f3baf122",
+    "review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "test_compiler_policy.py": "34118d0f58cf4c6dbd2bf915ecc9be2df26daaa4f167eff0e91496da03fca7b8",
+    "test_external_protocol.py": "4eb12de9a98587ee31c2f9101490d696ade6c42af5c8af1a67c98ca60d50633e",
+    "test_input_readiness.py": "cd30b16a1b8102385f41daeae742fcb144fe57bbe1b457bbfc398db209467e54",
+    "test_review_estimators.py": "464e1aabeec3c6bc5236d853bb2d35feef7cde1f9033f9e5c0fad3b457af6e38",
+    "validate_external_inputs.py": "6474cef777305822eebea869d8aa16930d7a75909b503a68a1dce56ec7c3a637",
+    "validate_gate.py": "ceb8730ce451950f2981548d5e87db8d14608258ab9f73fe80f7076476594a9b"
+  },
+  "document_sha256": {
+    "ENGINEERING_READINESS.md": "b8984cbd61b3c6371489e1d9b2921f3d6b816812a26ea1163a64c91016f0472d",
+    "PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "independent_external_estimator_check_v1",
+  "source_sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+  "method": "Exact combinatorial enumeration, independent of scipy probability functions used in the estimator",
+  "hypergeometric_population_cases": 1239,
+  "hypergeometric_minimum_coverage": 0.9523809523809523,
+  "unknown_envelope_population_cases": 1266,
+  "unknown_envelope_minimum_coverage": 0.9642857142857142,
+  "nominal_coverage": 0.95,
+  "actual_human_judgments_used": 0,
+  "actual_external_scores_used": 0,
+  "status": "pass"
+}

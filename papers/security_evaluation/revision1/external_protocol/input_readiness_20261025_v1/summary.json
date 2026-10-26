@@ -1,0 +1,281 @@
+{
+  "schema": "external_B_input_readiness_v1",
+  "source_files": 2689,
+  "upstream_pins": {
+    "DAppSCAN": {
+      "commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+      "clean": true
+    },
+    "salzano": {
+      "commit": "da079440bf2cf4fd803c864ef29aeea8a3da50c3",
+      "clean": true
+    },
+    "smartbugs-curated": {
+      "commit": "230e649123477eff332742a59a1c7cc6dc286cab",
+      "clean": true
+    },
+    "SolidiFI-benchmark": {
+      "commit": "4b0573e1b3f7031396de6f48f7f3e7380222ad3a",
+      "clean": true
+    }
+  },
+  "counts": [
+    {
+      "cohort": "external",
+      "lexical_readiness": "lexical_ready",
+      "n": 1998
+    },
+    {
+      "cohort": "train",
+      "lexical_readiness": "lexical_ready",
+      "n": 691
+    }
+  ],
+  "compiler_plan_counts": [
+    {
+      "cohort": "external",
+      "status": "compile_plan_ready_not_executed",
+      "n": 1968
+    },
+    {
+      "cohort": "external",
+      "status": "missing_pragma",
+      "n": 23
+    },
+    {
+      "cohort": "external",
+      "status": "no_compatible_catalog_release",
+      "n": 3
+    },
+    {
+      "cohort": "external",
+      "status": "unsupported_constraint",
+      "n": 4
+    },
+    {
+      "cohort": "train",
+      "status": "compile_plan_ready_not_executed",
+      "n": 682
+    },
+    {
+      "cohort": "train",
+      "status": "missing_pragma",
+      "n": 9
+    }
+  ],
+  "catalog_last_patch": {
+    "4": 26,
+    "5": 17,
+    "6": 12,
+    "7": 6,
+    "8": 26
+  },
+  "catalog_origin": "historical pinned scripts/c3_slither_baseline.py; not a claim of newest releases",
+  "slither_installed_version": null,
+  "required_slither_version": "0.11.6",
+  "compiler_binary_inventory": [
+    {
+      "version": "0.4.19",
+      "expected_local_path": "/root/.solc-bin/solc-0.4.19",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.4.21",
+      "expected_local_path": "/root/.solc-bin/solc-0.4.21",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.4.24",
+      "expected_local_path": "/root/.solc-bin/solc-0.4.24",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.4.25",
+      "expected_local_path": "/root/.solc-bin/solc-0.4.25",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.4.26",
+      "expected_local_path": "/root/.solc-bin/solc-0.4.26",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.5.0",
+      "expected_local_path": "/root/.solc-bin/solc-0.5.0",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.5.17",
+      "expected_local_path": "/root/.solc-bin/solc-0.5.17",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.5.2",
+      "expected_local_path": "/root/.solc-bin/solc-0.5.2",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.5.8",
+      "expected_local_path": "/root/.solc-bin/solc-0.5.8",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.6.0",
+      "expected_local_path": "/root/.solc-bin/solc-0.6.0",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.6.10",
+      "expected_local_path": "/root/.solc-bin/solc-0.6.10",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.6.11",
+      "expected_local_path": "/root/.solc-bin/solc-0.6.11",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.6.12",
+      "expected_local_path": "/root/.solc-bin/solc-0.6.12",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.6.9",
+      "expected_local_path": "/root/.solc-bin/solc-0.6.9",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.7.0",
+      "expected_local_path": "/root/.solc-bin/solc-0.7.0",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.7.4",
+      "expected_local_path": "/root/.solc-bin/solc-0.7.4",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.7.5",
+      "expected_local_path": "/root/.solc-bin/solc-0.7.5",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.7.6",
+      "expected_local_path": "/root/.solc-bin/solc-0.7.6",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.0",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.0",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.10",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.10",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.11",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.11",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.12",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.12",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.13",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.13",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.26",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.26",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.4",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.4",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.5",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.5",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.6",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.6",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.7",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.7",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.8",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.8",
+      "installed_file_present": false,
+      "sha256": null
+    },
+    {
+      "version": "0.8.9",
+      "expected_local_path": "/root/.solc-bin/solc-0.8.9",
+      "installed_file_present": false,
+      "sha256": null
+    }
+  ],
+  "readiness_scope": "source decoding/scanner and deterministic compiler planning only; not compile/tool/model coverage",
+  "training_labels_read": false,
+  "human_judgments_read": false,
+  "model_scores_read": false,
+  "models_fitted": 0,
+  "vocabularies_fitted": 0,
+  "compiler_or_slither_executed": false,
+  "feature_transform_fit_policy": "future fit vectorizer/scaler on training691 only, then transform external1998 without fit",
+  "source_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/validate_external_inputs.py": "6474cef777305822eebea869d8aa16930d7a75909b503a68a1dce56ec7c3a637",
+    "papers/security_evaluation/revision1/external_protocol/compiler_policy.py": "535a915f5de643a36d6d61fdc51a73fa44e21c1250c5272c5b50a577f3baf122",
+    "scripts/c3_slither_baseline.py": "1c427d1c988178e2ee3483faf5bcba387f94160cbe175f089fa8956acb5bde33",
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "input_manifest_sha256": {
+    "training_manifest.csv": "6f6e6d6ec0b4af217bd417e0bc86cd45fb956c53d2fd94ff38d4b18534599b83",
+    "external_cohort_manifest.csv": "2679b9d6c098f489345a3bcd74c79694ea5e27e5e034f98f54e0367e2f0e331f"
+  },
+  "output_sha256": {
+    "input_readiness.csv": "d5d474e1812fbb4395cb6a1049fa7e921e53d49a922695060a4f3406da9b6889",
+    "compiler_plans.csv": "e6db64c3b1061ab86944b412c73743ba897cbbc710b77963398ca746a2fb5e38"
+  }
+}

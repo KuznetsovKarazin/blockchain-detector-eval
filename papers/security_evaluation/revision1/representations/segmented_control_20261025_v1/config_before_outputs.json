@@ -1,0 +1,48 @@
+{
+  "schema": "posthoc_segment_boundary_control_v1",
+  "frozen_utc": "2026-10-25T15:10:21.276059+00:00",
+  "status": "posthoc_implementation_control_frozen_before_control_outputs_not_preregistered",
+  "reason": "Masking deletion concatenates nonadjacent retained token regions; quantify and remove boundary-spanning windows",
+  "original_run": "papers/security_evaluation/revision1/representations/run_20261025_v1",
+  "original_config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+  "original_metadata_sha256": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955",
+  "original_private_cache": "data/derived/revision1_representation_streams_20261025_v1",
+  "original_private_cache_sha256": "0afba52208d893427b0ba01b9eb0b58106480f1b610e54359ca3353ba90111b4",
+  "private_cache": "data/derived/revision1_segmented_streams_20261025_v1",
+  "code_hashes": {
+    "papers/security_evaluation/revision1/representations/run_segmented_control.py": "b655f2d18b9b6bb247ca2ecb21e12f3dc54d051991d790fefa98bb0e0ef774a9",
+    "papers/security_evaluation/revision1/representations/structural_lexical.py": "805390d8aaf315de423d396edd60b6fa80db4d464f980baa5a23a51b927ed02f",
+    "papers/security_evaluation/revision1/representations/run_representations.py": "1123f69491becba83d9d6b2dd14157da6aa33849e46913b21df87edcb9b5bb9a",
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "src/bal/data/contracts.py": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  "variants": [
+    "library_interface_segmented_normalized",
+    "library_interface_segmented_preserved"
+  ],
+  "thresholds": [
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "population_nodes": 24131,
+  "candidate_test_files": 1998,
+  "segmentation": "Keep only original concatenated-stream windows wholly contained in one retained segment; no new short-segment windows",
+  "short_file_rule": "For fewer than5 total tokens retain original short-file window only if all tokens in one segment",
+  "graph_policies": [
+    "base",
+    "address_expanded"
+  ],
+  "node_identity_structural_edges": "unchanged from original four-variant run",
+  "empty_rule": "zero surviving shingles means no lexical edges and unavailable informative training; structural node remains",
+  "metrics": [
+    "jaccard",
+    "containment_max_directed"
+  ],
+  "no_model_scoring": true,
+  "no_external_labels_read": true,
+  "max_saved_lexical_pairs": 20000000
+}

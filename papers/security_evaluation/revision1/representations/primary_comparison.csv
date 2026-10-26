@@ -1,0 +1,13 @@
+representation,metric,policy,threshold,full_dappscan_files,full_dappscan_informative,giant_files,giant_share,training_before,graph_retained,informative_retained,reentrancy_proxy_positive_informative,unchecked_proxy_positive_informative,candidate_test_files,candidate_informative_files
+corrected_file_normalized,jaccard,address_expanded,0.8,21457,21451,20565,0.9584284848767302,6587,712,711,23,18,1998,1998
+corrected_file_normalized,containment,address_expanded,0.8,21457,21451,21454,0.9998601854872536,6587,3,3,0,0,1998,1998
+corrected_file_preserved,jaccard,address_expanded,0.8,21457,21451,18769,0.8747261965792049,6587,1504,1502,37,29,1998,1998
+corrected_file_preserved,containment,address_expanded,0.8,21457,21451,20824,0.9704991378105048,6587,411,411,10,15,1998,1998
+library_interface_masked_normalized,jaccard,address_expanded,0.8,21457,15399,18745,0.8736076804772336,6587,1520,1086,36,25,1998,1995
+library_interface_masked_normalized,containment,address_expanded,0.8,21457,15399,21430,0.9987416693852822,6587,27,22,1,1,1998,1995
+library_interface_masked_preserved,jaccard,address_expanded,0.8,21457,15399,17177,0.8005312951484365,6587,2150,1539,49,36,1998,1995
+library_interface_masked_preserved,containment,address_expanded,0.8,21457,15399,19336,0.9011511394882789,6587,1083,739,19,26,1998,1995
+library_interface_segmented_normalized,jaccard,address_expanded,0.8,21457,15399,18745,0.8736076804772336,6587,1520,1086,36,25,1998,1995
+library_interface_segmented_normalized,containment,address_expanded,0.8,21457,15399,21411,0.9978561774712216,6587,46,41,3,4,1998,1995
+library_interface_segmented_preserved,jaccard,address_expanded,0.8,21457,15399,17177,0.8005312951484365,6587,2150,1539,49,36,1998,1995
+library_interface_segmented_preserved,containment,address_expanded,0.8,21457,15399,19335,0.9011045346506968,6587,1084,740,20,26,1998,1995

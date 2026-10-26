@@ -1,0 +1,21 @@
+{
+  "schema": "graph_mechanism_descriptive_v1",
+  "script_sha256": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff",
+  "scanner_sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+  "input_sha256": {
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/component_curves.csv": "c72b5ac20e41e47a22478b8af701431078ef34353644b7c65dcf9c8633cce4a2",
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/fixed_test_feasibility.csv": "ea735cd45bcdf7de84271e9937e5d5124dd71060f6a951278be8dd1bd923af91",
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/articulation_projects.csv": "bc893050059a7d9567d4676777a115a87b649ad47cf10cb4a485c8e44dd1fca2",
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/bridges.csv": "f1a9ef14189bfbf534a4637a2c7b856da56649eef51013c8850eab4294c599c2",
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_graph_summary.csv": "ccace1a7e28f9a222c2f526816f4d4b103947c74c1264edbdd80c341d7fc2e56",
+    "/tmp/security-recovery-repo/papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63"
+  },
+  "scope": "metadata-only heuristic source inventory, ranked diagnostic bridge witnesses ; no sources/annotations copied",
+  "bridge_case_selection": "legacy full_dappscan21457 and full_upstream21950, thresholds.8,.95,1: ten links ranked by disconnected DAppSCAN pairs, ties nodeids; retain all support-count metadata",
+  "caveats": [
+    "source declarations and standard filenames are lexical heuristics, not validated semantic roles",
+    "a bridge joins projects; exemplar file-pair is one witness, not proof either file is individually necessary",
+    "whole-project removal is a mechanism diagnostic, not a proposed filtered graph",
+    "descriptive curves, no inferential confidence bands; population ribbons are five seed ranges"
+  ]
+}

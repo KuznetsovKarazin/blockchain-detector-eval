@@ -1,0 +1,129 @@
+{
+  "schema": "revision1_independent_verification_v1",
+  "created_utc": "2026-10-25T15:19:00.764143+00:00",
+  "verifier_sha256": "e19c6e145703c4f0e3c9d897d24fb0643ad9766d1f4a848c3510858e1aacbc83",
+  "no_model_fits_performed_by_verifier": true,
+  "human_expert_review": false,
+  "checks": {
+    "graph_mechanism": {
+      "status": "pass",
+      "source_summary_sha256": "7c787633a03130a16c4207d43ce4d322bac31cd3d0fd0cd0c41454a7c81a6331",
+      "independent_vertex_deletions": 801,
+      "weighted_articulation_projects": 26,
+      "reported_bridges_deleted_and_verified": 55,
+      "simple_links": 6848,
+      "max_separated_dapp_files_after_project_removal": 82,
+      "full_dappscan_denominator": 21457,
+      "giant_at_080": 20588,
+      "giant_at_100": 19321,
+      "interpretation": "Project deletion, not a claim about individual file bridges; full denominator differs from historical projection"
+    },
+    "identity_controls": {
+      "status": "pass",
+      "method": "Independent union-find on hash/project groups, no recorded graph edges",
+      "scope": "string-aware full 21457-file DAppSCAN",
+      "controls": {
+        "project_raw_equality": {
+          "files": 21457,
+          "components": 454,
+          "giant_files": 3608
+        },
+        "project_normalized_stream_nonempty": {
+          "files": 21457,
+          "components": 288,
+          "giant_files": 19298
+        },
+        "project_normalized_stream_with_empty": {
+          "files": 21457,
+          "components": 287,
+          "giant_files": 19321
+        }
+      },
+      "source_summary_sha256": "8b6a51f6cb41c073deb8e808ffdf4c57d118d2b0f1e0e22b732bc817864a8bfc"
+    },
+    "probability_packet": {
+      "status": "pass",
+      "source_manifest_sha256": "9d2ab1a17afff716cb2abbc4100b47a66c8df1021eb4abbcec6a878dc1f694c7",
+      "case_frame": 3996,
+      "probability_cases": 180,
+      "unique_files": 170,
+      "strata": 17,
+      "inclusion_probabilities_and_weights_match": true,
+      "independent_sampling_replay": true,
+      "both_review_forms_and_adjudication_blank": true,
+      "human_judgments_completed": 0,
+      "train_test_component_overlap": 0
+    },
+    "representations": {
+      "status": "pass",
+      "nodes_and_raw_hashes_unchanged": true,
+      "nodes": 24131,
+      "candidate_files": 1998,
+      "structural_scan_errors": 1,
+      "variants": [
+        {
+          "representation": "corrected_file_normalized",
+          "informative_nodes": 24125,
+          "unavailable_nodes": 6,
+          "unavailable_nodes_have_no_lexical_edges": true
+        },
+        {
+          "representation": "corrected_file_preserved",
+          "informative_nodes": 24125,
+          "unavailable_nodes": 6,
+          "unavailable_nodes_have_no_lexical_edges": true
+        },
+        {
+          "representation": "library_interface_masked_normalized",
+          "informative_nodes": 18070,
+          "unavailable_nodes": 6061,
+          "unavailable_nodes_have_no_lexical_edges": true
+        },
+        {
+          "representation": "library_interface_masked_preserved",
+          "informative_nodes": 18070,
+          "unavailable_nodes": 6061,
+          "unavailable_nodes_have_no_lexical_edges": true
+        }
+      ],
+      "source_manifest_sha256": "421f5dccf19b5e810724fd036ff7db5497a30cd7d1e278a4f02c33b2acaa3049"
+    },
+    "segmented_control": {
+      "status": "pass",
+      "config_sha256": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a",
+      "nodes_and_structural_edges_unchanged": true,
+      "common_output_hashes": {
+        "nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+        "structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa",
+        "boundary_diagnostics.csv": "8fed02c281b291eb1dfa41a8ad70f136cbee4428dd2b1c3aac3c56cb263bdbea"
+      },
+      "variants": [
+        {
+          "representation": "library_interface_segmented_normalized",
+          "changed_shingle_files": 2070,
+          "sampled_changed_files_for_independent_windows": 40,
+          "empty_nodes_have_no_lexical_edges": true
+        },
+        {
+          "representation": "library_interface_segmented_preserved",
+          "changed_shingle_files": 2191,
+          "sampled_changed_files_for_independent_windows": 40,
+          "empty_nodes_have_no_lexical_edges": true
+        }
+      ],
+      "interpretation": "Post hoc implementation control; shingle removal can add similarity edges by shrinking denominators"
+    },
+    "sampling": {
+      "status": "pass",
+      "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+      "logical_evaluations": 360,
+      "physical_fits": 282,
+      "independent_ap_recalculations": 360,
+      "independent_tie_workload_recalculations": 1080,
+      "failed_evaluations": 0,
+      "random_ranking_exact_ap_mean": 0.025363028220700266,
+      "interpretation": "Fixed historical test; conditional training variation, not independent project inference"
+    }
+  },
+  "status": "pass"
+}

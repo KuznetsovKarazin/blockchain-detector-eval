@@ -1,0 +1,54 @@
+{
+  "schema": "historical_sampling_postrun_review_v1",
+  "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+  "analysis_source_sha256": "2c906bfffa509a5b6fa8e20b8609e10e20c29c12e7c53929a4c2267eaf558361",
+  "counts": {
+    "logical": 360,
+    "physical": 282,
+    "failed": 0,
+    "convergence_warnings_physical": 0
+  },
+  "physical_preprocessing_fit_predict_seconds": 1245.0140475320004,
+  "cumulative_process_peak_rss_mib": 447.984375,
+  "raw_lr_original_reproduction": [
+    {
+      "regime": "other_files_unrestricted",
+      "max_absolute_score_difference": 0.0,
+      "scores_bitwise_equal_after_roundtrip_parse": true
+    },
+    {
+      "regime": "project_disjoint",
+      "max_absolute_score_difference": 0.0,
+      "scores_bitwise_equal_after_roundtrip_parse": true
+    },
+    {
+      "regime": "clone_disjoint",
+      "max_absolute_score_difference": 0.0,
+      "scores_bitwise_equal_after_roundtrip_parse": true
+    },
+    {
+      "regime": "joint_project_clone_disjoint",
+      "max_absolute_score_difference": 0.0,
+      "scores_bitwise_equal_after_roundtrip_parse": true
+    }
+  ],
+  "all_result_manifests_hash": "bb7dc3c9cfde65379ea09bb54523bfe88e0945ca65bb82f8d7db7ae9698b7787",
+  "fixed_actual_review_budgets": [
+    54,
+    108,
+    216
+  ],
+  "external_scores_computed": false,
+  "independence_claim": false,
+  "inferential_p_values_or_new_family_CI": false,
+  "report_sha256": "4076bdb6969ef39a116e2c58f45ffc1aa747bac95eb58370f42e3ff47070d23e",
+  "summary_hashes_verified": {
+    "summary/per_evaluation_ranking.csv": "f5c65f69ce361335e75d1e4d536e72a7c7439fa4869fd34f9c8494fe5e4f9cda",
+    "summary/random_ranking_reference.json": "382d764773434cc255de227d2792e85a4dd98409148b658c0473f68a98223244",
+    "summary/per_evaluation_workload.csv": "bb0ef19a89a1c9fd752d6a17ea78c3df865f598ea4d264f099eef7ce23c96128",
+    "summary/runtime_failures.csv": "4a318b71a2c546b97cfe68e52582a512898abaa4892b2d41f478bfb47be91325",
+    "summary/conditional_distributions.csv": "19b2f54b5fd854a178074167f25464d97aaceb7075a6ffb2b19459d6c3e9bfa9",
+    "summary/paired_draw_differences.csv": "a60fe0b59e7be28fc47ac2a9ca9a36c870790d86fe0b3481470a8875d6b7b171",
+    "summary/paired_difference_distributions.csv": "04c04692caefbb1cc208ba9ee2b3aa717dafc00cca9a6707328a38860d1eb2fb"
+  }
+}

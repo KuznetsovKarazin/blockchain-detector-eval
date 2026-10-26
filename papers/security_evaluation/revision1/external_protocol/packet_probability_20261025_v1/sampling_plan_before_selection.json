@@ -1,0 +1,23 @@
+{
+  "schema": "external_probability_review_plan_v1",
+  "created_utc": "2026-10-25T14:54:27.951893+00:00",
+  "status": "prepared_before_human_judgments_and_external_scores",
+  "sampling_frame": "fixed1998provisionalfiles by2primaryclasses=3996cases;17unresolvedidentities excluded",
+  "sample_size": 180,
+  "strata": [
+    "source_id",
+    "class",
+    "label_status"
+  ],
+  "randomization": "independent simple random sampling without replacement within strata; numpy default_rng then random case order",
+  "seed": 2026102501,
+  "allocation": "min(N_h,20)source-positive or min(N_h,5)other; remaining slots proportional residual capacity; Hamilton rounding; lexicographic ties",
+  "selection_uses_source_annotations": true,
+  "selection_uses_human_judgments": false,
+  "selection_uses_model_scores": false,
+  "two_reviewers": "both independently assess every probability case; names pending, no scores/source-label key supplied",
+  "additional_identity_cases": "17quarantinedsourceissues census, separate frame and purpose, not added to corpus-error denominator",
+  "existing_purposive_106_packet": "preserved unchanged; not pooled with probabilitysample",
+  "external_scoring_allowed": false,
+  "human_judgments_generated": 0
+}

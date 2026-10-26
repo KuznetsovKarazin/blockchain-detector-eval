@@ -1,0 +1,19 @@
+{
+  "figure": "fig05_sampling_variance",
+  "run_fingerprint": "d0b63a12a2ca839743e682b71a33ac138dd6a4d5feee7072c1f203d937652204",
+  "source_hash": "dc33864ac8ac7c668d805d1cca8ad959624d1b48953de942c9335f2a9f683820",
+  "input_hashes": {
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/summary/per_evaluation_ranking.csv": "f5c65f69ce361335e75d1e4d536e72a7c7439fa4869fd34f9c8494fe5e4f9cda",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/summary/random_ranking_reference.json": "382d764773434cc255de227d2792e85a4dd98409148b658c0473f68a98223244"
+  },
+  "caption": "Conditional variation in proxy-label average precision across 20 paired training draws, using the original fixed historical pilot test (1,082 files; 21 SWC-107 findings; one historical joint component). Every draw has 1,179 training files and 31 proxy positives. Estimator seed is fixed at zero for every method. Dots denote draw outcomes; boxes show the median and interquartile range and whiskers the observed minimum and maximum, not confidence intervals. The joint restriction uses the complete available pool, so its 20 logical draws share one unique training membership and reused fit, plotted as a single diamond. The dashed line is the exact expected AP of a uniformly random strict ranking, not prevalence or an inferential decision threshold. These distributions describe training-subset variation on a reused dependent test and do not measure uncertainty for unseen projects or families.",
+  "exact_random_ranking_ap_mean": 0.025363028220700266,
+  "quantiles_are_confidence_intervals": false,
+  "main_estimator_seed": 0,
+  "joint_unique_training_memberships": 1,
+  "output_hashes": {
+    "fig05_sampling_variance.png": "976c318b0d6a13775eb2d5b30a3550b093c7f036b6b9797c41acfde99b369ddc",
+    "fig05_sampling_variance.pdf": "c02844023032282e5965e397f764d0a9e372bc8b9cf8499bc457acdb03772ff0",
+    "fig05_sampling_variance.svg": "ed002ac12a12a8615bda049e0cf3187ce7a1a185d1dc24028e8b5ce8c25ba8e2"
+  }
+}

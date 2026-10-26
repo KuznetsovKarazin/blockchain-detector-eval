@@ -1,0 +1,11 @@
+representation,metric,threshold,lexical_pairs
+library_interface_masked_preserved,jaccard,0.7,81444
+library_interface_masked_preserved,jaccard,0.8,70524
+library_interface_masked_preserved,jaccard,0.9,57252
+library_interface_masked_preserved,jaccard,0.95,25935
+library_interface_masked_preserved,jaccard,0.99,22914
+library_interface_masked_preserved,containment,0.7,158076
+library_interface_masked_preserved,containment,0.8,115714
+library_interface_masked_preserved,containment,0.9,79326
+library_interface_masked_preserved,containment,0.95,60942
+library_interface_masked_preserved,containment,0.99,25031

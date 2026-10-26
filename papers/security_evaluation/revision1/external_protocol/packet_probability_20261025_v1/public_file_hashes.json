@@ -1,0 +1,14 @@
+{
+  "adjudication_blank.csv": "253cdc584ab2df6a11d5773a1dbdde75d48fa96b3cb112d49c80031b7f8fdb4c",
+  "executed_build_packet.py": "742911c1915b500c2f1881e7c765941d8afb3cfa8b3a78f8603a033fdf37cc3c",
+  "external_cohort_manifest.csv": "2679b9d6c098f489345a3bcd74c79694ea5e27e5e034f98f54e0367e2f0e331f",
+  "identity_reviewer_1_blank.csv": "a43642487b7545261ef96ec19913637265a7a21875cecf1b8263cda948890b3e",
+  "identity_reviewer_2_blank.csv": "a43642487b7545261ef96ec19913637265a7a21875cecf1b8263cda948890b3e",
+  "packet_manifest.json": "9d2ab1a17afff716cb2abbc4100b47a66c8df1021eb4abbcec6a878dc1f694c7",
+  "reviewer_1_blank.csv": "72520c84b2c6af623ca6b1e74cc086f53af014c1347c7cc19f29c98fb14b86d9",
+  "reviewer_2_blank.csv": "72520c84b2c6af623ca6b1e74cc086f53af014c1347c7cc19f29c98fb14b86d9",
+  "sampling_plan_before_selection.json": "c7c4a6f380b64b505e1fc9880779548ff21f98ed1e0d3bd65e2fdbe63b96056d",
+  "stratum_allocation.csv": "403c6e4290330f2bc6e13a9827cbb516cca98d3193d13fd9adaf3a72608f6c67",
+  "training_exclusion_manifest.csv": "72b2c6212b029da6c49f44140b648fbecc1b2d57e62005ecf71cf87cee282ce0",
+  "training_manifest.csv": "6f6e6d6ec0b4af217bd417e0bc86cd45fb956c53d2fd94ff38d4b18534599b83"
+}

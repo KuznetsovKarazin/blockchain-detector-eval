@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25",
+  "base_commit": "07673edcbd7dea2f732d66a867fcb90213c9f500",
+  "focused_tests_passed": 168,
+  "focused_tests_failed": 0,
+  "new_external_engineering_tests_included": 28,
+  "model_evaluations_recomputed_independently": 360,
+  "tie_aware_budget_results_recomputed_independently": 1080,
+  "fit_failures": 0,
+  "fit_convergence_warnings": 0,
+  "physical_fits": 282,
+  "human_review_judgments": 0,
+  "external_model_scores": 0,
+  "slither_runs": 0,
+  "frozen_source_and_output_verification": "pass; see independent_verification.json",
+  "generated_svg_whitespace": "Matplotlib path data contains trailing spaces; exact generated SVG bytes are retained. No non-SVG whitespace failures after CRLF-aware check.",
+  "manuscript_source": "manuscript/DRAFT_REVISION1.md",
+  "word_qa": "All16renderedpagesinspected;set-differenceOMMLglyphandduplicateimplicitcaptionscorrected;finalrenderpassed."
+}

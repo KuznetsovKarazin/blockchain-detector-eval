@@ -1,0 +1,18 @@
+{
+  "representation": "corrected_file_preserved",
+  "nodes": 24131,
+  "informative_nodes": 24125,
+  "unavailable_nodes": 6,
+  "pairs_containment_ge_070": 278628,
+  "pair_definition": "undirected edge when either directed containment reaches threshold",
+  "runtime_seconds": 75.57565290800267,
+  "peak_rss_mib_cumulative": 875.49609375,
+  "no_model_scoring": true,
+  "output_hashes": {
+    "training_feasibility.csv": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302",
+    "lexical_edges.npz": "3235bfee86cb33670ebb19c6d2a56c71421a8283be97e758c8e016a9a4cf9294",
+    "memberships.csv.gz": "d65f57808d898002ba561b8ce776adaf47048633467b120c87d4bde1a7f963f4",
+    "edge_counts.csv": "1f94dec956e9b83481e6512a54b1cd5499b09630b120f8a8d3c1bc1511d3a091",
+    "component_concentration.csv": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb"
+  }
+}

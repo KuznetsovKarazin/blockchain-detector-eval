@@ -1,0 +1,9 @@
+{
+  "status": "complete_posthoc_unscored_control",
+  "config_sha256": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a",
+  "started_utc": "2026-10-25T15:10:27.626742+00:00",
+  "finished_utc": "2026-10-25T15:13:51.532066+00:00",
+  "runtime_seconds": 204.1173504699982,
+  "peak_rss_mib": 660.5078125,
+  "no_model_scoring": true
+}

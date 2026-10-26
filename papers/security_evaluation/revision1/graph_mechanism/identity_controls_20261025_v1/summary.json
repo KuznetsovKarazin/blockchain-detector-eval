@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "config_sha256": "3a06034a6b2ef950adf8fcee1f8d9fe985fe173e4774b3aa26d2dde1ec73eb4b",
+  "runtime_seconds": 11.777450602003228,
+  "output_sha256": {
+    "config_before_compute.json": "3a06034a6b2ef950adf8fcee1f8d9fe985fe173e4774b3aa26d2dde1ec73eb4b",
+    "run_mechanism.py": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d",
+    "identity_control_concentration.csv": "e1f2514e548e7d2d6fd68917c47b3820e12d5b0846f1d020ba1e002be07fd282",
+    "identity_controls.py": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242",
+    "memberships.csv.gz": "96ee133ff79dbd6e04dcc2d214d5bf579623c74e6787b08504dc3e12ae864aab"
+  }
+}

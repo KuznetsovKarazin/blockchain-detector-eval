@@ -1,0 +1,3 @@
+representation,nodes,files_with_crossing_windows,crossing_window_occurrences,files_with_unique_shingles_removed,unique_shingles_removed_sum_per_file,informative_files,zero_shingle_files
+library_interface_segmented_normalized,24131,2191,11128,2070,8428,18070,6061
+library_interface_segmented_preserved,24131,2191,11128,2191,9859,18070,6061

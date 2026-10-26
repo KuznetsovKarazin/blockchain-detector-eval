@@ -1,0 +1,17 @@
+{
+  "status": "complete_metadata",
+  "runtime_seconds": 35.028973966000194,
+  "all24131_raw_source_hashes_verified": true,
+  "classified_sources": 24131,
+  "ranked_bridge_cases": 60,
+  "no_human_semantic_reviews": true,
+  "config_sha256": "56294e8ed56ab4ded03b9ce8af2a4435700900f954de59a309f7d57a15b4c853",
+  "output_sha256": {
+    "ranked_bridge_evidence.csv": "c162ae7562d4ca98c41acee656abab347b0d14bfdb1df546c5bc580ff9a79bc5",
+    "solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "config_before_describe.json": "56294e8ed56ab4ded03b9ce8af2a4435700900f954de59a309f7d57a15b4c853",
+    "source_declaration_heuristics.csv.gz": "3692f032b347037c78d1373b7e7027d82039766389e256a9692d8ce494ffcb2a",
+    "describe_mechanism.py": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff",
+    "heuristic_aggregate_counts.csv": "b7ecf8cf04ca48f7c21d322104047e2360bf9ac37b7c75cdcfefc8f90291b4f8"
+  }
+}

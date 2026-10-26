@@ -1,0 +1,16 @@
+{
+  "revision1/graph_mechanism/run_20261025_v1/component_curves.csv": "c72b5ac20e41e47a22478b8af701431078ef34353644b7c65dcf9c8633cce4a2",
+  "revision1/graph_mechanism/run_20261025_v1/fixed_test_feasibility.csv": "ea735cd45bcdf7de84271e9937e5d5124dd71060f6a951278be8dd1bd923af91",
+  "dependency_audit/graph_scope_ablation_recovered_20261025/component_concentration.csv": "07f2658d2dfac079541fbf6146d70895b69c78ee75f873d42b66f8a423e8c3a5",
+  "dependency_audit/graph_scope_ablation_recovered_20261025/fixed_test_feasibility.csv": "93e1a823973832777b9310518c2622217473c458fc285e73c339ebdf961c0a05",
+  "external_audit/source_audit_full_20261025/candidate_source_metadata.csv": "74964ccbca4344ad9817f614b0349bcd1d9a602e7d539ca5582d8ea663e453f4",
+  "revision1/representations/run_20261025_v1/coverage.csv": "d575f9419ab4e4143a69d00926ab83659e9efb495f76ee91767d50b52cda9f4c",
+  "revision1/representations/run_20261025_v1/corrected_file_normalized/component_concentration.csv": "5c574ab95d04e2283e58ba5166666738c45254d9417fe326a725596c3cb0b471",
+  "revision1/representations/run_20261025_v1/corrected_file_normalized/training_feasibility.csv": "cb37382ba2720b4048a6f495d747efdc008810097dfe19adbe503b42e2897750",
+  "revision1/representations/run_20261025_v1/corrected_file_preserved/component_concentration.csv": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb",
+  "revision1/representations/run_20261025_v1/corrected_file_preserved/training_feasibility.csv": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302",
+  "revision1/representations/run_20261025_v1/library_interface_masked_normalized/component_concentration.csv": "55de361798f826e6c70d831020ff95f553c48db0f0a4ce28754228c61f28d300",
+  "revision1/representations/run_20261025_v1/library_interface_masked_normalized/training_feasibility.csv": "c9a87d4b3a6408f5fcae5f1d86000d96bc2a1d1853751d0753518ee4f244d8c5",
+  "revision1/representations/run_20261025_v1/library_interface_masked_preserved/component_concentration.csv": "35126c1aa8384d4812842666be006f3d5c73e9e961d482498ea0e28d9a6f3e04",
+  "revision1/representations/run_20261025_v1/library_interface_masked_preserved/training_feasibility.csv": "ef65942256d277e063170525744ef8ceb99f4b22775b15721b332581d168a2c2"
+}

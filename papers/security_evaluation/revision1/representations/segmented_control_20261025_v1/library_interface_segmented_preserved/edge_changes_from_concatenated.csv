@@ -1,0 +1,11 @@
+representation,metric,threshold,old_edges,new_edges,edges_added,edges_removed
+library_interface_segmented_preserved,jaccard,0.7,81444,81518,79,5
+library_interface_segmented_preserved,jaccard,0.8,70524,70635,114,3
+library_interface_segmented_preserved,jaccard,0.9,57252,57328,81,5
+library_interface_segmented_preserved,jaccard,0.95,25935,26045,110,0
+library_interface_segmented_preserved,jaccard,0.99,22914,22921,7,0
+library_interface_segmented_preserved,containment,0.7,158076,158381,497,192
+library_interface_segmented_preserved,containment,0.8,115714,115938,475,251
+library_interface_segmented_preserved,containment,0.9,79326,79437,294,183
+library_interface_segmented_preserved,containment,0.95,60942,60804,117,255
+library_interface_segmented_preserved,containment,0.99,25031,24851,29,209

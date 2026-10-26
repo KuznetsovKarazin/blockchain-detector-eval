@@ -1,0 +1,51 @@
+{
+  "train_preprocessing_seconds": 3.5000340699989465,
+  "test_preprocessing_seconds": 1.3284400810007355,
+  "fit_seconds": 0.19984889099941938,
+  "predict_seconds": 0.0008760089986026287,
+  "total_seconds": 5.033779315999709,
+  "n_features": 50000,
+  "iterations": 29,
+  "convergence_warning": false,
+  "warnings": [],
+  "native_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+      "version": null
+    }
+  ],
+  "process_peak_rss_mib_cumulative": 424.84765625,
+  "physical_fit": true
+}

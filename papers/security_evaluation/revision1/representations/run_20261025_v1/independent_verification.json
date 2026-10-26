@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "script_sha256": "4cfe938a8005a863a2f075a312cfc62dc5d63e301228ec79230bcb5964252098",
+  "config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+  "checks": [
+    {
+      "variant": "corrected_file_normalized",
+      "all_edge_endpoints_connected": true,
+      "threshold_refinement": true,
+      "primary_graphs_independently_reconstructed": 2,
+      "literal_shingle_pairs_verified": 100,
+      "empty_nodes_have_no_lexical_edges": true,
+      "nonempty_corrected_baseline_edges_identical": 133859,
+      "legacy_empty_empty_lexical_edges_omitted": 15,
+      "prior_baseline_partition_at_080_unchanged": false
+    },
+    {
+      "variant": "corrected_file_preserved",
+      "all_edge_endpoints_connected": true,
+      "threshold_refinement": true,
+      "primary_graphs_independently_reconstructed": 2,
+      "literal_shingle_pairs_verified": 100,
+      "empty_nodes_have_no_lexical_edges": true
+    },
+    {
+      "variant": "library_interface_masked_normalized",
+      "all_edge_endpoints_connected": true,
+      "threshold_refinement": true,
+      "primary_graphs_independently_reconstructed": 2,
+      "literal_shingle_pairs_verified": 100,
+      "empty_nodes_have_no_lexical_edges": true
+    },
+    {
+      "variant": "library_interface_masked_preserved",
+      "all_edge_endpoints_connected": true,
+      "threshold_refinement": true,
+      "primary_graphs_independently_reconstructed": 2,
+      "literal_shingle_pairs_verified": 100,
+      "empty_nodes_have_no_lexical_edges": true
+    }
+  ],
+  "independence_claim": "None; verified persisted lexical graph calculations only"
+}

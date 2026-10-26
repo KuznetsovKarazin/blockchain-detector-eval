@@ -1,0 +1,18 @@
+{
+  "status": "complete_unscored_representation_sensitivity",
+  "config_sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+  "started_utc": "2026-10-25T14:56:20.130729+00:00",
+  "finished_utc": "2026-10-25T15:03:59.964680+00:00",
+  "runtime_seconds": 460.3414954209984,
+  "peak_rss_mib": 875.49609375,
+  "no_model_scoring": true,
+  "no_external_labels_read": true,
+  "common_output_hashes": {
+    "nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa",
+    "config_before_outputs.json": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb",
+    "training_label_input_hashes.json": "6ab252ba5ebf9cb364bbe56cdc1fdacd73dfc1a5c3135859faaac465d4d4a418",
+    "coverage.csv": "d575f9419ab4e4143a69d00926ab83659e9efb495f76ee91767d50b52cda9f4c",
+    "representation_metadata.csv": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955"
+  }
+}
