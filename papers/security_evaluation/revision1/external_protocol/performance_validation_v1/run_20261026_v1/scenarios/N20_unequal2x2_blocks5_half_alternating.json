@@ -1,0 +1,1388 @@
+{
+  "scenario": {
+    "id": "N20_unequal2x2_blocks5_half_alternating",
+    "N": 20,
+    "pattern": "half_alternating",
+    "design": "unequal2x2",
+    "score_type": "blocks5",
+    "y": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "scores": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "strata": [
+      {
+        "id": "A",
+        "units": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19
+        ],
+        "n": 2
+      },
+      {
+        "id": "B",
+        "units": [
+          1,
+          6,
+          11,
+          16
+        ],
+        "n": 2
+      }
+    ],
+    "sample_states": 720
+  },
+  "true_population_ap": 0.54,
+  "configuration_count": 238,
+  "distribution": [
+    {
+      "configuration_id": "c4cd9835bb44132b5552645a00db86d0f6f3d996ae0c81266d9ebf9724f77da6",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "419ffaa10e27c1280fd9a0a3b26217ca9af568ad9cd72f7f7c9e210b40a3a53b",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "1c0f2dccf4dc4ebd5e84000e0785550bf9204ef1be6a2cc664e6fd3058334b8e",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "465340a79587e8353c64296382e85bb83843793545b37c592f5f11ca0004bb49",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "e9b96d721b305a82b858610f2b41b3caf4e32022014a50eaaf259976906f843d",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "ea8168aa42c17ce611c73621c271543c151b059556f14b29460ef579f647bfab",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "0bf5d7447c57258d398b02fba6abbbcc712ac3851fd79e63f3641d80a547675a",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "91dbadff0f8452a8031343d9bebf4bdf057e7386367238626be98db2385d8e79",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "c1b5b26c09ff99ade7ea2c86ed65ca2faba211a72436d0b4b802e8a6bbaf32b0",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "c4c1a2b712d7bc3711fb6f9045ffd2b0214b37eaac8895427b83a45216540b28",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "d8cbf89a60a2c7430e178ca315138c33c3d222810a9b587be7a6fa0749e4c158",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "4759c239158bf3a4fe11d70362e9712541ee2172f538a7ffed2edf85f6a54f39",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "a822cb3162da1f4dad67abbd072fdaf2348f3217dfc7b611cab55eaa5527b84d",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "3483519372dab9b104068df887ea4a40b0bb1871192a45e52e70d1a149d0b673",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "dc9fde866ec8419de7eb68cf48e800f31063c28ded59f2532003daa832e4a6a1",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "b5440c91fb6204a7a241c41dc17880de0e714d0fb2cbd617f334a35d00af8404",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "50991c1387f47a5fc5404dfce373a48b8bd448dd2594ffa5844faa813527f332",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "204af4f211ce5aa0930f0574680ed4a733f12ac1981466578f987e9c404d396c",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "c47029e517c3a3549e4015769eeb4bcf5180a230950531fee2902c63761ab1bb",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "706804c8e94c4fbe21fcf90edcef01339f81ca8f10e3f71a66b1e8a36b63f3a6",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "677391a607318b20b68980449eaa9cfb54d4dfd7bbc02901cf521fde2556fb2a",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "caf473cb374e65cc9e5814cd37c40371333e0aefa375cae2d58e76c54c132df9",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "9dc8b95570f7de4b687531a1388e1d780583f13c263b6246780b94363a382e1d",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "5c2e2121d835ed281ba86baf41b2d18ac371bf74b885c0384321cf2d8714ce34",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "7cfd7440c2aae7ee7ddc28d73b78bef00b30800c9a1649f919795f79fe56f075",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "030bef41bed0486d088d9e20d1756ca704d0f3545293450e079cc025d3d2f5be",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "64e027d1a56ead117448ac0ba933209c30faea56794892bd74a16527d61d2de7",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "ec2e1519b40f7154eb948ae85bfb5ef821e1578a647994198ef85157701cc94c",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "3e5a5a4b238726447a6570b1a0796441c3aa7fb891d8e1a8da6ddf648ab025f0",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "e4b1ae993ec87d3afc405e96b1297874a67674bd655da0eaa579e1096982b86e",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "a083a360b1815a7fc063df04967cfd20653d914a846cf6ffa99cdd2c35de7eb0",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "78bcdd5b29ce09408c482c972855ee6e89accaa5c0df2cf3020036046cdd2bb6",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "b6643817c49db72e51502e27c8b6bbab23f20005010afda2c23dda294f43ee9e",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "f07c586a4e524a827e5bf762bb733f555081711deff266d43ea53a8566d28e4b",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "bf9e2a48dcb2625e0e923ff8172fa89c95fe33018a3db17a4c7865787372fdb1",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "924d89075c8ba23d315459a0c0745b98c4d2b56d1c0be19457a126573fdd6c4d",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "36e617eeb0fcd336a0fc9cefa3958321087a7b23d58fdbcfee2d4683702fda7c",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "844c14a0e6a96f6c84e09261b2ef32cb129275a31a4e0ecea4e471ed963828ca",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "da079468050cbe69e22eb3780d1d652e5daec763364e060f8a69fd4769b7bf97",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "a2f187323a875a745c8c48689c0ac395177fb3b07632c2ae6476898200db3a95",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "53297e95f263a5e2cca9c7d8e2100f5fe0ea88df6f01ab4c4ab81271bb4a2555",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "9a20d57c9168622e63d541168983013e764d10569b121da0b9ea68710ce53ad4",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "020bcf960fa311d73dfba442f22364d1fb5162a68a21bd2f56ac4db989b3c039",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "c94bbdd2121fd35008b8b5e8c555bceba0a75d566c0b4b3a22a8607d2a0bb0f9",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "c73036f6ccf49b0b72b87124ce0713fbc0bd2b2700e419e70f1605226f346661",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "ecf9672d4d454ebb2b42b10aa7c6cf2bf8eb1b1d44a61000e2e7cccc6f1ab6b3",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "1fbb91e9a6d6dcfceb8a70b7c8f7903f82c772dc53c4685ffb24af92aef24750",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "2c92b9ccc29bbe67c1041b3d71d1e046a8ace19eaa1fb97fed0dbc3464911754",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "ccd768d6ebf6d0b2e7b2c0057f9c044fb3450d7bfc37e0012d029dbfe4fec69f",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "9e9b47b060faa567fa2800f2103d24ce43056cba1111c4caaa70497c0cbe2df8",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "3bb2b15eda4f928bf73c44e55b5e93d37c32e663f0f38812a2d7d7ea21dfd1a7",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "bf34b2006cc074f60d7587d6f2344ac2301ca5a8dbab554f782c5a0951c9f2ab",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "cd51a08bc351da41dc6873fc60816dd5386a8e312bc954aa65ea7799d8eb6d7b",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "f55ff4046953f79befdabfc435e0937a4c2dfed48435e74a7907069a175f1b52",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "9f3c0f28016b69d181d05927a26298eba35a1659bb6c818f18e3401110163344",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "fc16a9bfd3d553a8a30e1a45fdcff7ce2950c5fcca2b9defcace5be478601dd9",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "184489445d5c353ab4e6b726800b2ce2d5a894bd3d33d366c818896a4ed43c14",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "4979e8d69f788ddc7e168dfc6883975472af7352c2ca35b02c5155df1024ca2b",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "aaacc4917e44efbf34f7debca57a4513e78a3f2f0c7e22ef0c0781a1c8c9352d",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "d45a1b17c2e73ebff5d797e0c0798b96cdef5cdbfac45d4500ae57a0cb7b8e91",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "bb2d3f769e4ef04f9f97bb542caa56eb45bd4000d00c5a9613dc584cc7264ace",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "a70f3b7c4dd6c93771b19a10e6dc452c28a36f2a493ed2425477d0fbd06c6e0b",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "54fa4ffd74c2c53fe0d0c614100a783a4adcb422ae93c457c25316cdf6fd750a",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "50cb74594bdc6ae776f94b9718ac82d2ef3ed6047fd57f5b98fb2a0a09842ea8",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "1e67d61c0f437b9d2b8759286cea5a641a4a5fe36469c6afb6a8a78cdde450af",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "46865c76514d57c67f4c0b0cb0e7c8ade55be6567fcda5213a7e887e6ed040bb",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "67278422c449b5a4a5d97a6a93b1171139d2fbe157ef5e1f21e0fdc7a1ac68f3",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "1feec77400152fe1e75afedb48b566868a6c1a70dcb99f2e0e23d6556042945d",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "979db89566ea518b6661b3c147d2747760440e86e503cb3dcb2b669396ee8542",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "a929c1f85948d5d20dcf2f09e4b91695aed7a527aea97f88cb7064b407831a23",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "b7d604b13c1d7dd2011110dc08a4e83ca3a28e78b54348e8f403c79a1a4ed74b",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "b5a15a7ca44895663bd1c73489424254e27a94eb9197d79c9cbdbf0527995811",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "f6d8dc37babf8f421db3efe178818644c46baba9f506fe3e1f5e2595b7505b2d",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "d609eede82d19353b15ce72344e829022baecfc92af90ed21e35d8dd1b95b608",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "115e47ebbf3a3cc28d89eb1565f73ff9d6bef74e298e028515ae6a910ed7000b",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "2c5308ed648b5e633ac7385df4a2be127cdbad12baa624525e4a7dcac3e3cfd3",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "4322b09385002018402eff7336e500190904127d7832f5f2f9cbe6fa8461dd9a",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "d3d4619f73c0a1c553fd29447d1185292390a9415310e75d847e4d6d4e344036",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "380488fdc2d412310c2881a2828d4f5231b0d132397afb20e68f0816f9fe4577",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "f6cdb41c6b19be8fc04498f97a1ff478d5603a255c5748f1ad6c6635a418a597",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "26a38135037fa775126b8e576aae9cac949fe5adb13a62796197f92f5afa7574",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "96fecc4efa7f8081959b94ae25e377beeb9e4487f6a2a4d8855cb421ed74e30c",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "eb176381a0943b46dfac6ee23f8bb82f731a4d8326c3deb9e470a0694d8a7853",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "d4561fabe955c4681f93390127a19f457eeec3495bfdeb772c07b126a5236625",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "515f57ab4eb5f05a9f35f3658bb0355eb690d68197ca8d67b268b8ea38750615",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "5432e698a8a9b60773a78e8dee61a859606aaa9f49216d037eb33b8a2ddc2f78",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "09ba515ee1c2697acd318289027e9822cf99c45965aec34784e78cb975ff5986",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "fb975984b9603cde704829d71111327e6b0073925cd4af458c1b43f2e854e68d",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "146d7a7cfcedb506623d320af6a3a29680551fa2acbb60eba02fb7c7527b43da",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "5d80b6dd279a8326f86537212c9fdcd1e6ad27398e8c6fc0ca39f1ce684a4e0a",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "59be382190b9fc8aa930b6e5e7c8591b006343fe537438102c2f9b4cfa96509e",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "29da5f5f5b7a14873ae24f8e4d6bc2ec4d81aaaeb32d9bfa58025ed20bd70125",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "535f11d4ba3ac9b85e92ab15eca7a705886750c494141b50918ea1ffefe12777",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "dc1aee2481ebe05f30b238c42cb049166f1c47e98c3f065200a1bd39d7845f3a",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "f64a1ad0ec756fd995c149eabbbd4eab8304655616754c63abbe1933d99e0b0f",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "928c4256f1c95c7279039a7aea8100b24267bb1b201ce3fd574adb1eaa260cf6",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "0be8ac390f63cfe7d12204e96c527f439023a4a2f3bd8fd33ba2d6b7c253b7e1",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "37ab2aef9e853de13ae029d6e58c8c0c665a9abddfdda0299dc45948641534a3",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "ec28daa43155d06b31cd399b2aa0ed90d8ef89f4d5cafec085fed6da07c3e307",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "fe52ab6b9592b21b38bdc198d1737471240d78052798309843fc6c14ac649039",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "9076e3ccad2413828117a535e205998647b17ac37fa2568aa8934e961877c88a",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "ae9a25316f31a6e03da673daa9ee18b54439784aea9403fc53f6b855552398af",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "3ed43887873e536132971bc041336fff6af3e54c44b5e68b0fb59f712fc96653",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "a77f09ade6e94243a8687ac69f30ae94d158fdd8d96939620e7faf331a034a24",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "1f04f7726e48b40a692b60c997da3afee7c409bda8aab83396e7cd01b166b87b",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "7b94996d7791511f8c7360b571822ef7f2fb832fd86f0dae2bec5be1d0b08e26",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "f02609a25755e1cffd0345ad290d4860b9ad091d30ddafc603a8af7d7161b350",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "979323bab58af2098038754f01cddc73510ced3c32ccacb36c5ad6da0569f2c4",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "842106bc09dbdb9f8712c5fd47fa0141a8288e5765a09630c2188f0011866a0c",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "8bc0889dba1ebb56176c1ab67db05b91384cf61c5fc07e44cb1ea8eccd5a7118",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "e847890de186d21c18157b7ce5370e62a127275eb12104d2d680e3698c4cdd4c",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "ecc57ef92f4bd19909310e7941b56aedd1801e6e8dbf5d72176b1e445781607b",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "325fd112e7e4e9460f8735a06d47f6cb66694622661f2a8fe895023bcd4feb0a",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "2740c9373107aa0a62f553d4f5d0818e587c988ff93ece6499fad17bd944f673",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "f3699b0e1120ba694a0986c22ae273bb48a4a8b84a1d67b41555b679014b216d",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "ed2ff6935fcdc56ea0336fd2d4520ce19c69692ef2b24883242a951ff558028e",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "f1c6e67e5fcb56689984c1cab13a88ea8234f0cfa058270be65f9ac3a1be5399",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "1c4a68995255c2caa48db3e4e12600df32d530bc37a6ed27841e3a191f1ad0b1",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "82cbed4d04e8c45264968d1e2e0cbad1b89b84bf64de2c5c135b32daf0badc15",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "6ecd27a55b665582035c263f31739208a197bd4e04d9cb0c1473e4c51a198206",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "8e69566f658cf5b38155b0ee55a2a1c44da57daaa5eb1a4e7cb988a2405d6fce",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "ae7c75f3bf0ed4fc2f5d42ed9f343196f16dd332e560bc19a58ed4e1522f6003",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "644f75cdcddf6d7194d9bd1f992e6b219d462be841669409ab7eb87e68afcf87",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "708a8ef5237bc46ec9116bc75d155dfbfa87b8f4c37f82389b188dc806b38969",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "ba7912d9c2ddbcbef87cc6fb6af18569176703724a8f552fd91088a5341b758d",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "5dbf593bae523ed05b57ca6abfb2cdf2055edb08bb5735c64ecc993045069547",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "467e3ca7223a8f18d15b6085ccc3f71b494af18c0471e6070a92e6923e204ec7",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "d4a78aaf6c576cf5b1b8ada4bde3c828a0c05b50544a97e36ab3c867774293d4",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "0e54993b8c32963fcf6f5c27a6e4ab4327a018e468ccd05327af775943c72f26",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "efc1429c7ebd126eb0e09a35329c5562fc4e154bc9048c1f4a2a5a9729ff5a0d",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "ec9233b1914ebff30c242a1a52a5694de8e85f6ee1b9127391da760563d5e517",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "b56d11045b2243c6379a19e348ce784818a71b4302766650688a7699fb79284e",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "d23400b499a1679fe969a4aae3215be8610196e11d6f645d1159d35f15b51ec1",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "95ed2ceac20bd9771fb16d70c4923acdaccec0bbc717f1f4d45d34a190c96738",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "f169370cbc7d03e04b61681050710dfa2787b80e182db13c103c7b5aedf1802b",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "beb76ce305bd3c5da3d08dae472cc2179f248d568e9fff9654eec99949d7eac0",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "ad55c075480f1385b3ead558b9a6c7dc6db90811a91edd34980604c534641212",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "3248f9855d3d1636b640704ab1ab026adfe32c1692afa08735028887d762d67a",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "286f7a767475e67a63db15e0757a112bf5f0ac11a96f53e7a28b11ead56cd574",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "8a94ecea0a8e5d692d1467fe73d6225ca6d7646a3a4c66ea967e27d1898bc7b9",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "066e12010ec16153be44f636bd8b0753f2fb6716dd72a5cf9230563bdddb944d",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "4e61a6822868add6e069e6f872e3171a54aa0027cd96009a596fae2aa7e19e84",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "9af9ffd24e031b8f2dc788f5dd9d2afacb3557ab2a837727d4ba8747c2088cf1",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "fc3d49e33f4d1797911cbeb5b940cd2742595723910f4cc225ee71690ccf208e",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "4c1e6c4f3f75aaadf0cf2d23ba9792f4e5914bf601e12989e6d454fe5221b6be",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "4b846b0a9734f52be7d574dc3291c3c3718905d70c215725be5d9b44f78030da",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "fb93ffc625a32f998a9ed890b1da4ede29c482b72e0d08ede4af61520f64cd73",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "846b62bc0aca0d00a731d737d57969aa4b62611f797779887cfd6568b0f3f38b",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "471018825e96c5d15689a85fa438a5d842112f4233bc528ca9aaafc188d1c66f",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "c5c069f64f975018c66a3df6021d3984e29a7015de01c2358aa8cfe651a6b51b",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "88f3155c3aa27980557276ad6bf4fb8cd8ec6946fd83b2b5016f27f4b251946a",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "fec250bb8e5848f479b99c8096fcfa5b5d5167eb2acc5bebf17b7acbcad67228",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "3e42919b713728e10bbcbdc1b839c5b1d61ad98470852cc7201e538dd291bf81",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "e1f091a2ca8e2eb8374b8fc30f103999a4a1e179374b70f451dc606d38b69cd4",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "688986a765abc253533e9f81dbdbd8afd7ff17baac05f50b951ef85828dce4b5",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "a6d26878f25b102aac1e570cea3ba78b2475596420d5676805afe71e79bf1d74",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "7b3ea05bcf06d97e6ba139df54ea5a84dc17ade2166367ef9b4a52e2b5b88249",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "fe6a27e312556fe9f302e3d0a428252aae721e54aa944d842b0334bbab10efe0",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "273a8275297c37530e8ebf6fc4d511fbeadeee82379f830c8ab4504de2995ddf",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "4036e2ab612a5d5c22f469ef9720a2a172e2abb351ea3f096cb5764f2add1fe3",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "e8c539eb33b8e5fb924231e814e2418c81dac06e1782d3e9b3f6d0402f025b87",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "1d5e0716bf69d5bea518de1e80257fffe15913b66ce416e670ece23461ec0aac",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "6727f6840e19093fde0d1d2ca3c8c8535b066f98da8dc7113a57b5a9e31fa0b8",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "eb9e7330b5753a4b7022f4880b575bd19ebaff8f75ce7fdceb0953eb941349b4",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "3899eb692b3fdc388495effc6e1ee8c551a51a80408739cc76a0bd581b2020e4",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "72588133cca2e84dbd566507295e246285d2953a734112b61a54eb1a216c4e9e",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "82037dbe9a02e47aeaf47b8a2a94f840e098561d468f4211bb6c5d676486bcb1",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "ee37282783669d8c9f7875fd4591cc4caf2f6399c55382b2de60741bf5d1b11e",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "61e5a854b8e820c7d79d536ce3bde2abb1de76b73a2f85fd59bf1a149699b429",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "983346e0e42dc767533650b1670d7b1345d7b910615615eb2881303930ba9bbf",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "097dfc4ebe205e89bf4a9ba05f31fa4c4d27112af5ae267ad313195cd674adac",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "73bcbe852490ad496460004500ace8df5ffb4c41f1d5659fcb7dbd39df510fc5",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "fc4b211f5a58f87266740b25f4bcce26a12a4c58ce8aee81714e13afe29f6bbc",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "5178b12ae1f0c2a699d91fadcd16b0ac59a05d7d09015a934012403bf3f299ad",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "42a5121c523f13fc52c91b80638afaca18cf6911e8a8bd228c2c8510b3d939ea",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "4ea446a14e3686a7480c34004c36e1429a34ac4311025102dc41f87019e3bf38",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "121d99b8bac09fbefefbf66e4e0e1221c415ead166b8dc9344182a6ae14fffdc",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "b3efdd22bc672270dd8045c41bf3b91a1f45c6d26c79b5fa827422d42ef137da",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "6f82ea6f3043e1b5954874aaa9eb12ba86a781a536ce244fe4842274d2cb5704",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "dd3702252debe1f65f096ff67d99376dc438c7c89718deae41308fa5c4c1fff8",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "c20762c45c2c9ee6b782683efe7b7e6bfc0eaa6b46388d6b1eb75fc522d934b5",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "b1f7e2a659b7a13e136b7a5987641c3eef6d9030e3a11ed57660b9f5490b59f7",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "200824009cc3894078d20bbe35d05a14d758741fb47e828c87fc56c71a67da23",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "1b25346d95ab358fbd8b5cab143e0762c0ce0c0baa75f81ad42e812d4a1b564a",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "d42733e0ebdec47a527b3182700094f41d1ab18cdcf77dcba3fa081872bf0804",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "e203b594c21b8134d08e32ab8166c55e2d3c87ee2db0ae2a797222a32cd037f9",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "6363621f66e52c8d674a16d210e171614181ec3d757e9c02a8b69edc93d3ae33",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "ded9224679face2c59a4472f56fde7a189f1248f25070d3ea8a41df0507100bd",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "0dff430a7af4bc9423886be9fcd6b91f00e42464a79f2cf49937e0b9f04be230",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "70961cda3bf4dcabeb05fa969935bba3056ee4612d578e8ae662d30c57002af7",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "50050516f42e65d71414b8d2282cc1952c3f097b514b666c246f5b4d1080400d",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "c732558db33e241272caa271d7237e41927422eb5fa3cfe8f0387be9f8633a0c",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "3dea08b1999e97666f56496985013a1d8d8aed3937920982df86ab2b7ebc7475",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "a24848a54918d1ee4b2e7f8d030df08817069b41a2233eb79f58f2209160a5d3",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "da66d405367c0d2aad14e955d5129b15ac1098db868124062f66ca171de17178",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "c9ef3a423e265b01d167b2e91ee66db10d7696b45e4368e30a92007c06b03c59",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "162086baa0df502e2e32c4b0def8caf2279fbf146d0da1b859e6937e33d570f3",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "d0cbea895a5c012f3c5224c52e458e95a887dea49c889c7d5c595329db4e0280",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "41be1b474712153d2f3d73e8f6182f01a3187ff3de706fb4b7bf0b812540f0be",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "93b246f842e4124bfad7f548d91b3240b37b0c415f69d284c1778ad557286c54",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "4ff529a8b00cd2f3fa7cb1a444c76a5fcd09e277b6d86b8d2fefe74524e86266",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "753748e8e2deda8411c53f681a2dbb7462151ab2bc80553712a10cc034b9c0c3",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "21227f1e996e073d4aa5874af588a62d59a585026f346bcda84d5c7f8a95cdb0",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "c218cfe3f741f5833e1fb2ac577622007b150ec44b98f26ed9fc7ca7c57f2d44",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "32f038fbf7e61ad855444445ef06c6860b430435e69a6a17df63356f7415ebf3",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "ccae537b15c28b73979b93972d4547532406070e495cfd28b5a8f9678a0f8c4e",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "5feb687748e313f73ec30c94fc8a9125ee68fc3f707596044f158b2660cfcdff",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "b094386a67c1fd16fa0306bc8a9267496ef1c2032f35d24fa356128f4748159d",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "73ab7bb486c53e5320b281399f1b72e9b9ff1d52dcf381865e96873a0fa119c7",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "fc7f46b43fcffdd6014febf5fef305384b486bb16882fa721cd451893badec67",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "838af68c148384d3661c3f2c363847c7c7781ca48ba7c0a1126a1046d2fa2300",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "f693ae1c1a40e78c323de6149d35330517227a02bfca8f40d9db24def06cdc16",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "91fa664f448b3206b040c2f03b3ae39a1a92b4d5c538079bd16c803a2acc3da1",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "957d6e40782ba0d48d90a30563d659ff2aa0abbc949d71b6083c2ad8208f460b",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "967f6202445a426bcb652147f3ea933f4a8cecc49ef59d6e2377c74aa78ed595",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "a3c46c0cf9b2a1a47331d0cc0ece589dde0aa15a8b5fd6463805f697b9a9569c",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "b7761e9b218e5d2dff88362df603e3375c3a254f7bc14f47036f0dddb9cdb1d0",
+      "sample_count": 8,
+      "probability": 0.011111111111111112
+    },
+    {
+      "configuration_id": "0473b2712fb7363297579ee2f59969b6a4a1916622938d291bdd40595111c67a",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "217e765ce3c097904409b34dea4e841eb224839f1c295580a6e94c1845319292",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "c187355bbf3ecac55860fa9017bc2d66e1f1cc0693ac9a6f020874187af8ecb9",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "ddf06f1a122a20821a3bfdda23d63120d609aba188c2576dd80c80bdafb71682",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "a8866c8f2114197d23e01af07b6136db7dd7aa9bb56496818367000314da076b",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "0b54f354baf63a8b10857b4fe98dc7ed5a10baa859a2d03dfc9de439c3d221d8",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "16adaddee89507bcbf637134106a4f4b781590a42c2eaaa87b11db98cbca1153",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "182be74b2e724e6a495bc8d19200b0169fa866d79d14b7c98330c50713e1a087",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "68816e3526d5be3cc7cb0231bfcbc82d5690910854c0eb1dff480b877a1fbba3",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "363de742ee789bb6167e4b7f059ff56907619c03bc4ce161e852d22fde6ed7b5",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "81b593cdcc1f6fa3ae9c59e0804856ddaac69c708bdae9b72697196609987234",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "c24bd309529dfcbbe2b8b9b7ba067bfbc01a7f856c68c01ef1ca2a6bc74a4276",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "3ef382bb9c8fef3bf6987ce9336eba56c5ee47135d8397f355c00f11512248df",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "75e7856d5f54bbffc7f8eae25056171a7960312d22bc35e90fc60f1c4f4c89dc",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "5579e0cf5ef6f554c87bd5b5bda9d1bf0a44a7b5b9c1fe6c46de1a3f94dea792",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "96bdb7902a77d1a96804a347b057aef2733ff67b1375e42b2444586b8e1b0d62",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "e8efd09cfe449285d1c56eb78f7a0e264a6c95315be54f8f834d2d7dbd275901",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "2b67faac7f52d981b69069cbb12e2db88a6d5d9728a95cf0422276e726a2932c",
+      "sample_count": 2,
+      "probability": 0.002777777777777778
+    },
+    {
+      "configuration_id": "9e4a70822672a308e27e8fa0e346e61bc6a8d0e34d126c1394bd7d930817ccce",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "b973bdd7f71fe50480e8330b4fb744742b1617e2e4ef2c669040020d9991796b",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    },
+    {
+      "configuration_id": "0c0ce658d20fa0e99e4ae88dd3a6b20a56489d0b70db4adc3c2d9a57e0199179",
+      "sample_count": 1,
+      "probability": 0.001388888888888889
+    }
+  ],
+  "summary": [
+    {
+      "scenario": "N20_unequal2x2_blocks5_half_alternating",
+      "N": 20,
+      "K": 10,
+      "prevalence": 0.5,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "half_alternating",
+      "method": "exact_support",
+      "true_population_ap": 0.54,
+      "exact_sample_states": 720,
+      "issued_sample_states": 692,
+      "covered_sample_states": 412,
+      "interval_issuance_probability": 0.9611111111111111,
+      "undefined_or_unissued_probability": 0.03888888888888886,
+      "unconditional_issued_and_covering_probability": 0.5722222222222222,
+      "coverage_conditional_on_issued": 0.5953757225433526,
+      "mean_width_conditional_on_issued": 0.5190047440416008,
+      "zero_width_fraction_conditional_on_issued": 0.08526011560693642,
+      "invalid_replicate_fraction_all_samples": 0.03888888888888889,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.10277777777777777,
+      "interval_above_truth_probability": 0.2861111111111111,
+      "point_bias_conditional_on_defined": 0.09144936844358817,
+      "point_rmse_conditional_on_defined": 0.30552942329147137
+    },
+    {
+      "scenario": "N20_unequal2x2_blocks5_half_alternating",
+      "N": 20,
+      "K": 10,
+      "prevalence": 0.5,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "half_alternating",
+      "method": "mc_seed_2026102601",
+      "true_population_ap": 0.54,
+      "exact_sample_states": 720,
+      "issued_sample_states": 692,
+      "covered_sample_states": 412,
+      "interval_issuance_probability": 0.9611111111111111,
+      "undefined_or_unissued_probability": 0.03888888888888886,
+      "unconditional_issued_and_covering_probability": 0.5722222222222222,
+      "coverage_conditional_on_issued": 0.5953757225433526,
+      "mean_width_conditional_on_issued": 0.5190047440416008,
+      "zero_width_fraction_conditional_on_issued": 0.08526011560693642,
+      "invalid_replicate_fraction_all_samples": 0.03888888888888889,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.10277777777777777,
+      "interval_above_truth_probability": 0.2861111111111111,
+      "point_bias_conditional_on_defined": 0.09144936844358817,
+      "point_rmse_conditional_on_defined": 0.30552942329147137
+    },
+    {
+      "scenario": "N20_unequal2x2_blocks5_half_alternating",
+      "N": 20,
+      "K": 10,
+      "prevalence": 0.5,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "half_alternating",
+      "method": "mc_seed_2026102602",
+      "true_population_ap": 0.54,
+      "exact_sample_states": 720,
+      "issued_sample_states": 692,
+      "covered_sample_states": 412,
+      "interval_issuance_probability": 0.9611111111111111,
+      "undefined_or_unissued_probability": 0.03888888888888886,
+      "unconditional_issued_and_covering_probability": 0.5722222222222222,
+      "coverage_conditional_on_issued": 0.5953757225433526,
+      "mean_width_conditional_on_issued": 0.5190047440416008,
+      "zero_width_fraction_conditional_on_issued": 0.08526011560693642,
+      "invalid_replicate_fraction_all_samples": 0.03888888888888889,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.10277777777777777,
+      "interval_above_truth_probability": 0.2861111111111111,
+      "point_bias_conditional_on_defined": 0.09144936844358817,
+      "point_rmse_conditional_on_defined": 0.30552942329147137
+    },
+    {
+      "scenario": "N20_unequal2x2_blocks5_half_alternating",
+      "N": 20,
+      "K": 10,
+      "prevalence": 0.5,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "half_alternating",
+      "method": "mc_seed_2026102603",
+      "true_population_ap": 0.54,
+      "exact_sample_states": 720,
+      "issued_sample_states": 692,
+      "covered_sample_states": 412,
+      "interval_issuance_probability": 0.9611111111111111,
+      "undefined_or_unissued_probability": 0.03888888888888886,
+      "unconditional_issued_and_covering_probability": 0.5722222222222222,
+      "coverage_conditional_on_issued": 0.5953757225433526,
+      "mean_width_conditional_on_issued": 0.5190047440416008,
+      "zero_width_fraction_conditional_on_issued": 0.08526011560693642,
+      "invalid_replicate_fraction_all_samples": 0.03888888888888889,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.10277777777777777,
+      "interval_above_truth_probability": 0.2861111111111111,
+      "point_bias_conditional_on_defined": 0.09144936844358817,
+      "point_rmse_conditional_on_defined": 0.30552942329147137
+    }
+  ]
+}

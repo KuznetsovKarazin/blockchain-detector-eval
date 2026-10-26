@@ -1,0 +1,133 @@
+{
+  "key": [
+    [
+      [
+        "A",
+        20,
+        20
+      ]
+    ],
+    [
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A",
+      "A"
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      19,
+      18,
+      17,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ]
+  ],
+  "point": null,
+  "sample_positive_count": 0,
+  "census": true,
+  "bootstrap_support_weights": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "support_multiplicities": [
+    1
+  ],
+  "support_denominator": 1,
+  "support_production_ap_values": [
+    null
+  ],
+  "methods": {
+    "exact_support": {
+      "interval": null,
+      "invalid_fraction": 1.0,
+      "status": "undefined_no_population_positive_census"
+    },
+    "mc_seed_2026102601": {
+      "interval": null,
+      "invalid_fraction": 1.0,
+      "status": "undefined_no_population_positive_census"
+    },
+    "mc_seed_2026102602": {
+      "interval": null,
+      "invalid_fraction": 1.0,
+      "status": "undefined_no_population_positive_census"
+    },
+    "mc_seed_2026102603": {
+      "interval": null,
+      "invalid_fraction": 1.0,
+      "status": "undefined_no_population_positive_census"
+    }
+  }
+}

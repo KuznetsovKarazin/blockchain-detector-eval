@@ -1,0 +1,35 @@
+{
+  "schema": "independent_B_stage2_synthetic_check_v1",
+  "component": "ap_bounds",
+  "frozen_utc": "2026-10-26T14:00:05.723071+00:00",
+  "command": [
+    "/tmp/security-recovery-repo/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_ap_bounds.py"
+  ],
+  "source_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/README.md": "e34c5e3115097ee416c1bb76f827099e2209c00f6480d0d306dda18b2bf6d877",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "papers/security_evaluation/revision1/recovery_20261026/conftest.py": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d",
+    "papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_ap_bounds.py": "ddc66bd39b68e09484e26ea686bd97a0aa1e4e7702933c14629ff5102dbe960d"
+  },
+  "reviewed_main_sha256": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+  "synthetic_inputs_only": true,
+  "real_corpus_compilation": false,
+  "real_model_fitting": false,
+  "real_scores_or_human_answers": false,
+  "protocol_freeze_or_gate_override": false,
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "pytest": "8.4.2",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0"
+    }
+  }
+}

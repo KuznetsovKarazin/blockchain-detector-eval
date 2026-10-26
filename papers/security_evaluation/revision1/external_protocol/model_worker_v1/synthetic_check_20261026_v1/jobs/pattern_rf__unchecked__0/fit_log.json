@@ -1,0 +1,60 @@
+{
+  "configured_threads": {
+    "blas": 1,
+    "openmp": 4,
+    "tree_n_jobs": 4
+  },
+  "convergence_warning_n": 0,
+  "elapsed_seconds": 9.568556695998268,
+  "failure": null,
+  "fit_started_utc": "2026-10-26T14:04:24.628615+00:00",
+  "observed_threadpools_during_fit_context": [
+    {
+      "architecture": "SkylakeX",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "architecture": "SkylakeX",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "user_api": "openmp",
+      "version": null
+    },
+    {
+      "filepath": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "user_api": "openmp",
+      "version": null
+    }
+  ],
+  "peak_RSS_MiB_cumulative_process": 176.58984375,
+  "peak_memory_scope": "Linux ru_maxrss cumulative process high-water mark; not isolated per-job allocation",
+  "process_cpu_seconds": 3.7203095329999982,
+  "scoring_completed_utc": "2026-10-26T14:04:34.245434+00:00",
+  "timings": {
+    "external_transform_seconds": 0.003968173001339892,
+    "fit_seconds": 8.601002511000843,
+    "predict_seconds": 0.9178809949989954,
+    "training_preprocessing_seconds": 0.014956208997318754
+  },
+  "warnings": []
+}

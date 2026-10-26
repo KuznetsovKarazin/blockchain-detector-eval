@@ -1,0 +1,48 @@
+{
+  "schema": "external_B_orchestration_verification_v2",
+  "scope": "Read-only integrity checks; synthetic unit fixtures only; no actual study release or human authentication.",
+  "source_hashes": {
+    "integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "test_preflight.py": "1c320fcd10776e2093a4f2b4521ae44c6beda979a1a0376ec4d064e3a4093f7b",
+    "prepare_current_binding.py": "b859f364ed425ed17cb53a1709fcc08f12d0a6f4b4ce9666aabe27d1286fc966",
+    "conftest.py": "033f75d5e95370c2c5fa8f65f5e78ee217f0e26798366a38509fdb8e54378636"
+  },
+  "owner_tests": 30,
+  "owner_test_run": "python -O; all explicit validation guards active",
+  "pytest_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "30",
+    "time": "16.700",
+    "timestamp": "2026-10-26T15:13:57.629563+01:00",
+    "hostname": "814a772666ac"
+  },
+  "pytest_exit_code": 0,
+  "pytest_warning": "Expected pytest warning that Python -O disables bare assertions outside rewritten tests; validation implementation uses explicit exceptions, and test checks are unittest methods.",
+  "normal_python_owner_tests": {
+    "tests": 30,
+    "wall_seconds": 7.3,
+    "observation": "Recorded tool execution before optimized-Python verification; not an additional set of unique tests."
+  },
+  "artifacts": {
+    "verification_20261026_v2/plan_before_checks.json": "34d10ab549fd55f8229309590e3087d3a3136810c80f4a68ba305a57b2955a81",
+    "verification_20261026_v2/pytest.xml": "e62f82e5bae521c570a2d4ee8738c21fec07ce0a69959b2900e8bb51c7925e37",
+    "verification_20261026_v2/pytest_stdout.txt": "6d956ae8d49d245babfcdb0eff5fe61702d614c1cf03203dbabe814faafb6cbe",
+    "verification_20261026_v2/check_actual_inputs.py": "004000fd23f309e86136f36ccb3e1c33224f092673b4c2a67720ce530ff78c9a",
+    "current_binding_20261026_v2/read_only_preflight_receipt.json": "7d64a89f8a1e2fcdce8af9a9e50c79ddfb2512a72e8007ecc2fad8d411c681ed"
+  },
+  "actual_setup_pass": true,
+  "actual_begin_scoring_denied": true,
+  "actual_sources_checked": 2689,
+  "actual_wall_seconds": 5.472908431001997,
+  "actual_optimized_python": true,
+  "real_external_model_fits": 0,
+  "real_external_scores": 0,
+  "real_human_judgments": 0,
+  "tool_executions": 0,
+  "study_frozen": false,
+  "inference_policy_allows_confirmatory_scope": false
+}

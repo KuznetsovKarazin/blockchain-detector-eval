@@ -1,0 +1,118 @@
+{
+  "binding": {
+    "artifact_root": "/tmp/security-recovery-repo/papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs",
+    "authorization": "BUILT_IN_FICTIONAL_TEST_NOT_REAL_EXECUTION",
+    "binding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "method_config_sha256": "4fcc63278c95dfa68800968d99f3eaf1bfb6bb929bd266483ed240ca9daad92f",
+    "reference_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "training_manifest_sha256": "d272e402014a9472f2b4f545e35f5ee454ca4c8bc5a3e47d869df5fd47c4e67e"
+  },
+  "code_sha256": {
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "environment": {
+    "packages": {
+      "joblib": "1.5.3",
+      "lightgbm": "4.6.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0",
+      "threadpoolctl": "3.6.0"
+    },
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "estimator_parameters": {
+    "class_weight": "balanced_subsample",
+    "min_samples_leaf": 1,
+    "n_estimators": 500,
+    "n_jobs": 4,
+    "random_state": 2
+  },
+  "external_ids": [
+    "synthetic:external:0",
+    "synthetic:external:1",
+    "synthetic:external:2",
+    "synthetic:external:3",
+    "synthetic:external:4",
+    "synthetic:external:5"
+  ],
+  "external_paths": [
+    "synthetic:external:0.sol",
+    "synthetic:external:1.sol",
+    "synthetic:external:2.sol",
+    "synthetic:external:3.sol",
+    "synthetic:external:4.sol",
+    "synthetic:external:5.sol"
+  ],
+  "external_source_sha256": [
+    "1adada164693465e9516dec40f7681de150223ac37565f57b8f7118ef4a429da",
+    "03c2784963e7adb1f9e6ab509cba8a63c17d2065b56f0a6ed88129e67ab949d0",
+    "73d891667c9c49a7074a027a1c5219ea9eaa424d6b68ef33ef6103a552ab1ae2",
+    "722717139f984f93dd9de734caaf149942d6aa050f84005abec87b2ac8429b53",
+    "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+    "f2ae2f65eafc7942cca50f79cc8c03faa388a3e6b3edc489654d6be37021a84a"
+  ],
+  "full_external_scores_without_labels": true,
+  "job": {
+    "class": "reentrancy",
+    "job_id": "pattern_rf:reentrancy:2",
+    "kind": "learned",
+    "method": "pattern_rf",
+    "seed": 2
+  },
+  "no_hyperparameter_tuning": true,
+  "schema": "external_B_learned_job_config_v1",
+  "status_mapping": {
+    "decode_error": "preprocessing_error",
+    "empty_token_stream": "preprocessing_error",
+    "model_error": "model_error",
+    "ok": "ok",
+    "scanner_error": "preprocessing_error",
+    "zero_vocabulary_vector": "preprocessing_error"
+  },
+  "synthetic_fixture": true,
+  "threads": {
+    "blas": 1,
+    "openmp": 4,
+    "tree_n_jobs": 4
+  },
+  "training_ids": [
+    "synthetic:train:0",
+    "synthetic:train:1",
+    "synthetic:train:2",
+    "synthetic:train:3",
+    "synthetic:train:4",
+    "synthetic:train:5",
+    "synthetic:train:6",
+    "synthetic:train:7",
+    "synthetic:train:8",
+    "synthetic:train:9",
+    "synthetic:train:10",
+    "synthetic:train:11"
+  ],
+  "training_labels_sha256": "8fa3ba2c77f2d406f3869a441c0a832a982d707ffe2cfb380a3820e034dd3e8d",
+  "training_proxy_interpretation": "source-reported training findings; absence is proxy zero, not expert-confirmed negative",
+  "training_source_sha256": [
+    "4d26041b55b10272c5fab62e496418517a6a17d51c6a8c3b4d24e8952aa204d4",
+    "db2b8b1d5ecac8ab83670dbd0ff2b6cc54003044955ae8348537bca44215ff7e",
+    "677e627698c1e713b1ebae1695195854ee22b428b1e0f972e9cacc91890727e4",
+    "55efa5201d80bf4d1f913dbd8998dc7efb81665b92cbac33deb235613ceb3a5c",
+    "20db82be41b4e21829cce6fbe89d70d9970e2cf38fb9659856d6c3e224cfda45",
+    "2d25f868cd34464dd65a87a91a5904dfe65351d13222077701ef196ef3f4cca4",
+    "126f3637e3328bfb3baa08edd0990d1b3f7d841c925ce4cab43060b52aeed3fd",
+    "95560977a39accbefa93ece9964a9f912a784db1e47f29532343508d21966970",
+    "6087158a115db880d24b8910ad177b043a0fc327ee4bff2675fd11ce8d00f8e2",
+    "5530fc908a7a2d7d4cd09c40ef4bdfe6a1f7260694761515609dfb0a880fc0f6",
+    "c4d385c5037a7162e6a2daca6a948c34406fad4b4921ea92652f5aac3b1fc1ec",
+    "2d3efe5a5db52cea82a7518a698869b7c93c256b8eaec75eac4d1270f58e8f5a"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "read_only_completed_compiler_accounting_v1",
+  "input_sha256": {
+    "papers/security_evaluation/revision1/recovery_20261026/verify_compiler_execution.py": "0aeb6fcee642c65dded8031742512339548c4a3300cc507bdd7804a8037e48af",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/plan_20261026_v2/plan_before_execution.json": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/plan_20261026_v2/jobs.jsonl": "5f83146346595c6680fef5f9ac45d129983fc51fcf4a942d185be9a0e2ba204c",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/plan_20261026_v2/execution_results/summary.json": "da53549fe1a91e75f1e7ed9807476860d78ced9616687ec0cdcbd64786b2f149",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/plan_20261026_v2/execution_results/per_file_status.json": "2f86d433af460571c6aa6f1c7d73cbd5230c394d3a57f7f31d47132d6bb8896e",
+    "papers/security_evaluation/revision1/external_protocol/toolchain_v1/solc_inventory.json": "afbd0dda64302bcccc1fc0bc5cad32458790d6995a16e0d43930bb05c2aa2a00",
+    "papers/security_evaluation/revision1/recovery_20261026/compiler_plan_review_20261026_v2.json": "1e91d4e320c406ce62d229bfd07f8bd31f5839ef2b074af21b849c428a3507b8",
+    "data/derived/security_compiler_preflight_20261026_v2/execution_started.json": "4fed2de543afd9d20e61a5d527f5e2d97c38b124ffec2d55b2e2644e7b768c32"
+  },
+  "compiler_reruns_permitted": false,
+  "raw_diagnostics_redistributed": false,
+  "model_or_annotation_analysis": false
+}

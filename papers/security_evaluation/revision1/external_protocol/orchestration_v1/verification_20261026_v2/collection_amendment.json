@@ -1,0 +1,14 @@
+{
+  "schema": "external_B_test_collection_amendment_v1",
+  "reason": "The prior glob did not exclude directly nested archived test sources; directory-wide collection found two archive imports. Replaced only test collection configuration with explicit source_snapshot-directory ignore.",
+  "previous_conftest_sha256": "033f75d5e95370c2c5fa8f65f5e78ee217f0e26798366a38509fdb8e54378636",
+  "new_conftest_sha256": "1068276fe2d79148b4b44a5a6d7f7d2306c4a1dae000b85a814687377bfbd2bb",
+  "collection_command": ".venv/bin/python -m pytest --collect-only -q papers/security_evaluation/revision1/external_protocol/orchestration_v1",
+  "collection_exit_code": 0,
+  "collected_unique_tests": 30,
+  "collection_seconds": 3.13,
+  "collection_output_sha256": "f8be093655555771287ac2ba257a9617c8a19a8e416c3b54dbac2e88619b56b2",
+  "validation_code_or_tests_changed": false,
+  "source_snapshot_from_prior_verification_preserved": true,
+  "real_operations_executed": 0
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "performance_v2_reference_scope",
+  "formula_source": {
+    "author": "Household Finance and Consumption Network",
+    "year": 2023,
+    "title": "The Household Finance and Consumption Survey: Methodological report for the 2021 wave",
+    "series": "ECB Statistics Paper Series 45",
+    "section": "7.2, printed pages 52–53",
+    "url": "https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps45~4bbcfb02eb.en.pdf",
+    "scope": "Single-stage stratified SRSWOR rescaling with finite sampling fraction, m=n-1; not AP or ratio percentile coverage theorem"
+  },
+  "existing_verified_bibliography": "../performance_v1/REFERENCES.json",
+  "mathematical_scope": "HT linear totals and nonlinear ratios/AP on a fixed finite domain; shared replicates preserve paired covariance but do not establish nominal nonlinear interval coverage",
+  "protocol_unchanged": "../PROTOCOL_B.md",
+  "actual_external_results": false
+}

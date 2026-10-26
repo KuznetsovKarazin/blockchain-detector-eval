@@ -1,0 +1,11 @@
+{
+  "schema": "external_B_blocked_binding_preparation_v1",
+  "binding_sha256": "352de7c7b88d84cedfa1659739920207d3d82c17612f6a83653acf56e2802de2",
+  "protocol_status": "draft_not_registered_not_frozen",
+  "inference_policy_sha256": "0c789dcf4d03e532d3a20298bec0412852a334351a2c021709b288419897fa1e",
+  "real_human_judgments": 0,
+  "model_fits_or_scores": 0,
+  "freeze_events_created": 0,
+  "authorization_records_created": 0,
+  "source_sha256": "b859f364ed425ed17cb53a1709fcc08f12d0a6f4b4ce9666aabe27d1286fc966"
+}

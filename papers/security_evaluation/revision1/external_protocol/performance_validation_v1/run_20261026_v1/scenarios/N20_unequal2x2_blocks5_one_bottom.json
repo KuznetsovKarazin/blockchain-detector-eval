@@ -1,0 +1,413 @@
+{
+  "scenario": {
+    "id": "N20_unequal2x2_blocks5_one_bottom",
+    "N": 20,
+    "pattern": "one_bottom",
+    "design": "unequal2x2",
+    "score_type": "blocks5",
+    "y": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scores": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "strata": [
+      {
+        "id": "A",
+        "units": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19
+        ],
+        "n": 2
+      },
+      {
+        "id": "B",
+        "units": [
+          1,
+          6,
+          11,
+          16
+        ],
+        "n": 2
+      }
+    ],
+    "sample_states": 720
+  },
+  "true_population_ap": 0.05,
+  "configuration_count": 43,
+  "distribution": [
+    {
+      "configuration_id": "38fbf7ec2ca5a22efe8f8f04238a87139eaf2e011b8809f633d60ecad24401a7",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "ba130a3a4a95d5afe1d3de3ec8ba88f971d4eefce953f9184959081060b8f642",
+      "sample_count": 24,
+      "probability": 0.03333333333333333
+    },
+    {
+      "configuration_id": "bb38354be8b91bba3134c797a8b47959d0668d4c1c46e83d3301573989648295",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "fbfdf64755aecc6d30aee4e1dd489975b6da5bd150643a260909a5115dc8a0de",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "23f91af55af9c0c2a974183183ef25bf84e46dc374f08b8de9ed2c1255e9b745",
+      "sample_count": 18,
+      "probability": 0.025
+    },
+    {
+      "configuration_id": "bb24ab709f29e58e3a54e99b86f14a4dc771e773bcdaf69127c1f735d2da5951",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "1f7ab1f91e603be25f07c9c683ee62b4b22649d630f8ce9f480a89b0adb7c85d",
+      "sample_count": 48,
+      "probability": 0.06666666666666667
+    },
+    {
+      "configuration_id": "8ec4dab29f4d71a683512a058e77e3bf7b4fa997cb421a9e2d2e623fb3e7a539",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "e536c4ee1ef2426fbc1d9744edcdc259af178cabfdc0a798fce228f65865b39b",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "a79515c518fcd0551328f2deedf7050030acf436d871516afac7a59f62244242",
+      "sample_count": 15,
+      "probability": 0.020833333333333332
+    },
+    {
+      "configuration_id": "4f9c31670ee3c87df8e6c971707784443748d3a74ef20c8fcd3930a3ace2d4bd",
+      "sample_count": 36,
+      "probability": 0.05
+    },
+    {
+      "configuration_id": "f9ff48aa038b19e76bb0576b40d94f931bf24106ed25d520187938705bb7fae5",
+      "sample_count": 13,
+      "probability": 0.018055555555555554
+    },
+    {
+      "configuration_id": "305421237c38954d151052cf2d8db13effe7d179b5d12d0bb03d562a88987bc7",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "1f786bf8e8ca58e30ce858d55166beaff7a7982bbea5b911daab14ca12c86f54",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "473eb543d211e19b4d3e38f9e62b9c72246d42369a37e98df6ca364168864c79",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "5681eb87da89f0ec8a82997d205c9d97d2105f90a6eaf5170e6a987bfb194521",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "0847d96b68013d397f3e9802734b1e126a8fecd407ba13523ebf9dcec72af861",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "5749353a768098bea99ccf2c1f1b4b6920445e9157d78c1099440c3145442400",
+      "sample_count": 18,
+      "probability": 0.025
+    },
+    {
+      "configuration_id": "745f5c33d8c04e0de2d113381eeb3bcb93d1f8c41e06652e4d72d5d764512e6f",
+      "sample_count": 18,
+      "probability": 0.025
+    },
+    {
+      "configuration_id": "3a6d89fbebb28138fc8b5965975f05cd94f7b3a67157f29145a04334adf98e9a",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "59be382190b9fc8aa930b6e5e7c8591b006343fe537438102c2f9b4cfa96509e",
+      "sample_count": 24,
+      "probability": 0.03333333333333333
+    },
+    {
+      "configuration_id": "29da5f5f5b7a14873ae24f8e4d6bc2ec4d81aaaeb32d9bfa58025ed20bd70125",
+      "sample_count": 48,
+      "probability": 0.06666666666666667
+    },
+    {
+      "configuration_id": "76399784a415ea37f6f0a0aecb4400fa2cf72a20714a56de11ce454e38f83bf6",
+      "sample_count": 16,
+      "probability": 0.022222222222222223
+    },
+    {
+      "configuration_id": "2533b4a9f0857e4c43bcc03d8161b0d82d67b0fd6229250a4b2180d5c5c13524",
+      "sample_count": 15,
+      "probability": 0.020833333333333332
+    },
+    {
+      "configuration_id": "9af9ffd24e031b8f2dc788f5dd9d2afacb3557ab2a837727d4ba8747c2088cf1",
+      "sample_count": 45,
+      "probability": 0.0625
+    },
+    {
+      "configuration_id": "fc3d49e33f4d1797911cbeb5b940cd2742595723910f4cc225ee71690ccf208e",
+      "sample_count": 36,
+      "probability": 0.05
+    },
+    {
+      "configuration_id": "90f72cef7c8d43d14aba21d0c79bb988a2e9723db5a2e95f9da4b5e5a7a13dc1",
+      "sample_count": 13,
+      "probability": 0.018055555555555554
+    },
+    {
+      "configuration_id": "4c1e6c4f3f75aaadf0cf2d23ba9792f4e5914bf601e12989e6d454fe5221b6be",
+      "sample_count": 39,
+      "probability": 0.05416666666666667
+    },
+    {
+      "configuration_id": "4b846b0a9734f52be7d574dc3291c3c3718905d70c215725be5d9b44f78030da",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "ff4cfea50e790df4d4dfcf1e2902310d617101da701a80e87f1574cf74a970fa",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "fb93ffc625a32f998a9ed890b1da4ede29c482b72e0d08ede4af61520f64cd73",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "846b62bc0aca0d00a731d737d57969aa4b62611f797779887cfd6568b0f3f38b",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "5413118ceeca9c9f40b0211e398311623b7a053fcaf483c4672b6c615f157420",
+      "sample_count": 3,
+      "probability": 0.004166666666666667
+    },
+    {
+      "configuration_id": "471018825e96c5d15689a85fa438a5d842112f4233bc528ca9aaafc188d1c66f",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "c5c069f64f975018c66a3df6021d3984e29a7015de01c2358aa8cfe651a6b51b",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    },
+    {
+      "configuration_id": "86d4b13acad3428f403070df59242f81cd65ea0a785cdfcf666a1fa1df6dbcea",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "4ff529a8b00cd2f3fa7cb1a444c76a5fcd09e277b6d86b8d2fefe74524e86266",
+      "sample_count": 15,
+      "probability": 0.020833333333333332
+    },
+    {
+      "configuration_id": "753748e8e2deda8411c53f681a2dbb7462151ab2bc80553712a10cc034b9c0c3",
+      "sample_count": 39,
+      "probability": 0.05416666666666667
+    },
+    {
+      "configuration_id": "bf8e35883154b55c978580eab68a48c4b55da48db6a3a7a0a74b41cf9e7f2f7c",
+      "sample_count": 12,
+      "probability": 0.016666666666666666
+    },
+    {
+      "configuration_id": "21227f1e996e073d4aa5874af588a62d59a585026f346bcda84d5c7f8a95cdb0",
+      "sample_count": 6,
+      "probability": 0.008333333333333333
+    },
+    {
+      "configuration_id": "c218cfe3f741f5833e1fb2ac577622007b150ec44b98f26ed9fc7ca7c57f2d44",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "32f038fbf7e61ad855444445ef06c6860b430435e69a6a17df63356f7415ebf3",
+      "sample_count": 9,
+      "probability": 0.0125
+    },
+    {
+      "configuration_id": "eae015b28826702d5da72ee4ef6ba1ed381c1878c5841e2d8bf50db318fa33f8",
+      "sample_count": 4,
+      "probability": 0.005555555555555556
+    }
+  ],
+  "summary": [
+    {
+      "scenario": "N20_unequal2x2_blocks5_one_bottom",
+      "N": 20,
+      "K": 1,
+      "prevalence": 0.05,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "one_bottom",
+      "method": "exact_support",
+      "true_population_ap": 0.05,
+      "exact_sample_states": 720,
+      "issued_sample_states": 90,
+      "covered_sample_states": 90,
+      "interval_issuance_probability": 0.125,
+      "undefined_or_unissued_probability": 0.875,
+      "unconditional_issued_and_covering_probability": 0.125,
+      "coverage_conditional_on_issued": 1.0,
+      "mean_width_conditional_on_issued": 0.7483314773547882,
+      "zero_width_fraction_conditional_on_issued": 0.0,
+      "invalid_replicate_fraction_all_samples": 0.875,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.0,
+      "interval_above_truth_probability": 0.0,
+      "point_bias_conditional_on_defined": 0.35,
+      "point_rmse_conditional_on_defined": 0.35000000000000003
+    },
+    {
+      "scenario": "N20_unequal2x2_blocks5_one_bottom",
+      "N": 20,
+      "K": 1,
+      "prevalence": 0.05,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "one_bottom",
+      "method": "mc_seed_2026102601",
+      "true_population_ap": 0.05,
+      "exact_sample_states": 720,
+      "issued_sample_states": 90,
+      "covered_sample_states": 90,
+      "interval_issuance_probability": 0.125,
+      "undefined_or_unissued_probability": 0.875,
+      "unconditional_issued_and_covering_probability": 0.125,
+      "coverage_conditional_on_issued": 1.0,
+      "mean_width_conditional_on_issued": 0.7483314773547882,
+      "zero_width_fraction_conditional_on_issued": 0.0,
+      "invalid_replicate_fraction_all_samples": 0.875,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.0,
+      "interval_above_truth_probability": 0.0,
+      "point_bias_conditional_on_defined": 0.35,
+      "point_rmse_conditional_on_defined": 0.35000000000000003
+    },
+    {
+      "scenario": "N20_unequal2x2_blocks5_one_bottom",
+      "N": 20,
+      "K": 1,
+      "prevalence": 0.05,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "one_bottom",
+      "method": "mc_seed_2026102602",
+      "true_population_ap": 0.05,
+      "exact_sample_states": 720,
+      "issued_sample_states": 90,
+      "covered_sample_states": 90,
+      "interval_issuance_probability": 0.125,
+      "undefined_or_unissued_probability": 0.875,
+      "unconditional_issued_and_covering_probability": 0.125,
+      "coverage_conditional_on_issued": 1.0,
+      "mean_width_conditional_on_issued": 0.7483314773547882,
+      "zero_width_fraction_conditional_on_issued": 0.0,
+      "invalid_replicate_fraction_all_samples": 0.875,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.0,
+      "interval_above_truth_probability": 0.0,
+      "point_bias_conditional_on_defined": 0.35,
+      "point_rmse_conditional_on_defined": 0.35000000000000003
+    },
+    {
+      "scenario": "N20_unequal2x2_blocks5_one_bottom",
+      "N": 20,
+      "K": 1,
+      "prevalence": 0.05,
+      "design": "unequal2x2",
+      "score_type": "blocks5",
+      "pattern": "one_bottom",
+      "method": "mc_seed_2026102603",
+      "true_population_ap": 0.05,
+      "exact_sample_states": 720,
+      "issued_sample_states": 90,
+      "covered_sample_states": 90,
+      "interval_issuance_probability": 0.125,
+      "undefined_or_unissued_probability": 0.875,
+      "unconditional_issued_and_covering_probability": 0.125,
+      "coverage_conditional_on_issued": 1.0,
+      "mean_width_conditional_on_issued": 0.7483314773547882,
+      "zero_width_fraction_conditional_on_issued": 0.0,
+      "invalid_replicate_fraction_all_samples": 0.875,
+      "invalid_replicate_fraction_positive_samples": 0.0,
+      "interval_below_truth_probability": 0.0,
+      "interval_above_truth_probability": 0.0,
+      "point_bias_conditional_on_defined": 0.35,
+      "point_rmse_conditional_on_defined": 0.35000000000000003
+    }
+  ]
+}

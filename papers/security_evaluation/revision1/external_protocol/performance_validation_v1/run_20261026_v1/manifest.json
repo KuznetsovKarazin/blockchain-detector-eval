@@ -1,0 +1,19 @@
+{
+  "status": "complete_synthetic_finite_population_diagnostic",
+  "config_sha256": "7ba5af80247414d1769bcdfb3e0323ed475332a3322464f0a4ec2f5058fedc35",
+  "started_utc": "2026-10-26T13:36:04.743315+00:00",
+  "finished_utc": "2026-10-26T13:37:05.669743+00:00",
+  "scenario_count": 59,
+  "exact_sample_states": 795934,
+  "configuration_count": 606,
+  "direct_production_oracles": 10,
+  "runtime_seconds_this_invocation": 60.931527125001594,
+  "output_hashes": {
+    "summary.csv": "2b03642ff4e19fcc49e85552cace452c3b92512ea7f01efbc799c643e4f3795f",
+    "checkpoints.json": "fcdeed8f38e42e7d2470df3ffbd3fdfa1de63924b5f87ce42d2c88d4f3870f42",
+    "production_oracle_checks.json": "b9876a55d70896a42de9ac821b75116d8270f0e8022dd7e60afc12b7a61fc063"
+  },
+  "real_project_labels_or_scores_used": false,
+  "new_external_scores": 0,
+  "v1_modified": false
+}

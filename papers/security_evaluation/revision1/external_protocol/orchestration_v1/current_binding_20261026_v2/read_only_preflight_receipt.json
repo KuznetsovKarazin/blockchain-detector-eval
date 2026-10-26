@@ -1,0 +1,279 @@
+{
+  "schema": "external_B_current_readonly_observation_v2",
+  "expected_binding_sha256": "352de7c7b88d84cedfa1659739920207d3d82c17612f6a83653acf56e2802de2",
+  "setup": {
+    "schema": "external_B_integrity_preflight_result_v1",
+    "requested_phase": "setup",
+    "phase_integrity_pass": true,
+    "execution_authorized": false,
+    "human_identity_authenticated": false,
+    "timestamp_authenticity_established": false,
+    "operations_executed": 0,
+    "synthetic_profile": false,
+    "blockers": [],
+    "data_access_scope": "Coordinator integrity check may read source annotation/proxy labels and private sampling keys; not annotation-blind compiler setup",
+    "production_model_dispatch_implemented": false,
+    "protocol_blockers": [
+      "freeze_prerequisites_not_satisfied",
+      "human_before_fit_score_order_changed",
+      "missing_protocol_id",
+      "protocol_not_frozen",
+      "required_hash_binding_set_missing_or_changed",
+      "score_requirement_set_missing_or_changed",
+      "two_reviewer_records_required",
+      "unrecognized_or_legacy_protocol_schema"
+    ],
+    "inference_policy_allows_confirmatory_scope": false,
+    "input_summary": {
+      "training_files": 691,
+      "external_files": 1998,
+      "source_bytes_checked": 2689,
+      "sample_cases": 180,
+      "strata": 17
+    },
+    "toolchain": {
+      "executables_checked": 31,
+      "dependency_artifacts_checked": 47,
+      "executables_invoked": 0
+    },
+    "declared_jobs": [
+      {
+        "job_id": "raw_tfidf_lr:reentrancy:0",
+        "kind": "learned",
+        "method": "raw_tfidf_lr",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "raw_tfidf_lr:unchecked:0",
+        "kind": "learned",
+        "method": "raw_tfidf_lr",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "normalized_tfidf_lr:reentrancy:0",
+        "kind": "learned",
+        "method": "normalized_tfidf_lr",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "normalized_tfidf_lr:unchecked:0",
+        "kind": "learned",
+        "method": "normalized_tfidf_lr",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:0",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:1",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:2",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:3",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:4",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 4
+      },
+      {
+        "job_id": "pattern_rf:unchecked:0",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_rf:unchecked:1",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_rf:unchecked:2",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_rf:unchecked:3",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_rf:unchecked:4",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 4
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:0",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:1",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:2",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:3",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:4",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 4
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:0",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:1",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:2",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:3",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:4",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 4
+      },
+      {
+        "job_id": "slither:reentrancy:0",
+        "kind": "static",
+        "method": "slither",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "slither:unchecked:0",
+        "kind": "static",
+        "method": "slither",
+        "class": "unchecked",
+        "seed": 0
+      }
+    ],
+    "sealed_events_checked": 0,
+    "binding_sha256": "352de7c7b88d84cedfa1659739920207d3d82c17612f6a83653acf56e2802de2",
+    "scope": "Integrity relative to caller-selected digest; no human authentication, timestamp certification or execution permission"
+  },
+  "begin_scoring": {
+    "schema": "external_B_integrity_preflight_result_v1",
+    "requested_phase": "begin_scoring",
+    "phase_integrity_pass": false,
+    "execution_authorized": false,
+    "human_identity_authenticated": false,
+    "timestamp_authenticity_established": false,
+    "operations_executed": 0,
+    "synthetic_profile": false,
+    "blockers": [
+      "review_admission:protocol_gate:freeze_prerequisites_not_satisfied,human_before_fit_score_order_changed,missing_protocol_id,permission_closed:external_scoring_allowed,permission_closed:model_fitting_allowed,protocol_not_frozen,required_hash_binding_set_missing_or_changed,score_requirement_set_missing_or_changed,two_reviewer_records_required,unrecognized_or_legacy_protocol_schema"
+    ],
+    "data_access_scope": "Coordinator integrity check may read source annotation/proxy labels and private sampling keys; not annotation-blind compiler setup",
+    "production_model_dispatch_implemented": false,
+    "review_admission": {
+      "admission_artifacts_consistent": false,
+      "execution_authorized": false,
+      "human_identity_authenticated": false,
+      "training_label_keys_read": false,
+      "model_source_bodies_read": false,
+      "scores_read": false,
+      "operations_executed": 0,
+      "blockers": [
+        "protocol_gate:freeze_prerequisites_not_satisfied,human_before_fit_score_order_changed,missing_protocol_id,permission_closed:external_scoring_allowed,permission_closed:model_fitting_allowed,protocol_not_frozen,required_hash_binding_set_missing_or_changed,score_requirement_set_missing_or_changed,two_reviewer_records_required,unrecognized_or_legacy_protocol_schema"
+      ]
+    }
+  },
+  "wall_seconds": 5.472908431001997,
+  "source_hashes": {
+    "integrity_preflight": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "validate_gate_v2": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "adapters": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "feature_definitions": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "performance": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "performance_dependency": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "review_estimators": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "compiler_policy": "535a915f5de643a36d6d61fdc51a73fa44e21c1250c5272c5b50a577f3baf122",
+    "toolchain_verifier": "8c719b72fb7a98178cbffed68c2ad873af4358898e52444241e8f406dd76e5b1",
+    "solidity_scanner": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "contract_features": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "legacy_compiler_catalog": "1c427d1c988178e2ee3483faf5bcba387f94160cbe175f089fa8956acb5bde33",
+    "toolchain_provisioner": "04dc6a6c25fc2f5b620b8a5311851f34c636b4c6fd5c425b8bf101d0d80741aa",
+    "model_worker": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83"
+  },
+  "optimized_python": true,
+  "real_model_fits": 0,
+  "real_external_scores": 0,
+  "human_judgments_created": 0,
+  "tool_executions": 0,
+  "authorization_records_created": 0,
+  "protocol_frozen": false,
+  "check_script_sha256": "004000fd23f309e86136f36ccb3e1c33224f092673b4c2a67720ce530ff78c9a"
+}

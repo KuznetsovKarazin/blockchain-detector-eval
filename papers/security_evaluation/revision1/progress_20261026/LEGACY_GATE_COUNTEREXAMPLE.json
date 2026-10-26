@@ -1,0 +1,18 @@
+{
+  "schema": "legacy_readonly_gate_adversarial_check_v1",
+  "source_sha256": "ceb8730ce451950f2981548d5e87db8d14608258ab9f73fe80f7076476594a9b",
+  "synthetic_protocol": {
+    "status": "frozen_before_human_judgments_and_scores",
+    "probability_audit": {
+      "reviewer_1_name": "fictional same reviewer",
+      "reviewer_2_name": "fictional same reviewer"
+    },
+    "external_scoring_allowed": false,
+    "model_fitting_allowed": false
+  },
+  "legacy_blockers": [],
+  "legacy_allowed": true,
+  "models_executed": 0,
+  "actual_protocol_unchanged": true,
+  "limitations": "Legacy command itself never dispatches models. Synthetic configuration is not a genuine frozen protocol or human record."
+}

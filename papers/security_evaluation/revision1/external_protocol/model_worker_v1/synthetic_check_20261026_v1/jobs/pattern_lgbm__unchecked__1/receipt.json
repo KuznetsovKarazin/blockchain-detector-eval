@@ -1,0 +1,48 @@
+{
+  "artifact_sha256": {
+    "adapter.joblib": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea",
+    "config.json": "f27acaa8db021253a7dac8d13e42723fe3bd2d0bf1c4febb9ca8700ef6b87eeb",
+    "fit_log.json": "78b622bd17e5368a2c2e320586858b159d6af725106a7b472639efa777905cb6",
+    "fitted_bundle.joblib": "057a95ed059f26d9231a1f3d9e6f9074610f9f57fa7ed4c3c33f970139aebf24",
+    "fitted_state.json": "a49c878f4aa3daeaf7998ae70fa03b4567025d58d023f5bf7867fc10d8e97b9b",
+    "model.joblib": "82e3d4f965095e73d305d7b415ee1351a01f364fff1f3041e566f70a6390c5b4",
+    "preprocessing.json": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391",
+    "scores.csv": "1785d4f76d813711cd2bb1a320024442f701d441f3ae5e5b2a245f3019399844",
+    "source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "source_snapshot/src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "binding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "config_sha256": "56ff97ca1d62efd351b622ef123f82184ad7928daa1bdb749c6efe99c70adc5d",
+  "external_rows": 6,
+  "fit_scope": "training_manifest_only",
+  "fit_started_utc": "2026-10-26T14:05:42.397026+00:00",
+  "human_identity_authenticated": false,
+  "job_id": "pattern_lgbm:unchecked:1",
+  "method_config_sha256": "1c0c73acf2b492ad20a2c8f15600871cb6cd5c429e86c123a5a28bb48bc59d95",
+  "reference_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "resume_verified_no_refit": false,
+  "schema": "external_B_learned_job_receipt_v1",
+  "scores_artifact": {
+    "path": "pattern_lgbm__unchecked__1/scores.csv",
+    "sha256": "1785d4f76d813711cd2bb1a320024442f701d441f3ae5e5b2a245f3019399844"
+  },
+  "scoring_completed_utc": "2026-10-26T14:05:42.725270+00:00",
+  "state_artifact": {
+    "path": "pattern_lgbm__unchecked__1/fitted_state.json",
+    "sha256": "a49c878f4aa3daeaf7998ae70fa03b4567025d58d023f5bf7867fc10d8e97b9b"
+  },
+  "status": "complete",
+  "status_counts": {
+    "ok": 4,
+    "preprocessing_error": 2
+  },
+  "synthetic_fixture": true,
+  "training_manifest_sha256": "d272e402014a9472f2b4f545e35f5ee454ca4c8bc5a3e47d869df5fd47c4e67e"
+}

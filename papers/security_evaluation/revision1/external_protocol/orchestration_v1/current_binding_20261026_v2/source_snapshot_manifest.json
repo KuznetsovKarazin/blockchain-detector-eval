@@ -1,0 +1,66 @@
+{
+  "schema": "external_B_public_source_snapshot_v1",
+  "code": {
+    "integrity_preflight": {
+      "path": "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+      "sha256": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05"
+    },
+    "validate_gate_v2": {
+      "path": "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+      "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+    },
+    "adapters": {
+      "path": "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+      "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+    },
+    "feature_definitions": {
+      "path": "papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+      "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+    },
+    "performance": {
+      "path": "papers/security_evaluation/revision1/external_protocol/performance_v2/performance.py",
+      "sha256": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69"
+    },
+    "performance_dependency": {
+      "path": "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py",
+      "sha256": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b"
+    },
+    "review_estimators": {
+      "path": "papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+      "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+    },
+    "compiler_policy": {
+      "path": "papers/security_evaluation/revision1/external_protocol/compiler_policy.py",
+      "sha256": "535a915f5de643a36d6d61fdc51a73fa44e21c1250c5272c5b50a577f3baf122"
+    },
+    "toolchain_verifier": {
+      "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/verify_toolchain_v2.py",
+      "sha256": "8c719b72fb7a98178cbffed68c2ad873af4358898e52444241e8f406dd76e5b1"
+    },
+    "solidity_scanner": {
+      "path": "papers/security_evaluation/normalization_audit/solidity_scanner.py",
+      "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+    },
+    "contract_features": {
+      "path": "src/bal/features/contract_features.py",
+      "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+    },
+    "legacy_compiler_catalog": {
+      "path": "scripts/c3_slither_baseline.py",
+      "sha256": "1c427d1c988178e2ee3483faf5bcba387f94160cbe175f089fa8956acb5bde33"
+    },
+    "toolchain_provisioner": {
+      "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/provision_toolchain.py",
+      "sha256": "04dc6a6c25fc2f5b620b8a5311851f34c636b4c6fd5c425b8bf101d0d80741aa"
+    },
+    "model_worker": {
+      "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+      "sha256": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83"
+    }
+  },
+  "builder": {
+    "path": "papers/security_evaluation/revision1/external_protocol/orchestration_v1/prepare_current_binding.py",
+    "sha256": "b859f364ed425ed17cb53a1709fcc08f12d0a6f4b4ce9666aabe27d1286fc966"
+  },
+  "source_snapshot_root": "papers/security_evaluation/revision1/external_protocol/orchestration_v1/current_binding_20261026_v2/source_snapshot"
+}

@@ -1,0 +1,641 @@
+{
+  "artifact_index_sha256": "ce788fd4b890395c72963f693fc1ad58ad0a5369ec01c20242c044b9b4cfc687",
+  "audience": "coordinator_only_not_blind_reviewer_packet",
+  "current_wiki": {
+    "authority_for_implemented_predicates": "pinned wheel and matching installed Python sources",
+    "checked_date": "2026-10-26",
+    "note": "Wiki reviewed separately; this offline script does not fetch it.",
+    "url": "https://github.com/crytic/slither/wiki/Detector-Documentation",
+    "version_fixed": false
+  },
+  "detectors_executed": false,
+  "draft_detector_mapping": {
+    "primary_reentrancy_detectors": [
+      "reentrancy-eth",
+      "reentrancy-no-eth",
+      "reentrancy-unlimited-gas"
+    ],
+    "secondary_broad_additions": [
+      "reentrancy-benign",
+      "reentrancy-events"
+    ],
+    "unchecked_detectors": [
+      "unchecked-lowlevel",
+      "unchecked-send"
+    ]
+  },
+  "draft_protocol_sha256": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6",
+  "existing_mapping_changed": false,
+  "extractor_sha256": "ce8a4825adea5aec5a682159d9ba9e13d89d0e94b7999cc7477be28e194600d5",
+  "human_semantic_signoff": false,
+  "pinned_wheel": {
+    "artifact_sha256": "01f809198d3f171e2d768569c0054c96af5736614e183c64f42c9b51636c33c1",
+    "download_url": "https://files.pythonhosted.org/packages/63/d2/967c616a6a9bed1a34c27165278efcfad79ae917e8f483a73c2013ee7bea/slither_analyzer-0.11.6-py3-none-any.whl",
+    "filename": "slither_analyzer-0.11.6-py3-none-any.whl",
+    "package": "slither-analyzer",
+    "version": "0.11.6"
+  },
+  "review_date": "2026-10-26",
+  "schema": "slither_semantic_source_review_v1",
+  "scores_read": false,
+  "source_labels_read": false,
+  "sources": [
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 19,
+              "value": "reentrancy-eth"
+            },
+            "CONFIDENCE": {
+              "line": 22,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 20,
+              "value": "Reentrancy vulnerabilities (theft of ethers)"
+            },
+            "IMPACT": {
+              "line": 21,
+              "value": "DetectorClassification.HIGH"
+            },
+            "STANDARD_JSON": {
+              "line": 54,
+              "value": false
+            },
+            "WIKI": {
+              "line": 24,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1"
+            }
+          },
+          "end_line": 193,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 193,
+              "start_line": 99
+            },
+            "find_reentrancies": {
+              "end_line": 97,
+              "start_line": 56
+            }
+          },
+          "name": "ReentrancyEth",
+          "start_line": 18
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "reentrancy/reentrancy_eth.py",
+      "source_bytes": 8435,
+      "source_lines": 193,
+      "source_sha256": "360db5d45e628da863fd1cb90e8c9ce9fd2719ce40dd710e15ddb6a59ebbadaf"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 19,
+              "value": "reentrancy-no-eth"
+            },
+            "CONFIDENCE": {
+              "line": 22,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 20,
+              "value": "Reentrancy vulnerabilities (no theft of ethers)"
+            },
+            "IMPACT": {
+              "line": 21,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "STANDARD_JSON": {
+              "line": 52,
+              "value": false
+            },
+            "WIKI": {
+              "line": 24,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2"
+            }
+          },
+          "end_line": 170,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 170,
+              "start_line": 94
+            },
+            "find_reentrancies": {
+              "end_line": 92,
+              "start_line": 54
+            }
+          },
+          "name": "ReentrancyReadBeforeWritten",
+          "start_line": 18
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "reentrancy/reentrancy_read_before_write.py",
+      "source_bytes": 6944,
+      "source_lines": 170,
+      "source_sha256": "1f48490032ae4a662925539e525bd464a15ecf2dbe9e2415c63f09a77568f04e"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 26,
+              "value": "reentrancy-unlimited-gas"
+            },
+            "CONFIDENCE": {
+              "line": 29,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 27,
+              "value": "Reentrancy vulnerabilities through send and transfer"
+            },
+            "IMPACT": {
+              "line": 28,
+              "value": "DetectorClassification.INFORMATIONAL"
+            },
+            "STANDARD_JSON": {
+              "line": 65,
+              "value": false
+            },
+            "WIKI": {
+              "line": 31,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-5"
+            }
+          },
+          "end_line": 217,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 217,
+              "start_line": 105
+            },
+            "can_callback": {
+              "end_line": 63,
+              "start_line": 58
+            },
+            "find_reentrancies": {
+              "end_line": 103,
+              "start_line": 67
+            }
+          },
+          "name": "ReentrancyNoGas",
+          "start_line": 23
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "reentrancy/reentrancy_no_gas.py",
+      "source_bytes": 9076,
+      "source_lines": 217,
+      "source_sha256": "339eff3c23d6c6a16b49dcefce8516025974fe689bd2a64bd86b533649074f33"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 19,
+              "value": "reentrancy-benign"
+            },
+            "CONFIDENCE": {
+              "line": 22,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 20,
+              "value": "Benign reentrancy vulnerabilities"
+            },
+            "IMPACT": {
+              "line": 21,
+              "value": "DetectorClassification.LOW"
+            },
+            "STANDARD_JSON": {
+              "line": 52,
+              "value": false
+            },
+            "WIKI": {
+              "line": 24,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3"
+            }
+          },
+          "end_line": 179,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 179,
+              "start_line": 91
+            },
+            "find_reentrancies": {
+              "end_line": 89,
+              "start_line": 54
+            }
+          },
+          "name": "ReentrancyBenign",
+          "start_line": 18
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "reentrancy/reentrancy_benign.py",
+      "source_bytes": 7483,
+      "source_lines": 179,
+      "source_sha256": "e8450c962bbc6d01e5adb3ce0bfd936e923340b9cad4f2e4c45746243c830757"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 19,
+              "value": "reentrancy-events"
+            },
+            "CONFIDENCE": {
+              "line": 22,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 20,
+              "value": "Reentrancy vulnerabilities leading to out-of-order Events"
+            },
+            "IMPACT": {
+              "line": 21,
+              "value": "DetectorClassification.LOW"
+            },
+            "STANDARD_JSON": {
+              "line": 72,
+              "value": false
+            },
+            "WIKI": {
+              "line": 24,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4"
+            }
+          },
+          "end_line": 179,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 179,
+              "start_line": 106
+            },
+            "find_reentrancies": {
+              "end_line": 104,
+              "start_line": 74
+            }
+          },
+          "name": "ReentrancyEvent",
+          "start_line": 18
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "reentrancy/reentrancy_events.py",
+      "source_bytes": 7120,
+      "source_lines": 179,
+      "source_sha256": "2eaeadbf11f8946d88a37879142cb085c0e39297597f3ab9fdcfc16b1f268694"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 23,
+              "value": "unchecked-lowlevel"
+            },
+            "CONFIDENCE": {
+              "line": 26,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 24,
+              "value": "Unchecked low-level calls"
+            },
+            "IMPACT": {
+              "line": 25,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "WIKI": {
+              "line": 28,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls"
+            }
+          },
+          "end_line": 88,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 88,
+              "start_line": 74
+            },
+            "detect_unused_return_values": {
+              "end_line": 72,
+              "start_line": 50
+            }
+          },
+          "name": "UncheckedLowLevel",
+          "start_line": 18
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "operations/unchecked_low_level_return_values.py",
+      "source_bytes": 3078,
+      "source_lines": 88,
+      "source_sha256": "f65e19ff8c078bde2a4603617effd3e3898622e97012356686063cd0a471c08d"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 16,
+              "value": "unchecked-send"
+            },
+            "CONFIDENCE": {
+              "line": 19,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 17,
+              "value": "Unchecked send"
+            },
+            "IMPACT": {
+              "line": 18,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "WIKI": {
+              "line": 21,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-send"
+            }
+          },
+          "end_line": 43,
+          "method_ranges": {
+            "_is_instance": {
+              "end_line": 43,
+              "start_line": 42
+            }
+          },
+          "name": "UncheckedSend",
+          "start_line": 11
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "operations/unchecked_send_return_value.py",
+      "source_bytes": 1411,
+      "source_lines": 43,
+      "source_sha256": "c31342d58e01b7cbe2081fd0340443c27b40171467ecc9a38a5581a2a02b0059"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {},
+          "end_line": 243,
+          "method_ranges": {
+            "__init__": {
+              "end_line": 60,
+              "start_line": 48
+            },
+            "add": {
+              "end_line": 230,
+              "start_line": 220
+            },
+            "analyze_node": {
+              "end_line": 218,
+              "start_line": 159
+            },
+            "calls": {
+              "end_line": 76,
+              "start_line": 71
+            },
+            "does_not_bring_new_info": {
+              "end_line": 243,
+              "start_line": 232
+            },
+            "events": {
+              "end_line": 124,
+              "start_line": 119
+            },
+            "high_level_custom_calls": {
+              "end_line": 108,
+              "start_line": 103
+            },
+            "high_level_custom_calls_prior_calls": {
+              "end_line": 116,
+              "start_line": 111
+            },
+            "merge_fathers": {
+              "end_line": 157,
+              "start_line": 126
+            },
+            "reads": {
+              "end_line": 84,
+              "start_line": 79
+            },
+            "reads_prior_calls": {
+              "end_line": 100,
+              "start_line": 95
+            },
+            "send_eth": {
+              "end_line": 68,
+              "start_line": 63
+            },
+            "written": {
+              "end_line": 92,
+              "start_line": 87
+            }
+          },
+          "name": "AbstractState",
+          "start_line": 47
+        },
+        {
+          "declared_metadata": {},
+          "end_line": 361,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 361,
+              "start_line": 349
+            },
+            "_explore": {
+              "end_line": 338,
+              "start_line": 295
+            },
+            "can_callback": {
+              "end_line": 279,
+              "start_line": 268
+            },
+            "can_send_eth": {
+              "end_line": 286,
+              "start_line": 282
+            },
+            "custom_read_high_level_call": {
+              "end_line": 293,
+              "start_line": 289
+            },
+            "detect_reentrancy": {
+              "end_line": 347,
+              "start_line": 340
+            }
+          },
+          "name": "Reentrancy",
+          "start_line": 261
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "reentrancy/reentrancy.py",
+      "source_bytes": 13460,
+      "source_lines": 361,
+      "source_sha256": "12c477a890b4917f6191df3b41f6247e8d7222a79871cc28d6782007c14b6385"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 24,
+              "value": "unused-return"
+            },
+            "CONFIDENCE": {
+              "line": 27,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "HELP": {
+              "line": 25,
+              "value": "Unused return values"
+            },
+            "IMPACT": {
+              "line": 26,
+              "value": "DetectorClassification.MEDIUM"
+            },
+            "WIKI": {
+              "line": 29,
+              "value": "https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return"
+            }
+          },
+          "end_line": 117,
+          "method_ranges": {
+            "_detect": {
+              "end_line": 117,
+              "start_line": 103
+            },
+            "_is_instance": {
+              "end_line": 62,
+              "start_line": 51
+            },
+            "detect_unused_return_values": {
+              "end_line": 101,
+              "start_line": 64
+            }
+          },
+          "name": "UnusedReturnValues",
+          "start_line": 19
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "operations/unused_return_values.py",
+      "source_bytes": 4912,
+      "source_lines": 117,
+      "source_sha256": "e8153e7ee0c4685ba12459d7e9fd2eb62d314210ef740fb15e27159ef06f7126"
+    },
+    {
+      "classes": [
+        {
+          "declared_metadata": {},
+          "end_line": 20,
+          "method_ranges": {},
+          "name": "IncorrectDetectorInitialization",
+          "start_line": 19
+        },
+        {
+          "declared_metadata": {},
+          "end_line": 30,
+          "method_ranges": {},
+          "name": "DetectorClassification",
+          "start_line": 23
+        },
+        {
+          "declared_metadata": {
+            "ARGUMENT": {
+              "line": 67,
+              "value": ""
+            },
+            "CONFIDENCE": {
+              "line": 70,
+              "value": "DetectorClassification.UNIMPLEMENTED"
+            },
+            "HELP": {
+              "line": 68,
+              "value": ""
+            },
+            "IMPACT": {
+              "line": 69,
+              "value": "DetectorClassification.UNIMPLEMENTED"
+            },
+            "STANDARD_JSON": {
+              "line": 79,
+              "value": true
+            },
+            "VULNERABLE_SOLC_VERSIONS": {
+              "line": 83,
+              "value": null
+            },
+            "WIKI": {
+              "line": 72,
+              "value": ""
+            }
+          },
+          "end_line": 305,
+          "method_ranges": {
+            "__init__": {
+              "end_line": 176,
+              "start_line": 88
+            },
+            "_detect": {
+              "end_line": 195,
+              "start_line": 193
+            },
+            "_format": {
+              "end_line": 295,
+              "start_line": 293
+            },
+            "_is_applicable_detector": {
+              "end_line": 190,
+              "start_line": 182
+            },
+            "_log": {
+              "end_line": 180,
+              "start_line": 178
+            },
+            "_log_result": {
+              "end_line": 305,
+              "start_line": 297
+            },
+            "color": {
+              "end_line": 271,
+              "start_line": 270
+            },
+            "detect": {
+              "end_line": 267,
+              "start_line": 197
+            },
+            "generate_result": {
+              "end_line": 290,
+              "start_line": 273
+            }
+          },
+          "name": "AbstractDetector",
+          "start_line": 66
+        }
+      ],
+      "matches_pinned_wheel_member": true,
+      "relative_to_detectors": "abstract_detector.py",
+      "source_bytes": 11212,
+      "source_lines": 305,
+      "source_sha256": "89fffc12cd4f81ff4db44477b781e1772501889b3f69f7e485fdbf2e59ed0e3d"
+    }
+  ],
+  "standard_json_interpretation": {
+    "file": "abstract_detector.py",
+    "output_constructor_line": 281,
+    "scope": "output formatting, not compiler standard-JSON compatibility"
+  },
+  "status": "preliminary_source_mapping_review_not_human_signoff",
+  "target_solidity_read": false,
+  "wheel_metadata_sha256": "ce16190806a699940c98ecb11bf964f62e531853dc57a904b54094d0bc21e2f2"
+}

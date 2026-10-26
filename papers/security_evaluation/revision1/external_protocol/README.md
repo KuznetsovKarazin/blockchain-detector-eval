@@ -10,10 +10,12 @@ The current engineering comprises [feature adapters](adapters_v1/README.md), [se
 
 These modules are not a complete external comparison. The performance API currently requires complete successful score vectors, treats weighted AP as a nonlinear plug-in, labels intervals approximate, and retains unknowns without safe-score substitution. Several proposed comparison/coverage estimands and an authenticated runner remain outside its scope. Named real reviewers, semantic agreement, prospective protocol freeze, sealed initial reviews and adjudication remain required. See the current readiness report for precise limits.
 
-The executable historical draft guard remains closed:
+The historical `validate_gate.py` is deprecated for every future execution decision: a missing-map counterexample exposed a fail-open default. It remains unchanged as a historical artifact. The [new strict integrity preflight](orchestration_v1/README.md) requires complete schema/hash bindings, sealed human-release order and the separately bound inference-policy gate. Its schema-only check is:
 
 ```bash
-python papers/security_evaluation/revision1/external_protocol/validate_gate.py --protocol papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json --phase score
+python papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py --protocol papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json --phase begin_scoring
 ```
 
-Exit 2 with `allowed=false` is expected. Its old prerequisite booleans are intentionally not retroactively edited; incorporating the new modules requires a separately reviewed prospective integration/freeze. New computations require new output directories. No registration, DOI, journal submission or third-party message has been made, and permission to redistribute third-party source code or row annotations is not inferred.
+Exit 2 is expected for the current draft. A successful schema check would still not authorize execution; complete artifact/release verification and procedural coordinator authorization are separate requirements. Hashes and recorded names do not authenticate people. The [current inference gate](INFERENCE_GATE_20261026.json) also remains closed after counterexamples to confirmatory AP interval coverage. No unit test automatically changes that scientific policy.
+
+Historical prerequisite booleans and protocol snapshots are intentionally not retroactively edited. Integrating new modules requires a separately reviewed prospective protocol. New computations require new output directories. No registration, DOI, journal submission or third-party message has been made, and permission to redistribute third-party source code or row annotations is not inferred.

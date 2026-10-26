@@ -1,0 +1,124 @@
+{
+  "schema": "external_B_method_jobs_v1",
+  "model_configurations": {
+    "raw_tfidf_lr": {
+      "tfidf": {
+        "token_pattern": "\\S+",
+        "ngram_range": [
+          1,
+          3
+        ],
+        "min_df": 2,
+        "max_features": 50000,
+        "sublinear_tf": true,
+        "lowercase": false
+      },
+      "scaler": {
+        "with_mean": false
+      },
+      "estimator": {
+        "C": 1,
+        "max_iter": 3000,
+        "class_weight": "balanced",
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "random_state": 0
+      },
+      "seeds": [
+        0
+      ]
+    },
+    "normalized_tfidf_lr": {
+      "same_as": "raw_tfidf_lr",
+      "representation": "string-aware scanner then historical identifier/number normalization",
+      "seeds": [
+        0
+      ]
+    },
+    "pattern_rf": {
+      "n_estimators": 500,
+      "class_weight": "balanced_subsample",
+      "min_samples_leaf": 1,
+      "n_jobs": 4,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "pattern_lgbm": {
+      "n_estimators": 400,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "n_jobs": 4,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "slither": {
+    "version": "0.11.6",
+    "timeout_seconds_per_attempt": 180,
+    "maximum_attempts": 5,
+    "outside_pragma_allowed": false,
+    "diagnostic_rerun_changes_outcome": false,
+    "primary_reentrancy_detectors": [
+      "reentrancy-eth",
+      "reentrancy-no-eth",
+      "reentrancy-unlimited-gas"
+    ],
+    "secondary_broad_additions": [
+      "reentrancy-benign",
+      "reentrancy-events"
+    ],
+    "unchecked_detectors": [
+      "unchecked-lowlevel",
+      "unchecked-send"
+    ],
+    "compiler_inventory_frozen": false
+  },
+  "static_comparator_required": true,
+  "score_status_mapping": {
+    "ok": "ok",
+    "decode_error": "preprocessing_error",
+    "scanner_error": "preprocessing_error",
+    "empty_token_stream": "preprocessing_error",
+    "zero_vocabulary_vector": "preprocessing_error",
+    "preprocessing_error": "preprocessing_error",
+    "unavailable_compiler": "unavailable_binary",
+    "no_compatible_catalog_release": "unavailable_binary",
+    "unavailable_binary": "unavailable_binary",
+    "missing_pragma": "unsupported_pragma",
+    "unsupported_constraint": "unsupported_pragma",
+    "unsupported_pragma": "unsupported_pragma",
+    "compile_error": "compile_error",
+    "tool_error": "tool_error",
+    "timeout": "timeout",
+    "missing_dependency": "missing_dependency",
+    "missing_score": "missing_score",
+    "model_error": "model_error"
+  },
+  "learned_worker_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "lightgbm": "4.6.0",
+      "joblib": "1.5.3",
+      "threadpoolctl": "3.6.0"
+    }
+  },
+  "purpose": "blocked current-input binding; not a prospective freeze or an execution request"
+}

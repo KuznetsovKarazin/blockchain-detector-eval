@@ -1,0 +1,122 @@
+{
+  "N20_srs4_unique": {
+    "configuration_id": "2ffd4eed89432e0e63b403e48abc61294bdebc021f4f24a142f77b4247c2fe5f",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 1.0,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      1.0,
+      1.0
+    ]
+  },
+  "N20_unequal2x2_unique": {
+    "configuration_id": "fa93a3b74446e26e863a9540ffaf81ac2151fdf91a0d1962536cb4e659d11c9f",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 1.0,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      1.0,
+      1.0
+    ]
+  },
+  "N20_census_unique": {
+    "configuration_id": "b0443bbe5e229fe5c902c4d98c444a4b57633ccad64cc66080a22b41c5227f34",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 1.0,
+    "status": "census_exact",
+    "interval": [
+      1.0,
+      1.0
+    ]
+  },
+  "N20_srs4_blocks5": {
+    "configuration_id": "262358cc8cfb575dd09cd9befced6889faedebee3e4e9e5fe5e0538ce12912c0",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 0.25,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      0.02639320225002103,
+      0.622677996249965
+    ]
+  },
+  "N20_unequal2x2_blocks5": {
+    "configuration_id": "318ff2db8ee92bf0e447557e90e5c4bddb57a252dc422228fc376a508c557513",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 1.0,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      1.0,
+      1.0
+    ]
+  },
+  "N20_census_blocks5": {
+    "configuration_id": "f81af255a9e309e5f4cb204e6ef8b219d2497ef7110d79e8783895d5ebd95573",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 0.2,
+    "status": "census_exact",
+    "interval": [
+      0.2,
+      0.2
+    ]
+  },
+  "N20_srs4_all_tied": {
+    "configuration_id": "262358cc8cfb575dd09cd9befced6889faedebee3e4e9e5fe5e0538ce12912c0",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 0.25,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      0.02639320225002103,
+      0.622677996249965
+    ]
+  },
+  "N20_unequal2x2_all_tied": {
+    "configuration_id": "cd9599f04c8fdbd9ecd243cbdf47bef278fdc6cccdf199f9c98497aafe3637e5",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 0.4,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      0.025834261322605863,
+      0.7741657386773941
+    ]
+  },
+  "N20_census_all_tied": {
+    "configuration_id": "dabee7e4f6da5f36ea0f9437b5ba80fa810e129d0f7a1d89270f9dc99be15f51",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 0.05,
+    "status": "census_exact",
+    "interval": [
+      0.05,
+      0.05
+    ]
+  },
+  "N50_srs4_unique": {
+    "configuration_id": "cc4f69973a435d84ada791608868d82b4957b2467b7b7fbd07d0a36f77ccd281",
+    "production_interval_matches_support_lookup": true,
+    "replicates": 2000,
+    "seed": 2026102601,
+    "point": 1.0,
+    "status": "complete_reference_design_approximation",
+    "interval": [
+      1.0,
+      1.0
+    ]
+  }
+}

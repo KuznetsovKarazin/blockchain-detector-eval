@@ -1,0 +1,18 @@
+{
+  "purpose": "Verify exact-byte-loader amendment under optimized Python and record actual blocked current inputs, without fits/scoring or human judgments.",
+  "source_hashes": {
+    "integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "test_preflight.py": "1c320fcd10776e2093a4f2b4521ae44c6beda979a1a0376ec4d064e3a4093f7b",
+    "prepare_current_binding.py": "b859f364ed425ed17cb53a1709fcc08f12d0a6f4b4ce9666aabe27d1286fc966",
+    "conftest.py": "033f75d5e95370c2c5fa8f65f5e78ee217f0e26798366a38509fdb8e54378636"
+  },
+  "synthetic_tests": "test_preflight.py, all 30 tests, python -O",
+  "actual_checks": [
+    "setup integrity",
+    "begin_scoring denial before training-label reads"
+  ],
+  "actual_binding_path": "papers/security_evaluation/revision1/external_protocol/orchestration_v1/current_binding_20261026_v2/binding.json",
+  "expected_binding_sha256": "352de7c7b88d84cedfa1659739920207d3d82c17612f6a83653acf56e2802de2",
+  "real_fits_scores_human_judgments_allowed": false
+}

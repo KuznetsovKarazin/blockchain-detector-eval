@@ -1,0 +1,62 @@
+{
+  "schema": "synthetic_paired_metrics_receipt_v2",
+  "status": "complete_synthetic_only",
+  "prepared_utc": "2026-10-26T13:32:50.418551+00:00",
+  "config_sha256": "fa799b86cbe1fdc57c831bb5953e82c997a57769379ed7bb15fc24958991f6b8",
+  "source_hashes": {
+    "performance_v2/performance.py": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "performance_v2/run_synthetic.py": "ae9702193c932aafa12adc4ca2ae3023954178767c3c9cc6207fd4201ea4b123",
+    "performance_v2/test_performance.py": "7aa663296fe0f866580d3d8827e2e69d18fd0a5e1c16eaa962f3ea83759cc8e2",
+    "performance_v2/README.md": "7c48f8662dc11f9048a4fdb415fc44df6e2a0b098b574dc41a60284c48d4a12e",
+    "performance_v2/REFERENCES.json": "4342fbf429c1bc079a3799900bb4b00a9c415fbd61ecaa66bbf86e68e5d6839b",
+    "performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "performance_v1/synthetic_inputs.py": "a879f974eac2c06bb30a98a9a57598ecc588a51e47810f2aeb4d0f9632abd99e",
+    "performance_v1/REFERENCES.json": "09083f4a0f71e007d85afb597c4fa0da27263e7da403d4cb57ce43625211ad6a",
+    "review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  "protected_hashes": {
+    "performance_v1/test_performance.py": "8200c11f407fc2e3e59983bd335f441ded0244f043876e103bb4f6095c7cbd7b",
+    "performance_v1/README.md": "7d6ac5267cecd0a89092fc75d30a6e4d902a6b3a4fcc424a837293e2652435b9",
+    "performance_v1/independent_variance_enumeration.py": "6f282e25798f75e4aa53f44a77610cc5820af50664f586b133584d9bde23eacb",
+    "performance_v1/independent_variance_enumeration.json": "6883e28c4dfb287de3072f1076116a5d113bc697cb991406a542587c9da6e6ad",
+    "performance_v1/run_synthetic.py": "8b3b677c8bdd7c1ead9cffdf8f5e23d242faf8c662ff542e71e1544c6e9b8cae",
+    "performance_v1/REFERENCES.json": "09083f4a0f71e007d85afb597c4fa0da27263e7da403d4cb57ce43625211ad6a",
+    "performance_v1/synthetic_inputs.py": "a879f974eac2c06bb30a98a9a57598ecc588a51e47810f2aeb4d0f9632abd99e",
+    "performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "performance_v1/synthetic_check_20261026_v1/fictional_unknown_reference_results.json": "0bba40552982031350e84a6a083d5e5675402132884228bf12e1e28258929366",
+    "performance_v1/synthetic_check_20261026_v1/config.json": "fde4c7446509d6b8998a469fceb9fb1f4d8401d4a65d3de53b2fd481daae49c4",
+    "performance_v1/synthetic_check_20261026_v1/fictional_complete_reference_results.json": "d3edb3e5732fe8b3be66b29e3409fdab2f370e23b8082a350a36d7fc62427bef",
+    "performance_v1/synthetic_check_20261026_v1/receipt.json": "17bafc6ed8294c32305e480d1a9424f8dc62ef0a12b6c6187286d64f06495b85",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/test_performance.py": "8200c11f407fc2e3e59983bd335f441ded0244f043876e103bb4f6095c7cbd7b",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/README.md": "7d6ac5267cecd0a89092fc75d30a6e4d902a6b3a4fcc424a837293e2652435b9",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/run_synthetic.py": "8b3b677c8bdd7c1ead9cffdf8f5e23d242faf8c662ff542e71e1544c6e9b8cae",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/REFERENCES.json": "09083f4a0f71e007d85afb597c4fa0da27263e7da403d4cb57ce43625211ad6a",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/synthetic_inputs.py": "a879f974eac2c06bb30a98a9a57598ecc588a51e47810f2aeb4d0f9632abd99e",
+    "performance_v1/synthetic_check_20261026_v1/source_snapshot/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6",
+    "validate_gate.py": "ceb8730ce451950f2981548d5e87db8d14608258ab9f73fe80f7076476594a9b",
+    "review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "completed_utc": "2026-10-26T13:33:57.877548+00:00",
+  "actual_external_scores_read_or_created": false,
+  "actual_human_keys_or_judgments_opened": false,
+  "model_fits": 0,
+  "protected_artifacts_unchanged": true,
+  "prospective_study_freeze": false,
+  "execution_gate_override": false,
+  "output_hashes": {
+    "fictional_complete_scores.json": "90fd9657d6fe9327149a4ce1d76c7989bd5137c7907d2e2621a3a90302f5948f",
+    "fictional_unknown_inside_common.json": "12babaa3b9d2041b24fe172c901e35fb9c2323384063201cfe45d3d1d2b73307",
+    "fictional_mixed_failures.json": "6977aa4b74dac65704d16c5a17d6a71d13c04f92828d2688138ff40cbb18945d",
+    "fictional_unknown_outside_common.json": "91983ed9424ce616b946e5364117ebbc173e4031fedf75c2743c9362720dc95a"
+  }
+}

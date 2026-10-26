@@ -1,0 +1,20 @@
+{
+  "purpose": "Compile exact trusted dependency source bytes instead of accepting Python import/bytecode cache for gate and review estimator. No change to statistical definitions, scientific gates, model features or parameters.",
+  "source_before": {
+    "integrity_preflight.py": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890",
+    "validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "test_preflight.py": "cb4d83a44b8a4dfc9937413d5cff4af05c40ea7d837e890165bf8e5982e9e671",
+    "prepare_current_binding.py": "5c553a388fff0106f7dbc65e89b524f3cc2100e6b6293cf1a62eff5272eabddd"
+  },
+  "preserve": [
+    "current_binding_20261026_v1",
+    "../model_worker_v1/synthetic_check_20261026_v1"
+  ],
+  "planned_tests": [
+    "same timestamp and size stale bytecode bypass",
+    "preloaded module cache bypass",
+    "existing owner and independent integrity tests"
+  ],
+  "real_human_judgments": 0,
+  "real_external_fits_or_scores": 0
+}

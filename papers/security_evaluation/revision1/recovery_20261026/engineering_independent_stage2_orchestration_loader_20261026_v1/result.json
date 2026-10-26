@@ -1,0 +1,24 @@
+{
+  "schema": "independent_B_stage2_synthetic_result_v1",
+  "component": "orchestration_loader",
+  "passed": true,
+  "returncode": 0,
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/loader_amendment_20261026_v1/plan_before_amendment.json": "390e7c3eb87fd34a2a7085834351b6c74b93fbd6e73bdaa2124bcc0316d83099",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/test_preflight.py": "1c320fcd10776e2093a4f2b4521ae44c6beda979a1a0376ec4d064e3a4093f7b",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/recovery_20261026/conftest.py": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d",
+    "papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_orchestration.py": "798ba4169df80d0bc765356979a1b25161917e7fbc793e112138090c2b912ed9",
+    "papers/security_evaluation/revision1/recovery_20261026/test_orchestration_loader_amendment.py": "3ff88e3c5845beaeb1159d60d4e104b42a84b1592d607865835340a991b75ceb"
+  },
+  "elapsed_seconds": 14.071877929000038,
+  "plan_sha256": "cde2a599147781a43f167f56729bfc9d90b35d7b74a9e62c443e2c7333abf830",
+  "stdout_sha256": "a49f0a648a81b3f31991bc500ff7066f9ae14b7a50b50c3b0ad5293f8355d7d9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "real_operations_executed": 0,
+  "synthetic_inputs_only": true
+}

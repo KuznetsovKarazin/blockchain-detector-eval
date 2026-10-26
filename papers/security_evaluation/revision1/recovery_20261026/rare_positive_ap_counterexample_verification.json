@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "synthetic_only": true,
+  "source_code_sha256": "fe571d206c3c8dc820c902022cf6ca4c54f1a8bb5e7d9239a099c7b1f695ab13",
+  "scenario_sha256": "f6b165ff89891348eeae2cf4e689b50d4c7a3f17faa181e36fbddf905968e9b7",
+  "derivation": "Conditional on positive selection, no sampled tied negative has probability C(15,3)/C(19,3); it forces every AP=1 although population AP=1/5.",
+  "true_population_AP": 0.2,
+  "forced_miss_sample_states": 455,
+  "forced_miss_fraction_conditional": 0.4695562435500516,
+  "exact_sample_states": 4845,
+  "issued_sample_states": 969,
+  "covered_sample_states": 514,
+  "coverage_conditional_on_issued": 0.5304437564499485,
+  "unconditional_issued_and_covering_probability": 0.10608875128998968,
+  "conditional_cases": [
+    {
+      "sampled_tied_negatives": 0,
+      "positive_included_sample_states": 455,
+      "exact_bootstrap_ordered_states": 64,
+      "interval": [
+        1.0,
+        1.0
+      ],
+      "covers_population_AP": false
+    },
+    {
+      "sampled_tied_negatives": 1,
+      "positive_included_sample_states": 420,
+      "exact_bootstrap_ordered_states": 64,
+      "interval": [
+        0.04066303097567131,
+        0.9593369690243286
+      ],
+      "covers_population_AP": true
+    },
+    {
+      "sampled_tied_negatives": 2,
+      "positive_included_sample_states": 90,
+      "exact_bootstrap_ordered_states": 64,
+      "interval": [
+        0.027108687317114206,
+        0.9218516853864834
+      ],
+      "covers_population_AP": true
+    },
+    {
+      "sampled_tied_negatives": 3,
+      "positive_included_sample_states": 4,
+      "exact_bootstrap_ordered_states": 64,
+      "interval": [
+        0.02639320225002103,
+        0.622677996249965
+      ],
+      "covers_population_AP": true
+    }
+  ],
+  "estimator_code_imported": false,
+  "real_data_read": false
+}

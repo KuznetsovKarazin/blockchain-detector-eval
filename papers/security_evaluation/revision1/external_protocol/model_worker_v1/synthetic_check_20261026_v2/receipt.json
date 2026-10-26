@@ -1,0 +1,271 @@
+{
+  "actual_external_fits": 0,
+  "actual_external_scores": 0,
+  "actual_training_label_key_reads": 0,
+  "all_resume_checks_no_refit": true,
+  "completed_utc": "2026-10-26T14:12:58.583385+00:00",
+  "config_sha256": "13418e3538db2cbe9788bd29fee9d4b54028b3263aa69e17a63dae2b0f2d159b",
+  "elapsed_seconds": 44.73531503599952,
+  "execution_gate_override": false,
+  "jobs": [
+    {
+      "job_id": "raw_tfidf_lr:reentrancy:0",
+      "receipt": "jobs/raw_tfidf_lr__reentrancy__0/receipt.json",
+      "receipt_sha256": "19d424157618c4b0eb4e686bc6e23d776b5fcdda13fbe5c48047f27f44a860ed",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "raw_tfidf_lr:unchecked:0",
+      "receipt": "jobs/raw_tfidf_lr__unchecked__0/receipt.json",
+      "receipt_sha256": "e72ce3d4fd27fb804140ba27d253ce850ce3c1fb736af5aab2c7ae2272f057c0",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "normalized_tfidf_lr:reentrancy:0",
+      "receipt": "jobs/normalized_tfidf_lr__reentrancy__0/receipt.json",
+      "receipt_sha256": "a27aa5e7ff58e722c39c9491499d2c30b6f1c7b8fe7ece982c8aae3ecdc78c52",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "normalized_tfidf_lr:unchecked:0",
+      "receipt": "jobs/normalized_tfidf_lr__unchecked__0/receipt.json",
+      "receipt_sha256": "8e019c01a011475c1321462089ef880737602fef8987fe6a59b155829548e8e9",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:reentrancy:0",
+      "receipt": "jobs/pattern_rf__reentrancy__0/receipt.json",
+      "receipt_sha256": "323fe9502f9ce6938ee18587b9afd9b75297598613066b6228090046a532781b",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:reentrancy:1",
+      "receipt": "jobs/pattern_rf__reentrancy__1/receipt.json",
+      "receipt_sha256": "febef699a575d0f8e2dce83d1fd3b3a7c92b2e72cc12c6a241dba361eb9660d4",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:reentrancy:2",
+      "receipt": "jobs/pattern_rf__reentrancy__2/receipt.json",
+      "receipt_sha256": "b1de6c9b5ad88292c0dde43e3a2132946b39710460067818bb92f332208f4cae",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:reentrancy:3",
+      "receipt": "jobs/pattern_rf__reentrancy__3/receipt.json",
+      "receipt_sha256": "1f9ecb3ee95f8ec68961b074c65eb1711cb2bb6a875f06d364dd5c12d813f950",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:reentrancy:4",
+      "receipt": "jobs/pattern_rf__reentrancy__4/receipt.json",
+      "receipt_sha256": "24900712e621d0e1822160b8e9522b677b8ca41095f46786e81a0f69a0d191e1",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:unchecked:0",
+      "receipt": "jobs/pattern_rf__unchecked__0/receipt.json",
+      "receipt_sha256": "768ba713c93f08fb468fdaa0b833831d31a7368feab0816e86f79bef20942a77",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:unchecked:1",
+      "receipt": "jobs/pattern_rf__unchecked__1/receipt.json",
+      "receipt_sha256": "f4085cf5b90802bc9112aff98900c6d7a4214cd5512baddb89235a1848c088ef",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:unchecked:2",
+      "receipt": "jobs/pattern_rf__unchecked__2/receipt.json",
+      "receipt_sha256": "f21e511083b99dcc13187bdc2de4b618144e93bf349d27f82e5d4551bd0c5137",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:unchecked:3",
+      "receipt": "jobs/pattern_rf__unchecked__3/receipt.json",
+      "receipt_sha256": "9ef592f8bb624e213d0431adad29667f6a7a5f689a2dfcd8ac9d025cc8cfd0a8",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_rf:unchecked:4",
+      "receipt": "jobs/pattern_rf__unchecked__4/receipt.json",
+      "receipt_sha256": "8642e966a822f1a079c68283934f46b0543c6201ebb8386e3d9c6a186be17d13",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:reentrancy:0",
+      "receipt": "jobs/pattern_lgbm__reentrancy__0/receipt.json",
+      "receipt_sha256": "aa60e1500b94c1c6b6118355e860e531fa693c4e601b5d83071f3fc2e7c6d1da",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:reentrancy:1",
+      "receipt": "jobs/pattern_lgbm__reentrancy__1/receipt.json",
+      "receipt_sha256": "002d79887d16bba500ef1146906df0b4bcc721925835fabbbdf566adfdf03f63",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:reentrancy:2",
+      "receipt": "jobs/pattern_lgbm__reentrancy__2/receipt.json",
+      "receipt_sha256": "d61d090dc6895bdd192f2f18cffc98194cd9b006d5821e64f2288cda6db156de",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:reentrancy:3",
+      "receipt": "jobs/pattern_lgbm__reentrancy__3/receipt.json",
+      "receipt_sha256": "77db2538eb3419f15de4b32bfe3b312cd151372e386d9e2a3e3cade562fa97a2",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:reentrancy:4",
+      "receipt": "jobs/pattern_lgbm__reentrancy__4/receipt.json",
+      "receipt_sha256": "d572d930997355e63ebb948dd65e3daa0176c2b62126c858df36e4ff6069eb6c",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:unchecked:0",
+      "receipt": "jobs/pattern_lgbm__unchecked__0/receipt.json",
+      "receipt_sha256": "87774c2bd03da01e585e32c773dc501a926faf05a76c54d44c8741284e4c1096",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:unchecked:1",
+      "receipt": "jobs/pattern_lgbm__unchecked__1/receipt.json",
+      "receipt_sha256": "a68d3f5c207a20ade20cff24e41256136baaff1a73e314bab4ba8d523d3efc0c",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:unchecked:2",
+      "receipt": "jobs/pattern_lgbm__unchecked__2/receipt.json",
+      "receipt_sha256": "626a7a2e4060d6a2ed6d88f7bacb915da0759f1f91f83871aa41b9fab0fca4d1",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:unchecked:3",
+      "receipt": "jobs/pattern_lgbm__unchecked__3/receipt.json",
+      "receipt_sha256": "a13c4030533f3d843d42f76994c773f8ce1c6c4d5fff1db5790577a856a5ee42",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    },
+    {
+      "job_id": "pattern_lgbm:unchecked:4",
+      "receipt": "jobs/pattern_lgbm__unchecked__4/receipt.json",
+      "receipt_sha256": "0fecce46839783079af7bb0b175dd0a81a13538767c65d2206c2fbf2aa189a29",
+      "resume_verified_no_refit": true,
+      "status_counts": {
+        "ok": 4,
+        "preprocessing_error": 2
+      }
+    }
+  ],
+  "prospective_study_freeze": false,
+  "schema": "synthetic_model_worker_engineering_receipt_v1",
+  "source_sha256": {
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/README.md": "cdd17ecf78bf0edf5528c5eb371dea1034393d14408ae1932653351baae0b71f",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/run_synthetic.py": "c45e3f0f9f119a2d799024d694b791eb9cbf27e3873c3046b5fec49b1ab9613d",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/test_worker.py": "4a124bf9782d81d7b88c631a37a187c9541209016b25c46799d04b911fc794eb",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "status": "complete_synthetic_only",
+  "synthetic_fits": 24,
+  "synthetic_score_rows": 144
+}

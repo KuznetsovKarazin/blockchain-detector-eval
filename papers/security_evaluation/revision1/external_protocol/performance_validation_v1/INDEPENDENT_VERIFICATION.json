@@ -1,0 +1,24 @@
+{
+  "schema": "independent_synthetic_ap_validation_audit_v1",
+  "status": "pass",
+  "auditor_sha256": "52ff5df051a764b169b5531221f181af42db6c8c99edfa15fa7ebd6bfe39cfbb",
+  "design_sha256": "7ba5af80247414d1769bcdfb3e0323ed475332a3322464f0a4ec2f5058fedc35",
+  "configuration_files_checked": 606,
+  "scalar_weighted_ap_checks": 4495,
+  "ordered_bootstrap_sequences_checked": 10347,
+  "all_sampling_states_reenumerated": 795934,
+  "summary_rows_recomputed": 236,
+  "checkpoint_file_hashes_checked": 665,
+  "analytical_counterexample": {
+    "scenario": "N20_srs4_blocks5_one_top",
+    "all_samples": 4845,
+    "positive_included_samples": 969,
+    "singleton_top_tie_samples": 455,
+    "covered_samples": 514,
+    "conditional_coverage_fraction": "514/969",
+    "unconditional_issued_covering_fraction": "514/4845",
+    "reason": "If positive is sampled without any other top-tie member, every positive-weight replicate ranks it alone at the top: AP=1 and CI=[1,1], while true AP=1/5."
+  },
+  "no_real_labels_scores_or_sources_used": true,
+  "actual_external_design_coverage_estimated": false
+}

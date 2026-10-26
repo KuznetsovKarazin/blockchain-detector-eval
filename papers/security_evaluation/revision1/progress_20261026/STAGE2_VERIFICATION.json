@@ -1,0 +1,23 @@
+{
+  "schema": "article1_stage2_verification_v1",
+  "status": "pass",
+  "unique_tests_this_combined_run": 183,
+  "junit_path": "papers/security_evaluation/revision1/progress_20261026/combined_stage2_tests.xml",
+  "junit_sha256": "97df27c6b64f38016ff74c910a594ab6e0a26a3c2cf9b2ed8f98a7bfb1a43853",
+  "prior_recorded_tests": 251,
+  "prior_receipt": "papers/security_evaluation/revision1/recovery_20261026/FINAL_VERIFICATION_20261026.json",
+  "prior_tests_rerun_in_this_combined_run": false,
+  "new_corpus_model_fits": 0,
+  "external_model_scores": 0,
+  "human_judgments": 0,
+  "corpus_compiler_files": 2689,
+  "corpus_compiler_attempts": 3514,
+  "corpus_compiler_success_files": 2137,
+  "slither_corpus_scans": 0,
+  "scope": "Code/synthetic tests and separately recorded real compiler-only readiness; automated checks are not human review.",
+  "additional_post_loader_independent_receipt": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/result.json",
+  "additional_post_loader_tests": 21,
+  "additional_post_loader_unique_new_tests": 4,
+  "additional_post_loader_repeated_tests": 17,
+  "compiler_output_review": "papers/security_evaluation/revision1/recovery_20261026/compiler_execution_review_20261026_v1/result.json"
+}

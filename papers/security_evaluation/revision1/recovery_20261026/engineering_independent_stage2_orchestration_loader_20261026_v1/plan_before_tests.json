@@ -1,0 +1,39 @@
+{
+  "schema": "independent_B_stage2_synthetic_check_v1",
+  "component": "orchestration_loader",
+  "frozen_utc": "2026-10-26T14:19:23.722066+00:00",
+  "command": [
+    "/tmp/security-recovery-repo/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "papers/security_evaluation/revision1/recovery_20261026/test_orchestration_loader_amendment.py"
+  ],
+  "source_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/loader_amendment_20261026_v1/plan_before_amendment.json": "390e7c3eb87fd34a2a7085834351b6c74b93fbd6e73bdaa2124bcc0316d83099",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/test_preflight.py": "1c320fcd10776e2093a4f2b4521ae44c6beda979a1a0376ec4d064e3a4093f7b",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/recovery_20261026/conftest.py": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d",
+    "papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_orchestration.py": "798ba4169df80d0bc765356979a1b25161917e7fbc793e112138090c2b912ed9",
+    "papers/security_evaluation/revision1/recovery_20261026/test_orchestration_loader_amendment.py": "3ff88e3c5845beaeb1159d60d4e104b42a84b1592d607865835340a991b75ceb"
+  },
+  "reviewed_main_sha256": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+  "synthetic_inputs_only": true,
+  "real_corpus_compilation": false,
+  "real_model_fitting": false,
+  "real_scores_or_human_answers": false,
+  "protocol_freeze_or_gate_override": false,
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "pytest": "8.4.2",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0"
+    }
+  }
+}

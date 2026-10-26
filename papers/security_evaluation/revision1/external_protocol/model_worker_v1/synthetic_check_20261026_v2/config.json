@@ -1,0 +1,209 @@
+{
+  "actual_external_fits_or_scores": false,
+  "actual_training_label_key_reads": false,
+  "created_utc": "2026-10-26T14:12:13.449836+00:00",
+  "environment": {
+    "packages": {
+      "joblib": "1.5.3",
+      "lightgbm": "4.6.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0",
+      "threadpoolctl": "3.6.0"
+    },
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "execution_gate_override": false,
+  "expected_preprocessing_failures_per_job": 2,
+  "expected_success_per_job": 4,
+  "jobs": [
+    {
+      "class": "reentrancy",
+      "job_id": "raw_tfidf_lr:reentrancy:0",
+      "kind": "learned",
+      "method": "raw_tfidf_lr",
+      "seed": 0
+    },
+    {
+      "class": "unchecked",
+      "job_id": "raw_tfidf_lr:unchecked:0",
+      "kind": "learned",
+      "method": "raw_tfidf_lr",
+      "seed": 0
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "normalized_tfidf_lr:reentrancy:0",
+      "kind": "learned",
+      "method": "normalized_tfidf_lr",
+      "seed": 0
+    },
+    {
+      "class": "unchecked",
+      "job_id": "normalized_tfidf_lr:unchecked:0",
+      "kind": "learned",
+      "method": "normalized_tfidf_lr",
+      "seed": 0
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_rf:reentrancy:0",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 0
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_rf:reentrancy:1",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 1
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_rf:reentrancy:2",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 2
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_rf:reentrancy:3",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 3
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_rf:reentrancy:4",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 4
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_rf:unchecked:0",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 0
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_rf:unchecked:1",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 1
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_rf:unchecked:2",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 2
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_rf:unchecked:3",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 3
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_rf:unchecked:4",
+      "kind": "learned",
+      "method": "pattern_rf",
+      "seed": 4
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_lgbm:reentrancy:0",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 0
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_lgbm:reentrancy:1",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 1
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_lgbm:reentrancy:2",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 2
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_lgbm:reentrancy:3",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 3
+    },
+    {
+      "class": "reentrancy",
+      "job_id": "pattern_lgbm:reentrancy:4",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 4
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_lgbm:unchecked:0",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 0
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_lgbm:unchecked:1",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 1
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_lgbm:unchecked:2",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 2
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_lgbm:unchecked:3",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 3
+    },
+    {
+      "class": "unchecked",
+      "job_id": "pattern_lgbm:unchecked:4",
+      "kind": "learned",
+      "method": "pattern_lgbm",
+      "seed": 4
+    }
+  ],
+  "prospective_study_freeze": false,
+  "purpose": "built_in_fictional_records_only",
+  "schema": "synthetic_model_worker_engineering_config_v1",
+  "source_hashes": {
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/README.md": "cdd17ecf78bf0edf5528c5eb371dea1034393d14408ae1932653351baae0b71f",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/run_synthetic.py": "c45e3f0f9f119a2d799024d694b791eb9cbf27e3873c3046b5fec49b1ab9613d",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/test_worker.py": "4a124bf9782d81d7b88c631a37a187c9541209016b25c46799d04b911fc794eb",
+    "papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "synthetic_external_files": 6,
+  "synthetic_training_files": 12
+}

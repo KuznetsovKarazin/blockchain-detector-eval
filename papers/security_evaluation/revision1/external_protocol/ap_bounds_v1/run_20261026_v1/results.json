@@ -1,0 +1,259 @@
+{
+  "completed_utc": "2026-10-26T13:52:33.671773+00:00",
+  "config_sha256": "5cbd7c8480ed964d3dbf290b65ccb56e10dba28cd05ed8dcabec8f1727318bea",
+  "counterexamples": {
+    "earliest_assignment_ap": {
+      "decimal_approximation": 0.5666666666666667,
+      "denominator": "30",
+      "numerator": "17"
+    },
+    "five_file_exact_bounds": {
+      "by_total_positives": [
+        {
+          "lower_ap": {
+            "decimal_approximation": 0.4,
+            "denominator": "5",
+            "numerator": "2"
+          },
+          "total_positives": 2,
+          "upper_ap": {
+            "decimal_approximation": 0.4,
+            "denominator": "5",
+            "numerator": "2"
+          }
+        },
+        {
+          "lower_ap": {
+            "decimal_approximation": 0.5666666666666667,
+            "denominator": "30",
+            "numerator": "17"
+          },
+          "total_positives": 3,
+          "upper_ap": {
+            "decimal_approximation": 0.6,
+            "denominator": "5",
+            "numerator": "3"
+          }
+        },
+        {
+          "lower_ap": {
+            "decimal_approximation": 0.725,
+            "denominator": "40",
+            "numerator": "29"
+          },
+          "total_positives": 4,
+          "upper_ap": {
+            "decimal_approximation": 0.725,
+            "denominator": "40",
+            "numerator": "29"
+          }
+        }
+      ],
+      "census_ap": null,
+      "common_denominator_bits": 4,
+      "defined_completions_exist": true,
+      "identified_ap": null,
+      "kind": "sharp_finite_population_completion_bounds_not_confidence_interval",
+      "known_positives": 2,
+      "lower_ap": {
+        "decimal_approximation": 0.4,
+        "denominator": "5",
+        "numerator": "2"
+      },
+      "lower_completion": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "n": 5,
+      "tie_groups": 2,
+      "transitions": 6,
+      "undefined_possible": false,
+      "unknown_count": 2,
+      "upper_ap": {
+        "decimal_approximation": 0.725,
+        "denominator": "40",
+        "numerator": "29"
+      },
+      "upper_completion": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    "five_file_partial_labels": [
+      null,
+      0,
+      1,
+      1,
+      null
+    ],
+    "five_file_scores": [
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "latest_assignment_ap": {
+      "decimal_approximation": 0.6,
+      "denominator": "5",
+      "numerator": "3"
+    },
+    "six_file_fixed_three_min": {
+      "decimal_approximation": 0.4444444444444444,
+      "denominator": "9",
+      "numerator": "4"
+    },
+    "six_file_latest_three_ap": {
+      "decimal_approximation": 0.5,
+      "denominator": "2",
+      "numerator": "1"
+    },
+    "status": "pass"
+  },
+  "edge_checks": {
+    "additional_edge_cases": 4,
+    "invalid_inputs_rejected": 9,
+    "status": "pass"
+  },
+  "elapsed_seconds": 15.929474578999361,
+  "empirical_scores_used": 0,
+  "exhaustive": {
+    "binary_completions": 149796,
+    "by_n": [
+      {
+        "all_binary_completions_checked": 4,
+        "n": 1,
+        "ordered_tie_patterns": 1,
+        "partial_cases": 3
+      },
+      {
+        "all_binary_completions_checked": 32,
+        "n": 2,
+        "ordered_tie_patterns": 2,
+        "partial_cases": 18
+      },
+      {
+        "all_binary_completions_checked": 256,
+        "n": 3,
+        "ordered_tie_patterns": 4,
+        "partial_cases": 108
+      },
+      {
+        "all_binary_completions_checked": 2048,
+        "n": 4,
+        "ordered_tie_patterns": 8,
+        "partial_cases": 648
+      },
+      {
+        "all_binary_completions_checked": 16384,
+        "n": 5,
+        "ordered_tie_patterns": 16,
+        "partial_cases": 3888
+      },
+      {
+        "all_binary_completions_checked": 131072,
+        "n": 6,
+        "ordered_tie_patterns": 32,
+        "partial_cases": 23328
+      }
+    ],
+    "max_n": 6,
+    "partial_cases": 27993,
+    "positive_binary_completions": 147066,
+    "status": "pass"
+  },
+  "human_labels_used": 0,
+  "large_synthetic": {
+    "cases": [
+      {
+        "common_denominator_bits": 2867,
+        "elapsed_seconds": 2.2983624219996273,
+        "lower_ap": {
+          "decimal_approximation": 0.0005005005005005005,
+          "denominator": "1998",
+          "numerator": "1"
+        },
+        "lower_witness_positives": 1,
+        "n": 1998,
+        "name": "unique_scores_all_unknown",
+        "tie_groups": 1998,
+        "transitions": 3994002,
+        "undefined_possible": true,
+        "upper_ap": {
+          "decimal_approximation": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        "upper_witness_positives": 1
+      },
+      {
+        "common_denominator_bits": 11,
+        "elapsed_seconds": 0.25334591399951023,
+        "lower_ap": {
+          "decimal_approximation": 0.0005005005005005005,
+          "denominator": "1998",
+          "numerator": "1"
+        },
+        "lower_witness_positives": 1,
+        "n": 1998,
+        "name": "two_tie_groups_all_unknown",
+        "tie_groups": 2,
+        "transitions": 1001000,
+        "undefined_possible": true,
+        "upper_ap": {
+          "decimal_approximation": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        "upper_witness_positives": 999
+      },
+      {
+        "common_denominator_bits": 11,
+        "elapsed_seconds": 0.006520502000057604,
+        "lower_ap": {
+          "decimal_approximation": 0.0005005005005005005,
+          "denominator": "1998",
+          "numerator": "1"
+        },
+        "lower_witness_positives": 1,
+        "n": 1998,
+        "name": "one_tie_group_all_unknown",
+        "tie_groups": 1,
+        "transitions": 1999,
+        "undefined_possible": true,
+        "upper_ap": {
+          "decimal_approximation": 1.0,
+          "denominator": "1",
+          "numerator": "1"
+        },
+        "upper_witness_positives": 1998
+      }
+    ],
+    "scope": "synthetic computational feasibility, not empirical performance",
+    "status": "pass"
+  },
+  "permutations": {
+    "cases": 100,
+    "seed": 9137,
+    "status": "pass"
+  },
+  "python_version": "3.12.14",
+  "schema": "ap_completion_bounds_validation_results_v1",
+  "scope": "exact finite-population logical completion bounds, not confidence coverage",
+  "sklearn_agreement": {
+    "compared": 2667,
+    "comparison_tolerance": 1e-14,
+    "maximum_float_absolute_error": 1.1102230246251565e-16,
+    "sklearn_version": "1.8.0",
+    "status": "pass",
+    "tolerance_role": "cross-library floating display comparison only; DP endpoints remain exact Fractions"
+  },
+  "started_utc": "2026-10-26T13:52:17.742303+00:00",
+  "status": "pass"
+}

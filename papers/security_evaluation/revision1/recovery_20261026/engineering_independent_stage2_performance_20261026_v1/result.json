@@ -1,0 +1,23 @@
+{
+  "schema": "independent_B_stage2_synthetic_result_v1",
+  "component": "performance",
+  "passed": true,
+  "returncode": 0,
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "papers/security_evaluation/revision1/external_protocol/performance_v2/performance.py": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/recovery_20261026/conftest.py": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d",
+    "papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972",
+    "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_performance.py": "bb01aab94cdc5331f0972fee6d02902391c433c03a7356fb63abb0b373899966"
+  },
+  "elapsed_seconds": 4.502679272001842,
+  "plan_sha256": "bcb81e6c25fc8076191b73801f04049fde62d0b7f10a07fe55e951cba08e8f46",
+  "stdout_sha256": "2ee667a262098ae990978cf3043a4abce25989c2446dcb6e89b45641fc051cb2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "real_operations_executed": 0,
+  "synthetic_inputs_only": true
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "probability_review_effort_inventory_v1",
+  "case_source_copies": 180,
+  "unique_source_byte_streams": 170,
+  "physical_lines_case_weighted": {
+    "minimum": 2,
+    "median": 121.0,
+    "maximum": 3241,
+    "sum": 41778,
+    "at_least_1000_physical_lines": 6,
+    "at_least_5000_physical_lines": 0
+  },
+  "physical_lines_unique_files": {
+    "minimum": 2,
+    "median": 123.0,
+    "maximum": 3241,
+    "sum": 40543,
+    "at_least_1000_physical_lines": 6,
+    "at_least_5000_physical_lines": 0
+  },
+  "bytes_case_weighted": 1636847,
+  "bytes_unique_files": 1594131,
+  "semantics": "Physical lines include blanks/comments; not executable LOC or measured review time.",
+  "identity_census_included": false,
+  "sampling_or_population_changed": false,
+  "keys_or_judgments_read": false,
+  "human_judgments_produced": 0,
+  "source_body_disclosed": false,
+  "note": "Both specialists still assess every selected file-class case. No cases are replaced for length or convenience."
+}

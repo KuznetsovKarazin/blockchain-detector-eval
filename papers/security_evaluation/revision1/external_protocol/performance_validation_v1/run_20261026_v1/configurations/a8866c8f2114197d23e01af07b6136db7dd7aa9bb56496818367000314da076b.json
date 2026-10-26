@@ -1,0 +1,110 @@
+{
+  "key": [
+    [
+      [
+        "A",
+        16,
+        2
+      ],
+      [
+        "B",
+        4,
+        2
+      ]
+    ],
+    [
+      "B",
+      "B",
+      "A",
+      "A"
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      2,
+      1,
+      0
+    ]
+  ],
+  "point": 0.7666666666666667,
+  "sample_positive_count": 2,
+  "census": false,
+  "bootstrap_support_weights": [
+    [
+      0.585786437626905,
+      3.4142135623730954,
+      0.5166852264521172,
+      15.483314773547882
+    ],
+    [
+      3.4142135623730954,
+      0.585786437626905,
+      0.5166852264521172,
+      15.483314773547882
+    ],
+    [
+      0.585786437626905,
+      3.4142135623730954,
+      15.483314773547882,
+      0.5166852264521172
+    ],
+    [
+      3.4142135623730954,
+      0.585786437626905,
+      15.483314773547882,
+      0.5166852264521172
+    ]
+  ],
+  "support_multiplicities": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "support_denominator": 4,
+  "support_production_ap_values": [
+    0.8557554027998345,
+    0.19220761070766312,
+    0.9489074869727083,
+    0.8000347219569315
+  ],
+  "methods": {
+    "exact_support": {
+      "interval": [
+        0.19220761070766312,
+        0.9489074869727083
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    },
+    "mc_seed_2026102601": {
+      "interval": [
+        0.19220761070766312,
+        0.9489074869727083
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    },
+    "mc_seed_2026102602": {
+      "interval": [
+        0.19220761070766312,
+        0.9489074869727083
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    },
+    "mc_seed_2026102603": {
+      "interval": [
+        0.19220761070766312,
+        0.9489074869727083
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    }
+  }
+}

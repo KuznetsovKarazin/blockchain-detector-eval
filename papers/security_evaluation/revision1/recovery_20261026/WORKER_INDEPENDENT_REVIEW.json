@@ -1,0 +1,55 @@
+{
+  "schema": "independent_learned_worker_cache_hardening_review_v1",
+  "status": "pass_bounded_no_fit_review",
+  "worker_path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+  "worker_sha256": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83",
+  "owner_test_source_sha256": "4a124bf9782d81d7b88c631a37a187c9541209016b25c46799d04b911fc794eb",
+  "independent_test_source_sha256": "aa4d0f4543733d488c63daa8bbbc5d2b8a9273acca357b3655f64a8de46ed769",
+  "scope": [
+    "24 fixed learned configurations",
+    "ordered source/training-label identity",
+    "train-only vocabulary/scaler/model fit boundary",
+    "full external failure rows without numerical safe substitution",
+    "strict input/config/environment/artifact resume binding",
+    "import-time/cached-source drift detection",
+    "exact-source-byte loading independent of timestamp-valid pyc"
+  ],
+  "resolved_findings": [
+    {
+      "finding": "Cached worker/adapters may outlive source edits in a long-lived process",
+      "resolution": "Import-time worker SHA and cached adapter/dependency SHA checks; initial explicit dependency reload; installed/loaded version consistency"
+    },
+    {
+      "finding": "Standard loader reused timestamp/size-valid stale pyc despite changed source bytes",
+      "original_reproduction": "Temporary fictional module VALUE1 rewritten to VALUE2 with equal size/mtime returned1 under old loader",
+      "resolution": "Read bytes once; compile/execute those exact bytes in registered module; verify source unchanged; record loaded SHA; restore previous module on failure",
+      "independent_regression_passed": true
+    }
+  ],
+  "independent_execution": {
+    "tests_passed": 14,
+    "previously_existing_tests_selected": 11,
+    "new_independently_authored_tests": 3,
+    "tests_deselected": 13,
+    "duration_seconds": 4.3,
+    "model_fits": 0,
+    "corpus_sources_or_private_keys_opened": 0,
+    "command": "python -m pytest -q papers/security_evaluation/revision1/external_protocol/model_worker_v1/test_worker.py papers/security_evaluation/revision1/recovery_20261026/test_worker_independent_no_fit.py -k 'exact_24 or input_provenance or admission_denial or no_authorization_anchor or cached_source or source_drift or unpinned_cached or stale_bytecode or stale_pyc'"
+  },
+  "owner_suite_separately_reported": {
+    "tests_passed": 24,
+    "duration_seconds": 9.27,
+    "source_sha256": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83",
+    "includes_fictional_fit_tests": true,
+    "reported_by": "metrics agent",
+    "full_suite_independently_rerun": false,
+    "earlier_23_test_count": "Preceded the stale-pyc amendment; not the final full-suite count"
+  },
+  "durable_synthetic_job_runs": "Earlier24-job receipt preserved by owner; new-source24-job durable receipt is a separate owner verification, not included in this no-fit audit.",
+  "limitations": [
+    "Hash/provenance checks do not independently authenticate human reviewers or coordinator identity",
+    "This bounded code review does not authorize production execution or claim empirical external performance"
+  ],
+  "other_owned_source_files_modified": false,
+  "uploads_or_commits": 0
+}

@@ -1,0 +1,67 @@
+{
+  "configured_threads": {
+    "blas": 1,
+    "openmp": 4,
+    "tree_n_jobs": 4
+  },
+  "convergence_warning_n": 0,
+  "elapsed_seconds": 0.0850861229992006,
+  "failure": null,
+  "fit_started_utc": "2026-10-26T14:05:43.169000+00:00",
+  "observed_threadpools_during_fit_context": [
+    {
+      "architecture": "SkylakeX",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "architecture": "SkylakeX",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "threading_layer": "pthreads",
+      "user_api": "blas",
+      "version": "0.3.30"
+    },
+    {
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "user_api": "openmp",
+      "version": null
+    },
+    {
+      "filepath": "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "libgomp",
+      "user_api": "openmp",
+      "version": null
+    }
+  ],
+  "peak_RSS_MiB_cumulative_process": 180.7421875,
+  "peak_memory_scope": "Linux ru_maxrss cumulative process high-water mark; not isolated per-job allocation",
+  "process_cpu_seconds": 0.14034212500000365,
+  "scoring_completed_utc": "2026-10-26T14:05:43.262699+00:00",
+  "timings": {
+    "external_transform_seconds": 0.01739331299904734,
+    "fit_seconds": 0.04051062199869193,
+    "predict_seconds": 0.007146539999666857,
+    "training_preprocessing_seconds": 0.007965752000018256
+  },
+  "warnings": [
+    {
+      "category": "UserWarning",
+      "convergence_warning": false,
+      "message": "X does not have valid feature names, but LGBMClassifier was fitted with feature names",
+      "stage": "predict"
+    }
+  ]
+}

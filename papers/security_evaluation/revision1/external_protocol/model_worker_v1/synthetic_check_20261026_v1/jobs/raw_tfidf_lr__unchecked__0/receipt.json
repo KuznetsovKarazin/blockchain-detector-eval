@@ -1,0 +1,49 @@
+{
+  "artifact_sha256": {
+    "adapter.joblib": "3492722b0ad5bdca3f2618e8517613ab9840e3fbc0c6985ae1cafb5eecec0724",
+    "config.json": "e4bf55d04b8fab23fd8edbf00c9792ea1e37c1d38e739a441eaf2aacc3935168",
+    "fit_log.json": "ed986bda9458b2673c9c7fbef74c0ba5221c535762d10a0e9754226028741004",
+    "fitted_bundle.joblib": "07b12f3127a711d677b280c9beecaeabdb135cb1269a74bd488067c8c734e8e8",
+    "fitted_state.json": "cedd0416a51bb36ad67f333e3371aa6bdf63c0f92aff2685ff7241bb3b66a43d",
+    "model.joblib": "7a5ee9307e9358df9831e9e6344ca041a0e1698ead812aeeab3c46475cdcb9d9",
+    "preprocessing.json": "2b84ee9a421a0a0033acf6cb3b34d2ee8daff9686d19eac574d740985e95809a",
+    "scaler.joblib": "3e982c17f3e1a9ff612ba8b549398b95fdaf45c32c2a15e803e8952204dad914",
+    "scores.csv": "7923398de8f55004c69f3c9f7944de510468fb4b13c9fdc6043b8e6011fad64b",
+    "source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "source_snapshot/src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "binding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "config_sha256": "8db877a5828793aa80ae28b11670575c2c89a889396aa7b6ffe19df50d9f7884",
+  "external_rows": 6,
+  "fit_scope": "training_manifest_only",
+  "fit_started_utc": "2026-10-26T14:03:13.498843+00:00",
+  "human_identity_authenticated": false,
+  "job_id": "raw_tfidf_lr:unchecked:0",
+  "method_config_sha256": "f81048c79cb8da3aca4f4dd16febf44466e9268f3804af64aa9617c18cc475c9",
+  "reference_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "resume_verified_no_refit": false,
+  "schema": "external_B_learned_job_receipt_v1",
+  "scores_artifact": {
+    "path": "raw_tfidf_lr__unchecked__0/scores.csv",
+    "sha256": "7923398de8f55004c69f3c9f7944de510468fb4b13c9fdc6043b8e6011fad64b"
+  },
+  "scoring_completed_utc": "2026-10-26T14:03:13.750127+00:00",
+  "state_artifact": {
+    "path": "raw_tfidf_lr__unchecked__0/fitted_state.json",
+    "sha256": "cedd0416a51bb36ad67f333e3371aa6bdf63c0f92aff2685ff7241bb3b66a43d"
+  },
+  "status": "complete",
+  "status_counts": {
+    "ok": 4,
+    "preprocessing_error": 2
+  },
+  "synthetic_fixture": true,
+  "training_manifest_sha256": "d272e402014a9472f2b4f545e35f5ee454ca4c8bc5a3e47d869df5fd47c4e67e"
+}

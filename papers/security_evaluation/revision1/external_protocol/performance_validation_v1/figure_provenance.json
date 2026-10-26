@@ -1,0 +1,6 @@
+{
+  "source_summary_sha256": "2b03642ff4e19fcc49e85552cace452c3b92512ea7f01efbc799c643e4f3795f",
+  "script_sha256": "10c04ce17420185f686e8a4965f421ccf57164639479c7c5de51921b03bcbf44",
+  "all_main_non_census_positive_scenarios": 36,
+  "selection_rule": "complete N20 noncensus factorial; census/no-positive/N50 controls retained in full report"
+}

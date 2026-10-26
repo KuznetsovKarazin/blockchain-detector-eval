@@ -1,0 +1,87 @@
+{
+  "adapter": {
+    "path": "pattern_lgbm__reentrancy__1/adapter.joblib",
+    "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+  },
+  "adapter_state_after_external": {
+    "representation": "pattern43",
+    "scaler": "none",
+    "stateless": true
+  },
+  "adapter_state_before_external": {
+    "representation": "pattern43",
+    "scaler": "none",
+    "stateless": true
+  },
+  "artifact_root": "/tmp/security-recovery-repo/papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs",
+  "authorization": "BUILT_IN_FICTIONAL_TEST_NOT_REAL_EXECUTION",
+  "binding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "effective_model_parameters": {
+    "boosting_type": "gbdt",
+    "class_weight": "balanced",
+    "colsample_bytree": 0.8,
+    "importance_type": "split",
+    "learning_rate": 0.05,
+    "max_depth": -1,
+    "min_child_samples": 20,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 400,
+    "n_jobs": 4,
+    "num_leaves": 31,
+    "objective": null,
+    "random_state": 1,
+    "reg_alpha": 0.0,
+    "reg_lambda": 0.0,
+    "subsample": 0.8,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 1,
+    "verbosity": -1
+  },
+  "fit_scope": "training_manifest_only",
+  "fit_status": "ok",
+  "fitted_object": {
+    "path": "pattern_lgbm__reentrancy__1/fitted_bundle.joblib",
+    "sha256": "a24d2d8cb9d7d74241b3ee71f938dec969e615998a0404e9ed562cbf4e2fcb6d"
+  },
+  "job_id": "pattern_lgbm:reentrancy:1",
+  "method_config_sha256": "1c0c73acf2b492ad20a2c8f15600871cb6cd5c429e86c123a5a28bb48bc59d95",
+  "model": {
+    "path": "pattern_lgbm__reentrancy__1/model.joblib",
+    "sha256": "82e3d4f965095e73d305d7b415ee1351a01f364fff1f3041e566f70a6390c5b4"
+  },
+  "reference_event_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "scaler": "none_stateless_pattern43",
+  "schema": "external_B_fitted_state_binding_v1",
+  "synthetic_fixture": true,
+  "training_manifest_sha256": "d272e402014a9472f2b4f545e35f5ee454ca4c8bc5a3e47d869df5fd47c4e67e",
+  "training_node_ids": [
+    "synthetic:train:0",
+    "synthetic:train:1",
+    "synthetic:train:2",
+    "synthetic:train:3",
+    "synthetic:train:4",
+    "synthetic:train:5",
+    "synthetic:train:6",
+    "synthetic:train:7",
+    "synthetic:train:8",
+    "synthetic:train:9",
+    "synthetic:train:10",
+    "synthetic:train:11"
+  ],
+  "training_reference": "source-reported training findings; absence is proxy zero, not expert-confirmed negative",
+  "training_source_sha256": [
+    "4d26041b55b10272c5fab62e496418517a6a17d51c6a8c3b4d24e8952aa204d4",
+    "db2b8b1d5ecac8ab83670dbd0ff2b6cc54003044955ae8348537bca44215ff7e",
+    "677e627698c1e713b1ebae1695195854ee22b428b1e0f972e9cacc91890727e4",
+    "55efa5201d80bf4d1f913dbd8998dc7efb81665b92cbac33deb235613ceb3a5c",
+    "20db82be41b4e21829cce6fbe89d70d9970e2cf38fb9659856d6c3e224cfda45",
+    "2d25f868cd34464dd65a87a91a5904dfe65351d13222077701ef196ef3f4cca4",
+    "126f3637e3328bfb3baa08edd0990d1b3f7d841c925ce4cab43060b52aeed3fd",
+    "95560977a39accbefa93ece9964a9f912a784db1e47f29532343508d21966970",
+    "6087158a115db880d24b8910ad177b043a0fc327ee4bff2675fd11ce8d00f8e2",
+    "5530fc908a7a2d7d4cd09c40ef4bdfe6a1f7260694761515609dfb0a880fc0f6",
+    "c4d385c5037a7162e6a2daca6a948c34406fad4b4921ea92652f5aac3b1fc1ec",
+    "2d3efe5a5db52cea82a7518a698869b7c93c256b8eaec75eac4d1270f58e8f5a"
+  ]
+}

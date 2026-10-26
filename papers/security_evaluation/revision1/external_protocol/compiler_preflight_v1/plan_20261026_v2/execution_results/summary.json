@@ -1,0 +1,27 @@
+{
+  "annotation_files_read": false,
+  "compiler_attempts": 3514,
+  "detectors_executed": 0,
+  "files": 2689,
+  "model_scores": 0,
+  "models_fitted": 0,
+  "permit_sha256": "be72debdad85356477df7749ebd1b33dfc95b82ddb8e138410956294cfa3a70f",
+  "plan_sha256": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80",
+  "private_diagnostic_root": "data/derived/security_compiler_preflight_20261026_v2",
+  "scientific_scope": "Compiler-only declared-source-context coverage; no Slither/model/semantic readiness implication",
+  "slither_executions": 0,
+  "source_edits": false,
+  "status": "compiler_preflight_complete",
+  "status_counts": {
+    "compiler_error": 167,
+    "compiler_success": 2137,
+    "import_outside_snapshot": 4,
+    "import_syntax_unresolved": 1,
+    "missing_import": 336,
+    "missing_pragma": 32,
+    "no_compatible_catalog_release": 3,
+    "remote_or_absolute_import_forbidden": 5,
+    "unsupported_constraint": 4
+  },
+  "wall_seconds": 733.1089310790012
+}

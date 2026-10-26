@@ -1,0 +1,18 @@
+{
+  "arithmetic": "exact_integer_LCM_dynamic_programming_and_Fraction_endpoints",
+  "confidence_interval_claim": false,
+  "empirical_scores_used": 0,
+  "human_labels_used": 0,
+  "large_synthetic_n": 1998,
+  "max_exhaustive_n": 6,
+  "max_sklearn_n": 6,
+  "permutation_cases": 100,
+  "permutation_seed": 9137,
+  "prepared_date": "2026-10-26",
+  "prepared_utc": "2026-10-26T13:52:04.730525+00:00",
+  "schema": "ap_completion_bounds_synthetic_validation_v1",
+  "sources": {
+    "ap_bounds.py": "013c3db23e7ef737d2b9ad798e1f5ce8fa3ea1c20b80e8e82135c7fc4d51b2b4",
+    "validate_synthetic.py": "6da54ab33c6d3c89a4ab021f526a793ed968b2c94ddaf24b3ba6c048c3c92ba0"
+  }
+}

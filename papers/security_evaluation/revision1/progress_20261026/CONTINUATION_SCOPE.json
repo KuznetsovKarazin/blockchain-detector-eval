@@ -1,0 +1,27 @@
+{
+  "schema": "article1_continuation_scope_v1",
+  "date": "2026-10-26",
+  "baseline_commit": "2ddf6a27111b3c918075674d484a3f5a9fd00426",
+  "user_request": "real status and continue",
+  "active_work": [
+    "versioned full-frame failure/common-success metric policies",
+    "weighted recall and paired comparisons on shared survey replicates",
+    "strict provenance/schema/phase preflight without model dispatch",
+    "separately planned compiler-only source readiness",
+    "finite-population rare-positive AP interval diagnostics",
+    "coordinator semantic mapping source review"
+  ],
+  "unchanged_boundaries": {
+    "external_fitting_allowed": false,
+    "external_scoring_allowed": false,
+    "human_judgments_completed": 0,
+    "no_messages_or_submission": true,
+    "no_public_archive_retry_in_this_stage": true
+  },
+  "public_compressed_outputs_pending": {
+    "exact_recovered_gzip": 23,
+    "new_canonical_npz": 6,
+    "private_copy_saved": true
+  },
+  "baseline_tests_passed": 251
+}

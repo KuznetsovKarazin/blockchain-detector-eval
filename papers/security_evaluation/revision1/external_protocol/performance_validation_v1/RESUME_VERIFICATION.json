@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "scope": "Resume unchanged frozen driver on a separate complete copy; historical run remains immutable",
+  "files_checked": 676,
+  "unchanged_files": 675,
+  "changed_copy_metadata_only": [
+    "manifest.json"
+  ],
+  "numerical_summary_unchanged": true,
+  "new_scenarios_or_configurations": 0,
+  "original_summary_sha256": "2b03642ff4e19fcc49e85552cace452c3b92512ea7f01efbc799c643e4f3795f",
+  "copy_path": "data/derived/ap_validation_resume_check_20261026_v1",
+  "no_real_data_used": true
+}

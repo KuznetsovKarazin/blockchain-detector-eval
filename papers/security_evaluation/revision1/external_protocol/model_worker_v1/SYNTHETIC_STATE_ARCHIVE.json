@@ -1,0 +1,766 @@
+{
+  "scope": "Serialized states from wholly fictional worker verification only; no real corpus inputs or labels",
+  "files": [
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__reentrancy__0/adapter.joblib",
+      "bytes": 3393,
+      "sha256": "69e77c78f13ffc452de0732a3a2ee8ccadbea5940d46f7fc4f82b33da57d5194"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 4062,
+      "sha256": "de98ca9c8857c73d436eeab48baf8243349bf09cda27ce8a97541eb9a769ced8"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__reentrancy__0/model.joblib",
+      "bytes": 760,
+      "sha256": "83f1b95d63de30654df82355a24eca6142419c48e6d5d5bf757a062724e4d689"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__reentrancy__0/scaler.joblib",
+      "bytes": 1048,
+      "sha256": "44e7a12b9258372d407a661881cadbc3af00902f45f6fa36502d355ef3337911"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__unchecked__0/adapter.joblib",
+      "bytes": 3393,
+      "sha256": "69e77c78f13ffc452de0732a3a2ee8ccadbea5940d46f7fc4f82b33da57d5194"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__unchecked__0/fitted_bundle.joblib",
+      "bytes": 4061,
+      "sha256": "75152530ae37064b24ba8b780add2008179a3a02c11c607273eacde009f39730"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__unchecked__0/model.joblib",
+      "bytes": 760,
+      "sha256": "83f1b95d63de30654df82355a24eca6142419c48e6d5d5bf757a062724e4d689"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/normalized_tfidf_lr__unchecked__0/scaler.joblib",
+      "bytes": 1048,
+      "sha256": "44e7a12b9258372d407a661881cadbc3af00902f45f6fa36502d355ef3337911"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 2717,
+      "sha256": "2328d6cbdbe75a562a88f8caad57410d429accb6cb08bfe4c13f2f5e8405e5d7"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__0/model.joblib",
+      "bytes": 2553,
+      "sha256": "44b57ae3d3b22bcfc31e2d07191c1978bfb824f02dac71075ffc020f9c11a7fa"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__1/fitted_bundle.joblib",
+      "bytes": 2716,
+      "sha256": "a24d2d8cb9d7d74241b3ee71f938dec969e615998a0404e9ed562cbf4e2fcb6d"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__1/model.joblib",
+      "bytes": 2548,
+      "sha256": "82e3d4f965095e73d305d7b415ee1351a01f364fff1f3041e566f70a6390c5b4"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__2/fitted_bundle.joblib",
+      "bytes": 2715,
+      "sha256": "b1623c4fc7a3a40798e31f2a1a4c7a5357ea2747f352caa9b8da7d490df6d790"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__2/model.joblib",
+      "bytes": 2547,
+      "sha256": "a9ba123915f26d075980aa780a3ced5fd8d47cb3465eb2612ed352c81e30fd96"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/fitted_bundle.joblib",
+      "bytes": 2717,
+      "sha256": "154496b379d2e22e900a8386ad2d9d9d803556ac8cabd2a12b7b7e42ac991648"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/model.joblib",
+      "bytes": 2550,
+      "sha256": "32018cf5e4b038f94752a26342380c9a51c6cd00f33b5884620c81e157290380"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/fitted_bundle.joblib",
+      "bytes": 2717,
+      "sha256": "90fafcd1d6c64e7af33919de814d9e930abb6113710ded06fe147ca67ea5b1f1"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/model.joblib",
+      "bytes": 2547,
+      "sha256": "5f496ef78e8c4c22660ef71d954da695419d6a6ba140d77ba745fb3d35bd4fe7"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/fitted_bundle.joblib",
+      "bytes": 2714,
+      "sha256": "08ee6993d3e1f313abd86f7bfdb2f2ae1d7530df174153f554f7a4abea13ba1c"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/model.joblib",
+      "bytes": 2553,
+      "sha256": "44b57ae3d3b22bcfc31e2d07191c1978bfb824f02dac71075ffc020f9c11a7fa"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/fitted_bundle.joblib",
+      "bytes": 2712,
+      "sha256": "057a95ed059f26d9231a1f3d9e6f9074610f9f57fa7ed4c3c33f970139aebf24"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/model.joblib",
+      "bytes": 2548,
+      "sha256": "82e3d4f965095e73d305d7b415ee1351a01f364fff1f3041e566f70a6390c5b4"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/fitted_bundle.joblib",
+      "bytes": 2711,
+      "sha256": "c9a0914a87f6a4fcc44d6b57d92e75db51dd5cd6f34d0aeeae4d214311b6378a"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/model.joblib",
+      "bytes": 2547,
+      "sha256": "a9ba123915f26d075980aa780a3ced5fd8d47cb3465eb2612ed352c81e30fd96"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/fitted_bundle.joblib",
+      "bytes": 2713,
+      "sha256": "313c8d8b06dd9e5b13f7fc710c80bb2ec71a8dff641e5761ccb016a24ceb81dc"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/model.joblib",
+      "bytes": 2550,
+      "sha256": "32018cf5e4b038f94752a26342380c9a51c6cd00f33b5884620c81e157290380"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/fitted_bundle.joblib",
+      "bytes": 2714,
+      "sha256": "3b3ac77469fb54fb48bf12a9324148510763fafb78bfad1cd951d05d1349f16f"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/model.joblib",
+      "bytes": 2547,
+      "sha256": "5f496ef78e8c4c22660ef71d954da695419d6a6ba140d77ba745fb3d35bd4fe7"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 12023,
+      "sha256": "5fd12a39fde09f640c620af8b1d92bd14d037ea4f42578bc680f9bae6cedabea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/model.joblib",
+      "bytes": 11788,
+      "sha256": "ab0f253e2aacf0ada1c243b706a053c5ea33396ad5e9f7a4756ee9adc03010f2"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/fitted_bundle.joblib",
+      "bytes": 12063,
+      "sha256": "deb65440b0ec0ed2456ad7c03348c8b02dbfa588ff214e8cd273df31c3d33683"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/model.joblib",
+      "bytes": 11836,
+      "sha256": "3f0ac4b4e515167d06affb202b77850a73a079f32ab55737ff6a4b10f3a7f7a0"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/fitted_bundle.joblib",
+      "bytes": 12303,
+      "sha256": "362602861ea7cbb9ddbfd317e4a4ff29b8ba660f29585a90226cb95bd6a655b2"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/model.joblib",
+      "bytes": 12082,
+      "sha256": "d9c82548b91aa9a95c93d72f215eef714e244a3d582d836cfaff0b3c29c858af"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/fitted_bundle.joblib",
+      "bytes": 11921,
+      "sha256": "7e4a856e80ccc9204851491b844d09e4297189f64d942861e4c2e461b32205f6"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/model.joblib",
+      "bytes": 11678,
+      "sha256": "d9ad9001be3003f5cb25d370a0180ea495e74a399468613afb1169937958c3f9"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/fitted_bundle.joblib",
+      "bytes": 12132,
+      "sha256": "478a7968634b08176270e51f23dfd920a92c599b5a3ffe9096b76c0823e31819"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/model.joblib",
+      "bytes": 11900,
+      "sha256": "97a9371f67eaad01219e294cd390fa553a4cc8af60b571ceeeb548f36ed818c1"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/fitted_bundle.joblib",
+      "bytes": 12021,
+      "sha256": "15bd2623cb7b09d1ebcd83c225f5567a0f86846435d5126d61f113ba68a4e714"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/model.joblib",
+      "bytes": 11788,
+      "sha256": "ab0f253e2aacf0ada1c243b706a053c5ea33396ad5e9f7a4756ee9adc03010f2"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/fitted_bundle.joblib",
+      "bytes": 12062,
+      "sha256": "36e31560171af63d15cb7c0f373163c7c721321159ae600f2e3e13b9e9ccd7d1"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/model.joblib",
+      "bytes": 11836,
+      "sha256": "3f0ac4b4e515167d06affb202b77850a73a079f32ab55737ff6a4b10f3a7f7a0"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/fitted_bundle.joblib",
+      "bytes": 12302,
+      "sha256": "31a30bd1778946c0d24c306de72c8505362f21c626821c2bee6e443889a2ed25"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/model.joblib",
+      "bytes": 12082,
+      "sha256": "d9c82548b91aa9a95c93d72f215eef714e244a3d582d836cfaff0b3c29c858af"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/fitted_bundle.joblib",
+      "bytes": 11920,
+      "sha256": "e3d5944ce897600fafc09fba0c5e4247f2ad4044526b62e3d0912c880249be05"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/model.joblib",
+      "bytes": 11678,
+      "sha256": "d9ad9001be3003f5cb25d370a0180ea495e74a399468613afb1169937958c3f9"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/fitted_bundle.joblib",
+      "bytes": 12131,
+      "sha256": "71711f1046f95043fcb99b6507b059ea81bfa6abf37bce0587914e97084149b5"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/model.joblib",
+      "bytes": 11900,
+      "sha256": "97a9371f67eaad01219e294cd390fa553a4cc8af60b571ceeeb548f36ed818c1"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/adapter.joblib",
+      "bytes": 3423,
+      "sha256": "3492722b0ad5bdca3f2618e8517613ab9840e3fbc0c6985ae1cafb5eecec0724"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 4075,
+      "sha256": "9399dd50329470cdfab1ec8a84f2e12f0a24565b9b4d45d2b124ee8ddc28a032"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/model.joblib",
+      "bytes": 744,
+      "sha256": "7a5ee9307e9358df9831e9e6344ca041a0e1698ead812aeeab3c46475cdcb9d9"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/scaler.joblib",
+      "bytes": 1036,
+      "sha256": "3e982c17f3e1a9ff612ba8b549398b95fdaf45c32c2a15e803e8952204dad914"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/adapter.joblib",
+      "bytes": 3423,
+      "sha256": "3492722b0ad5bdca3f2618e8517613ab9840e3fbc0c6985ae1cafb5eecec0724"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/fitted_bundle.joblib",
+      "bytes": 4074,
+      "sha256": "07b12f3127a711d677b280c9beecaeabdb135cb1269a74bd488067c8c734e8e8"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/model.joblib",
+      "bytes": 744,
+      "sha256": "7a5ee9307e9358df9831e9e6344ca041a0e1698ead812aeeab3c46475cdcb9d9"
+    },
+    {
+      "path": "synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/scaler.joblib",
+      "bytes": 1036,
+      "sha256": "3e982c17f3e1a9ff612ba8b549398b95fdaf45c32c2a15e803e8952204dad914"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/adapter.joblib",
+      "bytes": 3393,
+      "sha256": "69e77c78f13ffc452de0732a3a2ee8ccadbea5940d46f7fc4f82b33da57d5194"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 4062,
+      "sha256": "de98ca9c8857c73d436eeab48baf8243349bf09cda27ce8a97541eb9a769ced8"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/model.joblib",
+      "bytes": 760,
+      "sha256": "83f1b95d63de30654df82355a24eca6142419c48e6d5d5bf757a062724e4d689"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/scaler.joblib",
+      "bytes": 1048,
+      "sha256": "44e7a12b9258372d407a661881cadbc3af00902f45f6fa36502d355ef3337911"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__unchecked__0/adapter.joblib",
+      "bytes": 3393,
+      "sha256": "69e77c78f13ffc452de0732a3a2ee8ccadbea5940d46f7fc4f82b33da57d5194"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__unchecked__0/fitted_bundle.joblib",
+      "bytes": 4061,
+      "sha256": "75152530ae37064b24ba8b780add2008179a3a02c11c607273eacde009f39730"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__unchecked__0/model.joblib",
+      "bytes": 760,
+      "sha256": "83f1b95d63de30654df82355a24eca6142419c48e6d5d5bf757a062724e4d689"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__unchecked__0/scaler.joblib",
+      "bytes": 1048,
+      "sha256": "44e7a12b9258372d407a661881cadbc3af00902f45f6fa36502d355ef3337911"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 2717,
+      "sha256": "2328d6cbdbe75a562a88f8caad57410d429accb6cb08bfe4c13f2f5e8405e5d7"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__0/model.joblib",
+      "bytes": 2553,
+      "sha256": "44b57ae3d3b22bcfc31e2d07191c1978bfb824f02dac71075ffc020f9c11a7fa"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__1/fitted_bundle.joblib",
+      "bytes": 2716,
+      "sha256": "a24d2d8cb9d7d74241b3ee71f938dec969e615998a0404e9ed562cbf4e2fcb6d"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__1/model.joblib",
+      "bytes": 2548,
+      "sha256": "82e3d4f965095e73d305d7b415ee1351a01f364fff1f3041e566f70a6390c5b4"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__2/fitted_bundle.joblib",
+      "bytes": 2715,
+      "sha256": "b1623c4fc7a3a40798e31f2a1a4c7a5357ea2747f352caa9b8da7d490df6d790"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__2/model.joblib",
+      "bytes": 2547,
+      "sha256": "a9ba123915f26d075980aa780a3ced5fd8d47cb3465eb2612ed352c81e30fd96"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__3/fitted_bundle.joblib",
+      "bytes": 2717,
+      "sha256": "154496b379d2e22e900a8386ad2d9d9d803556ac8cabd2a12b7b7e42ac991648"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__3/model.joblib",
+      "bytes": 2550,
+      "sha256": "32018cf5e4b038f94752a26342380c9a51c6cd00f33b5884620c81e157290380"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__4/fitted_bundle.joblib",
+      "bytes": 2717,
+      "sha256": "90fafcd1d6c64e7af33919de814d9e930abb6113710ded06fe147ca67ea5b1f1"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__reentrancy__4/model.joblib",
+      "bytes": 2547,
+      "sha256": "5f496ef78e8c4c22660ef71d954da695419d6a6ba140d77ba745fb3d35bd4fe7"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__0/fitted_bundle.joblib",
+      "bytes": 2714,
+      "sha256": "08ee6993d3e1f313abd86f7bfdb2f2ae1d7530df174153f554f7a4abea13ba1c"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__0/model.joblib",
+      "bytes": 2553,
+      "sha256": "44b57ae3d3b22bcfc31e2d07191c1978bfb824f02dac71075ffc020f9c11a7fa"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__1/fitted_bundle.joblib",
+      "bytes": 2712,
+      "sha256": "057a95ed059f26d9231a1f3d9e6f9074610f9f57fa7ed4c3c33f970139aebf24"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__1/model.joblib",
+      "bytes": 2548,
+      "sha256": "82e3d4f965095e73d305d7b415ee1351a01f364fff1f3041e566f70a6390c5b4"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__2/fitted_bundle.joblib",
+      "bytes": 2711,
+      "sha256": "c9a0914a87f6a4fcc44d6b57d92e75db51dd5cd6f34d0aeeae4d214311b6378a"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__2/model.joblib",
+      "bytes": 2547,
+      "sha256": "a9ba123915f26d075980aa780a3ced5fd8d47cb3465eb2612ed352c81e30fd96"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__3/fitted_bundle.joblib",
+      "bytes": 2713,
+      "sha256": "313c8d8b06dd9e5b13f7fc710c80bb2ec71a8dff641e5761ccb016a24ceb81dc"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__3/model.joblib",
+      "bytes": 2550,
+      "sha256": "32018cf5e4b038f94752a26342380c9a51c6cd00f33b5884620c81e157290380"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__4/fitted_bundle.joblib",
+      "bytes": 2714,
+      "sha256": "3b3ac77469fb54fb48bf12a9324148510763fafb78bfad1cd951d05d1349f16f"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_lgbm__unchecked__4/model.joblib",
+      "bytes": 2547,
+      "sha256": "5f496ef78e8c4c22660ef71d954da695419d6a6ba140d77ba745fb3d35bd4fe7"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 12023,
+      "sha256": "5fd12a39fde09f640c620af8b1d92bd14d037ea4f42578bc680f9bae6cedabea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__0/model.joblib",
+      "bytes": 11788,
+      "sha256": "ab0f253e2aacf0ada1c243b706a053c5ea33396ad5e9f7a4756ee9adc03010f2"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__1/fitted_bundle.joblib",
+      "bytes": 12063,
+      "sha256": "deb65440b0ec0ed2456ad7c03348c8b02dbfa588ff214e8cd273df31c3d33683"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__1/model.joblib",
+      "bytes": 11836,
+      "sha256": "3f0ac4b4e515167d06affb202b77850a73a079f32ab55737ff6a4b10f3a7f7a0"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__2/fitted_bundle.joblib",
+      "bytes": 12303,
+      "sha256": "362602861ea7cbb9ddbfd317e4a4ff29b8ba660f29585a90226cb95bd6a655b2"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__2/model.joblib",
+      "bytes": 12082,
+      "sha256": "d9c82548b91aa9a95c93d72f215eef714e244a3d582d836cfaff0b3c29c858af"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__3/fitted_bundle.joblib",
+      "bytes": 11921,
+      "sha256": "7e4a856e80ccc9204851491b844d09e4297189f64d942861e4c2e461b32205f6"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__3/model.joblib",
+      "bytes": 11678,
+      "sha256": "d9ad9001be3003f5cb25d370a0180ea495e74a399468613afb1169937958c3f9"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__4/fitted_bundle.joblib",
+      "bytes": 12132,
+      "sha256": "478a7968634b08176270e51f23dfd920a92c599b5a3ffe9096b76c0823e31819"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__reentrancy__4/model.joblib",
+      "bytes": 11900,
+      "sha256": "97a9371f67eaad01219e294cd390fa553a4cc8af60b571ceeeb548f36ed818c1"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__0/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__0/fitted_bundle.joblib",
+      "bytes": 12021,
+      "sha256": "15bd2623cb7b09d1ebcd83c225f5567a0f86846435d5126d61f113ba68a4e714"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__0/model.joblib",
+      "bytes": 11788,
+      "sha256": "ab0f253e2aacf0ada1c243b706a053c5ea33396ad5e9f7a4756ee9adc03010f2"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__1/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__1/fitted_bundle.joblib",
+      "bytes": 12062,
+      "sha256": "36e31560171af63d15cb7c0f373163c7c721321159ae600f2e3e13b9e9ccd7d1"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__1/model.joblib",
+      "bytes": 11836,
+      "sha256": "3f0ac4b4e515167d06affb202b77850a73a079f32ab55737ff6a4b10f3a7f7a0"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__2/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__2/fitted_bundle.joblib",
+      "bytes": 12302,
+      "sha256": "31a30bd1778946c0d24c306de72c8505362f21c626821c2bee6e443889a2ed25"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__2/model.joblib",
+      "bytes": 12082,
+      "sha256": "d9c82548b91aa9a95c93d72f215eef714e244a3d582d836cfaff0b3c29c858af"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__3/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__3/fitted_bundle.joblib",
+      "bytes": 11920,
+      "sha256": "e3d5944ce897600fafc09fba0c5e4247f2ad4044526b62e3d0912c880249be05"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__3/model.joblib",
+      "bytes": 11678,
+      "sha256": "d9ad9001be3003f5cb25d370a0180ea495e74a399468613afb1169937958c3f9"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__4/adapter.joblib",
+      "bytes": 59,
+      "sha256": "1efcbce074b448aaa065a25289fe936b98af2b3dfbd429bb25d9f102259e8fea"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__4/fitted_bundle.joblib",
+      "bytes": 12131,
+      "sha256": "71711f1046f95043fcb99b6507b059ea81bfa6abf37bce0587914e97084149b5"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/pattern_rf__unchecked__4/model.joblib",
+      "bytes": 11900,
+      "sha256": "97a9371f67eaad01219e294cd390fa553a4cc8af60b571ceeeb548f36ed818c1"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__reentrancy__0/adapter.joblib",
+      "bytes": 3423,
+      "sha256": "3492722b0ad5bdca3f2618e8517613ab9840e3fbc0c6985ae1cafb5eecec0724"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__reentrancy__0/fitted_bundle.joblib",
+      "bytes": 4075,
+      "sha256": "9399dd50329470cdfab1ec8a84f2e12f0a24565b9b4d45d2b124ee8ddc28a032"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__reentrancy__0/model.joblib",
+      "bytes": 744,
+      "sha256": "7a5ee9307e9358df9831e9e6344ca041a0e1698ead812aeeab3c46475cdcb9d9"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__reentrancy__0/scaler.joblib",
+      "bytes": 1036,
+      "sha256": "3e982c17f3e1a9ff612ba8b549398b95fdaf45c32c2a15e803e8952204dad914"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__unchecked__0/adapter.joblib",
+      "bytes": 3423,
+      "sha256": "3492722b0ad5bdca3f2618e8517613ab9840e3fbc0c6985ae1cafb5eecec0724"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__unchecked__0/fitted_bundle.joblib",
+      "bytes": 4074,
+      "sha256": "07b12f3127a711d677b280c9beecaeabdb135cb1269a74bd488067c8c734e8e8"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__unchecked__0/model.joblib",
+      "bytes": 744,
+      "sha256": "7a5ee9307e9358df9831e9e6344ca041a0e1698ead812aeeab3c46475cdcb9d9"
+    },
+    {
+      "path": "synthetic_check_20261026_v2/jobs/raw_tfidf_lr__unchecked__0/scaler.joblib",
+      "bytes": 1036,
+      "sha256": "3e982c17f3e1a9ff612ba8b549398b95fdaf45c32c2a15e803e8952204dad914"
+    }
+  ],
+  "count": 152
+}

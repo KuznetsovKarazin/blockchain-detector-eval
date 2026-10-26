@@ -1,0 +1,47 @@
+{
+  "schema": "synthetic_paired_metrics_config_v2",
+  "created_utc": "2026-10-26T13:32:50.404422+00:00",
+  "purpose": "fictional_in_memory_engineering_only",
+  "fictional_files": 1998,
+  "fictional_cases": 3996,
+  "fictional_selected_cases": 180,
+  "classes": [
+    "reentrancy",
+    "unchecked"
+  ],
+  "methods": [
+    "SYNTHETIC_A",
+    "SYNTHETIC_B",
+    "SYNTHETIC_C"
+  ],
+  "replicates": 2000,
+  "seed": 20261026,
+  "review_fractions": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "alpha": 0.05,
+  "failure_status_inventory": [
+    "compile_error",
+    "tool_error",
+    "timeout",
+    "missing_dependency",
+    "unsupported_pragma",
+    "missing_score",
+    "preprocessing_error",
+    "unavailable_binary",
+    "model_error"
+  ],
+  "scenarios": [
+    "complete_scores_both_classes",
+    "mixed_failures_both_classes",
+    "unknown_outside_common",
+    "unknown_inside_common"
+  ],
+  "actual_external_scores_read_or_created": false,
+  "actual_human_keys_or_judgments_opened": false,
+  "model_fits": 0,
+  "prospective_study_freeze": false,
+  "execution_gate_override": false
+}

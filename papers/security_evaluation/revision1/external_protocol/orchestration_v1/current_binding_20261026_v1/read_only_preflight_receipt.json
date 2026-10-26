@@ -1,0 +1,264 @@
+{
+  "schema": "external_B_current_binding_preflight_receipt_v1",
+  "binding_sha256": "7f2c15e6681e3147f6992a5900e9354c98958ad8f1f15a5b5ace331ae444faa1",
+  "source_sha256": {
+    "integrity_preflight.py": "cc52f01d002ea8a76766d986ba9d370abb9f7073d92a7e642401ab89f45a59c2",
+    "validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "prepare_current_binding.py": "5c553a388fff0106f7dbc65e89b524f3cc2100e6b6293cf1a62eff5272eabddd"
+  },
+  "setup": {
+    "schema": "external_B_integrity_preflight_result_v1",
+    "requested_phase": "setup",
+    "phase_integrity_pass": true,
+    "execution_authorized": false,
+    "human_identity_authenticated": false,
+    "timestamp_authenticity_established": false,
+    "operations_executed": 0,
+    "synthetic_profile": false,
+    "blockers": [],
+    "data_access_scope": "Coordinator integrity check may read source annotation/proxy labels and private sampling keys; not annotation-blind compiler setup",
+    "production_model_dispatch_implemented": false,
+    "protocol_blockers": [
+      "freeze_prerequisites_not_satisfied",
+      "human_before_fit_score_order_changed",
+      "missing_protocol_id",
+      "protocol_not_frozen",
+      "required_hash_binding_set_missing_or_changed",
+      "score_requirement_set_missing_or_changed",
+      "two_reviewer_records_required",
+      "unrecognized_or_legacy_protocol_schema"
+    ],
+    "inference_policy_allows_confirmatory_scope": false,
+    "input_summary": {
+      "training_files": 691,
+      "external_files": 1998,
+      "source_bytes_checked": 2689,
+      "sample_cases": 180,
+      "strata": 17
+    },
+    "toolchain": {
+      "executables_checked": 31,
+      "dependency_artifacts_checked": 47,
+      "executables_invoked": 0
+    },
+    "declared_jobs": [
+      {
+        "job_id": "raw_tfidf_lr:reentrancy:0",
+        "kind": "learned",
+        "method": "raw_tfidf_lr",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "raw_tfidf_lr:unchecked:0",
+        "kind": "learned",
+        "method": "raw_tfidf_lr",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "normalized_tfidf_lr:reentrancy:0",
+        "kind": "learned",
+        "method": "normalized_tfidf_lr",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "normalized_tfidf_lr:unchecked:0",
+        "kind": "learned",
+        "method": "normalized_tfidf_lr",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:0",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:1",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:2",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:3",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_rf:reentrancy:4",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "reentrancy",
+        "seed": 4
+      },
+      {
+        "job_id": "pattern_rf:unchecked:0",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_rf:unchecked:1",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_rf:unchecked:2",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_rf:unchecked:3",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_rf:unchecked:4",
+        "kind": "learned",
+        "method": "pattern_rf",
+        "class": "unchecked",
+        "seed": 4
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:0",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:1",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:2",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:3",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_lgbm:reentrancy:4",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "reentrancy",
+        "seed": 4
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:0",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 0
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:1",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 1
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:2",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 2
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:3",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 3
+      },
+      {
+        "job_id": "pattern_lgbm:unchecked:4",
+        "kind": "learned",
+        "method": "pattern_lgbm",
+        "class": "unchecked",
+        "seed": 4
+      },
+      {
+        "job_id": "slither:reentrancy:0",
+        "kind": "static",
+        "method": "slither",
+        "class": "reentrancy",
+        "seed": 0
+      },
+      {
+        "job_id": "slither:unchecked:0",
+        "kind": "static",
+        "method": "slither",
+        "class": "unchecked",
+        "seed": 0
+      }
+    ],
+    "sealed_events_checked": 0,
+    "binding_sha256": "7f2c15e6681e3147f6992a5900e9354c98958ad8f1f15a5b5ace331ae444faa1",
+    "scope": "Integrity relative to caller-selected digest; no human authentication, timestamp certification or execution permission"
+  },
+  "begin_scoring": {
+    "schema": "external_B_integrity_preflight_result_v1",
+    "requested_phase": "begin_scoring",
+    "phase_integrity_pass": false,
+    "execution_authorized": false,
+    "human_identity_authenticated": false,
+    "timestamp_authenticity_established": false,
+    "operations_executed": 0,
+    "synthetic_profile": false,
+    "blockers": [
+      "review_admission:protocol_gate:freeze_prerequisites_not_satisfied,human_before_fit_score_order_changed,missing_protocol_id,permission_closed:external_scoring_allowed,permission_closed:model_fitting_allowed,protocol_not_frozen,required_hash_binding_set_missing_or_changed,score_requirement_set_missing_or_changed,two_reviewer_records_required,unrecognized_or_legacy_protocol_schema"
+    ],
+    "data_access_scope": "Coordinator integrity check may read source annotation/proxy labels and private sampling keys; not annotation-blind compiler setup",
+    "production_model_dispatch_implemented": false,
+    "review_admission": {
+      "admission_artifacts_consistent": false,
+      "execution_authorized": false,
+      "human_identity_authenticated": false,
+      "training_label_keys_read": false,
+      "model_source_bodies_read": false,
+      "scores_read": false,
+      "operations_executed": 0,
+      "blockers": [
+        "protocol_gate:freeze_prerequisites_not_satisfied,human_before_fit_score_order_changed,missing_protocol_id,permission_closed:external_scoring_allowed,permission_closed:model_fitting_allowed,protocol_not_frozen,required_hash_binding_set_missing_or_changed,score_requirement_set_missing_or_changed,two_reviewer_records_required,unrecognized_or_legacy_protocol_schema"
+      ]
+    }
+  },
+  "elapsed_seconds": 6.397521871000208,
+  "model_fits_or_scores": 0,
+  "human_judgments_created": 0,
+  "protocol_changed": false,
+  "inference_policy_changed": false
+}

@@ -1,0 +1,110 @@
+{
+  "key": [
+    [
+      [
+        "A",
+        16,
+        2
+      ],
+      [
+        "B",
+        4,
+        2
+      ]
+    ],
+    [
+      "B",
+      "A",
+      "B",
+      "A"
+    ],
+    [
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "point": 0.2,
+  "sample_positive_count": 2,
+  "census": false,
+  "bootstrap_support_weights": [
+    [
+      0.585786437626905,
+      0.5166852264521172,
+      3.4142135623730954,
+      15.483314773547882
+    ],
+    [
+      3.4142135623730954,
+      0.5166852264521172,
+      0.585786437626905,
+      15.483314773547882
+    ],
+    [
+      0.585786437626905,
+      15.483314773547882,
+      3.4142135623730954,
+      0.5166852264521172
+    ],
+    [
+      3.4142135623730954,
+      15.483314773547882,
+      0.585786437626905,
+      0.5166852264521172
+    ]
+  ],
+  "support_multiplicities": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "support_denominator": 4,
+  "support_production_ap_values": [
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "methods": {
+    "exact_support": {
+      "interval": [
+        0.2,
+        0.2
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    },
+    "mc_seed_2026102601": {
+      "interval": [
+        0.2,
+        0.2
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    },
+    "mc_seed_2026102602": {
+      "interval": [
+        0.2,
+        0.2
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    },
+    "mc_seed_2026102603": {
+      "interval": [
+        0.2,
+        0.2
+      ],
+      "invalid_fraction": 0.0,
+      "status": "complete_reference_design_approximation"
+    }
+  }
+}

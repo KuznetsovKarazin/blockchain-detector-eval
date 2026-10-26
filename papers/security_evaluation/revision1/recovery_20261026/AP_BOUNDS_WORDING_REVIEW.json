@@ -1,0 +1,27 @@
+{
+  "schema": "independent_ap_completion_bound_wording_review_v1",
+  "status": "pass_scientific_distinctions_clear",
+  "readme_path": "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/README.md",
+  "readme_sha256": "e34c5e3115097ee416c1bb76f827099e2209c00f6480d0d306dda18b2bf6d877",
+  "review_scope": "Scientific wording and stated recurrence/terminal-state logic; not a second full implementation/exhaustive-suite audit",
+  "checks": {
+    "finite_complete_score_population_required": true,
+    "unknown_unsampled_labels_retained": true,
+    "known_reference_correctness_explicit_assumption": true,
+    "sharp_attained_extrema_distinguished_from_all_values_in_envelope": true,
+    "completion_bounds_not_confidence_intervals": true,
+    "no_nominal_95pct_claim_or_bootstrap_repair": true,
+    "undefined_zero_positive_completion_separately_reported": true,
+    "identified_ap_requires_single_defined_value_over_all_feasible_completions": true,
+    "census_ap_requires_no_unknown_labels": true,
+    "paired_difference_envelope_explicitly_not_generally_sharp": true,
+    "failed_scores_not_assigned_artificial_ranks": true,
+    "no_new_family_or_method_superiority_inference": true,
+    "dp_recurrence_conditions_on_sufficient_cumulative_positive_count": true
+  },
+  "wording_recommendation": "Retain the terms sharp finite-population completion bounds / identified-set envelope; do not rename these 95% confidence intervals or calibrated survey uncertainty.",
+  "remaining_limit": "Conditional on complete fixed scores and correct fixed known labels; reviewer error, score failures and external generalization are outside the bound.",
+  "other_owned_files_modified": false,
+  "models_fitted": 0,
+  "corpus_sources_or_private_keys_opened": 0
+}

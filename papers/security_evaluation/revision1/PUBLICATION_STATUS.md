@@ -18,7 +18,13 @@ Automatic publication review again rejected public upload of the compressed grap
 
 A verified 42-file recovery bundle (12,907,084 bytes; SHA256 `9bc454eeb4a124145cd847703aa55cf69957e9dea902f9d9427c715e1da7a723`) is designated for separate private delivery to the user, not public publication. Its [receipt](recovery_20261026/PRIVATE_BUNDLE_RECEIPT.json) identifies the package. The bundle was successfully saved privately for the author. The final Word manuscript was also successfully saved privately. Private storage identifiers are not published here. Raw third-party sources, original row annotations, reviewer keys and private contractual material remain excluded from the public update.
 
-## External study status
+## Latest external-study continuation
+
+[The current status](progress_20261026/STATUS_RU.md) records the completed compiler-only run (2,137 successful files / 2,689 retained), the guarded ML worker, failure-aware metrics and exact AP completion bounds. The [new combined run](progress_20261026/STAGE2_VERIFICATION.json) passes 183 unique tests. A separately frozen synthetic study demonstrates poor coverage of the percentile AP procedure; a concrete inference amendment remains prospective. Human judgments, real external model fits/scores and Slither scans remain zero. Revision 2 Word is unchanged; new manuscript-ready text is a separate [addendum](progress_20261026/AP_METHODS_ADDENDUM.md).
+
+New public artifacts include only authored code/text, fictional fixture results and states, a synthetic scientific plot, and compiler metadata. Raw compiler AST/bytecode/diagnostic text remain private. The 152 fictional model-state files are packaged in one verified ZIP with a path/hash inventory; this is unrelated to the older blocked graph archive.
+
+## Earlier external-study checkpoint
 
 The fixed B cohort and private blank-review package are restored. [Current engineering readiness](external_protocol/ENGINEERING_READINESS_20261026.md) records 24 adapter tests, 24 performance tests, 21 independent checks and the separate toolchain verification. [The final verification](recovery_20261026/FINAL_VERIFICATION_20261026.json) records 251 unique passing tests (237 main + 14 toolchain). These are scoped implementation checks; actual human judgments, external model fits/scores, contract compilation and Slither scans are zero. The overall protocol and B draft remain unfrozen; genuine human review, semantic sign-off and authenticated execution integration are still required.
 

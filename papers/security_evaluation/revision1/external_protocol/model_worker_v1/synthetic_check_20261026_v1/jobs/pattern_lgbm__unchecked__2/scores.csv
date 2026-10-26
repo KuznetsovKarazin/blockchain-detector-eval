@@ -1,0 +1,7 @@
+job_id,method,class,seed,node_id,path,source_sha256,execution_status,status,score
+pattern_lgbm:unchecked:2,pattern_lgbm,unchecked,2,synthetic:external:0,synthetic:external:0.sol,1adada164693465e9516dec40f7681de150223ac37565f57b8f7118ef4a429da,ok,ok,0.5
+pattern_lgbm:unchecked:2,pattern_lgbm,unchecked,2,synthetic:external:1,synthetic:external:1.sol,03c2784963e7adb1f9e6ab509cba8a63c17d2065b56f0a6ed88129e67ab949d0,ok,ok,0.5
+pattern_lgbm:unchecked:2,pattern_lgbm,unchecked,2,synthetic:external:2,synthetic:external:2.sol,73d891667c9c49a7074a027a1c5219ea9eaa424d6b68ef33ef6103a552ab1ae2,ok,ok,0.5
+pattern_lgbm:unchecked:2,pattern_lgbm,unchecked,2,synthetic:external:3,synthetic:external:3.sol,722717139f984f93dd9de734caaf149942d6aa050f84005abec87b2ac8429b53,ok,ok,0.5
+pattern_lgbm:unchecked:2,pattern_lgbm,unchecked,2,synthetic:external:4,synthetic:external:4.sol,a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89,decode_error,preprocessing_error,
+pattern_lgbm:unchecked:2,pattern_lgbm,unchecked,2,synthetic:external:5,synthetic:external:5.sol,f2ae2f65eafc7942cca50f79cc8c03faa388a3e6b3edc489654d6be37021a84a,scanner_error,preprocessing_error,

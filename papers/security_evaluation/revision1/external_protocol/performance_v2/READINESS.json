@@ -1,0 +1,24 @@
+{
+  "schema": "performance_v2_engineering_readiness",
+  "status": "complete_synthetic_engineering_not_external_authorization",
+  "production_source_sha256": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+  "config_sha256": "fa799b86cbe1fdc57c831bb5953e82c997a57769379ed7bb15fc24958991f6b8",
+  "owner_tests_passed": 29,
+  "independent_tests_passed": 20,
+  "independent_receipt": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/result.json",
+  "independent_receipt_sha256": "bedff9f57f62f24dd2a7d6278179dcb68c98681609b4904a8c3712dec5d73627",
+  "synthetic_receipt": "synthetic_check_20261026_v1/receipt.json",
+  "synthetic_output_files": 4,
+  "shared_bootstrap_replicates_per_scenario_class": 2000,
+  "config_sources_snapshots_dependencies_outputs_verified": true,
+  "v1_and_protocol_gates_unchanged": true,
+  "actual_external_scores_or_keys_used": false,
+  "models_fitted": 0,
+  "prospective_study_freeze": false,
+  "remaining_limits": [
+    "Explicit prospective execution-status adapter and complete declared method inventory must be settled; numerical engine accepts canonical status vocabulary only",
+    "Nonlinear AP/recall and paired percentile coverage is not guaranteed; rare-positive synthetic coverage study is a separate diagnostic",
+    "No multiplicity correction, cross-class covariance, model-training uncertainty, or new-family inference",
+    "Authentic independent reviews, protocol freeze and execution gates remain prerequisites"
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "schema": "external_B_feature_definitions_v1",
+  "feature_names": [
+    "call_value",
+    "low_level_call",
+    "send",
+    "transfer",
+    "delegatecall",
+    "staticcall",
+    "callcode",
+    "unchecked_call_stmt",
+    "checked_send",
+    "block_timestamp",
+    "now",
+    "block_number",
+    "blockhash",
+    "difficulty",
+    "keccak_rand",
+    "tx_origin",
+    "tx_origin_eq",
+    "msg_sender",
+    "only_owner",
+    "selfdestruct",
+    "plus_eq",
+    "minus_eq",
+    "mul_op",
+    "safemath",
+    "unchecked_block",
+    "require",
+    "assert",
+    "revert",
+    "for_loop",
+    "while_loop",
+    "mapping",
+    "payable",
+    "modifier_def",
+    "event_emit",
+    "assembly",
+    "balance_read",
+    "approve",
+    "transfer_from",
+    "call_before_write",
+    "solc_version",
+    "pre_08",
+    "loc",
+    "n_functions"
+  ],
+  "regex_features": [
+    {
+      "index": 0,
+      "name": "call_value",
+      "regex": "\\.call\\.value\\s*\\(|\\.call\\s*\\{[^}]*value\\s*:",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 1,
+      "name": "low_level_call",
+      "regex": "\\.call\\s*[\\(\\{]",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 2,
+      "name": "send",
+      "regex": "\\.send\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 3,
+      "name": "transfer",
+      "regex": "\\.transfer\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 4,
+      "name": "delegatecall",
+      "regex": "\\.delegatecall\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 5,
+      "name": "staticcall",
+      "regex": "\\.staticcall\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 6,
+      "name": "callcode",
+      "regex": "\\.callcode\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 7,
+      "name": "unchecked_call_stmt",
+      "regex": "^\\s*[\\w\\.\\[\\]]+\\.(call|send|delegatecall)\\s*[\\(\\{][^;]*;\\s*$",
+      "flags": "MULTILINE",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 8,
+      "name": "checked_send",
+      "regex": "(require|assert|if)\\s*\\(\\s*!?\\s*[\\w\\.\\[\\]]+\\.(send|call)",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 9,
+      "name": "block_timestamp",
+      "regex": "\\bblock\\.timestamp\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 10,
+      "name": "now",
+      "regex": "\\bnow\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 11,
+      "name": "block_number",
+      "regex": "\\bblock\\.number\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 12,
+      "name": "blockhash",
+      "regex": "\\bblockhash\\s*\\(|block\\.blockhash",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 13,
+      "name": "difficulty",
+      "regex": "block\\.difficulty|block\\.prevrandao",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 14,
+      "name": "keccak_rand",
+      "regex": "keccak256\\s*\\(\\s*abi\\.encodePacked\\s*\\(\\s*(now|block\\.)",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 15,
+      "name": "tx_origin",
+      "regex": "\\btx\\.origin\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 16,
+      "name": "tx_origin_eq",
+      "regex": "tx\\.origin\\s*==|==\\s*tx\\.origin",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 17,
+      "name": "msg_sender",
+      "regex": "\\bmsg\\.sender\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 18,
+      "name": "only_owner",
+      "regex": "\\bonlyOwner\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 19,
+      "name": "selfdestruct",
+      "regex": "\\b(selfdestruct|suicide)\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 20,
+      "name": "plus_eq",
+      "regex": "\\+=",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 21,
+      "name": "minus_eq",
+      "regex": "-=",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 22,
+      "name": "mul_op",
+      "regex": "[^\\*/]\\*[^\\*/=]",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 23,
+      "name": "safemath",
+      "regex": "\\bSafeMath\\b|\\.add\\s*\\(|\\.sub\\s*\\(|\\.mul\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 24,
+      "name": "unchecked_block",
+      "regex": "\\bunchecked\\s*\\{",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 25,
+      "name": "require",
+      "regex": "\\brequire\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 26,
+      "name": "assert",
+      "regex": "\\bassert\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 27,
+      "name": "revert",
+      "regex": "\\brevert\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 28,
+      "name": "for_loop",
+      "regex": "\\bfor\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 29,
+      "name": "while_loop",
+      "regex": "\\bwhile\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 30,
+      "name": "mapping",
+      "regex": "\\bmapping\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 31,
+      "name": "payable",
+      "regex": "\\bpayable\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 32,
+      "name": "modifier_def",
+      "regex": "\\bmodifier\\s+\\w+",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 33,
+      "name": "event_emit",
+      "regex": "\\bemit\\s+\\w+",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 34,
+      "name": "assembly",
+      "regex": "\\bassembly\\s*\\{",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 35,
+      "name": "balance_read",
+      "regex": "\\.balance\\b",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 36,
+      "name": "approve",
+      "regex": "\\bapprove\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    },
+    {
+      "index": 37,
+      "name": "transfer_from",
+      "regex": "\\btransferFrom\\s*\\(",
+      "flags": "",
+      "value": "100 * regex match count / max(1, nonblank scanned lines)"
+    }
+  ],
+  "summary_features": [
+    {
+      "index": 38,
+      "name": "call_before_write",
+      "value": "100 * count of lexical function segments containing value-call then mapping assignment / nonblank scanned lines; not AST or flow analysis"
+    },
+    {
+      "index": 39,
+      "name": "solc_version",
+      "value": "first active pragma major + minor/100, strings masked; missing/unrecognized => 0"
+    },
+    {
+      "index": 40,
+      "name": "pre_08",
+      "value": "1 iff recognized active pragma version < .08, else 0"
+    },
+    {
+      "index": 41,
+      "name": "loc",
+      "value": "log1p(max(1, nonblank lines after corrected comment scanning))"
+    },
+    {
+      "index": 42,
+      "name": "n_functions",
+      "value": "log1p(word-boundary function count after corrected scanning; literals retained)"
+    }
+  ],
+  "token_regex": "[A-Za-z_][A-Za-z0-9_]*|0x[0-9a-fA-F]+|\\d+|==|!=|<=|>=|&&|\\|\\||\\+\\+|--|\\+=|-=|\\*=|/=|[{}()\\[\\];,.=<>+\\-*/%!&|^~?:]",
+  "normalization_keep": [
+    "SafeMath",
+    "abi",
+    "abstract",
+    "add",
+    "address",
+    "anonymous",
+    "assembly",
+    "assert",
+    "balance",
+    "block",
+    "blockhash",
+    "bool",
+    "break",
+    "byte",
+    "bytes",
+    "bytes32",
+    "bytes4",
+    "call",
+    "callcode",
+    "calldata",
+    "catch",
+    "coinbase",
+    "constant",
+    "constructor",
+    "continue",
+    "contract",
+    "data",
+    "days",
+    "decode",
+    "delegatecall",
+    "delete",
+    "difficulty",
+    "div",
+    "do",
+    "ecrecover",
+    "else",
+    "emit",
+    "encode",
+    "encodePacked",
+    "encodeWithSelector",
+    "encodeWithSignature",
+    "enum",
+    "ether",
+    "event",
+    "external",
+    "fallback",
+    "false",
+    "finney",
+    "for",
+    "function",
+    "gas",
+    "gasleft",
+    "gaslimit",
+    "gasprice",
+    "gwei",
+    "hours",
+    "if",
+    "immutable",
+    "indexed",
+    "int",
+    "int256",
+    "interface",
+    "internal",
+    "is",
+    "keccak256",
+    "length",
+    "library",
+    "mapping",
+    "memory",
+    "minutes",
+    "mod",
+    "modifier",
+    "msg",
+    "mul",
+    "new",
+    "now",
+    "number",
+    "onlyOwner",
+    "origin",
+    "override",
+    "owner",
+    "payable",
+    "pop",
+    "pragma",
+    "private",
+    "public",
+    "pure",
+    "push",
+    "receive",
+    "require",
+    "return",
+    "returns",
+    "revert",
+    "seconds",
+    "selfdestruct",
+    "send",
+    "sender",
+    "sha256",
+    "sha3",
+    "sig",
+    "solidity",
+    "staticcall",
+    "storage",
+    "string",
+    "struct",
+    "sub",
+    "suicide",
+    "super",
+    "szabo",
+    "this",
+    "throw",
+    "timestamp",
+    "transfer",
+    "true",
+    "try",
+    "tx",
+    "uint",
+    "uint128",
+    "uint16",
+    "uint256",
+    "uint32",
+    "uint64",
+    "uint8",
+    "unchecked",
+    "using",
+    "value",
+    "view",
+    "virtual",
+    "weeks",
+    "wei",
+    "while",
+    "years"
+  ],
+  "comment_policy": "single corrected string-aware scan; no legacy second strip",
+  "lexical_literal_policy": "contents retained with historical token regex",
+  "pattern_literal_policy": "contents retained for counts; masked only for active pragma version",
+  "pattern_line_policy": "comment blanking preserves physical newlines; comment-only lines excluded",
+  "limitations": [
+    "no AST or type analysis",
+    "quoted inert code may affect pattern counts",
+    "call-before-write function segmentation is lexical, not actual control flow",
+    "compiler acceptance and semantic vulnerability are not established"
+  ]
+}
