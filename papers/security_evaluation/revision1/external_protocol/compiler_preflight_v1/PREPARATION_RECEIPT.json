@@ -1,0 +1,27 @@
+{
+  "status": "prepared_review_required_no_corpus_compilation",
+  "prepared_plan_sha256": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80",
+  "jobs_sha256": "5f83146346595c6680fef5f9ac45d129983fc51fcf4a942d185be9a0e2ba204c",
+  "rows": 2689,
+  "counts_by_cohort": {
+    "train": 691,
+    "external": 1998
+  },
+  "ready_by_cohort": {
+    "train": 336,
+    "external": 1968
+  },
+  "unplanned_original_preserved": 39,
+  "ready_candidate_slots": 3543,
+  "code_and_inputs_still_match_plan": true,
+  "tests_passed": 32,
+  "test_command": ".venv/bin/python -m pytest -q papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/test_preflight.py",
+  "test_source_sha256": "f26d6c6ddd989decae9625263df1e274c4911a79b6349e058e5379f58279d33c",
+  "root_corpus_compiler_invocations_by_this_task": 0,
+  "slither_invocations": 0,
+  "detector_invocations": 0,
+  "models_fitted": 0,
+  "annotation_files_read": false,
+  "v1_metadata_preparation": "interrupted_exit130_before_plan_output_for_review_corrections",
+  "recorded_utc": "2026-10-26T13:56:42.918230+00:00"
+}

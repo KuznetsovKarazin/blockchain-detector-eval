@@ -1,0 +1,9 @@
+{
+  "approved": false,
+  "independent_review_receipt": "",
+  "independent_review_sha256": "",
+  "note": "Template is not permission; root and independent review must approve the concrete frozen runner/plan before corpus compilation",
+  "parent_authorization_reference": "",
+  "plan_sha256": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80",
+  "scope": "compiler_readiness_only"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "scope": "independent_review_of_compiler_readiness_only",
+  "plan_sha256": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80",
+  "reviewer_code_sha256": "a39a7dde2161710e06b5f204cbf34e9eeb0b991c3fb4295b7d70913fec1ee411",
+  "jobs_sha256": "5f83146346595c6680fef5f9ac45d129983fc51fcf4a942d185be9a0e2ba204c",
+  "independent_test_receipt": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/result.json",
+  "independent_test_receipt_sha256": "ab377764c1abe2cdcf1b30962dcb1c3bc68b9d1af8ce18316eb649f43249c36f",
+  "independent_tests_passed": 22,
+  "parent_authored_smoke_receipt": "papers/security_evaluation/revision1/external_protocol/compiler_smoke_v1/run_20261026_v1/result.json",
+  "parent_authored_smoke_sha256": "6b51d47c3dfb4f85b2f44254f57b7b066d3db7e41ea9f32d67bfa1be659c6121",
+  "source_and_input_hashes_verified": true,
+  "source_snapshots_match": true,
+  "pins_clean": true,
+  "fixed_jobs": 2689,
+  "ready_to_attempt": {
+    "train": 336,
+    "external": 1968
+  },
+  "original_unplanned_rows": 39,
+  "preparation_status_counts": {
+    "missing_import": 336,
+    "ready_to_attempt": 2304,
+    "missing_pragma": 32,
+    "remote_or_absolute_import_forbidden": 5,
+    "import_syntax_unresolved": 1,
+    "import_outside_snapshot": 4,
+    "unsupported_constraint": 4,
+    "no_compatible_catalog_release": 3
+  },
+  "ready_source_unit_occurrences": 2725,
+  "original_order_and_candidate_policy_preserved": true,
+  "execution_authorized": false,
+  "corpus_compilers_executed_by_reviewer": 0,
+  "limitations": [
+    "Review is not an end-to-end security guarantee or kernel sandbox claim.",
+    "Compiler success does not imply Slither success or semantic correctness.",
+    "The fixed two-hour work budget may leave explicit unattempted rows.",
+    "Any actual execution still requires the separate parent-authorized plan-bound permit.",
+    "Raw diagnostics remain private; only metadata/aggregate outputs may be published."
+  ]
+}

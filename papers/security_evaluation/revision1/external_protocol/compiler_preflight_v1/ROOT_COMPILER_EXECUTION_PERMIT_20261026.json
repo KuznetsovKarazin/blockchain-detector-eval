@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "scope": "compiler_readiness_only",
+  "plan_sha256": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80",
+  "independent_review_receipt": "papers/security_evaluation/revision1/recovery_20261026/compiler_plan_review_20261026_v2.json",
+  "independent_review_sha256": "1e91d4e320c406ce62d229bfd07f8bd31f5839ef2b074af21b849c428a3507b8",
+  "parent_authorization_reference": "User instruction to continue research without repeated approval; root automated code review 2026-10-26. This permit is engineering authorization, not human expert annotation or semantic sign-off.",
+  "annotation_or_model_permission": false
+}

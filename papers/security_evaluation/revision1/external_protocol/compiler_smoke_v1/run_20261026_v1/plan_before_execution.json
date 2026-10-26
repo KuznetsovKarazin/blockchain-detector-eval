@@ -1,0 +1,61 @@
+{
+  "schema": "authored_fixture_compiler_smoke_v1",
+  "prepared_utc": "2026-10-26T13:51:57.462319+00:00",
+  "source_sha256": "c8df8cd355b497ce21d079882a2c51a8eeac6f7084e9f5564a7fbdddb5cfac21",
+  "input_json_sha256": "b9bfe5df239563d3dc186ef56f730d0f4912a0fd09da3de4905403c1d3717e39",
+  "runner_sha256": "b37a4f908404cf86df080752bfb3966b79cf93a127e716f0545b5e4ae459e4da",
+  "inventory_sha256": "afbd0dda64302bcccc1fc0bc5cad32458790d6995a16e0d43930bb05c2aa2a00",
+  "versions": [
+    "0.4.19",
+    "0.4.21",
+    "0.4.24",
+    "0.4.25",
+    "0.4.26",
+    "0.5.0",
+    "0.5.2",
+    "0.5.8",
+    "0.5.17",
+    "0.6.0",
+    "0.6.9",
+    "0.6.10",
+    "0.6.11",
+    "0.6.12",
+    "0.7.0",
+    "0.7.4",
+    "0.7.5",
+    "0.7.6",
+    "0.8.0",
+    "0.8.4",
+    "0.8.5",
+    "0.8.6",
+    "0.8.7",
+    "0.8.8",
+    "0.8.9",
+    "0.8.10",
+    "0.8.11",
+    "0.8.12",
+    "0.8.13",
+    "0.8.26"
+  ],
+  "settings": {
+    "optimizer": {
+      "enabled": false
+    },
+    "remappings": [],
+    "outputSelection": {
+      "*": {
+        "": [
+          "ast"
+        ],
+        "*": [
+          "abi",
+          "evm.bytecode.object"
+        ]
+      }
+    }
+  },
+  "corpus_sources_read": 0,
+  "labels_read": 0,
+  "detectors_executed": 0,
+  "scope": "Compiler interface smoke test on one authored fixture, not source-corpus coverage."
+}
