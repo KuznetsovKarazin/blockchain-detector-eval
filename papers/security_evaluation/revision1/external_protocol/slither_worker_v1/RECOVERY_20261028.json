@@ -1,0 +1,70 @@
+{
+  "compiler_or_detector_executions_during_recovery": 0,
+  "files": [
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "eb336ef5b2102fd2995f9def153a88ca4d7ef01eda5de1e8a03f287aec8edbbc",
+      "path": "worker.py",
+      "recovered_sha256": "eb336ef5b2102fd2995f9def153a88ca4d7ef01eda5de1e8a03f287aec8edbbc"
+    },
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "82f8ea9ffdfc63065e994507db429b6b24bfea4477d26c8d431f3bdb5802ae13",
+      "path": "analyzer_child.py",
+      "recovered_sha256": "82f8ea9ffdfc63065e994507db429b6b24bfea4477d26c8d431f3bdb5802ae13"
+    },
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "a79dd346eb0cab32b461e880cf6aa9624900dc240a6bc87454fdc5280dd39d7c",
+      "path": "policy.py",
+      "recovered_sha256": "a79dd346eb0cab32b461e880cf6aa9624900dc240a6bc87454fdc5280dd39d7c"
+    },
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "2145b145866ec566950b788d46e8b679e9dc87c2747601ea1a752acedbc35590",
+      "path": "test_worker.py",
+      "recovered_sha256": "2145b145866ec566950b788d46e8b679e9dc87c2747601ea1a752acedbc35590"
+    },
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "805912a9cb4ef2d16fe2d1aaa790d70c943fd6f31e6f0d8583ebc6019db38fd2",
+      "path": "README.md",
+      "recovered_sha256": "805912a9cb4ef2d16fe2d1aaa790d70c943fd6f31e6f0d8583ebc6019db38fd2"
+    },
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "819f8e3dc618d463b8f71feb1044923f1d8c8ef968736f50350a3b02fcf0d57c",
+      "path": "parse_results.py",
+      "recovered_sha256": "819f8e3dc618d463b8f71feb1044923f1d8c8ef968736f50350a3b02fcf0d57c"
+    },
+    {
+      "byte_identity_verified": true,
+      "old_frozen_sha256": "e30ae5c7321c363b681b5b11babd9b5c20715c940485b7ea2de9091026ebd4fc",
+      "path": "fixtures.py",
+      "recovered_sha256": "e30ae5c7321c363b681b5b11babd9b5c20715c940485b7ea2de9091026ebd4fc"
+    }
+  ],
+  "historical_results_transcript_only": {
+    "Slither_attempts": 21,
+    "actual_corpus_scans": 0,
+    "actual_corpus_scores": 0,
+    "cases": 25,
+    "compiler_attempts": 22,
+    "expected_failure_unavailable_cases": 4,
+    "failed_expectations": 0,
+    "successful_analyses": 21,
+    "warning": "Recorded historical console observations; original output artifacts are absent, not reverified or regenerated during recovery."
+  },
+  "original_execution_artifacts_recovered": false,
+  "original_plan_runtime_and_receipts_recovered": false,
+  "recovery_date": "2026-10-28",
+  "remaining_known_old_hashes_not_recovered_bytes": {
+    "VERIFICATION.json": "1b9d286f499bac247de6674283aabf4cd6b71569e54ab46bc1c7f8ffa3ad6a17",
+    "authored_check_20261026_v1/execution/receipt.json": "1a0a64ca93322eafdb75c72b3a0c78e3e3f17d1c6fd2cef8372872f3512cd893",
+    "authored_check_20261026_v1/plan.json": "075232c6db1974ccffca6ea322655517e676da6902789e5c7e541715d9e4204f"
+  },
+  "schema": "slither_source_recovery_inventory_v1",
+  "source_provenance": "Reconstructed from preserved tool transcripts; SHA256 independently compared with original frozen-plan hashes retained by parent.",
+  "status": "all_seven_owner_sources_byte_exact_original_run_artifacts_missing",
+  "tests_rerun_during_recovery": 0
+}

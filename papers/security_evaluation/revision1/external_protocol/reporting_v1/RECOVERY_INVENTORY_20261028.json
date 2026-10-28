@@ -1,0 +1,104 @@
+{
+  "schema": "reporting_source_recovery_inventory_20261028_v2",
+  "new_recovery_record_not_original_run_receipt": true,
+  "original_repository_root": "/tmp/security-recovery-repo",
+  "recovered_directory": "/tmp/security-reporting-source-recovery-20261028/reporting_v1",
+  "files": [
+    {
+      "path": "reporting_v1/README.md",
+      "bytes": 6982,
+      "sha256": "70fb7e363ab6371ebaddc45c3419155ebddd9e786c66543e20b226b367f670fb",
+      "known_original_sha256": "70fb7e363ab6371ebaddc45c3419155ebddd9e786c66543e20b226b367f670fb",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    },
+    {
+      "path": "reporting_v1/VERIFICATION.md",
+      "bytes": 2585,
+      "sha256": "5e2e9e8945b41450170b33a9d06046d425dfde5ce41e261b2473e5076e111f6c",
+      "known_original_sha256": null,
+      "byte_identity_proven_by_pre_loss_digest": false,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "No pre-loss digest available for this historical narrative"
+    },
+    {
+      "path": "reporting_v1/conftest.py",
+      "bytes": 219,
+      "sha256": "1fdebff717e04d23dbc68fa2908628a9948f1facbd313bf5c6bc28e69677e0c9",
+      "known_original_sha256": "1fdebff717e04d23dbc68fa2908628a9948f1facbd313bf5c6bc28e69677e0c9",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    },
+    {
+      "path": "reporting_v1/reporting.py",
+      "bytes": 21174,
+      "sha256": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+      "known_original_sha256": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    },
+    {
+      "path": "reporting_v1/run_synthetic.py",
+      "bytes": 6114,
+      "sha256": "87cb3391c0866001b3179f1124cf946b0c4418d7d0e4b7bc0bf42c119b5561d2",
+      "known_original_sha256": "87cb3391c0866001b3179f1124cf946b0c4418d7d0e4b7bc0bf42c119b5561d2",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    },
+    {
+      "path": "reporting_v1/synthetic_inputs.py",
+      "bytes": 1498,
+      "sha256": "08ca206c1a59826a1103f7eb1d5a22a75ebc63516033cb9111e70e645a1cc60d",
+      "known_original_sha256": "08ca206c1a59826a1103f7eb1d5a22a75ebc63516033cb9111e70e645a1cc60d",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    },
+    {
+      "path": "reporting_v1/test_reporting.py",
+      "bytes": 11352,
+      "sha256": "c18bf5e765e550311eabbe12750ccd55bd01bee70667a14ecfadc97a1aaf4645",
+      "known_original_sha256": "c18bf5e765e550311eabbe12750ccd55bd01bee70667a14ecfadc97a1aaf4645",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    },
+    {
+      "path": "reporting_v1/verify_outputs.py",
+      "bytes": 4268,
+      "sha256": "c145720f7429c9367620d2a596fb981bc8578f356b5fb89bd5b0daca1cec585e",
+      "known_original_sha256": "c145720f7429c9367620d2a596fb981bc8578f356b5fb89bd5b0daca1cec585e",
+      "byte_identity_proven_by_pre_loss_digest": true,
+      "recovery_method": "Reconstructed from the preserved original file-creation patch and all later patch/replacement operations in the conversation; no numerical execution.",
+      "pre_loss_digest_evidence": "Earlier observed source digests, including full READINESS source_hashes retained by parent"
+    }
+  ],
+  "known_hash_matches": 7,
+  "tests_or_experiments_rerun": false,
+  "modules_imported": false,
+  "real_labels_scores_or_models_used": false,
+  "prior_dynamic_run_receipts_recreated": false,
+  "missing_original_outputs": [
+    "READINESS.json",
+    "synthetic_check_20261026_v1 dynamic design/prepared/receipt JSON",
+    "six synthetic report JSON files",
+    "synthetic_output_verification.json"
+  ],
+  "separately_reported_archive": "Original reporting audit ZIP restored by parent; this operation checked container identity before/after source copy, without rerunning any numerical work.",
+  "scope_note": "Restored VERIFICATION.md describes historical observed work. It is not evidence that the lost dynamic receipts are locally restored or that tests were rerun on 28 October.",
+  "previous_inventory_sha256": "8ec858230ac15eaccffcba5d68bbbadb6f7c8eb6c69bc246e0a7313fa19f1821",
+  "prior_inventory_retained_in": "recovered_reporting_sources_20261028.zip",
+  "destination_directory": "/tmp/security-recovery-repo/papers/security_evaluation/revision1/external_protocol/reporting_v1",
+  "source_files_copied": 8,
+  "existing_archive_preserved": {
+    "path": "synthetic_engine_audit_20261026.zip",
+    "bytes": 588896,
+    "sha256_before": "2d463a36e9933f2d5fe588750869bf9c0c424f6740d25a2aabbaf4c175d3892e",
+    "sha256_after": "2d463a36e9933f2d5fe588750869bf9c0c424f6740d25a2aabbaf4c175d3892e",
+    "archive_contents_not_recomputed": true
+  }
+}

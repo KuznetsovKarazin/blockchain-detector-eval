@@ -1,0 +1,106 @@
+{
+  "reviewed_date": "2026-10-26",
+  "scope": "Targeted primary-source context for AP with incomplete labels, finite-population resampling and completion bounds. Not a systematic review or priority search.",
+  "source_selection": "Publisher pages, original author-hosted papers, one explicitly author-uploaded paper, official methodological report, and original software documentation. Search aggregators were used only for discovery.",
+  "quotation_policy": "Each source has at most one short verbatim support excerpt, below 25 words. Supporting paraphrases remain below 200 words per source; no paper copies are redistributed.",
+  "sources": [
+    {
+      "id": "hfcn2023",
+      "citation": "Household Finance and Consumption Network (2023). Household Finance and Consumption Survey: Methodological report for the 2021 wave. ECB Statistics Paper Series 45.",
+      "doi": "10.2866/970554",
+      "url": "https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps45~4bbcfb02eb.en.pdf",
+      "primary_source": "Official report, full PDF and rendered formula pages inspected",
+      "location": "Section 7.2, printed pages 52–53; PDF zero-based pages 55–56; section 7.2.1",
+      "short_exact_support": "out of which 𝑛ℎ are sampled without replacement",
+      "supports": "For strata sampled without replacement, w*=w(1-lambda+lambda*n/m*r), lambda=sqrt(m*(1-f)/(n-1)); section 7.2.1 sets m=n-1. This gives the implemented positive-baseline finite-correction weights.",
+      "does_not_support": "A finite-sample AP percentile coverage theorem, a universal rare-positive cutoff, or inference over new projects.",
+      "recommended_use": "Keep R3 reference 19 for weight provenance; distinguish report year 2023 from survey wave 2021.",
+      "web_refs": ["turn70view1", "turn72view0", "turn81view0", "turn81view1"]
+    },
+    {
+      "id": "yilmaz_aslam2008",
+      "citation": "Yilmaz, E.; Aslam, J.A. (2008). Estimating average precision when judgments are incomplete. Knowledge and Information Systems 16, 173–211.",
+      "doi": "10.1007/s10115-007-0101-7",
+      "url": "https://link.springer.com/article/10.1007/s10115-007-0101-7",
+      "primary_source": "Publisher abstract and bibliographic record; subscription full text not inspected",
+      "location": "Abstract; citation and publication-history blocks",
+      "short_exact_support": "when relevance judgments are a random subset of complete judgments",
+      "supports": "Induced AP, subcollection AP and inferred AP address statistical estimation of AP from incomplete relevance judgments; incomplete-label AP evaluation is established prior work.",
+      "does_not_support": "The present grouped-threshold completion DP, arbitrary unresolved semantic labels being missing at random, or coverage of this implementation.",
+      "recommended_use": "Keep R3 reference 18 as concise related context. Cite the volume year 2008; 14 August 2007 is online publication, not a conflicting edition.",
+      "web_refs": ["turn73view3"]
+    },
+    {
+      "id": "yilmaz_kanoulas_aslam2008",
+      "citation": "Yilmaz, E.; Kanoulas, E.; Aslam, J.A. (2008). A Simple and Efficient Sampling Method for Estimating AP and NDCG. SIGIR 2008, 603–610.",
+      "doi": "10.1145/1390334.1390437",
+      "url": "https://dl.acm.org/doi/10.1145/1390334.1390437",
+      "author_copy_url": "https://www.researchgate.net/publication/221299604_A_simple_and_efficient_sampling_method_for_estimating_AP_and_NDCG",
+      "primary_source": "Publisher indexed abstract corroborated by full original paper explicitly uploaded by coauthor Evangelos Kanoulas; author-hosted Northeastern PDF retrieval was blocked",
+      "location": "Original paper abstract, first page",
+      "short_exact_support": "derive confidence intervals for infAP",
+      "supports": "Prior work already combines incomplete-judgment AP estimation, stratified random sampling and confidence intervals.",
+      "does_not_support": "Identifying infAP with sklearn sample-weighted AP, substituting its intervals without verifying design/estimator compatibility, or sharp completion bounds.",
+      "recommended_use": "Optional if R3 discusses survey-style AP estimation more broadly. Not needed merely to increase reference count.",
+      "web_refs": ["turn78search0", "turn78view0"]
+    },
+    {
+      "id": "boyd_eng_page2013",
+      "citation": "Boyd, K.; Eng, K.H.; Page, C.D. (2013). Area Under the Precision-Recall Curve: Point Estimates and Confidence Intervals. ECML PKDD 2013, LNAI 8190, 451–466.",
+      "doi": "10.1007/978-3-642-40994-3_29",
+      "url": "https://pages.cs.wisc.edu/~boyd/aucpr_final.pdf",
+      "publisher_url": "https://link.springer.com/chapter/10.1007/978-3-642-40994-3_29",
+      "primary_source": "Corrected author-hosted full paper and publisher metadata inspected",
+      "location": "Sections 3.2 and 4.2; corrected interpolation integral footnote on fifth PDF page",
+      "short_exact_support": "we recommend using stratified bootstrap so π is preserved exactly in all replicates",
+      "supports": "Earlier simulation work evaluated AUCPR point/interval estimators and reported bootstrap undercoverage in its studied settings. Its resampling fixes class counts and targets distributional AUCPR.",
+      "does_not_support": "Calibration of the current finite-frame weighted AP procedure, automatic replacement by binomial/logit intervals, or attribution of the exact 514/969 counterexample to this paper.",
+      "recommended_use": "Optional short uncertainty-context citation. If generic bootstrap fragility is described as a contribution, explicitly acknowledge this earlier context.",
+      "web_refs": ["turn83view0", "turn76view1"]
+    },
+    {
+      "id": "boyd_eng_page2013_erratum",
+      "citation": "Boyd, K.; Eng, K.H.; Page, C.D. (2013). Erratum: Area under the Precision-Recall Curve: Point Estimates and Confidence Intervals. LNAI 8190, E1.",
+      "doi": "10.1007/978-3-642-40994-3_55",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-642-40994-3_55",
+      "institutional_url": "https://scholars.duke.edu/publication/1710316",
+      "primary_source": "Publisher correction text and coauthor institutional record; corrected equation also checked in author paper",
+      "location": "Erratum abstract, referring to bottom of printed page 455",
+      "short_exact_support": "inadvertently transposes a and b",
+      "supports": "The correction concerns the interpolated PR-area integral, not bibliographic metadata. The corrected antiderivative is (a*r-b*log(a*r+b))/a^2 in the stated nondegenerate case.",
+      "does_not_support": "A correction to the present noninterpolated AP definition or a retraction of the paper's coverage experiment.",
+      "recommended_use": "Track with Boyd if cited; do not reproduce the uncorrected interpolation expression. The current DP never uses this interpolation.",
+      "web_refs": ["turn76view2", "turn82view1", "turn83view0"]
+    },
+    {
+      "id": "urlus2023",
+      "citation": "Urlus, R.E.Q.; Baak, M.A.; Collot, S.; Fridman Rojas, I. (2023). Pointwise sampling uncertainties on the Precision-Recall curve. PMLR 206, AISTATS 2023.",
+      "url": "https://proceedings.mlr.press/v206/urlus23a/urlus23a.pdf",
+      "primary_source": "Original proceedings paper, full PDF inspected",
+      "location": "Sections 1–3, especially iid multinomial confusion-matrix assumption on third PDF page",
+      "short_exact_support": "the confusion matrix of an i.i.d. sample",
+      "supports": "Pointwise precision/recall uncertainty is a distinct problem with an explicit sampling model.",
+      "does_not_support": "A confidence interval for integrated AP under unequal-probability finite-population sampling, or automatic simultaneous coverage of an entire curve.",
+      "recommended_use": "Optional boundary clarification only; no need to expand R3 with this separate method.",
+      "web_refs": ["turn71view3"]
+    },
+    {
+      "id": "sklearn_ap",
+      "citation": "scikit-learn developers. average_precision_score API documentation. Accessed 26 October 2026.",
+      "url": "https://sklearn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html",
+      "primary_source": "Original software documentation",
+      "location": "Definition directly above parameters",
+      "short_exact_support": "This implementation is not interpolated",
+      "supports": "AP is the sum of threshold precision times recall increments; it differs from trapezoidal PR area. This matches the grouped-threshold convention used by the DP.",
+      "does_not_support": "Unknown-label inference, random tie-breaking AP, or treating sklearn's no-positive convention as the study's scientific definition.",
+      "recommended_use": "Definition/provenance support; retain the study's explicit undefined P=0 contract and frozen software version.",
+      "web_refs": ["turn70view2", "turn72view1"]
+    }
+  ],
+  "additional_primary_context_not_required_for_R3": {
+    "citation": "Imbens, G.W.; Manski, C.F. (2004). Confidence Intervals for Partially Identified Parameters. Econometrica 72(6), 1845–1857.",
+    "url": "https://doi.org/10.1111/j.1468-0262.2004.00555.x",
+    "verification": "Publisher abstract retrieved. Distinguishes an identification region from confidence procedures accounting for estimated-bound sampling variation. This general conceptual context does not prove the present finite-score DP or license transferring a CI formula.",
+    "web_refs": ["turn77search0"]
+  }
+}

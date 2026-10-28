@@ -1,0 +1,21 @@
+{
+  "schema": "article1_word_identity_recovery_v1",
+  "recovered_date": "2026-10-28",
+  "document_original_date": "2026-10-26",
+  "filename": "Article_1_Revision_3_2026-10-26.docx",
+  "bytes": 767916,
+  "sha256": "3f77292b8310e95981dba7c0001573015c237bd3a25a4052a0209943be19ac3f",
+  "matches_original_recorded_sha256": true,
+  "manuscript_sha256": "89a6acafb4a0ea941d20f77ba45110ca49f693086046adc07715fe22b9ff068a",
+  "original_visual_review_recorded_in_session": {
+    "pages": 20,
+    "tables": 5,
+    "figures": 6,
+    "references": 19,
+    "native_math_objects": 57,
+    "display_math_objects": 7,
+    "status": "PASS"
+  },
+  "new_render_or_layout_change": false,
+  "original_QA_JSON_not_recovered": true
+}

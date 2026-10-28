@@ -50,8 +50,10 @@ V2 configuration SHA256:
 
 An AP point is returned only when identified by every admissible completion
 with no undefined possibility; a positive complete census is the simplest
-case. A survey-weighted partial-sample point estimate is a different estimand
-and is not computed by this API. Human label correctness, missing model scores,
+case. A survey-weighted partial-sample point estimate and these completion bounds
+can concern the same target finite-population AP, but are different inferential
+objects: a sampling-based estimator and a logical identification envelope. The
+point estimator is not computed by this API. Human label correctness, missing model scores,
 new-family generalization and paired sharp-difference bounds remain outside it.
 
 A separate reviewer subsequently passed six sealed synthetic tests on the
@@ -62,3 +64,7 @@ large-integer ordering and rejection of lossy `Fraction` conversion. The
 records the unchanged API hash, and the reviewer separately confirmed the
 Bellman proof and exact integer scaling. This is additional software/mathematical
 review, not independent human vulnerability assessment.
+
+Editorial correction, 26 October 2026: the preceding paragraph now distinguishes
+the estimator from the completion envelope, rather than calling them different
+estimands. No source snapshot, frozen configuration or numerical result changed.

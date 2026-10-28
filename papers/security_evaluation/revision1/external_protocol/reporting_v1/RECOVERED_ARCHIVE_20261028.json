@@ -1,0 +1,13 @@
+{
+  "recovery_date": "2026-10-28",
+  "archive": "synthetic_engine_audit_20261026.zip",
+  "archive_sha256": "2d463a36e9933f2d5fe588750869bf9c0c424f6740d25a2aabbaf4c175d3892e",
+  "archive_bytes": 588896,
+  "matches_original_recorded_archive_sha256": true,
+  "git_blob_sha": "7163ae9c11c4af0b323c6c03687328af2d9a6c60",
+  "member": "synthetic_check_20261026_v1/engine_audit_baseline_reentrancy.json",
+  "member_bytes": 20804725,
+  "member_sha256": "044243fa44bb70f496629d6d9b0210b7ee291dff2806fbb93790415513baa15d",
+  "source": "previously uploaded GitHub blob; branch update had not completed",
+  "other_dynamic_reporting_outputs_recovered": false
+}

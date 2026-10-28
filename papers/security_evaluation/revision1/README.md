@@ -1,3 +1,5 @@
+> **Current continuation, 28 October 2026:** Revision3 and the core reporting/Slither sources have been restored with their original hashes after workspace maintenance. Some uncommitted dynamic outputs remain missing. See [the current status](recovery_20261028/STATUS_RU.md). Dated26October sections below are preserved historical checkpoints, not proof of current local artifact availability.
+
 > **Current state, 26 October 2026:** local recovery and public availability differ. Twenty-three gzip files match original bytes; six original NPZ files remain unrecovered and have separate new canonical reproductions. Compressed artifacts remain excluded from the public update. Read [publication status](PUBLICATION_STATUS.md).
 
 # Article 1: scientific evidence and current reproduction status

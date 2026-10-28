@@ -1,3 +1,5 @@
+> **Current continuation, 28 October 2026:** Revision3 and the core reporting/Slither sources have been restored with their original hashes after workspace maintenance. Some uncommitted dynamic outputs remain missing. See [the current status](recovery_20261028/STATUS_RU.md). Dated26October sections below are preserved historical checkpoints, not proof of current local artifact availability.
+
 # Разбор рецензии и границы первой доработки
 
 Дата: 25 октября 2026 года. Объект проверки — текст рецензии пользователя и рукопись с артефактами коммита `07673ed`. Это методологическая проверка замечаний, а не человеческая экспертиза уязвимостей и не прогноз редакционного решения. Новые результаты revision1 должны ссылаться на собственные конфигурации и отчёты; ниже исходное состояние отделено от намеченной доработки.

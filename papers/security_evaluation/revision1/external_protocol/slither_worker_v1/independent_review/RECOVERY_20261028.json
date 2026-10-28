@@ -1,0 +1,99 @@
+{
+  "compilations_during_recovery": 0,
+  "date": "2026-10-28",
+  "exact_owner_sources": [
+    {
+      "path": "parse_results.py",
+      "sha256": "819f8e3dc618d463b8f71feb1044923f1d8c8ef968736f50350a3b02fcf0d57c",
+      "status": "matched_original_frozen_plan_hash"
+    },
+    {
+      "path": "fixtures.py",
+      "sha256": "e30ae5c7321c363b681b5b11babd9b5c20715c940485b7ea2de9091026ebd4fc",
+      "status": "matched_original_frozen_plan_hash"
+    }
+  ],
+  "external_B_authorization": false,
+  "historical_observations_only": {
+    "Slither_attempts": 21,
+    "authored_cases": 25,
+    "compiler_attempts": 22,
+    "expectation_failures": 0,
+    "expected_unavailable_or_failure_cases": 4,
+    "failure_rows_with_empty_scores": 16,
+    "independent_tests": 105,
+    "owner_tests": 9,
+    "scope": "Historical tool transcript, not fresh verification or recovered original run outputs",
+    "score_rows": 100,
+    "success_cases": 21,
+    "tests_passed_on_20261026": 114,
+    "verified_artifacts": 203,
+    "verified_source_mappings": 108
+  },
+  "human_semantic_signoff": false,
+  "independent_sources": [
+    {
+      "original_sha256": null,
+      "path": "independent_review/REVIEW_SCOPE.md",
+      "recovered_sha256": "abb48b3092c64093f16636fc13d93db9b64fe4c1a6608168d3119de25a0537c5",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    },
+    {
+      "original_sha256": null,
+      "path": "independent_review/audit_wheel_collisions.py",
+      "recovered_sha256": "7425b374768a82aa9772d0b3b7aa71630148d15b6770d499b0aa7955498b06ea",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    },
+    {
+      "original_sha256": null,
+      "path": "independent_review/seal_preexecution_review.py",
+      "recovered_sha256": "7a2612db8425576b8c691cb75da114b65e7b18866b58f55484bd8c81d9d4b50f",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    },
+    {
+      "original_sha256": null,
+      "path": "independent_review/test_gate_independent.py",
+      "recovered_sha256": "2429998e81932d93056eebca495ef3b0e1c96ca5e4f2fdda2a1a6c28dc8bf915",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    },
+    {
+      "original_sha256": null,
+      "path": "independent_review/test_parser_independent.py",
+      "recovered_sha256": "03f17359f3c27d742c88e1b4e7dd2639414d412c009754c714b2e793e788d018",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    },
+    {
+      "original_sha256": null,
+      "path": "independent_review/test_worker_independent.py",
+      "recovered_sha256": "d9d5b7463581666ed15901a4e91de52c5bf00a585fbf52aeec5c8082e96951ae",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    },
+    {
+      "original_sha256": null,
+      "path": "independent_review/verify_authored_outputs.py",
+      "recovered_sha256": "f7294413150f18bc2203b30cefe90892058819ce69a21823ede701e280f6ffa9",
+      "status": "reconstructed_from_full_patch_history_old_digest_unavailable"
+    }
+  ],
+  "known_original_hashes_without_recovered_bytes": {
+    "POSTRUN_REVIEW.json": "f03ae97a18d2bd0cc52f28820d9de69b66146c63ca6fe3de270761108f517c75",
+    "PREEXECUTION_REVIEW.json": "d16eb87a269f8486d7a33e2b7ac35afad01ac2a9ce10c7ad7f4d77bc427371dd",
+    "WHEEL_COLLISION_AUDIT.json": "bae68fdce35265627e281a57966afe866d81af7f999c3a611cf36a36facf1d8e",
+    "authored_plan.json": "075232c6db1974ccffca6ea322655517e676da6902789e5c7e541715d9e4204f",
+    "owner_execution_receipt.json": "1a0a64ca93322eafdb75c72b3a0c78e3e3f17d1c6fd2cef8372872f3512cd893"
+  },
+  "missing_original_artifacts": [
+    "PREEXECUTION_REVIEW.json",
+    "POSTRUN_REVIEW.json",
+    "WHEEL_COLLISION_AUDIT.json",
+    "PREEXECUTION_TEST_LOG.txt",
+    "authored_check_20261026_v1/plan.json",
+    "authored_check_20261026_v1/runtime.json",
+    "authored_check_20261026_v1/execution/ including203 files and receipt"
+  ],
+  "old_dynamic_artifacts_recreated": false,
+  "recovery_scope": "source text only; no tool/test/experiment execution",
+  "schema": "independent_slither_source_recovery_20261028_v1",
+  "slither_analyses_during_recovery": 0,
+  "tests_run_during_recovery": 0
+}

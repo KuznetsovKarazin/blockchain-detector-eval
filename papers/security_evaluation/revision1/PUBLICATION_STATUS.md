@@ -1,3 +1,5 @@
+> **Current continuation, 28 October 2026:** Revision3 and the core reporting/Slither sources have been restored with their original hashes after workspace maintenance. Some uncommitted dynamic outputs remain missing. See [the current status](recovery_20261028/STATUS_RU.md). Dated26October sections below are preserved historical checkpoints, not proof of current local artifact availability.
+
 # Current publication and recovery status
 
 Updated 26 October 2026. Scientific results, local restoration and public availability are distinct states.

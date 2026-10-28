@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "review_date": "2026-10-26",
+  "checks_passed": 27,
+  "checks": [
+    "reviewed_manuscript_hash",
+    "bootstrap_original_design_distinguished_from_resampling",
+    "references_18_and_19_present",
+    "compiler_rows_unique",
+    "external_compiler_counts",
+    "train_compiler_counts",
+    "compiler_success_total",
+    "compiler_final_errors",
+    "compiler_unavailable_total",
+    "training_import_context_failures",
+    "compiler_percentages",
+    "coverage_scenario_method_counts",
+    "exact_sample_states",
+    "coverage_positive_noncensus",
+    "coverage_noncensus_below_nominal",
+    "coverage_range",
+    "coverage_census",
+    "coverage_no_positive_guards",
+    "positive_sample_replicates_all_valid",
+    "analytic_counterexample_combinatorics",
+    "analytic_counterexample_matches_summary",
+    "DP_partial_case_combinatorics",
+    "DP_binary_completion_combinatorics",
+    "AP_bounds_API_unchanged",
+    "performance_v1_unchanged",
+    "editorial_correction_exact_document",
+    "short_primary_source_quotations"
+  ],
+  "manuscript_sha256": "89a6acafb4a0ea941d20f77ba45110ca49f693086046adc07715fe22b9ff068a",
+  "scope": "Independent metadata arithmetic, source identity, mathematical reading and primary literature review; not a rerun of underlying experiments.",
+  "new_fits": 0,
+  "new_compiler_runs": 0,
+  "private_review_keys_read": false,
+  "corpus_source_bodies_read": false,
+  "human_adjudications": 0,
+  "compiler_cohorts": {
+    "external": {
+      "fixed_files": 1998,
+      "attempted_files": 1968,
+      "successful_files": 1807,
+      "successful_no_nonempty_root_bytecode": 0,
+      "successful_unlinked": 10,
+      "statuses": {
+        "compiler_success": 1807,
+        "missing_pragma": 23,
+        "unsupported_constraint": 4,
+        "compiler_error": 161,
+        "no_compatible_catalog_release": 3
+      },
+      "success_percent_fixed": 90.44,
+      "success_percent_attempted": 91.82
+    },
+    "train": {
+      "fixed_files": 691,
+      "attempted_files": 336,
+      "successful_files": 330,
+      "successful_no_nonempty_root_bytecode": 101,
+      "successful_unlinked": 10,
+      "statuses": {
+        "missing_import": 336,
+        "compiler_success": 330,
+        "missing_pragma": 9,
+        "remote_or_absolute_import_forbidden": 5,
+        "compiler_error": 6,
+        "import_syntax_unresolved": 1,
+        "import_outside_snapshot": 4
+      },
+      "success_percent_fixed": 47.76,
+      "success_percent_attempted": 98.21
+    }
+  },
+  "counterexample": {
+    "conditional_coverage": "514/969",
+    "issued_and_covering": "514/4845",
+    "forced_miss_given_positive_sample": "455/969"
+  },
+  "editorial_correction": {
+    "path": "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/RESULTS.md",
+    "old_sha256": "1d465674d7458a0fc9d2bd45594c7724d86abdf6cb9e788b60ed6b77ee891b89",
+    "new_sha256": "3169f6a62d890c92594fefe73c90e0b5f1e5bb2f53f931a869ab591137eb7fbe",
+    "authorized_by": "parent /root explicit message",
+    "reason": "Estimator and logical completion envelope can target the same finite-population AP."
+  },
+  "input_sha256": {
+    "papers/security_evaluation/manuscript/DRAFT_REVISION3.md": "89a6acafb4a0ea941d20f77ba45110ca49f693086046adc07715fe22b9ff068a",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/plan_20261026_v2/execution_results/per_file_status.json": "2f86d433af460571c6aa6f1c7d73cbd5230c394d3a57f7f31d47132d6bb8896e",
+    "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/summary.csv": "2b03642ff4e19fcc49e85552cace452c3b92512ea7f01efbc799c643e4f3795f",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/run_20261026_v2/results.json": "84886028add2a70fb64baa92bd6df68a4e043389bbfb548ee291cf34000434fd",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/run_20261026_v2/source_snapshot/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/RESULTS.md": "3169f6a62d890c92594fefe73c90e0b5f1e5bb2f53f931a869ab591137eb7fbe",
+    "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/PRIMARY_SOURCES.json": "ee87c66a43129911d6eab04bc38b99380be216c601ad27aefabf08046e476659",
+    "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/check_claims.py": "6e894d84dcffdaa95f346cccb3b55f54d5f7e9404588f305a06c7d2f23480b80"
+  },
+  "manual_scope_assessment": "No material scientific blocker in R3 additions. No priority claim, AP coverage guarantee, actual external accuracy, semantic identity or universal split-impossibility claim inferred."
+}
