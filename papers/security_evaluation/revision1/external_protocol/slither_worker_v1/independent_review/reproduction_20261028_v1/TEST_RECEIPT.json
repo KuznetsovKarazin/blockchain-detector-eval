@@ -1,0 +1,32 @@
+{
+  "Slither_invocations": 0,
+  "compiler_invocations": 0,
+  "completed_utc": "2026-10-28T09:32:04.268093+00:00",
+  "corpus_or_annotation_body_reads": 0,
+  "external_B_execution_authorized": false,
+  "human_semantic_signoff": false,
+  "independent_tests": 105,
+  "log_sha256": "23ed65b86b1768000b60c3b25804fbe561d6591652983233600650d15a5c5fbb",
+  "model_fits_or_predictions": 0,
+  "owner_tests": 9,
+  "plan_sha256": "fbd152462e3897caa5425f591fc6b1f4f374bb0529479a1161f84efcaf159151",
+  "restoration_of_original_test_receipt_claimed": false,
+  "returncode": 0,
+  "schema": "new_slither_engineering_test_receipt_20261028_v1",
+  "source_sha256": {
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/README.md": "805912a9cb4ef2d16fe2d1aaa790d70c943fd6f31e6f0d8583ebc6019db38fd2",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/analyzer_child.py": "82f8ea9ffdfc63065e994507db429b6b24bfea4477d26c8d431f3bdb5802ae13",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/fixtures.py": "e30ae5c7321c363b681b5b11babd9b5c20715c940485b7ea2de9091026ebd4fc",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/independent_review/reproduction_20261028_v1/record_tests.py": "0427d35cc74dba0b826a620c47572e0325acd689a158c8566d7d0b7c76cfbefb",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/independent_review/test_gate_independent.py": "2429998e81932d93056eebca495ef3b0e1c96ca5e4f2fdda2a1a6c28dc8bf915",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/independent_review/test_parser_independent.py": "03f17359f3c27d742c88e1b4e7dd2639414d412c009754c714b2e793e788d018",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/independent_review/test_worker_independent.py": "d9d5b7463581666ed15901a4e91de52c5bf00a585fbf52aeec5c8082e96951ae",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/parse_results.py": "819f8e3dc618d463b8f71feb1044923f1d8c8ef968736f50350a3b02fcf0d57c",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/policy.py": "a79dd346eb0cab32b461e880cf6aa9624900dc240a6bc87454fdc5280dd39d7c",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/test_worker.py": "2145b145866ec566950b788d46e8b679e9dc87c2747601ea1a752acedbc35590",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/worker.py": "eb336ef5b2102fd2995f9def153a88ca4d7ef01eda5de1e8a03f287aec8edbbc"
+  },
+  "sources_unchanged": true,
+  "status": "pass",
+  "tests_passed": 114
+}

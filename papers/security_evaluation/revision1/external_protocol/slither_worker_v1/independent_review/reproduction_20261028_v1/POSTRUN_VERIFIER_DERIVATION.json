@@ -1,0 +1,17 @@
+{
+  "changes": [
+    "new run/output directory",
+    "new plan anchor",
+    "new receipt schema and non-recreation marker",
+    "adjusted repository ancestor depth",
+    "new docstring"
+  ],
+  "execution_performed_by_this_generation": false,
+  "new_path": "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/independent_review/reproduction_20261028_v1/verify_new_outputs.py",
+  "new_sha256": "10adb65ea76015255d1978d7d779bb9f423bafea21c07dafce92b697a47ff3d5",
+  "original_source_preserved": true,
+  "schema": "new_postrun_verifier_derivation_20261028_v1",
+  "template_path": "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/independent_review/verify_authored_outputs.py",
+  "template_sha256": "f7294413150f18bc2203b30cefe90892058819ce69a21823ede701e280f6ffa9",
+  "verification_algorithm_otherwise_unchanged": true
+}

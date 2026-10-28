@@ -1,0 +1,93 @@
+{
+  "schema": "article1_lossless_publication_payload_v1",
+  "date": "2026-10-28",
+  "reason": "Small transfer requests after repeated Invalid conversation body errors; original evidence bytes unchanged.",
+  "archive_format": "tar.xz",
+  "archive_bytes": 1371992,
+  "archive_sha256": "b38bc7fd6071561938d80544e149a12c679f5c8bf5e7699a9f680e232aa8189f",
+  "parts": [
+    {
+      "path": "reproduction_payload.tar.xz.part00",
+      "bytes": 196608,
+      "sha256": "ebaab7d9b79869a252a5887b2bf9ed4320afab0eb6c6d7c6609f02844a8ca0cb"
+    },
+    {
+      "path": "reproduction_payload.tar.xz.part01",
+      "bytes": 196608,
+      "sha256": "39f7ffd46e2e42b762ed51820bad2f9a87a06ceebfaaa37779c4e0579acc65f6"
+    },
+    {
+      "path": "reproduction_payload.tar.xz.part02",
+      "bytes": 196608,
+      "sha256": "c94981b69f50b3fe45a7bc67b3794912251994ce134ae673da15ce1062f10a2a"
+    },
+    {
+      "path": "reproduction_payload.tar.xz.part03",
+      "bytes": 196608,
+      "sha256": "0350b9d4084d79d005893ed8a02bfea0daf8c599814afc87efc4056397f0523a"
+    },
+    {
+      "path": "reproduction_payload.tar.xz.part04",
+      "bytes": 196608,
+      "sha256": "a2e7269f323c6c9c779906fbca7394eb8871975edd8249e1ef5bc7a8cd0912df"
+    },
+    {
+      "path": "reproduction_payload.tar.xz.part05",
+      "bytes": 196608,
+      "sha256": "69c34ecd1796d16884ee092d8da9ed001f3da9a1b5da4f0f17f29b6e7319dfaa"
+    },
+    {
+      "path": "reproduction_payload.tar.xz.part06",
+      "bytes": 192344,
+      "sha256": "e14f06c3b008c1ecfe7388bd358933ee94dc22b463166dfbd555746a26dc3b58"
+    }
+  ],
+  "members": [
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/reporting_v1/recovered_check_20261028_v1/report_baseline_reentrancy.json",
+      "bytes": 434731,
+      "sha256": "943c074dbd6f7e7e2ae68992893d63700fe6f36cb091e5833dd16183fecccb57"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/reporting_v1/recovered_check_20261028_v1/report_baseline_unchecked.json",
+      "bytes": 287293,
+      "sha256": "ff071c7189837fdaa7864c82cf595d2fb2952d6fc3878035b4d7174d39611c1d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/reporting_v1/recovered_check_20261028_v1/report_mixed_failures_reentrancy.json",
+      "bytes": 276977,
+      "sha256": "dfc1a9addcf5c63edbd4623a4937f39028a574c3c0600ddbba4c42060e85a29d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/reporting_v1/recovered_check_20261028_v1/report_mixed_failures_unchecked.json",
+      "bytes": 276774,
+      "sha256": "bae11821d0238934af50e0bbbccf111ff978e7c43f8415e293113b96a0c21e6f"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/reporting_v1/recovered_check_20261028_v1/report_unknown_outside_common_reentrancy.json",
+      "bytes": 278288,
+      "sha256": "d77ddd51a11e6f9b10323fd0ba27a1bf82bc4b3c80adbca196871011c4fff30d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/reporting_v1/recovered_check_20261028_v1/report_unknown_outside_common_unchecked.json",
+      "bytes": 277958,
+      "sha256": "072923d199c0a116fb1f5c54e205ef21d348de30bc3a871efd2e97d1e54231d9"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/authored_check_20261028_v1/runtime.json",
+      "bytes": 987982,
+      "sha256": "c912c277a6919b723793b1aa6f5abe0c357d98b712cef49d1bd1a0c15e75dd8d"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/authored_execution_reproduction_20261028.zip",
+      "bytes": 3133521,
+      "sha256": "38fed9893801651d8b2e459c43f8c4eebf96ae97cf1eb9c1d04253f911796d12"
+    },
+    {
+      "path": "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/restoration_20261028_v1/runtime_inventory.json",
+      "bytes": 987982,
+      "sha256": "c912c277a6919b723793b1aa6f5abe0c357d98b712cef49d1bd1a0c15e75dd8d"
+    }
+  ],
+  "scope": "Only nine new authored-fixture/reproduction distribution files. No restricted historical graph archives."
+}

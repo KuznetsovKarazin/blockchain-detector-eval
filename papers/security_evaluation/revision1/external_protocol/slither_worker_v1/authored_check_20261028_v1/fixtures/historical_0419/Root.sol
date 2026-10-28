@@ -1,0 +1,1 @@
+pragma solidity 0.4.19; contract Historical { function ping(address target) public { target.call(); } }

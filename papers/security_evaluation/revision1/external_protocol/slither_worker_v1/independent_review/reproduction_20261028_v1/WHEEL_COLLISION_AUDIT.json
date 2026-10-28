@@ -1,0 +1,434 @@
+{
+  "collisions": [
+    {
+      "actual_sha256": "2e17c0a6ef74e5612f86f35759092dbe13fd005aa190757900dece78ede0b94e",
+      "matching_pinned_owners": [
+        "eth-rlp"
+      ],
+      "owners": [
+        {
+          "member": "docs/Makefile",
+          "member_sha256": "2e17c0a6ef74e5612f86f35759092dbe13fd005aa190757900dece78ede0b94e",
+          "package": "eth-rlp",
+          "version": "3.0.0",
+          "wheel_sha256": "32f355261c36ad2c369db098170f873123795667e50d496b034f369e2c9d2346"
+        },
+        {
+          "member": "docs/Makefile",
+          "member_sha256": "c7467c5abc7beb3bd760f47fab576dd792a73b228e0350b1206144b4b3087a4a",
+          "package": "eth_abi",
+          "version": "6.0.0",
+          "wheel_sha256": "05ad63b50bd5448cfac0079b3cc5464de7464b4336a2496bf368d5808c7f9e9f"
+        },
+        {
+          "member": "docs/Makefile",
+          "member_sha256": "4e5c4f69beaf04650ff50d44a260b9f2b7ed027637cc84f768bdf23e0a097615",
+          "package": "hexbytes",
+          "version": "2.0.0",
+          "wheel_sha256": "5425bd7ac83cdd9791c13a5bf97cfe9b9609a304b1ef3ab146adfd50de06cf0e"
+        }
+      ],
+      "relative_path": "docs/Makefile"
+    },
+    {
+      "actual_sha256": "764965cc4b8691c70432b1334cb44d2f07e46dae4f11dd16b316517542d82a88",
+      "matching_pinned_owners": [
+        "eth-rlp",
+        "eth_abi",
+        "hexbytes"
+      ],
+      "owners": [
+        {
+          "member": "docs/code_of_conduct.rst",
+          "member_sha256": "764965cc4b8691c70432b1334cb44d2f07e46dae4f11dd16b316517542d82a88",
+          "package": "eth-rlp",
+          "version": "3.0.0",
+          "wheel_sha256": "32f355261c36ad2c369db098170f873123795667e50d496b034f369e2c9d2346"
+        },
+        {
+          "member": "docs/code_of_conduct.rst",
+          "member_sha256": "764965cc4b8691c70432b1334cb44d2f07e46dae4f11dd16b316517542d82a88",
+          "package": "eth_abi",
+          "version": "6.0.0",
+          "wheel_sha256": "05ad63b50bd5448cfac0079b3cc5464de7464b4336a2496bf368d5808c7f9e9f"
+        },
+        {
+          "member": "docs/code_of_conduct.rst",
+          "member_sha256": "764965cc4b8691c70432b1334cb44d2f07e46dae4f11dd16b316517542d82a88",
+          "package": "hexbytes",
+          "version": "2.0.0",
+          "wheel_sha256": "5425bd7ac83cdd9791c13a5bf97cfe9b9609a304b1ef3ab146adfd50de06cf0e"
+        }
+      ],
+      "relative_path": "docs/code_of_conduct.rst"
+    },
+    {
+      "actual_sha256": "9e99130933061530773c8271fd036e7cf7d626961122e6e6a57d0ad464ff0fdc",
+      "matching_pinned_owners": [
+        "eth-rlp"
+      ],
+      "owners": [
+        {
+          "member": "docs/conf.py",
+          "member_sha256": "9e99130933061530773c8271fd036e7cf7d626961122e6e6a57d0ad464ff0fdc",
+          "package": "eth-rlp",
+          "version": "3.0.0",
+          "wheel_sha256": "32f355261c36ad2c369db098170f873123795667e50d496b034f369e2c9d2346"
+        },
+        {
+          "member": "docs/conf.py",
+          "member_sha256": "74f154ece73a4649c45babfcf2267e8ac1cfa1fccd65cadd551e481a1fcfdd39",
+          "package": "eth_abi",
+          "version": "6.0.0",
+          "wheel_sha256": "05ad63b50bd5448cfac0079b3cc5464de7464b4336a2496bf368d5808c7f9e9f"
+        },
+        {
+          "member": "docs/conf.py",
+          "member_sha256": "47c11bb0cdb4d7e7e2a60015bf8605ad58b8cc1f5a01274dfa2d8e1a7a754d3f",
+          "package": "hexbytes",
+          "version": "2.0.0",
+          "wheel_sha256": "5425bd7ac83cdd9791c13a5bf97cfe9b9609a304b1ef3ab146adfd50de06cf0e"
+        }
+      ],
+      "relative_path": "docs/conf.py"
+    },
+    {
+      "actual_sha256": "6a8131f2104934d5ebb38e88cca1a95b6d190076982c5bd79dbe2d52370611dc",
+      "matching_pinned_owners": [
+        "eth-rlp"
+      ],
+      "owners": [
+        {
+          "member": "docs/contributing.rst",
+          "member_sha256": "6a8131f2104934d5ebb38e88cca1a95b6d190076982c5bd79dbe2d52370611dc",
+          "package": "eth-rlp",
+          "version": "3.0.0",
+          "wheel_sha256": "32f355261c36ad2c369db098170f873123795667e50d496b034f369e2c9d2346"
+        },
+        {
+          "member": "docs/contributing.rst",
+          "member_sha256": "9a2a916525185335a29b02487912dc5c7ddcd86e0161252f14accdd7b4b60215",
+          "package": "eth_abi",
+          "version": "6.0.0",
+          "wheel_sha256": "05ad63b50bd5448cfac0079b3cc5464de7464b4336a2496bf368d5808c7f9e9f"
+        },
+        {
+          "member": "docs/contributing.rst",
+          "member_sha256": "2478c2bf5f07b9bed430776f869bce93e385db6e78e63255a55ec76cd616a347",
+          "package": "hexbytes",
+          "version": "2.0.0",
+          "wheel_sha256": "5425bd7ac83cdd9791c13a5bf97cfe9b9609a304b1ef3ab146adfd50de06cf0e"
+        }
+      ],
+      "relative_path": "docs/contributing.rst"
+    },
+    {
+      "actual_sha256": "0dfa1fef4c990eb94954a344332e3d2af42950e5cb7072200fd3402e16fbb3b5",
+      "matching_pinned_owners": [
+        "eth-rlp"
+      ],
+      "owners": [
+        {
+          "member": "docs/index.rst",
+          "member_sha256": "0dfa1fef4c990eb94954a344332e3d2af42950e5cb7072200fd3402e16fbb3b5",
+          "package": "eth-rlp",
+          "version": "3.0.0",
+          "wheel_sha256": "32f355261c36ad2c369db098170f873123795667e50d496b034f369e2c9d2346"
+        },
+        {
+          "member": "docs/index.rst",
+          "member_sha256": "03e35aa1ac3130cfbf59b4883e2e9cb369bc634e736e5d42396ebe4239b1c808",
+          "package": "eth_abi",
+          "version": "6.0.0",
+          "wheel_sha256": "05ad63b50bd5448cfac0079b3cc5464de7464b4336a2496bf368d5808c7f9e9f"
+        },
+        {
+          "member": "docs/index.rst",
+          "member_sha256": "ecc58299942996dfa8057d95994bb567c6fd52c43cf1af35b6232cf6a26f49a5",
+          "package": "hexbytes",
+          "version": "2.0.0",
+          "wheel_sha256": "5425bd7ac83cdd9791c13a5bf97cfe9b9609a304b1ef3ab146adfd50de06cf0e"
+        }
+      ],
+      "relative_path": "docs/index.rst"
+    },
+    {
+      "actual_sha256": "86624cecac6fb8e1f20532d35417e5c815bf3f84fa087b414bcb7f6569671ace",
+      "matching_pinned_owners": [
+        "eth-rlp"
+      ],
+      "owners": [
+        {
+          "member": "docs/release_notes.rst",
+          "member_sha256": "86624cecac6fb8e1f20532d35417e5c815bf3f84fa087b414bcb7f6569671ace",
+          "package": "eth-rlp",
+          "version": "3.0.0",
+          "wheel_sha256": "32f355261c36ad2c369db098170f873123795667e50d496b034f369e2c9d2346"
+        },
+        {
+          "member": "docs/release_notes.rst",
+          "member_sha256": "b2e0be6d3e222010228ee7f996a1f18a7c4db346e25ff7ade02a37578d9c9d0f",
+          "package": "eth_abi",
+          "version": "6.0.0",
+          "wheel_sha256": "05ad63b50bd5448cfac0079b3cc5464de7464b4336a2496bf368d5808c7f9e9f"
+        },
+        {
+          "member": "docs/release_notes.rst",
+          "member_sha256": "a2b983526bcbb0dba3cd14d2ec1c2729e263bdff14a62f648528ad6abffea129",
+          "package": "hexbytes",
+          "version": "2.0.0",
+          "wheel_sha256": "5425bd7ac83cdd9791c13a5bf97cfe9b9609a304b1ef3ab146adfd50de06cf0e"
+        }
+      ],
+      "relative_path": "docs/release_notes.rst"
+    }
+  ],
+  "declared_installer_exclusions": [
+    {
+      "member": "aiohappyeyeballs-2.7.1.dist-info/RECORD",
+      "package": "aiohappyeyeballs",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "aiohttp-3.14.5.dist-info/RECORD",
+      "package": "aiohttp",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "aiosignal-1.4.0.dist-info/RECORD",
+      "package": "aiosignal",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "annotated_types-0.8.0.dist-info/RECORD",
+      "package": "annotated-types",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "attrs-26.1.0.dist-info/RECORD",
+      "package": "attrs",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "bitarray-3.12.3.dist-info/RECORD",
+      "package": "bitarray",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "cbor2-6.1.5.dist-info/RECORD",
+      "package": "cbor2",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "certifi-2026.10.23.dist-info/RECORD",
+      "package": "certifi",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "charset_normalizer-3.5.2.dist-info/RECORD",
+      "package": "charset-normalizer",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "ckzg-2.1.8.dist-info/RECORD",
+      "package": "ckzg",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "crytic_compile-0.4.2.dist-info/RECORD",
+      "package": "crytic-compile",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "cytoolz-1.2.0.dist-info/RECORD",
+      "package": "cytoolz",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_account-0.14.0.dist-info/RECORD",
+      "package": "eth-account",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_hash-0.8.0.dist-info/RECORD",
+      "package": "eth-hash",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_keyfile-0.10.0.dist-info/RECORD",
+      "package": "eth-keyfile",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_keys-0.8.0.dist-info/RECORD",
+      "package": "eth-keys",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_rlp-3.0.0.dist-info/RECORD",
+      "package": "eth-rlp",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_typing-6.0.0.dist-info/RECORD",
+      "package": "eth-typing",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_utils-6.0.0.dist-info/RECORD",
+      "package": "eth-utils",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "eth_abi-6.0.0.dist-info/RECORD",
+      "package": "eth_abi",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "frozenlist-1.8.0.dist-info/RECORD",
+      "package": "frozenlist",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "hexbytes-2.0.0.dist-info/RECORD",
+      "package": "hexbytes",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "idna-3.20.dist-info/RECORD",
+      "package": "idna",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "multidict-7.2.1.dist-info/RECORD",
+      "package": "multidict",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "packaging-26.3.dist-info/RECORD",
+      "package": "packaging",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "parsimonious-0.10.0.dist-info/RECORD",
+      "package": "parsimonious",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "prettytable-3.18.0.dist-info/RECORD",
+      "package": "prettytable",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "propcache-0.5.4.dist-info/RECORD",
+      "package": "propcache",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "py_ecc-8.0.0.dist-info/RECORD",
+      "package": "py-ecc",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "pycryptodome-3.24.1.dist-info/RECORD",
+      "package": "pycryptodome",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "pydantic-2.14.1.dist-info/RECORD",
+      "package": "pydantic",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "pydantic_core-2.50.1.dist-info/RECORD",
+      "package": "pydantic_core",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "pyunormalize-18.0.0.dist-info/RECORD",
+      "package": "pyunormalize",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "regex-2026.9.29.dist-info/RECORD",
+      "package": "regex",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "requests-2.34.2.dist-info/RECORD",
+      "package": "requests",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "rlp-5.0.0.dist-info/RECORD",
+      "package": "rlp",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "slither_analyzer-0.11.6.dist-info/RECORD",
+      "package": "slither-analyzer",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "solc_select-1.2.0.dist-info/RECORD",
+      "package": "solc-select",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "toolz-1.2.0.dist-info/RECORD",
+      "package": "toolz",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "types_requests-2.33.0.20261006.dist-info/RECORD",
+      "package": "types-requests",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "typing_inspection-0.4.4.dist-info/RECORD",
+      "package": "typing-inspection",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "typing_extensions-4.16.0.dist-info/RECORD",
+      "package": "typing_extensions",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "urllib3-2.8.0.dist-info/RECORD",
+      "package": "urllib3",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "wcwidth-0.9.4.dist-info/RECORD",
+      "package": "wcwidth",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "web3-7.16.0.dist-info/RECORD",
+      "package": "web3",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "websockets-15.0.1.dist-info/RECORD",
+      "package": "websockets",
+      "reason": "installer_record_or_cache"
+    },
+    {
+      "member": "yarl-1.25.1.dist-info/RECORD",
+      "package": "yarl",
+      "reason": "installer_record_or_cache"
+    }
+  ],
+  "different_bytes_overlapping_paths": 5,
+  "installed_paths_checked": 2129,
+  "mismatches": [],
+  "overlapping_paths": 6,
+  "python_artifacts_sha256": "ce788fd4b890395c72963f693fc1ad58ad0a5369ec01c20242c044b9b4cfc687",
+  "schema": "independent_pinned_wheel_ownership_audit_v1",
+  "source_sha256": "7425b374768a82aa9772d0b3b7aa71630148d15b6770d499b0aa7955498b06ea",
+  "status": "pass",
+  "tool_executions": 0,
+  "unmatched_paths": 0,
+  "wheels": 47
+}

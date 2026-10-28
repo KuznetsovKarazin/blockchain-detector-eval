@@ -1,0 +1,62 @@
+{
+  "schema": "article1_new_reproduction_index_v1",
+  "date": "2026-10-28",
+  "source_recovery_checkpoint": "76789ea4c2010347055e2a7e570dfbaf1697485f",
+  "reporting_tests": {
+    "owner": 28,
+    "independent": 34,
+    "failed": 0
+  },
+  "reporting_fictional_reports": 6,
+  "full_reporting_audit_matches_preserved_original_bytes": true,
+  "slither_tests": {
+    "owner": 9,
+    "independent": 105,
+    "failed": 0
+  },
+  "slither_authored_execution": {
+    "cases": 25,
+    "compiler_attempts": 22,
+    "analysis_attempts": 21,
+    "ok": 21,
+    "expected_failures": 4,
+    "expectation_mismatches": 0,
+    "independent_artifacts": 203,
+    "independent_scores": 100,
+    "independent_source_mappings": 108
+  },
+  "actual_human_judgments": 0,
+  "actual_external_model_fits_or_scores": 0,
+  "real_corpus_slither_scans": 0,
+  "original_lost_receipts_recreated": false,
+  "receipts": [
+    {
+      "path": "external_protocol/reporting_v1/recovery_verification_20261028_v1/RESULT.json",
+      "sha256": "bfdb362f0f7f31dc6d327167d1a9c044ed25a5303992eb569979dece800a7e20"
+    },
+    {
+      "path": "recovery_20261028/reporting_independent_reproduction_20261028_v1/result.json",
+      "sha256": "eaf9e91d26ae355a5196ddcee1ec40fd0d4667977a0845f7c021a29690834d63"
+    },
+    {
+      "path": "external_protocol/slither_worker_v1/REPRODUCTION_VERIFICATION_20261028.json",
+      "sha256": "3dffca18f790dd88bea6f36cb156692870bc152cf9b6715e73eea38e2e896f0c"
+    },
+    {
+      "path": "external_protocol/slither_worker_v1/independent_review/reproduction_20261028_v1/TEST_RECEIPT.json",
+      "sha256": "a42751abfd6fa620148fbd05eb5e584c92efc0f215c6b9eb70b73519c8bc691c"
+    },
+    {
+      "path": "external_protocol/slither_worker_v1/independent_review/reproduction_20261028_v1/PREEXECUTION_REVIEW.json",
+      "sha256": "97fb96577086ec1a893b39c7b46efc456b580b9fc179cb1142a5fdc93427c502"
+    },
+    {
+      "path": "external_protocol/slither_worker_v1/independent_review/reproduction_20261028_v1/POSTRUN_REVIEW.json",
+      "sha256": "68788c72137280559af4b0bac3e903825015a46af7196e95522ea04dedd40f32"
+    },
+    {
+      "path": "external_protocol/slither_worker_v1/REPRODUCTION_ARCHIVE_20261028.json",
+      "sha256": "41974f7ade7dbb2f08b1120bb93dd412162fe2cff209f9cd678abde1a9ca813a"
+    }
+  ]
+}

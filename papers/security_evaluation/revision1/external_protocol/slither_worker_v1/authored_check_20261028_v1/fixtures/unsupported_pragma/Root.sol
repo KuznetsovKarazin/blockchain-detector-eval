@@ -1,0 +1,1 @@
+pragma solidity ^9.0.0; contract Future {}

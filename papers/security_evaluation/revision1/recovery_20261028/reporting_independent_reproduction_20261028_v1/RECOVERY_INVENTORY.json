@@ -1,0 +1,30 @@
+{
+  "schema": "transcript_test_source_recovery_inventory_v1",
+  "created_utc": "2026-10-28T09:33:33.293331+00:00",
+  "recovered_source": "papers/security_evaluation/revision1/recovery_20261028/test_reporting_independent.py",
+  "original_recorded_test_sha256": "0df301bf6ad537d5d5b84c611781c07d1487295a3df3ebb550439b46888c4316",
+  "reconstructed_test_sha256": "0df301bf6ad537d5d5b84c611781c07d1487295a3df3ebb550439b46888c4316",
+  "exact_original_source_bytes_recovered": true,
+  "reconstruction_method": "Reassembled original tool-history patch plus its amendments; SHA256 independently agrees with the original recorded value.",
+  "old_artifacts_present_before": {
+    "papers/security_evaluation/revision1/recovery_20261026/test_reporting_independent.py": false,
+    "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_reporting_20261026_v1/plan_before_tests.json": false,
+    "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_reporting_20261026_v1/result.json": false,
+    "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_reporting_20261026_v1/pytest_stdout.txt": false
+  },
+  "old_original_receipt_sha256_from_record": "3675090410bfeb03b78199a772a87eacfa140f6f1ed059c9387cfea597495279",
+  "old_run_outputs_restored": false,
+  "old_receipt_restored": false,
+  "new_run_is_not_original_receipt_or_output_recovery": true,
+  "protected_original_source_and_policy_sha256": {
+    "reporting_v1/reporting.py": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+    "performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "performance_v2/performance.py": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "ap_bounds_v1/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "INFERENCE_AMENDMENT_DRAFT_20261026.md": "fbf798ba4a6c2da96a0eb3afb6d3e57561a21f448da5413f192e37b58f9adc53",
+    "INFERENCE_GATE_20261026.json": "0c789dcf4d03e532d3a20298bec0412852a334351a2c021709b288419897fa1e",
+    "PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  }
+}

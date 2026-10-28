@@ -1,0 +1,119 @@
+{
+  "schema": "reporting_reproduction_plan_20261028_v1",
+  "status": "prepared_before_any_new_test_or_report",
+  "purpose": "NEW dated recovery reproduction; not restored original dynamic receipts",
+  "repository_head": "76789ea4c2010347055e2a7e570dfbaf1697485f",
+  "source_hashes": {
+    "reporting_v1/reporting.py": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+    "reporting_v1/run_synthetic.py": "87cb3391c0866001b3179f1124cf946b0c4418d7d0e4b7bc0bf42c119b5561d2",
+    "reporting_v1/synthetic_inputs.py": "08ca206c1a59826a1103f7eb1d5a22a75ebc63516033cb9111e70e645a1cc60d",
+    "reporting_v1/test_reporting.py": "c18bf5e765e550311eabbe12750ccd55bd01bee70667a14ecfadc97a1aaf4645",
+    "reporting_v1/README.md": "70fb7e363ab6371ebaddc45c3419155ebddd9e786c66543e20b226b367f670fb",
+    "reporting_v1/conftest.py": "1fdebff717e04d23dbc68fa2908628a9948f1facbd313bf5c6bc28e69677e0c9",
+    "performance_v2/performance.py": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "performance_v1/synthetic_inputs.py": "a879f974eac2c06bb30a98a9a57598ecc588a51e47810f2aeb4d0f9632abd99e",
+    "review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "ap_bounds_v1/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "INFERENCE_AMENDMENT_DRAFT_20261026.md": "fbf798ba4a6c2da96a0eb3afb6d3e57561a21f448da5413f192e37b58f9adc53",
+    "INFERENCE_GATE_20261026.json": "0c789dcf4d03e532d3a20298bec0412852a334351a2c021709b288419897fa1e",
+    "PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6",
+    "reporting_v1/verify_outputs.py": "c145720f7429c9367620d2a596fb981bc8578f356b5fb89bd5b0daca1cec585e"
+  },
+  "python": {
+    "version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "resolved_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+  },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "imported_runtime_modules": {
+    "numpy": {
+      "version": "2.3.5",
+      "module_file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/__init__.py",
+      "module_file_sha256": "93924ac4b793328947dfd9eb9355e54eccdfd26a92c8dd52188aed2e52c7eb38"
+    },
+    "pandas": {
+      "version": "2.2.3",
+      "module_file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/__init__.py",
+      "module_file_sha256": "108be8ca3ae1a2a5c765ee6f87e8867d87c2fb5a89107e6c2d3a6acc96612b7b"
+    },
+    "scipy": {
+      "version": "1.17.0",
+      "module_file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/__init__.py",
+      "module_file_sha256": "335bc6e0a9909dc7534f9569a3685a92dc8001cb8c63a6da4c239849ff02d4d0"
+    },
+    "sklearn": {
+      "version": "1.8.0",
+      "module_file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/sklearn/__init__.py",
+      "module_file_sha256": "1b375926879276531b06884dcd9eb769f3b7b1164904d11639a2af4e02058ab0"
+    },
+    "pytest": {
+      "version": "9.2.0",
+      "module_file": "/root/.local/lib/python3.12/site-packages/pytest/__init__.py",
+      "module_file_sha256": "df9445a69f8fa85f8f0569c3b166fcd681117cf23ea0924752b1bb314c5d7326"
+    }
+  },
+  "distribution_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "pytest": "9.2.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "known_runtime_difference": "Current pytest9.2.0 versus originally recorded8.4.2; numerical package version strings and Python version agree, complete historical binary environment is not reconstructed.",
+  "config": {
+    "files": 12,
+    "selected_per_class": 4,
+    "classes": [
+      "reentrancy",
+      "unchecked"
+    ],
+    "primary_vectors_per_class": 13,
+    "raw_LR_contrasts_per_domain": 12,
+    "scenarios": [
+      "baseline",
+      "mixed_failures",
+      "unknown_outside_common"
+    ],
+    "review_fractions": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "exploratory_runs": [
+      "baseline:reentrancy"
+    ],
+    "replicates": 2000,
+    "seed": 20261026,
+    "alpha": 0.05
+  },
+  "new_output_directory": "recovered_check_20261028_v1",
+  "owner_test_file": "test_reporting.py",
+  "expected_owner_tests": 28,
+  "independent_test_owner": "external_audit; separately restored original34test source and new dated run",
+  "original_archive": {
+    "recovery_date": "2026-10-28",
+    "archive": "synthetic_engine_audit_20261026.zip",
+    "archive_sha256": "2d463a36e9933f2d5fe588750869bf9c0c424f6740d25a2aabbaf4c175d3892e",
+    "archive_bytes": 588896,
+    "matches_original_recorded_archive_sha256": true,
+    "git_blob_sha": "7163ae9c11c4af0b323c6c03687328af2d9a6c60",
+    "member": "synthetic_check_20261026_v1/engine_audit_baseline_reentrancy.json",
+    "member_bytes": 20804725,
+    "member_sha256": "044243fa44bb70f496629d6d9b0210b7ee291dff2806fbb93790415513baa15d",
+    "source": "previously uploaded GitHub blob; branch update had not completed",
+    "other_dynamic_reporting_outputs_recovered": false
+  },
+  "protected_original_paths": [
+    "synthetic_engine_audit_20261026.zip",
+    "RECOVERED_ARCHIVE_20261028.json"
+  ],
+  "originals_to_overwrite": [],
+  "actual_dataset_or_human_inputs_allowed": false,
+  "models_or_tool_scans_allowed": false,
+  "amendment_or_release_activated": false
+}

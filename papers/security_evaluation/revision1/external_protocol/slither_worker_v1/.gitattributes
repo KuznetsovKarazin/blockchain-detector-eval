@@ -1,0 +1,2 @@
+# Preserve frozen source and output bytes, including intentional CRLF.
+authored_check_20261028_v1/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

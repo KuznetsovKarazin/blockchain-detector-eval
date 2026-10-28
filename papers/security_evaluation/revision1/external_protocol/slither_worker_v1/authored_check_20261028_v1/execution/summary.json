@@ -1,0 +1,313 @@
+{
+  "actual_corpus_scans": 0,
+  "cases": [
+    {
+      "analysis_attempts": 1,
+      "case_id": "reentrant_eth",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "reentrancy-eth": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "01b980256ad4593ba49e72be5c7a6c0d5ee20fa48baa803c01502f9ec68d3d93"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "reentrant_no_eth",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "reentrancy-no-eth": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "c82d20e24b971b43ce00d1bc0129d83c989a5da57e628d3240daf3a1421ce401"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "checked_cei",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "1325c63dee967c1b5deb4d933de64b44dae18ad5202bc150b108a9b20045666b"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "unchecked_lowlevel",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "a5eeb4556643cddd47b3926da39d0d100f654bf78590faa42a5d25c49bab8cee"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "checked_lowlevel",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "584860baabf111ee33461f7dd7d4fe35e66bdbe74a2253a43c808a05f5c29df2"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "unchecked_send",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "unchecked-send": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "3d4f456f64d11037ab6bea4040c32d69cbe41ea56f61d004f231a97eebea92b4"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "checked_send",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "58509f1d11696e36cb760d4087770beb4be6101e4ef4b91c435e4b9b6d9bf219"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "stored_return_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "8dd9bfd6941f4caef0403ab5ce731bb083185f197ee848e78eee80d0f3c771ec"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "event_after_transfer_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "reentrancy-unlimited-gas": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "0b0c6b7ca3987a31ca2f0c7750d2c25b4cfeecac6fc32c2e4282a4ab47b677a4"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "event_after_call_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "reentrancy-events": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "3df9eb839f1956ca71a996ed00df5e104eee5793b83a39c7354bb3fea94bb712"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "benign_write_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "reentrancy-benign": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "92aa685598cba6c9526e81a55fc7d30bb25f4bae894ad28cfd06bf4bf9356b3b"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "imported_call_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {
+        "reentrancy-eth": 1
+      },
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "57c0c382770d9f7213c0f460871c9943bdcde0d3fada901b0c53a2f7b50ddf26"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "inherited_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {
+        "reentrancy-eth": 1
+      },
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "974977ab58dcaa0f0ce733a6455da4546520b0ce3fe58e697058b397b6f47588"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "mixed_root_import",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {
+        "reentrancy-eth": 1
+      },
+      "root_detector_counts": {
+        "reentrancy-eth": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "e098c2ccfe1de6af8beea63f394656cf2658586edd0b78aedbdf5703bbb7a60b"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "interface_only",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "1f7b61e4527d28b907fcef5ce110e5a04779b147731144ac50fc939b86e3e206"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "abstract_only",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "811185296df45ac52e9e58ebbad55cb2c2cfb33bebd07591221a1a82fd2822b1"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "historical_0419",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "selected_compiler_version": "0.4.19",
+      "status": "ok",
+      "trace_sha256": "046a218361ca6ac0e11f3713021318635e06c4eef28dcaee595a8c72a83a340e"
+    },
+    {
+      "analysis_attempts": 0,
+      "case_id": "unsupported_pragma",
+      "compiler_attempts": 0,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": null,
+      "status": "no_compatible_catalog_release",
+      "trace_sha256": "e2b793819419bce7fe7351a3d26e2cc3e311b061b5bc72d26d9dae82bacccd87"
+    },
+    {
+      "analysis_attempts": 0,
+      "case_id": "missing_import",
+      "compiler_attempts": 0,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": null,
+      "status": "missing_import",
+      "trace_sha256": "93f47ccb66a658481cbbeca54bf0018fbad8f6d3e2783e00bd61c18f0bfdf0db"
+    },
+    {
+      "analysis_attempts": 0,
+      "case_id": "syntax_failure",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": null,
+      "status": "compiler_error",
+      "trace_sha256": "96259feb274592ffc3b1ea3287ff4b98ec812399e936dcd62ce9c047d4e66b91"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "inline_suppression",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "937a862da497e9a2ce2167243f9ac71cd9727b7682d9d083e59453f52551087b"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "consumed_return_context",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "reentrancy-events": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "90a94839fe92ab8fc771b68e5c48d8bf3bfdac6a850ed5c4ca8457af26b8fc25"
+    },
+    {
+      "analysis_attempts": 0,
+      "case_id": "missing_pragma",
+      "compiler_attempts": 0,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": null,
+      "status": "missing_pragma",
+      "trace_sha256": "41b2610b1c065afb00fce6bc943c88a6bc871db14b703c0808e45374f4ffddea"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "ordered_candidates",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {},
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "327f363decab97179277529ea24ad89aa67550741702b583b20bddad563fd8fd"
+    },
+    {
+      "analysis_attempts": 1,
+      "case_id": "crlf_utf8_offsets",
+      "compiler_attempts": 1,
+      "expectation_failures": [],
+      "import_only_detector_counts": {},
+      "root_detector_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "selected_compiler_version": "0.8.26",
+      "status": "ok",
+      "trace_sha256": "e42ba437a48e037f6a9ddff98809ea9dfb0c00e8c8223c094efae88b79f50e38"
+    }
+  ],
+  "expectation_failures": [],
+  "human_semantic_signoff": false,
+  "runtime_seconds": 42.45394751599997
+}

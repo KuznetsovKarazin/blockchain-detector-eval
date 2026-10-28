@@ -1,0 +1,214 @@
+{
+  "Slither_attempts_observed": 21,
+  "artifact_hashes_reverified": 203,
+  "case_observations": [
+    {
+      "case_id": "reentrant_eth",
+      "import_counts": {},
+      "root_counts": {
+        "reentrancy-eth": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "reentrant_no_eth",
+      "import_counts": {},
+      "root_counts": {
+        "reentrancy-no-eth": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "checked_cei",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "unchecked_lowlevel",
+      "import_counts": {},
+      "root_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "checked_lowlevel",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "unchecked_send",
+      "import_counts": {},
+      "root_counts": {
+        "unchecked-send": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "checked_send",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "stored_return_context",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "event_after_transfer_context",
+      "import_counts": {},
+      "root_counts": {
+        "reentrancy-unlimited-gas": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "event_after_call_context",
+      "import_counts": {},
+      "root_counts": {
+        "reentrancy-events": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "benign_write_context",
+      "import_counts": {},
+      "root_counts": {
+        "reentrancy-benign": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "imported_call_context",
+      "import_counts": {
+        "reentrancy-eth": 1
+      },
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "inherited_context",
+      "import_counts": {
+        "reentrancy-eth": 1
+      },
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "mixed_root_import",
+      "import_counts": {
+        "reentrancy-eth": 1
+      },
+      "root_counts": {
+        "reentrancy-eth": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "interface_only",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "abstract_only",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "historical_0419",
+      "import_counts": {},
+      "root_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "unsupported_pragma",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "no_compatible_catalog_release"
+    },
+    {
+      "case_id": "missing_import",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "missing_import"
+    },
+    {
+      "case_id": "syntax_failure",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "compiler_error"
+    },
+    {
+      "case_id": "inline_suppression",
+      "import_counts": {},
+      "root_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "consumed_return_context",
+      "import_counts": {},
+      "root_counts": {
+        "reentrancy-events": 1
+      },
+      "status": "ok"
+    },
+    {
+      "case_id": "missing_pragma",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "missing_pragma"
+    },
+    {
+      "case_id": "ordered_candidates",
+      "import_counts": {},
+      "root_counts": {},
+      "status": "ok"
+    },
+    {
+      "case_id": "crlf_utf8_offsets",
+      "import_counts": {},
+      "root_counts": {
+        "unchecked-lowlevel": 1
+      },
+      "status": "ok"
+    }
+  ],
+  "cases": 25,
+  "compiler_attempts_observed": 22,
+  "conclusion": "Exact authored fixture execution and metadata verified; no population accuracy, corpus Slither coverage or human semantic validation established.",
+  "corpus_scans_or_scores": 0,
+  "expectation_failure_cases": 0,
+  "external_B_execution_authorized": false,
+  "failed_rows_with_empty_scores": 16,
+  "human_semantic_signoff": false,
+  "original26October_receipts_recreated": false,
+  "owner_execution_receipt_sha256": "bd2c2ce8be4398343ba1a06420b4507bcc250c48350823e37106386466e40df5",
+  "owner_score_rows_sha256": "c4966927d5431f05145aa261529e31f58321a15d0e27ca5da279fd8b44f7c9f8",
+  "owner_summary_sha256": "dc76f52f25d1ab7c4945f9103a7f38ef98d0054890c8952140744636affb5cde",
+  "plan_sha256": "ec7c7f3758a91bb194de02f1f9a2dfeacabe1d6945af08366fcbf570d0db22b5",
+  "preexecution_review_sha256": "97fb96577086ec1a893b39c7b46efc456b580b9fc179cb1142a5fdc93427c502",
+  "schema": "independent_authored_slither_postrun_review_20261028_v1",
+  "score_rows": 100,
+  "source_mappings_independently_checked": 108,
+  "status": "pass",
+  "status_counts": {
+    "compiler_error": 1,
+    "missing_import": 1,
+    "missing_pragma": 1,
+    "no_compatible_catalog_release": 1,
+    "ok": 21
+  },
+  "tool_invocations_by_this_verifier": 0,
+  "verification_source_sha256": "10adb65ea76015255d1978d7d779bb9f423bafea21c07dafce92b697a47ff3d5",
+  "verified_utc": "2026-10-28T09:37:27.498680+00:00"
+}

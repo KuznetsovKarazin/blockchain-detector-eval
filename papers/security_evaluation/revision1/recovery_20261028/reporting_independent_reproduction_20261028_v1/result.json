@@ -1,0 +1,44 @@
+{
+  "schema": "independent_reporting_reproduction_result_20261028_v1",
+  "passed": true,
+  "returncode": 0,
+  "counts": {
+    "tests": 34,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "elapsed_seconds": 19.81760842199992,
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "papers/security_evaluation/revision1/recovery_20261028/run_reporting_recovery.py": "1aa0712fc5bedb387a2d2b22c42a434b7d061f5c91dcfcdaf5f02f8c7240e76f",
+    "papers/security_evaluation/revision1/recovery_20261028/test_reporting_independent.py": "0df301bf6ad537d5d5b84c611781c07d1487295a3df3ebb550439b46888c4316",
+    "papers/security_evaluation/revision1/recovery_20261028/conftest.py": "ccd952a25f02b6098a570f6a6417a14d8722b995b9aea745ddc5a19e5a30a88c",
+    "papers/security_evaluation/revision1/external_protocol/reporting_v1/reporting.py": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+    "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "papers/security_evaluation/revision1/external_protocol/performance_v2/performance.py": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/external_protocol/INFERENCE_AMENDMENT_DRAFT_20261026.md": "fbf798ba4a6c2da96a0eb3afb6d3e57561a21f448da5413f192e37b58f9adc53",
+    "papers/security_evaluation/revision1/external_protocol/INFERENCE_GATE_20261026.json": "0c789dcf4d03e532d3a20298bec0412852a334351a2c021709b288419897fa1e",
+    "papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  },
+  "original_test_source_recovered_exactly": true,
+  "old_artifact_presence_unchanged": true,
+  "old_artifacts_present_after": {
+    "papers/security_evaluation/revision1/recovery_20261026/test_reporting_independent.py": false,
+    "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_reporting_20261026_v1/plan_before_tests.json": false,
+    "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_reporting_20261026_v1/result.json": false,
+    "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_reporting_20261026_v1/pytest_stdout.txt": false
+  },
+  "original_receipt_or_output_bytes_recovered": false,
+  "new_dated_synthetic_verification_only": true,
+  "actual_operations_executed": 0,
+  "plan_sha256": "7258f6b7ed4345c79aa0aa142f5e351b9f0507b2a031d0715d37962317d63e03",
+  "output_sha256": {
+    "pytest.xml": "2d7a4b3858b40538493afb79f7f5d433e20012c13c148d5312f9650c60e2809f",
+    "pytest_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pytest_stdout.txt": "f358de17d29e30372bc924576a7472c8f8b3cbc61869ee1055cbcbb338095359"
+  }
+}

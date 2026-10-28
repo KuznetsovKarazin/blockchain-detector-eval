@@ -1,0 +1,177 @@
+{
+  "actual_corpus_sources_read": false,
+  "actual_model_scores": 0,
+  "authored_fixture_n": 25,
+  "fixture_source_sha256": {
+    "fixtures/abstract_only/Root.sol": "91ef49919d0e52d6f6e401ea8f7cac984efea24a9fa92c7b506b55975c429559",
+    "fixtures/benign_write_context/Root.sol": "dd7a8e7321e175070e59995bb14aebbb90b890d8512720f3190cb4cafff6aaf4",
+    "fixtures/checked_cei/Root.sol": "e3a0419e334ca91d1262d6ef20f922753a11c7b36ada8746f5a17336b8224ca5",
+    "fixtures/checked_lowlevel/Root.sol": "b21c20016f1ffa3a06217306bde4e1e43141cbc7956f7c828916d9a1021b7454",
+    "fixtures/checked_send/Root.sol": "300d6910ec84eee51ab2db0de8b023d25573cdd1aa248e243334805b7ba749b1",
+    "fixtures/consumed_return_context/Root.sol": "454abcea78b34367caff29cf7d7848d036e00dd1fbb987e38a1bc2ff4f30c18f",
+    "fixtures/crlf_utf8_offsets/Root.sol": "17af0c3ee3804b1c013aab6f3e7407e6a19181666c430328fa91764c91a217a1",
+    "fixtures/event_after_call_context/Root.sol": "16223c29227910ae7771a07484013a00d3f02d036d7e0bb645db887703287fd6",
+    "fixtures/event_after_transfer_context/Root.sol": "3f16e8b6dbd3d04bde70095d0fc0cb67bb81c49120c79336c15713538f616871",
+    "fixtures/historical_0419/Root.sol": "efd4dac62e9f06507c408a1de60c8c24e2d6a8cc24eb6754b58f88c0f24d2f03",
+    "fixtures/imported_call_context/Base.sol": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+    "fixtures/imported_call_context/Root.sol": "dc4661c74ddceecbb492d154f1b6ac1067259e8a29c8fed73f4f641af67bf3d3",
+    "fixtures/inherited_context/Base.sol": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+    "fixtures/inherited_context/Root.sol": "2b88334c27fd48a1de60e4ccd6b34fdd91c258c69e76dfbf535834ccf5168c0f",
+    "fixtures/inline_suppression/Root.sol": "0daaca95275f4f3669c39a2a98182e4c183d8e679dd55619f46921f9345f52df",
+    "fixtures/interface_only/Root.sol": "7b9dccad7a13ddb8b24f336d7e522c0f575e3654a856a46c173e7a4723bc5dde",
+    "fixtures/missing_import/Root.sol": "03825b694efbec5b733860ee8e1fa9be014a75033f2426eb2b3f9e0caccdd5f1",
+    "fixtures/missing_pragma/Root.sol": "a974bebecd68317ce37349ab1b498a5e991354bb93ef69174806ae554981d593",
+    "fixtures/mixed_root_import/Base.sol": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+    "fixtures/mixed_root_import/Root.sol": "819faf305ee79a20bfccf3abcc8c3b75fcc31e44e23301643a65f81205320ed5",
+    "fixtures/ordered_candidates/Root.sol": "01ce554d22d618f92982aeb828b8e1c20256125e48f0239b36da9f73e4c27726",
+    "fixtures/reentrant_eth/Root.sol": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+    "fixtures/reentrant_no_eth/Root.sol": "30ad7187d9e18a779f8714bf6a805eef53893ba9572ea60303735ea1e15eb3f4",
+    "fixtures/stored_return_context/Root.sol": "eb3393b104068ff5f2f76f1ae413fee5d66bbdde7a6c355517ccc7de9401700d",
+    "fixtures/syntax_failure/Root.sol": "5d2cfe83c305ec5354ac50296f97b22750822ca7d10982614899835afbf5e6a4",
+    "fixtures/unchecked_lowlevel/Root.sol": "6c1a8c819237a9f6a575ab991d75a56dac5ad25932dc6173b89eb9a2f0b9ce52",
+    "fixtures/unchecked_send/Root.sol": "73df9cae265ab3dd6fc726b43e75bed53c33c942edc978458ad49708ff57c954",
+    "fixtures/unsupported_pragma/Root.sol": "78f2b823411195d23af24878cf488d66ccebd36bbd4e20b0ee698bd296aa4b92"
+  },
+  "human_semantic_signoff": false,
+  "jobs_sha256": "6eba2744396f3177c7ad84e28c912b49c07f8a3a8e80fc0381a3463705586026",
+  "policy": {
+    "absolute_relative_used": "all supplied canonical identity fields must agree with exact closure",
+    "analysis_options": {
+      "codex": false,
+      "disallow_partial": true,
+      "exclude_dependencies": false,
+      "filter_paths": [],
+      "generate_patches": false,
+      "include_paths": [],
+      "no_fail": false,
+      "show_ignored_findings": true,
+      "skip_analyze": false,
+      "skip_assembly": false,
+      "triage_mode": false
+    },
+    "attribution": "exact_first_element_source_mapping; no search for first recognized mapping; import-defined inherited functions remain import-attributed",
+    "compiler_selection": "original ordered candidates; stop at first compiler success; no fallback after Slither failure",
+    "crytic_compile_version": "0.4.2",
+    "detector_order": [
+      "reentrancy-eth",
+      "reentrancy-no-eth",
+      "reentrancy-unlimited-gas",
+      "reentrancy-benign",
+      "reentrancy-events",
+      "unchecked-lowlevel",
+      "unchecked-send"
+    ],
+    "diagnostic_reruns": 0,
+    "filename_short": "display_only_never_identity",
+    "historical_equivalence": false,
+    "human_semantic_signoff": false,
+    "limits": {
+      "attempts_per_file": 5,
+      "cpu_seconds": 180,
+      "input_bytes": 16777216,
+      "max_sources": 128,
+      "memory_bytes": 2147483648,
+      "open_files": 64,
+      "source_bytes": 8388608,
+      "stderr_bytes": 1048576,
+      "stdout_bytes": 16777216,
+      "total_run_wall_seconds": 7200,
+      "wall_seconds": 180
+    },
+    "outside_pragma_fallback": false,
+    "primary_reentrancy_detectors": [
+      "reentrancy-eth",
+      "reentrancy-no-eth",
+      "reentrancy-unlimited-gas"
+    ],
+    "schema": "prospective_slither_execution_policy_v1",
+    "score": "binary_root_attributed_detector_union_not_probability",
+    "secondary_broad_additions": [
+      "reentrancy-benign",
+      "reentrancy-events"
+    ],
+    "slither_version": "0.11.6",
+    "standard_json_settings": {
+      "optimizer": {
+        "enabled": false
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.object",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.sourceMap"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "status_mapping": {
+      "attribution_error": "tool_error",
+      "compiler_error": "compile_error",
+      "compiler_output_schema_error": "tool_error",
+      "cpu_limit": "timeout",
+      "decode_error": "preprocessing_error",
+      "direct_import_noncanonical": "missing_dependency",
+      "import_ambiguous": "missing_dependency",
+      "import_literal_unsupported": "missing_dependency",
+      "import_missing": "missing_dependency",
+      "import_outside_snapshot": "missing_dependency",
+      "import_scan_error": "preprocessing_error",
+      "import_syntax_unresolved": "missing_dependency",
+      "input_staging_failure": "tool_error",
+      "launch_error": "unavailable_binary",
+      "malformed_compiler_output": "tool_error",
+      "malformed_slither_output": "tool_error",
+      "missing_import": "missing_dependency",
+      "missing_pragma": "unsupported_pragma",
+      "missing_slither_compiler_fields": "tool_error",
+      "no_compatible_catalog_release": "unsupported_pragma",
+      "not_attempted_run_budget": "timeout",
+      "not_completed_run_budget": "timeout",
+      "ok": "ok",
+      "output_limit": "tool_error",
+      "process_failure": "compile_error",
+      "remote_or_absolute_import_forbidden": "missing_dependency",
+      "scanner_error": "preprocessing_error",
+      "slither_error": "tool_error",
+      "slither_output_schema_error": "tool_error",
+      "source_scanner_error": "preprocessing_error",
+      "timeout": "timeout",
+      "unsupported_constraint": "unsupported_pragma"
+    },
+    "unchecked_detectors": [
+      "unchecked-lowlevel",
+      "unchecked-send"
+    ]
+  },
+  "prepared_utc": "2026-10-28T09:33:22.984939+00:00",
+  "runtime_sha256": "c912c277a6919b723793b1aa6f5abe0c357d98b712cef49d1bd1a0c15e75dd8d",
+  "safety_scope": "Application-level closure/process/network guards, not kernel sandbox proof",
+  "schema": "slither_authored_fixture_plan_v1",
+  "source_sha256": {
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd",
+    "papers/security_evaluation/revision1/external_protocol/compiler_policy.py": "535a915f5de643a36d6d61fdc51a73fa44e21c1250c5272c5b50a577f3baf122",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/imports.py": "9b343fe15b70f607c170ccfd371e582f8943d9944db0db9abaddf89a1c64c5a7",
+    "papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/runner.py": "ee80047bf6d2e6f77e47fb35260cd0eaaa5a6703f3e96b92674c9dd129a5aaa4",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05",
+    "papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/README.md": "805912a9cb4ef2d16fe2d1aaa790d70c943fd6f31e6f0d8583ebc6019db38fd2",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/analyzer_child.py": "82f8ea9ffdfc63065e994507db429b6b24bfea4477d26c8d431f3bdb5802ae13",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/fixtures.py": "e30ae5c7321c363b681b5b11babd9b5c20715c940485b7ea2de9091026ebd4fc",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/parse_results.py": "819f8e3dc618d463b8f71feb1044923f1d8c8ef968736f50350a3b02fcf0d57c",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/policy.py": "a79dd346eb0cab32b461e880cf6aa9624900dc240a6bc87454fdc5280dd39d7c",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/test_worker.py": "2145b145866ec566950b788d46e8b679e9dc87c2747601ea1a752acedbc35590",
+    "papers/security_evaluation/revision1/external_protocol/slither_worker_v1/worker.py": "eb336ef5b2102fd2995f9def153a88ca4d7ef01eda5de1e8a03f287aec8edbbc",
+    "papers/security_evaluation/revision1/external_protocol/toolchain_v1/verify_toolchain_v2.py": "8c719b72fb7a98178cbffed68c2ad873af4358898e52444241e8f406dd76e5b1",
+    "scripts/c3_slither_baseline.py": "1c427d1c988178e2ee3483faf5bcba387f94160cbe175f089fa8956acb5bde33"
+  },
+  "synthetic_context_scope": "Authored multi-file fixtures exercise attribution; actual external context remains frozen single-file policy",
+  "synthetic_fixture": true
+}

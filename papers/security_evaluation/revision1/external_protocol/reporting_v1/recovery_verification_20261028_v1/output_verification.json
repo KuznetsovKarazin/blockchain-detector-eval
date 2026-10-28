@@ -1,0 +1,41 @@
+{
+  "schema": "fictional_reporting_output_verification_v1",
+  "passed": true,
+  "reports": [
+    {
+      "scenario": "baseline",
+      "class": "reentrancy",
+      "passed": true
+    },
+    {
+      "scenario": "baseline",
+      "class": "unchecked",
+      "passed": true
+    },
+    {
+      "scenario": "mixed_failures",
+      "class": "reentrancy",
+      "passed": true
+    },
+    {
+      "scenario": "mixed_failures",
+      "class": "unchecked",
+      "passed": true
+    },
+    {
+      "scenario": "unknown_outside_common",
+      "class": "reentrancy",
+      "passed": true
+    },
+    {
+      "scenario": "unknown_outside_common",
+      "class": "unchecked",
+      "passed": true
+    }
+  ],
+  "source_files_checked": 15,
+  "output_hashes_checked": 9,
+  "actual_inputs_opened": false,
+  "model_or_tool_operations": 0,
+  "source_sha256": "c145720f7429c9367620d2a596fb981bc8578f356b5fb89bd5b0daca1cec585e"
+}

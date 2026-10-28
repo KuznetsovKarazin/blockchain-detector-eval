@@ -1,0 +1,28 @@
+{
+  "Slither_analysis_invocations": 0,
+  "actual_corpus_inputs": 0,
+  "artifact_count": 78,
+  "compiler_analysis_invocations": 0,
+  "completed_utc": "2026-10-28T09:33:01.954257+00:00",
+  "installed_distributions": 48,
+  "installed_file_hashes": 2735,
+  "original_metadata_sha256": {
+    "installed_freeze.txt": "1dc7a50d02fb2faa99a5901e5c358d062b8554eacd17faabdb368504bb0ee25a",
+    "manifest.json": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6",
+    "python_artifacts.json": "ce788fd4b890395c72963f693fc1ad58ad0a5369ec01c20242c044b9b4cfc687",
+    "requirements.lock": "31b79480abe3369c468046cf59d99785630989b1ab0539551a0692bf29d27613",
+    "slither_inventory.json": "96cffd72c0c1dcddb1c11d7403c50507a6e400ace6ee0ba56f0cbbc5ed80ae3e",
+    "solc_download_plan.json": "36fb133c89d315fe18b52d9f5d4b5df10089d62e8b65c7092918b12a7ba47331",
+    "solc_inventory.json": "afbd0dda64302bcccc1fc0bc5cad32458790d6995a16e0d43930bb05c2aa2a00"
+  },
+  "original_metadata_unchanged": true,
+  "pip_check": "No broken requirements found.\n",
+  "plan_sha256": "ec71f16c7ffcb11b358ebf7ae50f6965488d93167c63f5ec0c49fd035495d3d5",
+  "python_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "runtime_inventory_sha256": "c912c277a6919b723793b1aa6f5abe0c357d98b712cef49d1bd1a0c15e75dd8d",
+  "script_sha256": "e714384a4a04aaf3ead719a7ac9f791319610f737ee8fcf4799ce157f438b7c3",
+  "slither_entry_sha256": "a0e23541a7bbe4ececb6b4f54bb28f46bf645acd6467c0be6af6ecd72ce80bab",
+  "solc_count": 30,
+  "status": "pinned_runtime_restored",
+  "wheel_count": 47
+}

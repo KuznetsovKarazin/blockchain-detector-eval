@@ -1,0 +1,722 @@
+[
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "reentrant_eth",
+    "context_relative": "fixtures/reentrant_eth",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 1,
+        "unchecked": 0
+      },
+      "required_root_detectors": [
+        "reentrancy-eth"
+      ],
+      "semantic_note": "Callback before clearing balance; expected primary alert is a tool hypothesis"
+    },
+    "file_sha256": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+    "import_edges": [],
+    "path": "synthetic://reentrant_eth/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 306,
+    "source_units": [
+      {
+        "bytes": 306,
+        "sha256": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "reentrant_no_eth",
+    "context_relative": "fixtures/reentrant_no_eth",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 1,
+        "unchecked": 0
+      },
+      "required_root_detectors": [
+        "reentrancy-no-eth"
+      ],
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "30ad7187d9e18a779f8714bf6a805eef53893ba9572ea60303735ea1e15eb3f4",
+    "import_edges": [],
+    "path": "synthetic://reentrant_no_eth/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 240,
+    "source_units": [
+      {
+        "bytes": 240,
+        "sha256": "30ad7187d9e18a779f8714bf6a805eef53893ba9572ea60303735ea1e15eb3f4",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "checked_cei",
+    "context_relative": "fixtures/checked_cei",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 0
+      },
+      "semantic_note": "No selected alert does not prove security"
+    },
+    "file_sha256": "e3a0419e334ca91d1262d6ef20f922753a11c7b36ada8746f5a17336b8224ca5",
+    "import_edges": [],
+    "path": "synthetic://checked_cei/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 234,
+    "source_units": [
+      {
+        "bytes": 234,
+        "sha256": "e3a0419e334ca91d1262d6ef20f922753a11c7b36ada8746f5a17336b8224ca5",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "unchecked_lowlevel",
+    "context_relative": "fixtures/unchecked_lowlevel",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 1
+      },
+      "required_root_detectors": [
+        "unchecked-lowlevel"
+      ],
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "6c1a8c819237a9f6a575ab991d75a56dac5ad25932dc6173b89eb9a2f0b9ce52",
+    "import_edges": [],
+    "path": "synthetic://unchecked_lowlevel/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 131,
+    "source_units": [
+      {
+        "bytes": 131,
+        "sha256": "6c1a8c819237a9f6a575ab991d75a56dac5ad25932dc6173b89eb9a2f0b9ce52",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "checked_lowlevel",
+    "context_relative": "fixtures/checked_lowlevel",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 0
+      },
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "b21c20016f1ffa3a06217306bde4e1e43141cbc7956f7c828916d9a1021b7454",
+    "import_edges": [],
+    "path": "synthetic://checked_lowlevel/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 153,
+    "source_units": [
+      {
+        "bytes": 153,
+        "sha256": "b21c20016f1ffa3a06217306bde4e1e43141cbc7956f7c828916d9a1021b7454",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "unchecked_send",
+    "context_relative": "fixtures/unchecked_send",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 1
+      },
+      "required_root_detectors": [
+        "unchecked-send"
+      ],
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "73df9cae265ab3dd6fc726b43e75bed53c33c942edc978458ad49708ff57c954",
+    "import_edges": [],
+    "path": "synthetic://unchecked_send/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 132,
+    "source_units": [
+      {
+        "bytes": 132,
+        "sha256": "73df9cae265ab3dd6fc726b43e75bed53c33c942edc978458ad49708ff57c954",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "checked_send",
+    "context_relative": "fixtures/checked_send",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 0
+      },
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "300d6910ec84eee51ab2db0de8b023d25573cdd1aa248e243334805b7ba749b1",
+    "import_edges": [],
+    "path": "synthetic://checked_send/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 141,
+    "source_units": [
+      {
+        "bytes": 141,
+        "sha256": "300d6910ec84eee51ab2db0de8b023d25573cdd1aa248e243334805b7ba749b1",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "stored_return_context",
+    "context_relative": "fixtures/stored_return_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "semantic_note": "Stored return may evade unused-return alert; storage is not proof of appropriate failure handling"
+    },
+    "file_sha256": "eb3393b104068ff5f2f76f1ae413fee5d66bbdde7a6c355517ccc7de9401700d",
+    "import_edges": [],
+    "path": "synthetic://stored_return_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 153,
+    "source_units": [
+      {
+        "bytes": 153,
+        "sha256": "eb3393b104068ff5f2f76f1ae413fee5d66bbdde7a6c355517ccc7de9401700d",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "event_after_transfer_context",
+    "context_relative": "fixtures/event_after_transfer_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "semantic_note": "Informational send/transfer detector retained; adverse-outcome semantics unresolved"
+    },
+    "file_sha256": "3f16e8b6dbd3d04bde70095d0fc0cb67bb81c49120c79336c15713538f616871",
+    "import_edges": [],
+    "path": "synthetic://event_after_transfer_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 181,
+    "source_units": [
+      {
+        "bytes": 181,
+        "sha256": "3f16e8b6dbd3d04bde70095d0fc0cb67bb81c49120c79336c15713538f616871",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "event_after_call_context",
+    "context_relative": "fixtures/event_after_call_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "semantic_note": "Event-only reentrancy interpretation requires human sign-off"
+    },
+    "file_sha256": "16223c29227910ae7771a07484013a00d3f02d036d7e0bb645db887703287fd6",
+    "import_edges": [],
+    "path": "synthetic://event_after_call_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 185,
+    "source_units": [
+      {
+        "bytes": 185,
+        "sha256": "16223c29227910ae7771a07484013a00d3f02d036d7e0bb645db887703287fd6",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "benign_write_context",
+    "context_relative": "fixtures/benign_write_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "semantic_note": "Benign detector name is not an expert harm classification"
+    },
+    "file_sha256": "dd7a8e7321e175070e59995bb14aebbb90b890d8512720f3190cb4cafff6aaf4",
+    "import_edges": [],
+    "path": "synthetic://benign_write_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 153,
+    "source_units": [
+      {
+        "bytes": 153,
+        "sha256": "dd7a8e7321e175070e59995bb14aebbb90b890d8512720f3190cb4cafff6aaf4",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "imported_call_context",
+    "context_relative": "fixtures/imported_call_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 0
+      },
+      "required_import_detectors": [
+        "reentrancy-eth"
+      ],
+      "semantic_note": "Root may call an import-defined vulnerable function; import-only alert is not root-safe evidence"
+    },
+    "file_sha256": "dc4661c74ddceecbb492d154f1b6ac1067259e8a29c8fed73f4f641af67bf3d3",
+    "import_edges": [
+      {
+        "import_path": "./Base.sol",
+        "importer": "Root.sol",
+        "target": "Base.sol"
+      }
+    ],
+    "path": "synthetic://imported_call_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 427,
+    "source_units": [
+      {
+        "bytes": 306,
+        "sha256": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+        "unit": "Base.sol"
+      },
+      {
+        "bytes": 121,
+        "sha256": "dc4661c74ddceecbb492d154f1b6ac1067259e8a29c8fed73f4f641af67bf3d3",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "inherited_context",
+    "context_relative": "fixtures/inherited_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 0
+      },
+      "required_import_detectors": [
+        "reentrancy-eth"
+      ],
+      "semantic_note": "Inherited function source remains imported; attribution deliberately does not infer root deployment harm"
+    },
+    "file_sha256": "2b88334c27fd48a1de60e4ccd6b34fdd91c258c69e76dfbf535834ccf5168c0f",
+    "import_edges": [
+      {
+        "import_path": "./Base.sol",
+        "importer": "Root.sol",
+        "target": "Base.sol"
+      }
+    ],
+    "path": "synthetic://inherited_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 388,
+    "source_units": [
+      {
+        "bytes": 306,
+        "sha256": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+        "unit": "Base.sol"
+      },
+      {
+        "bytes": 82,
+        "sha256": "2b88334c27fd48a1de60e4ccd6b34fdd91c258c69e76dfbf535834ccf5168c0f",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "mixed_root_import",
+    "context_relative": "fixtures/mixed_root_import",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 1,
+        "unchecked": 0
+      },
+      "required_import_detectors": [
+        "reentrancy-eth"
+      ],
+      "required_root_detectors": [
+        "reentrancy-eth"
+      ],
+      "semantic_note": "Root and import contexts both retained; no union across arbitrary imported files"
+    },
+    "file_sha256": "819faf305ee79a20bfccf3abcc8c3b75fcc31e44e23301643a65f81205320ed5",
+    "import_edges": [
+      {
+        "import_path": "./Base.sol",
+        "importer": "Root.sol",
+        "target": "Base.sol"
+      }
+    ],
+    "path": "synthetic://mixed_root_import/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 631,
+    "source_units": [
+      {
+        "bytes": 306,
+        "sha256": "134b4bd4b7767c379e74cc56dbaec9455e880c46d66b24ae400e49b54ca6bc61",
+        "unit": "Base.sol"
+      },
+      {
+        "bytes": 325,
+        "sha256": "819faf305ee79a20bfccf3abcc8c3b75fcc31e44e23301643a65f81205320ed5",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "interface_only",
+    "context_relative": "fixtures/interface_only",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_or_explicit_schema_failure",
+      "semantic_note": "Missing runtime bytecode/sourceMap must fail explicitly; never fabricate fields"
+    },
+    "file_sha256": "7b9dccad7a13ddb8b24f336d7e522c0f575e3654a856a46c173e7a4723bc5dde",
+    "import_edges": [],
+    "path": "synthetic://interface_only/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 91,
+    "source_units": [
+      {
+        "bytes": 91,
+        "sha256": "7b9dccad7a13ddb8b24f336d7e522c0f575e3654a856a46c173e7a4723bc5dde",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "abstract_only",
+    "context_relative": "fixtures/abstract_only",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_or_explicit_schema_failure",
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "91ef49919d0e52d6f6e401ea8f7cac984efea24a9fa92c7b506b55975c429559",
+    "import_edges": [],
+    "path": "synthetic://abstract_only/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 158,
+    "source_units": [
+      {
+        "bytes": 158,
+        "sha256": "91ef49919d0e52d6f6e401ea8f7cac984efea24a9fa92c7b506b55975c429559",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.4.19"
+    ],
+    "case_id": "historical_0419",
+    "context_relative": "fixtures/historical_0419",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 1
+      },
+      "required_root_detectors": [
+        "unchecked-lowlevel"
+      ],
+      "semantic_note": "Historical AST/source-map smoke; no old-baseline equivalence claim"
+    },
+    "file_sha256": "efd4dac62e9f06507c408a1de60c8c24e2d6a8cc24eb6754b58f88c0f24d2f03",
+    "import_edges": [],
+    "path": "synthetic://historical_0419/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 103,
+    "source_units": [
+      {
+        "bytes": 103,
+        "sha256": "efd4dac62e9f06507c408a1de60c8c24e2d6a8cc24eb6754b58f88c0f24d2f03",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [],
+    "case_id": "unsupported_pragma",
+    "context_relative": "fixtures/unsupported_pragma",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "unavailable_no_analysis",
+      "semantic_note": "No outside-pragma fallback"
+    },
+    "file_sha256": "78f2b823411195d23af24878cf488d66ccebd36bbd4e20b0ee698bd296aa4b92",
+    "path": "synthetic://unsupported_pragma/Root.sol",
+    "preparation_status": "no_compatible_catalog_release",
+    "source_units": []
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "missing_import",
+    "context_relative": "fixtures/missing_import",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "unavailable_no_analysis",
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "03825b694efbec5b733860ee8e1fa9be014a75033f2426eb2b3f9e0caccdd5f1",
+    "path": "synthetic://missing_import/Root.sol",
+    "preparation_status": "missing_import",
+    "source_units": []
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "syntax_failure",
+    "context_relative": "fixtures/syntax_failure",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "compiler_failure_no_analysis",
+      "semantic_note": "Authored tool-behavior fixture, not expert truth"
+    },
+    "file_sha256": "5d2cfe83c305ec5354ac50296f97b22750822ca7d10982614899835afbf5e6a4",
+    "import_edges": [],
+    "path": "synthetic://syntax_failure/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 55,
+    "source_units": [
+      {
+        "bytes": 55,
+        "sha256": "5d2cfe83c305ec5354ac50296f97b22750822ca7d10982614899835afbf5e6a4",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "inline_suppression",
+    "context_relative": "fixtures/inline_suppression",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 1
+      },
+      "required_root_detectors": [
+        "unchecked-lowlevel"
+      ],
+      "semantic_note": "show_ignored_findings is fixed true, no source-annotation-based suppression"
+    },
+    "file_sha256": "0daaca95275f4f3669c39a2a98182e4c183d8e679dd55619f46921f9345f52df",
+    "import_edges": [],
+    "path": "synthetic://inline_suppression/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 155,
+    "source_units": [
+      {
+        "bytes": 155,
+        "sha256": "0daaca95275f4f3669c39a2a98182e4c183d8e679dd55619f46921f9345f52df",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "consumed_return_context",
+    "context_relative": "fixtures/consumed_return_context",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "semantic_note": "Consumption may silence detector without reverting/handling adverse outcome"
+    },
+    "file_sha256": "454abcea78b34367caff29cf7d7848d036e00dd1fbb987e38a1bc2ff4f30c18f",
+    "import_edges": [],
+    "path": "synthetic://consumed_return_context/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 161,
+    "source_units": [
+      {
+        "bytes": 161,
+        "sha256": "454abcea78b34367caff29cf7d7848d036e00dd1fbb987e38a1bc2ff4f30c18f",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [],
+    "case_id": "missing_pragma",
+    "context_relative": "fixtures/missing_pragma",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "unavailable_no_analysis",
+      "semantic_note": "No guessed compiler"
+    },
+    "file_sha256": "a974bebecd68317ce37349ab1b498a5e991354bb93ef69174806ae554981d593",
+    "path": "synthetic://missing_pragma/Root.sol",
+    "preparation_status": "missing_pragma",
+    "source_units": []
+  },
+  {
+    "candidate_versions": [
+      "0.8.26",
+      "0.7.6"
+    ],
+    "case_id": "ordered_candidates",
+    "context_relative": "fixtures/ordered_candidates",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 0
+      },
+      "semantic_note": "First successful compiler wins; detector outcome never selects another compiler"
+    },
+    "file_sha256": "01ce554d22d618f92982aeb828b8e1c20256125e48f0239b36da9f73e4c27726",
+    "import_edges": [],
+    "path": "synthetic://ordered_candidates/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 104,
+    "source_units": [
+      {
+        "bytes": 104,
+        "sha256": "01ce554d22d618f92982aeb828b8e1c20256125e48f0239b36da9f73e4c27726",
+        "unit": "Root.sol"
+      }
+    ]
+  },
+  {
+    "candidate_versions": [
+      "0.8.26"
+    ],
+    "case_id": "crlf_utf8_offsets",
+    "context_relative": "fixtures/crlf_utf8_offsets",
+    "entry_source_unit": "Root.sol",
+    "expectations": {
+      "expectations_scope": "predeclared_software_regression_not_human_reference_labels",
+      "expected_execution": "analysis_complete",
+      "expected_primary_scores": {
+        "reentrancy": 0,
+        "unchecked": 1
+      },
+      "required_root_detectors": [
+        "unchecked-lowlevel"
+      ],
+      "semantic_note": "Compiler and Slither must share exact UTF-8 bytes and CRLF line endings for source offsets"
+    },
+    "file_sha256": "17af0c3ee3804b1c013aab6f3e7407e6a19181666c430328fa91764c91a217a1",
+    "import_edges": [],
+    "path": "synthetic://crlf_utf8_offsets/Root.sol",
+    "preparation_status": "ready_to_attempt",
+    "source_bytes": 199,
+    "source_units": [
+      {
+        "bytes": 199,
+        "sha256": "17af0c3ee3804b1c013aab6f3e7407e6a19181666c430328fa91764c91a217a1",
+        "unit": "Root.sol"
+      }
+    ]
+  }
+]

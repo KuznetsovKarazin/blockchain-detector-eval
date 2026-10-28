@@ -1,0 +1,13 @@
+{
+  "schema": "reporting_identical_audit_distribution_mapping_20261028_v1",
+  "archive": "synthetic_engine_audit_20261026.zip",
+  "archive_sha256": "2d463a36e9933f2d5fe588750869bf9c0c424f6740d25a2aabbaf4c175d3892e",
+  "archive_member": "synthetic_check_20261026_v1/engine_audit_baseline_reentrancy.json",
+  "restore_to": "recovered_check_20261028_v1/engine_audit_baseline_reentrancy.json",
+  "member_sha256": "044243fa44bb70f496629d6d9b0210b7ee291dff2806fbb93790415513baa15d",
+  "member_bytes": 20804725,
+  "reason": "Deduplicate byte-identical old recovered and newly generated audit; new result/config receipts remain newly generated.",
+  "old_run_receipt_recreated": false,
+  "helper": "recovery_verification_20261028_v1/restore_identical_audit.py",
+  "helper_sha256": "99950912515047630ab40997ba01216d94a1e9eb2401ae8e953c3e203527a38c"
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "independent_reporting_reproduction_plan_20261028_v1",
+  "frozen_utc": "2026-10-28T09:33:33.293573+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "papers/security_evaluation/revision1/recovery_20261028/test_reporting_independent.py",
+    "--junitxml=papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/pytest.xml"
+  ],
+  "source_sha256": {
+    "papers/security_evaluation/revision1/recovery_20261028/run_reporting_recovery.py": "1aa0712fc5bedb387a2d2b22c42a434b7d061f5c91dcfcdaf5f02f8c7240e76f",
+    "papers/security_evaluation/revision1/recovery_20261028/test_reporting_independent.py": "0df301bf6ad537d5d5b84c611781c07d1487295a3df3ebb550439b46888c4316",
+    "papers/security_evaluation/revision1/recovery_20261028/conftest.py": "ccd952a25f02b6098a570f6a6417a14d8722b995b9aea745ddc5a19e5a30a88c",
+    "papers/security_evaluation/revision1/external_protocol/reporting_v1/reporting.py": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+    "papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b",
+    "papers/security_evaluation/revision1/external_protocol/performance_v2/performance.py": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69",
+    "papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/ap_bounds.py": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c",
+    "papers/security_evaluation/revision1/external_protocol/review_estimators.py": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274",
+    "papers/security_evaluation/revision1/external_protocol/INFERENCE_AMENDMENT_DRAFT_20261026.md": "fbf798ba4a6c2da96a0eb3afb6d3e57561a21f448da5413f192e37b58f9adc53",
+    "papers/security_evaluation/revision1/external_protocol/INFERENCE_GATE_20261026.json": "0c789dcf4d03e532d3a20298bec0412852a334351a2c021709b288419897fa1e",
+    "papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca",
+    "papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  },
+  "recovery_inventory_sha256": "00111553accbf607ba2b6899955f97f90a115adaa43172ec4269aa5ae104d97e",
+  "expected_test_count": 34,
+  "synthetic_inputs_only": true,
+  "actual_reference_source_score_access": false,
+  "actual_tool_or_model_execution": false,
+  "protocol_or_gate_activation": false,
+  "new_dated_run": true,
+  "environment": {
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "python": "3.12.14",
+    "python_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+    "packages": {
+      "pytest": "9.2.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0"
+    },
+    "PYTEST_ADDOPTS": null,
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": null
+  },
+  "known_environment_difference_from_20261026": {
+    "pytest_original": "8.4.2",
+    "pytest_current": "9.2.0",
+    "note": "A fresh run in the restored runtime; original timing/output bytes cannot be recovered by rerunning."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "reporting_new_reproduction_result_20261028_v1",
+  "new_reproduction_not_original_receipt": true,
+  "status": "complete_fictional_only",
+  "completed_utc": "2026-10-28T09:38:28.488659+00:00",
+  "core_source_sha256": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504",
+  "source_hashes_before_and_after_match": true,
+  "frozen_source_files_checked": 16,
+  "owner_tests": {
+    "passed": 28,
+    "wall_seconds": 33.78,
+    "junit": {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "28",
+      "time": "33.805",
+      "timestamp": "2026-10-28T10:31:42.200281+01:00",
+      "hostname": "2a4dfaf700d7"
+    }
+  },
+  "independent_tests": {
+    "passed": 34,
+    "wall_seconds": 19.15,
+    "receipt": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/result.json",
+    "sha256": "eaf9e91d26ae355a5196ddcee1ec40fd0d4667977a0845f7c021a29690834d63"
+  },
+  "unique_reporting_tests_passed": 62,
+  "new_reports": 6,
+  "report_generation_wall_seconds": 69.48546059599994,
+  "exact_original_audit_match": {
+    "byte_identical": true,
+    "strict_JSON_equal": true,
+    "sha256": "044243fa44bb70f496629d6d9b0210b7ee291dff2806fbb93790415513baa15d",
+    "bytes": 20804725,
+    "comparison_receipt_sha256": "808e283397f808307140e7d6c8f7f75efe8a1bf70787eebcecdc44e9ac99d75e"
+  },
+  "other_lost_original_report_byte_identity_established": false,
+  "original_dynamic_receipts_recreated": false,
+  "original_archive_unchanged": true,
+  "artifacts": {
+    "recovery_verification_20261028_v1/PLAN_BEFORE_EXECUTION.json": "26e713dc114289e0c554af7b4849054f5d14dbf965ce508ea83d4dcf35870dd8",
+    "recovery_verification_20261028_v1/owner_pytest.xml": "fd08d54f258b65766e4d7d2994e3b95bdeb7692267ea4a8caa797f0b4a6c8d3d",
+    "recovery_verification_20261028_v1/owner_pytest_stdout.txt": "e472fcc43eb88bb62cb28577954c0745ae308cb8096b1bc147894ecff2111680",
+    "recovery_verification_20261028_v1/report_generation_stdout.txt": "c29dfc133cd40f974bdfffb2153758fee5b49de0dd35169ca46c67b019c5b459",
+    "recovery_verification_20261028_v1/output_verification.json": "192e77a9516bfcb9d953ed2f3e3fba2964377dc0a5ae1efdcad8c7e0816eeeb6",
+    "recovery_verification_20261028_v1/AUDIT_COMPARISON_20261028.json": "808e283397f808307140e7d6c8f7f75efe8a1bf70787eebcecdc44e9ac99d75e",
+    "recovery_verification_20261028_v1/compare_audit.py": "4baacec0e053033f2976b860b3f79616ca5bc66b1d7b74dce0390b993a593fbc",
+    "recovery_verification_20261028_v1/restore_identical_audit.py": "99950912515047630ab40997ba01216d94a1e9eb2401ae8e953c3e203527a38c",
+    "recovery_verification_20261028_v1/AUDIT_RESTORE_MAPPING.json": "5b4ff0737b71068f94f738dc41a0969cb22bdd14705271892548f946dec5b4f5",
+    "recovered_check_20261028_v1/receipt.json": "2426c01ac9f7e20cdb8f49948ee940c3768ea6dcb0c9263e4fadeaa9ea333b83",
+    "recovered_check_20261028_v1/prepared_receipt.json": "d7c194dbdb9c1a4ac1724eda243ba5431bcee36b9c5debc2abe21a21685a2d60",
+    "recovered_check_20261028_v1/design_before_reports.json": "e096d7cbfc22e92067cf8e7ed99e6b0a1e0f6f4c8c3c71b2f8bde7d54be2029a"
+  },
+  "runtime_note": "Current pytest9.2.0 versus originally recorded8.4.2; numerical package version strings and Python version agree, complete historical binary environment is not reconstructed.",
+  "actual_human_judgments": 0,
+  "actual_dataset_labels_or_scores_used": false,
+  "actual_model_fits_or_tool_scans": 0,
+  "amendment_active": false,
+  "original_execution_gates_modified": false,
+  "production_study_authorized": false
+}

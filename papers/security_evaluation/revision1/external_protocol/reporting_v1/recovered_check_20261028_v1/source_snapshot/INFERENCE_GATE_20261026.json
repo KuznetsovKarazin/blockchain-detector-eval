@@ -1,0 +1,19 @@
+{
+  "schema": "external_B_inference_policy_v1",
+  "date": "2026-10-26",
+  "applicable_scope": "fixed_external_probability_sample",
+  "survey_weighted_performance_and_interval_tests_complete": false,
+  "external_ap_confirmatory_uncertainty": false,
+  "status": "confirmatory_AP_uncertainty_not_validated",
+  "reason": "Prespecified exact finite-population counterexamples show severe undercoverage of nominal 95% percentile AP intervals. Correct linear HT variance does not establish nonlinear interval coverage.",
+  "permitted_interpretation": "Existing v1/v2 percentile outputs remain exploratory computational summaries, not a calibrated 95% guarantee or basis for superiority claims.",
+  "actual_external_coverage_estimated": false,
+  "prospective_protocol_changed": false,
+  "human_judgments_or_external_scores_created": false,
+  "candidate_alternative": "Exact AP completion bounds are being developed separately; they are logical bounds, not sampling confidence intervals, and do not automatically authorize execution.",
+  "evidence_hashes": {
+    "performance_validation_v1/run_20261026_v1/design_before_results.json": "7ba5af80247414d1769bcdfb3e0323ed475332a3322464f0a4ec2f5058fedc35",
+    "performance_validation_v1/run_20261026_v1/summary.csv": "2b03642ff4e19fcc49e85552cace452c3b92512ea7f01efbc799c643e4f3795f",
+    "performance_validation_v1/run_20261026_v1/production_oracle_checks.json": "b9876a55d70896a42de9ac821b75116d8270f0e8022dd7e60afc12b7a61fc063"
+  }
+}
