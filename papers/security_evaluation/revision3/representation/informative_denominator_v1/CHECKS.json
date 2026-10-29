@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "planned_input_hashes_unchanged": true,
+  "graph_projections_checked": 12,
+  "main_table_rows": 6,
+  "common_mask_identical_across_flavors": true,
+  "same_unique_giant_in_full_and_common_projections_for_every_row": true,
+  "saved_R4_counts_reproduced_every_row": true,
+  "independent_counter_vs_boolean_sums_every_row": true,
+  "same_aggregates_base_and_address_expanded": true,
+  "R4_inputs_modified": false,
+  "output_sha256": {
+    "main_table_denominators.csv": "8c0369b03e218867c88d6c7832d1fa0da3a30377be3663621d7262d831012b4a",
+    "all_policy_denominators.csv": "70331290d8715c505ca520ea2eeb5033e0d685fb8110cc8d8dfd48bd88104588",
+    "common_informative_node_ids.csv": "7dbec4e864c4b0f6da528f6fd31e199e98fc1bf67e5ea22274b6bf9884f6102c",
+    "PLAN_BEFORE_COMPUTE.json": "d08483021676453a429bfc8f019cf0605900df7497dadab781b56edf1536dd9f"
+  }
+}

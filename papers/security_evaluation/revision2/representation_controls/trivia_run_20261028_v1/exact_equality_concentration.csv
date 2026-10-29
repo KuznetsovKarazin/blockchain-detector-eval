@@ -1,0 +1,5 @@
+relation,files,components,giant_files,giant_fraction
+project_raw,21457,454,3608,0.16815025399636482
+project_raw_trivia_only_nonempty,21457,377,10922,0.5090180360721442
+project_raw_old_preserved_nonempty,21457,375,11172,0.5206692454676796
+project_raw_normalized_nonempty,21457,288,19298,0.8993801556601575

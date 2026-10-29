@@ -1,0 +1,22 @@
+{
+  "schema": "post_review_trivia_only_exact_control_v1",
+  "planned_utc": "2026-10-28T22:59:08.576428+00:00",
+  "upstream_pin": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+  "inputs": {
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/representation_metadata.csv": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955"
+  },
+  "code": {
+    "papers/security_evaluation/revision2/representation_controls/run_trivia_control.py": "39758900e315b3fdddfcd115a9e41d53059173eeea231a536b2d987d14f85a5d",
+    "papers/security_evaluation/revision2/representation_controls/trivia_only.py": "1cd297116547f67577e75079d5f35eb0ee557bcacb09ecf3d08ccb91f80f618f",
+    "papers/security_evaluation/revision2/representation_controls/test_trivia_only.py": "16a65829c2208ead00e31f3ba118eee650491b51aa350cabbc397932f4b3a359",
+    "papers/security_evaluation/normalization_audit/solidity_scanner.py": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  "population": "Exactly21457DAppSCANnodes; build on DAppSCAN-only cohort to match original raw/ordered equalitycontrols; no externalcandidate or otherreference nodes",
+  "canonicalization": "string-aware comment removal then maximal identifier/number/operator lexemes, atomic quoted and directlyprefixedhex/unicode literals, individual remaining punctuation; whitespace omitted BETWEENtokens; JSONtokenarray preservesboundaries and literals; identifiers,numericspellings,quotes,punctuationunchanged",
+  "license_handling": "remove license header onlywheninsidecomment; retain anylicense-like literal",
+  "empty_policy": "no equalityedges for emptytokenlist; retain node/project/rawidentitylinks",
+  "scanner_failures": "explicit unavailable, no fallback",
+  "not_a_semantic_or_compiler_equivalence_claim": true,
+  "no_labels_or_models": true
+}

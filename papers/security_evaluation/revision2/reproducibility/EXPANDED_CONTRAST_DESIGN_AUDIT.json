@@ -1,0 +1,44 @@
+{
+  "schema": "expanded_contrast_independent_design_audit_v1",
+  "status": "pass",
+  "script_sha256": "37418bea13be93eb904d42af5e9085e8abbd1bff54c0dd0c0e673e46f4b92d6f",
+  "audit_timing": "During execution. This is not a claim of independent review before the first fit.",
+  "freeze_sha256": "16c21941565a6a508feedd1e06453adee45be46543faf7469b954bde38db3565",
+  "source_hashes_checked": 5,
+  "input_hashes_checked": 3,
+  "prepared_hashes_checked": 7,
+  "source_files_byte_verified": 2256,
+  "annotation_files_byte_verified": 948,
+  "labels_independently_rejoined": 2256,
+  "membership_cells_replayed": 10,
+  "physical_fits_declared": 72,
+  "logical_jobs_declared": 120,
+  "B_pool": [
+    1179,
+    31
+  ],
+  "C_pool": [
+    708,
+    24
+  ],
+  "matched_train": [
+    708,
+    24
+  ],
+  "fixed_test": [
+    1082,
+    21
+  ],
+  "test_unchecked_positives": 3,
+  "numerical_package_versions_match_previous": true,
+  "old_lightgbm_binary_identity_established": false,
+  "recorded_freeze_precedes_execution": true,
+  "model_parameters_equal_previous": true,
+  "code_review": [
+    "Vectorizer and scaler fitted on training sources only; test sources transformed with those objects.",
+    "Trainer uses training labels; test labels enter metric calculation after scoring.",
+    "All job identities and reuse destinations fixed before execution; wrapper prohibits restarting the run directory.",
+    "The same observed historical test is reused; no external validation, causal claim, or independent-family interval is supported."
+  ],
+  "new_fits_by_this_audit": 0
+}

@@ -1,0 +1,11 @@
+{
+  "status": "complete_metadata_only",
+  "plan_sha256": "74da2a246e1b2a31f6e9c776b03b261dc74c6cad7a8b4dc33a18a5557834fb38",
+  "seconds": 1.8983800250061904,
+  "outputs": {
+    "ordered_equality_concentration.csv": "b852aa2568c4c24c4304ff18b16934523641120b5023b42f1b1653bab7546874",
+    "ordered_equality_memberships.csv.gz": "56dca84a4ac96e6f49f1cad51e9a32928fcf02da14c9d623eb26d79c311b80c4",
+    "PLAN_BEFORE_COMPUTE.json": "74da2a246e1b2a31f6e9c776b03b261dc74c6cad7a8b4dc33a18a5557834fb38",
+    "masking_coverage_decomposition.csv": "3f56b9b1e35250f1218705fc101abec9a7ed10ae10a4eb59ba0432b39ffc5fe5"
+  }
+}

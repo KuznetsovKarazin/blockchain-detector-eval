@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "freeze_sha256": "c63d285e357f2b3e29506d34577e70b3ccb5ff647e4f6936defca1bdf556dd1a",
+  "plan_sha256": "e50bb8ebe615fbe8346da0ffcdb8fae0ffc64d07f26c4bdf98892a5b689ca620",
+  "script_sha256": "27943a397b5ea70a7f334ffac285cfd897d18b0cc9ecde537f5afbd32cfc5c63",
+  "checked_before_fit": true,
+  "all_source_and_prepared_hashes_match": true,
+  "independent_annotation_labels_checked": 6587,
+  "giant_files": 5408,
+  "giant_positive": 83,
+  "frames_checked": 12,
+  "old_internal_frames_reused_exactly": 10,
+  "same_B_C_pools_all_frames": true,
+  "memberships_checked": 71,
+  "B_draw_hash_ranks_recomputed": 50,
+  "dose_nested_hash_rank_compositions_recomputed": 5,
+  "unique_physical_fit_keys": 852,
+  "dose_nonzero_connects_all_giant_test_files": true,
+  "main_tree_ECDF_unit": "50drawseed-averages,not250IIDcells",
+  "claimed_causal_edge_effect": false,
+  "fits_started_by_this_check": 0
+}

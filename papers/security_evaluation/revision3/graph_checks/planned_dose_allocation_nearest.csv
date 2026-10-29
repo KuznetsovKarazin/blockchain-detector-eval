@@ -1,0 +1,6 @@
+nominal_linked_pool_retention_fraction,linked_positive,linked_proxy_zero,linked_total,safe_positive,safe_proxy_zero,safe_total,training_files,training_positive,realized_linked_pool_retention_fraction,linked_fraction_of_training,realized_positive_pool_retention_fraction,realized_proxy_zero_pool_retention_fraction
+0.0,0,0,0,24,684,708,708,24,0.0,0.0,0.0,0.0
+0.25,2,116,118,22,568,590,708,24,0.2505307855626327,0.16666666666666666,0.2857142857142857,0.25
+0.5,4,232,236,20,452,472,708,24,0.5010615711252654,0.3333333333333333,0.5714285714285714,0.5
+0.75,5,348,353,19,336,355,708,24,0.7494692144373672,0.4985875706214689,0.7142857142857143,0.75
+1.0,7,464,471,17,220,237,708,24,1.0,0.6652542372881356,1.0,1.0

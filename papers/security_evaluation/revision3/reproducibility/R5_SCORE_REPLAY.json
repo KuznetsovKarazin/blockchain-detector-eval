@@ -1,0 +1,22 @@
+{
+  "schema": "article1_r5_independent_public_score_replay_v1",
+  "status": "pass",
+  "script_sha256": "e96fc499741295e5ed41f04dd42cdc2e2548ef5f11750446f0031b8c14012a4e",
+  "complete_sha256": "b8d8534c87774517c6f1dcf542c21e62efa6911f04ba864139df3a3af142a01a",
+  "analysis_complete_sha256": "d52d27c30e3cb454a7e942b59ff2398f6bf037e8794cfdba5c390f2337f98914",
+  "physical_prediction_vectors": 852,
+  "primary_prediction_values": 4607616,
+  "evaluation_frames": 12,
+  "AP_frame_cells": 10224,
+  "numeric_values_checked": 194256,
+  "artifact_hashes_checked": 2556,
+  "maximum_absolute_difference": 7.105427357601002e-15,
+  "metric_method": "Fraction arithmetic on independently grouped equal-score values. AP, expected yields, min/max tie yields, precision and recall. No sklearn or producer metric function called.",
+  "warnings": {
+    "X does not have valid feature names, but LGBMClassifier was fitted with feature names": 355
+  },
+  "convergence_warning_fits": 0,
+  "seconds": 52.86014058800356,
+  "new_model_fits": 0,
+  "scope": "Conditional historical-population reproduction; nested frames are not independent families."
+}

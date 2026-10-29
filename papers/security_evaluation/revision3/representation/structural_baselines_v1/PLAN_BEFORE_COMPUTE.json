@@ -1,0 +1,17 @@
+{
+  "schema": "r5_structural_denominator_controls_v1",
+  "created_utc": "2026-10-28T23:45:39.703400+00:00",
+  "inputs": {
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/representation_metadata.csv": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955",
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa"
+  },
+  "source_sha256": "38d35024c51badd18121afb21e9a8955a59c14f7fcbd0c95adea2bbd3902a176",
+  "definitions": {
+    "project_only": "upstream_project + candidate_identifier, matching manuscript project-only definition",
+    "fixed_structural_base": "project_only + identical_raw_source, no lexical edges",
+    "fixed_structural_address_expanded": "fixed_structural_base + syntactic_address, no lexical edges"
+  },
+  "construction": "All24131unchangednodes; sourceedgesalreadyfrozen; projectionsto21457DAppSCANandfixed15399masked-informativeDAppSCAN",
+  "no_models_or_labels": true
+}

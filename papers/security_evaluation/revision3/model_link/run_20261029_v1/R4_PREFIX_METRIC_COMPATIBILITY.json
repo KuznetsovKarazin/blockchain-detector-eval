@@ -1,0 +1,730 @@
+{
+  "schema": "r5_R4_prefix_metric_compatibility_v1",
+  "scope": "Posthoc technical diagnostic of1082scoreextracts, separatefromfrozen1e-12scoregate; nofitplanchange",
+  "physical_configurations": 72,
+  "metrics_checked": 288,
+  "maximum_absolute_metric_difference": 0.0,
+  "rows": [
+    {
+      "new_job": "B_draw00_raw_tfidf_lr_s0",
+      "R4_job": "d0_B_raw_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_normalized_tfidf_lr_s0",
+      "R4_job": "d0_B_normalized_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_rf_s0",
+      "R4_job": "d0_B_pattern_rf_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_rf_s1",
+      "R4_job": "d0_B_pattern_rf_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_rf_s2",
+      "R4_job": "d0_B_pattern_rf_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_rf_s3",
+      "R4_job": "d0_B_pattern_rf_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_rf_s4",
+      "R4_job": "d0_B_pattern_rf_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_lightgbm_s0",
+      "R4_job": "d0_B_pattern_lightgbm_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_lightgbm_s1",
+      "R4_job": "d0_B_pattern_lightgbm_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_lightgbm_s2",
+      "R4_job": "d0_B_pattern_lightgbm_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_lightgbm_s3",
+      "R4_job": "d0_B_pattern_lightgbm_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw00_pattern_lightgbm_s4",
+      "R4_job": "d0_B_pattern_lightgbm_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_raw_tfidf_lr_s0",
+      "R4_job": "d0_C_raw_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_normalized_tfidf_lr_s0",
+      "R4_job": "d0_C_normalized_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_rf_s0",
+      "R4_job": "d0_C_pattern_rf_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_rf_s1",
+      "R4_job": "d0_C_pattern_rf_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_rf_s2",
+      "R4_job": "d0_C_pattern_rf_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_rf_s3",
+      "R4_job": "d0_C_pattern_rf_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_rf_s4",
+      "R4_job": "d0_C_pattern_rf_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_lightgbm_s0",
+      "R4_job": "d0_C_pattern_lightgbm_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_lightgbm_s1",
+      "R4_job": "d0_C_pattern_lightgbm_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_lightgbm_s2",
+      "R4_job": "d0_C_pattern_lightgbm_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_lightgbm_s3",
+      "R4_job": "d0_C_pattern_lightgbm_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "C_full_pattern_lightgbm_s4",
+      "R4_job": "d0_C_pattern_lightgbm_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_raw_tfidf_lr_s0",
+      "R4_job": "d1_B_raw_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_normalized_tfidf_lr_s0",
+      "R4_job": "d1_B_normalized_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_rf_s0",
+      "R4_job": "d1_B_pattern_rf_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_rf_s1",
+      "R4_job": "d1_B_pattern_rf_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_rf_s2",
+      "R4_job": "d1_B_pattern_rf_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_rf_s3",
+      "R4_job": "d1_B_pattern_rf_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_rf_s4",
+      "R4_job": "d1_B_pattern_rf_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_lightgbm_s0",
+      "R4_job": "d1_B_pattern_lightgbm_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_lightgbm_s1",
+      "R4_job": "d1_B_pattern_lightgbm_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_lightgbm_s2",
+      "R4_job": "d1_B_pattern_lightgbm_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_lightgbm_s3",
+      "R4_job": "d1_B_pattern_lightgbm_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw01_pattern_lightgbm_s4",
+      "R4_job": "d1_B_pattern_lightgbm_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_raw_tfidf_lr_s0",
+      "R4_job": "d2_B_raw_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_normalized_tfidf_lr_s0",
+      "R4_job": "d2_B_normalized_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_rf_s0",
+      "R4_job": "d2_B_pattern_rf_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_rf_s1",
+      "R4_job": "d2_B_pattern_rf_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_rf_s2",
+      "R4_job": "d2_B_pattern_rf_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_rf_s3",
+      "R4_job": "d2_B_pattern_rf_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_rf_s4",
+      "R4_job": "d2_B_pattern_rf_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_lightgbm_s0",
+      "R4_job": "d2_B_pattern_lightgbm_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_lightgbm_s1",
+      "R4_job": "d2_B_pattern_lightgbm_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_lightgbm_s2",
+      "R4_job": "d2_B_pattern_lightgbm_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_lightgbm_s3",
+      "R4_job": "d2_B_pattern_lightgbm_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw02_pattern_lightgbm_s4",
+      "R4_job": "d2_B_pattern_lightgbm_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_raw_tfidf_lr_s0",
+      "R4_job": "d3_B_raw_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_normalized_tfidf_lr_s0",
+      "R4_job": "d3_B_normalized_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_rf_s0",
+      "R4_job": "d3_B_pattern_rf_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_rf_s1",
+      "R4_job": "d3_B_pattern_rf_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_rf_s2",
+      "R4_job": "d3_B_pattern_rf_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_rf_s3",
+      "R4_job": "d3_B_pattern_rf_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_rf_s4",
+      "R4_job": "d3_B_pattern_rf_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_lightgbm_s0",
+      "R4_job": "d3_B_pattern_lightgbm_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_lightgbm_s1",
+      "R4_job": "d3_B_pattern_lightgbm_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_lightgbm_s2",
+      "R4_job": "d3_B_pattern_lightgbm_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_lightgbm_s3",
+      "R4_job": "d3_B_pattern_lightgbm_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw03_pattern_lightgbm_s4",
+      "R4_job": "d3_B_pattern_lightgbm_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_raw_tfidf_lr_s0",
+      "R4_job": "d4_B_raw_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_normalized_tfidf_lr_s0",
+      "R4_job": "d4_B_normalized_tfidf_lr_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_rf_s0",
+      "R4_job": "d4_B_pattern_rf_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_rf_s1",
+      "R4_job": "d4_B_pattern_rf_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_rf_s2",
+      "R4_job": "d4_B_pattern_rf_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_rf_s3",
+      "R4_job": "d4_B_pattern_rf_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_rf_s4",
+      "R4_job": "d4_B_pattern_rf_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_lightgbm_s0",
+      "R4_job": "d4_B_pattern_lightgbm_s0",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_lightgbm_s1",
+      "R4_job": "d4_B_pattern_lightgbm_s1",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_lightgbm_s2",
+      "R4_job": "d4_B_pattern_lightgbm_s2",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_lightgbm_s3",
+      "R4_job": "d4_B_pattern_lightgbm_s3",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    },
+    {
+      "new_job": "B_draw04_pattern_lightgbm_s4",
+      "R4_job": "d4_B_pattern_lightgbm_s4",
+      "metric_absolute_differences": {
+        "ap": 0.0,
+        "findings_54": 0.0,
+        "findings_108": 0.0,
+        "findings_216": 0.0
+      }
+    }
+  ],
+  "prefix_score_receipt_sha256": "1bede8c203f0da376773ebacb6caebe658914444c99cb1ffdaf4e107c155185b"
+}

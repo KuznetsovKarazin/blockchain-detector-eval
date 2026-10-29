@@ -1,0 +1,41 @@
+{
+  "schema": "posthoc_model_graph_linkage_completed_v1",
+  "plan_sha256": "9733c669bd5437af1123503fbc726542522af354a80f82418c6bc0153a9e491c",
+  "analysis_source_sha256": "aee14334e110d419774d826c4217b083798bf47bf4af142131b13444c31c2fce",
+  "new_fits": 0,
+  "external_scores": 0,
+  "direct_graph": "legacy normalized-shingle >=0.8 plus conceptual exact-byte/project equivalence",
+  "connection_class_order": [
+    "direct_union",
+    "B_transitive_only",
+    "newly_connected_C",
+    "disconnected_C"
+  ],
+  "labels": {
+    "available": false
+  },
+  "logical_main_evaluations": 320,
+  "distinct_training_memberships": 80,
+  "prediction_artifacts_verified": 0,
+  "input_hashes": {
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/config.json": "7dfa1acb2bcca5bad07e2a7c1a0e0dea569f1ec22328bed089fc1090c18534d0",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/manifest.json": "bd4c7df10ab610e47ef3433c159c5a0747e9befeb953a8928e1d3b818ea54ea7",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/summary/per_evaluation_ranking.csv": "f5c65f69ce361335e75d1e4d536e72a7c7439fa4869fd34f9c8494fe5e4f9cda",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/summary/per_evaluation_workload.csv": "bb0ef19a89a1c9fd752d6a17ea78c3df865f598ea4d264f099eef7ce23c96128",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/edges.csv": "0e195343844454480616b5339d1448ee3abf4f387f786a0244b0e59e6498e0e5",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4"
+  },
+  "prediction_hashes": {},
+  "interpretation": "post-hoc association and design diagnostics; no causal leakage effect, semantic validity, equality/equivalence test or new-family confidence interval",
+  "outputs": {
+    "test_training_connection_classes.csv": "b5103629f7c99ba61dc44a58d5762c1912b4915d680ff2c41413b986dea445e0",
+    "paired_ap_contrasts.csv": "61a6747d4b3a2d9c9f21399ac7bffc551b1e323e3090fa6980799019722858f3",
+    "connection_counts.csv": "69fca61bd1bf67a9ff345900c995198548853810ab95c653cce01fcf991b3e52",
+    "random_review_reference.csv": "17ea793654cf2ef74206428c029702885b4f7a4df11da8c46d1676e387ad4801",
+    "seed_comparison.csv": "4a2a09e37ee12160d204db0b5833bdac0cab2dddd258ccde0379046230ab8ddc",
+    "main_ap_summary.csv": "022e5c802ec624219d0dd16cc910ecf32a5a1850f34a94caebfb845470da80b2"
+  }
+}

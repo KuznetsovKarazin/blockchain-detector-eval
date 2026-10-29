@@ -1,0 +1,4 @@
+case,structural_star_edges,all_dappscan_denominator,largest_all_dappscan_component,all_dappscan_fraction,common_informative_denominator,largest_common_informative_projection,common_informative_fraction,common_nodes_in_all_dappscan_giant,same_unique_giant_for_both_projections
+project_only,21162,21457,1132,0.05275667614298364,15399,824,0.053509968179751934,824,True
+fixed_structural_base,27286,21457,3608,0.16815025399636482,15399,2652,0.17221897525813365,2652,True
+fixed_structural_address_expanded,27366,21457,3608,0.16815025399636482,15399,2652,0.17221897525813365,2652,True

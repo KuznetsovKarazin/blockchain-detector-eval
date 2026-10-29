@@ -1,0 +1,15 @@
+Author-created result tables, graph metadata, predictions and documentation
+distributed for Article 1 are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Copyright (c) 2026 Oleksandr Kuznetsov.
+
+The authored code remains under the repository's MIT licence (LICENSE).
+This grant does not relicense third-party datasets, source contracts,
+annotations, software packages or quoted material. Raw third-party corpora and
+annotation values are not part of this release. Follow the upstream sources'
+terms and cite them when acquiring and using their data.
+
+The included unmodified elsarticle document-class files retain their own
+LaTeX Project Public License and original notices; they are not relicensed
+under MIT or CC BY 4.0 by this release.

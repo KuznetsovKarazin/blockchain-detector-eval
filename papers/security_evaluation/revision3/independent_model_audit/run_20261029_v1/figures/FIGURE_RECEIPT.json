@@ -1,0 +1,23 @@
+{
+  "status": "generated_pending_visual_QA",
+  "source_sha256": "b85aa7db1082bb55270bfc77d713919ad9aee06a199edbb5feab706d326d21dd",
+  "producer_comparison_sha256": "523d6c0fc53844c108ba6a114a97d4dc8cfd9f0fa7555d82798c70e7b9173077",
+  "input_sha256": {
+    "composition_seed_means.csv": "7029e0e005844bd234f153d8de01ab4387da29d661c697aa3bc5059009284a94",
+    "composition_ECDF.csv": "c850b1ecef37266b5b3f16994e1ad50654d6196bb3f3085ea2804a363058d32f",
+    "dose_composition_seed_means.csv": "d48236b683a7aca1530d308223bdea5e654db774b687820acbd39222c1dcc0d4",
+    "random_ranking_references.csv": "c757bab0653e6558a11d89980a44d93da45fa5d45bf8d2541afe7c9999836cc1",
+    "all_model_review_budgets.csv": "0e01dac88d82a94774c015765cf0b075cb45d650510191a04d36aa9d50520b9b"
+  },
+  "output_sha256": {
+    "fig_R5_composition_ecdf.pdf": "8282b676befcc2cf41dfdb2953f1ff837af86e5a72bcb1e1000a9d46ed9628a2",
+    "fig_R5_linked_retention_ap.pdf": "d8202e15562d313629dd6ef712ea1466ef83490552d4ed07e51ad90988db8789",
+    "fig_R5_linked_retention_ap.svg": "f7039f75d14373288b2a17c86bed6f4e09df5d3fa98bcf6f3a169b6c8871719d",
+    "fig_R5_composition_ecdf.png": "1cadcc33dfd844bf6413ee1901d853b5ad36af856ab87c6f61554168ff9e3400",
+    "fig_R5_linked_retention_all_review_budgets.svg": "865a215cfae28886510e56d59d35273df846f185752d4dd2b53ce8e816a8a849",
+    "fig_R5_composition_ecdf.svg": "a2e6990a5122e4b3dcb700bdf0fd4c5950d6410904eeb36de483f3c9b9bcde6e",
+    "fig_R5_linked_retention_ap.png": "6a0961d3f3c052622011e54a80e719a099eca47e426c01c95d030c5d55424be7",
+    "fig_R5_linked_retention_all_review_budgets.pdf": "302d5fb1caf1534371c0f0efe4515946e264bc98b4afa7683cba700b11ed06a8",
+    "fig_R5_linked_retention_all_review_budgets.png": "8708f2ab144d66d2b5eedd9be58aa77b85686db266b362e3aad58a9f0fa13ea2"
+  }
+}

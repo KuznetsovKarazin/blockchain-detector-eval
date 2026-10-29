@@ -1,0 +1,95 @@
+{
+  "schema": "separate_implementation_graph_verification_v1",
+  "date": "2026-10-28",
+  "status": "PASS",
+  "verification_kind": "Separate algorithms by the same analysis agent; not human review or an independently collected source graph",
+  "script_sha256": "6b1a38e520881d3c537bd6ca1a94261f44733e6d141befbd144920342a343c50",
+  "labelblind_hash_samples_reconstructed": 30,
+  "labelblind_graph_outcomes_recomputed_by_stdlib_sets": 210,
+  "whole_project_sampled_cases_verified_by_union_find": [
+    {
+      "normalizer": "legacy",
+      "seed": 1301,
+      "percent": 10,
+      "threshold": 0.8,
+      "giant": 925,
+      "components": 40
+    },
+    {
+      "normalizer": "legacy",
+      "seed": 1302,
+      "percent": 50,
+      "threshold": 1.0,
+      "giant": 8166,
+      "components": 172
+    },
+    {
+      "normalizer": "legacy",
+      "seed": 1305,
+      "percent": 90,
+      "threshold": 0.8,
+      "giant": 18540,
+      "components": 177
+    },
+    {
+      "normalizer": "string_aware",
+      "seed": 1301,
+      "percent": 10,
+      "threshold": 0.8,
+      "giant": 925,
+      "components": 40
+    },
+    {
+      "normalizer": "string_aware",
+      "seed": 1302,
+      "percent": 50,
+      "threshold": 1.0,
+      "giant": 8166,
+      "components": 172
+    },
+    {
+      "normalizer": "string_aware",
+      "seed": 1305,
+      "percent": 90,
+      "threshold": 0.8,
+      "giant": 18540,
+      "components": 177
+    }
+  ],
+  "sufficient_witness_subgraphs_verified_by_union_find": [
+    {
+      "normalizer": "legacy",
+      "test_id": "outside_p90_seed2",
+      "added_files": 28,
+      "test_files_joined": 428,
+      "old_giant_preserved_and_joined": true
+    },
+    {
+      "normalizer": "legacy",
+      "test_id": "outside_p90_seed4",
+      "added_files": 29,
+      "test_files_joined": 425,
+      "old_giant_preserved_and_joined": true
+    },
+    {
+      "normalizer": "string_aware",
+      "test_id": "outside_p90_seed2",
+      "added_files": 28,
+      "test_files_joined": 428,
+      "old_giant_preserved_and_joined": true
+    },
+    {
+      "normalizer": "string_aware",
+      "test_id": "outside_p90_seed4",
+      "added_files": 29,
+      "test_files_joined": 425,
+      "old_giant_preserved_and_joined": true
+    }
+  ],
+  "witness_minimum_added_distances_verified_by_uncontracted_01_BFS": 114,
+  "runtime_seconds": 6.5129466129947104,
+  "evidence_sha256": {
+    "run_20261028_v1/RESULT.json": "5d4956564c9bd7a3bf2dc3d2382132271475b63a0fda4c1634c8c589509ab65e",
+    "project_coverage_20261028_v1/RESULT.json": "c83bbd1a5bc65ca05ac55b54bf20b19760a9f1bde24a308d24a6e72efe062c8b"
+  }
+}

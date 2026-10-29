@@ -1,0 +1,36 @@
+{
+  "title": "How Dependency-Graph Construction Changes Training Eligibility in Smart Contract Vulnerability Benchmarks: reproducibility package",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Kuznetsov, Oleksandr",
+      "orcid": "0000-0003-2331-6326",
+      "affiliation": "eCampus University, Italy; V.N. Karazin Kharkiv National University, Ukraine"
+    }
+  ],
+  "description": "Code and derived evidence for the dependency-graph benchmark study. Includes frozen plans, graph memberships and canonical reconstructed lexical arrays, model scores and aggregate metrics, manuscript sources, and portable reproduction workflows. Upstream raw corpora and per-file annotations are excluded; scripts fetch pinned sources and verify checksums. Six original lexical edge arrays remain lost; new canonical reconstructions reproduce their recorded partitions but are not claimed to be original byte-identical edge lists. The evaluation is conditional on historical proxy-labelled populations and does not report real external detector validation. Authored code is MIT; author-created result tables and documentation are CC BY 4.0. See the included licence and public projection manifest.",
+  "access_right": "open",
+  "license": "mit",
+  "version": "article1-r5-2026-10-29",
+  "keywords": [
+    "smart contracts",
+    "dependency graphs",
+    "benchmark construction",
+    "training eligibility",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/KuznetsovKarazin/blockchain-detector-eval/tree/article1-r5-2026-10-29",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23750089",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ],
+  "language": "eng",
+  "notes": "This work was supported by the Horizon Europe project PETs4DeFi (Privacy-Enhancing Technologies for Compliant Decentralised Finance). The project funded under Grant Agreement No. 101308999 is supported by the European Cybersecurity Competence Centre. Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Cybersecurity Competence Centre. Neither the European Union nor the European Cybersecurity Competence Centre can be held responsible for them."
+}

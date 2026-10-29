@@ -1,0 +1,18 @@
+{
+  "schema": "whole_project_coverage_result_v1",
+  "status": "complete",
+  "plan_sha256": "a292b7a85561086dd8b9f6940c398949e5c4fe966028fb4c9773691a0624ef20",
+  "script_sha256": "90f535655acff28059aef479dade36c16cc7dfabde565a46bc6b071344187255",
+  "new_graph_outcomes": 552,
+  "ranked_project_rows": 3040,
+  "comparison_rows": 108,
+  "full_population_endpoints_match_published": true,
+  "selection_uses_labels": false,
+  "model_fits": 0,
+  "runtime_seconds": 39.10883097999613,
+  "output_sha256": {
+    "file_vs_project_sampling.csv": "9ee8ce7ac99886b0b6bc6dc8f1c565e6ec865c1555cbae27737fda4d84864c54",
+    "whole_project_curves.csv": "b2bbb5a7e48552dadb2bb3c188ed462b120dd9814e28e74e54438fa32588bbf8",
+    "whole_project_rankings.csv": "ff5e0ccf88a1721a66409ac2c3e57123335c14888b3bc75968696de71fa8ae81"
+  }
+}

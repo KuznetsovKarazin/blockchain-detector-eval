@@ -1,0 +1,1 @@
+The RESULT.json field distinct_training_memberships=80 counts draw/regime cells, not unique membership vectors. The actual number of unique training memberships is 61 (20 each for unrestricted/project/clone and one joint pool). analyze.py corrects the metadata naming in the next run. No CSV values change.

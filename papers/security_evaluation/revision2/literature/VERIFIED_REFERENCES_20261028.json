@@ -1,0 +1,275 @@
+{
+  "review_date": "2026-10-28",
+  "scope": "Targeted primary-source verification; not exhaustive systematic review or priority search.",
+  "core_records": [
+    {
+      "id": "teufel2023graphpart",
+      "authors": [
+        "Felix Teufel",
+        "Magnús Halldór Gíslason",
+        "José Juan Almagro Armenteros",
+        "Alexander Rosenberg Johansen",
+        "Ole Winther",
+        "Henrik Nielsen"
+      ],
+      "title": "GraphPart: homology partitioning for biological sequence analysis",
+      "year": 2023,
+      "journal": "NAR Genomics and Bioinformatics",
+      "volume": "5",
+      "issue": "4",
+      "pages_or_article": "lqad088",
+      "doi": "10.1093/nargab/lqad088",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10578201/",
+      "refs": [
+        "turn88search0",
+        "turn92view1"
+      ],
+      "supports": "Homology-aware splitting, restricted single-linkage with size/class constraints, and reassignment/removal to obtain cross-fold separation.",
+      "does_not_support": "Full-universe projected connected components are not the same separation target as direct pairwise separation after deleting items."
+    },
+    {
+      "id": "petti2022independent",
+      "authors": [
+        "Samantha Petti",
+        "Sean R. Eddy"
+      ],
+      "title": "Constructing benchmark test sets for biological sequence analysis using independent set algorithms",
+      "year": 2022,
+      "journal": "PLOS Computational Biology",
+      "volume": "18",
+      "issue": "3",
+      "pages_or_article": "e1009492",
+      "doi": "10.1371/journal.pcbi.1009492",
+      "primary_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009492",
+      "refs": [
+        "turn95view0",
+        "turn101view4"
+      ],
+      "supports": "Explicit bridge-sequence example: single-linkage can collapse separate groups, and deleting a bridging item can permit a direct-similarity-separated split.",
+      "does_not_support": "Does not establish that our Solidity lexical relation equals vulnerability-relevant dependence or that our fixed-S population ablation is unprecedented.",
+      "correction": {
+        "doi": "10.1371/journal.pcbi.1010971",
+        "year": 2023,
+        "volume": "19",
+        "issue": "3",
+        "article": "e1010971",
+        "primary_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010971",
+        "ref": "turn95view1",
+        "detail": "Corrects Algorithm 2 pseudocode; acknowledge if describing/implementing that algorithm."
+      }
+    },
+    {
+      "id": "atasguvenilir2023dti",
+      "authors": [
+        "Heval Atas Guvenilir",
+        "Tunca Doğan"
+      ],
+      "title": "How to approach machine learning-based prediction of drug/compound–target interactions",
+      "year": 2023,
+      "journal": "Journal of Cheminformatics",
+      "volume": "15",
+      "pages_or_article": "16",
+      "doi": "10.1186/s13321-023-00689-w",
+      "primary_url": "https://link.springer.com/article/10.1186/s13321-023-00689-w",
+      "refs": [
+        "turn100view0",
+        "turn101view3"
+      ],
+      "supports": "Combines protein similarity, compound similarity and bioactivity edges; reports a nearly all-node giant that prevents component splits; uses community analysis and deletion to obtain smaller components.",
+      "does_not_support": "Its multi-relation collapse precedent does not quantify our benchmark's coverage/representation effects. Its reported DTI predictive effects cannot be transferred to Solidity."
+    },
+    {
+      "id": "wu2018moleculenet",
+      "authors": [
+        "Zhenqin Wu",
+        "Bharath Ramsundar",
+        "Evan N. Feinberg",
+        "Joseph Gomes",
+        "Caleb Geniesse",
+        "Aneesh S. Pappu",
+        "Karl Leswing",
+        "Vijay Pande"
+      ],
+      "title": "MoleculeNet: a benchmark for molecular machine learning",
+      "year": 2018,
+      "journal": "Chemical Science",
+      "volume": "9",
+      "issue": "2",
+      "pages_or_article": "513–530",
+      "doi": "10.1039/C7SC02664A",
+      "primary_url": "https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc02664a",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5868307/",
+      "refs": [
+        "turn88search4",
+        "turn88search5"
+      ],
+      "supports": "Random, scaffold and temporal splits probe different generalization settings; 80/10/10 train/validation/test framework.",
+      "does_not_support": "Scaffold identity is domain-specific, not a validated choice of Solidity clone threshold.",
+      "metadata_note": "Use issue year2018; first-online date2017 does not change final9(2):513–530 citation."
+    },
+    {
+      "id": "roberts2017cv",
+      "authors": [
+        "David R. Roberts",
+        "Volker Bahn",
+        "Simone Ciuti",
+        "Mark S. Boyce",
+        "Jane Elith",
+        "Gurutzeta Guillera-Arroita",
+        "Severin Hauenstein",
+        "José J. Lahoz-Monfort",
+        "Boris Schröder",
+        "Wilfried Thuiller",
+        "David I. Warton",
+        "Brendan A. Wintle",
+        "Florian Hartig",
+        "Carsten F. Dormann"
+      ],
+      "title": "Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure",
+      "year": 2017,
+      "journal": "Ecography",
+      "volume": "40",
+      "pages_or_article": "913–929",
+      "doi": "10.1111/ecog.02881",
+      "primary_url": "https://doi.org/10.1111/ecog.02881",
+      "refs": [
+        "turn88search6",
+        "turn88search8"
+      ],
+      "supports": "Choose blocking around intended prediction and dependence; blocking can induce extrapolation and overstate errors for an interpolation target.",
+      "does_not_support": "No universally best strictness of dependence graph follows; stronger exclusion is not automatically more relevant."
+    },
+    {
+      "id": "herbold2018cpdp",
+      "authors": [
+        "Steffen Herbold",
+        "Alexander Trautsch",
+        "Jens Grabowski"
+      ],
+      "title": "A Comparative Study to Benchmark Cross-Project Defect Prediction Approaches",
+      "year": 2018,
+      "journal": "IEEE Transactions on Software Engineering",
+      "volume": "44",
+      "issue": "9",
+      "pages_or_article": "811–833",
+      "doi": "10.1109/TSE.2017.2724538",
+      "primary_url": "https://www.swe.informatik.uni-goettingen.de/sites/default/files/publications/07972992.pdf",
+      "metadata_url": "https://www.fim.uni-passau.de/en/ai-engineering/publications",
+      "refs": [
+        "turn93view0",
+        "turn101view5",
+        "turn94search7"
+      ],
+      "supports": "Cross-project defect evaluation and reproducibility are established; benchmark replicates24 approaches across85 software products.",
+      "does_not_support": "This is defect prediction, not independent evidence that project-level Solidity separation resolves clone dependence.",
+      "metadata_note": "Final issue2018; Göttingen record and accepted manuscript use2017 online/acceptance date.",
+      "correction": {
+        "doi": "10.1109/TSE.2018.2790413",
+        "year": 2019,
+        "volume": "45",
+        "issue": "6",
+        "pages": "632–636",
+        "author_preprint": "https://arxiv.org/abs/1707.09281",
+        "ref": "turn102view0",
+        "detail": "Author correction confirms statistical-analysis error changes some method rankings. Do not import original rankings; correction journal metadata is corroborated but DOI was not directly retrieved from publisher."
+      }
+    },
+    {
+      "id": "joeres2025datasail",
+      "authors": [
+        "Roman Joeres",
+        "David B. Blumenthal",
+        "Olga V. Kalinina"
+      ],
+      "title": "Data splitting to avoid information leakage with DataSAIL",
+      "year": 2025,
+      "journal": "Nature Communications",
+      "volume": "16",
+      "pages_or_article": "3337",
+      "doi": "10.1038/s41467-025-58606-8",
+      "primary_url": "https://www.nature.com/articles/s41467-025-58606-8",
+      "refs": [
+        "turn97search1",
+        "turn100search0"
+      ],
+      "supports": "Similarity-aware splitting tied explicitly to intended deployment and OOD target; minimizes total cross-fold similarity under balancing constraints.",
+      "does_not_support": "A useful similarity metric and low total leakage score do not imply our component proxy is the unique appropriate vulnerability relation.",
+      "addendum": {
+        "title": "Addendum: Data splitting against information leakage with DataSAIL",
+        "doi": "10.1038/s41467-025-67495-w",
+        "year": 2026,
+        "volume": "17",
+        "article": "1597",
+        "primary_url": "https://www.nature.com/articles/s41467-025-67495-w",
+        "ref": "turn102search0",
+        "detail": "Adds comparisons to predefined benchmark splits; maximum-similarity limits and total-similarity minimization are different objectives. No universal dominance claim."
+      }
+    },
+    {
+      "id": "deng2023multimodal",
+      "authors": [
+        "Weichu Deng",
+        "Huanchun Wei",
+        "Teng Huang",
+        "Cong Cao",
+        "Yun Peng",
+        "Xuan Hu"
+      ],
+      "title": "Smart Contract Vulnerability Detection Based on Deep Learning and Multimodal Decision Fusion",
+      "year": 2023,
+      "journal": "Sensors",
+      "volume": "23",
+      "issue": "16",
+      "pages_or_article": "7246",
+      "doi": "10.3390/s23167246",
+      "primary_url": "https://www.mdpi.com/1424-8220/23/16/7246",
+      "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10459372/",
+      "refs": [
+        "turn91search2",
+        "turn93search2"
+      ],
+      "supports": "Concrete smart-contract ML example explicitly reporting random70%train/30%test and averages over multiple runs.",
+      "does_not_support": "The stated split alone does not prove contamination or quantify inflation; do not accuse this study of either without auditing its files."
+    },
+    {
+      "id": "zhang2024heterogeneous",
+      "authors": [
+        "Jie Zhang",
+        "Gehao Lu",
+        "Jia Yu"
+      ],
+      "title": "A Smart Contract Vulnerability Detection Method Based on Heterogeneous Contract Semantic Graphs and Pre-Training Techniques",
+      "year": 2024,
+      "journal": "Electronics",
+      "volume": "13",
+      "issue": "18",
+      "pages_or_article": "3786",
+      "doi": "10.3390/electronics13183786",
+      "primary_url": "https://www.mdpi.com/2079-9292/13/18/3786",
+      "refs": [
+        "turn93search1"
+      ],
+      "supports": "Concrete smart-contract ML example reports random70/20/10 split after comment removal, short-file filtering and duplicate-contract removal.",
+      "does_not_support": "Random splitting after some deduplication is not proof of remaining leakage; it illustrates why deduplication scope and grouping must be specified."
+    }
+  ],
+  "existing_reference_fix": {
+    "number": 9,
+    "authors": "Niklas Risse and Marcel Böhme",
+    "year": 2024,
+    "title": "Uncovering the Limits of Machine Learning for Automatic Vulnerability Detection",
+    "booktitle": "33rd USENIX Security Symposium (USENIX Security24)",
+    "pages": "4247–4264",
+    "publisher": "USENIX Association",
+    "isbn": "978-1-939133-44-1",
+    "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/risse",
+    "ref": "turn95view3"
+  },
+  "unverified_followup": {
+    "title": "A Symmetric Layer-Union Audit of Component Collapse in Hierarchical Procedural Corpora",
+    "authors": "Jiuyi Zheng; Gan Xu",
+    "reported_arxiv": "2608.08892",
+    "ref": "turn97academia4",
+    "status": "Search found a highly relevant2026 lead, but primary arXiv retrieval failed. Do not insert into bibliography or rely on its claims without direct primary verification."
+  }
+}

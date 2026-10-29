@@ -1,0 +1,7 @@
+flavor,policy,case,all_dappscan_nodes,largest_all_dappscan_component,all_dappscan_fraction,common_informative_nodes,largest_common_informative_projection,common_informative_fraction,common_unavailable_nodes,unavailable_nodes_in_all_dappscan_giant,same_unique_giant_component,full_file_informative_nodes,full_file_informative_in_giant
+normalized,address_expanded,full_080,21457,20565,0.9584284848767302,15399,14676,0.953048899279174,6058,5889,True,21451,20560
+normalized,address_expanded,full_080_mask_availability_only,21457,18728,0.8728153982383371,15399,13533,0.8788233002142997,6058,5195,True,21451,18724
+normalized,address_expanded,masked_080,21457,18745,0.8736076804772336,15399,13547,0.8797324501591013,6058,5198,True,21451,18741
+preserved,address_expanded,full_080,21457,18769,0.8747261965792049,15399,13465,0.8744074290538346,6058,5304,True,21451,18765
+preserved,address_expanded,full_080_mask_availability_only,21457,17154,0.7994593838840471,15399,12417,0.806351061757257,6058,4737,True,21451,17150
+preserved,address_expanded,masked_080,21457,17177,0.8005312951484365,15399,12435,0.8075199688291448,6058,4742,True,21451,17173

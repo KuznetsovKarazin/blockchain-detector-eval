@@ -1,0 +1,13 @@
+{
+  "source_files": 6587,
+  "distinct_decoded_source_texts": 6134,
+  "raw_and_normalized_exact_rechecks": 12268,
+  "pattern_matrix_recheck_rows": 6587,
+  "pattern_float64_and_float32_bitwise_equal": true,
+  "elapsed_seconds": 29.89800501600257,
+  "cache_sha256": "9d1aaa46eba1bcfc26b0266fcc806539f592750b5269591f0b3fb170e2898599",
+  "cache_bytes": 77317755,
+  "cache_location": "/dev/shm/article1_r5_feature_cache_5.pickle",
+  "cache_is_deterministic_features_only": true,
+  "learned_fit_state_cached": false
+}

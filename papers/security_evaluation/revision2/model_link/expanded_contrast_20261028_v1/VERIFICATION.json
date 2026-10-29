@@ -1,0 +1,27 @@
+{
+  "schema": "expanded_graph_policy_contrast_independent_metric_recompute_v1",
+  "independent_implementation": "Manual equal-score-group AP and full-budget positive counts; does not call sklearn average_precision_score or execution metric code. This is a separate computational check, not a human peer review.",
+  "script_sha256": "5c7884927dff37863bfdbdb133d75ff9a20a235ff63410b132b327934dc8e8de",
+  "logical_predictions_checked": 120,
+  "physical_fits": 72,
+  "failed": 0,
+  "maximum_absolute_metric_difference": 1.7763568394002505e-15,
+  "convergence_warning_fits": 0,
+  "warning_counts_physical": {
+    "X does not have valid feature names, but LGBMClassifier was fitted with feature names": 30
+  },
+  "physical_fit_total_seconds": 410.4618043000155,
+  "complete_sha256": "a3da644827a6494e50c5a70d4e13608bf1bf40eeaff4b7c73887d9e9f76a42e5",
+  "summary_hashes": {
+    "policy_comparison_summary.csv": "b7880cc80ce6bfa94869b076a1b92d215541c7ded863c859ec20e3408bc139e6",
+    "draw_averaged_seed_contrasts.csv": "817c07071d747c2e2f206d146319d6066fc2cbe26b9f10653e526c878def9591",
+    "memberships.csv": "4d88077592b348403ad9029206e6497a7d7469d553f0e7cfe1c1f039a6210802",
+    "paired_policy_differences.csv": "df45ff4b727713adc02cfa8749c4e50fc151c0c7e24e8da36583d887fdbb1e12",
+    "seed_averaged_draw_contrasts.csv": "60bb9731105babbe9b4cbf99149805c2929a2ad12ea9c0184c946d621eff85b3",
+    "logical_results.csv": "431c3c013aac554a90d38fd0999bc2db15b889f87fe7e9b6d6a183471c6dc845",
+    "independently_recomputed_scores.csv": "2a5d78899925ed692a32e420631bfb2857a184b12d97a2f1b68afeac3e4b850a",
+    "source_inventory.csv": "46f24694fd9854a846aa1fc2490b726f3954581147939a5208ae27ffaae24867"
+  },
+  "external_scores": 0,
+  "causal_or_new_family_inference": false
+}

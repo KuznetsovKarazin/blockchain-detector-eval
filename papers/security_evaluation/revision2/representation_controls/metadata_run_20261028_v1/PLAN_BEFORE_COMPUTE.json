@@ -1,0 +1,26 @@
+{
+  "schema": "post_review_metadata_controls_v1",
+  "planned_utc": "2026-10-28T22:52:32.721532+00:00",
+  "inputs": {
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/representation_metadata.csv": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955",
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa"
+  },
+  "source_sha256": "b49bf6f8878453300d7b412a0ce6b1c69fda07e47562cb468a40eae6085f576c",
+  "no_source_retokenization": true,
+  "no_labels_or_predictions_used": true,
+  "cohorts": [
+    "historical7080",
+    "dappscan21457",
+    "upstream21950",
+    "combined24131"
+  ],
+  "relations": [
+    "project_raw",
+    "project_raw_ordered_normalized_nonempty",
+    "project_raw_ordered_preserved_nonempty"
+  ],
+  "empty_policy": "suppress lexical links; retain all graph nodes and provenance/raw-identity links",
+  "interpretation": "Preserved streams retain identifiers/numbers but inherit TOKEN_RE; not comment/whitespace-only canonicalization and not Jaccard1.0 shingle-set equality",
+  "coverage_decomposition": "classify unchanged original per-file metadata, no rerun and no imputation"
+}

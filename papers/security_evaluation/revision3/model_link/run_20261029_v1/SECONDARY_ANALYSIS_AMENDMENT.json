@@ -1,0 +1,9 @@
+{
+  "schema": "r5_secondary_analysis_amendment_v1",
+  "written_utc": "2026-10-28T23:54:16.745373+00:00",
+  "scope": "Additional descriptive check explicitly requested by root from reviewer while fitting was in progress; noR5APresultsorcorrelationvalueshadbeencomputedorinspectedbyproducer. Notapre-fitpreregistrationclaim.",
+  "fit_plan_unchanged": true,
+  "action": "For each frame andmethod, correlate linkedtrainingfilecount andlinkedpositivecount withBAPacross50compositions. Trees useAPaveragedover5seeds percomposition. ReportPearsonandSpearmancoefficientswithtiedaverageranks, n50, no p-valuesorcausalclaims. Allframes/methods retained.",
+  "current_execution_stage": "R4prefixrefitsinprogress;48completedatlaststatusread.",
+  "freeze_sha256": "c63d285e357f2b3e29506d34577e70b3ccb5ff647e4f6936defca1bdf556dd1a"
+}

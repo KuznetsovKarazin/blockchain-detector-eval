@@ -1,0 +1,28 @@
+{
+  "schema": "expanded_graph_policy_contrast_freeze_v1",
+  "prepared_utc": "2026-10-28T23:02:34.650288+00:00",
+  "source_hashes": {
+    "papers/security_evaluation/revision2/model_link/expanded_contrast.py": "09ea4b1aa8d4e08d1b1e3951b6ffbb81bd66014ffc6000faee84b51f34cef6b6",
+    "papers/security_evaluation/revision2/model_link/analyze.py": "6d4b5c40113e78cd8f2c0db0b1ac368d23e1a1a99bf07fa9f34ec5d5a4c1878b",
+    "papers/security_evaluation/campaign/run_development.py": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834",
+    "papers/security_evaluation/evaluation_metrics.py": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d"
+  },
+  "input_hashes": {
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/config.json": "7dfa1acb2bcca5bad07e2a7c1a0e0dea569f1ec22328bed089fc1090c18534d0",
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4"
+  },
+  "prepared_files": {
+    "labels.json": "321297e812b5b6d83a92f79998afd18d54887a0467a08ba4370a460e3a9e4501",
+    "pool_ids.json": "5c0a960276d4c551344fe2f9c16f12dccfa16d2d97f1d733460546d6c0c659ae",
+    "environment.json": "66a1228922e39f8f9476a2e4ff55ee62400bc5adff82d550d807093216c68d2c",
+    "memberships.csv": "4d88077592b348403ad9029206e6497a7d7469d553f0e7cfe1c1f039a6210802",
+    "config.json": "e586a064bd7604b68e4293b53f7cba7b4f8c7571b305b49b72c53b05fba02e42",
+    "test_ids.json": "cfa45cc9f8bd479b4ff732a46b8ceea6d998996ffde1708c09e81737ac741932",
+    "source_inventory.csv": "46f24694fd9854a846aa1fc2490b726f3954581147939a5208ae27ffaae24867"
+  },
+  "physical_fits": 72,
+  "logical_evaluations": 120,
+  "fit_has_started": false
+}

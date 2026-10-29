@@ -1,0 +1,101 @@
+{
+  "schema": "expanded_contrast_independent_runtime_audit_v1",
+  "status": "pass",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "lightgbm": "4.6.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "new_lightgbm_wheel_sha256": "cb19b5afea55b5b61cbb2131095f50538bd608a00655f23ad5d25ae3e3bf1c8d",
+  "installed_wheel_members_byte_verified": 15,
+  "members": [
+    {
+      "wheel_member": "lightgbm/VERSION.txt",
+      "sha256": "656cd3a27fe3b73475a1fc9becaf4a4d06d25b482904d8dab14429787a23657d",
+      "bytes": 6
+    },
+    {
+      "wheel_member": "lightgbm/__init__.py",
+      "sha256": "c7c0f7b3d82778b4b88337ad921bfa91d92f68a362e223e3b4877759a40d8c0c",
+      "bytes": 1567
+    },
+    {
+      "wheel_member": "lightgbm/basic.py",
+      "sha256": "b8ccce4724edd38ff32a947b628a8718d314f5f5811be9c078b13b3d82d260bd",
+      "bytes": 204937
+    },
+    {
+      "wheel_member": "lightgbm/callback.py",
+      "sha256": "63b8ebfd530fd258200e811e09229666945ca1795987616602c44b603cbba463",
+      "bytes": 20354
+    },
+    {
+      "wheel_member": "lightgbm/compat.py",
+      "sha256": "4b3dfeb7d4f1d254acbb217b7a010b3240936cea015d4554340b76429176ed12",
+      "bytes": 11963
+    },
+    {
+      "wheel_member": "lightgbm/dask.py",
+      "sha256": "69aa081a0ba8014dc53291722d383c3d6ecce305a2b2f2ee8aa77edd1864589b",
+      "bytes": 67016
+    },
+    {
+      "wheel_member": "lightgbm/engine.py",
+      "sha256": "c5010abf6bef08f407b64d4b1585bd18875213d594a7f068d9ddfc8bf3b47753",
+      "bytes": 35494
+    },
+    {
+      "wheel_member": "lightgbm/lib/lib_lightgbm.so",
+      "sha256": "6a12e1a7b13824d14c252d2a4d2e36af467383331a114eb0e7448eecbf02d7b1",
+      "bytes": 10116688
+    },
+    {
+      "wheel_member": "lightgbm/libpath.py",
+      "sha256": "ee52bd73ce3a7730761b94c84d554818913e70aae1b8d03d83a770ad8b4e3890",
+      "bytes": 1510
+    },
+    {
+      "wheel_member": "lightgbm/plotting.py",
+      "sha256": "c69f2e312cf1c3367e98166b6407546b85c2f77f581e1fd4ad82bbd92566db4c",
+      "bytes": 32561
+    },
+    {
+      "wheel_member": "lightgbm/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "wheel_member": "lightgbm/sklearn.py",
+      "sha256": "9a7dc662c18746b943423ca63768597930e02ed91eeba8a63ef35f16270d6e9f",
+      "bytes": 80000
+    },
+    {
+      "wheel_member": "lightgbm-4.6.0.dist-info/METADATA",
+      "sha256": "6cae173638e3581cfa60cd0e07660b0a72efe67ca3db4d3d3cfaa7d31d03b65d",
+      "bytes": 17935
+    },
+    {
+      "wheel_member": "lightgbm-4.6.0.dist-info/WHEEL",
+      "sha256": "f7500c694fe3499b3db6a0c36dbc1ef817ab28f9e62d2c561fd7481a0283a2d3",
+      "bytes": 106
+    },
+    {
+      "wheel_member": "lightgbm-4.6.0.dist-info/licenses/LICENSE",
+      "sha256": "b5cb7ff7859e7d282d98fc43ab081b0dda5dc659dc3385cf65740c759a7e6a6c",
+      "bytes": 1083
+    }
+  ],
+  "skipped_installer_metadata": [
+    {
+      "path": "lightgbm-4.6.0.dist-info/RECORD",
+      "reason": "pip regenerates installation RECORD"
+    }
+  ],
+  "old_lightgbm_wheel_byte_identity_established": false,
+  "scope": "Current installed LightGBM files agree with this new verified wheel; only numerical package version equality is established against the historical environment."
+}

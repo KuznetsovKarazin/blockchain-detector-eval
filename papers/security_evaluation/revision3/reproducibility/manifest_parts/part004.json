@@ -1,0 +1,1607 @@
+[
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4979e8d69f788ddc7e168dfc6883975472af7352c2ca35b02c5155df1024ca2b.json",
+    "bytes": 1739,
+    "sha256": "1f182cd3ae991f48c02d80d115e535f1461e5dc66127bb533d0be77902394962"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4a0e62b7fc062cc6c11bdeedb6f523a431c79c4dcda455ab12ef03101d2c0ffe.json",
+    "bytes": 1920,
+    "sha256": "393d4672305be3fad490abe859d3a5dd262f68f7d8e9d31d16e1b76194594d81"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4a2bfd0a35f5da800aef8b7db55e9bd90957cf3d6f66d09e1d03f34421afd08f.json",
+    "bytes": 1937,
+    "sha256": "cbf7638b9cb068b81e70b28cd7f1d14abaab18404820cc2f873fbdbfea470191"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4b0185325cbc1e17b6aa51e0c3ee01f486dc3cb94bdcca54f3275197ff5e8286.json",
+    "bytes": 4075,
+    "sha256": "ca26bbdb4216812a5fa940f40239a5d490f5caa8373f92047477326dbfaf9edf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4b5fe2cce91261fc5dddf407c4482a4e485754be19c8228652d7bc738e06b4b7.json",
+    "bytes": 3586,
+    "sha256": "e5e99657d795e614ccbb920af7da29bfc9cf957816c4213a6fb84bf188b7f797"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4b846b0a9734f52be7d574dc3291c3c3718905d70c215725be5d9b44f78030da.json",
+    "bytes": 1580,
+    "sha256": "008af9ee31e0b71e703638b3c976e506bd6291234c2c1b7f304d65edf4c83b83"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4b96bd3b5beb1d9e1d8a2147b23b274620cfdc6e00cd9f52ab6c61ca4e99c17b.json",
+    "bytes": 1919,
+    "sha256": "ffb82349a3d386d89be231a8368f789b6743af5abb77aedf84f3c69776011d88"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4c084aca175c6c9ea4aed0465ad08ccfc568f50009a864999b19944e7c8d5a8a.json",
+    "bytes": 1814,
+    "sha256": "f079bb3a31fd4fb50d75a63f3f4a28c0dfb51fe04739b287b2577dc176928305"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4c1e6c4f3f75aaadf0cf2d23ba9792f4e5914bf601e12989e6d454fe5221b6be.json",
+    "bytes": 1580,
+    "sha256": "676d19f36ffd428fa6e8da3e503754f4bf99b127b74f141eecd9ac6728b1ad78"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4c9edb5c7491e0246b1110bc969d94137899d07f32059a4296a75b29a03ddb87.json",
+    "bytes": 4176,
+    "sha256": "88196dc39d6d04563ac24e4b0fad8b13dbf83647cc205244fe3a4d41dc18c7aa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4caeac505a6b8800ba4c680647fedb171b304baa79a285c8fbd6a02b2d594064.json",
+    "bytes": 4157,
+    "sha256": "cd69bcc10b32d5eb05c9f28f8af0f248216e0b22b6262b4ba0300fd75bd92de7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4e61a6822868add6e069e6f872e3171a54aa0027cd96009a596fae2aa7e19e84.json",
+    "bytes": 1739,
+    "sha256": "e31ff9a0b3e8f66f28ae4f25903d022214e66287a0ed5fb40da3a69def32aff0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4ea446a14e3686a7480c34004c36e1429a34ac4311025102dc41f87019e3bf38.json",
+    "bytes": 1929,
+    "sha256": "d680f7c8e61833d33f2a2bc18ed37683d4ecbace0c10e66333686b03b6e8d44e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4f9c31670ee3c87df8e6c971707784443748d3a74ef20c8fcd3930a3ace2d4bd.json",
+    "bytes": 1580,
+    "sha256": "51c87aee5b8af419c40a24e60f8ae0e8ace4568b3ec1f40236a1518466c586c1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4fa2943908b85044f9e05a92f5ce52c68070d33ad2e7b78f085632ad529bafdd.json",
+    "bytes": 3729,
+    "sha256": "a8d7c0f20c64b2908fc83863d276dd7619f5b5cdf3c9afa703e6b87594514dda"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/4ff529a8b00cd2f3fa7cb1a444c76a5fcd09e277b6d86b8d2fefe74524e86266.json",
+    "bytes": 1580,
+    "sha256": "6f9c4c6081c7ea036799c1f7a89c4c39fe85b8f46a97f38ad0b21e6048c992b5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/50050516f42e65d71414b8d2282cc1952c3f097b514b666c246f5b4d1080400d.json",
+    "bytes": 1934,
+    "sha256": "84d273d25d3b4dccf0d2fa91c5791d19e7dff23fa8d7c731decc6e4f12a1c728"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/50991c1387f47a5fc5404dfce373a48b8bd448dd2594ffa5844faa813527f332.json",
+    "bytes": 1934,
+    "sha256": "49aa71234944c010bc544f7d0929dba13d1182f66ecdb3ac597dbf64f6c28e76"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/50cb74594bdc6ae776f94b9718ac82d2ef3ed6047fd57f5b98fb2a0a09842ea8.json",
+    "bytes": 1920,
+    "sha256": "8e055e12dad8fb7fb8aaead59d8c604d7e97dadc6c0c4cabf54236c3322e7025"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/51033d8d14286a145a795729b5f68427654eeb2f796179379dcb42a3e90dfbb8.json",
+    "bytes": 1931,
+    "sha256": "e64ad33a445a365f04f61da606a92bfac92dbc6a277dd11085a5f4966eaebb5b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/515f57ab4eb5f05a9f35f3658bb0355eb690d68197ca8d67b268b8ea38750615.json",
+    "bytes": 1739,
+    "sha256": "ff2a401418e1b8bb4267125c4cb56a22bac91176d8dba8493b919d28e1cd8939"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/515fa5e7743f3e5ad09f30a4fbf9fa79ad93e95c8de0a66ad24912b2ac80e179.json",
+    "bytes": 1580,
+    "sha256": "7adb403c5c1efddfb7688fafc7ab863aba5ae00d57a42ab86ae26c86d0d5a48f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5178b12ae1f0c2a699d91fadcd16b0ac59a05d7d09015a934012403bf3f299ad.json",
+    "bytes": 1940,
+    "sha256": "46f71e45b2b2d807f671f84c9905caf08992bde9bdf9eb95b528523f1a648d0a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/530fae16a6f5f8b13887e503586fdf46c1e4199f7fa5907555cf2188ecd76ece.json",
+    "bytes": 4187,
+    "sha256": "9c1dd6b009987d1698e2422342df459c13afdea0488e42c5c13ea78905fa5554"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/53297e95f263a5e2cca9c7d8e2100f5fe0ea88df6f01ab4c4ab81271bb4a2555.json",
+    "bytes": 1925,
+    "sha256": "2410a01fb95744d69c1eb51f68d9fb3ec60432310b9083287ff7c859c4a67d53"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/535f11d4ba3ac9b85e92ab15eca7a705886750c494141b50918ea1ffefe12777.json",
+    "bytes": 1937,
+    "sha256": "5441a8f419bb68b03879a985f22e1a6839a9eb8e1fef97961c72890aa25969dc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/540f0b07040e1145d8d33f1339954356a61f858af0b8ff28815ac46e049c29a0.json",
+    "bytes": 4075,
+    "sha256": "250618f98f17a22b03351415f400a8994d5d934508cbea70ce1665dff4a0ac25"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5413118ceeca9c9f40b0211e398311623b7a053fcaf483c4672b6c615f157420.json",
+    "bytes": 1931,
+    "sha256": "8d16468547cbac1d1c61e9f6867dca936721a8b4e83b2ea39f9a2cca1c8b6059"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5432e698a8a9b60773a78e8dee61a859606aaa9f49216d037eb33b8a2ddc2f78.json",
+    "bytes": 1739,
+    "sha256": "d27e891c668e8c07c74a65fa70f3c9c1a9f37d49c9c6e70629b1cc1dc0f27b74"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/54364b83c72a0579a70ed5e66ec172c463b1fef22b509abd0080707da15a60d6.json",
+    "bytes": 4157,
+    "sha256": "c460b8bf2420793c25e4e8dd38b70909df3a48191f1c1a241b386b0ae711a925"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5437a87110afc61dfe0ea6c8ec4f0e2d959235745174e7121efc2c4b739e14bc.json",
+    "bytes": 4151,
+    "sha256": "e1f953c543a9f27e2ea3071c05b3f7ba7660e3ce6c17e47736e34d8c1e324d99"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/54fa4ffd74c2c53fe0d0c614100a783a4adcb422ae93c457c25316cdf6fd750a.json",
+    "bytes": 1920,
+    "sha256": "f03ba0aacb02c0e027c335fd02e7fb236834d5a89649eb7e08f548a9aa0a7fa3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5531dde0e1f74b36b0c9a52e705d57f6b16d0b59c9d9f639020a32c6d71bde0b.json",
+    "bytes": 4169,
+    "sha256": "ebd68f05996c12512f83f0eacf2259b9b3e70f349ed7c3eae674f6a15636534d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5579e0cf5ef6f554c87bd5b5bda9d1bf0a44a7b5b9c1fe6c46de1a3f94dea792.json",
+    "bytes": 1934,
+    "sha256": "89b52e03efb453b136f38270463aa1c5f246f26b766b39cd7f287b32bf028e22"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/55851b2539d0e4f059b4ae88e6bc20dc4816a5f4bdd4169c88079da0df6df085.json",
+    "bytes": 1925,
+    "sha256": "7514a5c820c996bcde84d834f7709c3733ae35e7ea4ce31c1068cf75934ac9e0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/55f1d5202d31ddf5549dc0c56051adc33dfbe330b068767e2b18435cc1790643.json",
+    "bytes": 4151,
+    "sha256": "e60b38ca50a684b886306619ea3838e09b9c9df07a322115d03d1e2445e44596"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/56166be0e5959e747c104e57cb70f7563783879270d002de5b11a500d04a0005.json",
+    "bytes": 1778,
+    "sha256": "025cf95ebe329d5b96d494a7d76b776b34954bd96a75472316f4f6b2bc8a68a4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5681eb87da89f0ec8a82997d205c9d97d2105f90a6eaf5170e6a987bfb194521.json",
+    "bytes": 1931,
+    "sha256": "779a3d795656e2282f97624b04dde36aed663466364021687edfcc628e370340"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/56dfbbe64214a8f8854c807806a04019936f436a9aee1ea17833fc64a85c6114.json",
+    "bytes": 1925,
+    "sha256": "099dcb76b7f02bdabe7ddc77791547738db564e98a79a141c888d21eae1ae8e1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/56ed2b60db04b242129b551eacb8097e4e4202c56e19ba18d07d2bbfad2cb8ee.json",
+    "bytes": 1937,
+    "sha256": "1fcab51947a7a03cba83f08dc33d8f1359509e0072db391f0be49a7df6d6999f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5713aed9821a3c3fe74c3980836d44dd265d980167479c55cbe971cb41dff8cc.json",
+    "bytes": 1739,
+    "sha256": "a15b70a53f5b7be0cfc17551d550989c65e7d6a67faba8bd75b34abbab1ea409"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/573eaf6dc4d674f43bc70328f46e68eafdbcbf394d5cb01a30b42cc7f3ba9aeb.json",
+    "bytes": 1931,
+    "sha256": "707960cc2dc1910760a0f0d98f9d99aa07c573ebdad3a6b9b7987233d047c7b7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5749353a768098bea99ccf2c1f1b4b6920445e9157d78c1099440c3145442400.json",
+    "bytes": 1580,
+    "sha256": "81085de397e0148e6d8e24952c0ccf24e604aedf097f922b21e7ba4117fdaf38"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/57721668a7a709fc3b6314d194150078ec969609df16b2ad6720511baddecaac.json",
+    "bytes": 1946,
+    "sha256": "f0b8d0c954512d6726aee258f8f85f9bebad6669eaf5c261f8d9f916d385ed00"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/582614696318c2d4c816fb9702e380d4dc12421d54474fb874c134286aee16f9.json",
+    "bytes": 1939,
+    "sha256": "5433dfe064c7ec5cb639a6eb731b7fbb0babd428b8976133a836e8979128e042"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/58768a704b345315968fa4467795dc920f62f75a04abafc51794395facfa0ad9.json",
+    "bytes": 1946,
+    "sha256": "9ada36de86c986c11edbb55c98898fe620b6ada3d23b164f6abe8f498584a025"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/58fbcfde9e702e1f0e34e9200302e3afe42858047d5c7dd8780cbbb476af2a11.json",
+    "bytes": 3729,
+    "sha256": "e6ae04891fe44dc610ddfbde844c46cacd3ec2fdb1ce7e389ec240d3fed31b51"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5944895d02141742272eb294ce1c6e9c901bef76ec71ab4a60515d31f8c31403.json",
+    "bytes": 4171,
+    "sha256": "69a58c2af4f8b523e4688e64888e1256dee2ec4723a47000db0cd7c3d19655d3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/59be382190b9fc8aa930b6e5e7c8591b006343fe537438102c2f9b4cfa96509e.json",
+    "bytes": 1580,
+    "sha256": "f38d64ae4c0542d83a5b756b35272d22598136e56849315028a462f8fd2dda0f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5a1344d89ed6321f7381f7af033c4622833a2318093423f00d6a21f2f5f72e80.json",
+    "bytes": 1934,
+    "sha256": "5db6e93a962e4f3844f938ad887c19ecaaa85b67ba2c30eb1398fac5bf599cd7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5b286b1bf71b65dec75425dc614b8d031812ad1fa5fc124e33b79a9a492a2a22.json",
+    "bytes": 1937,
+    "sha256": "4abae16580a0725a0679f69f11968e7f5ee207164779644f64ff73bfc549c840"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5bdac1de45b24407f9d066b544a9126778f3e5bc174a05a9d17f6ecd73d00b51.json",
+    "bytes": 1925,
+    "sha256": "28a5de10ba790aef1635b0f03d83c01f445ed26fd3bc35b1a9d0ef68ac100e33"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5c27f1796d304baeeef665fbeb1eb51fc8e2107e163e126ddd782a5f87a1bb17.json",
+    "bytes": 3804,
+    "sha256": "41fc08e6879d2fd195612e8a2e51cf1634d55c9b7d077aa410f8868332cfdf8b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5c2e2121d835ed281ba86baf41b2d18ac371bf74b885c0384321cf2d8714ce34.json",
+    "bytes": 1952,
+    "sha256": "116629d2b8329a4c77c9c6540d4ff84cd601ac7a3ec2816cf2720f855bb9dc0a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5ca7ed93f4495c220aa4b11a32ebf5a139456cac667bfe77415af99dceef8f66.json",
+    "bytes": 1768,
+    "sha256": "cc3b5ab3b1ae103a072eacf01efffc08505d3ac9b4cbdaa573d61014f0e8e999"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5d24a469a9c7c73b057bf7dadcbaf78dc29ea644ded98534a95c54c75c47d4d0.json",
+    "bytes": 4253,
+    "sha256": "49edd98cd8325d65335d442b9c232c5879cf9341f8ccdaaf48201511c3e58b81"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5d80b6dd279a8326f86537212c9fdcd1e6ad27398e8c6fc0ca39f1ce684a4e0a.json",
+    "bytes": 1739,
+    "sha256": "3fd7425deb5d24e07bbc3e0802fd1cdb3c86e99b09964b518b0d886f6aa2c2f8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5d9a2c0602fa51bc48e81bbb21f61de3a67d65381f2ff0cbe65e53ebb5a82427.json",
+    "bytes": 1937,
+    "sha256": "5f492cadfc194be39d0562dee5354e70be52a8d02b8bea2543cfdfa9bc504d3a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5dbf593bae523ed05b57ca6abfb2cdf2055edb08bb5735c64ecc993045069547.json",
+    "bytes": 1941,
+    "sha256": "b1e5755675a6947e8f8982ebeef34722d9709955c0ee2ae95bddc4d61a769794"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5e24bd72f8f7a14ba9713ee72e93e79fedb5efc08e689c239e0797e91e1140ef.json",
+    "bytes": 4176,
+    "sha256": "647a50062e1f1a92476a5d77070e07124d088de7ca07bfed045c79c5cc099c14"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5ed7defea44c26702b1fb939e4606144cc239064347974a9341c702987af83ce.json",
+    "bytes": 3586,
+    "sha256": "6b9c051c6196cda3f2b937694d15b78f7063ee493054bc05a1fccc0d1dd2c7bd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5f39f1790eed92cab84cd29acf93909a772f559b5280943f4de60711567b3041.json",
+    "bytes": 4157,
+    "sha256": "f5b966fa3c26deef8264c6240038dd76edcedb15ad921f13764cd5c06f74718c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5f78fdf3b9fcc418f73f19ea267ccc4106430ef6f73eb344b4215d225e328836.json",
+    "bytes": 1580,
+    "sha256": "6d1ad9247b3f6ee1de27ab0b3c0bb514731df54070d2ca40d09d59a95d5f8501"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/5feb687748e313f73ec30c94fc8a9125ee68fc3f707596044f158b2660cfcdff.json",
+    "bytes": 1931,
+    "sha256": "e40bbc3d5c9de4322ff3f40aaa3b3688b95a0cb1a814cbd6c17465efed8d0172"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/60d42286ab5a3772d2be624aa36de5044c107437d3ace5a18f7103a134c80e2c.json",
+    "bytes": 1936,
+    "sha256": "2227ab4ff5f24ae58e8198b023f3499ec26661e64c6ff37016ca417234164ab8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/60e407df51a15d6f9472cd946fcc6350709770dfd48eb9e60eb9ed6f2b90943c.json",
+    "bytes": 1920,
+    "sha256": "7a22c1d1c4a064ad192d2ed14bd91eaa9777b424c8408030afe4b68abb82e9fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6133de7d893b4665f4fa00d694997fb91c0f295328dbdc43ebb21ded862fa836.json",
+    "bytes": 1920,
+    "sha256": "3d1c94a75ce957f76bd46d7072c8716e00cdbf10f686e0429e81f14a3af7683f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/618bc1d67b6e0bb4002ec3e0d43a291d3815898f0d376271337f1d1b2b5a96fd.json",
+    "bytes": 1934,
+    "sha256": "117a67acf812e4fcf685f45cdc4406c3341e3c3fe31b6fe1b4101d623c139054"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/618d0e0ea7b1d1fc779893d9f65205c67aabd519b9bfb24979609c45edfe20a4.json",
+    "bytes": 1739,
+    "sha256": "b79447950c34f2b322263da4f7a047863a90b7f523fecaf8f66011634680005b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/61e5a854b8e820c7d79d536ce3bde2abb1de76b73a2f85fd59bf1a149699b429.json",
+    "bytes": 1919,
+    "sha256": "3cdc9fe09cb21456a525001fffdeff843af441d240f06a555cf57d3a747dd44f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/622809100cceb0edf59382d0e1e4e34908925796928ddda37025a476a1533b26.json",
+    "bytes": 1920,
+    "sha256": "0591d830210199a5bd3629e7424954bbb661df0c85ec12ec030bf8e8df17ea90"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/62394a3ea0167c5648f4db36634ef6d873c565eb6e8f3dd409d696f2c16643f6.json",
+    "bytes": 3729,
+    "sha256": "eb7252ade1f57ae1d742f27186bb0c4c242e9911b8806a26f1c37ec0b13592d5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/62befe9875e884b9abbe388e46ad3eff8974efa6384cf75313d7593df2519a40.json",
+    "bytes": 1937,
+    "sha256": "e68d89126f15662ff8db8a63ac081e900302dd0fbcd495779ed3fd837a2dda11"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6363621f66e52c8d674a16d210e171614181ec3d757e9c02a8b69edc93d3ae33.json",
+    "bytes": 1940,
+    "sha256": "5b05beb57ef8a00d09e38c07e9b424e9343f57b69dfab8a8f876e44c3562d83a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/63ba5656398d18124a73933060a7d4d2b0f7430e6f38ec3073d60d3cf08079e4.json",
+    "bytes": 4175,
+    "sha256": "42ac54bab11d8c77cb0938dafb1eeb6ffcca80d52aef382a38f7f14102350e18"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/644f75cdcddf6d7194d9bd1f992e6b219d462be841669409ab7eb87e68afcf87.json",
+    "bytes": 1934,
+    "sha256": "9b88cf6da9effe9336f78413bb30a99d66ec8e55b64b8e5205fbaf1d521a2dd0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/64e027d1a56ead117448ac0ba933209c30faea56794892bd74a16527d61d2de7.json",
+    "bytes": 1941,
+    "sha256": "0f699b980488dfb047e688d3c402f29f31a60616ab344907d58c35b6747699d1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6581c3802af01dcccac585fbd21fcbecb96bbec30ceaacdc15f21d9075817109.json",
+    "bytes": 1788,
+    "sha256": "a27fb0186b09a58d7f45a597e0c2959751119e98bdfc0b9c510bbcdb98b4fccc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/65bb843d27169dfca430f52511ff482255e2c9b177dc7a4328ca8758832443fc.json",
+    "bytes": 4155,
+    "sha256": "5a00e0756dd0e467302171ee4f688e44aada1163d64821788750df8ed29099f6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/67278422c449b5a4a5d97a6a93b1171139d2fbe157ef5e1f21e0fdc7a1ac68f3.json",
+    "bytes": 1945,
+    "sha256": "3bdb1ae2d22d91a29b596270d873f990ff38153f1def7136e70d41b56fbfb18b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6727f6840e19093fde0d1d2ca3c8c8535b066f98da8dc7113a57b5a9e31fa0b8.json",
+    "bytes": 1925,
+    "sha256": "42aad70f36fd613da8e8e3ed0fe2a42f99a72dbe63165e01505191ff0ad56dbb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/677391a607318b20b68980449eaa9cfb54d4dfd7bbc02901cf521fde2556fb2a.json",
+    "bytes": 1937,
+    "sha256": "eab19cbd533e64463fcc59cdf0d0e0fee1f553eff3c9a22480a8ce71bbd775d8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6791e130f793d0ab44f08310c106b1283008e6930e4306270907b3cf35e65d70.json",
+    "bytes": 1925,
+    "sha256": "43ecc0bdedb94dad5ba8194bc8c7b3dbab61f156b51192d8c3a6b02998495bae"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/67da7d46df65b058ea6820d7c60a87018cf740c012186c4e44444beed90dac2b.json",
+    "bytes": 1739,
+    "sha256": "feeeb6e8e33ea4a1bbe19396621ff0191f5de5103598806826db6e76decef6a1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/68816e3526d5be3cc7cb0231bfcbc82d5690910854c0eb1dff480b877a1fbba3.json",
+    "bytes": 1739,
+    "sha256": "e35c2670337e4ce1960733b3e9a0deb214afca3f21b4cc64802d5b42e6d4f51a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/688986a765abc253533e9f81dbdbd8afd7ff17baac05f50b951ef85828dce4b5.json",
+    "bytes": 1947,
+    "sha256": "7d35c68e1dde9b57a1fb3f25ac515e40971914e9c496a4b0de7858293c5cf380"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6adee0a68d06fd09133125b4e0bff2874608dee20c55b0547fb604ad26d21266.json",
+    "bytes": 1925,
+    "sha256": "fdc3c709a4e1a845d2d39d7105ac6aabfc65cdf79068da83d15bbb6c9a94871c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6b47f6c9ad6f1abfd9d10408a3caf97b23bee65ce4ae6d03ea4fd4793fb5a166.json",
+    "bytes": 1941,
+    "sha256": "8d45bd4773710e40a56e56aede208782da6a0eb283969463df491f2532a71e6a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6e0bfc39c926c99e17602b8d158f599cef3d30086e3e404f3db6aec05711ed07.json",
+    "bytes": 1739,
+    "sha256": "6557d86ef4398328f1980546a155ad25a168f8e986f3736db636f535f1fb5c0e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6ecd27a55b665582035c263f31739208a197bd4e04d9cb0c1473e4c51a198206.json",
+    "bytes": 1934,
+    "sha256": "eb288585775fe1e82666f01bc19b3680c20809376092bb643240909b3eb49a21"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6f5366599cfdefceeba3361db0e6da10b79861c854950276712b58b62ecc33f9.json",
+    "bytes": 1937,
+    "sha256": "d58abe339701264805147b407e3f39c3c2953fb7afcf10b912e863d581d740fc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6f82ea6f3043e1b5954874aaa9eb12ba86a781a536ce244fe4842274d2cb5704.json",
+    "bytes": 1920,
+    "sha256": "d3c7de901eb9618bc7f52499c2fb75899100bbab627b3e217ff389ea66238ccf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6f93d361f4e81263c9536ea32033c1c7ba9693b199c6402a156b26dcb7295030.json",
+    "bytes": 1948,
+    "sha256": "d33e7157dfa597bc6d337de898847857b62129c77e0c361ebf9b248388e9ba2b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/6fd89fa3940ed56372f53075cbb0a02be43b4d22cb53f4aa0a3049bea705db97.json",
+    "bytes": 3729,
+    "sha256": "81305da6cb22b8e94e03ec9f98e922667a6e8eb85c28d2c5bd908558b27983b9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/703a0f8a730677b52c9eacddc5ca0d862a9c14ce762226f56af30cf1ed8a147d.json",
+    "bytes": 1941,
+    "sha256": "5589ffbca9b43ac3cd2aa92ba05914f29bd4635825356db1bf6f6e33ba1a24f9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/70577f2cd071a5d9cdeae97bb2b01097678c15a592d7d466c63c7f1446dc6c13.json",
+    "bytes": 1580,
+    "sha256": "4d1bdd0d2fc28291b17e6a0e20c08da51464f711ef2c83ab460e3c5377b68f94"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7066b9fd9290e537d403b6221ecb9c7a933823e8640094c74595f3d5cc866aca.json",
+    "bytes": 4155,
+    "sha256": "c34b41c7cc1c47bf880eaa7271d9d58fcae42f9c980095ed1e03713e034323d5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/706804c8e94c4fbe21fcf90edcef01339f81ca8f10e3f71a66b1e8a36b63f3a6.json",
+    "bytes": 1739,
+    "sha256": "c5efbc99013820becae76803b880e3974d0e567ffb62c5a181b32d5446e9de5b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/708a8ef5237bc46ec9116bc75d155dfbfa87b8f4c37f82389b188dc806b38969.json",
+    "bytes": 1952,
+    "sha256": "fb2d55689cbabc9e8776ed51595a4655436689dd20bec4673db2be533bdab144"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/70961cda3bf4dcabeb05fa969935bba3056ee4612d578e8ae662d30c57002af7.json",
+    "bytes": 1739,
+    "sha256": "54d9e051e1e887875449ecca792ac3b1d17d65c716829d325fdbd1a10a038117"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/71d192883e3004b0e4b3b72466516b5e7b0f2bee71b2d5f39433194e9b9bdf7f.json",
+    "bytes": 3650,
+    "sha256": "c4e0c4f8b90687d4db7f4906aff7897300f31ab88bdaec63aea6045104c9e368"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/72588133cca2e84dbd566507295e246285d2953a734112b61a54eb1a216c4e9e.json",
+    "bytes": 1925,
+    "sha256": "4112ee1a2490d83f418bd8f9c5111cfbc35a574881f927b916296690d3ab8c84"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/731cb613c222d8cc377bb71078e90fe778ce000caf92742bf51f5b4812eb9071.json",
+    "bytes": 1739,
+    "sha256": "9890d436afc79f8dea929e061d855a1c8e23952b6fe4d0730c055c7fae5a5184"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/73ab7bb486c53e5320b281399f1b72e9b9ff1d52dcf381865e96873a0fa119c7.json",
+    "bytes": 1919,
+    "sha256": "fde114b8d817620ca621d16c378330d3a2ab61d6bcde185a3cdf9f9cdb5d3f38"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/73bcbe852490ad496460004500ace8df5ffb4c41f1d5659fcb7dbd39df510fc5.json",
+    "bytes": 1919,
+    "sha256": "d0e0a41f63e22506dd70c2c467465f38163c242fc96c5b6680c07e64a8ab849c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/744a521a96acc91bead5e3dba4df375558932cccc6e654a50e34766c9b4456be.json",
+    "bytes": 1934,
+    "sha256": "cc4024ad20331dd2a68014dc24f26843c6d0edf2a9332e249f732667d957c047"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/745f5c33d8c04e0de2d113381eeb3bcb93d1f8c41e06652e4d72d5d764512e6f.json",
+    "bytes": 1580,
+    "sha256": "bbafe1e159c1fc3271def5b2ff05aa868e1fdb1b11024479570b4395dd34e1a3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/74a2b1f7e3ad34024de9960e529d856cf0536fcf288b5b7b24477d45a9501599.json",
+    "bytes": 1925,
+    "sha256": "2c1ce13df975adc9c68f8be3598ada136001597bcd9ad0cea2ce6d72776b2745"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/753748e8e2deda8411c53f681a2dbb7462151ab2bc80553712a10cc034b9c0c3.json",
+    "bytes": 1580,
+    "sha256": "a74b368f88817ce4c2f76b1fbddae6239b8b86e5b23b4887e470baab666c5883"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/75e7856d5f54bbffc7f8eae25056171a7960312d22bc35e90fc60f1c4f4c89dc.json",
+    "bytes": 1934,
+    "sha256": "f77d8fef2c607ff807b62fc566387ae3985fcb9f0499fc3b7e04023c1fff9d19"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/76399784a415ea37f6f0a0aecb4400fa2cf72a20714a56de11ce454e38f83bf6.json",
+    "bytes": 1580,
+    "sha256": "3643ad129a6d2aba4035bdc8a9944463aa45a6ddeda55019f785d571503d13e3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/76980a4087b793f6a7739bce0439e8d551e50e144a928324d4b837370c4ad35a.json",
+    "bytes": 4170,
+    "sha256": "25bc9ad60ef93ccad34febb0fcca93ec87a49047c2de20a20a01911dd3479478"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/77909c3d7f9799faa258dae85d65135935e2f7d1eb6b93caee29675f24ca5aac.json",
+    "bytes": 1928,
+    "sha256": "2b01db526240685a6915456c6e7f91b881ea4a69a32ded2639b1ea7e903d53d3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/77b4b7220db239afe4957d6879f68914545e590bb0fa40bd0ee9771d066d0fcd.json",
+    "bytes": 1936,
+    "sha256": "fadaeb365e1aef1f0f97e5675b688d1a89c3fe331c0a217ac6ded917ce8e60a6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/77d79b90c9d2c3c1a2a9ae434a7d22d09870d2c191cd734b7338b6dbfa25e323.json",
+    "bytes": 1739,
+    "sha256": "f7a862733c0fc81f9ad1b570e7acb3696e2be55f2eac2dd291e176cea11390b3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/78bcdd5b29ce09408c482c972855ee6e89accaa5c0df2cf3020036046cdd2bb6.json",
+    "bytes": 1945,
+    "sha256": "35fe5d2ef4828005fac7e13f6d88e38cd7d439984218609787f89fa37d33320a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7a2425a616dc63089fc7327830f0d476f21b17b1648c0e034cc96cfe1bf15929.json",
+    "bytes": 1937,
+    "sha256": "b6779bab4f4505ec7cb35c0751316a11a088f7d314c2dd041921c3a71677dbb7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7b051a414cc68f70d3b55cb78c4ae88cb9158cacf58316dea57522aaa54c0287.json",
+    "bytes": 1925,
+    "sha256": "337c6b2ae3670015f5719ea3dda1bbc714bcbf22ec1c2db401af59ea992c5f25"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7b3ea05bcf06d97e6ba139df54ea5a84dc17ade2166367ef9b4a52e2b5b88249.json",
+    "bytes": 1925,
+    "sha256": "2b97957aef0069a12ea627fcab7a25f22ade04c77583c01e165c5481cb30e329"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7b6de6bf6586b79a6d824497c20777d831b5926859e16098312faa9e9adf6b74.json",
+    "bytes": 1931,
+    "sha256": "4ef18f34dffaba40323f77ae71c2acd3965d1b8ba015f0faba56177a3a5c7587"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7b94996d7791511f8c7360b571822ef7f2fb832fd86f0dae2bec5be1d0b08e26.json",
+    "bytes": 1941,
+    "sha256": "477d44ddb291f660c4fe52d292d1a88aca44454f546c2fa2945cbe0e891d484f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7bedadbdc3c0367c6a45903946cf1897c1cacabd7fcf6219372bfdeeccd86808.json",
+    "bytes": 1925,
+    "sha256": "cb23fae6f9ee4308113e1fcc1f83de4770b4883f5e92c4628c1f43e5c571b624"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7c465720c0400d5b6c768708c47d6313814536ff193b262b15f97f79be569df8.json",
+    "bytes": 1739,
+    "sha256": "da05f6d026ae374f2a0c345d8325af97842205f7c5ff43a442e2b55906b2352f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7c6885eb6ab95414a38ff3c6646770a6b3a2a963b3e0e41ea3a2844976a8a2b1.json",
+    "bytes": 1739,
+    "sha256": "cd4ac6d4f451bfe77d8185960cba18998ee401cfd43d31a0a5202a33db0db258"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7cfd7440c2aae7ee7ddc28d73b78bef00b30800c9a1649f919795f79fe56f075.json",
+    "bytes": 1952,
+    "sha256": "b1e537185936b317e1252712a15bb56a8aabad5c812eeed83a647201fd40f8cd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7d31c4b4f707b757c12d01de2dc0822ecf3fdbf666aa0984d1ded9e43ca39be5.json",
+    "bytes": 4169,
+    "sha256": "88167e8c5a29326bbc2190ea06452146b07a597866584407876ecda9c05cebae"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7d58711dc7476203c9753f9de9d444b21ef101ae83dd759d59d7984e83cdb30b.json",
+    "bytes": 1931,
+    "sha256": "7272f3a7f435a385695f5c243165149621131fcb3f01fbb71299a27cfd72b543"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7d8c77b9272d5ecec4bbf47f2e477c5251494041a3e1deb3a985af117b03d830.json",
+    "bytes": 1925,
+    "sha256": "484d9adb816578bdcb44594aa99ab9b68aecedbf67493fe6760123c8d567ecce"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7d97668330251f523e7893bb07a21be6b11849598c88e6019485d446849afdc1.json",
+    "bytes": 4162,
+    "sha256": "1958480762dd9881a9a93435dc12664a020976e3c5c69e414b6bf4171fa1293e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7ee0934b99fe00165fa80d306219d6868845aed986c4904c5cb5eaaae6bb58c7.json",
+    "bytes": 1739,
+    "sha256": "193f0dae7c06442f1b50ecace6a49747e8c1ec69a50f19500cecac65b693e225"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7f4a5622aa6ba0f93ad274ae7a75ce281895c9679970e0936f43b49b1b1d4892.json",
+    "bytes": 1925,
+    "sha256": "11f26c00da303c6f763b850f41249bf5743428452f306f82984329f77e50af58"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/7fec7a798b1e186366842747ee9f648316f491eb41d72a446e39d785001d5ed1.json",
+    "bytes": 1739,
+    "sha256": "7d62d729a468a81d35356dbf2b60e6c7819c5d34723cf350f79f1b72a4017ad6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/810489dee084ac43feb5b2e91af3f8f2298367d7fe1d43d02bf3fcab804fa36f.json",
+    "bytes": 1739,
+    "sha256": "ff75bfe08425c70435ee4dbe49d4e7ac49132c1553d7fbd8fb4203b04ca5fda5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8156ddf05e19df6ee2605a73b3c9963eb673d462ce87fa5cc9fa8d0b8b8ba7ef.json",
+    "bytes": 1928,
+    "sha256": "98bca23c21894eaea8b5fd7ee5bdeb2cba9efa78b0582cbc812fc3c0f1859894"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/81b593cdcc1f6fa3ae9c59e0804856ddaac69c708bdae9b72697196609987234.json",
+    "bytes": 1934,
+    "sha256": "52e9c65ece74ea03b4dfed5d4f2ec2b0560a9776174e7131d50377dc70c4a4ab"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/82037dbe9a02e47aeaf47b8a2a94f840e098561d468f4211bb6c5d676486bcb1.json",
+    "bytes": 1919,
+    "sha256": "7f40d608d3d351d0565b4794859bbb1dc147d82543cebfd22975b01755a384bd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/82cbed4d04e8c45264968d1e2e0cbad1b89b84bf64de2c5c135b32daf0badc15.json",
+    "bytes": 1933,
+    "sha256": "0b7ba57e245e2510596f99b39cad13df7fd67bb47931f02afcc8edabbd73b3b8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/830d192716bd4fe05070c2b2e7de53ec9434a42b3e9ba5a07720169e096b168a.json",
+    "bytes": 1925,
+    "sha256": "a882ea43183a374d2644f737e8203a08f16644955f49155b955ff174809542c4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/83543b27a728b05e36006509d9ceea708e707d2a8921304b05c130ebc6d3ef5a.json",
+    "bytes": 1739,
+    "sha256": "262ddd77d9607c8173fd48132faf6376428af2303963cd0a2f6180e5bdebdfdb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/838af68c148384d3661c3f2c363847c7c7781ca48ba7c0a1126a1046d2fa2300.json",
+    "bytes": 1937,
+    "sha256": "bd76e7208ba391b93c2c176d55fb708a717eea4c14b1a0712e8648745ee17415"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/842106bc09dbdb9f8712c5fd47fa0141a8288e5765a09630c2188f0011866a0c.json",
+    "bytes": 1925,
+    "sha256": "5e9e38d9f9ecbfe30bcb7432d639c38709c04128c2741170d553c74f90e168ff"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/844c14a0e6a96f6c84e09261b2ef32cb129275a31a4e0ecea4e471ed963828ca.json",
+    "bytes": 1934,
+    "sha256": "f288725ba7342206c1fb0097290971e6ace3c20112f06a0dd80ecb42bd05c87e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/846b62bc0aca0d00a731d737d57969aa4b62611f797779887cfd6568b0f3f38b.json",
+    "bytes": 1931,
+    "sha256": "5a569bd3b77f33c97d9c773cc490e31348ba9620ae8ce9905b0c8384e57ab6bc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/84e9cf8509917aee72075b041d3a3c88c46d754c13d10dab6759a8abb0b4f5d9.json",
+    "bytes": 1937,
+    "sha256": "dd213bd54308831112f20e2453ffc8db4fde466b435e81e84713248ffe07099e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/85056bb1e815e6431a93bfc9987bb7f82b19dfbef8831d3b3c5d6c345cfd411d.json",
+    "bytes": 4187,
+    "sha256": "ce0b734c84d607c59119a03e165b0cc8e1921876043e1e4077a84512570fd107"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8509afa81379471b9bfe0b5d636c3226bf3fbb22fe2c879f408f531a1fd36481.json",
+    "bytes": 1934,
+    "sha256": "db3e99669262406a7f91afadb67ea052d277336f6e956d0a10644f7a6fd12232"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8574b919af0968be29390bd91be782f88a44a6d5016a5fbbcbd41db2463bc448.json",
+    "bytes": 1739,
+    "sha256": "5400be8de3947ac5e5f439e2db324df44be5049599c65d78c16c1f32144946e3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/86d4b13acad3428f403070df59242f81cd65ea0a785cdfcf666a1fa1df6dbcea.json",
+    "bytes": 1580,
+    "sha256": "525aa99edb4c47490178dc180bf26b9a5aa784e7a81200d59880f0484a5b9c8e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8767729c71f78a4b8c7578605e0f5caa1cecb9769bdf93be49af25838f9197a8.json",
+    "bytes": 4169,
+    "sha256": "f8726bfd284e1b70792a4d1cdf223b2cad411b5d3bf55adf1d996f4c69a7795e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/88f3155c3aa27980557276ad6bf4fb8cd8ec6946fd83b2b5016f27f4b251946a.json",
+    "bytes": 1937,
+    "sha256": "c036272bd99a97f43fa88125cc1f0332be4508b49ce4569a87651927ef934601"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8a1bbc5c788a08fccba271c43b79a7a3c872cc2cf8cc6498de40fa7c6bfb97b2.json",
+    "bytes": 3729,
+    "sha256": "765ef04b31eae5edce0250d0d0eb668ac3fda21d90ef10da8ac691e61a780def"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8a94ecea0a8e5d692d1467fe73d6225ca6d7646a3a4c66ea967e27d1898bc7b9.json",
+    "bytes": 1934,
+    "sha256": "9998f48b4afd26c06933b8b049904c345c3f5e3b5d8b628dce313a9c61078698"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8a9f7d1e70d764b787f942fdfc803de8af843ed95a20da75093bf17c8c601d00.json",
+    "bytes": 4169,
+    "sha256": "8739b89c2cf5c8d1b68d623c0782b3af3a38fda4ef96bf71dab33500d7751926"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8ae7875db2d8d6515aecc18461c461b65701bc9ce4455bc633f12d1019cf4778.json",
+    "bytes": 1925,
+    "sha256": "959f8d8a85038514aeabff2e6e6b5b4bf74bdce6285221c42e197186795fdc14"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8b494eceab79168b0f91ee70b40c68edbbf1f00c0d63d9ae42cde5f9f59e00da.json",
+    "bytes": 3586,
+    "sha256": "d645d2236bd4f47736544f118bb1b8fe4555c2f239dbc3eab1b82d5a17cc62d3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8ba3706184bfdfde474125d97c832bca0288ed86deab222618373695f543ab82.json",
+    "bytes": 1929,
+    "sha256": "a54de731a8a4224d991296857e991f1f25037deff43d9ada0d2573ca1a86954a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8bb3c9c9ea5580eca3852bde9c10e0a655cc81b250206d858c3f9d3056fabd7c.json",
+    "bytes": 1925,
+    "sha256": "9507162b5fb705e596baf99d1100244c4a4dff5185d26b8c59644a2b9b8d2436"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8bc0889dba1ebb56176c1ab67db05b91384cf61c5fc07e44cb1ea8eccd5a7118.json",
+    "bytes": 1940,
+    "sha256": "522be578057d0d5bbf261f17b986384180ea97774482fa12530cca92556fe1d3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8e03c8f40a60068f081e598aed672dc7baeed8e9de0cde97c217d8aea54bf86a.json",
+    "bytes": 1739,
+    "sha256": "b8287773823c66452a98be7f6799acff0c4e9c273e9b52908b0afa42db739f9d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8e1f0e05b79a9c08b04e43fc1d32b23f5273bb2508ec482531ac6d1e3e3cead9.json",
+    "bytes": 4157,
+    "sha256": "17712316d5745a39376ad076e3d0153451edcbcc4b9d28d4ab9a660a07c112ac"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8e46109d9980e0cbff3bf406bd8b8ca4789590a88b2ca84ba5f716b555e61783.json",
+    "bytes": 3729,
+    "sha256": "3117dde3d0599846458ec42f1c5f19fafef900b0a9407a19c2faa7642317aab1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8e68c9e5d1a28ea3386cfa011c86024ffbb029aeac2c205f6846c6df5f83fead.json",
+    "bytes": 1944,
+    "sha256": "6fbdbdbe0f152b02c6db5d86837fe4c74662806030af3348086b3b662c7b18b1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8e69566f658cf5b38155b0ee55a2a1c44da57daaa5eb1a4e7cb988a2405d6fce.json",
+    "bytes": 1934,
+    "sha256": "f8e6803da9a43af6951391baaa464fb33e7300e0fcdf56b0aecde084dffd47e2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8ec4dab29f4d71a683512a058e77e3bf7b4fa997cb421a9e2d2e623fb3e7a539.json",
+    "bytes": 1580,
+    "sha256": "82b5f05a654f3ded65c8a6003d0ffe51e0fd508b91bcab1d9faf6ebcad8963bc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8f14a72442d2ccd071d97ab0f2c3759c294127c6d8664f02cf705ff494e3fb56.json",
+    "bytes": 4155,
+    "sha256": "d506080a3d3cebef386aa4e32fca345708506aa1423ed74ee5850e551b5353e7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8f2f8ae9c7c813d4ca85e8e21c07444093d3db97a52e6ff904c1fc151abbaf53.json",
+    "bytes": 1925,
+    "sha256": "75f661b17ccf497f528cc01f9261f4c96eb15ef3e64cddac223b1cf35a816d98"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/8f64668cc00d76e27da9a6d3420b7ced00488e83055d3c8437a6594285715f8b.json",
+    "bytes": 1934,
+    "sha256": "809096068db4a8ae189e39fe1ba17985cc35ca138387d02cedb8e92b0cfbfb32"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9076e3ccad2413828117a535e205998647b17ac37fa2568aa8934e961877c88a.json",
+    "bytes": 1946,
+    "sha256": "afb936c3fd023b938b4337a042f9e7ae906210d10bb39e97b2c95b9afca4919b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/90f72cef7c8d43d14aba21d0c79bb988a2e9723db5a2e95f9da4b5e5a7a13dc1.json",
+    "bytes": 1580,
+    "sha256": "d5f85f4da08f2ed092a5658f8a7a82970b32029a8ef4d1ce91b078e83aac08e9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/91c916f48f93f906cd25dccec6547572df592611db394a85b73c1579ca827c3f.json",
+    "bytes": 4176,
+    "sha256": "590968179528ab7f1038286cd2a33fafb90bb6179a50dfb9e4c56adab46f98a2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/91dbadff0f8452a8031343d9bebf4bdf057e7386367238626be98db2385d8e79.json",
+    "bytes": 1944,
+    "sha256": "d7bd971b844e97a69bd9df62d2e4ce24f91bf605eb8da33528cb137a3977f37b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/91fa664f448b3206b040c2f03b3ae39a1a92b4d5c538079bd16c803a2acc3da1.json",
+    "bytes": 1947,
+    "sha256": "67137c8f9d64c9e8c6718acd508ca67a3a4103f71ffe07396e48b9a8d3df8350"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/920c295e56c3211c74b52979ea882f8f3311f18b6a70ab19c44e87501c11875b.json",
+    "bytes": 4175,
+    "sha256": "df71f3d5b6449ac0050b8e1c7bec32a58453a5662251c14dfd70a78917ebf1be"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/924d89075c8ba23d315459a0c0745b98c4d2b56d1c0be19457a126573fdd6c4d.json",
+    "bytes": 1933,
+    "sha256": "aac11a3b3a599f62fe8bfc59b03e7f2f5b72dbaf39423c9ee1481d519954a454"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/928c4256f1c95c7279039a7aea8100b24267bb1b201ce3fd574adb1eaa260cf6.json",
+    "bytes": 1937,
+    "sha256": "9c154c611566f1665033e6aea18b4c7d692220aa372fe2db99f578011d29af89"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/92a2132d0b6561ca60a1785a8c826c27295cc2f23d39e88ab58a087c36a000fe.json",
+    "bytes": 1937,
+    "sha256": "a84e64ca75c00dbb398c2200bf74a65d56af9d7fe0b24da680125476f6c30ced"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/939df99635024b717acfc09c90ac3657329b7332acccc68a8d73dc7403d688d9.json",
+    "bytes": 4163,
+    "sha256": "eba31209e4b0a75249a36de24f26a4093698bf153b5b6f6373df4aa257fd04cf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/93b246f842e4124bfad7f548d91b3240b37b0c415f69d284c1778ad557286c54.json",
+    "bytes": 1739,
+    "sha256": "7cf770648ea5d1e9da203661e807c62721f61d30d1f6171265f6f6f1bb62a994"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/95515dd50ea0759a5121c29bfae63e75e6b8f7cc3aa25706ad107635af554b99.json",
+    "bytes": 1739,
+    "sha256": "69eace969f9cc714166ded4c82843c65833274f7f27d6ff5123e234087e87be0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/95542b1d17c057412eb2b2e5b487a4b8aab36b0ccf2035d1a3e380078e0fe7a3.json",
+    "bytes": 4169,
+    "sha256": "bfbdf0b8d63381de369d649d7de54d97d5985e64c0305d8c22eb5d67670f4fba"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/956801e3d1e4fe6f7057ac0a251a47f7b6d5df4c4efe280550689479b8850b08.json",
+    "bytes": 1931,
+    "sha256": "6b70545c9884dc9a47c6115702103592526bb0535f9680fdaab3d13cab39bcb3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/957d6e40782ba0d48d90a30563d659ff2aa0abbc949d71b6083c2ad8208f460b.json",
+    "bytes": 1925,
+    "sha256": "1ab58bc5b63b6dfd176ed54de544fd3589a08cc7d51010d50816aa6942eb1e0a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/95ed2ceac20bd9771fb16d70c4923acdaccec0bbc717f1f4d45d34a190c96738.json",
+    "bytes": 1940,
+    "sha256": "5a92b65ededa1c6c6686a78c01d2ab64e907b5a7f5332e5ef19e4e8832214329"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/967f6202445a426bcb652147f3ea933f4a8cecc49ef59d6e2377c74aa78ed595.json",
+    "bytes": 1925,
+    "sha256": "7f14c40bd4a09976e18f6af69172080da93f2c7a59cad481e73ed30c3ebcfd94"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/96bad1a3135fa7154e85ab48ace622646543be1299397a4a0a805e0e76391651.json",
+    "bytes": 4157,
+    "sha256": "1dd176d961066f361669ad025f04ff9678202c87c1cca7cf880f4dd8b6d69b2a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/96bdb7902a77d1a96804a347b057aef2733ff67b1375e42b2444586b8e1b0d62.json",
+    "bytes": 1934,
+    "sha256": "271a2414ecb4754fba53b83787ff218cb253a06d72cf1536aafffa78132434ba"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/96fecc4efa7f8081959b94ae25e377beeb9e4487f6a2a4d8855cb421ed74e30c.json",
+    "bytes": 1929,
+    "sha256": "0a5a5976f49a45e372496c09e286ddcb55d7f67db49ec1a6350864ebd59ba5b6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/979323bab58af2098038754f01cddc73510ced3c32ccacb36c5ad6da0569f2c4.json",
+    "bytes": 1946,
+    "sha256": "a92eaadb8ff3c4ff871ef8150a58df51652ceb4ab6e8df6908a63844a8b0809e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/979db89566ea518b6661b3c147d2747760440e86e503cb3dcb2b669396ee8542.json",
+    "bytes": 1945,
+    "sha256": "f656dcfe7c8a8999975806936643f9abae64f9796d6de150eb81f6bfa46e4b5b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/983346e0e42dc767533650b1670d7b1345d7b910615615eb2881303930ba9bbf.json",
+    "bytes": 1928,
+    "sha256": "b251fce623636e5d525d01c54918ccf838049955745e57394df194d078e5d33e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/98a302ba069c16030fd58d1d99066df1101dbc60e1539393a83232c2b2f9d36c.json",
+    "bytes": 1937,
+    "sha256": "bc4dce5edb359ad2ad74567339b0010d066701f8c17f7f8d993187dfa76f62be"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9968079d596532cf0bae5f5da2d723ff41442ac1adb3c5fd24b6dbfa2e392f47.json",
+    "bytes": 4141,
+    "sha256": "2d28b93e728a401c34201b1c63e0a340e69524aed798fd04954dc0bd77474cd6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/99939616c755210740dda969318f460ca37f52ff8eb23a8ee5783bbc317bd18a.json",
+    "bytes": 4141,
+    "sha256": "b9d5e4f3bc3fd636d4f09c12887ba6cfe9a455832017a825b128f4953171c5a7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9a20d57c9168622e63d541168983013e764d10569b121da0b9ea68710ce53ad4.json",
+    "bytes": 1940,
+    "sha256": "b62fffc290d4537ae74541b9108aee7f2241c0900e863350a6a4228c1c968825"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9af9ffd24e031b8f2dc788f5dd9d2afacb3557ab2a837727d4ba8747c2088cf1.json",
+    "bytes": 1580,
+    "sha256": "a77b8ddb10f21a507e44625b2b2325b1a296e0c55ad60f0a0e919e7630995d99"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9b52a6ddc15c30bd0ee7db22d049778585621f5fb559fd4422d14b81012c1772.json",
+    "bytes": 4176,
+    "sha256": "545df5ea0be44f2c6a14dd4b74c32bc01bd5658025f35561811871557d93c48a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9c97ff389346eb758a833030d2cbf28f1b491142c3aea6b192c3aa0465d1bb90.json",
+    "bytes": 1739,
+    "sha256": "c882493a69091e7af7215db932d9aeaee4c82fcae73b419efcd5b184723ded71"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9dc8b95570f7de4b687531a1388e1d780583f13c263b6246780b94363a382e1d.json",
+    "bytes": 1941,
+    "sha256": "c6a8295a36e681c4192bb47baa277eb8da3134cd6311f46cd456a57ef1f87810"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9e374a9fc37cae56b8f26a2010e0a325a54b3d841d3c69a5c1be5df519a80980.json",
+    "bytes": 1919,
+    "sha256": "46022cc337fedb0d14a812b623f8eaf140bea000c910af4c38faf6369aa01f0d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9e4a70822672a308e27e8fa0e346e61bc6a8d0e34d126c1394bd7d930817ccce.json",
+    "bytes": 1925,
+    "sha256": "448eab8136e8bdb231918ec5a77e385ec8f513095a1cdafa5d6ae6d1174c352e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9e5df6733d146d45ad7f0ad0298317412ab23f11309b00162896134c9cd60376.json",
+    "bytes": 4151,
+    "sha256": "c06e566ee2c285b577b61a37ed5a37f5d7d580a20d25b8920ff648f81a8cfb3d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9e9b47b060faa567fa2800f2103d24ce43056cba1111c4caaa70497c0cbe2df8.json",
+    "bytes": 1934,
+    "sha256": "c82052267dcb0cbedd4d9746e6655087a12b50977be48c1122aa78a9d3531747"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9f3c0f28016b69d181d05927a26298eba35a1659bb6c818f18e3401110163344.json",
+    "bytes": 1934,
+    "sha256": "890aabef9bf0141d1c02da2b8133ac0e06bd59dff437dd5ae935a6e04cf453c2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/9f8938a768f004fc9e17ed3a5abc4468f728966a95c580f5790a05e43e0411b3.json",
+    "bytes": 1739,
+    "sha256": "37215d397ac7fd38f6f591f80ffc27e11e20c9331fd9b1ae7165ba21b3c3fccb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a030ab7b2fcc3a304b1dbf58852bda2e8bbf5990ff8de1fbbefa7792756f67c3.json",
+    "bytes": 4176,
+    "sha256": "f22eb03f7c1ee85c9af4d81c43a6cdb287005af141b0eb6e6d9eed414bd11bb7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a083a360b1815a7fc063df04967cfd20653d914a846cf6ffa99cdd2c35de7eb0.json",
+    "bytes": 1925,
+    "sha256": "811b5ad7650f9a34cfbb9a5ff5abd04ee214179e514f3bf370ca3d09a1c8d3c3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a178236db5c557c4a432c92ffa8786dbcff9480ba11e8ab24e32f4fbad7f37f2.json",
+    "bytes": 1934,
+    "sha256": "a3bd2483c7793cad4992ba0204e99e2d323f4fee2179dec04561403c042f53ed"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a19491941f2cc8557552be04897420626a9abcd852cf4ab6a2216c1bb3fe5d3d.json",
+    "bytes": 1934,
+    "sha256": "2655b81be2cfd08093aa7251eb07f156454c3d64219dae6f8ee35830a0b61c36"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a19ce56e2ad186d5ca70fb4d9238297db5d84a4e69d6b2f94644d045b3d2782d.json",
+    "bytes": 1925,
+    "sha256": "06ec42bee64bbb38a1b6329805d65c09ee250c872199df64e31cefe8f2e5ef17"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a1fef9a19bdc028a239b8359a5094d00dd4185624c65dcb746f18f7714462751.json",
+    "bytes": 1739,
+    "sha256": "5155667d64af2e0b5d96793e161c8d8b122fa4aabf54d5ebd43c29a6d1cb64fa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a24848a54918d1ee4b2e7f8d030df08817069b41a2233eb79f58f2209160a5d3.json",
+    "bytes": 1934,
+    "sha256": "f32340cabf6dc6374fb7f590c157ea01944fd55d2ac8c3901e7f20fde07f58f7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a2f187323a875a745c8c48689c0ac395177fb3b07632c2ae6476898200db3a95.json",
+    "bytes": 1946,
+    "sha256": "50ceca06943165541b5061afcd5a3b87cba3c9e7f7a05173bb6de9899bf2b273"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a2f52a20ec3075159dcfbb70325daf5dda625230597cfbb3721fcf1d3cd2c828.json",
+    "bytes": 1947,
+    "sha256": "3fa3afb3dfe4d659ac487165806e3ab4924f22ae4193fe02fb6a1213e038e964"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a392a285f556a8797f36bc9f408ebf223b657b8400b36f9b5aee6fb575155753.json",
+    "bytes": 1952,
+    "sha256": "bfa69b4d2db019a7bc9acd2b5ac0ba20cfa7c28cfbb789558d444bfd3264c07a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a3c46c0cf9b2a1a47331d0cc0ece589dde0aa15a8b5fd6463805f697b9a9569c.json",
+    "bytes": 1914,
+    "sha256": "362a3ccc194ba2376db3d81a340009d987b3cd4fcc23dcafc04e172a4d144ad5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a4643632ac79d7cbedd47cfdfa09738a9c1e6f900c7eb52d463ae65b22275d4b.json",
+    "bytes": 3729,
+    "sha256": "f8abbd432b434b75ea08d8117cd7b2c4efdf2b24bec24b07e9249abb320d84f9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a59e03d89c9f1977cd11c378f52a4fda26adf71190f986ea23d254b191274fd9.json",
+    "bytes": 1925,
+    "sha256": "2663992e1b5490709cba24bd23b57ab42237fbc61215e2fca391e6ca853a5ccc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a6d26878f25b102aac1e570cea3ba78b2475596420d5676805afe71e79bf1d74.json",
+    "bytes": 1925,
+    "sha256": "9f00664bea51fe90c31ede7b5bd9b49e8aad6d77a5c015039e4f62c26b863250"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a70f3b7c4dd6c93771b19a10e6dc452c28a36f2a493ed2425477d0fbd06c6e0b.json",
+    "bytes": 1925,
+    "sha256": "187402b6ab09cde17bde780572c564817dbc7656f02734a22ee25b1dba2ae0d4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a77f09ade6e94243a8687ac69f30ae94d158fdd8d96939620e7faf331a034a24.json",
+    "bytes": 1941,
+    "sha256": "ead5d1cf0a6b16bd5227adbfee57089354aef7d196d47f85fb858b2a1526528d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a7901759c1174fe1d7cecb2327a1c8a5aa650d6cfb3832a20856b89930498228.json",
+    "bytes": 1937,
+    "sha256": "7fb2de0f5ee4b5724223774c436d46f294923b4ef48ae144b27039342ff60b49"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a79515c518fcd0551328f2deedf7050030acf436d871516afac7a59f62244242.json",
+    "bytes": 1580,
+    "sha256": "ab46124ae205c1c3d578dd165ad44fa281523f93bfea9eac4855ffc37217f86b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a7b98b0db47b71fd86f175818c5dbacb843ba3ae5c817ab381a1b6561e442f32.json",
+    "bytes": 1934,
+    "sha256": "3ef39d7f85f65ce3d4267e5bd098cc6c914667698467030ce362eca11b9efeb1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a822cb3162da1f4dad67abbd072fdaf2348f3217dfc7b611cab55eaa5527b84d.json",
+    "bytes": 1944,
+    "sha256": "c24a737f020fb9521d0d8e9709be182a9030e6b386dfe9e368a9aac1e9475a24"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a882e79957b1de8de284a1f0beab65a9e0fc79fb946d51152de444d031f9cc38.json",
+    "bytes": 4151,
+    "sha256": "99c44e79deb36d97eb579128efa1438ae4d1b967baa5ed301744401cadd48c10"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a8866c8f2114197d23e01af07b6136db7dd7aa9bb56496818367000314da076b.json",
+    "bytes": 1939,
+    "sha256": "6bc4d51f5663d4f21177e80ff230c707946a97787aebc79ebdc757b39a9c670b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a90adb9a40f10628ab0b385067b46867a9ad64167c9a2f3b29fff80d1170d309.json",
+    "bytes": 1937,
+    "sha256": "8e132b1d41126c3a8028f90e53769b73d86d810bff4db39be32c021a6e472752"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a9128223dc14a503725a9a4ee12cb653c6d49976e2ae9d4940e8c8aef349cc58.json",
+    "bytes": 1945,
+    "sha256": "6aa27877e8aa2d60c5adc3a22a39d25e820a78991018058b5fd41eff6ab85340"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a929c1f85948d5d20dcf2f09e4b91695aed7a527aea97f88cb7064b407831a23.json",
+    "bytes": 1945,
+    "sha256": "327e6b3765baaac54361f2798386add93f70dc1bc31bea14385d19c7faa4a31a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/a947c248774607830788d4fb93d60a876ba13cf13a7df0a34c6169273c2c797a.json",
+    "bytes": 4139,
+    "sha256": "e9cad5a6521a864d7bbba3b2300bd7bb78d20995713b029a78f2c2995f44add3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/aa63b2b7db6340d9992ce9c18484a3b6a87fd18225ef4bfbc6a1dba8fb3d3f99.json",
+    "bytes": 1925,
+    "sha256": "f52773a6692742a0d00c389529de111a12dc0ccf93c696007ecad80a9f252824"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/aa7ff6257c8e068bb23b91c3abda69933f7a8f6a367d4632ec8b5165f5687f71.json",
+    "bytes": 3729,
+    "sha256": "98de9295461aca086ee34259206ba28a6b8b8251552f0068dac99159a9f175f0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/aa8f52110f538f4f05f19fb8c2ade9d9c862b0bab5d87ee0520d37b0b1347bbf.json",
+    "bytes": 1929,
+    "sha256": "188e09fad90a34e3c2bd36cc9969fcdac2f800566036f4a77149a9ef9eac8bbc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/aaacc4917e44efbf34f7debca57a4513e78a3f2f0c7e22ef0c0781a1c8c9352d.json",
+    "bytes": 1739,
+    "sha256": "f7afd9e1d1854d73d6744bf57940f52fa52fbd0561a6fae3f6cfb706f009e61f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ab3da4e5888db6d2cae650f056c0d1bbdcbf8c3286056a45a44a1718417751c2.json",
+    "bytes": 1739,
+    "sha256": "0f436f09c4ca9d17bebf70600865abec9b1e1fff4715fe0a9b7170ce466d715a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/abe6861ceb06ac3e578f9453495fe557f66312461bbbe328b5b683481ed298b3.json",
+    "bytes": 1925,
+    "sha256": "6d6103674d7f92f270c5e1408c1a6b730871dfe370bf2a9075e4895074442218"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/acb38e253428b9d9dfdaa4dd40dc3708baecf449efa69cb4d366d1e6d1f895a3.json",
+    "bytes": 4187,
+    "sha256": "b508bf4d04ebc3e926d7902983fdccac9a6176745b37f834660696d82f14e89b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ad17f1c8eb841b88ec7e3e49bed83a61e7298e13841bdd36e05e4a1a7ae49d7d.json",
+    "bytes": 3586,
+    "sha256": "a0d9c9a046b6aa033ad98e69cdc195f4255963030b17b5a9261b483076893d8f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ad55c075480f1385b3ead558b9a6c7dc6db90811a91edd34980604c534641212.json",
+    "bytes": 1939,
+    "sha256": "c39e84726f8c8856dfe7e82b01c78ec2f0e8ba9e7af89995cd7beb6bf0cf9192"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ae7c75f3bf0ed4fc2f5d42ed9f343196f16dd332e560bc19a58ed4e1522f6003.json",
+    "bytes": 1934,
+    "sha256": "cd0c188ba99898b699beb15c351baeec5bc70ee9ac23080bccb7cfcea00d7ed2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ae9a25316f31a6e03da673daa9ee18b54439784aea9403fc53f6b855552398af.json",
+    "bytes": 1946,
+    "sha256": "5f3176fe10cab64b08f34a1c455bf659869767578ec0e3f8422447621faf4a4e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b0443bbe5e229fe5c902c4d98c444a4b57633ccad64cc66080a22b41c5227f34.json",
+    "bytes": 1778,
+    "sha256": "3031c655ebad6037ff7a8dda01daee61e2380789bb49073e76ccdca81eb791fc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b05a5b66ac7c5485eac2a92113b8f5cdf15717b4f8faa91c2f0223f680a2faa9.json",
+    "bytes": 4176,
+    "sha256": "aa5fb5ea39f9b0b7f8f3c71be67af177a6dd5b246eb5dcf0812a39ef6083b894"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b094386a67c1fd16fa0306bc8a9267496ef1c2032f35d24fa356128f4748159d.json",
+    "bytes": 1940,
+    "sha256": "d64ea30946222badaa62726ad89bfddfe3c2434c7c5da8b28e5ddde32284908a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b0a5c71cc64ee703973edfb740546ce2547d400e67944a07c40b15689fb79500.json",
+    "bytes": 1928,
+    "sha256": "199cab5cc8ddf880cc717687e6b8322a3a6d3840371c12025b5e601563d56fc3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b1f7e2a659b7a13e136b7a5987641c3eef6d9030e3a11ed57660b9f5490b59f7.json",
+    "bytes": 1945,
+    "sha256": "2698ca9de1db7d880cbe35d091df0f773b5a5223ee60d0fc5bd4e2d8bd41060d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b3efdd22bc672270dd8045c41bf3b91a1f45c6d26c79b5fa827422d42ef137da.json",
+    "bytes": 1934,
+    "sha256": "c8909a39115c8af0537105d8bffe6d2599a6bde6e71bd57802664f88ccd15b51"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b5440c91fb6204a7a241c41dc17880de0e714d0fb2cbd617f334a35d00af8404.json",
+    "bytes": 1934,
+    "sha256": "083e10a7ff2b14e54d079606fc1b1c6ea72625cb1a4c14561d5405bd11b40b65"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b56d11045b2243c6379a19e348ce784818a71b4302766650688a7699fb79284e.json",
+    "bytes": 1939,
+    "sha256": "2da812f0272cefb32f3144a444eb02058a4d2f649efa5c54635512e9ea2334d0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b5a15a7ca44895663bd1c73489424254e27a94eb9197d79c9cbdbf0527995811.json",
+    "bytes": 1925,
+    "sha256": "81bf58d049dd19a0efc054aecebb1f3006c6dee582dd1af093131ef03b37903a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b635ee9ed262a14bf138f6497396df1aa7dd6d50f90cfeb3d1c7e33fa0e4a21f.json",
+    "bytes": 4169,
+    "sha256": "19081b703f68db3fb91f97259af63ffbc5d912112f6292d2575cf0cefd291f8d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b6643817c49db72e51502e27c8b6bbab23f20005010afda2c23dda294f43ee9e.json",
+    "bytes": 1940,
+    "sha256": "34715f49d417726d4669eeec518b318aa8454f73a36dcdd603464487d53fc41c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b7761e9b218e5d2dff88362df603e3375c3a254f7bc14f47036f0dddb9cdb1d0.json",
+    "bytes": 1936,
+    "sha256": "b93315c1debf202cb59bcd0e66c427b7c5d60a3df2157495800815962dd38d16"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b7d604b13c1d7dd2011110dc08a4e83ca3a28e78b54348e8f403c79a1a4ed74b.json",
+    "bytes": 1925,
+    "sha256": "081a1a34098044bc2db29ac722df1a9baf72d4760748e86ce1b5a37b47e6fb67"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b82ba9f38d7dfbd2506f4ad17ff8bd4c2c194a7819d292044ea03478e23b39e5.json",
+    "bytes": 1925,
+    "sha256": "1ab9b3ea1bbbb6a369c3efe818f2143d3466646285b8769aa15fcaec8d6d3701"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b973bdd7f71fe50480e8330b4fb744742b1617e2e4ef2c669040020d9991796b.json",
+    "bytes": 1939,
+    "sha256": "d0b8e352eec757b0c67962c4ba9a9d08c9144ea76a91ed6821c40f3ffe696985"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b9ba812aae0e7d81a753dec5ceb036a1cde26eb054b610c00ba675c5b2a5c1b7.json",
+    "bytes": 4155,
+    "sha256": "66a7fea6f1a658075e810e0de6d0d683348b99d3ca7f548aae4a35c11e6f6684"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/b9d2a89d2cc2599bd4a4eaf50f16338c2f2ea493ac7cd3620cb5e43c8b9f637a.json",
+    "bytes": 1934,
+    "sha256": "eb380d93682eee0a84f3133dd27a9ce0620d18fc0cdab4274040416e03005000"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ba11e2e1f3161475f855fd3d82ef58ccba54cef6272d79857fc6c7b6ef53b416.json",
+    "bytes": 1739,
+    "sha256": "0ece5bf3e451d0207513d661f33f47afa41e73d9a2e5e000b6394e1173c8685d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ba130a3a4a95d5afe1d3de3ec8ba88f971d4eefce953f9184959081060b8f642.json",
+    "bytes": 1580,
+    "sha256": "2eba7cbd31c4986c5006c19a07358e38e5f5631dbb953ae85d5f7449c03075cf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ba7912d9c2ddbcbef87cc6fb6af18569176703724a8f552fd91088a5341b758d.json",
+    "bytes": 1925,
+    "sha256": "faf446b85ab761982f9f7295f4601369d0936d6ee5b0564c7a3f2bbe52dac828"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bb24ab709f29e58e3a54e99b86f14a4dc771e773bcdaf69127c1f735d2da5951.json",
+    "bytes": 1580,
+    "sha256": "34223d88d73231093d7922737478d144b476ea76535daf20cf3a4cda4f7e8bcc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bb2d3f769e4ef04f9f97bb542caa56eb45bd4000d00c5a9613dc584cc7264ace.json",
+    "bytes": 1937,
+    "sha256": "036d8c7458610220dc085f2cdeb2f54ef4c5ec2f6df72c9003801af589d8bc02"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bb38354be8b91bba3134c797a8b47959d0668d4c1c46e83d3301573989648295.json",
+    "bytes": 1580,
+    "sha256": "2dba7c53affb90f5c2e20e1b6aed3cb5d77b00e93cebf0302d9376e1ab6ff63f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bc158fcdd611390015e930fbc4dc3ceb2321a80a2ee87655c29ccac5546f1e2b.json",
+    "bytes": 3729,
+    "sha256": "14cadaea362985e8cda63c309e177f2f7d0f4550bfaaa5cea9e957f87bdce0d0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bc36c5fa71fdaa6aa5569bf1cc183a48db4a64351e0891dfc1585fe8ffd04243.json",
+    "bytes": 1919,
+    "sha256": "58de53324f691d01694381a90d1ae1c3b4c770f73aec2d7cc1022faf476ac4b3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bc97ab94fec8943e4a6c5ecd43803ba063aaf5b2d4a85b9b29061c4c60e0b99f.json",
+    "bytes": 1739,
+    "sha256": "cbe6635b5a0419a61a72fe6773fb7064d804ac120140ec53cf99560883906f45"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bcd39b41272ea6eae95bb77216886842ea87e4f0c325ffdca5dd5ff6c25b0579.json",
+    "bytes": 1931,
+    "sha256": "4a277c9aa39a06e8bd38e85337f34332db58dfcb953c68a3aa0a28ef22dda8a3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/beb76ce305bd3c5da3d08dae472cc2179f248d568e9fff9654eec99949d7eac0.json",
+    "bytes": 1933,
+    "sha256": "131128896e8ee52784719c0d82ed6fc98a832e79082a332220bb4d075690d8f7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bf34b2006cc074f60d7587d6f2344ac2301ca5a8dbab554f782c5a0951c9f2ab.json",
+    "bytes": 1934,
+    "sha256": "232780c17cf0bc0c6a573b791c3aa6286e63851415d2302c3ffa50d49698af4f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bf8e35883154b55c978580eab68a48c4b55da48db6a3a7a0a74b41cf9e7f2f7c.json",
+    "bytes": 1580,
+    "sha256": "e38f417227f8d0b493cd2d3882c30c274c7908dd12320aa6556c21863c0d3cef"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/bf9e2a48dcb2625e0e923ff8172fa89c95fe33018a3db17a4c7865787372fdb1.json",
+    "bytes": 1940,
+    "sha256": "e9bf318e21105f848f5f891b836572c46f0391179760657ba560cd2eb09459aa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c00f0ddcc069e3714d5265de87f9d4c60c9638be9b949842178f0a00f724dcf4.json",
+    "bytes": 1919,
+    "sha256": "82e8d6f1e58f31b0106322307a87192a68097c3298f6d9d3be924d5aed6f1780"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c1164b5f4cae6b463e095325058d358ca2650c167bc9e216402cbc4a09e410cf.json",
+    "bytes": 4075,
+    "sha256": "0079e34b058ab554bde1265cf80f73d072da4169b22381caecbeb512aaeec24a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c187355bbf3ecac55860fa9017bc2d66e1f1cc0693ac9a6f020874187af8ecb9.json",
+    "bytes": 1914,
+    "sha256": "22469978b903e6a39e31e3ce9933435af0ccc7f17ad5c46dd8ef62c9648ad892"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c1b5b26c09ff99ade7ea2c86ed65ca2faba211a72436d0b4b802e8a6bbaf32b0.json",
+    "bytes": 1939,
+    "sha256": "61e8f90f49490fb4329af4657d75be00acc67abe73aa0bc213dbdbf5d0b28523"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c1da8394b8c48cc4035eb4387010e3565ae5cffdcc7bf755df574f5c2c868c8e.json",
+    "bytes": 3586,
+    "sha256": "c917bccea1605344ccb4969c6c1c9d8957d6e4cac4c72642818dcfa7d86444ce"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c1f1d1e3e12fd0bcfe51191eeb65e0b841c648342d237a85b16f9636ba9394d9.json",
+    "bytes": 1934,
+    "sha256": "84712e1e04c2f2911d7c7e058f7222323374a03455fcb3daef5da99acdbcdf93"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c20762c45c2c9ee6b782683efe7b7e6bfc0eaa6b46388d6b1eb75fc522d934b5.json",
+    "bytes": 1945,
+    "sha256": "f6b9b701b8b8ab10e9f78cf713de117940484a7117ada2d213f8dc21b45274f3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c218cfe3f741f5833e1fb2ac577622007b150ec44b98f26ed9fc7ca7c57f2d44.json",
+    "bytes": 1931,
+    "sha256": "bf8fdeb69ea328bee8ddbbae8f2a189e2fcf781572c6ce422ca24eff853e906f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c24bd309529dfcbbe2b8b9b7ba067bfbc01a7f856c68c01ef1ca2a6bc74a4276.json",
+    "bytes": 1934,
+    "sha256": "6916b8a5d03d21f5e24a20f6eeae547ce8aac19b834d506c367e28c84b3d6973"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c2559f7f26ce3295b41286110adc273f4a501bb4225655c8cb1f2f96c80c9860.json",
+    "bytes": 4166,
+    "sha256": "d5dcff8f4e34bea4548cb9558bef2a82e58cbb182054267ab350ca07e0b18af9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c25c892e298a4e567174e77f30492af1884a4ce93285e52630c9429ea2fa187c.json",
+    "bytes": 4141,
+    "sha256": "2f9f9a554f04c96d40a044f7212ec5eed9ea526289f1b7cca066059f30f24f72"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c36c1c5b72fb831940bdb855cbbbb62fc727df342fbb8359659f800e61720594.json",
+    "bytes": 1919,
+    "sha256": "7f91e76b781e5f1c71639170133bad554b58edce1cc8a5216391f1e6c9813803"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c47029e517c3a3549e4015769eeb4bcf5180a230950531fee2902c63761ab1bb.json",
+    "bytes": 1739,
+    "sha256": "a56e1837402782acca6129386d77a63c47b703de316cd880703a6fd9f5526cb8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c4c1a2b712d7bc3711fb6f9045ffd2b0214b37eaac8895427b83a45216540b28.json",
+    "bytes": 1929,
+    "sha256": "e456fd75e69499037b87dd6da8f97fc081616c3a4c5ac85f9e65ff5f7a3e570e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c4cd9835bb44132b5552645a00db86d0f6f3d996ae0c81266d9ebf9724f77da6.json",
+    "bytes": 1937,
+    "sha256": "6171aa142f041162ee6f5e0aa52e2547f5d6596be57313326740d6b49f7007ca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c4e4c6c4bbba58f93ad4fe82dcd4eb8c4564eb4dab89228d2b67679b829ba273.json",
+    "bytes": 4187,
+    "sha256": "1626fc731920415bc328bf72c1df11c718ae05fa3cb5a4680a717b8ceed4eefc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c5c069f64f975018c66a3df6021d3984e29a7015de01c2358aa8cfe651a6b51b.json",
+    "bytes": 1931,
+    "sha256": "3994f98d0ffd8592d6c025be58f7f29fc06b1b8adda32af6d3491cc250633b50"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c64dd75c614067063ca46ce2d07a723e7e37036357d96bff85393ee5a5b30b17.json",
+    "bytes": 1778,
+    "sha256": "e63c4047f9bdc8e1cd14886a3c5edac9d044100356790f13108dc37c032e7f24"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c66e81f67fe708bc9a0d99ed7d95f587b2a6150e7af8cf84ec3daaa3837af2f6.json",
+    "bytes": 4141,
+    "sha256": "641f3496193d1b954058af39c0ed7eaaca807f0096aa28bb2e1ebc3e1176e2f7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c70dbc702c8b43d42c65bfabb899fb226ab4e162ea055c915a9a5e3b439ef5a1.json",
+    "bytes": 1925,
+    "sha256": "321450f708fa2c28c46324376e39947d3633e2f875b291b33f92088d3ab556d5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c73036f6ccf49b0b72b87124ce0713fbc0bd2b2700e419e70f1605226f346661.json",
+    "bytes": 1918,
+    "sha256": "c660dd3a88de64c2a99605597b6fa61febdd234cdfd5fcbe294743ec7e5325ab"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c732558db33e241272caa271d7237e41927422eb5fa3cfe8f0387be9f8633a0c.json",
+    "bytes": 1739,
+    "sha256": "7a4d7a0ff861fa4ff64d56730dc326049e4364959fdcb267f418a40b27157b7e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c7cdf7f806e9829b5406ed7ca80cf19359e8adeb1a457b41b357b9c520d2b674.json",
+    "bytes": 3729,
+    "sha256": "05cd91b11ad57465d881979d517aca8785b8f214ce6c77210b3e696ad15ddc61"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c8b5238557e47f7a998e97669bd955c99308023b296f11d3ad2ae1d79fdce522.json",
+    "bytes": 1919,
+    "sha256": "ef9af85ca0eb152e24a41e2737420b61944bbe091c71fa2ccfc359de05ec158e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c91f8db6dba4831f8aaaf4fba7972562e8242dbeee9a7b2c3606954f797b976f.json",
+    "bytes": 1937,
+    "sha256": "ad6fd4470c8018dfd516296e1b5669d44fdd31d18e2311f3bd9c5d3ed25cf06b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c927887a4ca7c691cb64e3d4a637064d947ec3fa2e90526866e2ba6c24cd2757.json",
+    "bytes": 1739,
+    "sha256": "05b5e765f287b4fce1e65b89077d9fc8acc9b0c4218b7e6d89ef78f198fc5a6d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c94bbdd2121fd35008b8b5e8c555bceba0a75d566c0b4b3a22a8607d2a0bb0f9.json",
+    "bytes": 1918,
+    "sha256": "a544e9811226ced315f98c930d61b3820a0929c354c3191356cd2d931d4a96c5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c9b33114cc5f2cc19778354421140292e3ec02aa2e768b4079a39e7a93bce8fa.json",
+    "bytes": 4170,
+    "sha256": "dd520b525fb8ee801bbc063ca5fcc85fe3b8606a5ee54922c597e9f83a3d94dd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/c9ef3a423e265b01d167b2e91ee66db10d7696b45e4368e30a92007c06b03c59.json",
+    "bytes": 1934,
+    "sha256": "131065b6b5ed96198756730f257ab66945a2f62e762bd5a7f89036900c0fd2b9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ca94de33e72f6ebdb40f52de5c797f09ae49f102ec435b8247cc3f0bb98dadab.json",
+    "bytes": 3729,
+    "sha256": "7335ab002612df71849a0fea605a5664c791c9dafa29153e4bd061dd74130db2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cae68ad084fe2d0441bdfc68a4f706fcd2869d90a7710c576d1871c89d60e2ea.json",
+    "bytes": 1739,
+    "sha256": "b1185d2bb62042876b04e25b473bb9fa66371025121939eca5924c6a6802d2f0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/caf473cb374e65cc9e5814cd37c40371333e0aefa375cae2d58e76c54c132df9.json",
+    "bytes": 1937,
+    "sha256": "2dd029f09f42c17161017482674a5709f635e8db0486a9616c0e55bce591bdbb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cb84007406919d2c068b1b2bb99509e37c54c27ea9a5af443eccb183d53a4f91.json",
+    "bytes": 1946,
+    "sha256": "290b1a73b89d54a79628a1f4365fa0efab412ed2b39be095441886482312d08d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cbd12f932e4f6e51933c2ccda37cd06f8094500d9d7846014221c72dcf1240cd.json",
+    "bytes": 1925,
+    "sha256": "51fe798805dd0d0c379bfaf0fbeb4b2a56f97fb96d09c87da24361ed3be02a99"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cc4f69973a435d84ada791608868d82b4957b2467b7b7fbd07d0a36f77ccd281.json",
+    "bytes": 3793,
+    "sha256": "129f90a7f308f0a7e75fc2560434887069bb04f1abfb41ffb16ed74e7cd990e7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ccae537b15c28b73979b93972d4547532406070e495cfd28b5a8f9678a0f8c4e.json",
+    "bytes": 1931,
+    "sha256": "25e79eed8a3e4f19676ce517e69cabd517141c504233cd9002dd53174c6fbdc1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ccc9136a1c7596a3ae24f687f7210ca70c3048310f27d515bc2432d640dd64dc.json",
+    "bytes": 4141,
+    "sha256": "cec3a46cc4bba7b3960b82857adc12082948a023220018d6c360221b3a2cc7f6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ccd768d6ebf6d0b2e7b2c0057f9c044fb3450d7bfc37e0012d029dbfe4fec69f.json",
+    "bytes": 1933,
+    "sha256": "b97e203ecb552c18848f3bd1742229126f201e2a6b9019c6128a3a457beb9771"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cce6e41a66426ab71b6c35fbdc7ad5658a995e41e3fb0e2102bd34f52fe3e309.json",
+    "bytes": 4141,
+    "sha256": "ab8b50192a71a0cd96e8ff3cee55db7c9b50a8e887d2b5050a266f5861425212"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cd01bdba4930b0afb9e8e32abd4fd8b7a416788927fe380ae12d0ace9e1bbea0.json",
+    "bytes": 4157,
+    "sha256": "e6d13e53bbd47a5e94fd600840fb8157d2e269ee19dd648a359ab18c6ee85b22"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cd51a08bc351da41dc6873fc60816dd5386a8e312bc954aa65ea7799d8eb6d7b.json",
+    "bytes": 1934,
+    "sha256": "200b135b792790849e4af7c035afa39bf169ad75f06dff2830ca87fa13920d42"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cd9599f04c8fdbd9ecd243cbdf47bef278fdc6cccdf199f9c98497aafe3637e5.json",
+    "bytes": 1931,
+    "sha256": "623bd585aa1809d98b38ff557d8690ec351dea3cc7ba516ad8a35408dcbeda9a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/ce6f9d5092b76125a98419b4dec174545ec43455222de2728506b127dfb68325.json",
+    "bytes": 1778,
+    "sha256": "e9f71e0e456de3468e484dac245e7e21109406337035a59a9bcd37264a8b8d04"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cefe89c6c3b0439db5bb23541d0fb1988b8e99ce495a46829535942e5326353f.json",
+    "bytes": 1925,
+    "sha256": "5bee6ff8b4782678a9497c037ea1a3f18fb4a501ea8fd5e516f69db5ca9f7860"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/cfd08a5ceff62e0b32ebf0e46e556985c9a86535656b0fbd6866d1fa21f768f4.json",
+    "bytes": 1739,
+    "sha256": "afc60fcfc77a996c5a04897a979ddd9ae858ff40aad80d0d4690f7e361159586"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/d0065fd38cf0bb9eead68ca7b65523d826eb777702c74399ef79139dcd34957a.json",
+    "bytes": 1919,
+    "sha256": "072ad2a011b785626c658c99069c8d2f23c66b123fa072cfc1a51c843a0d80af"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/d09f69f22e7e1bc046f820e261b8ae7c2e203df2eb673805fcd85f07dc54f4a2.json",
+    "bytes": 1931,
+    "sha256": "e98552a33132b8b3fb1bf8a628b4b54665fa90a957b62e6fc963c6bb9cb7d8fb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/d0cbea895a5c012f3c5224c52e458e95a887dea49c889c7d5c595329db4e0280.json",
+    "bytes": 1939,
+    "sha256": "e5d0755f0a004f7bebef476a9e2773ca276f96e8639c10def48c8c3527ae8791"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/performance_validation_v1/run_20261026_v1/configurations/d23400b499a1679fe969a4aae3215be8610196e11d6f645d1159d35f15b51ec1.json",
+    "bytes": 1934,
+    "sha256": "4eadfe26ecf36f6f0882d49760196282777b924c05356f9de1d9f38e647bc5f1"
+  }
+]

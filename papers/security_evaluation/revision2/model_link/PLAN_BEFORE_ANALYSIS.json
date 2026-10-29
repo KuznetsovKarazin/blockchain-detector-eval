@@ -1,0 +1,26 @@
+{
+  "schema": "reviewer_requested_posthoc_model_link_v1",
+  "written_utc": "2026-10-28T22:53:35.864656+00:00",
+  "status": "plan_before_new_numerical_analysis",
+  "prior_exposure": "R3 table and review comments already observed; this is transparent post-hoc diagnosis, not preregistered confirmatory evidence.",
+  "actions": [
+    "Recompute six paired AP contrasts per method across20 main-panel draws; conditional descriptive counts/ranges, no inferential p-values.",
+    "Compare project-minus-joint main differences with joint-seed SD and full range; no variance decomposition without crossed seed-by-regime design.",
+    "Compute exact expected random review yield b*21/1082 for budgets54,108,216. Verify testclass counts from pinned recorded-hash annotations if recovered.",
+    "Use saved graphB/C projections with unchanged legacyrelation and directpair identities/normalizedshingles>=0.8 to classify each testfile against selectedtraining membership. Directproject/directclone overlapping flags; exclusive classes directunion, Btransitiveonly, newlyconnectedC, disconnectedC. HistoricalA joint flagseparate.",
+    "If verified per-file labels available, describe within-class AP and contributions to full-test top-b reviews from saved scores. Empty/zero-positive groups have undefinedAP; retain exactcounts. Never infercausal influence or equality of regimes."
+  ],
+  "definition": "B is exhaustive graph on7080historicalreferencefiles; C adds omittedreferencefiles to21950. B-unconnected/C-connected is necessarily via omittedB vertices under unchangedpairrelation. It does not identify a minimal bridge, semanticvulnerabilityrelation or causal score effect.",
+  "fit_or_external_execution_allowed": false,
+  "inputs": {
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/config.json": "7dfa1acb2bcca5bad07e2a7c1a0e0dea569f1ec22328bed089fc1090c18534d0",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/manifest.json": "bd4c7df10ab610e47ef3433c159c5a0747e9befeb953a8928e1d3b818ea54ea7",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/summary/per_evaluation_ranking.csv": "f5c65f69ce361335e75d1e4d536e72a7c7439fa4869fd34f9c8494fe5e4f9cda",
+    "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/summary/per_evaluation_workload.csv": "bb0ef19a89a1c9fd752d6a17ea78c3df865f598ea4d264f099eef7ce23c96128",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/edges.csv": "0e195343844454480616b5339d1448ee3abf4f387f786a0244b0e59e6498e0e5",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4"
+  }
+}

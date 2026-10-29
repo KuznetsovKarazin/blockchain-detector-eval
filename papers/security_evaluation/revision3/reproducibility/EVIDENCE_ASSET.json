@@ -1,0 +1,12 @@
+{
+  "schema": "article1_versioned_public_evidence_asset_v1",
+  "version": "article1-r5-2026-10-29",
+  "archive_name": "Article_1_R5_Derived_Evidence_2026-10-29.zip",
+  "archive_bytes": 64561276,
+  "archive_sha256": "cfd8d370a4aef0eb2e802507cb918fcc8c7e38c72dcfca80cb5cb1013a464aab",
+  "download_url": "https://github.com/KuznetsovKarazin/blockchain-detector-eval/releases/download/article1-r5-2026-10-29/Article_1_R5_Derived_Evidence_2026-10-29.zip",
+  "restore_instruction": "Run fetch_release_evidence.py before verify_release_manifest.py and scientific replay commands.",
+  "inventory_sha256": "f20615795f9f98d07e278e67c82a3fe6ec904f1925fd939da75a3e057a82d2ab",
+  "files_count": 4076,
+  "expanded_bytes": 125290160
+}

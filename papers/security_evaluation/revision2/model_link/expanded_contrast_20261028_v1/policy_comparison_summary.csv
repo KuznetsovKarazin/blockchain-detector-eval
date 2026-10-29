@@ -1,0 +1,17 @@
+method,metric,logical_pairs,B_mean,C_mean,difference_mean,difference_min,difference_max,positive_pairs,negative_pairs,zero_pairs,interpretation
+normalized_tfidf_lr,ap_proxy,5,0.049071273602380436,0.035398973441312126,0.013672300161068313,0.0005843740378956228,0.029484471838181023,5,0,0,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+normalized_tfidf_lr,findings_108,5,5.6,5.0,0.6,-1.0,4.0,2,2,1,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+normalized_tfidf_lr,findings_216,5,7.6,5.0,2.6,0.0,5.0,4,0,1,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+normalized_tfidf_lr,findings_54,5,2.8,4.0,-1.2,-2.0,0.0,0,4,1,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_lightgbm,ap_proxy,25,0.07654613414915684,0.04435714388379414,0.032188990265362705,-0.001814089260146319,0.09387233139058163,24,1,0,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_lightgbm,findings_108,25,7.64,4.2,3.44,-1.0,8.0,22,1,2,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_lightgbm,findings_216,25,11.4,8.8,2.6,-1.0,6.0,22,2,1,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_lightgbm,findings_54,25,3.8,2.0,1.8,-2.0,6.0,19,4,2,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_rf,ap_proxy,25,0.07877928530423729,0.052509140000241705,0.026270145303995594,-0.003022458003036986,0.055742407100600945,24,1,0,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_rf,findings_108,25,8.42252380952381,6.222857142857143,2.199666666666667,-1.5476190476190474,5.6,19,4,2,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_rf,findings_216,25,13.047985347985348,11.8,1.247985347985348,-1.0,4.0,19,5,1,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+pattern_rf,findings_54,25,4.546666666666667,1.8,2.746666666666667,-1.0,7.0,20,2,3,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+raw_tfidf_lr,ap_proxy,5,0.034480617210497125,0.028382753568379847,0.006097863642117278,-0.005448105599730291,0.018699553986083077,3,2,0,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+raw_tfidf_lr,findings_108,5,3.4,4.0,-0.6,-2.0,0.0,0,2,3,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+raw_tfidf_lr,findings_216,5,4.8,4.0,0.8,-1.0,3.0,3,1,1,descriptive paired scores on one reused test; C reused across draws; no inferential CI
+raw_tfidf_lr,findings_54,5,2.0,2.0,0.0,0.0,0.0,0,0,5,descriptive paired scores on one reused test; C reused across draws; no inferential CI

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Cite this reproducibility package and its associated manuscript."
+doi: "10.5281/zenodo.23750089"
+title: "How Dependency-Graph Construction Changes Training Eligibility in Smart Contract Vulnerability Benchmarks: reproducibility package"
+type: software
+version: "article1-r5-2026-10-29"
+authors:
+  - family-names: "Kuznetsov"
+    given-names: "Oleksandr"
+    orcid: "https://orcid.org/0000-0003-2331-6326"
+repository-code: "https://github.com/KuznetsovKarazin/blockchain-detector-eval"
+license: MIT
+keywords:
+  - smart contracts
+  - benchmark construction
+  - dependency graphs
+  - reproducible research

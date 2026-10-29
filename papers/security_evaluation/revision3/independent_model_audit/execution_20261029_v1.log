@@ -1,0 +1,9 @@
+Independently checked 100/852 score vectors
+Independently checked 200/852 score vectors
+Independently checked 300/852 score vectors
+Independently checked 400/852 score vectors
+Independently checked 500/852 score vectors
+Independently checked 600/852 score vectors
+Independently checked 700/852 score vectors
+Independently checked 800/852 score vectors
+{"status": "numeric_recomputation_complete_awaiting_producer_comparison", "finished_utc": "2026-10-29T00:10:40.300366+00:00", "physical_vectors": 852, "score_values": 4607616, "AP_values": 10224, "review_budget_values": 30672, "frames": 12, "primary_compositions_per_method": 50, "overlapping_secondary_frames_are_independent": false, "finite_random_AP_exact_NK_checks": 55, "warning_fit_count": 355, "producer_complete_sha256": "b8d8534c87774517c6f1dcf542c21e62efa6911f04ba864139df3a3af142a01a", "own_plan_sha256": "779c32a228748fb9145daee2bf3b44549212bbf6de1e43263d4eadd5eac2d162"}

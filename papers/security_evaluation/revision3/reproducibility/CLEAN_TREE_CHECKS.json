@@ -1,0 +1,295 @@
+{
+  "schema": "article1_r5_clean_tree_checks_v1",
+  "status": "all_completed_checks_passed",
+  "scope": "Independent isolated release tree assembled from public 9dd445 plus proposed releasable additions. This is not a fresh remote checkout after publication. Source-dependent steps used a verified pinned upstream checkout mounted locally; no fresh network download repeated. No models fitted by this audit.",
+  "release_draft_manifest_sha256": "762af060527198605d5b337f3e1669d2b08eb8b7d431a20fcbbee158e5660bae",
+  "upstream_verification": {
+    "pinned_commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+    "source_files": 21457,
+    "source_bytes": 107970249,
+    "annotation_files": 948,
+    "all_sha256_verified": true
+  },
+  "annotation_materialization": {
+    "schema": "article1_local_annotation_materialization_v1",
+    "status": "pass",
+    "verified_upstream_annotation_files": 948,
+    "restored": [
+      {
+        "path": "papers/security_evaluation/revision2/model_link/expanded_contrast_20261028_v1/labels.json",
+        "sha256": "321297e812b5b6d83a92f79998afd18d54887a0467a08ba4370a460e3a9e4501"
+      },
+      {
+        "path": "papers/security_evaluation/revision3/model_link/run_20261029_v1/labels.json",
+        "sha256": "b0a152e89471088a8fb2523177fababd4396d307137a408907976e553608d6b6"
+      },
+      {
+        "path": "papers/security_evaluation/revision2/model_link/expanded_contrast_20261028_v1/memberships.csv",
+        "sha256": "4d88077592b348403ad9029206e6497a7d7469d553f0e7cfe1c1f039a6210802"
+      },
+      {
+        "path": "papers/security_evaluation/revision2/model_link/linked_analysis_20261028_v2/test_training_connection_classes.csv",
+        "sha256": "85b5eba4a7feb096abc4974605e50d8524a82c6c9cd1ee22e5a420c60014d690"
+      },
+      {
+        "path": "papers/security_evaluation/revision3/model_link/run_20261029_v1/memberships.csv.gz",
+        "sha256": "981829d9bed47a1925c4a00bbde831454b49d7f0eb45c0e28a7b1b76fabdf126"
+      }
+    ],
+    "public_or_remote_writes": false
+  },
+  "graph_replays": [
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "informative-denominators",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:52:30.736385+00:00",
+      "scientific_source_sha256": "f386d8b0ea253e1fe63b0ecfcbcc6882320054609845c61cecc88ae4c90bfa3c",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "all_policy_denominators.csv",
+          "rows": 12,
+          "columns": 14,
+          "saved_sha256": "70331290d8715c505ca520ea2eeb5033e0d685fb8110cc8d8dfd48bd88104588",
+          "replayed_sha256": "70331290d8715c505ca520ea2eeb5033e0d685fb8110cc8d8dfd48bd88104588"
+        },
+        {
+          "table": "main_table_denominators.csv",
+          "rows": 6,
+          "columns": 14,
+          "saved_sha256": "8c0369b03e218867c88d6c7832d1fa0da3a30377be3663621d7262d831012b4a",
+          "replayed_sha256": "8c0369b03e218867c88d6c7832d1fa0da3a30377be3663621d7262d831012b4a"
+        },
+        {
+          "table": "common_informative_node_ids.csv",
+          "rows": 15399,
+          "columns": 1,
+          "saved_sha256": "7dbec4e864c4b0f6da528f6fd31e199e98fc1bf67e5ea22274b6bf9884f6102c",
+          "replayed_sha256": "7dbec4e864c4b0f6da528f6fd31e199e98fc1bf67e5ea22274b6bf9884f6102c"
+        }
+      ],
+      "new_model_fits": 0
+    },
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "equality",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:54:26.654769+00:00",
+      "scientific_source_sha256": "39758900e315b3fdddfcd115a9e41d53059173eeea231a536b2d987d14f85a5d",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "source_verified_canonical_hashes.csv",
+          "rows": 21457,
+          "columns": 6,
+          "saved_sha256": "c974e3ae0939da28356324ebbdb2c27d8aa1b3f6d909a0807e21f36344e6bdea",
+          "replayed_sha256": "c974e3ae0939da28356324ebbdb2c27d8aa1b3f6d909a0807e21f36344e6bdea"
+        },
+        {
+          "table": "exact_equality_concentration.csv",
+          "rows": 4,
+          "columns": 5,
+          "saved_sha256": "9e83d3b45aef6c05a20fdaa454e16d7d85b1c9861d4de72c3b54b61b7d8562e1",
+          "replayed_sha256": "9e83d3b45aef6c05a20fdaa454e16d7d85b1c9861d4de72c3b54b61b7d8562e1"
+        },
+        {
+          "table": "memberships.csv.gz",
+          "rows": 21457,
+          "columns": 5,
+          "saved_sha256": "e82aaa2e5971883bb41fa49ffa22d33b42657597c56bd36eb5b4c92f3427a853",
+          "replayed_sha256": "2058313d549c18802b9c5a8178f5758950f357c6dd3ad63219b148f3193e5bbe"
+        }
+      ],
+      "new_model_fits": 0
+    },
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "labelblind",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:52:35.234123+00:00",
+      "scientific_source_sha256": "dee69fd0c877ee7c979005d4c6da7946dd093dfbe5a4acf30eadd25805d72908",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "all_test_feasibility.csv",
+          "rows": 231,
+          "columns": 12,
+          "saved_sha256": "2048c4bebc983e28bc1b3cbae08caa1158d6d754f02c0158ab6d43dae5e73578",
+          "replayed_sha256": "2048c4bebc983e28bc1b3cbae08caa1158d6d754f02c0158ab6d43dae5e73578"
+        },
+        {
+          "table": "eligibility_loss_decomposition.csv",
+          "rows": 66,
+          "columns": 15,
+          "saved_sha256": "96c3d3825310b154ed2798a2cb45481ca0379de71ecbf4cc78afed3f4cdefb9b",
+          "replayed_sha256": "96c3d3825310b154ed2798a2cb45481ca0379de71ecbf4cc78afed3f4cdefb9b"
+        },
+        {
+          "table": "labelblind_test_memberships.csv",
+          "rows": 31860,
+          "columns": 5,
+          "saved_sha256": "5707a657c2452694b00eb946848d9e75c79777e0500d0c9819974a9284fc2a6d",
+          "replayed_sha256": "5707a657c2452694b00eb946848d9e75c79777e0500d0c9819974a9284fc2a6d"
+        },
+        {
+          "table": "outside_population_witness_summary.csv",
+          "rows": 4,
+          "columns": 11,
+          "saved_sha256": "77919a33d7e557c6694f59b1d9ef8abef51998a21ebe335fe4cabb05cab83994",
+          "replayed_sha256": "77919a33d7e557c6694f59b1d9ef8abef51998a21ebe335fe4cabb05cab83994"
+        }
+      ],
+      "new_model_fits": 0
+    },
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "metadata",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:52:31.762961+00:00",
+      "scientific_source_sha256": "b49bf6f8878453300d7b412a0ce6b1c69fda07e47562cb468a40eae6085f576c",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "ordered_equality_concentration.csv",
+          "rows": 12,
+          "columns": 7,
+          "saved_sha256": "b852aa2568c4c24c4304ff18b16934523641120b5023b42f1b1653bab7546874",
+          "replayed_sha256": "b852aa2568c4c24c4304ff18b16934523641120b5023b42f1b1653bab7546874"
+        },
+        {
+          "table": "masking_coverage_decomposition.csv",
+          "rows": 10,
+          "columns": 4,
+          "saved_sha256": "3f56b9b1e35250f1218705fc101abec9a7ed10ae10a4eb59ba0432b39ffc5fe5",
+          "replayed_sha256": "3f56b9b1e35250f1218705fc101abec9a7ed10ae10a4eb59ba0432b39ffc5fe5"
+        },
+        {
+          "table": "ordered_equality_memberships.csv.gz",
+          "rows": 223854,
+          "columns": 4,
+          "saved_sha256": "56dca84a4ac96e6f49f1cad51e9a32928fcf02da14c9d623eb26d79c311b80c4",
+          "replayed_sha256": "bc8fc7bb3215cec3cd32d9021eb81f9c69da4caf45275ceaf161a1aca4f42a16"
+        }
+      ],
+      "new_model_fits": 0
+    },
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "pairs",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:52:36.160643+00:00",
+      "scientific_source_sha256": "ee1d364b6086ec8ba4a18ee7b0a09eecd651e30d3fde6d4ca8ff77788abe9a67",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "graph_controls.csv",
+          "rows": 16,
+          "columns": 12,
+          "saved_sha256": "4c8e719361b63b35616e43dd1a096dbfbee83520150c5ff3b005f9458d15def8",
+          "replayed_sha256": "4c8e719361b63b35616e43dd1a096dbfbee83520150c5ff3b005f9458d15def8"
+        },
+        {
+          "table": "mask_edge_changes.csv",
+          "rows": 2,
+          "columns": 7,
+          "saved_sha256": "110ebe96e0bd08f5b605a4e96ab541f3697cfc1ff66f74f74e6d5d508c11be9c",
+          "replayed_sha256": "110ebe96e0bd08f5b605a4e96ab541f3697cfc1ff66f74f74e6d5d508c11be9c"
+        },
+        {
+          "table": "memberships.csv.gz",
+          "rows": 24131,
+          "columns": 17,
+          "saved_sha256": "4db23777359250132942e6bf582e2f6f1a54c8d9a491a4373401f92ff3b06255",
+          "replayed_sha256": "12a47226df258fb9d92b91451b4b291a40e8dc6017d0e33bb037eafab3b43445"
+        }
+      ],
+      "new_model_fits": 0
+    },
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "project-prefix",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:53:11.988372+00:00",
+      "scientific_source_sha256": "90f535655acff28059aef479dade36c16cc7dfabde565a46bc6b071344187255",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "whole_project_curves.csv",
+          "rows": 552,
+          "columns": 16,
+          "saved_sha256": "b2bbb5a7e48552dadb2bb3c188ed462b120dd9814e28e74e54438fa32588bbf8",
+          "replayed_sha256": "b2bbb5a7e48552dadb2bb3c188ed462b120dd9814e28e74e54438fa32588bbf8"
+        },
+        {
+          "table": "whole_project_rankings.csv",
+          "rows": 3040,
+          "columns": 4,
+          "saved_sha256": "ff5e0ccf88a1721a66409ac2c3e57123335c14888b3bc75968696de71fa8ae81",
+          "replayed_sha256": "ff5e0ccf88a1721a66409ac2c3e57123335c14888b3bc75968696de71fa8ae81"
+        },
+        {
+          "table": "file_vs_project_sampling.csv",
+          "rows": 108,
+          "columns": 16,
+          "saved_sha256": "9ee8ce7ac99886b0b6bc6dc8f1c565e6ec865c1555cbae27737fda4d84864c54",
+          "replayed_sha256": "9ee8ce7ac99886b0b6bc6dc8f1c565e6ec865c1555cbae27737fda4d84864c54"
+        }
+      ],
+      "new_model_fits": 0
+    },
+    {
+      "schema": "article1_portable_graph_replay_v1",
+      "scenario": "structural-baselines",
+      "status": "pass",
+      "finished_utc": "2026-10-28T23:52:32.137216+00:00",
+      "scientific_source_sha256": "38d35024c51badd18121afb21e9a8955a59c14f7fcbd0c95adea2bbd3902a176",
+      "scientific_source_changed": false,
+      "comparison": "All cells, row order and columns; numeric tolerance 1e-12. Compressed gzip byte identity is not required because gzip embeds timestamps.",
+      "tables": [
+        {
+          "table": "structural_denominators.csv",
+          "rows": 3,
+          "columns": 10,
+          "saved_sha256": "94f7ac8e4303eb6f7e93579c5a1afb244023e2bc1ed3fc271a424c91461c8e02",
+          "replayed_sha256": "94f7ac8e4303eb6f7e93579c5a1afb244023e2bc1ed3fc271a424c91461c8e02"
+        }
+      ],
+      "new_model_fits": 0
+    }
+  ],
+  "r4_metrics": {
+    "schema": "expanded_contrast_independent_postrun_audit_v1",
+    "status": "pass",
+    "script_sha256": "6d01403fe79bfcc230177360b5eb2d70dd10ed4966df714e9b7777a1b93edbd0",
+    "design_audit_sha256": "684628f6ef4554dd8c5bf7e6981faf5a8916a3e183f4fa2ea7767f7b0c552711",
+    "complete_sha256": "a3da644827a6494e50c5a70d4e13608bf1bf40eeaff4b7c73887d9e9f76a42e5",
+    "logical_predictions_checked": 120,
+    "physical_fits": 72,
+    "reused_logical_evaluations": 48,
+    "failed": 0,
+    "per_fit_artifact_hashes_checked": 480,
+    "independent_metrics": 480,
+    "max_absolute_error": 1.7763568394002505e-15,
+    "metric_method": "Fraction arithmetic over equal-score groups; no sklearn or producer metric function called.",
+    "physical_warning_counts": {
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names": 30
+    },
+    "convergence_warning_fits": 0,
+    "model_binaries_expected_and_present": false,
+    "scope": "Completed configured historical-test diagnostic, not an external assessment or independent-family causal estimate.",
+    "new_fits_by_this_audit": 0,
+    "source_and_configuration_match_frozen_hashes_at_postrun": true
+  },
+  "r5_model_outputs": {
+    "status": "independent all-score audit passed in original completed tree",
+    "receipt": "R5_SCORE_REPLAY.json",
+    "final_public_transport_check": "Recorded separately after final package assembly; prior candidate checks do not constitute publication."
+  }
+}

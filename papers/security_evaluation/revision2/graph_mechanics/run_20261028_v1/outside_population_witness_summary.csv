@@ -1,0 +1,5 @@
+normalizer,test_id,newly_joined_old_test_components,test_files_in_joined_components,added_files_in_full_giant,minimum_added_files_per_target_min,minimum_added_files_per_target_max,sufficient_witness_union_added_files,witness_union_reconnects_all_targets,minimum_simultaneous_connector_claim,new_graph_matches_saved_C_partition
+legacy,outside_p90_seed2,28,428,14709,1,2,28,True,False,True
+legacy,outside_p90_seed4,29,425,14709,1,2,29,True,False,True
+string_aware,outside_p90_seed2,28,428,14709,1,2,28,True,False,True
+string_aware,outside_p90_seed4,29,425,14709,1,2,29,True,False,True

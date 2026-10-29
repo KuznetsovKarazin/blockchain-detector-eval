@@ -1,0 +1,6 @@
+{
+  "status": "failed_before_any_result_csv",
+  "error": "AssertionErrorgiantpositivecount",
+  "cause": "AuditparsermatchedentireSWCcategorystringratherthanSWCnumericcode; realcategoriesincludehumanreadable suffix",
+  "correction": "ParseSWCnumericcode; independentlyvalidatedcodeinventory. Originalfailedscriptandinputfreeze retained. Noexperimentalfitoccurred."
+}

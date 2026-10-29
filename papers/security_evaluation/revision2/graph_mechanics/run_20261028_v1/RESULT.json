@@ -1,0 +1,77 @@
+{
+  "schema": "post_review_graph_mechanics_result_v1",
+  "status": "complete",
+  "plan_sha256": "ed0392bdaf0a22462c3f2003e3ab37ef66de197a65e79247d0031b8368d5ca50",
+  "script_sha256": "dee69fd0c877ee7c979005d4c6da7946dd093dfbe5a4acf30eadd25805d72908",
+  "historical_dappscan_files": 6587,
+  "historical_giant_files": 5408,
+  "historical_fixed_tests": 3,
+  "new_labelblind_controls": 30,
+  "graph_variants": 7,
+  "all_test_graph_outcomes": 231,
+  "original_fixed_test_feasibility_reproduced": true,
+  "witness_summaries": [
+    {
+      "normalizer": "legacy",
+      "test_id": "outside_p90_seed2",
+      "newly_joined_old_test_components": 28,
+      "test_files_in_joined_components": 428,
+      "added_files_in_full_giant": 14709,
+      "minimum_added_files_per_target_min": 1,
+      "minimum_added_files_per_target_max": 2,
+      "sufficient_witness_union_added_files": 28,
+      "witness_union_reconnects_all_targets": true,
+      "minimum_simultaneous_connector_claim": false,
+      "new_graph_matches_saved_C_partition": true
+    },
+    {
+      "normalizer": "legacy",
+      "test_id": "outside_p90_seed4",
+      "newly_joined_old_test_components": 29,
+      "test_files_in_joined_components": 425,
+      "added_files_in_full_giant": 14709,
+      "minimum_added_files_per_target_min": 1,
+      "minimum_added_files_per_target_max": 2,
+      "sufficient_witness_union_added_files": 29,
+      "witness_union_reconnects_all_targets": true,
+      "minimum_simultaneous_connector_claim": false,
+      "new_graph_matches_saved_C_partition": true
+    },
+    {
+      "normalizer": "string_aware",
+      "test_id": "outside_p90_seed2",
+      "newly_joined_old_test_components": 28,
+      "test_files_in_joined_components": 428,
+      "added_files_in_full_giant": 14709,
+      "minimum_added_files_per_target_min": 1,
+      "minimum_added_files_per_target_max": 2,
+      "sufficient_witness_union_added_files": 28,
+      "witness_union_reconnects_all_targets": true,
+      "minimum_simultaneous_connector_claim": false,
+      "new_graph_matches_saved_C_partition": true
+    },
+    {
+      "normalizer": "string_aware",
+      "test_id": "outside_p90_seed4",
+      "newly_joined_old_test_components": 29,
+      "test_files_in_joined_components": 425,
+      "added_files_in_full_giant": 14709,
+      "minimum_added_files_per_target_min": 1,
+      "minimum_added_files_per_target_max": 2,
+      "sufficient_witness_union_added_files": 29,
+      "witness_union_reconnects_all_targets": true,
+      "minimum_simultaneous_connector_claim": false,
+      "new_graph_matches_saved_C_partition": true
+    }
+  ],
+  "no_labels_or_scores_used_in_selection": true,
+  "runtime_seconds": 10.614734957001929,
+  "outputs": {
+    "eligibility_loss_decomposition.csv": "96c3d3825310b154ed2798a2cb45481ca0379de71ecbf4cc78afed3f4cdefb9b",
+    "outside_population_witness_files.csv": "1f0e84e10e24d12e0e47897799981ca2e7cd415f79e6444ec6ccddddc6ba3e06",
+    "outside_population_witness_paths.csv": "0862779ec81779a75f85d860ad55be89a03a61bf1400200ec9ce0cc6553d2935",
+    "labelblind_test_memberships.csv": "5707a657c2452694b00eb946848d9e75c79777e0500d0c9819974a9284fc2a6d",
+    "all_test_feasibility.csv": "2048c4bebc983e28bc1b3cbae08caa1158d6d754f02c0158ab6d43dae5e73578",
+    "outside_population_witness_summary.csv": "77919a33d7e557c6694f59b1d9ef8abef51998a21ebe335fe4cabb05cab83994"
+  }
+}

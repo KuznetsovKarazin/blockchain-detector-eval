@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-28",
+  "status": "PASS",
+  "annotation_hashes_verified": 948,
+  "historical_population_files": 6587,
+  "historical_population_reentrancy_positive": 114,
+  "historical_giant_files": 5408,
+  "historical_giant_reentrancy_positive": 83,
+  "historical_giant_unchecked_positive": 52,
+  "all12evaluations_share_identical_B_C_training_pools": true,
+  "internal_tests": 10,
+  "internal_test_n": 1062,
+  "internal_test_reentrancy_range": [
+    13,
+    21
+  ],
+  "internal_test_union_files": 4806,
+  "pairwise_overlap_minmax": [
+    184,
+    231
+  ],
+  "new_model_fits": 0,
+  "note": "Dose allocation matches the model-owner declared nearest-integer totals and positives; execution is owned separately. It is not claimed as executed. Ten internal tests are overlapping subsets of one giant, not independent families.",
+  "outputs": {
+    "giant_and_internal_tests.csv": "075ab7059c44c8aafcf901057a81b3d0dc201fb0ed7f01dc51ce1b12238fbf97",
+    "planned_dose_allocation_nearest.csv": "576c0d7a1087ab5cbc2a9b91ebe98a194a11c52bcab5e19c59b4d921f1b2f61f",
+    "coverage_baselines_10percent.csv": "3f8dd38770de9edcc1b797f9a6765b62547cfb3d44fcb98fd1792f5c6b8e625e",
+    "internal_test_overlap.csv": "d8330e70704e06e427998acef2488746345599eda797b9ec2362c42a1bff9538"
+  }
+}

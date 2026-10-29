@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "all_frozen_input_hashes_unchanged": true,
+  "pure_project_counts_reproduced_by_group_identity": true,
+  "graphs_computed": 3,
+  "outputs": {
+    "structural_denominators.csv": "94f7ac8e4303eb6f7e93579c5a1afb244023e2bc1ed3fc271a424c91461c8e02",
+    "PLAN_BEFORE_COMPUTE.json": "a608d55c8e20e9128c7e2dd94aae606931f2a1f33a83754940bcb3d4557a0520"
+  }
+}

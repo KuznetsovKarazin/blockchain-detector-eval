@@ -1,0 +1,49 @@
+{
+  "schema": "whole_project_coverage_control_v1",
+  "date": "2026-10-28",
+  "status": "plan_written_before_new_computation; post-review sensitivity, not external preregistration",
+  "script_sha256": "90f535655acff28059aef479dade36c16cc7dfabde565a46bc6b071344187255",
+  "inputs": {
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/edges.csv": "0e195343844454480616b5339d1448ee3abf4f387f786a0244b0e59e6498e0e5",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/nodes.csv": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/edges.csv": "847882e8b09c6bc2bdf53df0a37b5f1f5d8027d3ed71c652a5a0e84efc620237",
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/component_curves.csv": "c72b5ac20e41e47a22478b8af701431078ef34353644b7c65dcf9c8633cce4a2"
+  },
+  "seeds": [
+    1301,
+    1302,
+    1303,
+    1304,
+    1305
+  ],
+  "project_prefix_percentages": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "ranking": "SHA256(UTF8(revision2-project|SEED|PROJECT_ID)), project-id tie break; floor(percent * 608 / 100)",
+  "population": "All files of each selected DAppSCAN project plus all493 other reference files; full21950 commonendpoint",
+  "normalizers": [
+    "legacy",
+    "string_aware"
+  ],
+  "thresholds": [
+    0.8,
+    1.0
+  ],
+  "policies": [
+    "project_only",
+    "clone_only",
+    "joint"
+  ],
+  "selection_uses_labels": false,
+  "denominators": "Component concentration within sampledDAppSCAN; also report coverage against21457files and608projects; never treat absentSfiles as isolated observedvertices",
+  "comparison": "Published file-prefix rows from the original run, same threshold/normalizer/policy; no matching of realised file counts or statistical inference"
+}

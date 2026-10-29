@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_rows": 21457,
+  "independent_union_find_graphs": 1,
+  "partition_refinement_checks": [
+    "project_raw refines project_raw_trivia_only_nonempty",
+    "project_raw_trivia_only_nonempty refines project_raw_old_preserved_nonempty",
+    "project_raw_old_preserved_nonempty refines project_raw_normalized_nonempty"
+  ],
+  "scanner_tests": 23,
+  "test_source_sha256": "16a65829c2208ead00e31f3ba118eee650491b51aa350cabbc397932f4b3a359",
+  "test_stdout_sha256": "94890552c79f61e0424ac59d24faddf277cf4dce83ddb6e1e6a89d26ae7da4fa",
+  "verified_result_sha256": "27dbd2edce19538aab80c73814a2a675c35fa30de94720844ba16df11d9b72a6",
+  "verifier_source_sha256": "5215e19618062d6a4d237a1f53a7ab83dfcab34300be82649616e5cf93415e3e"
+}

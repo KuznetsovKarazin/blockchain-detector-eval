@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-29T00:04:43.998936+00:00",
+  "script_sha256": "e3b8fabcd1d360421f927e041da74789d4cd79e5398db3c612bf6e9d4a1aaf93",
+  "input_sha256": {
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/revision3/model_link/run_20261029_v1/membership_ids.json": "4607346ab6a2e28bcca413d036ff8256c4c7ed0e5439eb4c77132e1355aae09d",
+    "papers/security_evaluation/revision3/model_link/run_20261029_v1/evaluation_frames.json": "a3e2ff42c9d7edac64f59b28eceb950a45fd0e20d16e5203631e8b81c779d8b4",
+    "papers/security_evaluation/revision3/model_link/run_20261029_v1/pool_ids.json": "b13fecf89cdf1ccc79a57a6abdfd2050a9c54ccd3958533b7d2317d12e566821",
+    "papers/security_evaluation/revision3/model_link/run_20261029_v1/labels.json": "b0a152e89471088a8fb2523177fababd4396d307137a408907976e553608d6b6",
+    "papers/security_evaluation/revision3/model_link/run_20261029_v1/FREEZE_BEFORE_FITTING.json": "c63d285e357f2b3e29506d34577e70b3ccb5ff647e4f6936defca1bdf556dd1a"
+  },
+  "memberships_checked": 71,
+  "membership_frame_combinations_checked": 852,
+  "B_disjoint_all_memberships": true,
+  "C_disjoint_memberships": [
+    "C_full"
+  ],
+  "C_all_giant_connected_memberships": 70,
+  "interpretation": "Positive dose changes linked training exposure; all giant test files are already C-connected at every positive dose. Dose is retention of the 471 linked B-minus-C files, not fraction of connected test files and not fraction of training files.",
+  "score_or_fit_files_read": 0
+}

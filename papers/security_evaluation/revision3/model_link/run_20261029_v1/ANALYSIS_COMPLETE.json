@@ -1,0 +1,34 @@
+{
+  "schema": "r5_all_planned_descriptive_analysis_complete_v1",
+  "analysis_source_sha256": "9aa5ffaca03d1cb9d52e9c295624c03e8dd8e52c357fea5c5f4468dc45500002",
+  "complete_sha256": "b8d8534c87774517c6f1dcf542c21e62efa6911f04ba864139df3a3af142a01a",
+  "physical_prediction_vectors": 852,
+  "prediction_values": 4607616,
+  "evaluation_frames": 12,
+  "AP_checks": 10224,
+  "budget_cells": 30672,
+  "artifact_hashes_verified": 2556,
+  "maximum_manual_sklearn_AP_difference": 8.326672684688674e-17,
+  "convergence_warning_fits": 0,
+  "warning_counts_physical": {
+    "X does not have valid feature names, but LGBMClassifier was fitted with feature names": 355
+  },
+  "composition_ECDF_denominator": 50,
+  "seed_rows_are_not_independent_compositions": true,
+  "secondary_tests_are_nested_not_independent_families": true,
+  "hypothesis_tests": false,
+  "outputs": {
+    "dose_composition_summary.csv": "b958eb38d272d2a3c9b4d88be4c9cbabe1dd6916854b9e37a32a13da0a9241f5",
+    "composition_seed_means.csv": "ddaaf918584aaef44c9f2889997d0e14fd8a49ee3ed04593b3022b165edd66a2",
+    "separate_seed_distribution.csv": "0e84025f0e94b0daf68c12470565d90d9f628fff53e8d80a94906e1b061672a4",
+    "primary_AP_table.csv": "decfbfa011a8e42b6cf4b7ad134abcde02f2d3e684c64316a1b611881b31cc8f",
+    "dose_seed_averaged_compositions.csv": "0e7294b19878f300358926307ba01838ac21c8369d3cb5a20dbc515badbad4d4",
+    "primary_review_budget_table.csv": "626c73cf5d686a9679f9b78ee4a9bedc048b17e0ae5fe2880c545c1ff9f9ce25",
+    "frame_random_references.csv": "34513797f7e315574a0e1cb1d2fb97a765d7836ed96049895b98048017f2218a",
+    "seed_matched_ecdf.csv": "2c6528f276143e6e8a252927910f5581a5e7c1093efecd86363e075b4d0cf8de",
+    "per_fit_frame_metrics.csv.gz": "3bccf79fc49df1f2e5403149fde06922bd87797bcceb91c446175534af4fccb8",
+    "linked_count_AP_correlations.csv": "59d3d88622f9804e306cbd4ffb25050314767d7f117dcaa9b4369aebdb569636",
+    "physical_fit_resources.csv": "5aebf838925ad5ffc4627fb12a08b40d8fab740e10a7803a8cc4c7bd9fb01c63",
+    "composition_ecdf_summary.csv": "e40950ac1c5be3c8be1e391189a844a28247fb0f459aa1b4f8dd8045490b7988"
+  }
+}

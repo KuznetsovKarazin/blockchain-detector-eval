@@ -1,0 +1,151 @@
+{
+  "schema": "article1_public_release_manifest_v2",
+  "created_utc": "2026-10-29T00:45:30.361802+00:00",
+  "base_public_commit": "9dd44597d9dcb29caf31e0dbaebdcceab4185aff",
+  "version": "article1-r5-2026-10-29",
+  "distribution": "Git plus hash-pinned release evidence asset restored at original relative paths",
+  "evidence_asset_sha256": "cfd8d370a4aef0eb2e802507cb918fcc8c7e38c72dcfca80cb5cb1013a464aab",
+  "manifest_excludes_itself_and_its_indexed_parts": true,
+  "file_count": 9003,
+  "file_bytes": 679656071,
+  "manifest_parts": [
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part000.json",
+      "bytes": 98171,
+      "sha256": "2e41ac03d70ad75e204a980bd7027a339c056e37817a8f3514ff94cb4f977f52",
+      "files": 424
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part001.json",
+      "bytes": 98257,
+      "sha256": "c6f2faebfee7906174814ba49ba2a303e0aaa7cfd64d932077154679171a6d04",
+      "files": 310
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part002.json",
+      "bytes": 98293,
+      "sha256": "def8e62f0c51f8d65efa35a32dd0bf9c97922a3f7a1278b43d689f94effdd2d0",
+      "files": 310
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part003.json",
+      "bytes": 98244,
+      "sha256": "2c6e173701fce2147fddaf4eb22b8310e6a89e09f7ef7601404ae9a2732a6ab7",
+      "files": 340
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part004.json",
+      "bytes": 98229,
+      "sha256": "c1e82346d80ac4217cdc455d75ea0f3462fd4b352f3eeafaaf75c4c24e7c86b0",
+      "files": 321
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part005.json",
+      "bytes": 98104,
+      "sha256": "acb3887cd30eae85bf8232057145d3b16df7e9c9ae30baeca780fe9c5469564f",
+      "files": 361
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part006.json",
+      "bytes": 98200,
+      "sha256": "9894e81b88e1c728de526b6a82d924eab802674cf3aacb2fa28ec98d3d22a896",
+      "files": 399
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part007.json",
+      "bytes": 98186,
+      "sha256": "718802ff014f611a4b8d9af85b0513cba8c43763e6a8cc3dcc8d3fd69902a8bf",
+      "files": 394
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part008.json",
+      "bytes": 98185,
+      "sha256": "68a61dbd0fe020b1603955648b2ac31df77c2859730dcca22990c110bc045b07",
+      "files": 394
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part009.json",
+      "bytes": 98183,
+      "sha256": "ec3d15fe572bc7c1d3f7ef8d7a0f93466f1b9d70896cdbca7990a0ff9102b821",
+      "files": 394
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part010.json",
+      "bytes": 98184,
+      "sha256": "612b441c61e76853de599a9e98d9a1f07e7158e89562f581c6307adfa741e473",
+      "files": 394
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part011.json",
+      "bytes": 98091,
+      "sha256": "19ffa03362db0e28d54d17cabe156df4166621a8f8bd35dac9229e6ad608be36",
+      "files": 403
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part012.json",
+      "bytes": 98201,
+      "sha256": "1eeefe5c878cf88295ded8f9ba0046c8d95aa55e585fee69b569989243c34aa2",
+      "files": 404
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part013.json",
+      "bytes": 98133,
+      "sha256": "637eb3cd7a45ff89e8a1adb05a0dbed47e68081793c7da1561a7ff2de5128611",
+      "files": 426
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part014.json",
+      "bytes": 98254,
+      "sha256": "cf58d14faa869c879d48a32343023cca7a253e4b286d6f0b494334cfc735bb87",
+      "files": 420
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part015.json",
+      "bytes": 98289,
+      "sha256": "3f358eb8f5a6f8c0f8eb579f3049973b9e43613eb04037f01d94e3afee59a50a",
+      "files": 420
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part016.json",
+      "bytes": 98235,
+      "sha256": "70e74c01c0ecc981a687a7eb2cdd189710e5219b986cdd816eae71bae73fe2ad",
+      "files": 420
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part017.json",
+      "bytes": 98214,
+      "sha256": "03f50217fa6e4d7dd44e286caa7fc1705667659a256951da9b8363db5b6aedd7",
+      "files": 420
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part018.json",
+      "bytes": 98254,
+      "sha256": "c00238e6f5aaf4c81fc3492b52ffb7938412bc7d47f418d348c420df64fb0a93",
+      "files": 420
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part019.json",
+      "bytes": 98188,
+      "sha256": "8537fc5431e6c2c249f9a999459c645c62a8a01e8d4c94fd2b2f56223e6edf8b",
+      "files": 407
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part020.json",
+      "bytes": 98132,
+      "sha256": "b3fe321376de712b5a354a047bd355a926d71977668bd62f1e19fe3ee8ab263d",
+      "files": 399
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part021.json",
+      "bytes": 98148,
+      "sha256": "194f63217b76fab6166134d9cc810a221d492e8e5fedb8770430bbe730007422",
+      "files": 408
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/manifest_parts/part022.json",
+      "bytes": 76045,
+      "sha256": "d977cc629761f282fd859f0efc33d75a94289f736fd8826d2c5944aa5ec55d08",
+      "files": 415
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "new_B_C_policy_connectivity_posthoc_check_v1",
+  "created_utc": "2026-10-28T23:13:09.659179+00:00",
+  "purpose": "Disambiguate old1179-file historical memberships from the actual new708-file training sets. No model rerun or frozen artifact mutation.",
+  "input_hashes": {
+    "config.json": "e586a064bd7604b68e4293b53f7cba7b4f8c7571b305b49b72c53b05fba02e42",
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "FREEZE_BEFORE_FITTING.json": "16c21941565a6a508feedd1e06453adee45be46543faf7469b954bde38db3565"
+  },
+  "check_definition": "A test file is C-connected iff its saved C_uncapped_reference_legacy component occurs among the selected training files.",
+  "rows": [
+    {
+      "draw": 0,
+      "policy": "B",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 1082,
+      "C_unconnected_test_files": 0,
+      "training_membership_sha256": "30409986ece55eb5344aa6d7b7dc1e12c30897838da76510613b8371b4c8bde1"
+    },
+    {
+      "draw": 0,
+      "policy": "C",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 0,
+      "C_unconnected_test_files": 1082,
+      "training_membership_sha256": "66a217938938abb87d927a134084240957eb1cadeead0380dfe0abff7fec731e"
+    },
+    {
+      "draw": 1,
+      "policy": "B",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 1082,
+      "C_unconnected_test_files": 0,
+      "training_membership_sha256": "cb512837ee3dc28c231db1c11b0aa86c8fa47b557923fa0d4f837e7faa4db7ee"
+    },
+    {
+      "draw": 1,
+      "policy": "C",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 0,
+      "C_unconnected_test_files": 1082,
+      "training_membership_sha256": "66a217938938abb87d927a134084240957eb1cadeead0380dfe0abff7fec731e"
+    },
+    {
+      "draw": 2,
+      "policy": "B",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 1082,
+      "C_unconnected_test_files": 0,
+      "training_membership_sha256": "9b18df364a9bb33ffc5d78c1b6e5f745802c645de7d48248226b02228b30e1c7"
+    },
+    {
+      "draw": 2,
+      "policy": "C",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 0,
+      "C_unconnected_test_files": 1082,
+      "training_membership_sha256": "66a217938938abb87d927a134084240957eb1cadeead0380dfe0abff7fec731e"
+    },
+    {
+      "draw": 3,
+      "policy": "B",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 1082,
+      "C_unconnected_test_files": 0,
+      "training_membership_sha256": "b75acb3ce47bf8bfa09b393d2a38abceda069000942989f09f8e316969ce8923"
+    },
+    {
+      "draw": 3,
+      "policy": "C",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 0,
+      "C_unconnected_test_files": 1082,
+      "training_membership_sha256": "66a217938938abb87d927a134084240957eb1cadeead0380dfe0abff7fec731e"
+    },
+    {
+      "draw": 4,
+      "policy": "B",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 1082,
+      "C_unconnected_test_files": 0,
+      "training_membership_sha256": "4cea591507959b14b9ff9bbc7348d4c0d76632325bda9a212ba575387adf802a"
+    },
+    {
+      "draw": 4,
+      "policy": "C",
+      "training_files": 708,
+      "test_files": 1082,
+      "C_connected_test_files": 0,
+      "C_unconnected_test_files": 1082,
+      "training_membership_sha256": "66a217938938abb87d927a134084240957eb1cadeead0380dfe0abff7fec731e"
+    }
+  ],
+  "all_expected_counts_match": true,
+  "new_model_fits": 0,
+  "old_statement_scope": "All test files C-connected applies to old sampling-variance memberships; actual new C-policy sets have zero connected test files."
+}

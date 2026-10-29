@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "numeric_cells_compared": 223944,
+  "comparison_tables": [
+    {
+      "table": "per_fit_frame_metrics",
+      "rows": 10224,
+      "max_absolute_differences": {
+        "n": 0.0,
+        "k": 0.0,
+        "ap": 5.551115123125783e-17,
+        "budget_5": 0.0,
+        "yield_5": 0.0,
+        "yield_min_5": 0.0,
+        "yield_max_5": 0.0,
+        "budget_10": 0.0,
+        "yield_10": 0.0,
+        "yield_min_10": 0.0,
+        "yield_max_10": 0.0,
+        "budget_20": 0.0,
+        "yield_20": 0.0,
+        "yield_min_20": 0.0,
+        "yield_max_20": 0.0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "composition_seed_means",
+      "rows": 9600,
+      "max_absolute_differences": {
+        "B_seed_mean": 5.551115123125783e-17,
+        "C_seed_mean": 1.3877787807814457e-17,
+        "B_minus_C": 5.551115123125783e-17,
+        "n_seeds": 0.0,
+        "linked_training_files": 0.0,
+        "linked_training_positive": 0.0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "composition_ecdf",
+      "rows": 192,
+      "max_absolute_differences": {
+        "B_mean": 2.7755575615628914e-17,
+        "C_seed_mean": 1.3877787807814457e-17,
+        "B_below_C": 0.0,
+        "B_equal_C": 0.0,
+        "pct_strict": 7.105427357601002e-15,
+        "pct_weak": 7.105427357601002e-15,
+        "pct_midrank": 7.105427357601002e-15
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "seed_matched_ecdf",
+      "rows": 576,
+      "max_absolute_differences": {
+        "C_value": 1.3877787807814457e-17,
+        "B_below_C": 0.0,
+        "B_equal_C": 0.0,
+        "pct_strict": 7.105427357601002e-15,
+        "pct_weak": 7.105427357601002e-15,
+        "pct_midrank": 7.105427357601002e-15
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "dose_composition_summary",
+      "rows": 960,
+      "max_absolute_differences": {
+        "mean": 3.552713678800501e-15,
+        "min": 1.4210854715202004e-14,
+        "max": 7.105427357601002e-15,
+        "unique_memberships": 0.0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "dose_seed_averaged_compositions",
+      "rows": 1008,
+      "max_absolute_differences": {
+        "ap": 2.7755575615628914e-17,
+        "yield_5": 8.881784197001252e-16,
+        "yield_10": 7.105427357601002e-15,
+        "yield_20": 1.4210854715202004e-14
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "random_ranking_references",
+      "rows": 12,
+      "max_absolute_differences": {
+        "n": 0.0,
+        "k": 0.0,
+        "prevalence": 0.0,
+        "random_distinct_ranking_expected_AP": 3.469446951953614e-18,
+        "budget_5": 0.0,
+        "random_expected_yield_5": 0.0,
+        "budget_10": 0.0,
+        "random_expected_yield_10": 0.0,
+        "budget_20": 0.0,
+        "random_expected_yield_20": 0.0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "table": "linked_count_AP_correlations",
+      "rows": 96,
+      "max_absolute_differences": {
+        "pearson_descriptive": 2.220446049250313e-16,
+        "spearman_descriptive": 0.0
+      },
+      "tolerance": 1e-11
+    }
+  ],
+  "producer_analysis_complete_sha256": "d52d27c30e3cb454a7e942b59ff2398f6bf037e8794cfdba5c390f2337f98914",
+  "independent_recomputation_complete_sha256": "8bd87282df95fdf9372d29b3c96167742facddcd1767cd4efdbfd9867627c7b8",
+  "comparison_source_sha256": "1b90c60426858e7912fc74f31cb9a4abcc55c562287ab4fe8661530d001a115b",
+  "scope": "Independent metrics from852savedvectors plusallprespecifiedaggregate comparisons; no model rerun and noIIDinference"
+}

@@ -1,0 +1,11 @@
+population,category,files,fraction
+dappscan21457,already_full_empty,6,0.00027962902549284616
+dappscan21457,newly_unavailable_scan_error,1,4.6604837582141024e-05
+dappscan21457,newly_unavailable_no_residual_code,6051,0.2820058722095353
+dappscan21457,still_informative_masked_declarations,1158,0.053968401920119306
+dappscan21457,still_informative_no_masked_declarations,14241,0.6636994920072704
+combined24131,already_full_empty,6,0.00024864282458248723
+combined24131,newly_unavailable_scan_error,1,4.144047076374788e-05
+combined24131,newly_unavailable_no_residual_code,6054,0.25088061000372963
+combined24131,still_informative_masked_declarations,2318,0.09605901123036757
+combined24131,still_informative_no_masked_declarations,15752,0.6527702954705565

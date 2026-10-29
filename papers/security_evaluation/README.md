@@ -1,3 +1,11 @@
+# Article 1 — revision 5 reproducibility release
+
+For the current manuscript, release contents and executable reproduction commands, see [the current release guide](revision3/reproducibility/README.md). That guide supersedes the availability limitations in the dated checkpoint below. The release supplies the original recovered gzip files, separately identified canonical NPZ arrays, new graph/model evidence and local annotation reconstruction scripts. No upstream raw corpus or per-file annotation values are distributed.
+
+---
+
+Historical checkpoint retained for provenance:
+
 # Security evaluation study
 
 **Current checkpoint, 28 October 2026:** the current scientific manuscript is [DRAFT_REVISION3.md](manuscript/DRAFT_REVISION3.md), *Population Coverage and Dependency-Aware Evaluation of Smart Contract Vulnerability Detectors*. Its original SHA-256 and the saved 20-page Word are restored exactly. See [the recovery and scientific status](revision1/recovery_20261028/STATUS_RU.md) for what is available and what remains missing.

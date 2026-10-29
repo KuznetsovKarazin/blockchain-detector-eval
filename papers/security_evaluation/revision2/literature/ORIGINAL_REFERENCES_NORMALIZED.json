@@ -1,0 +1,939 @@
+{
+  "schema": "article1_original_references_normalized_v1",
+  "date": "2026-10-28",
+  "scope": "Original R3 references 2–17; old numbering is retained as a mapping, not as the final manuscript order.",
+  "source": "papers/security_evaluation/manuscript/DRAFT_REVISION3.md",
+  "source_sha256": "89a6acafb4a0ea941d20f77ba45110ca49f693086046adc07715fe22b9ff068a",
+  "registration_evidence": "ORIGINAL_REFERENCE_REGISTRATION_METADATA.json",
+  "verification_summary": {
+    "Crossref_records": 14,
+    "publisher_or_author_supplements": 5,
+    "unresolved_required_fields": 0
+  },
+  "records": [
+    {
+      "r3_number": 2,
+      "authors": [
+        {
+          "given": "Shachar",
+          "family": "Kaufman"
+        },
+        {
+          "given": "Saharon",
+          "family": "Rosset"
+        },
+        {
+          "given": "Claudia",
+          "family": "Perlich"
+        },
+        {
+          "given": "Ori",
+          "family": "Stitelman"
+        }
+      ],
+      "title": "Leakage in data mining: Formulation, detection, and avoidance",
+      "venue": "ACM Transactions on Knowledge Discovery from Data",
+      "year": 2012,
+      "volume": "6",
+      "issue": "4",
+      "pages": "1-21",
+      "article_number": "15",
+      "page_count": 21,
+      "doi": "10.1145/2382577.2382579",
+      "url": "https://doi.org/10.1145/2382577.2382579",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2012,
+            12
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            18
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/2382577.2382579",
+          "kind": "Crossref DOI registration metadata"
+        },
+        {
+          "url": "https://dl.acm.org/doi/10.1145/2382577.2382579",
+          "kind": "Publisher metadata (search retrieval; direct open returned 403)",
+          "web_ref": "turn106search0"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[2] Shachar Kaufman; Saharon Rosset; Claudia Perlich; Ori Stitelman. Leakage in data mining: Formulation, detection, and avoidance. *ACM Transactions on Knowledge Discovery from Data*, 6(4), 2012, Article 15, 21 pp. DOI: [10.1145/2382577.2382579](https://doi.org/10.1145/2382577.2382579)."
+    },
+    {
+      "r3_number": 3,
+      "authors": [
+        {
+          "given": "Sayash",
+          "family": "Kapoor"
+        },
+        {
+          "given": "Arvind",
+          "family": "Narayanan"
+        }
+      ],
+      "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+      "venue": "Patterns",
+      "year": 2023,
+      "volume": "4",
+      "issue": "9",
+      "pages": null,
+      "article_number": "100804",
+      "page_count": null,
+      "doi": "10.1016/j.patter.2023.100804",
+      "url": "https://doi.org/10.1016/j.patter.2023.100804",
+      "publisher": "Elsevier BV",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2023,
+            9
+          ]
+        ]
+      },
+      "registered_online_date": null,
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1016/j.patter.2023.100804",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[3] Sayash Kapoor; Arvind Narayanan. Leakage and the reproducibility crisis in machine-learning-based science. *Patterns*, 4(9), 2023, Article 100804. DOI: [10.1016/j.patter.2023.100804](https://doi.org/10.1016/j.patter.2023.100804)."
+    },
+    {
+      "r3_number": 4,
+      "authors": [
+        {
+          "given": "Cristina V.",
+          "family": "Lopes"
+        },
+        {
+          "given": "Petr",
+          "family": "Maj"
+        },
+        {
+          "given": "Pedro",
+          "family": "Martins"
+        },
+        {
+          "given": "Vaibhav",
+          "family": "Saini"
+        },
+        {
+          "given": "Di",
+          "family": "Yang"
+        },
+        {
+          "given": "Jakub",
+          "family": "Zitny"
+        },
+        {
+          "given": "Hitesh",
+          "family": "Sajnani"
+        },
+        {
+          "given": "Jan",
+          "family": "Vitek"
+        }
+      ],
+      "title": "DéjàVu: a map of code duplicates on GitHub",
+      "venue": "Proceedings of the ACM on Programming Languages",
+      "year": 2017,
+      "volume": "1",
+      "issue": "OOPSLA",
+      "pages": "1-28",
+      "article_number": "84",
+      "page_count": 28,
+      "doi": "10.1145/3133908",
+      "url": "https://doi.org/10.1145/3133908",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            12
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            12
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3133908",
+          "kind": "Crossref DOI registration metadata"
+        },
+        {
+          "url": "https://janvitek.org/pubs/oopsla17b.pdf",
+          "kind": "Author-hosted published article, first-page ACM reference format",
+          "web_ref": "turn110view0"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[4] Cristina V. Lopes; Petr Maj; Pedro Martins; Vaibhav Saini; Di Yang; Jakub Zitny; Hitesh Sajnani; Jan Vitek. DéjàVu: a map of code duplicates on GitHub. *Proceedings of the ACM on Programming Languages*, 1(OOPSLA), 2017, Article 84, 28 pp. DOI: [10.1145/3133908](https://doi.org/10.1145/3133908)."
+    },
+    {
+      "r3_number": 5,
+      "authors": [
+        {
+          "given": "Miltiadis",
+          "family": "Allamanis"
+        }
+      ],
+      "title": "The adverse effects of code duplication in machine learning models of code",
+      "venue": "Proceedings of the 2019 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software",
+      "year": 2019,
+      "volume": null,
+      "issue": null,
+      "pages": "143-153",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1145/3359591.3359735",
+      "url": "https://doi.org/10.1145/3359591.3359735",
+      "publisher": "ACM",
+      "type": "proceedings-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            23
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            23
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3359591.3359735",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "The proceedings title identifies Onward! 2019; Crossref event metadata identifies the co-located SPLASH 2019 umbrella event."
+      ],
+      "formatted_reference": "[5] Miltiadis Allamanis. The adverse effects of code duplication in machine learning models of code. *Proceedings of the 2019 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software*, 2019, pp. 143–153. ACM. DOI: [10.1145/3359591.3359735](https://doi.org/10.1145/3359591.3359735)."
+    },
+    {
+      "r3_number": 6,
+      "authors": [
+        {
+          "given": "Saikat",
+          "family": "Chakraborty"
+        },
+        {
+          "given": "Rahul",
+          "family": "Krishna"
+        },
+        {
+          "given": "Yangruibo",
+          "family": "Ding"
+        },
+        {
+          "given": "Baishakhi",
+          "family": "Ray"
+        }
+      ],
+      "title": "Deep Learning Based Vulnerability Detection: Are We There Yet?",
+      "venue": "IEEE Transactions on Software Engineering",
+      "year": 2022,
+      "volume": "48",
+      "issue": "9",
+      "pages": "3280-3296",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1109/tse.2021.3087402",
+      "url": "https://doi.org/10.1109/tse.2021.3087402",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            1
+          ]
+        ]
+      },
+      "registered_online_date": null,
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/TSE.2021.3087402",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "Use final issue year 2022; the 2021 embedded in the DOI is not the final issue year."
+      ],
+      "formatted_reference": "[6] Saikat Chakraborty; Rahul Krishna; Yangruibo Ding; Baishakhi Ray. Deep Learning Based Vulnerability Detection: Are We There Yet? *IEEE Transactions on Software Engineering*, 48(9), 2022, pp. 3280–3296. DOI: [10.1109/tse.2021.3087402](https://doi.org/10.1109/tse.2021.3087402)."
+    },
+    {
+      "r3_number": 7,
+      "authors": [
+        {
+          "given": "Roland",
+          "family": "Croft"
+        },
+        {
+          "given": "M. Ali",
+          "family": "Babar"
+        },
+        {
+          "given": "M. Mehdi",
+          "family": "Kholoosi"
+        }
+      ],
+      "title": "Data Quality for Software Vulnerability Datasets",
+      "venue": "2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)",
+      "year": 2023,
+      "volume": null,
+      "issue": null,
+      "pages": "121-133",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1109/icse48619.2023.00022",
+      "url": "https://doi.org/10.1109/icse48619.2023.00022",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2023,
+            5
+          ]
+        ]
+      },
+      "registered_online_date": null,
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/ICSE48619.2023.00022",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "Registered author name is M. Mehdi Kholoosi, retaining the first initial omitted in R3."
+      ],
+      "formatted_reference": "[7] Roland Croft; M. Ali Babar; M. Mehdi Kholoosi. Data Quality for Software Vulnerability Datasets. *2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)*, 2023, pp. 121–133. IEEE. DOI: [10.1109/icse48619.2023.00022](https://doi.org/10.1109/icse48619.2023.00022)."
+    },
+    {
+      "r3_number": 8,
+      "authors": [
+        {
+          "given": "Yangruibo",
+          "family": "Ding"
+        },
+        {
+          "given": "Yanjun",
+          "family": "Fu"
+        },
+        {
+          "given": "Omniyyah",
+          "family": "Ibrahim"
+        },
+        {
+          "given": "Chawin",
+          "family": "Sitawarin"
+        },
+        {
+          "given": "Xinyun",
+          "family": "Chen"
+        },
+        {
+          "given": "Basel",
+          "family": "Alomair"
+        },
+        {
+          "given": "David",
+          "family": "Wagner"
+        },
+        {
+          "given": "Baishakhi",
+          "family": "Ray"
+        },
+        {
+          "given": "Yizheng",
+          "family": "Chen"
+        }
+      ],
+      "title": "Vulnerability Detection with Code Language Models: How Far are We?",
+      "venue": "2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)",
+      "year": 2025,
+      "volume": null,
+      "issue": null,
+      "pages": "1729-1741",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1109/icse55347.2025.00038",
+      "url": "https://doi.org/10.1109/icse55347.2025.00038",
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            26
+          ]
+        ]
+      },
+      "registered_online_date": null,
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/ICSE55347.2025.00038",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[8] Yangruibo Ding; Yanjun Fu; Omniyyah Ibrahim; Chawin Sitawarin; Xinyun Chen; Basel Alomair; David Wagner; Baishakhi Ray; Yizheng Chen. Vulnerability Detection with Code Language Models: How Far are We? *2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)*, 2025, pp. 1729–1741. IEEE. DOI: [10.1109/icse55347.2025.00038](https://doi.org/10.1109/icse55347.2025.00038)."
+    },
+    {
+      "r3_number": 9,
+      "authors": [
+        {
+          "given": "Niklas",
+          "family": "Risse"
+        },
+        {
+          "given": "Marcel",
+          "family": "Böhme"
+        }
+      ],
+      "title": "Uncovering the Limits of Machine Learning for Automatic Vulnerability Detection",
+      "venue": "33rd USENIX Security Symposium (USENIX Security 24)",
+      "year": 2024,
+      "volume": null,
+      "issue": null,
+      "pages": "4247-4264",
+      "article_number": null,
+      "page_count": null,
+      "doi": null,
+      "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/risse",
+      "publisher": "USENIX Association",
+      "isbn": "978-1-939133-44-1",
+      "type": "proceedings-article",
+      "metadata_sources": [
+        {
+          "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/risse",
+          "kind": "Official publisher BibTeX",
+          "web_ref": "turn110view1"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata; scientific claims were separately reviewed in the earlier literature audit.",
+      "notes": [
+        "The publisher provides no DOI in its official citation; no DOI has been invented."
+      ],
+      "formatted_reference": "[9] Niklas Risse; Marcel Böhme. Uncovering the Limits of Machine Learning for Automatic Vulnerability Detection. *33rd USENIX Security Symposium (USENIX Security 24)*, 2024, pp. 4247–4264. USENIX Association. [Official proceedings page](https://www.usenix.org/conference/usenixsecurity24/presentation/risse)."
+    },
+    {
+      "r3_number": 10,
+      "authors": [
+        {
+          "given": "Niklas",
+          "family": "Risse"
+        },
+        {
+          "given": "Jing",
+          "family": "Liu"
+        },
+        {
+          "given": "Marcel",
+          "family": "Böhme"
+        }
+      ],
+      "title": "Top Score on the Wrong Exam: On Benchmarking in Machine Learning for Vulnerability Detection",
+      "venue": "Proceedings of the ACM on Software Engineering",
+      "year": 2025,
+      "volume": "2",
+      "issue": "ISSTA",
+      "pages": "388-410",
+      "article_number": "ISSTA018",
+      "page_count": 23,
+      "doi": "10.1145/3728887",
+      "url": "https://doi.org/10.1145/3728887",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            22
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            22
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3728887",
+          "kind": "Crossref DOI registration metadata"
+        },
+        {
+          "url": "https://github.com/niklasrisse/TopScoreWrongExam/blob/main/README.md",
+          "kind": "Author repository citation block",
+          "web_ref": "turn109view1"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "The author citation gives Article ISSTA018, 23 pages; Crossref gives continuous pages 388–410. Either locator convention is legitimate; the formatted list uses the article convention consistently with other ACM article-number publications."
+      ],
+      "formatted_reference": "[10] Niklas Risse; Jing Liu; Marcel Böhme. Top Score on the Wrong Exam: On Benchmarking in Machine Learning for Vulnerability Detection. *Proceedings of the ACM on Software Engineering*, 2(ISSTA), 2025, Article ISSTA018, 23 pp. DOI: [10.1145/3728887](https://doi.org/10.1145/3728887)."
+    },
+    {
+      "r3_number": 11,
+      "authors": [
+        {
+          "given": "Masanari",
+          "family": "Kondo"
+        },
+        {
+          "given": "Gustavo A.",
+          "family": "Oliva"
+        },
+        {
+          "given": "Zhen Ming",
+          "family": "Jiang"
+        },
+        {
+          "given": "Ahmed E.",
+          "family": "Hassan"
+        },
+        {
+          "given": "Osamu",
+          "family": "Mizuno"
+        }
+      ],
+      "title": "Code cloning in smart contracts: a case study on verified contracts from the Ethereum blockchain platform",
+      "venue": "Empirical Software Engineering",
+      "year": 2020,
+      "volume": "25",
+      "issue": "6",
+      "pages": "4617-4675",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1007/s10664-020-09852-5",
+      "url": "https://doi.org/10.1007/s10664-020-09852-5",
+      "publisher": "Springer Science and Business Media LLC",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2020,
+            11
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            9
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1007/s10664-020-09852-5",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "Registered author name is Zhen Ming Jiang; an informal nickname is unnecessary in the reference."
+      ],
+      "formatted_reference": "[11] Masanari Kondo; Gustavo A. Oliva; Zhen Ming Jiang; Ahmed E. Hassan; Osamu Mizuno. Code cloning in smart contracts: a case study on verified contracts from the Ethereum blockchain platform. *Empirical Software Engineering*, 25(6), 2020, pp. 4617–4675. DOI: [10.1007/s10664-020-09852-5](https://doi.org/10.1007/s10664-020-09852-5)."
+    },
+    {
+      "r3_number": 12,
+      "authors": [
+        {
+          "given": "João F.",
+          "family": "Ferreira"
+        },
+        {
+          "given": "Pedro",
+          "family": "Cruz"
+        },
+        {
+          "given": "Thomas",
+          "family": "Durieux"
+        },
+        {
+          "given": "Rui",
+          "family": "Abreu"
+        }
+      ],
+      "title": "SmartBugs: a framework to analyze solidity smart contracts",
+      "venue": "Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering",
+      "year": 2020,
+      "volume": null,
+      "issue": null,
+      "pages": "1349-1352",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1145/3324884.3415298",
+      "url": "https://doi.org/10.1145/3324884.3415298",
+      "publisher": "ACM",
+      "type": "proceedings-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2020,
+            12,
+            21
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            27
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3324884.3415298",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "Use ASE 2020 proceedings/event year 2020, not the later online metadata date 2021-01-27."
+      ],
+      "formatted_reference": "[12] João F. Ferreira; Pedro Cruz; Thomas Durieux; Rui Abreu. SmartBugs: a framework to analyze solidity smart contracts. *Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering*, 2020, pp. 1349–1352. ACM. DOI: [10.1145/3324884.3415298](https://doi.org/10.1145/3324884.3415298)."
+    },
+    {
+      "r3_number": 13,
+      "authors": [
+        {
+          "given": "Thomas",
+          "family": "Durieux"
+        },
+        {
+          "given": "João F.",
+          "family": "Ferreira"
+        },
+        {
+          "given": "Rui",
+          "family": "Abreu"
+        },
+        {
+          "given": "Pedro",
+          "family": "Cruz"
+        }
+      ],
+      "title": "Empirical review of automated analysis tools on 47,587 Ethereum smart contracts",
+      "venue": "Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering",
+      "year": 2020,
+      "volume": null,
+      "issue": null,
+      "pages": "530-541",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1145/3377811.3380364",
+      "url": "https://doi.org/10.1145/3377811.3380364",
+      "publisher": "ACM",
+      "type": "proceedings-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            27
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2020,
+            10
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3377811.3380364",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[13] Thomas Durieux; João F. Ferreira; Rui Abreu; Pedro Cruz. Empirical review of automated analysis tools on 47,587 Ethereum smart contracts. *Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering*, 2020, pp. 530–541. ACM. DOI: [10.1145/3377811.3380364](https://doi.org/10.1145/3377811.3380364)."
+    },
+    {
+      "r3_number": 14,
+      "authors": [
+        {
+          "given": "Asem",
+          "family": "Ghaleb"
+        },
+        {
+          "given": "Karthik",
+          "family": "Pattabiraman"
+        }
+      ],
+      "title": "How effective are smart contract analysis tools? evaluating smart contract static analysis tools using bug injection",
+      "venue": "Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis",
+      "year": 2020,
+      "volume": null,
+      "issue": null,
+      "pages": "415-427",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1145/3395363.3397385",
+      "url": "https://doi.org/10.1145/3395363.3397385",
+      "publisher": "ACM",
+      "type": "proceedings-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            18
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            18
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1145/3395363.3397385",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[14] Asem Ghaleb; Karthik Pattabiraman. How effective are smart contract analysis tools? evaluating smart contract static analysis tools using bug injection. *Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis*, 2020, pp. 415–427. ACM. DOI: [10.1145/3395363.3397385](https://doi.org/10.1145/3395363.3397385)."
+    },
+    {
+      "r3_number": 15,
+      "authors": [
+        {
+          "given": "Zibin",
+          "family": "Zheng"
+        },
+        {
+          "given": "Jianzhong",
+          "family": "Su"
+        },
+        {
+          "given": "Jiachi",
+          "family": "Chen"
+        },
+        {
+          "given": "David",
+          "family": "Lo"
+        },
+        {
+          "given": "Zhijie",
+          "family": "Zhong"
+        },
+        {
+          "given": "Mingxi",
+          "family": "Ye"
+        }
+      ],
+      "title": "DAppSCAN: Building Large-Scale Datasets for Smart Contract Weaknesses in DApp Projects",
+      "venue": "IEEE Transactions on Software Engineering",
+      "year": 2024,
+      "volume": "50",
+      "issue": "6",
+      "pages": "1360-1373",
+      "article_number": null,
+      "page_count": null,
+      "doi": "10.1109/tse.2024.3383422",
+      "url": "https://doi.org/10.1109/tse.2024.3383422",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2024,
+            6
+          ]
+        ]
+      },
+      "registered_online_date": null,
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1109/TSE.2024.3383422",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [],
+      "formatted_reference": "[15] Zibin Zheng; Jianzhong Su; Jiachi Chen; David Lo; Zhijie Zhong; Mingxi Ye. DAppSCAN: Building Large-Scale Datasets for Smart Contract Weaknesses in DApp Projects. *IEEE Transactions on Software Engineering*, 50(6), 2024, pp. 1360–1373. DOI: [10.1109/tse.2024.3383422](https://doi.org/10.1109/tse.2024.3383422)."
+    },
+    {
+      "r3_number": 16,
+      "authors": [
+        {
+          "given": "Francesco",
+          "family": "Salzano"
+        },
+        {
+          "given": "Cosmo Kevin",
+          "family": "Antenucci"
+        },
+        {
+          "given": "Simone",
+          "family": "Scalabrino"
+        },
+        {
+          "given": "Giovanni",
+          "family": "Rosa"
+        },
+        {
+          "given": "Rocco",
+          "family": "Oliveto"
+        },
+        {
+          "given": "Remo",
+          "family": "Pareschi"
+        }
+      ],
+      "title": "An empirical analysis of vulnerability detection tools for solidity smart contracts",
+      "venue": "Empirical Software Engineering",
+      "year": 2026,
+      "volume": "31",
+      "issue": "5",
+      "pages": null,
+      "article_number": "143",
+      "page_count": null,
+      "doi": "10.1007/s10664-026-10867-7",
+      "url": "https://doi.org/10.1007/s10664-026-10867-7",
+      "publisher": "Springer Science and Business Media LLC",
+      "type": "journal-article",
+      "registered_print_date": {
+        "date-parts": [
+          [
+            2026,
+            9
+          ]
+        ]
+      },
+      "registered_online_date": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            16
+          ]
+        ]
+      },
+      "metadata_sources": [
+        {
+          "url": "https://api.crossref.org/works/10.1007/s10664-026-10867-7",
+          "kind": "Crossref DOI registration metadata"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "143 is an article number, not a page. Final issue is 31(5), September 2026; first online was 2026-05-16."
+      ],
+      "formatted_reference": "[16] Francesco Salzano; Cosmo Kevin Antenucci; Simone Scalabrino; Giovanni Rosa; Rocco Oliveto; Remo Pareschi. An empirical analysis of vulnerability detection tools for solidity smart contracts. *Empirical Software Engineering*, 31(5), 2026, Article 143. DOI: [10.1007/s10664-026-10867-7](https://doi.org/10.1007/s10664-026-10867-7)."
+    },
+    {
+      "r3_number": 17,
+      "authors": [
+        {
+          "given": "Shawal",
+          "family": "Khalid"
+        },
+        {
+          "given": "Joaquin",
+          "family": "Tuckett"
+        },
+        {
+          "given": "Chris",
+          "family": "Brown"
+        }
+      ],
+      "title": "Do Smart Contract Auditing Results Transfer Across Datasets? A Two-Benchmark Empirical Study of Static and LLM-Based Security Tools",
+      "venue": "20th International Symposium on Empirical Software Engineering and Measurement (ESEM 2026)",
+      "series": "Leibniz International Proceedings in Informatics (LIPIcs)",
+      "year": 2026,
+      "volume": "394",
+      "issue": null,
+      "pages": "45:1-45:21",
+      "article_number": null,
+      "page_count": 21,
+      "doi": "10.4230/LIPIcs.ESEM.2026.45",
+      "url": "https://doi.org/10.4230/LIPIcs.ESEM.2026.45",
+      "publisher": "Schloss Dagstuhl – Leibniz-Zentrum für Informatik",
+      "isbn": "978-3-95977-450-5",
+      "type": "proceedings-article",
+      "publication_date": "2026-10-05",
+      "metadata_sources": [
+        {
+          "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.45",
+          "kind": "Official publisher Cite As and BibTeX",
+          "web_ref": "turn110view3"
+        }
+      ],
+      "verification_scope": "Bibliographic metadata only; this normalization does not assert full-text scientific-claim review.",
+      "notes": [
+        "Crossref retrieval returned HTTP 404; publisher metadata independently verifies all fields."
+      ],
+      "formatted_reference": "[17] Shawal Khalid; Joaquin Tuckett; Chris Brown. Do Smart Contract Auditing Results Transfer Across Datasets? A Two-Benchmark Empirical Study of Static and LLM-Based Security Tools. *20th International Symposium on Empirical Software Engineering and Measurement (ESEM 2026)*. Leibniz International Proceedings in Informatics (LIPIcs), vol. 394, 2026, pp. 45:1–45:21. Schloss Dagstuhl – Leibniz-Zentrum für Informatik. DOI: [10.4230/LIPIcs.ESEM.2026.45](https://doi.org/10.4230/LIPIcs.ESEM.2026.45)."
+    }
+  ]
+}

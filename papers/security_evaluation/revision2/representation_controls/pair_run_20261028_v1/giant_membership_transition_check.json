@@ -1,0 +1,20 @@
+{
+  "method": "Posthoc exact set comparison of previously saved graph memberships; no recomputation or selection",
+  "membership_sha256": "4db23777359250132942e6bf582e2f6f1a54c8d9a491a4373401f92ff3b06255",
+  "comparisons": [
+    {
+      "flavor": "normalized",
+      "full_to_availability_lost": 1837,
+      "full_to_availability_gained": 0,
+      "availability_to_masked_lost": 8,
+      "availability_to_masked_gained": 25
+    },
+    {
+      "flavor": "preserved",
+      "full_to_availability_lost": 1615,
+      "full_to_availability_gained": 0,
+      "availability_to_masked_lost": 8,
+      "availability_to_masked_gained": 31
+    }
+  ]
+}

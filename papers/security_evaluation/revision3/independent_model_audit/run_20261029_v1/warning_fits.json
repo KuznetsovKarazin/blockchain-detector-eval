@@ -1,0 +1,2487 @@
+[
+  {
+    "job_id": "C_full_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "C_full_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "C_full_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "C_full_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "C_full_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw00_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw00_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw00_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw00_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw00_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw01_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw01_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw01_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw01_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw01_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw02_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw02_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw02_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw02_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw02_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw03_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw03_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw03_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw03_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw03_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw04_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw04_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw04_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw04_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw04_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw05_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw05_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw05_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw05_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw05_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw06_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw06_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw06_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw06_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw06_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw07_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw07_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw07_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw07_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw07_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw08_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw08_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw08_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw08_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw08_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw09_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw09_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw09_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw09_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw09_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw10_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw10_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw10_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw10_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw10_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw11_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw11_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw11_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw11_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw11_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw12_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw12_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw12_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw12_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw12_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw13_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw13_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw13_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw13_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw13_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw14_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw14_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw14_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw14_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw14_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw15_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw15_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw15_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw15_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw15_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw16_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw16_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw16_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw16_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw16_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw17_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw17_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw17_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw17_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw17_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw18_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw18_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw18_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw18_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw18_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw19_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw19_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw19_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw19_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw19_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw20_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw20_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw20_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw20_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw20_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw21_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw21_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw21_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw21_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw21_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw22_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw22_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw22_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw22_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw22_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw23_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw23_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw23_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw23_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw23_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw24_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw24_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw24_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw24_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw24_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw25_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw25_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw25_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw25_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw25_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw26_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw26_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw26_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw26_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw26_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw27_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw27_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw27_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw27_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw27_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw28_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw28_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw28_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw28_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw28_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw29_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw29_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw29_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw29_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw29_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw30_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw30_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw30_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw30_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw30_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw31_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw31_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw31_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw31_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw31_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw32_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw32_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw32_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw32_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw32_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw33_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw33_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw33_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw33_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw33_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw34_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw34_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw34_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw34_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw34_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw35_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw35_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw35_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw35_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw35_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw36_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw36_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw36_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw36_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw36_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw37_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw37_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw37_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw37_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw37_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw38_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw38_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw38_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw38_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw38_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw39_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw39_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw39_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw39_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw39_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw40_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw40_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw40_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw40_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw40_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw41_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw41_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw41_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw41_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw41_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw42_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw42_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw42_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw42_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw42_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw43_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw43_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw43_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw43_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw43_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw44_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw44_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw44_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw44_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw44_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw45_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw45_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw45_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw45_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw45_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw46_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw46_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw46_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw46_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw46_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw47_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw47_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw47_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw47_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw47_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw48_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw48_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw48_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw48_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw48_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw49_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw49_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw49_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw49_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "B_draw49_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition0_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition0_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition0_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition0_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition0_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition0_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition0_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition0_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition0_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition0_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition0_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition0_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition0_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition0_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition0_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition0_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition0_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition0_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition0_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition0_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition1_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition1_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition1_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition1_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition1_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition1_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition1_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition1_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition1_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition1_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition1_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition1_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition1_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition1_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition1_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition1_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition1_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition1_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition1_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition1_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition2_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition2_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition2_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition2_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition2_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition2_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition2_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition2_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition2_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition2_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition2_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition2_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition2_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition2_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition2_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition2_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition2_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition2_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition2_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition2_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition3_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition3_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition3_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition3_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition3_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition3_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition3_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition3_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition3_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition3_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition3_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition3_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition3_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition3_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition3_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition3_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition3_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition3_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition3_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition3_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition4_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition4_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition4_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition4_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose025_composition4_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition4_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition4_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition4_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition4_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose050_composition4_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition4_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition4_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition4_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition4_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose075_composition4_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition4_pattern_lightgbm_s0",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition4_pattern_lightgbm_s1",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition4_pattern_lightgbm_s2",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition4_pattern_lightgbm_s3",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  },
+  {
+    "job_id": "dose100_composition4_pattern_lightgbm_s4",
+    "warnings": [
+      "X does not have valid feature names, but LGBMClassifier was fitted with feature names"
+    ],
+    "convergence_warning": false
+  }
+]

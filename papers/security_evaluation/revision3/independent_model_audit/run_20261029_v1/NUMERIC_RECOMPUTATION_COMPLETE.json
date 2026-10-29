@@ -1,0 +1,29 @@
+{
+  "status": "numeric_recomputation_complete_awaiting_producer_comparison",
+  "finished_utc": "2026-10-29T00:10:40.300366+00:00",
+  "physical_vectors": 852,
+  "score_values": 4607616,
+  "AP_values": 10224,
+  "review_budget_values": 30672,
+  "frames": 12,
+  "primary_compositions_per_method": 50,
+  "overlapping_secondary_frames_are_independent": false,
+  "finite_random_AP_exact_NK_checks": 55,
+  "warning_fit_count": 355,
+  "producer_complete_sha256": "b8d8534c87774517c6f1dcf542c21e62efa6911f04ba864139df3a3af142a01a",
+  "own_plan_sha256": "779c32a228748fb9145daee2bf3b44549212bbf6de1e43263d4eadd5eac2d162",
+  "output_sha256": {
+    "composition_seed_means.csv": "7029e0e005844bd234f153d8de01ab4387da29d661c697aa3bc5059009284a94",
+    "verified_prediction_hashes.csv": "2ce95abd84154ae3bf701799579c5a8843ccfd0823cc81a28b8e23ef1213575e",
+    "composition_ECDF.csv": "c850b1ecef37266b5b3f16994e1ad50654d6196bb3f3085ea2804a363058d32f",
+    "seed_matched_ECDF.csv": "382cf66a1f226cc41554246721b1003b117cb9c50d94ba374ed8995a962ac16d",
+    "warning_fits.json": "69601317518503d3264ee62dbcdb4251014a3430a2ff160803f16e00d17e61cf",
+    "dose_composition_seed_means.csv": "d48236b683a7aca1530d308223bdea5e654db774b687820acbd39222c1dcc0d4",
+    "all_model_review_budgets.csv": "0e01dac88d82a94774c015765cf0b075cb45d650510191a04d36aa9d50520b9b",
+    "random_ranking_references.csv": "c757bab0653e6558a11d89980a44d93da45fa5d45bf8d2541afe7c9999836cc1",
+    "PLAN_BEFORE_AUDIT.json": "779c32a228748fb9145daee2bf3b44549212bbf6de1e43263d4eadd5eac2d162",
+    "dose_summaries.csv": "e26396b511c3fc1bd50963a32b3f92e8c8db55ec7f06a653f2fb908be26ab94c",
+    "independent_metrics.csv.gz": "7188ae8bde966367ea6789b980f5f522edb97986acacc7e0aacb746694746a8e",
+    "secondary_linked_count_correlations.csv": "dd036c8140554444a839170e456d18ac4fd73b5657ff64484f32ab143d055f1d"
+  }
+}

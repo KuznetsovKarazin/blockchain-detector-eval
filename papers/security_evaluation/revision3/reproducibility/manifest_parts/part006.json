@@ -1,0 +1,1997 @@
+[
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/amendment_v2/source_snapshot_v2/test_toolchain_v2.py",
+    "bytes": 3598,
+    "sha256": "9c396e80938c2d68c041b5ee2ce40ad84cd74cff3668d585b1f795ede920eb4e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/amendment_v2/source_snapshot_v2/verify_toolchain_v2.py",
+    "bytes": 8535,
+    "sha256": "8c719b72fb7a98178cbffed68c2ad873af4358898e52444241e8f406dd76e5b1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/amendment_v2/verification_receipt.json",
+    "bytes": 1003,
+    "sha256": "e512b389ff7ba8fb08f5447d1c8e3989092abbd392ae464f0baf5d79b8a7f128"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/installed_freeze.txt",
+    "bytes": 859,
+    "sha256": "1dc7a50d02fb2faa99a5901e5c358d062b8554eacd17faabdb368504bb0ee25a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/manifest.json",
+    "bytes": 2686,
+    "sha256": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/provision_toolchain.py",
+    "bytes": 10348,
+    "sha256": "04dc6a6c25fc2f5b620b8a5311851f34c636b4c6fd5c425b8bf101d0d80741aa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/python_artifacts.json",
+    "bytes": 38597,
+    "sha256": "ce788fd4b890395c72963f693fc1ad58ad0a5369ec01c20242c044b9b4cfc687"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/required_version_inventory.csv",
+    "bytes": 2667,
+    "sha256": "4a2f35dbdad658fdd5a75482431719a6f53cf0b4b9673b31bf73bf2a37b368d4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/requirements.lock",
+    "bytes": 4560,
+    "sha256": "31b79480abe3369c468046cf59d99785630989b1ab0539551a0692bf29d27613"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/slither_inventory.json",
+    "bytes": 1505,
+    "sha256": "96cffd72c0c1dcddb1c11d7403c50507a6e400ace6ee0ba56f0cbbc5ed80ae3e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/solc_download_plan.json",
+    "bytes": 17389,
+    "sha256": "36fb133c89d315fe18b52d9f5d4b5df10089d62e8b65c7092918b12a7ba47331"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/solc_inventory.json",
+    "bytes": 35799,
+    "sha256": "afbd0dda64302bcccc1fc0bc5cad32458790d6995a16e0d43930bb05c2aa2a00"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/test_toolchain.py",
+    "bytes": 4066,
+    "sha256": "11e3d113b8e528a3d98f75bf062b3866ac5bdeda77587c5aae2024c1e07c979c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/test_toolchain_v2.py",
+    "bytes": 3598,
+    "sha256": "9c396e80938c2d68c041b5ee2ce40ad84cd74cff3668d585b1f795ede920eb4e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/verify_toolchain.py",
+    "bytes": 5404,
+    "sha256": "afabaa40be10ad7f954507bad67403c44bc26fd052eb82338ed99731628bcc17"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/toolchain_v1/verify_toolchain_v2.py",
+    "bytes": 8535,
+    "sha256": "8c719b72fb7a98178cbffed68c2ad873af4358898e52444241e8f406dd76e5b1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/validate_external_inputs.py",
+    "bytes": 5889,
+    "sha256": "6474cef777305822eebea869d8aa16930d7a75909b503a68a1dce56ec7c3a637"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/validate_gate.py",
+    "bytes": 1336,
+    "sha256": "ceb8730ce451950f2981548d5e87db8d14608258ab9f73fe80f7076476594a9b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/REPORT.md",
+    "bytes": 13839,
+    "sha256": "08567b392d7335e36e6b6b102027af41bad6c1d4848794e9feec4ed0cb181e0f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/describe_mechanism.py",
+    "bytes": 5857,
+    "sha256": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/config_before_describe.json",
+    "bytes": 2009,
+    "sha256": "56294e8ed56ab4ded03b9ce8af2a4435700900f954de59a309f7d57a15b4c853"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/describe_mechanism.py",
+    "bytes": 5857,
+    "sha256": "b2ee41e3771cf433e9b4fd60ea10676581ef2ba52b2b05f40e9d1f79cb8641ff"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/heuristic_aggregate_counts.csv",
+    "bytes": 6041,
+    "sha256": "b7ecf8cf04ca48f7c21d322104047e2360bf9ac37b7c75cdcfefc8f90291b4f8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/ranked_bridge_evidence.csv",
+    "bytes": 43359,
+    "sha256": "c162ae7562d4ca98c41acee656abab347b0d14bfdb1df546c5bc580ff9a79bc5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/source_declaration_heuristics.csv.gz",
+    "bytes": 1299890,
+    "sha256": "3692f032b347037c78d1373b7e7027d82039766389e256a9692d8ce494ffcb2a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/description_20261025_v1/summary.json",
+    "bytes": 948,
+    "sha256": "cb410c27a0d6dcfa46ac87c22c8b45d29d481890ebdd91e8a6878995cadd0654"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls.py",
+    "bytes": 3587,
+    "sha256": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/config_before_compute.json",
+    "bytes": 1227,
+    "sha256": "3a06034a6b2ef950adf8fcee1f8d9fe985fe173e4774b3aa26d2dde1ec73eb4b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/identity_control_concentration.csv",
+    "bytes": 4327,
+    "sha256": "e1f2514e548e7d2d6fd68917c47b3820e12d5b0846f1d020ba1e002be07fd282"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/identity_controls.py",
+    "bytes": 3587,
+    "sha256": "109c458bfb6d052d6fcca53b88ab3234320b1e331a5c2eeab92686a3bf518242"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/memberships.csv.gz",
+    "bytes": 1221392,
+    "sha256": "96ee133ff79dbd6e04dcc2d214d5bf579623c74e6787b08504dc3e12ae864aab"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/run_mechanism.py",
+    "bytes": 20391,
+    "sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/identity_controls_20261025_v1/summary.json",
+    "bytes": 674,
+    "sha256": "8b6a51f6cb41c073deb8e808ffdf4c57d118d2b0f1e0e22b732bc817864a8bfc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/articulation_projects.csv",
+    "bytes": 360676,
+    "sha256": "bc893050059a7d9567d4676777a115a87b649ad47cf10cb4a485c8e44dd1fca2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/bridges.csv",
+    "bytes": 1086662,
+    "sha256": "f1a9ef14189bfbf534a4637a2c7b856da56649eef51013c8850eab4294c599c2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/component_curves.csv",
+    "bytes": 693638,
+    "sha256": "c72b5ac20e41e47a22478b8af701431078ef34353644b7c65dcf9c8633cce4a2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/config_before_compute.json",
+    "bytes": 224576,
+    "sha256": "849147981669340f18ffe26ca1cc17dc318a23f1c1485fe53143339b5a3832d3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_legacy_full_dappscan_21457_080.csv.gz",
+    "bytes": 117586,
+    "sha256": "e80ec85e428c8666d2ccc4722f848a8c5f4ac9465fb1ad8595ef97672940c660"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_legacy_full_upstream_21950_080.csv.gz",
+    "bytes": 120812,
+    "sha256": "5f7826eb59ef8f29818dc5db1d9149c360eb52045ea8706f31c66dbe8078021d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_legacy_historical_7080_080.csv.gz",
+    "bytes": 57681,
+    "sha256": "dd63d5c98df60f39d4d6e2e70e232f478e21296fb4d965b191b5f06e1b5612f0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_full_dappscan_21457_080.csv.gz",
+    "bytes": 117564,
+    "sha256": "dba5c0028bf05d6ca156b3b31dfa2edc96afdbb3f0032f2a8978699cfcb1c2f7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_full_upstream_21950_080.csv.gz",
+    "bytes": 120785,
+    "sha256": "4a8d076df6981d500b330202fbad64565f3da27e1dece677fd9e86fd3e591729"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_edges_string_aware_historical_7080_080.csv.gz",
+    "bytes": 57653,
+    "sha256": "f34568a6b3ecfef174e6b914e9317e788f35493b43dfd32c7a441a44f0e7b4cc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_graph_summary.csv",
+    "bytes": 6983,
+    "sha256": "ccace1a7e28f9a222c2f526816f4d4b103947c74c1264edbdd80c341d7fc2e56"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_vertices_legacy_full_dappscan_21457_080.csv",
+    "bytes": 34714,
+    "sha256": "d85be21f8880e05262fee04d21f05d1ee359d42634b819403b76404d438a63ae"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_vertices_legacy_full_upstream_21950_080.csv",
+    "bytes": 47664,
+    "sha256": "4ab0d4748bb823e51d1681af621df83689b3790fe6a482695049d4d8f9985d5d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_vertices_legacy_historical_7080_080.csv",
+    "bytes": 47444,
+    "sha256": "1dbcc5c33a7b57f3dee4b998a7a98b305dabf4c11770e3acb109e4a64fcafc14"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_vertices_string_aware_full_dappscan_21457_080.csv",
+    "bytes": 34714,
+    "sha256": "d85be21f8880e05262fee04d21f05d1ee359d42634b819403b76404d438a63ae"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_vertices_string_aware_full_upstream_21950_080.csv",
+    "bytes": 47664,
+    "sha256": "4ab0d4748bb823e51d1681af621df83689b3790fe6a482695049d4d8f9985d5d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/contracted_vertices_string_aware_historical_7080_080.csv",
+    "bytes": 47444,
+    "sha256": "1dbcc5c33a7b57f3dee4b998a7a98b305dabf4c11770e3acb109e4a64fcafc14"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/edge_counts.csv",
+    "bytes": 337379,
+    "sha256": "f302e3db3d1e57cb5b15fdaa58d7acd47e254aaba78bb4323d91ca6b2bc22255"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/executed_source/papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py",
+    "bytes": 20391,
+    "sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/executed_source/papers/security_evaluation/revision1/graph_mechanism/test_mechanism.py",
+    "bytes": 1720,
+    "sha256": "88f10e68732502322fa6f538f52efecb01f88039502449941439d044d1714a78"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/executed_source/src/bal/data/contracts.py",
+    "bytes": 6343,
+    "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/fixed_test_feasibility.csv",
+    "bytes": 188982,
+    "sha256": "ea735cd45bcdf7de84271e9937e5d5124dd71060f6a951278be8dd1bd923af91"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_combined_24131.csv.gz",
+    "bytes": 371343,
+    "sha256": "ca63751f247bef44b20757151cbbcc27dbc2a9e20addc4e8a949e7e9b8a3bc7e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_dappscan_21457.csv.gz",
+    "bytes": 194692,
+    "sha256": "9dc60a4bebc3c62e06bb695348787d971883bf4d4daea3110933188bba730482"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_full_upstream_21950.csv.gz",
+    "bytes": 198988,
+    "sha256": "f3a775781e9f43d9ca6cd138c6709092429329797f7f7c6ab9a21d2d1afbb350"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_legacy_historical_7080.csv.gz",
+    "bytes": 69121,
+    "sha256": "41223f391a7e0a20862fe561e00b83879489bfab6eb6b1b9ebd23f298e4a0b79"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_combined_24131.csv.gz",
+    "bytes": 406739,
+    "sha256": "714c1df6ba7d17f69350d63e8d68ec364483bf409046503b78972ce047761e3e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_dappscan_21457.csv.gz",
+    "bytes": 194692,
+    "sha256": "40af75b018293b4ace948b0dc1f503c0d03a56a0ca0bc35bad4035352eb557f3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_full_upstream_21950.csv.gz",
+    "bytes": 198988,
+    "sha256": "f99108f060cf22d3e0edf1a69ce092cbcdf950402e069ffa2aa8a3dab606a69f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/memberships_string_aware_historical_7080.csv.gz",
+    "bytes": 69121,
+    "sha256": "7040ecf440dfaec29e4dc9be39cdae7676e93a393f200759814aaee8ed60f825"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/normalizer_comparison.csv",
+    "bytes": 5511,
+    "sha256": "b4414db4f407b5e200f8b535486580796abb194cb31e601d722ad6ade771c512"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/population_ranks.csv.gz",
+    "bytes": 552937,
+    "sha256": "694bab33b4a726d5c60bb32a39509df09f29cf0bb5d275759308690d723c2927"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/summary.json",
+    "bytes": 4983,
+    "sha256": "7c787633a03130a16c4207d43ce4d322bac31cd3d0fd0cd0c41454a7c81a6331"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/run_mechanism.py",
+    "bytes": 20391,
+    "sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/test_describe.py",
+    "bytes": 847,
+    "sha256": "2c26076fc7e35878769bf865c1fa01d71f9e49e92b4a2230069ad1ec922c3c95"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/test_mechanism.py",
+    "bytes": 1720,
+    "sha256": "88f10e68732502322fa6f538f52efecb01f88039502449941439d044d1714a78"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/config_before_verify.json",
+    "bytes": 223119,
+    "sha256": "8c9da6ec4ee82c3816c1d65bf6259f98e16d74e34a985994aabcd6bf08708d38"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/contracts.py",
+    "bytes": 6343,
+    "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/external_fixed_test_feasibility.csv",
+    "bytes": 12423,
+    "sha256": "1ebe5f8598fc5e769ddd9f74882d40f057504af6ce243fd53a638548a2f3d8e9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/independent_union_find_checks.csv",
+    "bytes": 5244,
+    "sha256": "2db3fef171fa474863ff038d9d8c9cb8dd5a0e5375ad2eb01310cf49a601fabf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/normalizer_partition_comparison.csv",
+    "bytes": 6549,
+    "sha256": "a264f40dce0c9b4fc788d96540ec0a29ec3d294b0476fa052fa11520e54b5ba0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/run_mechanism.py",
+    "bytes": 20391,
+    "sha256": "5716b503c75d338777e58c2e2d3c950f9828260339dbe68c2a019f9c4462c78d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/summary.json",
+    "bytes": 1120,
+    "sha256": "7f1f4ccd12890ec79f17cc4af57822afa2a19194a1136166264e9af56d697f7a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verification_20261025_v1/verify_and_external.py",
+    "bytes": 7748,
+    "sha256": "8f8cab8e2d961caea533265fbb6111083f2ac086fd0c1c48b069688d7f5cf6c7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/graph_mechanism/verify_and_external.py",
+    "bytes": 7748,
+    "sha256": "8f8cab8e2d961caea533265fbb6111083f2ac086fd0c1c48b069688d7f5cf6c7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/independent_verification.json",
+    "bytes": 5068,
+    "sha256": "30b2cc456aee1d79003672e1360b70514a6c496f7ebda2d1fb41e8ea7ef50a1e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/journal_readiness_20261026.md",
+    "bytes": 8153,
+    "sha256": "ed029bc09fc2f7ed5be4aba534cebb0f5056f4ae610f9688cf3dba82669d7351"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/make_figures.py",
+    "bytes": 13781,
+    "sha256": "6775fece82b31d7974dfca2df7825f35d52a3fb72c314625c0bd2fa9fc947bc1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/AP_METHODS_ADDENDUM.md",
+    "bytes": 7608,
+    "sha256": "3e37e2f059ed7f9c3fc8e49b0e5ae03b76317811b9fc9d75a49077cddf446dd7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/CONTINUATION_SCOPE.json",
+    "bytes": 994,
+    "sha256": "2190fb24fae14816779a3d7ace98a43de0159fa221e0943e04de41f776a250db"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/LEGACY_GATE_COUNTEREXAMPLE.json",
+    "bytes": 700,
+    "sha256": "ce463731e32c3e7d9443d834ea00aadec51e9b9393fb0d4a21a2b35adb7f1078"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/PUBLICATION_GAP_REVIEW_RU.txt",
+    "bytes": 19400,
+    "sha256": "8a7f589c7d16e684c23143f2558e716a10d5c399d19f69784d831d4a1e381cf7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/REVIEW_EFFORT_INVENTORY.json",
+    "bytes": 989,
+    "sha256": "da67f37c816f134488f10788f77450332a3662eced1e964a08cc9454cbe36c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/REVISION3_CHANGELOG.md",
+    "bytes": 3809,
+    "sha256": "2f13ccd57853a6a3adb5e99802881fe25aa2278b7aa2a6f505dee61e47e00bfe"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/STAGE2_VERIFICATION.json",
+    "bytes": 1291,
+    "sha256": "45d8be2d92e41f8284fe5c982676a731b2114a24372660da774a9ec57d076693"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/STATUS_RU.md",
+    "bytes": 8967,
+    "sha256": "88ad93d33f7513b1fd42cb7988a661940ff02920bc4611a89744f877c249c850"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/combined_stage2_tests.xml",
+    "bytes": 35962,
+    "sha256": "97df27c6b64f38016ff74c910a594ab6e0a26a3c2cf9b2ed8f98a7bfb1a43853"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/progress_20261026/review_effort_inventory.py",
+    "bytes": 2311,
+    "sha256": "63794e0a5db3415ac76717a7ea0324d086b11349b077efa370beccbe8731c621"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/publication_omissions.json",
+    "bytes": 6531,
+    "sha256": "e04824d25776c6104b18565766390dc5ff51beebdd96d859c8ce4296004d75aa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/AP_BOUNDS_WORDING_REVIEW.json",
+    "bytes": 1762,
+    "sha256": "0e5d9bf48682834ac748c744379a929cab3e7afba572005c1a7a975af4d38285"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/CANONICAL_NPZ_SCHEMA_AUDIT.json",
+    "bytes": 17225,
+    "sha256": "f8b5e0a8f1dd25ef69612fa4ef69379141cc229d6a94dacf4ce61306093e82cf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/CANONICAL_NPZ_SCHEMA_AUDIT.md",
+    "bytes": 2352,
+    "sha256": "a5bdaee5d776cd2f705c4c321b97f71f6eed3d55ccbcf2e85fd33e25184a81fa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/COMPILER_EXECUTION_INDEPENDENT_REVIEW.md",
+    "bytes": 3124,
+    "sha256": "7e9b1b319296d48b6c2654a05ca351112c367d0da193a5dcb7531612168b466e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/ENGINEERING_INDEPENDENT_REVIEW.md",
+    "bytes": 10171,
+    "sha256": "398f84e098c3cd78bf2ef7a0a7fdeda063a756f3c9b48f11c3bef5f0108b62d8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/ENGINEERING_STAGE2_INDEPENDENT_REVIEW.md",
+    "bytes": 18012,
+    "sha256": "dab0d942b2e02bad5e12a2ed4092b248adedacf2646932ddcfd532bb9e6db03b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/FINAL_VERIFICATION_20261026.json",
+    "bytes": 2746,
+    "sha256": "5737cbc10e9349cfd5174bb05ac69a073f32b77f3783f3489065636b3cb7cc84"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/GRAPH_MECHANISM_RECOVERY.md",
+    "bytes": 4329,
+    "sha256": "a93700aa4f713c9b13184526bf03f3bdc0ecbc42b1f3ad2482a47a59a6a6fc17"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/INDEPENDENT_SAMPLING_VERIFICATION.json",
+    "bytes": 704,
+    "sha256": "ff3bba3c77da882e0bc63a4b147b39072a210031a46def3368ecab35c13da9df"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/INPUT_RECOVERY.md",
+    "bytes": 6176,
+    "sha256": "1578a86d0e646cd7c3914328db717f57438cdc9359fa1cf1870bd1cfb2c79f97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/INPUT_VERIFICATION.json",
+    "bytes": 2417,
+    "sha256": "d211fbd8af40dd5bdc15a64f46602799ae1bdba9783a4c82bbf56a76a5e7dcd5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/MANUSCRIPT_DOCX_QA.json",
+    "bytes": 851,
+    "sha256": "5f43102d65b1e5f660e6d4f174862cf4a8f869d48207e23888a8a7092a72978d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/PRIVATE_BUNDLE_RECEIPT.json",
+    "bytes": 389,
+    "sha256": "78d46d3d07d9fa7f40eed41533d00ee8c47eca96fcdf9ad838f807ce2e060e93"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/PRIVATE_MANIFEST_RECOVERY.json",
+    "bytes": 818,
+    "sha256": "25a598f7aa3238e127f6ccb72388c5f8901ed9fdb9d050449129d3b1da33dab0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/PUBLIC_GZIP_CONTENT_AUDIT.json",
+    "bytes": 29384,
+    "sha256": "464d353d699de155dbb734f1aacf1deb666e8a32506dc94329a826aa5d36a5e5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/REPRESENTATION_INDEPENDENT_CHECK.json",
+    "bytes": 4634,
+    "sha256": "ed82dfc3049241beddde19ea59e7a2f9070ea20f15ab5cbf07d4fb1ac8e64761"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/REPRESENTATION_RECOVERY.json",
+    "bytes": 26990,
+    "sha256": "48a1e569c8956f8a0390b942779af0811a6bea857bf87151773dd1c032b114a2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/REPRESENTATION_RECOVERY.md",
+    "bytes": 7437,
+    "sha256": "c224a2c5e7a52929cc4f1e440502bb76dee8688b458e075ac7f277947a9e9644"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/SAMPLING_RECOVERY.json",
+    "bytes": 1492,
+    "sha256": "ca5c6d6a1ec571f70e51883f760226decc05a775a65c0b1fa7c04cceaafbf5fc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/SAMPLING_RECOVERY.md",
+    "bytes": 3815,
+    "sha256": "86e1d544f415c0302752f7a14b38999ec068ba826a1f6002e1d2d3a3d129dba5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/SAMPLING_RESULTS_VERIFICATION.json",
+    "bytes": 1933,
+    "sha256": "de0fb5d74db90bf62cbc2369b26936a767c0eb6477586c726cf5b2eadcbfc1c2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/WORKER_INDEPENDENT_REVIEW.json",
+    "bytes": 3222,
+    "sha256": "ca07e130817a2c62272713a5043f52b1ef08abe854e7047caa1b01c0edf405ba"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/WORKER_INDEPENDENT_REVIEW.md",
+    "bytes": 1857,
+    "sha256": "95a4fc99bb73303ffd34235f8ffa342bcbfc7c08b5941ef2491bdefdefa65198"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/audit_canonical_representation_arrays.py",
+    "bytes": 11537,
+    "sha256": "10efda6191c28a854a6eaaaf0f6bfd04b01517e683846bd57efa3c9d8b5c0c83"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/audit_public_gzip_payloads.py",
+    "bytes": 3419,
+    "sha256": "3a546165be1eb43469501bd56a2f919e5ed29516f912d8e8b3096000bd08ce75"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/build_private_recovery_bundle.py",
+    "bytes": 4573,
+    "sha256": "78eca72d1093d84c1e0303e50861951bc36a57d7c7409cd7259ccbc58c9448d2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/combined_tests_20261026.xml",
+    "bytes": 38868,
+    "sha256": "7d5d68ab2c00b03c4ec3dbeb959fd25e15b87166a1a08062438096368a38bc24"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/compiler_execution_review_20261026_v1/plan_before_checks.json",
+    "bytes": 1631,
+    "sha256": "1b7de7b7d9785f52d234fbcde68f8242d48ad1143361df6f17a0a23bbd47e901"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/compiler_execution_review_20261026_v1/result.json",
+    "bytes": 4535,
+    "sha256": "3b868dd0bd8bb4488f7b3c978a4ef1d464cd516e765bdd2d7da88415546a23e8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/compiler_execution_review_20261026_v1/source_before.py",
+    "bytes": 12313,
+    "sha256": "0aeb6fcee642c65dded8031742512339548c4a3300cc507bdd7804a8037e48af"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/compiler_plan_review_20261026_v2.json",
+    "bytes": 2026,
+    "sha256": "1e91d4e320c406ce62d229bfd07f8bd31f5839ef2b074af21b849c428a3507b8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/plan_before_tests.json",
+    "bytes": 2936,
+    "sha256": "84e2a48018c78bd651d6c4fe5aa57be0ae5adf76f6347a0799ce26cd3e54defa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/pytest_stdout.txt",
+    "bytes": 99,
+    "sha256": "b0d5104c9bdf32ecd8295724edf8a5cc74f776300ea0012cdfc5eb791d834c5c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/result.json",
+    "bytes": 2560,
+    "sha256": "5e04fca14dc4f1bb43d779abe66b205d3afd1a58136301533843dc1c28ce0427"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md",
+    "bytes": 18431,
+    "sha256": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/api_amendment_after_coverage.json",
+    "bytes": 1715,
+    "sha256": "646bdfe5a8d94c78c1be606ff8876fcd9eaa19628e50cc454f865ee17ce9658c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/coverage_20261026_v1/source_snapshot/adapters.py",
+    "bytes": 15070,
+    "sha256": "7955d1e0b8177c99a6ebeadb357465c24016bbcfa3c68bbc685aadbbe62a8806"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py",
+    "bytes": 20009,
+    "sha256": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/toolchain_v1/manifest.json",
+    "bytes": 2686,
+    "sha256": "548b8937fa01ea5f0a994a737fd52fd518960b8a9538f6076c008a16216e6ff6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/run_engineering_independent.py",
+    "bytes": 4702,
+    "sha256": "df9e514ef50214639936c249b9cc3e8e1824936406a27c7dc31883e8d6839a52"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_engineering_independent.py",
+    "bytes": 11067,
+    "sha256": "08fba776bdab56aa320add3cde23f9442d0545a8a0df2d64b1b8caac159b7837"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_20261026_v1/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/plan_before_tests.json",
+    "bytes": 1623,
+    "sha256": "66f067fdd6b7c174b4172884469fa108075f57369448ec31379d52cb497f8419"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/pytest_stdout.txt",
+    "bytes": 98,
+    "sha256": "bfb71ff885b655792c7c90000cbed5d04bcd9a434d347321bd152b7dda72f67e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/result.json",
+    "bytes": 1324,
+    "sha256": "f8a441bb6e8f4a992415b93137f8815de59e91305b8c706daeab24f7de3a1379"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/README.md",
+    "bytes": 7635,
+    "sha256": "e34c5e3115097ee416c1bb76f827099e2209c00f6480d0d306dda18b2bf6d877"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/ap_bounds.py",
+    "bytes": 9578,
+    "sha256": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py",
+    "bytes": 3624,
+    "sha256": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_ap_bounds_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_ap_bounds.py",
+    "bytes": 4426,
+    "sha256": "ddc66bd39b68e09484e26ea686bd97a0aa1e4e7702933c14629ff5102dbe960d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/plan_before_tests.json",
+    "bytes": 2417,
+    "sha256": "159178be5d4bfe796973d042f54a9a3ade1c6acc79fba0510d6895b995d32bca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/pytest_stdout.txt",
+    "bytes": 99,
+    "sha256": "e062cee24b2bd38261ad53ebb0a09ed26cf085e0c3eec09269a136dd64dcc842"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/result.json",
+    "bytes": 2119,
+    "sha256": "ab377764c1abe2cdcf1b30962dcb1c3bc68b9d1af8ce18316eb649f43249c36f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md",
+    "bytes": 18431,
+    "sha256": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/imports.py",
+    "bytes": 6654,
+    "sha256": "9b343fe15b70f607c170ccfd371e582f8943d9944db0db9abaddf89a1c64c5a7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/plan_20261026_v2/plan_before_execution.json",
+    "bytes": 5592,
+    "sha256": "7f5da3a7cf0a9fcef75d3b4c1f071552dca7d42dcf8fdb98855a514b90aafa80"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/compiler_preflight_v1/runner.py",
+    "bytes": 25431,
+    "sha256": "ee80047bf6d2e6f77e47fb35260cd0eaaa5a6703f3e96b92674c9dd129a5aaa4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json",
+    "bytes": 7205,
+    "sha256": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/validate_gate.py",
+    "bytes": 1336,
+    "sha256": "ceb8730ce451950f2981548d5e87db8d14608258ab9f73fe80f7076476594a9b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py",
+    "bytes": 3624,
+    "sha256": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_compiler_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_compiler.py",
+    "bytes": 7614,
+    "sha256": "300ae177a06a2b3dc0454169881a1ea16d07958b37ec0e894523d8f9b490220d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/plan_before_tests.json",
+    "bytes": 2275,
+    "sha256": "fa795b8ffff927cea6c1a53965d6de72068fa4c33b09615f53e6d7ab859d35e0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/pytest_stdout.txt",
+    "bytes": 100,
+    "sha256": "56631b7e41a0434fe604af6b9070fbe99d8986139f02b875d896d50d195947bb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/result.json",
+    "bytes": 1972,
+    "sha256": "f65282ba515ace612ae90095c154819e5351966aca8d523318fcb71c0c2ad3ef"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md",
+    "bytes": 18431,
+    "sha256": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/test_preflight.py",
+    "bytes": 23027,
+    "sha256": "cb4d83a44b8a4dfc9937413d5cff4af05c40ea7d837e890165bf8e5982e9e671"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json",
+    "bytes": 7205,
+    "sha256": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py",
+    "bytes": 3624,
+    "sha256": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_orchestration.py",
+    "bytes": 8221,
+    "sha256": "798ba4169df80d0bc765356979a1b25161917e7fbc793e112138090c2b912ed9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/plan_before_tests.json",
+    "bytes": 2356,
+    "sha256": "cde2a599147781a43f167f56729bfc9d90b35d7b74a9e62c443e2c7333abf830"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/pytest_stdout.txt",
+    "bytes": 100,
+    "sha256": "a49f0a648a81b3f31991bc500ff7066f9ae14b7a50b50c3b0ad5293f8355d7d9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/result.json",
+    "bytes": 2055,
+    "sha256": "9771079074ea7ceef94860ed821548d67c67dd08e0650427656c45ad402972f0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 31271,
+    "sha256": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/loader_amendment_20261026_v1/plan_before_amendment.json",
+    "bytes": 989,
+    "sha256": "390e7c3eb87fd34a2a7085834351b6c74b93fbd6e73bdaa2124bcc0316d83099"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/test_preflight.py",
+    "bytes": 24133,
+    "sha256": "1c320fcd10776e2093a4f2b4521ae44c6beda979a1a0376ec4d064e3a4093f7b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py",
+    "bytes": 3624,
+    "sha256": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_orchestration.py",
+    "bytes": 8221,
+    "sha256": "798ba4169df80d0bc765356979a1b25161917e7fbc793e112138090c2b912ed9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_orchestration_loader_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_orchestration_loader_amendment.py",
+    "bytes": 2660,
+    "sha256": "3ff88e3c5845beaeb1159d60d4e104b42a84b1592d607865835340a991b75ceb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/plan_before_tests.json",
+    "bytes": 2087,
+    "sha256": "bcb81e6c25fc8076191b73801f04049fde62d0b7f10a07fe55e951cba08e8f46"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/pytest_stdout.txt",
+    "bytes": 99,
+    "sha256": "2ee667a262098ae990978cf3043a4abce25989c2446dcb6e89b45641fc051cb2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/result.json",
+    "bytes": 1785,
+    "sha256": "bedff9f57f62f24dd2a7d6278179dcb68c98681609b4904a8c3712dec5d73627"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md",
+    "bytes": 18431,
+    "sha256": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py",
+    "bytes": 20009,
+    "sha256": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/performance_v2/performance.py",
+    "bytes": 22225,
+    "sha256": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json",
+    "bytes": 7205,
+    "sha256": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/conftest.py",
+    "bytes": 135,
+    "sha256": "b5ccbb80fe072d0a96bfeb7da1c68d2a879ce03c4d0189c3566231566c6db15d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py",
+    "bytes": 3624,
+    "sha256": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/engineering_independent_stage2_performance_20261026_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_performance.py",
+    "bytes": 11265,
+    "sha256": "bb01aab94cdc5331f0972fee6d02902391c433c03a7356fb63abb0b373899966"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_description_recovery_config.json",
+    "bytes": 3071,
+    "sha256": "31891f879092f616a2707874788f9041664011f57a4c446fbc6bc79163f26db0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_description_recovery_result.json",
+    "bytes": 4957,
+    "sha256": "7a61266e86bdd4f3941de1ecc62607e21174b03a1d88784e2e8abf44d14d132b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_graph_recovery_config.json",
+    "bytes": 3472,
+    "sha256": "0cde17a0760c4663797d7f16695b3838005009649b821bb396028455163ca0c9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_graph_recovery_result.json",
+    "bytes": 12099,
+    "sha256": "ddb3f687fc5a0166846fa739641a4f9288ca86dd3bbcc0521e25e418bd32bdac"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_identity_recovery_config.json",
+    "bytes": 1972,
+    "sha256": "5db0e35e2ab16eccc548fb99394f8e02156a1a7b3c5b3d603a320e6edabfe169"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_identity_recovery_result.json",
+    "bytes": 4156,
+    "sha256": "f7e408a340d51b25785e37cfe29b1181660625d622e2abff0725823628818b6b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/graph_mechanism_recovery_summary.json",
+    "bytes": 6900,
+    "sha256": "1c2ba27865d525b5d82e061245c651ff92a43a569d6aa72cbe69ef5006f12cf7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/package_representation_edges.py",
+    "bytes": 9963,
+    "sha256": "2ad2cb6a90d6acbaa9310283d0cf03e60789fe00ecd61898ede369c4c68a59ac"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/rare_positive_ap_counterexample_verification.json",
+    "bytes": 1827,
+    "sha256": "15bf3d723d309b922e9e362c177cbd2550b18f678b40a4ceb6238ada4d32f280"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/recover_graph_artifacts.py",
+    "bytes": 9550,
+    "sha256": "b959969f2e66dcbe747c88069e1fda3fe8e483b2555693ab0ca50c0cc7c4e4dd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/recover_private_manifest.py",
+    "bytes": 3631,
+    "sha256": "7f8aaa6bb01ee86e02a3414f6cb05957d8651ef097ec600bfe38613c4426cb92"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/recover_representation_artifacts.py",
+    "bytes": 9792,
+    "sha256": "bbca9e41fd12a7d0802362dcd0c9c788ed96c799c0990ee261ad533a19897225"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/recover_sampling_memberships.py",
+    "bytes": 4911,
+    "sha256": "04db487cb09eaa94a8b2b979ddac11a95ddd8bf171004e12b9a26c714e3b26d2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/README.md",
+    "bytes": 2664,
+    "sha256": "b90b510f9aa00f63cf823222f5577f8e2f9d0462eaf1811de3ea3132f63c7326"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_normalized/lexical_edges.npz",
+    "bytes": 3071088,
+    "sha256": "1fd6cc2aeb7749864ab21a60147f147022309fef0e8dceb41b5ee7ceebc84f5e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_preserved/lexical_edges.npz",
+    "bytes": 421109,
+    "sha256": "144d2593537987453efdb1f32709cd282c68d6920faa3c8dee934256b3babc49"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_normalized/lexical_edges.npz",
+    "bytes": 1206079,
+    "sha256": "0f825c64d2d8603f570790f81a2347afbb954624c75d6d73635b5655f05743aa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_preserved/lexical_edges.npz",
+    "bytes": 252195,
+    "sha256": "5b352378d895f6527ad1ad67e4a30cfaf4d83b2d2ce0e3e19e436b1c468e4342"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_segmented_normalized/lexical_edges.npz",
+    "bytes": 1154046,
+    "sha256": "dfffa4635f973d57fbc8c8756d3130e8a1c78c1b6162acd4443a51c241dc1418"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_segmented_preserved/lexical_edges.npz",
+    "bytes": 252724,
+    "sha256": "87e6b65addc87aa8c0fa1eec9442c09d9f5712506c6ca1fa1120106430106534"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/manifest.json",
+    "bytes": 23126,
+    "sha256": "662b91e95bf21a78a6652c32386305d4af3b1ec1e2283ba721ffed71cc2b8756"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/packaging_config_before_outputs.json",
+    "bytes": 1516,
+    "sha256": "f715cfd1f34a09223bbef89a86ea69534f35178746d6805e503534775357054d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/review_compiler_plan.py",
+    "bytes": 7480,
+    "sha256": "a39a7dde2161710e06b5f204cbf34e9eeb0b991c3fb4295b7d70913fec1ee411"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/run_engineering_independent.py",
+    "bytes": 4702,
+    "sha256": "df9e514ef50214639936c249b9cc3e8e1824936406a27c7dc31883e8d6839a52"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/run_stage2_independent.py",
+    "bytes": 3624,
+    "sha256": "70a8a50c9178a530f34dad7edd226941249ede1b173493952046a63e6684b972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/CHECKS.json",
+    "bytes": 5055,
+    "sha256": "c6c95dcaa5b8b4c1e5c6c7e33cb20b312e9f6936958b848fa60326e557518ef3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/PRIMARY_SOURCES.json",
+    "bytes": 9501,
+    "sha256": "ee87c66a43129911d6eab04bc38b99380be216c601ad27aefabf08046e476659"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/REVIEW.md",
+    "bytes": 5515,
+    "sha256": "5b7d07d1f55fc45dd00502979897530d87aa4779058f3bb111e62f66110e7529"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/check_claims.py",
+    "bytes": 9174,
+    "sha256": "6e894d84dcffdaa95f346cccb3b55f54d5f7e9404588f305a06c7d2f23480b80"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/scientific_review_stage3/references.bib",
+    "bytes": 2159,
+    "sha256": "76e7037d3cc5a351d3e1735237697a062b65b3725329b4bdceeadaaf7e8b5008"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_engineering_independent.py",
+    "bytes": 11067,
+    "sha256": "08fba776bdab56aa320add3cde23f9442d0545a8a0df2d64b1b8caac159b7837"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_ap_bounds.py",
+    "bytes": 4426,
+    "sha256": "ddc66bd39b68e09484e26ea686bd97a0aa1e4e7702933c14629ff5102dbe960d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_compiler.py",
+    "bytes": 7614,
+    "sha256": "300ae177a06a2b3dc0454169881a1ea16d07958b37ec0e894523d8f9b490220d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_orchestration.py",
+    "bytes": 8221,
+    "sha256": "798ba4169df80d0bc765356979a1b25161917e7fbc793e112138090c2b912ed9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_engineering_stage2_performance.py",
+    "bytes": 11265,
+    "sha256": "bb01aab94cdc5331f0972fee6d02902391c433c03a7356fb63abb0b373899966"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_orchestration_loader_amendment.py",
+    "bytes": 2660,
+    "sha256": "3ff88e3c5845beaeb1159d60d4e104b42a84b1592d607865835340a991b75ceb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/test_worker_independent_no_fit.py",
+    "bytes": 2088,
+    "sha256": "aa4d0f4543733d488c63daa8bbbc5d2b8a9273acca357b3655f64a8de46ed769"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/toolchain_tests_20261026.xml",
+    "bytes": 2848,
+    "sha256": "e7f294ee1fb8841c009c4dbb871c54cdf759de855c6a3af985419373efd7930d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/verify_compiler_execution.py",
+    "bytes": 12313,
+    "sha256": "0aeb6fcee642c65dded8031742512339548c4a3300cc507bdd7804a8037e48af"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/verify_rare_positive_ap_counterexample.py",
+    "bytes": 3234,
+    "sha256": "fe571d206c3c8dc820c902022cf6ca4c54f1a8bb5e7d9239a099c7b1f695ab13"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/verify_recovered_inputs.py",
+    "bytes": 4961,
+    "sha256": "cbc6e1aa1c4b74ee95f06908f1e3280e66ea3c61e8730c2b3a476f8b254158e2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261026/verify_representation_recovery.py",
+    "bytes": 3717,
+    "sha256": "44e2a0bee0fe6ba168fbb1b7bb798cf57f7cea7adcb2aaaf19a6abaebdc00c9f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/REPORTING_TEST_RECOVERY.md",
+    "bytes": 2761,
+    "sha256": "0bc7ab88047fdcf72b991051f717c253324c8b53ded13b0cc09c2a3297efb21a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/REPRODUCTION_COMPLETE_20261028.json",
+    "bytes": 2283,
+    "sha256": "441d33ddc0e77ecfd82a29b138153037e845fe4482bd0dcfaafb636b685abb1f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/STATUS_RU.md",
+    "bytes": 9786,
+    "sha256": "8a2d0f37096a2fc39dc44f36aa1918e42b498de078622d760641d7f35b12261b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/WORD_REVISION3_IDENTITY.json",
+    "bytes": 711,
+    "sha256": "4dca71079487a96f82fc747a60975d6b322ff8e9466826cbfa0a6c519100b318"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/conftest.py",
+    "bytes": 144,
+    "sha256": "ccd952a25f02b6098a570f6a6417a14d8722b995b9aea745ddc5a19e5a30a88c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/publication_payload/MANIFEST.json",
+    "bytes": 4085,
+    "sha256": "8fce23c4fe9ddb90913ab49e6a31549a407e1512177683a148e047f5d35c0c64"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/publication_payload/README.md",
+    "bytes": 2192,
+    "sha256": "e5c58b8a7844e1d8c2fc3a76e0829f4db2e57e3cf0c741aea4afdeffef630f7a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/publication_payload/restore.py",
+    "bytes": 2775,
+    "sha256": "57739ede77666a24c928e2b2fbbdaae03b4e483cb3de06e2c0ceca1bd0ef0d4c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/RECOVERY_INVENTORY.json",
+    "bytes": 2399,
+    "sha256": "00111553accbf607ba2b6899955f97f90a115adaa43172ec4269aa5ae104d97e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/plan_before_tests.json",
+    "bytes": 3392,
+    "sha256": "7258f6b7ed4345c79aa0aa142f5e351b9f0507b2a031d0715d37962317d63e03"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/pytest.xml",
+    "bytes": 6885,
+    "sha256": "2d7a4b3858b40538493afb79f7f5d433e20012c13c148d5312f9650c60e2809f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/pytest_stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/pytest_stdout.txt",
+    "bytes": 100,
+    "sha256": "f358de17d29e30372bc924576a7472c8f8b3cbc61869ee1055cbcbb338095359"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/result.json",
+    "bytes": 3333,
+    "sha256": "eaf9e91d26ae355a5196ddcee1ec40fd0d4667977a0845f7c021a29690834d63"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/INFERENCE_AMENDMENT_DRAFT_20261026.md",
+    "bytes": 13219,
+    "sha256": "fbf798ba4a6c2da96a0eb3afb6d3e57561a21f448da5413f192e37b58f9adc53"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/INFERENCE_GATE_20261026.json",
+    "bytes": 1475,
+    "sha256": "0c789dcf4d03e532d3a20298bec0412852a334351a2c021709b288419897fa1e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/PROTOCOL_B.md",
+    "bytes": 18431,
+    "sha256": "d54c70f59abf63ac3580408fd352b3ff3f77fb006f8a857539f64ed0669ca3ca"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/ap_bounds_v1/ap_bounds.py",
+    "bytes": 9578,
+    "sha256": "71147a09cec0f755a735224f127ef379d7b4e78c17094d3ee48c3635df54ef2c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/performance_v1/performance.py",
+    "bytes": 20009,
+    "sha256": "b5bdd17f6e90b0456b03ca64a5d528e53927437a9d72cfef0d9d962316e46d9b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/performance_v2/performance.py",
+    "bytes": 22225,
+    "sha256": "71837b15960b1b9b26434957437934cda04c4092a288ca661e1a4eb31ef48b69"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/protocol_B_draft.json",
+    "bytes": 7205,
+    "sha256": "c4f6f4220bf4b4f3bda92c0be7226e7d96bfcaf97aed9ce1b1be9ee388ab6fd6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/reporting_v1/reporting.py",
+    "bytes": 21174,
+    "sha256": "eb2502b2604955e6cbe1cd54819481c0a9911d5c3738d3b0525426b04e7aa504"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261028/conftest.py",
+    "bytes": 144,
+    "sha256": "ccd952a25f02b6098a570f6a6417a14d8722b995b9aea745ddc5a19e5a30a88c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261028/run_reporting_recovery.py",
+    "bytes": 7835,
+    "sha256": "1aa0712fc5bedb387a2d2b22c42a434b7d061f5c91dcfcdaf5f02f8c7240e76f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/reporting_independent_reproduction_20261028_v1/source_snapshot/papers/security_evaluation/revision1/recovery_20261028/test_reporting_independent.py",
+    "bytes": 19393,
+    "sha256": "0df301bf6ad537d5d5b84c611781c07d1487295a3df3ebb550439b46888c4316"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/run_reporting_recovery.py",
+    "bytes": 7835,
+    "sha256": "1aa0712fc5bedb387a2d2b22c42a434b7d061f5c91dcfcdaf5f02f8c7240e76f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/scientific_review_stage3_recovery/README.md",
+    "bytes": 1711,
+    "sha256": "903e47d1192b80b31e3fe35da8195db49a858681b5b859b907a68725e430425f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/scientific_review_stage3_recovery/RECOVERY.json",
+    "bytes": 7193,
+    "sha256": "065019ea53de75957aea5a80a2dc3d7c4c49f8cce87e8fc94274bce16515d665"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/recovery_20261028/test_reporting_independent.py",
+    "bytes": 19393,
+    "sha256": "0df301bf6ad537d5d5b84c611781c07d1487295a3df3ebb550439b46888c4316"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/related_work/EVIDENCE.md",
+    "bytes": 12491,
+    "sha256": "551a97eab164a840c32535f486c139d8a38bc5c6970ff032705385ae4b209844"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/related_work/license_checks.json",
+    "bytes": 2144,
+    "sha256": "e161c1e0d95bea16b18a8e57ef44dae93cf94f736179fbc5aa5e7ca08a208b67"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/related_work/references.bib",
+    "bytes": 7244,
+    "sha256": "e5e246b4c1d4bf9767955b33817146c3afc7f68baa813b143474d80abfbef0f1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/related_work/verified_references.csv",
+    "bytes": 13798,
+    "sha256": "6041c3c8b508672be97ccd94de390ce64b7c5776e846ffd1f8b8f5bfbcf3eb26"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/related_work/verified_references.json",
+    "bytes": 18360,
+    "sha256": "834a285d5623312ed81cae5b885430c7619937f386958df8e296b0de4617c570"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/README.md",
+    "bytes": 13126,
+    "sha256": "c43b6b93676bfad03bb5d9661021c453315c824b9e36dc57cb10d0a6010368b5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/all_threshold_comparison.csv",
+    "bytes": 15251,
+    "sha256": "81f06aaeee1aaeb7cb3d347726f16a158ef80cbd72ff68452465a8400cae0c0f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/comparison_provenance.json",
+    "bytes": 3519,
+    "sha256": "d8a0a72554a7a6eca6ee719afaf7a2eaf29ecf3f3031c7d89d05a4d32cafe96a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/primary_comparison.csv",
+    "bytes": 1845,
+    "sha256": "c40f0367f47dd13e699178e8c178ba6cbbc0a0779cb4fe854be72feacbd1b0bb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/config_before_outputs.json",
+    "bytes": 3840,
+    "sha256": "8f29bf5dd4565941fa5ca9aa9c12184a2bd013d22cd3ff5cf23d5d8ad4a83bcb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/component_concentration.csv",
+    "bytes": 10266,
+    "sha256": "5c574ab95d04e2283e58ba5166666738c45254d9417fe326a725596c3cb0b471"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/edge_counts.csv",
+    "bytes": 518,
+    "sha256": "441b3c94cde45c208c62cd620d481c5949e84f4b0636b3dbd91e17514cf5e49d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/memberships.csv.gz",
+    "bytes": 103460,
+    "sha256": "e57d3ed9ca2595284c594d479f8259daef39dbbeae5d937a9c354051e7480d05"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/summary.json",
+    "bytes": 872,
+    "sha256": "1dd3428c303cdaaf63e9f32c0235bf7d70b0dce414555447cb8737954bf6ec5c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_normalized/training_feasibility.csv",
+    "bytes": 4779,
+    "sha256": "cb37382ba2720b4048a6f495d747efdc008810097dfe19adbe503b42e2897750"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/component_concentration.csv",
+    "bytes": 10220,
+    "sha256": "17001095c8b7eff86a6804be5b73686b1598b8f6ef0a452c8d2adc78a1fdfddb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/edge_counts.csv",
+    "bytes": 504,
+    "sha256": "1f94dec956e9b83481e6512a54b1cd5499b09630b120f8a8d3c1bc1511d3a091"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/memberships.csv.gz",
+    "bytes": 125368,
+    "sha256": "d65f57808d898002ba561b8ce776adaf47048633467b120c87d4bde1a7f963f4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/summary.json",
+    "bytes": 871,
+    "sha256": "e396ff2823b95ea3b26cbe068ac2dc05e95e0222e204cd5f76da97b4247cb18b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/corrected_file_preserved/training_feasibility.csv",
+    "bytes": 4885,
+    "sha256": "0d81f15cea416ae2ebb43c80577c5a6882770006615787897f970ee25d214302"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/coverage.csv",
+    "bytes": 2055,
+    "sha256": "d575f9419ab4e4143a69d00926ab83659e9efb495f76ee91767d50b52cda9f4c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/executed_source/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/executed_source/papers/security_evaluation/revision1/representations/run_representations.py",
+    "bytes": 19204,
+    "sha256": "1123f69491becba83d9d6b2dd14157da6aa33849e46913b21df87edcb9b5bb9a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/executed_source/papers/security_evaluation/revision1/representations/structural_lexical.py",
+    "bytes": 6960,
+    "sha256": "805390d8aaf315de423d396edd60b6fa80db4d464f980baa5a23a51b927ed02f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/executed_source/src/bal/data/contracts.py",
+    "bytes": 6343,
+    "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/executed_source/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/independent_verification.json",
+    "bytes": 1638,
+    "sha256": "73e798cd08b4333573b1763a562ff673eae13587afb929f635740757a549b7e4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/component_concentration.csv",
+    "bytes": 11064,
+    "sha256": "55de361798f826e6c70d831020ff95f553c48db0f0a4ce28754228c61f28d300"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/edge_counts.csv",
+    "bytes": 617,
+    "sha256": "6608e06f758a15f7816bb4799a691e323004ec76d1ee5a730d63d0438c51c37f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/memberships.csv.gz",
+    "bytes": 112344,
+    "sha256": "4adcd3daa7dda64e1876faf31ef6857bbf9d334792eca10d9717f6b1f5c190cf"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/summary.json",
+    "bytes": 886,
+    "sha256": "1dab1408322f1b023dfc5276c17a77f918c49cef89c2b28fe5aafec39eba775b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_normalized/training_feasibility.csv",
+    "bytes": 5305,
+    "sha256": "c9a87d4b3a6408f5fcae5f1d86000d96bc2a1d1853751d0753518ee4f244d8c5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/component_concentration.csv",
+    "bytes": 11004,
+    "sha256": "35126c1aa8384d4812842666be006f3d5c73e9e961d482498ea0e28d9a6f3e04"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/edge_counts.csv",
+    "bytes": 602,
+    "sha256": "fd4e8028fc3f986823dfc798cb6e48321392dc6b037cd0acc778a6aa82789adb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/memberships.csv.gz",
+    "bytes": 131992,
+    "sha256": "9da0b1ed4710b7abf4c65cac4c6f2332fdc861cb89b830eae1dc95648c632eff"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/summary.json",
+    "bytes": 885,
+    "sha256": "53cf446ee9c0863b8cb04fa36ab3f935ae7a9185db9819093c8e38a89543d5db"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/library_interface_masked_preserved/training_feasibility.csv",
+    "bytes": 5393,
+    "sha256": "ef65942256d277e063170525744ef8ceb99f4b22775b15721b332581d168a2c2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/manifest.json",
+    "bytes": 1026,
+    "sha256": "421f5dccf19b5e810724fd036ff7db5497a30cd7d1e278a4f02c33b2acaa3049"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/nodes_unchanged.csv",
+    "bytes": 9617793,
+    "sha256": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/representation_metadata.csv",
+    "bytes": 13188580,
+    "sha256": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/structural_edges_unchanged.csv",
+    "bytes": 988563,
+    "sha256": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_20261025_v1/training_label_input_hashes.json",
+    "bytes": 217691,
+    "sha256": "6ab252ba5ebf9cb364bbe56cdc1fdacd73dfc1a5c3135859faaac465d4d4a418"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_representations.py",
+    "bytes": 19204,
+    "sha256": "1123f69491becba83d9d6b2dd14157da6aa33849e46913b21df87edcb9b5bb9a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/run_segmented_control.py",
+    "bytes": 15025,
+    "sha256": "b655f2d18b9b6bb247ca2ecb21e12f3dc54d051991d790fefa98bb0e0ef774a9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/boundary_diagnostics.csv",
+    "bytes": 11815937,
+    "sha256": "8fed02c281b291eb1dfa41a8ad70f136cbee4428dd2b1c3aac3c56cb263bdbea"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/boundary_summary.csv",
+    "bytes": 339,
+    "sha256": "7c067ae286b7f26fda33408fa4ea32a1c8daf69323dc0de8bb0a9aaa530bc31b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/config_before_outputs.json",
+    "bytes": 2650,
+    "sha256": "fbed56eda0aed66001332f71f7bc44e8418ba81ad14f88b018f0744268f1dc2a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/executed_source/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/executed_source/papers/security_evaluation/revision1/representations/run_representations.py",
+    "bytes": 19204,
+    "sha256": "1123f69491becba83d9d6b2dd14157da6aa33849e46913b21df87edcb9b5bb9a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/executed_source/papers/security_evaluation/revision1/representations/run_segmented_control.py",
+    "bytes": 15025,
+    "sha256": "b655f2d18b9b6bb247ca2ecb21e12f3dc54d051991d790fefa98bb0e0ef774a9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/executed_source/papers/security_evaluation/revision1/representations/structural_lexical.py",
+    "bytes": 6960,
+    "sha256": "805390d8aaf315de423d396edd60b6fa80db4d464f980baa5a23a51b927ed02f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/executed_source/src/bal/data/contracts.py",
+    "bytes": 6343,
+    "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/executed_source/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/independent_verification.json",
+    "bytes": 1603,
+    "sha256": "459692fc26a6021ca257bc9b7c4d4392c2d1aa8fb4e3e1d417afe7326ad3fa66"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/component_concentration.csv",
+    "bytes": 11314,
+    "sha256": "0680f3ab14f4a5b2fefb1f9a248166cdd0db32707cdb7b080df3ed8cd7d2c571"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/edge_changes_from_concatenated.csv",
+    "bytes": 814,
+    "sha256": "6f52c474395ccd72d703f8d5926a85a4e7be1ea602658b7ba04f30451ff815fa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/edge_counts.csv",
+    "bytes": 646,
+    "sha256": "e79c0ed511c2de752366676bdf82c886d2b09b3250228fa0f78c047af2a0dba2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/memberships.csv.gz",
+    "bytes": 113420,
+    "sha256": "75d47a3974ab16ba80100c1e042e8952fb1f9bfd88f45a0f93b005cef422e7c5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/summary.json",
+    "bytes": 756,
+    "sha256": "8b74008417ebcdc6b3a962f36b219e26dfc88a3b02d767664f9a52ff639cacb8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_normalized/training_feasibility.csv",
+    "bytes": 5433,
+    "sha256": "4c55774cdda6703c7a57a7553110f6121eb1275c6f18b268227e33f718a437d6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/component_concentration.csv",
+    "bytes": 11262,
+    "sha256": "273c8b9acdb39db2cb33692181c3af0fbc5232ad6241026cb3434f3744b14898"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/edge_changes_from_concatenated.csv",
+    "bytes": 791,
+    "sha256": "3e4bd184f4f8efecaed2f1ce583dc2bf23aef0d2b1112e4e633156a4a8847de2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/edge_counts.csv",
+    "bytes": 632,
+    "sha256": "6384c5b0297ce0a7cea709024858f8dece7e0d28aa0813e152fa7badc9f7aaff"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/memberships.csv.gz",
+    "bytes": 132126,
+    "sha256": "cf212589053ec987f2f5a0719d044a2737b07dc94d78019b0f9fd0551e014f4d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/summary.json",
+    "bytes": 757,
+    "sha256": "ac169a95c32e8077736ebf3a9d4333cfbc3207643e9dee251d4e37e60b5943b8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/library_interface_segmented_preserved/training_feasibility.csv",
+    "bytes": 5513,
+    "sha256": "b958111e7e2e294c9a1f0a1d4150e3858dbdbf0758917f4f6106c3bb8b8cc446"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/manifest.json",
+    "bytes": 345,
+    "sha256": "5676a0bc7fb6fa98bc3ed602a84fcf7228649c626475371af30fedd66422219b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/nodes_unchanged.csv",
+    "bytes": 9617793,
+    "sha256": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/partition_changes_from_concatenated.csv",
+    "bytes": 2103,
+    "sha256": "3e6875642c4d530eee54580b5351dd5e085d7e4091b5d22b1236e47f02bc311b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/structural_edges_unchanged.csv",
+    "bytes": 988563,
+    "sha256": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/segmented_control_20261025_v1/training_label_input_hashes.json",
+    "bytes": 217691,
+    "sha256": "6ab252ba5ebf9cb364bbe56cdc1fdacd73dfc1a5c3135859faaac465d4d4a418"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/structural_lexical.py",
+    "bytes": 6960,
+    "sha256": "805390d8aaf315de423d396edd60b6fa80db4d464f980baa5a23a51b927ed02f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/summarize_comparison.py",
+    "bytes": 5018,
+    "sha256": "444f4589d4a96331d57cfe8ec1872c4ce98afadc4666cfff35e356ab3e87f40a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/test_representations.py",
+    "bytes": 4655,
+    "sha256": "f231cc7a5ef41df9c2e0cb581c8ca3efb97610d7cec211b44f30f429de91c23a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/verify_representations.py",
+    "bytes": 6806,
+    "sha256": "4cfe938a8005a863a2f075a312cfc62dc5d63e301228ec79230bcb5964252098"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/representations/verify_segmented_control.py",
+    "bytes": 5882,
+    "sha256": "3993d8a2d27fff52fdde34801f9ad73d736934f0f32d0f7091cb412ec9b3d655"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/review_response.md",
+    "bytes": 44110,
+    "sha256": "f8fa17892ca73c416670d6f9b8ee32db8ddd1c849d0a8abcd26c76b21d33bb5a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/DECIMAL_BUDGET_NOTE.md",
+    "bytes": 1293,
+    "sha256": "93f597741c04bea0b075e76c3520bb4e274757a73fa6d298c31ddaaffbe6b7d1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/PROTOCOL.md",
+    "bytes": 5493,
+    "sha256": "6cff41be419e07a53bb5803e7c86bf8a5f9313cd454c4ade28fb0d7f82a8a152"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/plot_sampling_variance.py",
+    "bytes": 7141,
+    "sha256": "dc33864ac8ac7c668d805d1cca8ad959624d1b48953de942c9335f2a9f683820"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/random_ranking_reference.py",
+    "bytes": 6240,
+    "sha256": "60fc9bdd02faaffb61b19601b3a6f148521c76748c78d08a1eb14dc2b14037d6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/random_ranking_reference_v2.py",
+    "bytes": 6620,
+    "sha256": "59cefa57572b79fd62e7c2d5568cb07c103cf1b892525850d9f444dfb0cbb3aa"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/report_sampling_variance.py",
+    "bytes": 9885,
+    "sha256": "2c906bfffa509a5b6fa8e20b8609e10e20c29c12e7c53929a4c2267eaf558361"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/RUN_NOT_EXECUTED.md",
+    "bytes": 584,
+    "sha256": "cb3d0adf77d05c2c3bb8bfcbfa793d4b21c78e6239e0d4fcb3c4f5480be9e2b3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/annotation_hashes.json",
+    "bytes": 217570,
+    "sha256": "ebec7e533de92e3b395d50c3b34321e4c8525b3a8df1ce0fa11eb8e1f3d0de1a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/campaign/run_development.py",
+    "bytes": 45306,
+    "sha256": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/code/fixed_t_development.py",
+    "bytes": 21980,
+    "sha256": "3558dd6c0280ef1e2c33fc1333f7f4785e5f5d91d838451a21b80e8c2f33043d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/evaluation_metrics.py",
+    "bytes": 9703,
+    "sha256": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/revision1/sampling_variance/PROTOCOL.md",
+    "bytes": 5493,
+    "sha256": "6a47b0394ba1e9aadb56d9e64f89b0ff4f4c92e3a788a306763742ef1b02b7fb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/revision1/sampling_variance/random_ranking_reference.py",
+    "bytes": 6240,
+    "sha256": "60fc9bdd02faaffb61b19601b3a6f148521c76748c78d08a1eb14dc2b14037d6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/revision1/sampling_variance/run_sampling_variance.py",
+    "bytes": 20196,
+    "sha256": "314f4ea48905066e4f34b6b150636fb500357bc31c70aa52afd24a48cf1d488b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/papers/security_evaluation/revision1/sampling_variance/test_sampling_variance.py",
+    "bytes": 6338,
+    "sha256": "668ccc830025ff6a354b605eb61f2c46361a4ced6e6df0673f5974cd7ab6ffd7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/src/bal/data/contracts.py",
+    "bytes": 6343,
+    "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/code_snapshot/tests/test_security_random_ranking_reference.py",
+    "bytes": 3680,
+    "sha256": "ee3a2f9b0593961700973335fa391bf38e01da64271888d867733f37db2ec21f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/config.json",
+    "bytes": 11531066,
+    "sha256": "6dac22c9d34c5b455202f828197ed8b5090610bf2e052a99e320e931939ddc21"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/environment.json",
+    "bytes": 1489,
+    "sha256": "9b74f5ddd4c5da5d7d56f9df7930bb66e5dcdc7d5defe42d37737171ce377031"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/manifest.json",
+    "bytes": 3407,
+    "sha256": "e272551a1a41abc5a01bf45cf5181429d97313997449db414ae4dd7b9f1532b5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v1/memberships.csv.gz",
+    "bytes": 274671,
+    "sha256": "f6e79ecb693ced2d0a4f4b627bc919f19f84dd17b384ecfc9d0ef73e7edd4786"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/POST_RUN_READINESS.json",
+    "bytes": 2317,
+    "sha256": "8684f680a251fe2facaa00a5aebc242ae16e7614ed1d1b411f093d43b179682f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/RESULTS.md",
+    "bytes": 6180,
+    "sha256": "4076bdb6969ef39a116e2c58f45ffc1aa747bac95eb58370f42e3ff47070d23e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/annotation_hashes.json",
+    "bytes": 217570,
+    "sha256": "ebec7e533de92e3b395d50c3b34321e4c8525b3a8df1ce0fa11eb8e1f3d0de1a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/campaign/run_development.py",
+    "bytes": 45306,
+    "sha256": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/code/fixed_t_development.py",
+    "bytes": 21980,
+    "sha256": "3558dd6c0280ef1e2c33fc1333f7f4785e5f5d91d838451a21b80e8c2f33043d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/evaluation_metrics.py",
+    "bytes": 9703,
+    "sha256": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/revision1/sampling_variance/PROTOCOL.md",
+    "bytes": 5493,
+    "sha256": "6cff41be419e07a53bb5803e7c86bf8a5f9313cd454c4ade28fb0d7f82a8a152"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/revision1/sampling_variance/random_ranking_reference.py",
+    "bytes": 6240,
+    "sha256": "60fc9bdd02faaffb61b19601b3a6f148521c76748c78d08a1eb14dc2b14037d6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/revision1/sampling_variance/run_sampling_variance.py",
+    "bytes": 20519,
+    "sha256": "79ae4b059d2fc164864737c3ecc432af285652f8e826d86321f4bce72b174d6d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/papers/security_evaluation/revision1/sampling_variance/test_sampling_variance.py",
+    "bytes": 6616,
+    "sha256": "e1665641faa6ad49a8754a987eb8bcd21aab51a6fb0168983c74d417af2d83ba"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/src/bal/data/contracts.py",
+    "bytes": 6343,
+    "sha256": "4ea6ad2685e2124a0377a30fad61ffa8918cb14c968a8e65e0f010502f22597a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/code_snapshot/tests/test_security_random_ranking_reference.py",
+    "bytes": 3680,
+    "sha256": "ee3a2f9b0593961700973335fa391bf38e01da64271888d867733f37db2ec21f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/config.json",
+    "bytes": 11531066,
+    "sha256": "7dfa1acb2bcca5bad07e2a7c1a0e0dea569f1ec22328bed089fc1090c18534d0"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/environment.json",
+    "bytes": 1489,
+    "sha256": "9b74f5ddd4c5da5d7d56f9df7930bb66e5dcdc7d5defe42d37737171ce377031"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/execution.log",
+    "bytes": 73307,
+    "sha256": "2cd2f9daa9c88264838a161246425722dd6815301af58c6563141a52806ae42e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0027c05beb953da7ba4c596e/attempt_001/evaluation.json",
+    "bytes": 4647,
+    "sha256": "0b900c08ae2b5e10d76abe8663d916e64a35b126a952c8867666b02f3503fe71"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0027c05beb953da7ba4c596e/attempt_001/predictions.csv",
+    "bytes": 15870,
+    "sha256": "71246958ea8bc92ec1596ada2e433ea440a923bd61a87d097cd2695540adaaf8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0027c05beb953da7ba4c596e/attempt_001/resources.json",
+    "bytes": 1699,
+    "sha256": "f7117122d1aa81c26d413a925d6d03497b2222ea9cea5e11dc8088d2cbd3837d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0027c05beb953da7ba4c596e/attempt_001/started.json",
+    "bytes": 27644,
+    "sha256": "cd5df3bd772040f0b61e3bdcec35277012736e6f54c33022bb87214602e74eab"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0027c05beb953da7ba4c596e/result.json",
+    "bytes": 894,
+    "sha256": "4d962a8fceb39028e5aacc8c31738c320625c638a8471f4a0f8cc4865b84263e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0035f36f023db57b82e13fe4/attempt_001/evaluation.json",
+    "bytes": 4675,
+    "sha256": "868a6cac86a84663ae3f091675583040c72fb76bd0b3cacb9e8bf251f753d7ea"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0035f36f023db57b82e13fe4/attempt_001/predictions.csv",
+    "bytes": 32484,
+    "sha256": "d08f573f3f78e9c2a661f44e8c8c697d1f47373998d8689ea9b4c6634f13907a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0035f36f023db57b82e13fe4/attempt_001/resources.json",
+    "bytes": 1706,
+    "sha256": "31e5291674bd9f6bfafd5241b76acd69d6db803a4fdc3a511ff66bb52cd066ec"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/sampling_variance/run_20261025_v2/fits/0035f36f023db57b82e13fe4/attempt_001/started.json",
+    "bytes": 27600,
+    "sha256": "eaa14fa0791ff18632da0738ec4d6761e81573a4445636216d3efa3ebc4c0a9b"
+  }
+]

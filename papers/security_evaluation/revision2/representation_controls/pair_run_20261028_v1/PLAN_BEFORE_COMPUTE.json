@@ -1,0 +1,31 @@
+{
+  "schema": "post_review_pair_controls_v1",
+  "planned_utc": "2026-10-28T22:54:12.398282+00:00",
+  "inputs": {
+    "/tmp/security-recovery-repo/papers/security_evaluation/revision1/representations/run_20261025_v1/representation_metadata.csv": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955",
+    "/tmp/security-recovery-repo/papers/security_evaluation/revision1/representations/run_20261025_v1/nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "/tmp/security-recovery-repo/papers/security_evaluation/revision1/representations/run_20261025_v1/structural_edges_unchanged.csv": "6209492fbd7a966368e1ac441e3d0c6717d5dd54b192736b582d5dff9a0349fa",
+    "/workspace/scratch/b7b7c7c8fdb5/r4_private_graph_recovery/extracted/papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/manifest.json": "662b91e95bf21a78a6652c32386305d4af3b1ec1e2283ba721ffed71cc2b8756",
+    "/workspace/scratch/b7b7c7c8fdb5/r4_private_graph_recovery/extracted/papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_normalized/lexical_edges.npz": "1fd6cc2aeb7749864ab21a60147f147022309fef0e8dceb41b5ee7ceebc84f5e",
+    "/workspace/scratch/b7b7c7c8fdb5/r4_private_graph_recovery/extracted/papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/corrected_file_preserved/lexical_edges.npz": "144d2593537987453efdb1f32709cd282c68d6920faa3c8dee934256b3babc49",
+    "/workspace/scratch/b7b7c7c8fdb5/r4_private_graph_recovery/extracted/papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_normalized/lexical_edges.npz": "0f825c64d2d8603f570790f81a2347afbb954624c75d6d73635b5655f05743aa",
+    "/workspace/scratch/b7b7c7c8fdb5/r4_private_graph_recovery/extracted/papers/security_evaluation/revision1/recovery_20261026/representation_edges_v1/library_interface_masked_preserved/lexical_edges.npz": "5b352378d895f6527ad1ad67e4a30cfaf4d83b2d2ce0e3e19e436b1c468e4342"
+  },
+  "source_sha256": "ee1d364b6086ec8ba4a18ee7b0a09eecd651e30d3fde6d4ca8ff77788abe9a67",
+  "lineage": "New canonical edge arrays from independently verified source replay; not byte-identical lost original archives and not proven complete historical edge-list identity. New controls conditional on this replay.",
+  "population": "All24131 original nodes, project/rawidentity/candidateidentifier policies unchanged; DAppSCAN21457 projection denominator unchanged.",
+  "policies": [
+    "base",
+    "address_expanded"
+  ],
+  "cases": [
+    "full_080",
+    "full_100",
+    "full_080_mask_availability_only",
+    "masked_080"
+  ],
+  "availability_control": "Keep full-file lexical edges only if BOTH endpoints have informative masked representation; leave every node and every structural edge untouched.",
+  "exact_threshold_predicate": "5*intersection >=4*(leftsize+rightsize-intersection) at0.8; leftsize==rightsize==intersection at1.0",
+  "no_labels_or_models": true,
+  "decomposition": "Two-step, fixed-order descriptive contrast. Masking may add as well as remove edges; not an additive causal attribution."
+}

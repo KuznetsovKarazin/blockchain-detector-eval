@@ -1,0 +1,1290 @@
+{
+  "scope": "Metadata only; primary full-text support is retained in the R4 literature audit.",
+  "records": [
+    {
+      "key": "teufel2023graphpart",
+      "doi": "10.1093/nargab/lqad088",
+      "metadata_source": "https://api.crossref.org/works/10.1093/nargab/lqad088",
+      "metadata": {
+        "DOI": "10.1093/nargab/lqad088",
+        "title": [
+          "GraphPart: homology partitioning for biological sequence analysis"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-1275-8065",
+            "authenticated-orcid": false,
+            "given": "Felix",
+            "family": "Teufel",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Biology, University of Copenhagen , 2200 Copenhagen , Denmark"
+              },
+              {
+                "name": "Digital Science & Innovation, Novo Nordisk A/S , 2760 Måløv , Denmark"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Magnús Halldór",
+            "family": "Gíslason",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Genomic Medicine, Copenhagen University Hospital/Rigshospitalet , 2100 Copenhagen , Denmark"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "José Juan",
+            "family": "Almagro Armenteros",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Genetics, Stanford University School of Medicine , Stanford , CA  94305 , USA"
+              },
+              {
+                "name": "Department of Biomedical Data Science, Stanford University , Stanford , CA  94305 , USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alexander Rosenberg",
+            "family": "Johansen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, Stanford University School of Engineering , Stanford , CA  94305 , USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ole",
+            "family": "Winther",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Biology, University of Copenhagen , 2200 Copenhagen , Denmark"
+              },
+              {
+                "name": "Department of Genomic Medicine, Copenhagen University Hospital/Rigshospitalet , 2100 Copenhagen , Denmark"
+              },
+              {
+                "name": "Department of Applied Mathematics and Computer Science, Technical University of Denmark , 2800 Kgs. Lyngby , Denmark"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9412-9643",
+            "authenticated-orcid": false,
+            "given": "Henrik",
+            "family": "Nielsen",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Health Technology, Technical University of Denmark , 2800 Kgs. Lyngby , Denmark"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "NAR Genomics and Bioinformatics"
+        ],
+        "volume": "5",
+        "issue": "4",
+        "article-number": "lqad088",
+        "publisher": "Oxford University Press (OUP)",
+        "type": "journal-article",
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              11
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              16
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              11
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1093/nargab/lqad088"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "petti2022independent",
+      "doi": "10.1371/journal.pcbi.1009492",
+      "metadata_source": "https://api.crossref.org/works/10.1371/journal.pcbi.1009492",
+      "metadata": {
+        "DOI": "10.1371/journal.pcbi.1009492",
+        "title": [
+          "Constructing benchmark test sets for biological sequence analysis using independent set algorithms"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-8281-8161",
+            "authenticated-orcid": true,
+            "given": "Samantha",
+            "family": "Petti",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-6676-4706",
+            "authenticated-orcid": true,
+            "given": "Sean R.",
+            "family": "Eddy",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "PLOS Computational Biology"
+        ],
+        "volume": "18",
+        "issue": "3",
+        "page": "e1009492",
+        "publisher": "Public Library of Science (PLoS)",
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              7
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              7
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1371/journal.pcbi.1009492"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "atasguvenilir2023dti",
+      "doi": "10.1186/s13321-023-00689-w",
+      "metadata_source": "https://api.crossref.org/works/10.1186/s13321-023-00689-w",
+      "metadata": {
+        "DOI": "10.1186/s13321-023-00689-w",
+        "title": [
+          "How to approach machine learning-based prediction of drug/compound–target interactions"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "given": "Heval",
+            "family": "Atas Guvenilir",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tunca",
+            "family": "Doğan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Journal of Cheminformatics"
+        ],
+        "volume": "15",
+        "issue": "1",
+        "article-number": "16",
+        "publisher": "Springer Science and Business Media LLC",
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              6
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              6
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1186/s13321-023-00689-w"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "wu2018moleculenet",
+      "doi": "10.1039/C7SC02664A",
+      "metadata_source": "https://api.crossref.org/works/10.1039/C7SC02664A",
+      "metadata": {
+        "DOI": "10.1039/c7sc02664a",
+        "title": [
+          "MoleculeNet: a benchmark for molecular machine learning"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-0148-7055",
+            "authenticated-orcid": false,
+            "given": "Zhenqin",
+            "family": "Wu",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Chemistry"
+              },
+              {
+                "name": "Stanford University"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Bharath",
+            "family": "Ramsundar",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science"
+              },
+              {
+                "name": "Stanford University"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Evan N.",
+            "family": "Feinberg",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Program in Biophysics"
+              },
+              {
+                "name": "Stanford School of Medicine"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0755-0641",
+            "authenticated-orcid": false,
+            "given": "Joseph",
+            "family": "Gomes",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Chemistry"
+              },
+              {
+                "name": "Stanford University"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Caleb",
+            "family": "Geniesse",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Program in Biophysics"
+              },
+              {
+                "name": "Stanford School of Medicine"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Aneesh S.",
+            "family": "Pappu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science"
+              },
+              {
+                "name": "Stanford University"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Karl",
+            "family": "Leswing",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Schrodinger Inc."
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Vijay",
+            "family": "Pande",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Chemistry"
+              },
+              {
+                "name": "Stanford University"
+              },
+              {
+                "name": "Stanford"
+              },
+              {
+                "name": "USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Chemical Science"
+        ],
+        "volume": "9",
+        "issue": "2",
+        "page": "513-530",
+        "publisher": "Royal Society of Chemistry (RSC)",
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1039/c7sc02664a"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "roberts2017cv",
+      "doi": "10.1111/ecog.02881",
+      "metadata_source": "https://api.crossref.org/works/10.1111/ecog.02881",
+      "metadata": {
+        "DOI": "10.1111/ecog.02881",
+        "title": [
+          "Cross‐validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "given": "David R.",
+            "family": "Roberts",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Volker",
+            "family": "Bahn",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dept of Biological Sciences Wright State Univ. Dayton OH USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Simone",
+            "family": "Ciuti",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mark S.",
+            "family": "Boyce",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dept of Biological Sciences Univ. of Alberta Edmonton AB Canada"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jane",
+            "family": "Elith",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gurutzeta",
+            "family": "Guillera‐Arroita",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Severin",
+            "family": "Hauenstein",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "José J.",
+            "family": "Lahoz‐Monfort",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Boris",
+            "family": "Schröder",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Inst. of Geoecology, Div. of Landscape Ecology and Environmental Systems Analysis, Technische Univ. Braunschweig, Braunschweig, Germany, and: Berlin‐Brandenburg Inst. of Advanced Biodiversity Research (BBIB) Berlin Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Wilfried",
+            "family": "Thuiller",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Lab. d’Écologie Alpine, Univ. Joseph Fourier Grenoble France"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "David I.",
+            "family": "Warton",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Mathematics and Statistics and Evolution and Ecology Research Centre, The Univ. of New South Wales Sydney Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Brendan A.",
+            "family": "Wintle",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Florian",
+            "family": "Hartig",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+              },
+              {
+                "name": "Theoretical Ecology, Univ. of Regensburg Regensburg Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Carsten F.",
+            "family": "Dormann",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Ecography"
+        ],
+        "volume": "40",
+        "issue": "8",
+        "page": "913-929",
+        "publisher": "Wiley",
+        "type": "journal-article",
+        "published-print": {
+          "date-parts": [
+            [
+              2017,
+              8
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              3
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              3,
+              3
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1111/ecog.02881"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "herbold2018cpdp",
+      "doi": "10.1109/TSE.2017.2724538",
+      "metadata_source": "https://api.crossref.org/works/10.1109/TSE.2017.2724538",
+      "metadata": {
+        "DOI": "10.1109/tse.2017.2724538",
+        "title": [
+          "A Comparative Study to Benchmark Cross-Project Defect Prediction Approaches"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9765-2803",
+            "authenticated-orcid": false,
+            "given": "Steffen",
+            "family": "Herbold",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Alexander",
+            "family": "Trautsch",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jens",
+            "family": "Grabowski",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "IEEE Transactions on Software Engineering"
+        ],
+        "volume": "44",
+        "issue": "9",
+        "page": "811-833",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "type": "journal-article",
+        "published-print": {
+          "date-parts": [
+            [
+              2018,
+              9,
+              1
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2018,
+              9,
+              1
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1109/tse.2017.2724538"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "joeres2025datasail",
+      "doi": "10.1038/s41467-025-58606-8",
+      "metadata_source": "https://api.crossref.org/works/10.1038/s41467-025-58606-8",
+      "metadata": {
+        "DOI": "10.1038/s41467-025-58606-8",
+        "title": [
+          "Data splitting to avoid information leakage with DataSAIL"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0000-2952-9395",
+            "authenticated-orcid": false,
+            "given": "Roman",
+            "family": "Joeres",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8651-750X",
+            "authenticated-orcid": false,
+            "given": "David B.",
+            "family": "Blumenthal",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9445-477X",
+            "authenticated-orcid": false,
+            "given": "Olga V.",
+            "family": "Kalinina",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Nature Communications"
+        ],
+        "volume": "16",
+        "issue": "1",
+        "article-number": "3337",
+        "publisher": "Springer Science and Business Media LLC",
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              8
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              8
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1038/s41467-025-58606-8"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "deng2023multimodal",
+      "doi": "10.3390/s23167246",
+      "metadata_source": "https://api.crossref.org/works/10.3390/s23167246",
+      "metadata": {
+        "DOI": "10.3390/s23167246",
+        "title": [
+          "Smart Contract Vulnerability Detection Based on Deep Learning and Multimodal Decision Fusion"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-4623-6241",
+            "authenticated-orcid": false,
+            "given": "Weichu",
+            "family": "Deng",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence and Blockchain, Guangzhou University, Guangzhou 510006, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Huanchun",
+            "family": "Wei",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Beidou, Guangxi University of Information Engineering, Nanning 530299, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Teng",
+            "family": "Huang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence and Blockchain, Guangzhou University, Guangzhou 510006, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Cong",
+            "family": "Cao",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence and Blockchain, Guangzhou University, Guangzhou 510006, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Yun",
+            "family": "Peng",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Artificial Intelligence and Blockchain, Guangzhou University, Guangzhou 510006, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Xuan",
+            "family": "Hu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Information Security Research Center, CEPREI Laboratory, Guangzhou 510610, China"
+              },
+              {
+                "name": "Key Laboratory of Ministry of Industry and Information Technology, Guangzhou 510610, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Sensors"
+        ],
+        "volume": "23",
+        "issue": "16",
+        "page": "7246",
+        "publisher": "MDPI AG",
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              18
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              18
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.3390/s23167246"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "zhang2024heterogeneous",
+      "doi": "10.3390/electronics13183786",
+      "metadata_source": "https://api.crossref.org/works/10.3390/electronics13183786",
+      "metadata": {
+        "DOI": "10.3390/electronics13183786",
+        "title": [
+          "A Smart Contract Vulnerability Detection Method Based on Heterogeneous Contract Semantic Graphs and Pre-Training Techniques"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0009-0008-7065-7653",
+            "authenticated-orcid": false,
+            "given": "Jie",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "School of Information Science and Engineering, Yunnan University, Kunming 650500, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Gehao",
+            "family": "Lu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Information Science and Engineering, Yunnan University, Kunming 650500, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Jia",
+            "family": "Yu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Information Science and Engineering, Yunnan University, Kunming 650500, China"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Electronics"
+        ],
+        "volume": "13",
+        "issue": "18",
+        "page": "3786",
+        "publisher": "MDPI AG",
+        "type": "journal-article",
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              23
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              23
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.3390/electronics13183786"
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "key": "yilmaz2008incomplete",
+      "doi": "10.1007/s10115-007-0101-7",
+      "metadata_source": "https://api.crossref.org/works/10.1007/s10115-007-0101-7",
+      "metadata": {
+        "DOI": "10.1007/s10115-007-0101-7",
+        "title": [
+          "Estimating average precision when judgments are incomplete"
+        ],
+        "subtitle": [],
+        "author": [
+          {
+            "given": "Emine",
+            "family": "Yilmaz",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Javed A.",
+            "family": "Aslam",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "container-title": [
+          "Knowledge and Information Systems"
+        ],
+        "volume": "16",
+        "issue": "2",
+        "page": "173-211",
+        "publisher": "Springer Science and Business Media LLC",
+        "type": "journal-article",
+        "published-print": {
+          "date-parts": [
+            [
+              2008,
+              8
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2007,
+              8,
+              14
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2007,
+              8,
+              14
+            ]
+          ]
+        },
+        "URL": "https://doi.org/10.1007/s10115-007-0101-7"
+      },
+      "status": "verified_registration_metadata"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> **Article 1 release branch:** [Current reproducibility package and manuscript guide](papers/security_evaluation/revision3/reproducibility/README.md). The broader project README below is preserved.
+
 > **Article 1 update, 26 October 2026:** raw/private inputs and 23 gzip artifacts are verified locally; six original NPZ files remain unrecovered and have separately identified new reproductions. Compressed artifacts remain excluded from the public update after automatic publication review rejected their upload. See [current publication status](papers/security_evaluation/revision1/PUBLICATION_STATUS.md).
 
 # blockchain-detector-eval

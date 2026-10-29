@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "reviewed_utc": "2026-10-29T00:17:35.418242+00:00",
+  "scope": "Complete PNGs inspected using view_image; axes, labels, legends, plot bounds, and reported model/budget coverage checked. No clipping or overlap observed. Static scientific figures, not generated imagery.",
+  "png_sha256": {
+    "fig_R5_composition_ecdf.png": "1cadcc33dfd844bf6413ee1901d853b5ad36af856ab87c6f61554168ff9e3400",
+    "fig_R5_linked_retention_all_review_budgets.png": "8708f2ab144d66d2b5eedd9be58aa77b85686db266b362e3aad58a9f0fa13ea2",
+    "fig_R5_linked_retention_ap.png": "6a0961d3f3c052622011e54a80e719a099eca47e426c01c95d030c5d55424be7"
+  },
+  "coverage": {
+    "composition_ecdf": "all four models;50 composition values per model;C seed means and random references",
+    "linked_retention_ap": "all four models;five dose levels;five nonzero-dose compositions;reused C zero dose",
+    "linked_retention_review": "all four models by all three review budgets;five retention levels"
+  }
+}

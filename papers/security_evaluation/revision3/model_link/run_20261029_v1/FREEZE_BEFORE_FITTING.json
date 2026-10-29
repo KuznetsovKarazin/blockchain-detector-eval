@@ -1,0 +1,33 @@
+{
+  "schema": "r5_model_freeze_v1",
+  "created_utc": "2026-10-28T23:50:41.357832+00:00",
+  "source_hashes": {
+    "papers/security_evaluation/revision3/model_link/run_r5.py": "f62b3b8e6231a5822fd49092bf20bc79590c310d8b1535dc8d9f7cf6449fe136",
+    "papers/security_evaluation/revision2/model_link/analyze.py": "6d4b5c40113e78cd8f2c0db0b1ac368d23e1a1a99bf07fa9f34ec5d5a4c1878b",
+    "papers/security_evaluation/campaign/run_development.py": "337bab5afd4d9e3956a7d68639d172341338f9f106b6556866b9cb7d00880d59",
+    "papers/security_evaluation/evaluation_metrics.py": "03a0c1b052436786826ca0ba48d58b2cc1d0d31fc84a0e2143425920c73d185d",
+    "src/bal/features/contract_features.py": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  "input_hashes": {
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/source_inventory.csv": "26d23cc683ebfd9cd983d6348e98a048a26c5bcff21b27a2797938c6c30e26da",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4",
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/revision2/graph_mechanics/run_20261028_v1/labelblind_test_memberships.csv": "5707a657c2452694b00eb946848d9e75c79777e0500d0c9819974a9284fc2a6d",
+    "papers/security_evaluation/revision2/model_link/expanded_contrast_20261028_v1/config.json": "e586a064bd7604b68e4293b53f7cba7b4f8c7571b305b49b72c53b05fba02e42",
+    "papers/security_evaluation/revision2/model_link/expanded_contrast_20261028_v1/COMPLETE.json": "a3da644827a6494e50c5a70d4e13608bf1bf40eeaff4b7c73887d9e9f76a42e5"
+  },
+  "prepared_files": {
+    "evaluation_frames.json": "a3e2ff42c9d7edac64f59b28eceb950a45fd0e20d16e5203631e8b81c779d8b4",
+    "labels.json": "b0a152e89471088a8fb2523177fababd4396d307137a408907976e553608d6b6",
+    "r4_replay_mapping.json": "44e694bb565b720076605af82cf4e325c4c29c916f34043d7c86d575a5e8513c",
+    "pool_ids.json": "b13fecf89cdf1ccc79a57a6abdfd2050a9c54ccd3958533b7d2317d12e566821",
+    "environment.json": "86ca9f0ab8015d894e8d4e76e4c6579c070945439869f4239362c085baa2119d",
+    "memberships.csv.gz": "981829d9bed47a1925c4a00bbde831454b49d7f0eb45c0e28a7b1b76fabdf126",
+    "PLAN_BEFORE_FITTING.json": "e50bb8ebe615fbe8346da0ffcdb8fae0ffc64d07f26c4bdf98892a5b689ca620",
+    "membership_ids.json": "4607346ab6a2e28bcca413d036ff8256c4c7ed0e5439eb4c77132e1355aae09d",
+    "source_inventory.csv": "a3b18bc92cc82fcc7f5b8a2be030f4e2d3fe9f13f367e0e0669a2184baa1403f",
+    "frame_counts.csv": "4f1935142f7a0f8e3efdbad00d4a904b5b04eab6bf006041ae813887c4b2cd8c"
+  },
+  "fits_started": false,
+  "physical_fits": 852
+}

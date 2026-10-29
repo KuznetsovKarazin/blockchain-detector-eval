@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "independent_union_find_graph_checks": 16,
+  "plan_sha256": "a4eb66844196ccb102aa700bed63e73ed37ea799250df3671e1a69347b642041",
+  "seconds": 6.660966338997241,
+  "outputs": {
+    "memberships.csv.gz": "4db23777359250132942e6bf582e2f6f1a54c8d9a491a4373401f92ff3b06255",
+    "mask_edge_changes.csv": "110ebe96e0bd08f5b605a4e96ab541f3697cfc1ff66f74f74e6d5d508c11be9c",
+    "graph_controls.csv": "4c8e719361b63b35616e43dd1a096dbfbee83520150c5ff3b005f9458d15def8",
+    "PLAN_BEFORE_COMPUTE.json": "a4eb66844196ccb102aa700bed63e73ed37ea799250df3671e1a69347b642041"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Read-only independent design audit before R5 model fits; no model fitting or outcome-based selection",
+  "inputs": {
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/revision2/graph_mechanics/run_20261028_v1/labelblind_test_memberships.csv": "5707a657c2452694b00eb946848d9e75c79777e0500d0c9819974a9284fc2a6d",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/label_input_hashes.json": "3e8e818921401871340196b68031785026c1b8f47941eb3f1c2ca1fa4e9cedf4",
+    "papers/security_evaluation/revision2/graph_mechanics/project_coverage_20261028_v1/whole_project_curves.csv": "b2bbb5a7e48552dadb2bb3c188ed462b120dd9814e28e74e54438fa32588bbf8",
+    "papers/security_evaluation/revision1/graph_mechanism/run_20261025_v1/component_curves.csv": "c72b5ac20e41e47a22478b8af701431078ef34353644b7c65dcf9c8633cce4a2"
+  },
+  "script_sha256": "1bc0f616b3e212472fa025faeddeda065e8d494fd0b11b353b0b24515ab2d95b"
+}

@@ -1,0 +1,34 @@
+{
+  "r4_main": {
+    "1": "kuznetsovForthcomingBlockchain",
+    "2": "kaufman2012leakage",
+    "3": "kapoor2023leakage",
+    "4": "lopes2017dejavu",
+    "5": "allamanis2019duplication",
+    "6": "petti2022independent",
+    "7": "teufel2023graphpart",
+    "8": "atasguvenilir2023dti",
+    "9": "wu2018moleculenet",
+    "10": "roberts2017cv",
+    "11": "joeres2025datasail",
+    "12": "herbold2018cpdp",
+    "13": "deng2023multimodal",
+    "14": "zhang2024heterogeneous",
+    "15": "chakraborty2022vulnerability",
+    "16": "croft2023dataquality",
+    "17": "ding2025primevul",
+    "18": "risse2024limits",
+    "19": "risse2025wrongexam",
+    "20": "kondo2020cloning",
+    "21": "ferreira2020smartbugs",
+    "22": "durieux2020tools",
+    "23": "ghaleb2020solidifi",
+    "24": "zheng2024dappscan",
+    "25": "salzano2026tools",
+    "26": "khalid2026transfer"
+  },
+  "r4_supplement": {
+    "1": "yilmaz2008incomplete",
+    "2": "hfcn2023methodological"
+  }
+}

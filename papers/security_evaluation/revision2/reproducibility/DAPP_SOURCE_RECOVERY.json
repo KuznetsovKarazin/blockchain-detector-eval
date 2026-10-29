@@ -1,0 +1,14 @@
+{
+  "schema": "r4_dappscan_sparse_source_recovery_v1",
+  "pinned_commit": "66a56619c44770e05c2db600fa6468115ff0dcd5",
+  "sparse_paths": [
+    "DAppSCAN-source/contracts",
+    "DAppSCAN-source/SWCsource"
+  ],
+  "source_files_verified": 21457,
+  "source_bytes_verified": 107970249,
+  "frozen_annotation_files_verified": 948,
+  "tracked_checkout_clean": true,
+  "method": "Initial full checkout exceeded disk; retained complete pinned Git objects and checked out only contracts and SWCsource. Unneeded complete bytecode copies were removed only after exact Git blob verification;42 incomplete checkout files quarantined outside repo. No scientific input changed.",
+  "models_or_graphs_rerun": false
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "post_review_graph_mechanics_v1",
+  "date": "2026-10-28",
+  "purpose": "Explain original eligibility losses and add label-blind post-review sensitivities; not externally preregistered or confirmatory.",
+  "inputs": {
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/historical_projection.csv": "2d46087bf34be082f17efbaf358a2ba9fd8498645ae0886320bd1cbeb0926ea3",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/nodes.csv": "45ccf7f2505843f4b5488ecc08a4adb2bf173f4444ac88b423aeff9dfe02df63",
+    "papers/security_evaluation/dependency_audit/legacy_recovered_20261025/edges.csv": "0e195343844454480616b5339d1448ee3abf4f387f786a0244b0e59e6498e0e5",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/nodes.csv": "e3add177b983b4c7455912640100839a8da50458dfb59546fc492ba4a0081cb0",
+    "papers/security_evaluation/dependency_audit/string_aware_recovered_20261025/edges.csv": "847882e8b09c6bc2bdf53df0a37b5f1f5d8027d3ed71c652a5a0e84efc620237",
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed2_recovered_v2/selected_memberships.csv.gz": "ccc019e21fe305611d4e17669e7d7bbb9b839cee89195a0c89e961f2aa198d56",
+    "papers/security_evaluation/design_feasibility/selected_outside_p90_seed4_recovered_v2/selected_memberships.csv.gz": "b05d820f3e8e86291a221257088b0dc5e00da7e94a91146ffab0079c2dc96cbb",
+    "papers/security_evaluation/runs/dev_fixed_t_20261025_v1/memberships.csv": "9f6281fa2343c997f3771e76e1d76ec4e84f94889e60ae6ee99e7fc52f6c1e1d",
+    "papers/security_evaluation/dependency_audit/graph_scope_ablation_recovered_20261025/fixed_test_feasibility.csv": "93e1a823973832777b9310518c2622217473c458fc285e73c339ebdf961c0a05"
+  },
+  "script_sha256": "dee69fd0c877ee7c979005d4c6da7946dd093dfbe5a4acf30eadd25805d72908",
+  "test_controls": {
+    "seeds": [
+      1301,
+      1302,
+      1303,
+      1304,
+      1305,
+      1306,
+      1307,
+      1308,
+      1309,
+      1310
+    ],
+    "size": 1062,
+    "frames": [
+      "all_historical_dappscan",
+      "outside_historical_giant",
+      "inside_historical_giant"
+    ],
+    "ranking": "ascending SHA256(UTF8(article1-r4-labelblind-v1:SEED:PATH)), path tie-break; same rank over each frame; no labels or outcomes"
+  },
+  "old_tests": [
+    "outside_p90_seed2",
+    "outside_p90_seed4",
+    "historical_model_test_1082"
+  ],
+  "graphs": [
+    "A_observed",
+    "B_historical_legacy",
+    "C_uncapped_reference_legacy",
+    "D_with_candidate_legacy",
+    "B_historical_string_aware",
+    "C_uncapped_reference_string_aware",
+    "D_with_candidate_string_aware"
+  ],
+  "witness_method": "Contract B components; keep added C\\B files individually; represent each project/raw-equality group as a zero-cost hub, preserving conceptual cliques. Lexical pairs J>=0.8. Find minimum-added-file paths from old giant to newly joined old test components, tie-break by minimum hops then deterministic vertex order. Union is a sufficient witness, not a minimum cut or minimum-cardinality simultaneous connector.",
+  "guardrails": [
+    "no source rescoring",
+    "no label or score selection",
+    "no model fitting",
+    "no modification of historical evidence"
+  ]
+}

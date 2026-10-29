@@ -1,0 +1,469 @@
+{
+  "schema": "article1_public_evidence_projection_v1",
+  "base_public_commit": "9dd44597d9dcb29caf31e0dbaebdcceab4185aff",
+  "omitted_files": [
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/Highlights.docx",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "74ca67bab8aec4818b03ddb3d5fe2478dc63149baf6b2d0ffb4ee6e70f607dd4"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/Highlights.txt",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "195e497a7b40d7f921aed526a5832739d51dccb5a9fa22585547e3e33518c8db"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/SOURCE_PACKAGE_SHA256.json",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "1285c5059d9ba4e118359a22c81a5a0abb1117644aa19142379d62e2fc0d6470"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/article1_r5_latex_sources.zip",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "a3a0a79ae3d1e0240fa29ab76b239a267240e48c9512b7ea71386ac2e0dc5495"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/cover_letter.txt",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "519ab7669e4f67cf4ad1d01e28a9c04b9d74e750b71ac621ee234e4ed63eabde"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/highlights.txt",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "9d161b37ca2797eed80db0358069f45456d75d45462b1c768d88625b485b7163"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/main.bbl",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "8bef913e18c99e2df148b5004c0289175fadbc64338f5e02f64a3bd3145dcf08"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/main_review.bbl",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "f9889bdfda0c83390177915a9ce4647e9378462ed5b8d0e29fbea8cbebbf4b5d"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/main_review.pdf",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "dbd280b160a9c65a869d803d4c325d8b3eee548a63a0e9b824890238a25ae049"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/main_review.tex",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "e3b7c95e68b816cab15df2595aa018ecfc0d5468abb2ebabd75574486aebb43f"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/references_review.bib",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "5251cd82c3ee1bff3d3a5aa93c82a77f27305bead4c6c6d2b0ee36a5b2847122"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/supplement.bbl",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "b5f42d0f779aa051af6f482cb31bbb108496a4890e2e27fb1c19e061a1497bf0"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/supplement_review.bbl",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "b5f42d0f779aa051af6f482cb31bbb108496a4890e2e27fb1c19e061a1497bf0"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/supplement_review.pdf",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "742298c779a939291e3d0cbf24423660a8749a50afae298cf93f76ae8b0a277e"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/supplement_review.tex",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "ea0b31bb313b88b75670179847519efbd086f0fcd30de279834cde6a16b5ae68"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/titlepage.pdf",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "814509c36a8726d6209c094e4c9da1103e0dceb13fc2e4fbcd745568ad10a41a"
+    },
+    {
+      "path": "papers/security_evaluation/manuscript/revision5/titlepage.tex",
+      "reason": "not an explicitly selected public manuscript or figure",
+      "sha256": "9bfc2ac28d897f8f5992efeed013d21c230a688dc0a8e0fc5c6657cacf9c6c64"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/FINAL_R4_VERIFICATION.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "353c4f28da601468d1b47aa7043124c6ed96fda64002eb932394e220935ed248"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/REVIEW_ASSESSMENT_RU.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "345a501839ddc48f16e72aafd5dea1600875efb00959c917b11d4ec27e9bfad3"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/START_HERE_RU.txt",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "d301a05a6c1c74fbf39ff97d65f389bad85b0586558a6d656608610e3cde899f"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/build_docx.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "a6cbef3addb3e3694d5f481b004c5b998069803041529ba46998fb7b16a27e93"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/build_private_package.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "80ce12aee2dbcaa8affe547604698d496b93e58c137f90392d7af4c7302d3c58"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/graph_mechanics/MANUSCRIPT_INSERTIONS_EN.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "b623ff37a4c627084f9b543b5bcb2c99d520bbac756bff4ca477e5547879d023"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/graph_mechanics/R4_FINAL_REVIEW.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "c5b4b3c51dd71892ec8ab3becf9e79e3a0255dc97da93ffe2314c686367fa5e0"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/graph_mechanics/REPORT_RU.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "da928df756e0d902f964ac688de09e6bb2d9e814fb2af9c297241a8cdc9dfe46"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/graph_mechanics/TABLES_FOR_R4.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "0d970ad48367e2febf100a3264a738fb4a775e3e0e690eb590eaa8c8d9fd15f4"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/literature/REVIEW_AND_INSERTIONS.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "6ed1dd943e600b5d93720853b7dffa7b9f29ee977937f2abe5d84eaef4892c77"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/REFERENCE_RENUMBERING.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "f2259984312e73b3555ad46816b03c08891a0489f03948f44b6317392dfecab5"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/REVISION4_STRUCTURE_RU.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "794e357a5aba1d7ee332eadfa721c7e2dcb556dcc830ef61b09611f433d83615"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/STRUCTURE_STATUS.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "6d0d873e6dddd5c105f687932adfc0a0057e0244c301f42b0e1b2374b32c55c3"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/integrate_availability.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "6b46e756e5a6429bd7aa90a2888d8d6a416a9ed2bb8b580acabf6862920efca4"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/integrate_controls.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "aa8e2243c803f2e32385a700cf52e3a7cf045929b6b0a5a46af346a2cafaa3a6"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/integrate_expanded_models.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "1f02919cbbffc21e32cf6b7cca7e0e99e6c79ea22133396bf45f7164d379e4cc"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/integrate_literature.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "ea7ae22c2a2b8bdeccaf829209d573232aac9a839daa279d39d0494cca6e4218"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/restructure_r3.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "0aa6095cc93401de965409c93010e5fb18fe54e004d6cbda21fcdb3ef65a5b42"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/manuscript_notes/update_reference_metadata.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "eb108edb82ed2d8c5e90b291acb344946b6387f7c535adce71156d516cd8e9db"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/model_link/REVIEW_FINDINGS.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "81774fd8e5252d5b4162f9f66dfbdedefdf880eae79207085341d89cb87787b8"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/model_link/__pycache__/analyze.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "9f7fa6fe60be4273f39a9ed41004fc26c7689b6afe5f1211cf5390fa8938138d"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/model_link/__pycache__/verify_expanded_contrast.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "581124d528a619422fba8441530a6a30c52175980cb516ecec28b1225eb871b5"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/model_link/expanded_contrast_20261028_v1/labels.json",
+      "reason": "upstream source or row-level annotation; fetch and reconstruct locally",
+      "sha256": "321297e812b5b6d83a92f79998afd18d54887a0467a08ba4370a460e3a9e4501"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/model_link/runtime_download_20261028/lightgbm-4.6.0-py3-none-manylinux_2_28_x86_64.whl",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "cb19b5afea55b5b61cbb2131095f50538bd608a00655f23ad5d25ae3e3bf1c8d"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/representation_controls/REVIEW_FINDINGS_RU.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "3fb60465fbef0d666973c0fda119684bfa116ecbdbfbdac8450554dd9c7ea57f"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/representation_controls/__pycache__/test_trivia_only.cpython-312-pytest-9.2.0.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "2eeeb19ce98479405815b54d21054046645bb8062eb6c29f7717861a6d250b9b"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/representation_controls/__pycache__/trivia_only.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "5c515bdf7f822094fdf444e7c8b3553fac8e2170d892908de1253eb3192b2fa4"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/reproducibility/REPORT_RU.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "5f23909c89c3356064c99ee2fd68bb788ec677074270533086dc5a0a24785c7c"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/reproducibility/WORD_LINK_CHECK.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "590f545440297d828c1dae1fe80239dbafd2139cd604ce46eb3422136209fce1"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/graph_checks/R5_GRAPH_MANUSCRIPT_QA.json",
+      "reason": "private manuscript or release-review coordination notes",
+      "sha256": "937ea1fdd7e3de7e01eb89ffcfc20bd1f5e68d36a26c9d7f1ac52b666e464855"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/graph_checks/R5_GRAPH_MANUSCRIPT_QA.md",
+      "reason": "private manuscript or release-review coordination notes",
+      "sha256": "52d7aa9f3db9320089cd3497d470441142d73a256ff715481a11ce86cb4d5670"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/graph_checks/READY_INSERTIONS_EN.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "e9304834041284b5462467f843a910a0bfdc60fe2f143a1e3761f701e16f4d5e"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/graph_checks/RELEASE_AUDIT_CANDIDATE2.json",
+      "reason": "private manuscript or release-review coordination notes",
+      "sha256": "c2e76e393c859e14d535709466ab51a2ac06e8631acf5103c32a10b670ab8bcb"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/graph_checks/RESULTS_RU.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "f6e599ba8f020c47af6b567ff6d06dbda8dea612841342bb3ddb7fca764c0e06"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/independent_model_audit/__pycache__/audit_r5.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "9e491a8a9003e72be0c538fe1f3dfa0a548ddb3e4ffb47f8788d861dd7c7f6e4"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/independent_model_audit/__pycache__/compare_producer.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "0f96ea243a8169f130740956013fc373fc5d56d42563ab84671411655ce061bf"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/independent_model_audit/__pycache__/independent_metrics.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "6409d84410459fba7fedf94745062e73cb1a9466e9b6e88bd401d7467cc4082c"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/independent_model_audit/__pycache__/plot_r5.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "7a526f724f60a60a780f851e1ad89622bd5ecd70605f13cf9e0a0be6a636291f"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/independent_model_audit/__pycache__/test_independent_metrics.cpython-312-pytest-9.2.0.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "53727378b117ff4a0c083b2b1a208e9f1801fab520c400d4bd1e6518a9f3e62e"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/journal_literature/BRA_RECHECK_20261029.md",
+      "reason": "journal-planning/editorial notes",
+      "sha256": "ed0270a27e860ecd5fb0edc6f22134c0149e3b65ae409f20e51000309ab2e473"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/journal_literature/JOURNAL_AND_REFERENCE_AUDIT.md",
+      "reason": "journal-planning/editorial notes",
+      "sha256": "2b13da4c50d37961d88cad9324eb46b5b35750bc04d38fc57ad9db43851dd2df"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/journal_literature/STYLE_GUIDANCE.md",
+      "reason": "journal-planning/editorial notes",
+      "sha256": "a7d96fa687aa69082818ebfdc0ca6d1d2ef56c554d75c68d6fbce475c4aab615"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/manuscript_notes/FINAL_SOURCE_FREEZE.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "676b149651b37c5cd2187fd903a756b804b92c8ad1c9e54a2f601ba61fdafa84"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/manuscript_notes/R5_BUILD_STATUS.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "4031563e4e36d4bffafe48076ba3c10b81c3ba94fe95e453775cd691157809a0"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/manuscript_notes/integrate_final_models.py",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "71a53de7fa45d3368931f7125b44a8672e07de0d4a7fc1007813a960e75986e8"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/model_link/private_manuscript_claim_audit.json",
+      "reason": "explicitly private editorial material",
+      "sha256": "e36276ef347b5f14cd800bd8fe086c00be7a2b6437ec228ee422c8984525f82a"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/model_link/private_manuscript_claim_audit.py",
+      "reason": "explicitly private editorial material",
+      "sha256": "646a9b518410e53e3f5584b813dfce379625f0e0a431b6b441a562cbcdbc4e27"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/model_link/private_manuscript_claim_notes.md",
+      "reason": "explicitly private editorial material",
+      "sha256": "e17fa050cf5648ee7da344c46d65e673264bc1e75bbdb573e4381bc0fbdef0fb"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/model_link/run_20261029_v1/labels.json",
+      "reason": "upstream source or row-level annotation; fetch and reconstruct locally",
+      "sha256": "b0a152e89471088a8fb2523177fababd4396d307137a408907976e553608d6b6"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/representation/ENGLISH_INSERTIONS.md",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "0d65c08029debe36579976fad25b762f0f86ae96937d3d808e096599ca9beeb6"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/representation/__pycache__/verify_informative_denominators.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "01714e5a54489bde41945eeb1f1dd2029f76732577dc306594bfa7b9a3753bed"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/PUBLICATION_CAPABILITIES.json",
+      "reason": "private editorial or publication-preparation material",
+      "sha256": "dde60132fb6ee503a90da8625aac930fe4b89b925db1c85048d8fa8917a8b6de"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/audit_r5_public_scores.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "8d95a442e0a1631b032826a75aa52f574f4c2cc2c4e7cb2d6957837db5383384"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/build_full_archive.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "d23a6dd39462b8691225eb7ce57641d989a51328975da0992f655b8aa7537b25"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/build_transport.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "99ed9f47906fb9bf445b46a4e9b550b782ac44e0246e708092f66a11d64b2b29"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/fetch_pinned_dappscan.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "a05d0333a9fffe7c13cd6adbf5b79be5917b3575c05af9a9f6d32930184fdd18"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/fetch_release_evidence.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "dae3cdaf0bf0d445a932df6abdf83550e4441ce74d3b5a60cd4fb9169b63e1fb"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/finalize_release.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "f00b1f6b5c3f812cc5b0501e932a8ba9a76e9fbcd3246f90ccf0816b791c256c"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/materialize_annotations.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "895a3c9ab8bb883f84ce538b2fd483a5e8044105e11406edb4daf564f3419916"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/prepare_release.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "730e20e3964d13cff118153e1869b536b088129b50e7e61b54f43fbe3f279e23"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/replay.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "1920d31774fe7d0ab2b3c0c843d9468324873b954bc9d38a72eceace54a0e3ee"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/verify_public_projection.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "bdebbd40651b9ff8248aa039a232013a8084d20c326a7e7a0dd1d50f157af1ca"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/__pycache__/verify_release_manifest.cpython-312.pyc",
+      "reason": "cache or third-party/runtime/model binary",
+      "sha256": "a40b9653e618cf0846a66682099f19eca6b472cc371ebe1e1b2e26f1e97b906c"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/reproducibility/private_transport_candidate2.json",
+      "reason": "explicitly private editorial material",
+      "sha256": "49d9cc9055e60daeb0a8dd598474b6c233da1b639db240a5dbd91c4e759275ea"
+    }
+  ],
+  "transformed_files": [
+    {
+      "path": "papers/security_evaluation/revision2/model_link/expanded_contrast_20261028_v1/memberships.csv",
+      "original_sha256": "4d88077592b348403ad9029206e6497a7d7469d553f0e7cfe1c1f039a6210802",
+      "public_sha256": "328116b7a52b4531ece0cd9e848a9a4d4f40a3d5ac448703a2ad5f1742496d6c",
+      "removed_columns": [
+        "reentrancy_proxy"
+      ],
+      "original_columns": [
+        "draw",
+        "policy",
+        "role",
+        "file_id",
+        "reentrancy_proxy"
+      ],
+      "reason": "Do not redistribute row-level DAppSCAN annotations"
+    },
+    {
+      "path": "papers/security_evaluation/revision2/model_link/linked_analysis_20261028_v2/test_training_connection_classes.csv",
+      "original_sha256": "85b5eba4a7feb096abc4974605e50d8524a82c6c9cd1ee22e5a420c60014d690",
+      "public_sha256": "b5103629f7c99ba61dc44a58d5762c1912b4915d680ff2c41413b986dea445e0",
+      "removed_columns": [
+        "reentrancy",
+        "unchecked"
+      ],
+      "original_columns": [
+        "draw",
+        "regime",
+        "file_id",
+        "direct_project",
+        "direct_clone",
+        "A_connected",
+        "B_connected",
+        "C_connected",
+        "connection_class",
+        "reentrancy",
+        "unchecked"
+      ],
+      "reason": "Do not redistribute row-level DAppSCAN annotations"
+    },
+    {
+      "path": "papers/security_evaluation/revision3/model_link/run_20261029_v1/memberships.csv.gz",
+      "original_sha256": "981829d9bed47a1925c4a00bbde831454b49d7f0eb45c0e28a7b1b76fabdf126",
+      "public_sha256": "49572c1085ad846516cac551b5b457c38e769bab6734383894162939656eb07a",
+      "removed_columns": [
+        "reentrancy_proxy"
+      ],
+      "original_columns": [
+        "membership",
+        "file_id",
+        "reentrancy_proxy",
+        "C_linked"
+      ],
+      "reason": "Do not redistribute row-level DAppSCAN annotations"
+    }
+  ],
+  "original_frozen_manifests_retained": true,
+  "instruction": "Original manifests refer to original scientific bytes. Reconstruct omitted labels and transformed tables from pinned annotations before validating those original hashes."
+}

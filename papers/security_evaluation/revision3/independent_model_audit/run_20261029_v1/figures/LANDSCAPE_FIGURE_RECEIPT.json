@@ -1,0 +1,23 @@
+{
+  "status": "generated_pending_visual_QA",
+  "created_utc": "2026-10-29T00:37:20.125708+00:00",
+  "source_sha256": "5086aedd5326af723484208f0cf23a63fe96338c4e58dda99fed33dd7004be76",
+  "input_sha256": {
+    "dose_composition_seed_means.csv": "d48236b683a7aca1530d308223bdea5e654db774b687820acbd39222c1dcc0d4",
+    "random_ranking_references.csv": "c757bab0653e6558a11d89980a44d93da45fa5d45bf8d2541afe7c9999836cc1"
+  },
+  "producer_comparison_sha256": "523d6c0fc53844c108ba6a114a97d4dc8cfd9f0fa7555d82798c70e7b9173077",
+  "output_sha256": {
+    "fig_R5_linked_retention_all_review_budgets_landscape.png": "472be73558539719262896133fb2e48d4264022b9ca520b9ac236e8f142d706b",
+    "fig_R5_linked_retention_all_review_budgets_landscape.pdf": "c21c5550787fd145d4a3bf5515845c74786e9943da1cabc40be69e801242c1fc",
+    "fig_R5_linked_retention_all_review_budgets_landscape.svg": "37d6f47c98e137d3fedf864eabd09f5cf37bde38abcdddcaf6472b22b12e8cb5"
+  },
+  "geometry_inches": [
+    11.5,
+    6.3
+  ],
+  "plot_text_pt": 11,
+  "footer_text_pt": 10.5,
+  "unchanged_data": true,
+  "scope": "All four models by all three budgets; all five dose levels; zero reuses C; observed ranges, not confidence intervals."
+}

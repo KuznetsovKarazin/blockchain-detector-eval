@@ -1,0 +1,1552 @@
+[
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/fit_log.json",
+    "bytes": 2288,
+    "sha256": "fb7f472ce10c1b1c1f908b666c84b645c069c7528c702eabe614f4778d7c80c1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/fitted_state.json",
+    "bytes": 3442,
+    "sha256": "cf0dc068ffd6ade4cd8404640b41b1b4a8a3dc83b64074425401185a9d20fc2a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/receipt.json",
+    "bytes": 3543,
+    "sha256": "8afba0375101cc158d971046515e156fc8a9ae45bfc7a320ecf381497e0f00ed"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/scores.csv",
+    "bytes": 1169,
+    "sha256": "7ca3f81b69bc8e216c4686a5bbd7b1c292b363ad62c18f35a36f0fa791fe8b8e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__3/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/config.json",
+    "bytes": 5566,
+    "sha256": "3c9e245eb0339e67aa9f420bc53789a618df082381def6105cb16c8466062e5b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/fit_log.json",
+    "bytes": 2289,
+    "sha256": "777efe0f188074bd78a448bccf8337be9ab12f0197e01d5dea63b2c8ec4d1122"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/fitted_state.json",
+    "bytes": 3442,
+    "sha256": "8f1cf253340014e8fcfb88ffcc4d9cb99fadc12150c8516bd258a160026e1b86"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/receipt.json",
+    "bytes": 3543,
+    "sha256": "09ddb0628eadb11e023eec42732900eabbb5127acbbf30b805e532c370574891"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/scores.csv",
+    "bytes": 1169,
+    "sha256": "d7cd1e71056604b406fa851bf1613206d9457369be90c4e10336949b3433873c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__reentrancy__4/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/config.json",
+    "bytes": 5564,
+    "sha256": "e509849f7c46f27ba4e0d3e03786272f035e548a56a4a6e6405f234ffa32ca23"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/fit_log.json",
+    "bytes": 2290,
+    "sha256": "757f16614b6cc5f619fba3227a84c49ae667b85555dbb416b96ea6c9b27c839e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/fitted_state.json",
+    "bytes": 3438,
+    "sha256": "d2481bf83a6017bc4cc6342b17700247aa3528a59d6f57531ab2356f11ab3915"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/receipt.json",
+    "bytes": 3540,
+    "sha256": "6649941347e324e7a5e0c13c8f12159387318dec2e5fbbca30de2a6d6ddc8c9d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/scores.csv",
+    "bytes": 1157,
+    "sha256": "35fe60561a14377268497db0af41d0d3047efae44fd33792a7d2fdbce10d0339"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__0/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/config.json",
+    "bytes": 5564,
+    "sha256": "f27acaa8db021253a7dac8d13e42723fe3bd2d0bf1c4febb9ca8700ef6b87eeb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/fit_log.json",
+    "bytes": 2291,
+    "sha256": "78b622bd17e5368a2c2e320586858b159d6af725106a7b472639efa777905cb6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/fitted_state.json",
+    "bytes": 3438,
+    "sha256": "a49c878f4aa3daeaf7998ae70fa03b4567025d58d023f5bf7867fc10d8e97b9b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/receipt.json",
+    "bytes": 3540,
+    "sha256": "f652cff6c2fd6cdb212964fc89946e331f84f38d5f9c26afb0aa971204b197f4"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/scores.csv",
+    "bytes": 1157,
+    "sha256": "1785d4f76d813711cd2bb1a320024442f701d441f3ae5e5b2a245f3019399844"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__1/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/config.json",
+    "bytes": 5564,
+    "sha256": "dc31d087c1664557996c6145a85923b8d5d98e71fae6c6cc43d1d947eda1604a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/fit_log.json",
+    "bytes": 2292,
+    "sha256": "fee3d4e2bff42e9c003479254d1ec5bc731f90da733e21f5f1e31ef6c2f09f3e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/fitted_state.json",
+    "bytes": 3438,
+    "sha256": "861f76778553f722c36439442b73f5db53b7994fa9bb24eb17f6ee55f6b7d572"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/receipt.json",
+    "bytes": 3540,
+    "sha256": "a73d03e1de27592b11750d37707d34ba5298cd76e20300c0660555359d7fcc24"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/scores.csv",
+    "bytes": 1157,
+    "sha256": "7fbc320042d11af8ede87191cfa9a8921610396dc10e79ffec23e2312f88ea59"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__2/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/config.json",
+    "bytes": 5564,
+    "sha256": "9543ecb276fd8f334300db9aff0483f0446e2dd992c279921503a9da73197e0c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/fit_log.json",
+    "bytes": 2289,
+    "sha256": "ca262e9523cad25ec44fb71769d03869237157214c0e412aa43f05c59d130e64"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/fitted_state.json",
+    "bytes": 3438,
+    "sha256": "28bc3e84761dd98255b1ac7a80b774f7da60827160f5c61d5a0028711f0b3826"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/receipt.json",
+    "bytes": 3540,
+    "sha256": "85515ce03724a439146072336949b87f0eed1f3fd8a7837805e3696f1a5f0ee8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/scores.csv",
+    "bytes": 1157,
+    "sha256": "1c8b243f298012514a7e1bcd967d203bad8dd9c83d10197762b8737249d9e8b1"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__3/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/config.json",
+    "bytes": 5564,
+    "sha256": "185b074ffc2dda690c3b13e0e859465835f6fe105bb8d04aa4c78217f425df56"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/fit_log.json",
+    "bytes": 2290,
+    "sha256": "8d6efff91a6b310281fea8818a6a411c20775326bcf4c1a75e934f3acab63151"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/fitted_state.json",
+    "bytes": 3438,
+    "sha256": "6b181e57b1739ef1b24ceae5de5ca0f46532408c07538fd5703f3ff9cc9ef613"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/receipt.json",
+    "bytes": 3540,
+    "sha256": "0cf80200d0b48dea0663052cc47c86f55caeb9beecf678b0e62c4244e8075a5a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/scores.csv",
+    "bytes": 1157,
+    "sha256": "469165ec45dd2d0253ff1b1658e1cfd0cee74ddfbb3aab57ef379dc919a3792c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_lgbm__unchecked__4/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/config.json",
+    "bytes": 5474,
+    "sha256": "944e3cea5edd6c17bea12ee2022835ab79f610f69de4fc0bf82a59392a474fe6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/fit_log.json",
+    "bytes": 2069,
+    "sha256": "e2a2a95cf1e2232f994a1c3f7abec9a0808449a6b2dc887758a9d20218a167a2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/fitted_state.json",
+    "bytes": 3422,
+    "sha256": "abacf7ce754fdfdbeae80013cd945f1e21b6201fb1a6e64c7b241184d1a582eb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/receipt.json",
+    "bytes": 3537,
+    "sha256": "a3eff2c71517065b3037de8f6bdd2f152e7db01262544b2dec86bc155f8c63bd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/scores.csv",
+    "bytes": 1145,
+    "sha256": "c640d9090f092aaa66f8db9dc653bffaf48fabdbff42e0cd6222b3108ed8d624"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__0/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/config.json",
+    "bytes": 5474,
+    "sha256": "ea9d85331936e1270474a80963eb35256919391c320e660c9784a2081e4f3d88"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/fit_log.json",
+    "bytes": 2072,
+    "sha256": "521932f95150463800a97cf66612312f07bfaee5b4e3f8e912b6db20ad25bb80"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/fitted_state.json",
+    "bytes": 3422,
+    "sha256": "373c737d2e92912f3552f58c0cf63cf37424d89957839e161426b0f1e78f13bc"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/receipt.json",
+    "bytes": 3537,
+    "sha256": "540ad8a8c020c1f244a79819f9741703aefa37d8d4214fe641492f69d44aba94"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/scores.csv",
+    "bytes": 1145,
+    "sha256": "73862e226687b6a1d0bddca7c525dbb14078525d98699405696e77953477221d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__1/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/config.json",
+    "bytes": 5474,
+    "sha256": "64491aea644c74b61ab9bd3185564a9cb9e1d53e8b8f77172db8c982c32621c9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/fit_log.json",
+    "bytes": 2063,
+    "sha256": "4068405e7cb6f0ff11b9a712f1fb9c07f4f10e0ab8d5c26427cc32a4bf685451"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/fitted_state.json",
+    "bytes": 3422,
+    "sha256": "a8f15fcc5d6d7ad0c42b12c04535d66930263fed21b3bcc7c334dade1de221fe"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/receipt.json",
+    "bytes": 3537,
+    "sha256": "63898991e30e53097c0333ddf36481f910b8d14fc84ac2b2fbc49b4bab5d5a63"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/scores.csv",
+    "bytes": 1145,
+    "sha256": "08836be2263266b37f96ba2c60e905ea80ccbf3ac8dee2f21d4574f237163c03"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__2/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/config.json",
+    "bytes": 5474,
+    "sha256": "51077038fa38746db7da39aba8f9b5e0620b402b452e4478dead8de0f5c94c79"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/fit_log.json",
+    "bytes": 2071,
+    "sha256": "7c0b6b3e83a5e926f4a4277e7ca3e198e35de615c33102307f459001f6ba5985"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/fitted_state.json",
+    "bytes": 3422,
+    "sha256": "8c0d241eda037124527f97417f83c31925d03616a3ca87749c32e5f43c28baed"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/receipt.json",
+    "bytes": 3537,
+    "sha256": "e1ddf707bf865b9da35e6e868c80273771ce9bd0104d960358a12c458a3a9a83"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/scores.csv",
+    "bytes": 1145,
+    "sha256": "34b92d991a79f6cd14a56bad8265df4642ccc244131d116f09923ba410786c14"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__3/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/config.json",
+    "bytes": 5474,
+    "sha256": "a58a8a1971a613aee3313a35800e03404342e87e374532be27da2a71cdec8542"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/fit_log.json",
+    "bytes": 2068,
+    "sha256": "2c5a76d883f3f5c00b58b7808c4fe5684c76b19ae4f830c049df513cbb7f495e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/fitted_state.json",
+    "bytes": 3422,
+    "sha256": "3d6b056361753a5c62194e8ae7e7b3d12fd052de28a9efbee26a9a7015d57196"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/receipt.json",
+    "bytes": 3537,
+    "sha256": "2650b53d730e6e62a84479ce673d23b4ce844cbace5b0a71028902baeed63a24"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/scores.csv",
+    "bytes": 1145,
+    "sha256": "7ea21ac1dd72c62b8dc9bff4bc8a6e24d55b689a0c098f92cb8f4d81bc31c6c8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__reentrancy__4/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/config.json",
+    "bytes": 5472,
+    "sha256": "2df95ade5a355b992993fe25efb609ebb91f7a4cb43aa8228d104e3153cd035b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/fit_log.json",
+    "bytes": 2070,
+    "sha256": "bee471b116dcc6d310d24cb7979df47ca63655c3f6f6710c69b63e6310a86979"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/fitted_state.json",
+    "bytes": 3418,
+    "sha256": "9fa432a8bc87edb5127a78e114f1088acbf39bfb4e674fa6d3914eef4ccb07e2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/receipt.json",
+    "bytes": 3534,
+    "sha256": "e7806229b6bfdd98a9ee4656bdfd9e767a1049003f747db31215920ec8049a9f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/scores.csv",
+    "bytes": 1133,
+    "sha256": "22bb30e47e5e39492a74ca84e182a03ff862777b7c29f3ab52d4e79b121720f2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__0/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/config.json",
+    "bytes": 5472,
+    "sha256": "938bef5daada6f6ff82c4f9e00c2f73728d8d225ac623715a3d43c4b2bdce9f2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/fit_log.json",
+    "bytes": 2072,
+    "sha256": "08704a3e7230e5340155f74a27005431ddb6dd10553164417910a98f3096f1eb"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/fitted_state.json",
+    "bytes": 3418,
+    "sha256": "61bd7e47dbbba4d9afc70b2e0f9a614620becd4828ce8d99a8b6474df4ae9ff9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/receipt.json",
+    "bytes": 3534,
+    "sha256": "f926a87258c9d57cd9c3f59c2ecfc2e197f7cbfcc3fe3e620d70db8c86b78b09"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/scores.csv",
+    "bytes": 1133,
+    "sha256": "60d90c73f7350545738f89fc73876ed83efb8250c07086bfcb9b0a4007034e68"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__1/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/config.json",
+    "bytes": 5472,
+    "sha256": "08e9253a0ca95d84826454981f0bf26d44dfc0a6b0b526fa6b49a0cad6c72663"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/fit_log.json",
+    "bytes": 2070,
+    "sha256": "0290bf9c428413030bf14fac5ea3c70dc4f7ee7330ad4e25e773541cd79dc4a2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/fitted_state.json",
+    "bytes": 3418,
+    "sha256": "053d19fb28d1191de5aa5d2d838e28b3558a38c10927f4823361c7c95b93d936"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/receipt.json",
+    "bytes": 3534,
+    "sha256": "a5a45403417e24517afd8c4d1ba12bdb2eff60d3c02bb15963341ed3e4b745d6"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/scores.csv",
+    "bytes": 1133,
+    "sha256": "8978c47cba7830e3c28a65caeafb1bdcd32d688631d7ea5ea9e8bdde30b171bd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__2/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/config.json",
+    "bytes": 5472,
+    "sha256": "558f4631c3f528e15de8d9db8239145d58d5d53b1bf57025a99648280eca9d67"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/fit_log.json",
+    "bytes": 2070,
+    "sha256": "c1de8104049296d56f7c9fe0a8946a17416be6a9728d321ebd615f9e773422e2"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/fitted_state.json",
+    "bytes": 3418,
+    "sha256": "62a2e52fc75ae5f8f2dd43a9d05c12321f004fa125848f438a68f280b32e26e3"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/receipt.json",
+    "bytes": 3534,
+    "sha256": "750ced79bfe1c0fcf62989394d26191acce82d59a95c61cf8a2238fc9e8c4972"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/scores.csv",
+    "bytes": 1133,
+    "sha256": "0f56a14e6e7cbf1fa6ee32e09f29c5584e1a8f89bf508bd14a24309fa532e84c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__3/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/config.json",
+    "bytes": 5472,
+    "sha256": "0c502d8ad92af290ae3e8ebb2c04860b05a85735d8901ddf0c9bbb024160f937"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/fit_log.json",
+    "bytes": 2070,
+    "sha256": "43c3db7cc04f0a2aaebb0e92f74cf04fb97dbb55ece58310b39865f121573b35"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/fitted_state.json",
+    "bytes": 3418,
+    "sha256": "da0437fd1d79ce51828fd43996e1e491e59cdb7bc733ecb2509376ecfae3c8e9"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/preprocessing.json",
+    "bytes": 9407,
+    "sha256": "fe543f2988fd01e90ae11bbbea82e32a8ac711bc3d204b8e214e6a9084e12391"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/receipt.json",
+    "bytes": 3534,
+    "sha256": "c71ee11b27db47033df873c76619adc4ac19f7dc89ddba8c9d9307967647820d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/scores.csv",
+    "bytes": 1133,
+    "sha256": "a6d08c5fc4f861c8bf1e77b0b980d837e603ce05a64c66899989115decf81120"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/pattern_rf__unchecked__4/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/config.json",
+    "bytes": 5478,
+    "sha256": "c058f7527f6c67fdc041884480dd35e36412c92235b510a3799839018858a7e5"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/fit_log.json",
+    "bytes": 2076,
+    "sha256": "c022e431422ecc03fbdd6ebae4093f0b94be30a7633c41cab7da303305a79e9c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/fitted_state.json",
+    "bytes": 6250,
+    "sha256": "236d2e5cbde8a812c05f18998c2e9c3e9d3b256a6949d64f4411197ca3a6c36d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/preprocessing.json",
+    "bytes": 7535,
+    "sha256": "2b84ee9a421a0a0033acf6cb3b34d2ee8daff9686d19eac574d740985e95809a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/receipt.json",
+    "bytes": 3632,
+    "sha256": "18ab42a6a11be8a6c56e9955d710ffbcbe401c9de94d08ab7c982c1cc54337c8"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/scores.csv",
+    "bytes": 1229,
+    "sha256": "6b8c7e7c9024126e064f1492570eeb85d1794d62722642f37d52f8dccfdc9185"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__reentrancy__0/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/config.json",
+    "bytes": 5476,
+    "sha256": "e4bf55d04b8fab23fd8edbf00c9792ea1e37c1d38e739a441eaf2aacc3935168"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/fit_log.json",
+    "bytes": 2080,
+    "sha256": "ed986bda9458b2673c9c7fbef74c0ba5221c535762d10a0e9754226028741004"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/fitted_state.json",
+    "bytes": 6245,
+    "sha256": "cedd0416a51bb36ad67f333e3371aa6bdf63c0f92aff2685ff7241bb3b66a43d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/preprocessing.json",
+    "bytes": 7535,
+    "sha256": "2b84ee9a421a0a0033acf6cb3b34d2ee8daff9686d19eac574d740985e95809a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/receipt.json",
+    "bytes": 3629,
+    "sha256": "6f61f3a2ae617c0bf91f24d63ac02c99909b8877b6ed9fe4cabeb86fd1ada8ec"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/scores.csv",
+    "bytes": 1217,
+    "sha256": "7923398de8f55004c69f3c9f7944de510468fb4b13c9fdc6043b8e6011fad64b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/jobs/raw_tfidf_lr__unchecked__0/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/receipt.json",
+    "bytes": 10553,
+    "sha256": "451f2cc775a871086efece1307911736d3ed585b8c42bad17fa48b075334df0c"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/README.md",
+    "bytes": 9728,
+    "sha256": "3d103b865d345ff0856b8778c756287eafb5a81fcdac2c3ec9a302532ef2612a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/run_synthetic.py",
+    "bytes": 3557,
+    "sha256": "c45e3f0f9f119a2d799024d694b791eb9cbf27e3873c3046b5fec49b1ab9613d"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/test_worker.py",
+    "bytes": 12540,
+    "sha256": "38ca524a5caf99b323f6c5c769dbc4286c8a4ecd6cbe33c77c357735385f4f9f"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31360,
+    "sha256": "9d402835ba5b470c3283a813de9f2040dd690921c440c3434e7c01dfe1bc94d7"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 30312,
+    "sha256": "905ff25df2adc2c58b352248b25619db3523cf4fad9a32e0999254fd53995890"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/validate_gate_v2.py",
+    "bytes": 5141,
+    "sha256": "bbb595a82ede8681699d7cc2652fbc7236f66df360db6ddec6685b1ac61c7c48"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/papers/security_evaluation/revision1/external_protocol/review_estimators.py",
+    "bytes": 11647,
+    "sha256": "6975911668d93abed5176c63e2d90b77e00a1e1e64a99e1faa04e9b4bcf3b274"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v1/source_snapshot/src/bal/features/contract_features.py",
+    "bytes": 10032,
+    "sha256": "bc28e7706295bb4cb74049c952bbcd717e4a0c1802d687aa773f541fe0265834"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/config.json",
+    "bytes": 6484,
+    "sha256": "13418e3538db2cbe9788bd29fee9d4b54028b3263aa69e17a63dae2b0f2d159b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/config.json",
+    "bytes": 5492,
+    "sha256": "4fed575f3cb900354009105a8cc27415b3769bf73d06587c5d11c74875edb37b"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/fit_log.json",
+    "bytes": 2081,
+    "sha256": "cbefe5e41c274243fef12131a24adcf8ac77eafedf9625c06eb7696ae6b40e98"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/fitted_state.json",
+    "bytes": 6299,
+    "sha256": "88d68eca828de3b59f9cefa5cd1cf9db6c33462ab86d887b5d16468bc937774e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/preprocessing.json",
+    "bytes": 7535,
+    "sha256": "2b84ee9a421a0a0033acf6cb3b34d2ee8daff9686d19eac574d740985e95809a"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/receipt.json",
+    "bytes": 3653,
+    "sha256": "a27aa5e7ff58e722c39c9491499d2c30b6f1c7b8fe7ece982c8aae3ecdc78c52"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/scores.csv",
+    "bytes": 1313,
+    "sha256": "c93edaa687f2ae1c24a868662ccbd6974f805207860f17b7e003c6ec3fbbae55"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/normalization_audit/solidity_scanner.py",
+    "bytes": 4752,
+    "sha256": "6199175ae0825093cdcd06fae60e1ea40146524f2e9fbd0246acf27f4467c4fd"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapter_plan.json",
+    "bytes": 5772,
+    "sha256": "53c2ca09c35053bb493d3382866b8ad3b508d55183a0d0ca53ceaa13f024db97"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/adapters.py",
+    "bytes": 16165,
+    "sha256": "b1a7db8049516790efa12c8f012c2b0a2137adfedc41d2efdb373d4f74d3400e"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/adapters_v1/feature_definitions.json",
+    "bytes": 11794,
+    "sha256": "dbbe11a38f94c516a84d2f31b2c4327d40a5a7954d8f9f36ec8ed4b0a7e23aad"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/model_worker_v1/worker.py",
+    "bytes": 31940,
+    "sha256": "4bf11c0b75ad1a9c297975c36829aa6561f873a17f87c81764ed3771c617af83"
+  },
+  {
+    "path": "papers/security_evaluation/revision1/external_protocol/model_worker_v1/synthetic_check_20261026_v2/jobs/normalized_tfidf_lr__reentrancy__0/source_snapshot/papers/security_evaluation/revision1/external_protocol/orchestration_v1/integrity_preflight.py",
+    "bytes": 31271,
+    "sha256": "fb0640a89d4607aae33687202d04b3e4fa86f4ada92d65529bbed3fed912bf05"
+  }
+]

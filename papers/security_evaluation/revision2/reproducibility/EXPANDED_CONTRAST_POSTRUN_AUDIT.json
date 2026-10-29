@@ -1,0 +1,23 @@
+{
+  "schema": "expanded_contrast_independent_postrun_audit_v1",
+  "status": "pass",
+  "script_sha256": "6d01403fe79bfcc230177360b5eb2d70dd10ed4966df714e9b7777a1b93edbd0",
+  "design_audit_sha256": "684628f6ef4554dd8c5bf7e6981faf5a8916a3e183f4fa2ea7767f7b0c552711",
+  "complete_sha256": "a3da644827a6494e50c5a70d4e13608bf1bf40eeaff4b7c73887d9e9f76a42e5",
+  "logical_predictions_checked": 120,
+  "physical_fits": 72,
+  "reused_logical_evaluations": 48,
+  "failed": 0,
+  "per_fit_artifact_hashes_checked": 480,
+  "independent_metrics": 480,
+  "max_absolute_error": 1.7763568394002505e-15,
+  "metric_method": "Fraction arithmetic over equal-score groups; no sklearn or producer metric function called.",
+  "physical_warning_counts": {
+    "X does not have valid feature names, but LGBMClassifier was fitted with feature names": 30
+  },
+  "convergence_warning_fits": 0,
+  "model_binaries_expected_and_present": false,
+  "scope": "Completed configured historical-test diagnostic, not an external assessment or independent-family causal estimate.",
+  "new_fits_by_this_audit": 0,
+  "source_and_configuration_match_frozen_hashes_at_postrun": true
+}

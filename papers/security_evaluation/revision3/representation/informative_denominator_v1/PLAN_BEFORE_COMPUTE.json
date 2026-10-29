@@ -1,0 +1,34 @@
+{
+  "schema": "r5_fixed_informative_denominator_v1",
+  "created_utc": "2026-10-28T23:44:16.234242+00:00",
+  "source_sha256": "f386d8b0ea253e1fe63b0ecfcbcc6882320054609845c61cecc88ae4c90bfa3c",
+  "inputs": {
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/nodes_unchanged.csv": "642819df79b34d9a27b0c04d9c112528117de5c8fa8c0b6d713e7773c9394821",
+    "papers/security_evaluation/revision1/representations/run_20261025_v1/representation_metadata.csv": "9596fbb285943e86179cb3b2a71e7ab6005005e9b198c639a8cd203fb0c92955",
+    "papers/security_evaluation/revision2/representation_controls/pair_run_20261028_v1/graph_controls.csv": "4c8e719361b63b35616e43dd1a096dbfbee83520150c5ff3b005f9458d15def8",
+    "papers/security_evaluation/revision2/representation_controls/pair_run_20261028_v1/memberships.csv.gz": "4db23777359250132942e6bf582e2f6f1a54c8d9a491a4373401f92ff3b06255",
+    "papers/security_evaluation/revision2/representation_controls/pair_run_20261028_v1/PLAN_BEFORE_COMPUTE.json": "a4eb66844196ccb102aa700bed63e73ed37ea799250df3671e1a69347b642041",
+    "papers/security_evaluation/revision2/representation_controls/pair_run_20261028_v1/RESULT.json": "ee16acde97cb0d1aebe5f726dd544633e70fca5572fb2965460b42d3e1261b6b"
+  },
+  "immutable_inputs": "R4 graph memberships and metadata; no graph recomputation",
+  "all_dappscan_denominator": 21457,
+  "common_informative_definition": "DAppSCAN nodes with informative masked normalized AND masked preserved representations; assert the two flags select identical nodes",
+  "common_informative_expected_denominator": 15399,
+  "cases": [
+    "full_080",
+    "full_080_mask_availability_only",
+    "masked_080"
+  ],
+  "flavors": [
+    "normalized",
+    "preserved"
+  ],
+  "policies": [
+    "base",
+    "address_expanded"
+  ],
+  "main_table_policy": "address_expanded",
+  "projection_definition": "Find largest projected component after counting only denominator-selected nodes, retaining original full-graph paths. Also separately count selected nodes inside the all-DAppSCAN giant and verify whether it remains the same largest component.",
+  "explicit_exclusion": "Not an induced informative-node graph; unavailable nodes and their structural paths remain in the graph.",
+  "no_labels_or_models": true
+}

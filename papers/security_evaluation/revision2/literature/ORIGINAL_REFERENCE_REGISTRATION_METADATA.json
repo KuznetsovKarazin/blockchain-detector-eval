@@ -1,0 +1,1387 @@
+{
+  "schema": "article1_original_reference_registration_audit_v1",
+  "date": "2026-10-28",
+  "source": "papers/security_evaluation/manuscript/DRAFT_REVISION3.md",
+  "source_sha256": "89a6acafb4a0ea941d20f77ba45110ca49f693086046adc07715fe22b9ff068a",
+  "records": [
+    {
+      "r3_number": 2,
+      "doi": "10.1145/2382577.2382579",
+      "metadata_source": "https://api.crossref.org/works/10.1145/2382577.2382579",
+      "retrieved_utc": "2026-10-28T23:01:03.472249+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/2382577.2382579",
+        "title": [
+          "Leakage in data mining"
+        ],
+        "subtitle": [
+          "Formulation, detection, and avoidance"
+        ],
+        "container-title": [
+          "ACM Transactions on Knowledge Discovery from Data"
+        ],
+        "short-container-title": [
+          "ACM Trans. Knowl. Discov. Data"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)",
+        "volume": "6",
+        "issue": "4",
+        "page": "1-21",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2012,
+              12
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2012,
+              12
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2012,
+              12,
+              18
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2012,
+              12
+            ]
+          ]
+        },
+        "ISSN": [
+          "1556-4681",
+          "1556-472X"
+        ],
+        "URL": "https://doi.org/10.1145/2382577.2382579",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/10.1145/2382577.2382579",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/2382577.2382579",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Shachar",
+            "family": "Kaufman"
+          },
+          {
+            "given": "Saharon",
+            "family": "Rosset"
+          },
+          {
+            "given": "Claudia",
+            "family": "Perlich"
+          },
+          {
+            "given": "Ori",
+            "family": "Stitelman"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 3,
+      "doi": "10.1016/j.patter.2023.100804",
+      "metadata_source": "https://api.crossref.org/works/10.1016/j.patter.2023.100804",
+      "retrieved_utc": "2026-10-28T23:01:03.473345+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1016/j.patter.2023.100804",
+        "title": [
+          "Leakage and the reproducibility crisis in machine-learning-based science"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Patterns"
+        ],
+        "short-container-title": [
+          "Patterns"
+        ],
+        "publisher": "Elsevier BV",
+        "volume": "4",
+        "issue": "9",
+        "page": "100804",
+        "article-number": "100804",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              9
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              9
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              9
+            ]
+          ]
+        },
+        "ISSN": [
+          "2666-3899"
+        ],
+        "URL": "https://doi.org/10.1016/j.patter.2023.100804",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2666389923001599?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2666389923001599?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "author": [
+          {
+            "given": "Sayash",
+            "family": "Kapoor"
+          },
+          {
+            "given": "Arvind",
+            "family": "Narayanan"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 4,
+      "doi": "10.1145/3133908",
+      "metadata_source": "https://api.crossref.org/works/10.1145/3133908",
+      "retrieved_utc": "2026-10-28T23:01:03.474539+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/3133908",
+        "title": [
+          "DéjàVu: a map of code duplicates on GitHub"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Proceedings of the ACM on Programming Languages"
+        ],
+        "short-container-title": [
+          "Proc. ACM Program. Lang."
+        ],
+        "publisher": "Association for Computing Machinery (ACM)",
+        "volume": "1",
+        "issue": "OOPSLA",
+        "page": "1-28",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              10,
+              12
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2017,
+              10,
+              12
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2017,
+              10,
+              12
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2017,
+              10,
+              12
+            ]
+          ]
+        },
+        "ISSN": [
+          "2475-1421"
+        ],
+        "URL": "https://doi.org/10.1145/3133908",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/10.1145/3133908",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3133908",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Cristina V.",
+            "family": "Lopes"
+          },
+          {
+            "given": "Petr",
+            "family": "Maj"
+          },
+          {
+            "given": "Pedro",
+            "family": "Martins"
+          },
+          {
+            "given": "Vaibhav",
+            "family": "Saini"
+          },
+          {
+            "given": "Di",
+            "family": "Yang"
+          },
+          {
+            "given": "Jakub",
+            "family": "Zitny"
+          },
+          {
+            "given": "Hitesh",
+            "family": "Sajnani"
+          },
+          {
+            "given": "Jan",
+            "family": "Vitek"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 5,
+      "doi": "10.1145/3359591.3359735",
+      "metadata_source": "https://api.crossref.org/works/10.1145/3359591.3359735",
+      "retrieved_utc": "2026-10-28T23:01:03.475433+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/3359591.3359735",
+        "title": [
+          "The adverse effects of code duplication in machine learning models of code"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Proceedings of the 2019 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software"
+        ],
+        "short-container-title": [],
+        "publisher": "ACM",
+        "page": "143-153",
+        "type": "proceedings-article",
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              23
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              23
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              23
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              23
+            ]
+          ]
+        },
+        "event": {
+          "name": "SPLASH '19: 2019 ACM SIGPLAN International Conference on Systems, Programming, Languages, and Applications: Software for Humanity",
+          "location": "Athens Greece",
+          "acronym": "SPLASH '19",
+          "sponsor": [
+            "SIGPLAN ACM Special Interest Group on Programming Languages"
+          ]
+        },
+        "URL": "https://doi.org/10.1145/3359591.3359735",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/10.1145/3359591.3359735",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3359591.3359735",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Miltiadis",
+            "family": "Allamanis"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 6,
+      "doi": "10.1109/TSE.2021.3087402",
+      "metadata_source": "https://api.crossref.org/works/10.1109/TSE.2021.3087402",
+      "retrieved_utc": "2026-10-28T23:01:08.279435+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1109/tse.2021.3087402",
+        "title": [
+          "Deep Learning Based Vulnerability Detection: Are We There Yet?"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "IEEE Transactions on Software Engineering"
+        ],
+        "short-container-title": [
+          "IIEEE Trans. Software Eng."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "48",
+        "issue": "9",
+        "page": "3280-3296",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ]
+        },
+        "ISSN": [
+          "0098-5589",
+          "1939-3520",
+          "2326-3881"
+        ],
+        "URL": "https://doi.org/10.1109/tse.2021.3087402",
+        "link": [
+          {
+            "URL": "https://ieeexplore.ieee.org/ielam/32/9894039/9448435-aam.pdf",
+            "content-type": "application/pdf",
+            "content-version": "am",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/32/9894039/09448435.pdf?arnumber=9448435",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Saikat",
+            "family": "Chakraborty"
+          },
+          {
+            "given": "Rahul",
+            "family": "Krishna"
+          },
+          {
+            "given": "Yangruibo",
+            "family": "Ding"
+          },
+          {
+            "given": "Baishakhi",
+            "family": "Ray"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 7,
+      "doi": "10.1109/ICSE48619.2023.00022",
+      "metadata_source": "https://api.crossref.org/works/10.1109/ICSE48619.2023.00022",
+      "retrieved_utc": "2026-10-28T23:01:08.319202+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1109/icse48619.2023.00022",
+        "title": [
+          "Data Quality for Software Vulnerability Datasets"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)"
+        ],
+        "short-container-title": [],
+        "publisher": "IEEE",
+        "page": "121-133",
+        "type": "proceedings-article",
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              5
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              5
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              5
+            ]
+          ]
+        },
+        "event": {
+          "name": "2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)",
+          "location": "Melbourne, Australia",
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                14
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2023,
+                5,
+                20
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1109/icse48619.2023.00022",
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/10172484/10172342/10172650.pdf?arnumber=10172650",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Roland",
+            "family": "Croft"
+          },
+          {
+            "given": "M. Ali",
+            "family": "Babar"
+          },
+          {
+            "given": "M. Mehdi",
+            "family": "Kholoosi"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 8,
+      "doi": "10.1109/ICSE55347.2025.00038",
+      "metadata_source": "https://api.crossref.org/works/10.1109/ICSE55347.2025.00038",
+      "retrieved_utc": "2026-10-28T23:01:08.407203+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1109/icse55347.2025.00038",
+        "title": [
+          "Vulnerability Detection with Code Language Models: How Far are We?"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)"
+        ],
+        "short-container-title": [],
+        "publisher": "IEEE",
+        "page": "1729-1741",
+        "type": "proceedings-article",
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              26
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              26
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              26
+            ]
+          ]
+        },
+        "event": {
+          "name": "2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)",
+          "location": "Ottawa, ON, Canada",
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                4,
+                26
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2025,
+                5,
+                6
+              ]
+            ]
+          }
+        },
+        "URL": "https://doi.org/10.1109/icse55347.2025.00038",
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/11029684/11029718/11029911.pdf?arnumber=11029911",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Yangruibo",
+            "family": "Ding"
+          },
+          {
+            "given": "Yanjun",
+            "family": "Fu"
+          },
+          {
+            "given": "Omniyyah",
+            "family": "Ibrahim"
+          },
+          {
+            "given": "Chawin",
+            "family": "Sitawarin"
+          },
+          {
+            "given": "Xinyun",
+            "family": "Chen"
+          },
+          {
+            "given": "Basel",
+            "family": "Alomair"
+          },
+          {
+            "given": "David",
+            "family": "Wagner"
+          },
+          {
+            "given": "Baishakhi",
+            "family": "Ray"
+          },
+          {
+            "given": "Yizheng",
+            "family": "Chen"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 10,
+      "doi": "10.1145/3728887",
+      "metadata_source": "https://api.crossref.org/works/10.1145/3728887",
+      "retrieved_utc": "2026-10-28T23:01:08.471264+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/3728887",
+        "title": [
+          "Top Score on the Wrong Exam: On Benchmarking in Machine Learning for Vulnerability Detection"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Proceedings of the ACM on Software Engineering"
+        ],
+        "short-container-title": [
+          "Proc. ACM Softw. Eng."
+        ],
+        "publisher": "Association for Computing Machinery (ACM)",
+        "volume": "2",
+        "issue": "ISSTA",
+        "page": "388-410",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              22
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              22
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              22
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              6,
+              22
+            ]
+          ]
+        },
+        "ISSN": [
+          "2994-970X"
+        ],
+        "URL": "https://doi.org/10.1145/3728887",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3728887",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Niklas",
+            "family": "Risse"
+          },
+          {
+            "given": "Jing",
+            "family": "Liu"
+          },
+          {
+            "given": "Marcel",
+            "family": "Böhme"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 11,
+      "doi": "10.1007/s10664-020-09852-5",
+      "metadata_source": "https://api.crossref.org/works/10.1007/s10664-020-09852-5",
+      "retrieved_utc": "2026-10-28T23:01:13.051783+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1007/s10664-020-09852-5",
+        "title": [
+          "Code cloning in smart contracts: a case study on verified contracts from the Ethereum blockchain platform"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Empirical Software Engineering"
+        ],
+        "short-container-title": [
+          "Empir Software Eng"
+        ],
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "25",
+        "issue": "6",
+        "page": "4617-4675",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              9
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              11
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              9
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2020,
+              9,
+              9
+            ]
+          ]
+        },
+        "ISSN": [
+          "1382-3256",
+          "1573-7616"
+        ],
+        "URL": "https://doi.org/10.1007/s10664-020-09852-5",
+        "link": [
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/s10664-020-09852-5.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/article/10.1007/s10664-020-09852-5/fulltext.html",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/s10664-020-09852-5.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Masanari",
+            "family": "Kondo"
+          },
+          {
+            "given": "Gustavo A.",
+            "family": "Oliva"
+          },
+          {
+            "given": "Zhen Ming",
+            "family": "Jiang"
+          },
+          {
+            "given": "Ahmed E.",
+            "family": "Hassan"
+          },
+          {
+            "given": "Osamu",
+            "family": "Mizuno"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 12,
+      "doi": "10.1145/3324884.3415298",
+      "metadata_source": "https://api.crossref.org/works/10.1145/3324884.3415298",
+      "retrieved_utc": "2026-10-28T23:01:13.095057+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/3324884.3415298",
+        "title": [
+          "SmartBugs"
+        ],
+        "subtitle": [
+          "a framework to analyze solidity smart contracts"
+        ],
+        "container-title": [
+          "Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering"
+        ],
+        "short-container-title": [],
+        "publisher": "ACM",
+        "page": "1349-1352",
+        "type": "proceedings-article",
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              12,
+              21
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              12,
+              21
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2021,
+              1,
+              27
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2020,
+              12,
+              21
+            ]
+          ]
+        },
+        "event": {
+          "name": "ASE '20: 35th IEEE/ACM International Conference on Automated Software Engineering",
+          "location": "Virtual Event Australia",
+          "acronym": "ASE '20",
+          "sponsor": [
+            "SIGAI ACM Special Interest Group on Artificial Intelligence",
+            "SIGSOFT ACM Special Interest Group on Software Engineering",
+            "IEEE CS"
+          ]
+        },
+        "URL": "https://doi.org/10.1145/3324884.3415298",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/10.1145/3324884.3415298",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3324884.3415298",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "João F.",
+            "family": "Ferreira"
+          },
+          {
+            "given": "Pedro",
+            "family": "Cruz"
+          },
+          {
+            "given": "Thomas",
+            "family": "Durieux"
+          },
+          {
+            "given": "Rui",
+            "family": "Abreu"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 13,
+      "doi": "10.1145/3377811.3380364",
+      "metadata_source": "https://api.crossref.org/works/10.1145/3377811.3380364",
+      "retrieved_utc": "2026-10-28T23:01:13.111215+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/3377811.3380364",
+        "title": [
+          "Empirical review of automated analysis tools on 47,587 Ethereum smart contracts"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering"
+        ],
+        "short-container-title": [],
+        "publisher": "ACM",
+        "page": "530-541",
+        "type": "proceedings-article",
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              27
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              27
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              10
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              27
+            ]
+          ]
+        },
+        "event": {
+          "name": "ICSE '20: 42nd International Conference on Software Engineering",
+          "location": "Seoul South Korea",
+          "acronym": "ICSE '20",
+          "sponsor": [
+            "SIGSOFT ACM Special Interest Group on Software Engineering",
+            "KIISE Korean Institute of Information Scientists and Engineers",
+            "IEEE CS"
+          ]
+        },
+        "URL": "https://doi.org/10.1145/3377811.3380364",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/10.1145/3377811.3380364",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3377811.3380364",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Thomas",
+            "family": "Durieux"
+          },
+          {
+            "given": "João F.",
+            "family": "Ferreira"
+          },
+          {
+            "given": "Rui",
+            "family": "Abreu"
+          },
+          {
+            "given": "Pedro",
+            "family": "Cruz"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 14,
+      "doi": "10.1145/3395363.3397385",
+      "metadata_source": "https://api.crossref.org/works/10.1145/3395363.3397385",
+      "retrieved_utc": "2026-10-28T23:01:13.135519+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1145/3395363.3397385",
+        "title": [
+          "How effective are smart contract analysis tools? evaluating smart contract static analysis tools using bug injection"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis"
+        ],
+        "short-container-title": [],
+        "publisher": "ACM",
+        "page": "415-427",
+        "type": "proceedings-article",
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              18
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              18
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              18
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              18
+            ]
+          ]
+        },
+        "event": {
+          "name": "ISSTA '20: 29th ACM SIGSOFT International Symposium on Software Testing and Analysis",
+          "location": "Virtual Event USA",
+          "acronym": "ISSTA '20",
+          "sponsor": [
+            "SIGSOFT ACM Special Interest Group on Software Engineering"
+          ]
+        },
+        "URL": "https://doi.org/10.1145/3395363.3397385",
+        "link": [
+          {
+            "URL": "https://dl.acm.org/doi/10.1145/3395363.3397385",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3395363.3397385",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Asem",
+            "family": "Ghaleb"
+          },
+          {
+            "given": "Karthik",
+            "family": "Pattabiraman"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 15,
+      "doi": "10.1109/TSE.2024.3383422",
+      "metadata_source": "https://api.crossref.org/works/10.1109/TSE.2024.3383422",
+      "retrieved_utc": "2026-10-28T23:01:17.751649+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1109/tse.2024.3383422",
+        "title": [
+          "DAppSCAN: Building Large-Scale Datasets for Smart Contract Weaknesses in DApp Projects"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "IEEE Transactions on Software Engineering"
+        ],
+        "short-container-title": [
+          "IIEEE Trans. Software Eng."
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "volume": "50",
+        "issue": "6",
+        "page": "1360-1373",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              6
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              6
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              6
+            ]
+          ]
+        },
+        "ISSN": [
+          "0098-5589",
+          "1939-3520",
+          "2326-3881"
+        ],
+        "URL": "https://doi.org/10.1109/tse.2024.3383422",
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/32/10557781/10486822.pdf?arnumber=10486822",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Zibin",
+            "family": "Zheng"
+          },
+          {
+            "given": "Jianzhong",
+            "family": "Su"
+          },
+          {
+            "given": "Jiachi",
+            "family": "Chen"
+          },
+          {
+            "given": "David",
+            "family": "Lo"
+          },
+          {
+            "given": "Zhijie",
+            "family": "Zhong"
+          },
+          {
+            "given": "Mingxi",
+            "family": "Ye"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 16,
+      "doi": "10.1007/s10664-026-10867-7",
+      "metadata_source": "https://api.crossref.org/works/10.1007/s10664-026-10867-7",
+      "retrieved_utc": "2026-10-28T23:01:17.759170+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "crossref": {
+        "DOI": "10.1007/s10664-026-10867-7",
+        "title": [
+          "An empirical analysis of vulnerability detection tools for solidity smart contracts"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Empirical Software Engineering"
+        ],
+        "short-container-title": [
+          "Empir Software Eng"
+        ],
+        "publisher": "Springer Science and Business Media LLC",
+        "volume": "31",
+        "issue": "5",
+        "article-number": "143",
+        "type": "journal-article",
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              16
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              9
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              16
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              16
+            ]
+          ]
+        },
+        "ISSN": [
+          "1382-3256",
+          "1573-7616"
+        ],
+        "URL": "https://doi.org/10.1007/s10664-026-10867-7",
+        "link": [
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/s10664-026-10867-7.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/article/10.1007/s10664-026-10867-7",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1007/s10664-026-10867-7.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "author": [
+          {
+            "given": "Francesco",
+            "family": "Salzano"
+          },
+          {
+            "given": "Cosmo Kevin",
+            "family": "Antenucci"
+          },
+          {
+            "given": "Simone",
+            "family": "Scalabrino"
+          },
+          {
+            "given": "Giovanni",
+            "family": "Rosa"
+          },
+          {
+            "given": "Rocco",
+            "family": "Oliveto"
+          },
+          {
+            "given": "Remo",
+            "family": "Pareschi"
+          }
+        ]
+      },
+      "status": "verified_registration_metadata"
+    },
+    {
+      "r3_number": 17,
+      "doi": "10.4230/LIPIcs.ESEM.2026.45",
+      "metadata_source": "https://api.crossref.org/works/10.4230/LIPIcs.ESEM.2026.45",
+      "retrieved_utc": "2026-10-28T23:01:17.782364+00:00",
+      "scope": "DOI registration metadata only; no claim of full-text review.",
+      "status": "unresolved",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ]
+}
