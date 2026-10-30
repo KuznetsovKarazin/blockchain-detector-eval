@@ -90,6 +90,98 @@ amount of leakage.
   minor first); every file has a status (ok, compile_error, timeout,
   tool_error, unsupported_pragma; OR ranges in pragmas are honoured) and metrics are given end-to-end and for analysed files only.
 
+## V — What smart-contract security benchmarks measure (study C extended)
+
+Written on 2026-10-30, before any V run. Changes after the first run are
+listed at the end of this section with their reason.
+
+**Data.** SolidiFI-benchmark @4b0573e (350 buggy files), the SolidiFI tool
+repository @ebb02e3 (the 50 original contracts and the snippet files of the
+injector), SmartBugs-curated @230e649, DAppSCAN @66a5661. Classes:
+reentrancy, arithmetic, timestamp, unchecked (SolidiFI Unchecked-Send +
+Unhandled-Exceptions) and tx_origin.
+
+**V1 SolidiFI decomposition** (`bal.data.solidifi`). Snippet files are
+normalised (comments removed, numbers → `N`, trailing digits of identifiers
+→ `#`); equal sequences form one template (44 templates). Every template is
+located in every buggy file (longest first, no overlap). Checks per file:
+removing all located snippets gives the original contract token for token;
+the number of snippets equals the BugLog rows; the share of snippet lines
+that the BugLog line ranges cover.
+
+**V2 Template controls for learned detectors** (within SolidiFI, 5 folds
+grouped by base contract, 3 seeds; lex_raw / lex_norm with logistic
+regression, pat with RF and LightGBM, the same code as C2).
+* `standard`: positives are the buggy files of the class, negatives the
+  buggy files of the other six types (the C2 setting), plus the 50 original
+  contracts as extra negatives (`+clean`).
+* Pair test: in each test fold, the share of base contracts whose buggy file
+  of the class scores above the original contract (ties count ½).
+* `loto` (leave one template out), for every template with at least 20
+  occurrences in a class with at least two such templates: training positives
+  are the buggy files of the class with every snippet of the held-out template
+  removed (files left without a snippet are dropped); test positives are the
+  buggy files of the test bases reduced to the held-out template only.
+  `seen` is the same test set with models trained on the full buggy files.
+  Negatives as in `standard` + `+clean`. Reported per template: AUPRC, pair
+  test, and `seen − loto`.
+Hypothesis HV.1: `loto` drops below `seen` for most templates of
+reentrancy and unchecked; the pair test stays near 1 (the models detect
+injected code, not necessarily the vulnerable construct).
+
+**V3 Models frozen on source validation.** Candidates: lex_raw and lex_norm
+with logistic regression (C ∈ {0.1, 1, 10}), pat with RF and LightGBM
+(library settings of C2), pat with MLP. Selection per (source, class) on
+grouped 5-fold CV inside the source only (SolidiFI: base contract; DAppSCAN:
+project), by mean AUPRC; ties within 0.005 go to the earlier candidate in the
+list above. The selected model is refitted on the whole source and scored once
+on each target (SmartBugs-curated; the 948 annotated DAppSCAN files;
+SolidiFI). Reported: frozen AUPRC with a file-level bootstrap 95 % CI
+(2,000 resamples), the best candidate on the target (oracle, exploratory) and
+the frozen model's rank among candidates on the target. Seeds 0–2 for
+stochastic models; selection on the seed mean.
+Hypothesis HV.2: on SolidiFI as source, validation cannot separate the
+candidates (all ≈ 1), so the frozen choice is arbitrary on the target.
+
+**V4 Static analysers** (Slither 0.11.6, Mythril 0.24.8, SmartCheck 2.0.1) on
+SmartBugs-curated, the 350 SolidiFI buggy files and the 50 original
+contracts. Slither and Mythril use the C3 compiler choice (newest allowed
+minor of the pragma range first, fall back to older minors on failure).
+SmartCheck parses source without compiling. Mythril: `analyze -o json`,
+`--execution-timeout 90`, wall timeout 600 s per compiler try, other options
+default. Every file gets a status (ok, compile_error, timeout, tool_error,
+unsupported_pragma). Mapping to classes, fixed before the run:
+
+| Class | Slither | Mythril (SWC) | SmartCheck |
+|---|---|---|---|
+| reentrancy | reentrancy-eth/-no-eth/-unlimited-gas/-benign/-events | 107 | — |
+| arithmetic | — | 101 | — |
+| timestamp | timestamp | 116 | SOLIDITY_EXACT_TIME |
+| unchecked | unchecked-lowlevel, unchecked-send | 104 | SOLIDITY_UNCHECKED_CALL |
+| tx_origin | tx-origin | 115 | SOLIDITY_TX_ORIGIN |
+
+File-level metrics end-to-end (a failed file has no finding) and on analysed
+files. On SolidiFI also: **located** detection (at least one mapped finding
+on a line of a snippet of the class), snippet recall (share of snippets of
+the class with a mapped finding on one of their lines), mapped findings
+outside snippets, and the flag rate on the 50 original contracts (no
+injected bug; a flag there is either a false alarm or a real issue of the
+original code; not adjudicated).
+Hypothesis HV.3: file-level recall on SolidiFI overstates located recall for
+at least one tool and class.
+
+**V5 Budget curves** on SmartBugs-curated (manual labels) and annotated
+DAppSCAN (audit labels; SmartCheck only, it needs no compilation; the
+compile-based tools are not run on DAppSCAN). Tool score = number of mapped
+findings (ties broken in expectation, as in C4); model score = V3 frozen
+model. Recall and precision at k = 1 … n, with recall at k = the tool's own
+alarm count, and a hybrid ranking (files flagged by the tool first, ordered
+by the model, then the rest by the model). Differences at a fixed k are
+reported with a paired file-level bootstrap CI.
+
+**Separation from the graph study.** V uses no dependency graphs and no
+source ablation; DAppSCAN appears only as an audit-label target.
+
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the
