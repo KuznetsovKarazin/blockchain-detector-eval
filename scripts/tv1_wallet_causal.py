@@ -125,12 +125,21 @@ def main():
     ap.add_argument("--seeds", type=int, default=3)
     ap.add_argument("--out", default="results/transactions")
     ap.add_argument("--protocols", default="all")
+    ap.add_argument("--run", help="existing run folder: finished parts are skipped")
+    ap.add_argument("--aggregate", action="store_true", help="only merge the parts of --run")
     a = ap.parse_args()
-    run = Path(a.out) / time.strftime("tv1_%Y%m%d_%H%M%S")
-    run.mkdir(parents=True, exist_ok=True)
+    run = Path(a.run) if a.run else Path(a.out) / time.strftime("tv1_%Y%m%d_%H%M%S")
+    (run / "parts").mkdir(parents=True, exist_ok=True)
     data = Path(a.data)
+    if a.aggregate:
+        return aggregate(run, a, data)
     t0 = time.time()
-    cf = causal_features(data)
+    cache = run / "causal_features.parquet"      # local cache, not committed
+    if cache.exists():
+        cf = pd.read_parquet(cache)
+    else:
+        cf = causal_features(data)
+        cf.to_parquet(cache, index=False)
     causal = [c for c in cf.columns if c not in ("address", "step", "y_causal")]
     print("causal features", cf.shape, round(time.time() - t0), "s", flush=True)
 
@@ -175,7 +184,6 @@ def main():
     if a.protocols != "all":
         keep = tuple(a.protocols.split(","))
         protocols = {k: v for k, v in protocols.items() if k.startswith(keep)}
-    rows = []
     for pname, (D, tr, va, te) in protocols.items():
         tr, va, te = np.asarray(tr), np.asarray(va), np.asarray(te)
         labels = {"wallet": D.y.to_numpy()}
@@ -185,6 +193,10 @@ def main():
             for fname, cols in fsets.items():
                 if lname == "causal" and fname not in ("lifetime", "causal"):
                     continue
+                part = run / "parts" / f"{pname}__{lname}__{fname}.csv"
+                if part.exists():
+                    continue
+                rows = []
                 X = D[cols].to_numpy(np.float32)
                 for seed in range(a.seeds):
                     set_seed(seed)
@@ -200,8 +212,12 @@ def main():
                                      "auprc": r.auprc, "roc_auc": r.roc_auc})
                         print({k: (round(v, 4) if isinstance(v, float) else v) for k, v in rows[-1].items()},
                               flush=True)
-                pd.DataFrame(rows).to_csv(run / "metrics.csv", index=False)
-    df = pd.DataFrame(rows)
+                pd.DataFrame(rows).to_csv(part, index=False)
+    aggregate(run, a, data, causal)
+
+
+def aggregate(run, a, data, causal=None):
+    df = pd.concat([pd.read_csv(p) for p in sorted((run / "parts").glob("*.csv"))], ignore_index=True)
     df.to_csv(run / "metrics.csv", index=False)
     summ = df.groupby(["protocol", "label", "features", "model"])[
         ["auprc", "f1", "roc_auc", "test_base_rate", "n_test"]].agg(["mean", "std"]).round(4)
@@ -212,7 +228,8 @@ def main():
                                                   "TxAddr_edgelist.csv",
                                                   "wallets_features_classes_combined.csv")],
                    extra={"tx_cols": TX_COLS, "time_features": TIME_FEATURES,
-                          "causal_features": causal})
+                          "causal_features": causal,
+                          "parts": sorted(p.name for p in (run / "parts").glob("*.csv"))})
     print("wrote", run)
 
 
