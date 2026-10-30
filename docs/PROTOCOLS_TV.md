@@ -29,7 +29,9 @@ experiments below. Runs T1–T5 and `k4_20261024_204829` are the baselines.
   `fees`, `size`, `num_input_addresses`, `num_output_addresses`,
   `in_BTC_total`, `out_BTC_total`, `in_txs_degree`, `out_txs_degree`.
   Protocols P1, P1b, P2, P3 as in T5 (same row sets, same seeds, RF and
-  LightGBM, 3 seeds). Feature sets: lifetime (55), lifetime without time
+  LightGBM, 3 seeds), plus P5: temporal rows whose test part is the rows at
+  steps >= 35 of addresses with no row at steps <= 34 (added before the first
+  run, 2026-10-30). Feature sets: lifetime (55), lifetime without time
   features (P4 set), causal, causal + lifetime. **A1** is this feature-set
   grid. Labels: the Elliptic++ wallet class (lifetime). A causal label
   (illicit if any transaction of the address up to the step is labelled
