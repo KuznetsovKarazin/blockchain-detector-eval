@@ -1,0 +1,1 @@
+{"seconds": 9.850358724594116, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_denial_of_service_dos_simple.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/denial_of_service/dos_simple.sol"}

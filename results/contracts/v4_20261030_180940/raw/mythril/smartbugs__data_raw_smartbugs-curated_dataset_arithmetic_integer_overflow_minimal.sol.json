@@ -1,0 +1,1 @@
+{"seconds": 14.529915571212769, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_integer_overflow_minimal.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/integer_overflow_minimal.sol"}

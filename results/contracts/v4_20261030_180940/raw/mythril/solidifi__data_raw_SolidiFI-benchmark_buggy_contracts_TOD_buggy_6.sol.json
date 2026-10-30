@@ -1,0 +1,1 @@
+{"seconds": 118.7042281627655, "findings": [], "status": "ok", "error": "", "solc": "0.5.17", "tried": "0.5.17:ok", "outside_pragma": false, "tool": "mythril", "fid": "solidifi__data_raw_SolidiFI-benchmark_buggy_contracts_TOD_buggy_6.sol", "dataset": "solidifi", "path": "data/raw/SolidiFI-benchmark/buggy_contracts/TOD/buggy_6.sol"}

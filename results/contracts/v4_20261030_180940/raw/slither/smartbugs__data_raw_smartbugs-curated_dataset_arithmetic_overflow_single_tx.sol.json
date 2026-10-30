@@ -1,0 +1,1 @@
+{"seconds": 0.8888559341430664, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "slither", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_overflow_single_tx.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/overflow_single_tx.sol"}

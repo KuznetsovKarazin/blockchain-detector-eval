@@ -115,8 +115,10 @@ def tab_rq3(v5: Path, out: Path):
             L = L.iloc[0]
             sf = fl[(fl.tool == tool) & (fl.dataset == "solidifi") & (fl.cls == cls) & (fl.scope == "end_to_end")]
             sb = fl[(fl.tool == tool) & (fl.dataset == "smartbugs") & (fl.cls == cls) & (fl.scope == "end_to_end")]
-            prec = f2(sf.precision.iloc[0]) if len(sf) else "--"
-            sbpr = f"{f2(sb.precision.iloc[0])} / {f2(sb.recall.iloc[0])}" if len(sb) else "--"
+            # precision is undefined when the tool flags nothing
+            prec = f2(sf.precision.iloc[0]) if len(sf) and sf.tp.iloc[0] + sf.fp.iloc[0] > 0 else "--"
+            sbp = f2(sb.precision.iloc[0]) if len(sb) and sb.tp.iloc[0] + sb.fp.iloc[0] > 0 else "--"
+            sbpr = f"{sbp} / {f2(sb.recall.iloc[0])}" if len(sb) else "--"
             rows.append(f"{TOOLS[tool]} & {CLS[cls]} & {int(L.n_pos_analysed)}/{int(L.n_pos)} & {f2(L.file_recall)} & "
                         f"{f2(L.snippet_recall)} & {prec} & {f2(L.flag_rate_originals)} & {sbpr}\\\\")
     head = ("\\begin{tabular}{@{}llrrrrrr@{}}\n\\toprule\n & & \\multicolumn{5}{c}{SolidiFI} & SmartBugs\\\\\n"

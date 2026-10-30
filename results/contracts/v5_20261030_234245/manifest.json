@@ -1,0 +1,123 @@
+{
+  "script": "v5_tools_lines_budget.py",
+  "created_utc": "2026-10-30T23:43:03Z",
+  "git_commit": "0cd2c3a2af7bcbeb8ab600bca2eabc089301ca37",
+  "git_dirty": false,
+  "dirty_files": [],
+  "diff_sha256": null,
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "v4_run": [
+      "results/contracts/v4_20261030_180940",
+      "results/contracts/v4_20261030_185950"
+    ],
+    "v3_run": "results/contracts/v3_20261030_182906",
+    "out": "results/contracts"
+  },
+  "data": {
+    "results/contracts/v4_20261030_180940/tool_runs.csv": "1f8ef55ecb60bb38d9b517a5b9621c3fae96c32777a1ee7ef3ab402e022d7ee4",
+    "results/contracts/v4_20261030_185950/tool_runs.csv": "a727730dc9ea78373cb7174e5e3bbe1b2573fed11e8fb86ba35b030e9b988d2b",
+    "results/contracts/v3_20261030_182906/v3_selection.csv": "8230f7ce9f3e1971d640f611fbd829999a97923e849b2b0ef1aa941aa97e79d0",
+    "results/contracts/v3_20261030_182906/target_scores.parquet": "173c49c7b101eeea9468762eb29a4affd23a1869e901bdf7bbae243e6b2961f3"
+  },
+  "data_sets": {},
+  "mapping": {
+    "slither": {
+      "reentrancy": [
+        "reentrancy-benign",
+        "reentrancy-eth",
+        "reentrancy-events",
+        "reentrancy-no-eth",
+        "reentrancy-unlimited-gas"
+      ],
+      "timestamp": [
+        "timestamp"
+      ],
+      "unchecked": [
+        "unchecked-lowlevel",
+        "unchecked-send"
+      ],
+      "tx_origin": [
+        "tx-origin"
+      ],
+      "unchecked_merged": [
+        "unchecked-lowlevel",
+        "unchecked-send"
+      ]
+    },
+    "slither_full": {
+      "reentrancy": [
+        "reentrancy-benign",
+        "reentrancy-eth",
+        "reentrancy-events",
+        "reentrancy-no-eth",
+        "reentrancy-unlimited-gas"
+      ],
+      "timestamp": [
+        "timestamp"
+      ],
+      "unchecked": [
+        "unchecked-lowlevel",
+        "unchecked-send"
+      ],
+      "tx_origin": [
+        "tx-origin"
+      ],
+      "unchecked_merged": [
+        "unchecked-lowlevel",
+        "unchecked-send"
+      ]
+    },
+    "mythril": {
+      "reentrancy": [
+        "SWC-107"
+      ],
+      "arithmetic": [
+        "SWC-101"
+      ],
+      "timestamp": [
+        "SWC-116"
+      ],
+      "unchecked": [
+        "SWC-104"
+      ],
+      "tx_origin": [
+        "SWC-115"
+      ],
+      "unprotected_send": [
+        "SWC-105"
+      ],
+      "unchecked_merged": [
+        "SWC-104"
+      ]
+    },
+    "smartcheck": {
+      "timestamp": [
+        "SOLIDITY_EXACT_TIME"
+      ],
+      "unchecked": [
+        "SOLIDITY_UNCHECKED_CALL"
+      ],
+      "tx_origin": [
+        "SOLIDITY_TX_ORIGIN"
+      ],
+      "unchecked_merged": [
+        "SOLIDITY_UNCHECKED_CALL"
+      ]
+    }
+  }
+}

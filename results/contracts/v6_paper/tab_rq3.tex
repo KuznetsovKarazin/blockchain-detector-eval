@@ -1,0 +1,25 @@
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+ & & \multicolumn{5}{c}{SolidiFI} & SmartBugs\\
+\cmidrule(lr){3-7}\cmidrule(lr){8-8}
+Tool & Class & analysed & file R & snip.\ R & file P & orig.\ flagged & P / R\\
+\midrule
+Slither & Reentrancy & 50/50 & 1.00 & 0.29 & 0.51 & 0.16 & 0.76 / 0.94\\
+Slither & Timestamp & 50/50 & 1.00 & 0.82 & 0.33 & 0.20 & 0.22 / 1.00\\
+Slither & Unchecked call & 50/50 & 1.00 & 0.67 & 1.00 & 0.00 & 0.89 / 0.98\\
+Slither & tx.origin & 50/50 & 1.00 & 1.00 & 0.89 & 0.02 & --\\
+Slither & Unchecked (merged) & 100/100 & 0.50 & 0.35 & 1.00 & 0.00 & --\\
+Slither (all) & Reentrancy & 50/50 & 1.00 & 1.00 & 0.26 & 0.20 & 0.50 / 0.94\\
+Mythril & Reentrancy & 43/44 & 0.50 & 0.03 & 0.85 & 0.00 & 0.41 / 0.90\\
+Mythril & Timestamp & 10/10 & 0.80 & 0.32 & 0.50 & 0.00 & 0.21 / 0.60\\
+Mythril & Unchecked call & 10/10 & 0.70 & 0.21 & 1.00 & 0.00 & 0.88 / 0.81\\
+Mythril & Arithmetic & 10/10 & 0.00 & 0.00 & -- & 0.00 & -- / 0.00\\
+Mythril & tx.origin & 10/10 & 0.80 & 0.53 & 1.00 & 0.00 & --\\
+Mythril & Unprotected send & 10/10 & 0.80 & 0.45 & 0.13 & 0.00 & --\\
+Mythril & Unchecked (merged) & 20/20 & 0.35 & 0.10 & 1.00 & 0.00 & --\\
+SmartCheck & Timestamp & 50/50 & 0.94 & 0.35 & 1.00 & 0.00 & 1.00 / 0.20\\
+SmartCheck & Unchecked call & 50/50 & 0.52 & 0.04 & 0.32 & 0.02 & 0.90 / 1.00\\
+SmartCheck & tx.origin & 50/50 & 0.68 & 0.07 & 0.87 & 0.02 & --\\
+SmartCheck & Unchecked (merged) & 100/100 & 0.27 & 0.02 & 0.33 & 0.02 & --\\
+\bottomrule
+\end{tabular}

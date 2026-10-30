@@ -1,0 +1,1 @@
+{"seconds": 1.06630277633667, "findings": [{"rule": "tautology", "lines": [20], "impact": "Medium"}], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "slither", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_token.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/token.sol"}
