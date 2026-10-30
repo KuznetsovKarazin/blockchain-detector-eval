@@ -182,6 +182,20 @@ reported with a paired file-level bootstrap CI.
 **Separation from the graph study.** V uses no dependency graphs and no
 source ablation; DAppSCAN appears only as an audit-label target.
 
+**Amendment 1 (2026-10-30, before any V result for these classes was
+read).** SolidiFI's own evaluator (`inspection.py` of the tool repository)
+scores "Unchecked-Send" with Mythril's *Unprotected Ether Withdrawal*
+(SWC-105) and Securify's *UnrestrictedEtherFlow*, and "Unhandled-Exceptions"
+with the unchecked-call detectors (SWC-104); the only Unchecked-Send template
+is `msg.sender.transfer(1 ether)` in an unprotected public function, which
+reverts on failure and has no return value to check. C2 and C3 merged both
+types into `unchecked`. In V, `unchecked` is Unhandled-Exceptions only, the
+new class `unprotected_send` is Unchecked-Send (Mythril SWC-105; no Slither or
+SmartCheck rule is mapped), and the C2/C3 mapping is kept as
+`unchecked_merged` (standard setting and tools only, no loto) to show how much
+the mapping changes the numbers. V3 uses the corrected label by default
+(`--solidifi-unchecked merged` reproduces the C2 label).
+
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the
