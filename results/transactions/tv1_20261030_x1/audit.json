@@ -1,0 +1,28 @@
+{
+  "wallet_rows": 1268260,
+  "causal_rows": 920691,
+  "wallet_rows_without_causal_row": 0,
+  "labelled_rows": 367472,
+  "labelled_addresses": 265354,
+  "causal_label_at_last_row_vs_class": {
+    "0": {
+      "0": 251088,
+      "1": 0
+    },
+    "1": {
+      "0": 0,
+      "1": 14266
+    }
+  },
+  "causal_label_at_first_row_vs_class": {
+    "0": {
+      "0": 292104,
+      "1": 153
+    },
+    "1": {
+      "0": 0,
+      "1": 27332
+    }
+  },
+  "illicit_wallets_with_no_illicit_tx_by_first_row": 153
+}

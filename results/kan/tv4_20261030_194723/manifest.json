@@ -1,0 +1,118 @@
+{
+  "script": "tv4_k4_temporal.py",
+  "created_utc": "2026-10-30T19:57:52Z",
+  "git_commit": "c8803c05e59351a8adf46cf55d011133c493ae6c",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/tv5_gnn_optuna.py"
+  ],
+  "diff_sha256": "b6f685499909b34c1051ec7aed00c8c6bfc9386898838a09c6a14a409c7a20ce",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.15.0",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": null
+  },
+  "config": {
+    "seeds": 5,
+    "k4_run": "results/kan/k4_20261024_204829",
+    "quiet": "data/derived/k4_quiet",
+    "models": "rule,logreg,rf,lgbm",
+    "out": "results/kan"
+  },
+  "data": {
+    "results/kan/k4_20261024_204829/features.parquet": "7db6a6728b02f51d62bbd0c282254eb5f2bf4e99fca7c87be806cb4021b22671"
+  },
+  "data_sets": {},
+  "splits": {
+    "t2024": [
+      "2022",
+      "2023",
+      [
+        "2024"
+      ]
+    ],
+    "t2025": [
+      "2023",
+      "2024",
+      [
+        "2025",
+        "2026"
+      ]
+    ],
+    "t2026": [
+      "2024",
+      "2025",
+      [
+        "2026"
+      ]
+    ]
+  },
+  "setup": [
+    "nonce",
+    "gas_used",
+    "to_created_today",
+    "n_contracts"
+  ],
+  "mechanism": [
+    "has_flash",
+    "n_flash",
+    "flash_to_pool",
+    "max_price_move",
+    "net_price_move",
+    "n_pools"
+  ],
+  "quiet_dates": {
+    "seed": 20261030,
+    "plan": {
+      "2024": [
+        "2024-01-01",
+        "2024-12-31",
+        8
+      ],
+      "2025": [
+        "2025-01-01",
+        "2025-12-31",
+        8
+      ],
+      "2026": [
+        "2026-01-01",
+        "2026-09-30",
+        6
+      ]
+    },
+    "dates": [
+      "2024-01-13",
+      "2024-03-06",
+      "2024-03-08",
+      "2024-03-19",
+      "2024-05-26",
+      "2024-05-31",
+      "2024-08-04",
+      "2024-10-19",
+      "2025-02-01",
+      "2025-03-02",
+      "2025-04-20",
+      "2025-07-15",
+      "2025-09-20",
+      "2025-10-23",
+      "2025-11-20",
+      "2025-12-20",
+      "2026-01-27",
+      "2026-02-11",
+      "2026-02-20",
+      "2026-04-08",
+      "2026-07-22",
+      "2026-08-01"
+    ]
+  }
+}
