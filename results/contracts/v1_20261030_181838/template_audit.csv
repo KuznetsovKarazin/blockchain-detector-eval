@@ -1,0 +1,45 @@
+template,bug_type,example_file,occurrences,files,reading,reason,compiles,errors,warnings,call_opcodes,restricted_to_pure_or_view
+Re-entrancy/T01,Re-entrancy,Re-entrancy/tf/1.txt,91,48,yes,call.value forwards all gas; balance reset after the call,True,,,1,False
+Re-entrancy/T02,Re-entrancy,Re-entrancy/tf/2.txt,165,48,limited,send forwards the 2300-gas stipend; state written after the send,True,,,1,False
+Re-entrancy/T03,Re-entrancy,Re-entrancy/tf/3.txt,68,35,yes,call.value forwards all gas; balance reduced after the call,True,,,1,False
+Re-entrancy/T04,Re-entrancy,Re-entrancy/tf/4.txt,208,49,limited,transfer forwards the 2300-gas stipend; state reset after the transfer,True,,,1,False
+Re-entrancy/T05,Re-entrancy,Re-entrancy/tf/5.txt,68,40,limited,send with 2300-gas stipend; state reset after the send,True,,,1,False
+Re-entrancy/T06,Re-entrancy,Re-entrancy/tf/6.txt,140,50,limited,send with 2300-gas stipend; guard flag reset after the send,True,,,1,False
+Re-entrancy/T07,Re-entrancy,Re-entrancy/tf/7.txt,194,50,limited,send with 2300-gas stipend; counter updated after the send,True,,,1,False
+Re-entrancy/T08,Re-entrancy,Re-entrancy/tf/9.txt,38,38,yes,call.value forwards all gas; state written after the call,True,,,1,False
+Re-entrancy/T09,Re-entrancy,Re-entrancy/tf/10.txt,114,50,limited,send with 2300-gas stipend; balance reduced after the send,True,,,1,False
+Re-entrancy/T10,Re-entrancy,Re-entrancy/tf/13.txt,50,50,yes,call.value forwards all gas; guard flag reset after the call,True,,,2,False
+Re-entrancy/T11,Re-entrancy,Re-entrancy/tf/15.txt,65,50,limited,send with 2300-gas stipend; balance reset after the send,True,,,1,False
+Re-entrancy/T12,Re-entrancy,Re-entrancy/tf/26.txt,142,50,yes,call.value forwards all gas; balance reset after the call,True,,,1,False
+Timestamp-Dependency/T01,Timestamp-Dependency,Timestamp-Dependency/tf/1.txt,255,50,limited,view function returns a timestamp comparison; no state change depends on it,True,,,0,False
+Timestamp-Dependency/T02,Timestamp-Dependency,Timestamp-Dependency/tf/2.txt,227,46,yes,winner chosen by equality with block.timestamp,True,,,0,False
+Timestamp-Dependency/T03,Timestamp-Dependency,Timestamp-Dependency/tf/3.txt,362,50,yes,winner chosen by equality with block.timestamp (via a local),True,,,0,False
+Timestamp-Dependency/T04,Timestamp-Dependency,Timestamp-Dependency/tf/4.txt,287,48,yes,payout when now % 15 == 0 (SWC-116 example),True,,,1,False
+Timestamp-Dependency/T05,Timestamp-Dependency,Timestamp-Dependency/ts/1.txt,250,50,no,state variable initialised to block.timestamp; nothing reads it,True,,,0,False
+Unchecked-Send/T01,Unchecked-Send,Unchecked-Send/tf/1.txt,1266,50,yes,unprotected public transfer of 1 ether to msg.sender (SWC-105),True,,,1,False
+Unhandled-Exceptions/T01,Unhandled-Exceptions,Unhandled-Exceptions/tf/1.txt,74,34,no,callee.call.value(2 ether) is not invoked: no call is made,True,,Function state mutability can be restricted to pure,0,True
+Unhandled-Exceptions/T02,Unhandled-Exceptions,Unhandled-Exceptions/tf/2.txt,147,46,yes,return value of send ignored,True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+Unhandled-Exceptions/T03,Unhandled-Exceptions,Unhandled-Exceptions/tf/3.txt,134,50,yes,return value of send ignored,True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+Unhandled-Exceptions/T04,Unhandled-Exceptions,Unhandled-Exceptions/tf/4.txt,104,50,limited,"return value of send tested, both branches empty",True,,,1,False
+Unhandled-Exceptions/T05,Unhandled-Exceptions,Unhandled-Exceptions/tf/5.txt,44,27,yes,return value of send ignored (amount 0),True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+Unhandled-Exceptions/T06,Unhandled-Exceptions,Unhandled-Exceptions/tf/6.txt,71,46,no,return value of send tested and handled (revert on success),True,,,1,False
+Unhandled-Exceptions/T07,Unhandled-Exceptions,Unhandled-Exceptions/tf/7.txt,155,50,no,return value of send tested; the function always reverts,True,,,1,False
+Unhandled-Exceptions/T08,Unhandled-Exceptions,Unhandled-Exceptions/tf/8.txt,177,50,yes,"return value of send ignored, flag set afterwards",True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+Unhandled-Exceptions/T09,Unhandled-Exceptions,Unhandled-Exceptions/tf/9.txt,139,50,yes,return value of send ignored,True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+Unhandled-Exceptions/T10,Unhandled-Exceptions,Unhandled-Exceptions/tf/10.txt,67,45,yes,return value of send ignored,True,,Failure condition of 'send' ignored. Consider using 'transfer' instead. | Unused function parameter. Remove or comment out the variable name to silence this warning.,1,False
+Unhandled-Exceptions/T11,Unhandled-Exceptions,Unhandled-Exceptions/tf/11.txt,114,49,yes,return value of send ignored,True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+Unhandled-Exceptions/T12,Unhandled-Exceptions,Unhandled-Exceptions/tf/12.txt,89,48,yes,"return value of call.value(...)("""") ignored",True,,Return value of low-level calls not used.,1,False
+Unhandled-Exceptions/T13,Unhandled-Exceptions,Unhandled-Exceptions/tf/13.txt,50,50,no,callee.call.value(1 ether) is not invoked: no call is made,True,,Function state mutability can be restricted to pure,0,True
+Unhandled-Exceptions/T14,Unhandled-Exceptions,Unhandled-Exceptions/tf/29.txt,4,4,yes,return value of send ignored (amount 0),True,,Failure condition of 'send' ignored. Consider using 'transfer' instead.,1,False
+TOD/T01,TOD,TOD/tf/1.txt,712,50,yes,reward goes to whoever set the winner first; front-runnable,True,,,1,False
+TOD/T02,TOD,TOD/tf/2.txt,624,50,yes,reward amount can change between submission and claim,True,,,2,False
+Overflow-Underflow/T01,Overflow-Underflow,Overflow-Underflow/tf/1.txt,28,28,yes,lock time += user input can wrap,True,,,1,False
+Overflow-Underflow/T02,Overflow-Underflow,Overflow-Underflow/tf/2.txt,31,31,yes,balance - value >= 0 is always true; balance can underflow,True,,,1,False
+Overflow-Underflow/T03,Overflow-Underflow,Overflow-Underflow/tf/3.txt,405,50,limited,uint8 local underflows; no state or transfer depends on it,True,,Function state mutability can be restricted to pure,0,True
+Overflow-Underflow/T04,Overflow-Underflow,Overflow-Underflow/tf/4.txt,339,50,limited,uint8 local overflows; no state or transfer depends on it,True,,Function state mutability can be restricted to pure,0,True
+Overflow-Underflow/T05,Overflow-Underflow,Overflow-Underflow/tf/5.txt,277,50,yes,lock time += user input can wrap,True,,,1,False
+Overflow-Underflow/T06,Overflow-Underflow,Overflow-Underflow/tf/6.txt,253,48,yes,balance - value >= 0 is always true; balance can underflow,True,,,0,False
+tx.origin/T01,tx.origin,tx-origin/tf/1.txt,307,50,limited,tx.origin compared with an owner address the caller passes as argument,True,,,2,False
+tx.origin/T02,tx.origin,tx-origin/tf/2.txt,285,48,limited,tx.origin compared with an owner address the caller passes as argument,True,,,1,False
+tx.origin/T03,tx.origin,tx-origin/tf/3.txt,405,50,no,"tx.origin check guards to.call.value(amount), which is not invoked",True,,Function state mutability can be restricted to view,0,True
+tx.origin/T04,tx.origin,tx-origin/tf/4.txt,339,50,no,tx.origin check guards nothing,True,,Function state mutability can be restricted to view,0,True
