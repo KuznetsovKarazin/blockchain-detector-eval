@@ -201,6 +201,8 @@ def main():
     ap.add_argument("--timeout", type=int, default=600, help="wall seconds per tool call")
     ap.add_argument("--exec-timeout", type=int, default=90, help="Mythril --execution-timeout")
     ap.add_argument("--dappscan", action="store_true", help="also SmartCheck on annotated DAppSCAN files")
+    ap.add_argument("--mythril-sample", type=int, default=0,
+                    help="Mythril on SolidiFI only for base contracts k <= this (0 = all); protocol amendment 3")
     a = ap.parse_args()
     run = Path(a.resume) if a.resume else Path(a.out) / time.strftime("v4_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
@@ -221,6 +223,9 @@ def main():
         (run / "raw" / tool).mkdir(parents=True, exist_ok=True)
         for r in df.itertuples():
             if tool != "smartcheck" and r.dataset == "dappscan":
+                continue
+            if tool == "mythril" and a.mythril_sample and r.dataset.startswith("solidifi") \
+                    and int(re.search(r"(\d+)\.sol$", r.path).group(1)) > a.mythril_sample:
                 continue
             if not (run / "raw" / tool / f"{r.fid}.json").exists():
                 jobs.append((tool, r))

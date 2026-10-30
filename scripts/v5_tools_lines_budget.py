@@ -128,8 +128,10 @@ def main():
                 continue
             if ds == "solidifi":
                 y = np.array([sf[p].bug_type in CLASS_TYPES[cls] for p in g.path]).astype(int)
-            else:
+            elif cls in lab.columns:
                 y = lab.loc[g.path, cls].to_numpy().astype(int)
+            else:                                   # SolidiFI-only class
+                continue
             if y.sum() == 0:
                 continue
             for scope, m in (("end_to_end", np.ones(len(g), bool)), ("analysed_only", ok)):

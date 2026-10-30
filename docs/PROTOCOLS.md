@@ -204,6 +204,15 @@ configuration, `slither_full`, keeps all detectors and is reported as a
 configuration-sensitivity result; it was added because of the observed
 template-level pattern, so it is exploratory.
 
+**Amendment 3 (2026-10-30, compute budget; before any Mythril result on the
+non-reentrancy SolidiFI types was read).** Mythril needs about five minutes
+per SolidiFI file on four CPU cores (wall limit 600 s, `--execution-timeout 90`),
+so the full 400 files would take about eight hours. Mythril on SolidiFI is
+restricted to base contracts k ≤ 10 (`--mythril-sample 10`): buggy_1..10 of each
+type and originals 1..10. The 42 Re-entrancy files analysed before the
+restriction are kept. SmartBugs-curated is analysed in full. Slither and
+SmartCheck are not affected.
+
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the
