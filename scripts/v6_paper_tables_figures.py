@@ -42,11 +42,12 @@ def f2(x):
     return "--" if pd.isna(x) else f"{x:.2f}"
 
 
-def tab_rq2(v2: Path, out: Path):
+def tab_rq2(v1: Path, v2: Path, out: Path):
     m = pd.read_csv(v2 / "v2_metrics.csv")
+    reading = pd.read_csv(v1 / "template_audit.csv").set_index("template").reading
     reps = [("lex_raw", "logreg", r"\textsc{lex\_raw}"), ("lex_norm", "logreg", r"\textsc{lex\_norm}"),
             ("pat", "rf", r"\textsc{pat}/RF"), ("pat", "lgbm", r"\textsc{pat}/LGBM")]
-    rows = []
+    rows, std_all = [], []
     for cls in ["reentrancy", "timestamp", "unchecked", "arithmetic", "tx_origin"]:
         cells = []
         for rep, model, _ in reps:
@@ -55,22 +56,44 @@ def tab_rq2(v2: Path, out: Path):
             # template means first (each template weighs the same), then mean over templates
             seen = x[x.setting == "seen"].groupby("template").auprc.mean().mean()
             loto = x[x.setting == "loto"].groupby("template").auprc.mean().mean()
-            cells += [f3(std), f3(seen), f3(loto)]
+            cells += [f3(seen), f3(loto)]
+            std_all.append(std)
         n_t = m[(m.cls == cls) & (m.setting == "loto")].template.nunique()
         rows.append(f"{CLS[cls]} ({n_t}) & " + " & ".join(cells) + r"\\")
-    head = (r"\begin{tabular}{@{}l" + "rrr" * 4 + r"@{}}" "\n\\toprule\n"
-            + " & " + " & ".join(rf"\multicolumn{{3}}{{c}}{{{n}}}" for _, _, n in reps) + r"\\" "\n"
-            + "".join(rf"\cmidrule(lr){{{2 + 3 * i}-{4 + 3 * i}}}" for i in range(4)) + "\n"
-            + "Class (templates) & " + " & ".join(["std", "seen", "LOTO"] * 4) + r"\\" "\n\\midrule\n")
+    # templates grouped by the author's reading (V1), over the five classes above
+    m5 = m[m.cls.isin(["reentrancy", "timestamp", "unchecked", "arithmetic", "tx_origin"])
+           & m.setting.isin(["seen", "loto"])].copy()
+    m5["reading"] = m5.template.map(reading)
+    rows.append("\\midrule")
+    for rd in ("yes", "limited", "no"):
+        cells = []
+        for rep, model, _ in reps:
+            x = m5[(m5.reading == rd) & (m5.rep == rep) & (m5.model == model)]
+            t = x.groupby(["setting", "template"]).auprc.mean().groupby("setting").mean()
+            cells += [f3(t.get("seen")), f3(t.get("loto"))]
+        n_t = m5[m5.reading == rd].template.nunique()
+        rows.append(f"Read as \\emph{{{rd}}} ({n_t}) & " + " & ".join(cells) + r"\\")
+    head = (r"\begin{tabular}{@{}l" + "rr" * 4 + r"@{}}" "\n\\toprule\n"
+            + " & " + " & ".join(rf"\multicolumn{{2}}{{c}}{{{n}}}" for _, _, n in reps) + r"\\" "\n"
+            + "".join(rf"\cmidrule(lr){{{2 + 2 * i}-{3 + 2 * i}}}" for i in range(4)) + "\n"
+            + "Class (templates) & " + " & ".join(["seen", "LOTO"] * 4) + r"\\" "\n\\midrule\n")
+    (out / "tab_rq2_std_range.txt").write_text(f"{min(std_all):.3f}--{max(std_all):.3f}\n")
     (out / "tab_rq2.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
+
+
+def short_model(c: str) -> str:
+    """lex_raw/logreg/C=0.1 -> raw-LR 0.1; pat/lgbm -> pat-LGBM."""
+    p = c.split("/")
+    if p[0] == "pat":
+        return "pat-" + {"rf": "RF", "lgbm": "LGBM", "mlp": "MLP"}[p[1]]
+    return f"{p[0][4:]}-LR {p[2][2:]}"
 
 
 def tab_rq4(v3: Path, out: Path):
     s = pd.read_csv(v3 / "v3_selection.csv")
     rows = []
     for r in s.itertuples():
-        cand = r.candidate.replace("_", r"\_").replace("logreg/", "LR ").replace("/", " ")
-        orc = r.oracle.replace("_", r"\_").replace("logreg/", "LR ").replace("/", " ")
+        cand, orc = short_model(r.candidate), short_model(r.oracle)
         rows.append(f"{CLS[r.cls]} & {DS[r.source]}$\\rightarrow${DS[r.target]} & {cand} & {r.auprc:.3f} "
                     f"({r.ci_lo:.3f}--{r.ci_hi:.3f}) & {r.base_rate:.3f} & {orc} & {r.oracle_auprc:.3f} & {int(r.rank_on_target)}\\\\")
     head = ("\\begin{tabular}{@{}llllrlrr@{}}\n\\toprule\nClass & Pair & Frozen model & AP (95\\% CI) & Chance & "
@@ -83,7 +106,9 @@ def tab_rq3(v5: Path, out: Path):
     lo = pd.read_csv(v5 / "solidifi_located.csv")
     rows = []
     for tool in ["slither", "slither_full", "mythril", "smartcheck"]:
-        for cls in ["reentrancy", "timestamp", "unchecked", "arithmetic", "tx_origin", "unprotected_send", "unchecked_merged"]:
+        # all detectors differ from the default configuration only for reentrancy
+        for cls in (["reentrancy"] if tool == "slither_full" else
+                    ["reentrancy", "timestamp", "unchecked", "arithmetic", "tx_origin", "unprotected_send", "unchecked_merged"]):
             L = lo[(lo.tool == tool) & (lo.cls == cls)]
             if L.empty or L.n_pos.iloc[0] == 0:
                 continue
@@ -95,8 +120,8 @@ def tab_rq3(v5: Path, out: Path):
             rows.append(f"{TOOLS[tool]} & {CLS[cls]} & {int(L.n_pos_analysed)}/{int(L.n_pos)} & {f2(L.file_recall)} & "
                         f"{f2(L.snippet_recall)} & {prec} & {f2(L.flag_rate_originals)} & {sbpr}\\\\")
     head = ("\\begin{tabular}{@{}llrrrrrr@{}}\n\\toprule\n & & \\multicolumn{5}{c}{SolidiFI} & SmartBugs\\\\\n"
-            "\\cmidrule(lr){3-7}\\cmidrule(lr){8-8}\nTool & Class & analysed & file R & snippet R & file P & "
-            "originals flagged & P / R\\\\\n\\midrule\n")
+            "\\cmidrule(lr){3-7}\\cmidrule(lr){8-8}\nTool & Class & analysed & file R & snip.\\ R & file P & "
+            "orig.\\ flagged & P / R\\\\\n\\midrule\n")
     (out / "tab_rq3.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
 
 
@@ -108,7 +133,7 @@ def tab_rq5(v5: Path, out: Path):
         g = g.set_index("k")
         kt = int(g[g.k_is_tool_alarms].index[0]) if g.k_is_tool_alarms.any() else None
         cells = []
-        for k in (5, 10, 20):
+        for k in (5, 20):
             if k not in g.index:
                 cells += ["--"] * 3
                 continue
@@ -118,11 +143,11 @@ def tab_rq5(v5: Path, out: Path):
         rows.append(f"{TOOLS[tool]} & {CLS[cls]} & {DS[src]} & {int(g.n_pos.iloc[0])} & " + " & ".join(cells)
                     + (f" & {kt} & {f2(rt.tool_recall)} & {f2(rt.model_recall)}" if rt is not None else " & -- & -- & --")
                     + r"\\")
-    head = ("\\begin{tabular}{@{}lllr" + "rrr" * 3 + "rrr@{}}\n\\toprule\n & & & & "
-            + " & ".join(rf"\multicolumn{{3}}{{c}}{{$k={k}$}}" for k in (5, 10, 20))
+    head = ("\\begin{tabular}{@{}lllr" + "rrr" * 2 + "rrr@{}}\n\\toprule\n & & & & "
+            + " & ".join(rf"\multicolumn{{3}}{{c}}{{$k={k}$}}" for k in (5, 20))
             + r" & \multicolumn{3}{c}{$k=$ tool alarms}\\" "\n"
-            + "".join(rf"\cmidrule(lr){{{5 + 3 * i}-{7 + 3 * i}}}" for i in range(4)) + "\n"
-            + "Tool & Class & Src & Pos & " + " & ".join(["T", "M", "H"] * 3) + r" & $k$ & T & M\\" "\n\\midrule\n")
+            + "".join(rf"\cmidrule(lr){{{5 + 3 * i}-{7 + 3 * i}}}" for i in range(3)) + "\n"
+            + "Tool & Class & Src & Pos & " + " & ".join(["T", "M", "H"] * 2) + r" & $k$ & T & M\\" "\n\\midrule\n")
     (out / "tab_rq5.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
 
 
@@ -135,7 +160,7 @@ def fig_templates(v1: Path, v2: Path, v5: Path, out: Path):
     piv = t.pivot_table(index="template", columns="tool", values="snippet_recall")
     m = pd.read_csv(v2 / "v2_metrics.csv")
     ml = m[(m.rep == "lex_raw") & m.setting.isin(["seen", "loto"])].groupby(["template", "setting"]).auprc.mean().unstack()
-    order = [x for x in aud.index if x.split("/")[0] not in ("TOD",)]
+    order = [x for x in aud.index if x.split("/")[0] not in ("TOD", "Unchecked-Send")]
     cols = [(TOOLS[c], piv.reindex(order)[c] if c in piv else pd.Series(np.nan, index=order)) for c in tools]
     cols += [("lex_raw seen AP", ml.reindex(order)["seen"]), ("lex_raw LOTO AP", ml.reindex(order)["loto"])]
     M = np.column_stack([c[1].to_numpy(dtype=float) for c in cols])
@@ -178,13 +203,12 @@ def fig_budget(v5: Path, out: Path):
             continue
         src = "dappscan" if cls in ("unchecked",) else "solidifi"
         g = g[g.source == src]
-        for det, col, lab in (("tool", BLUE, TOOLS[tool]), ("model", ORANGE, f"model ({DS[src]})"),
-                              ("hybrid", AQUA, "hybrid")):
+        for det, col, lab, lw in (("hybrid", AQUA, "hybrid", 2.6), ("tool", BLUE, "tool", 1.6),
+                                  ("model", ORANGE, "model", 1.4)):
             h = g[g.detector == det].sort_values("k")
-            ax.plot(h.k, h.recall, color=col, lw=1.6, label=lab)
+            ax.plot(h.k, h.recall, color=col, lw=lw, label=lab)
         n = int(g.k.max())
-        npos = None
-        ax.set_title(f"{CLS[cls]}", fontsize=8, color=INK)
+        ax.set_title(f"{CLS[cls]}\n{TOOLS[tool]}, model from {DS[src]}", fontsize=7.5, color=INK)
         ax.set_xlim(0, min(n, 80))
         ax.set_xlabel("files inspected (k)")
         ax.grid(axis="y", color="#e7e6e2", lw=0.6)
@@ -203,7 +227,7 @@ def main():
     a = ap.parse_args()
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
-    tab_rq2(Path(a.v2), out)
+    tab_rq2(Path(a.v1), Path(a.v2), out)
     tab_rq4(Path(a.v3), out)
     tab_rq3(Path(a.v5), out)
     tab_rq5(Path(a.v5), out)
