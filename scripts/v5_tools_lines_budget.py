@@ -46,12 +46,14 @@ MAPPING = {
                                "reentrancy-benign", "reentrancy-events"},
                 "timestamp": {"timestamp"}, "unchecked": {"unchecked-lowlevel", "unchecked-send"},
                 "tx_origin": {"tx-origin"}, "unchecked_merged": {"unchecked-lowlevel", "unchecked-send"}},
+    "slither_full": None,             # same rules as slither, filled below
     "mythril": {"reentrancy": {"SWC-107"}, "arithmetic": {"SWC-101"}, "timestamp": {"SWC-116"},
                 "unchecked": {"SWC-104"}, "tx_origin": {"SWC-115"}, "unprotected_send": {"SWC-105"},
                 "unchecked_merged": {"SWC-104"}},
     "smartcheck": {"timestamp": {"SOLIDITY_EXACT_TIME"}, "unchecked": {"SOLIDITY_UNCHECKED_CALL"},
                    "tx_origin": {"SOLIDITY_TX_ORIGIN"}, "unchecked_merged": {"SOLIDITY_UNCHECKED_CALL"}},
 }
+MAPPING["slither_full"] = MAPPING["slither"]
 CLASS_TYPES = {"reentrancy": ["Re-entrancy"], "timestamp": ["Timestamp-Dependency"],
                "unchecked": ["Unhandled-Exceptions"], "unprotected_send": ["Unchecked-Send"],
                "arithmetic": ["Overflow-Underflow"], "tx_origin": ["tx.origin"],
@@ -100,13 +102,13 @@ def paired_boot(y, s_a, s_b, k, n=2000, seed=0):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--v4-run", required=True)
+    ap.add_argument("--v4-run", required=True, nargs="+", help="one or more V4 runs (tools are merged)")
     ap.add_argument("--v3-run", required=True)
     ap.add_argument("--out", default="results/contracts")
     a = ap.parse_args()
     run = Path(a.out) / time.strftime("v5_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
-    R = load_v4(Path(a.v4_run))
+    R = pd.concat([load_v4(Path(r)) for r in a.v4_run], ignore_index=True)
     files, clean, cat = solidifi.load()
     sf = {str(f.path): f for f in files}
     df = load_all()
@@ -225,7 +227,7 @@ def main():
     print(pd.DataFrame(loc).round(3).to_string())
     print(pd.DataFrame(points).round(3).to_string())
     write_manifest(run, script=Path(__file__).name, config=vars(a),
-                   data_files=[Path(a.v4_run) / "tool_runs.csv", v3 / "v3_selection.csv", v3 / "target_scores.parquet"],
+                   data_files=[*(Path(r) / "tool_runs.csv" for r in a.v4_run), v3 / "v3_selection.csv", v3 / "target_scores.parquet"],
                    extra={"mapping": {t: {c: sorted(v) for c, v in m.items()} for t, m in MAPPING.items()}})
     print("wrote", run)
 

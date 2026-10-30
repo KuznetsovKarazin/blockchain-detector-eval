@@ -196,6 +196,14 @@ SmartCheck rule is mapped), and the C2/C3 mapping is kept as
 the mapping changes the numbers. V3 uses the corrected label by default
 (`--solidifi-unchecked merged` reproduces the C2 label).
 
+**Amendment 2 (2026-10-30, after the Slither results on SolidiFI were
+read).** Slither ran with `--exclude-informational --exclude-optimization`,
+as in C3. That removes `reentrancy-unlimited-gas` (informational), the
+detector for reentrancy through `send` / `transfer`. A second Slither
+configuration, `slither_full`, keeps all detectors and is reported as a
+configuration-sensitivity result; it was added because of the observed
+template-level pattern, so it is exploratory.
+
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the

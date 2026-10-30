@@ -1,7 +1,8 @@
 """
 V4  Three static analysers on the same files, with line numbers and failure accounting.
 
-Tools: Slither 0.11.6 (static, SlithIR), Mythril 0.24.8 (symbolic execution),
+Tools: Slither 0.11.6 (static, SlithIR; `slither` excludes informational and
+optimisation detectors as C3 does, `slither_full` keeps them), Mythril 0.24.8 (symbolic execution),
 SmartCheck 2.0.1 (XPath rules on the parse tree, no compiler). Files:
 SmartBugs-curated (143), SolidiFI buggy files (350), the 50 original SolidiFI
 contracts, and with `--dappscan` the 948 annotated DAppSCAN files (SmartCheck
@@ -38,6 +39,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -56,7 +58,7 @@ from bal.utils.repro import write_manifest                     # noqa: E402
 from c3_slither_baseline import (_is_compile_failure, _tail, ensure_solc,  # noqa: E402
                                  solc_candidates)
 
-BIN = Path(sys.executable).parent
+BIN = Path(shutil.which("slither") or Path(sys.executable).parent / "slither").parent
 CLEAN_DIR = Path("data/derived/solidifi_clean")
 
 
@@ -90,12 +92,13 @@ def _slither_lines(det: dict, path: str) -> list[int]:
     return list(el.get("source_mapping", {}).get("lines", []))
 
 
-def slither_once(path: str, version: str, timeout: int) -> dict:
+def slither_once(path: str, version: str, timeout: int, full: bool = False) -> dict:
+    """`full`: keep informational and optimisation detectors (C3 and `slither` exclude them)."""
     solc = ensure_solc(version)
     t0 = time.time()
+    excl = [] if full else ["--exclude-informational", "--exclude-optimization"]
     try:
-        r = subprocess.run([str(BIN / "slither"), path, "--solc", str(solc), "--json", "-",
-                            "--exclude-informational", "--exclude-optimization"],
+        r = subprocess.run([str(BIN / "slither"), path, "--solc", str(solc), "--json", "-", *excl],
                            capture_output=True, text=True, timeout=timeout)
     except subprocess.TimeoutExpired:
         return {"status": "timeout", "seconds": time.time() - t0, "findings": [], "error": ""}
@@ -180,7 +183,7 @@ def run_compiled(tool: str, path: str, src: str, a) -> dict:
                 "error": "no known solc release satisfies the pragma", "outside_pragma": outside}
     tried, r = [], {}
     for v in cands:
-        r = (slither_once(path, v, a.timeout) if tool == "slither"
+        r = (slither_once(path, v, a.timeout, full=tool == "slither_full") if tool.startswith("slither")
              else mythril_once(path, v, a.timeout, a.exec_timeout))
         tried.append(f"{v}:{r['status']}")
         r["solc"] = v
@@ -203,8 +206,15 @@ def main():
     run.mkdir(parents=True, exist_ok=True)
     df = file_table(a.dappscan)
     df[["fid", "dataset", "path"]].to_csv(run / "files.csv", index=False)
-    for v in sorted({v for s in df.source for v in solc_candidates(s)[0]}):
-        ensure_solc(v)
+    for v in sorted({v for s in df[df.dataset != "dappscan"].source for v in solc_candidates(s)[0]}):
+        for attempt in range(5):                      # GitHub release downloads are rate-limited
+            try:
+                ensure_solc(v)
+                break
+            except subprocess.CalledProcessError:
+                time.sleep(2 ** (attempt + 1))
+        else:
+            raise SystemExit(f"cannot download solc {v}")
 
     jobs = []
     for tool in a.tools.split(","):
