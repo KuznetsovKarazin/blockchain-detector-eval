@@ -11,9 +11,14 @@ input LF or AF. The best configuration is refitted with seeds 0..4; F1 at the
 validation max-F1 threshold and AP are reported on test 35-49, pre 35-42 and
 post 43-49.
 
+The study is stored in <run>/trials.db, so an interrupted search continues
+with --run (the TPE sampler is re-seeded on resume, so the trial sequence of a
+resumed study differs from an uninterrupted one).
+
 Usage
 -----
     python scripts/tv5_gnn_optuna.py --model sage --trials 40
+    python scripts/tv5_gnn_optuna.py --model sage --trials 40 --run results/transactions/tv5_sage_<stamp>
 """
 
 from __future__ import annotations
@@ -43,8 +48,9 @@ def main():
     ap.add_argument("--trials", type=int, default=40)
     ap.add_argument("--seeds", type=int, default=5)
     ap.add_argument("--out", default="results/transactions")
+    ap.add_argument("--run", help="existing run folder: the study continues from its trials.db")
     a = ap.parse_args()
-    run = Path(a.out) / time.strftime(f"tv5_{a.model}_%Y%m%d_%H%M%S")
+    run = Path(a.run) if a.run else Path(a.out) / time.strftime(f"tv5_{a.model}_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
     d = load_elliptic(a.data)
     fsets = {"LF": d.features("LF"), "AF": d.features("AF")}
@@ -67,8 +73,10 @@ def main():
         trial.set_user_attr("seconds", round(time.time() - t0, 1))
         return safe_ap(d.y[va], g.scores_[va])
 
-    study = optuna.create_study(direction="maximize", sampler=optuna.samplers.TPESampler(seed=0))
-    study.optimize(objective, n_trials=a.trials, callbacks=[
+    study = optuna.create_study(direction="maximize", sampler=optuna.samplers.TPESampler(seed=0),
+                                storage=f"sqlite:///{run / 'trials.db'}", study_name=a.model, load_if_exists=True)
+    done = sum(t.state == optuna.trial.TrialState.COMPLETE for t in study.trials)
+    study.optimize(objective, n_trials=max(0, a.trials - done), callbacks=[
         lambda s, t: print(t.number, round(t.value, 4), t.params, t.user_attrs, flush=True)])
     study.trials_dataframe().to_csv(run / "trials.csv", index=False)
     best = study.best_params
