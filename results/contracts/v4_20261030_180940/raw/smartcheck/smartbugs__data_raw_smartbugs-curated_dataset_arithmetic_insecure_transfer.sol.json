@@ -1,0 +1,1 @@
+{"seconds": 2.8146934509277344, "findings": [{"rule": "SOLIDITY_PRAGMAS_VERSION", "lines": [7], "impact": "1"}], "status": "ok", "error": "", "tool": "smartcheck", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_insecure_transfer.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/insecure_transfer.sol"}

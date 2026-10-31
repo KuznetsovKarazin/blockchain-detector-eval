@@ -1,0 +1,15 @@
+bug_type,reading,templates,occurrences
+Overflow-Underflow,limited,2,744
+Overflow-Underflow,yes,4,589
+Re-entrancy,limited,7,954
+Re-entrancy,yes,5,389
+TOD,yes,2,1336
+Timestamp-Dependency,limited,1,255
+Timestamp-Dependency,no,1,250
+Timestamp-Dependency,yes,3,876
+Unchecked-Send,yes,1,1266
+Unhandled-Exceptions,limited,1,104
+Unhandled-Exceptions,no,4,350
+Unhandled-Exceptions,yes,9,915
+tx.origin,limited,2,592
+tx.origin,no,2,744

@@ -1,0 +1,1 @@
+{"seconds": 3.021121025085449, "findings": [{"rule": "SOLIDITY_PRAGMAS_VERSION", "lines": [7], "impact": "1"}], "status": "ok", "error": "", "tool": "smartcheck", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_time_manipulation_timed_crowdsale.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/time_manipulation/timed_crowdsale.sol"}

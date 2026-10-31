@@ -1,0 +1,1 @@
+{"seconds": 2.664194107055664, "findings": [{"rule": "SOLIDITY_PRAGMAS_VERSION", "lines": [10], "impact": "1"}], "status": "ok", "error": "", "tool": "smartcheck", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_integer_overflow_mul.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/integer_overflow_mul.sol"}

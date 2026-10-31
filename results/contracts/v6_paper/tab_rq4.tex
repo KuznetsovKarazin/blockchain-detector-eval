@@ -1,0 +1,22 @@
+\begin{tabular}{@{}llllrlrr@{}}
+\toprule
+Class & Pair & Frozen model & AP (95\% CI) & Chance & Oracle model & AP & Rank\\
+\midrule
+Reentrancy & SF$\rightarrow$SB & raw-LR 0.1 & 0.496 (0.344--0.648) & 0.217 & raw-LR 1 & 0.784 & 8\\
+Reentrancy & SF$\rightarrow$DS & raw-LR 0.1 & 0.127 (0.103--0.162) & 0.120 & pat-MLP & 0.152 & 7\\
+Reentrancy & DS$\rightarrow$SB & pat-LGBM & 0.356 (0.265--0.510) & 0.217 & raw-LR 1 & 0.599 & 5\\
+Reentrancy & DS$\rightarrow$SF & pat-LGBM & 0.408 (0.340--0.606) & 0.143 & pat-MLP & 0.760 & 3\\
+Arithmetic & SF$\rightarrow$SB & raw-LR 0.1 & 0.622 (0.378--0.840) & 0.105 & raw-LR 0.1 & 0.622 & 1\\
+Arithmetic & SF$\rightarrow$DS & raw-LR 0.1 & 0.165 (0.132--0.214) & 0.146 & norm-LR 0.1 & 0.218 & 8\\
+Arithmetic & DS$\rightarrow$SB & pat-RF & 0.078 (0.045--0.130) & 0.105 & pat-MLP & 0.149 & 9\\
+Arithmetic & DS$\rightarrow$SF & pat-RF & 0.289 (0.192--0.408) & 0.143 & pat-RF & 0.289 & 1\\
+Timestamp & SF$\rightarrow$SB & raw-LR 0.1 & 0.493 (0.100--1.000) & 0.035 & raw-LR 10 & 0.853 & 5\\
+Timestamp & SF$\rightarrow$DS & raw-LR 0.1 & 0.057 (0.035--0.109) & 0.038 & raw-LR 10 & 0.107 & 8\\
+Timestamp & DS$\rightarrow$SB & norm-LR 0.1 & 0.109 (0.023--0.358) & 0.035 & pat-MLP & 0.388 & 9\\
+Timestamp & DS$\rightarrow$SF & norm-LR 0.1 & 0.581 (0.446--0.729) & 0.143 & pat-MLP & 0.898 & 6\\
+Unchecked call & SF$\rightarrow$SB & raw-LR 0.1 & 0.410 (0.312--0.542) & 0.364 & pat-MLP & 0.652 & 8\\
+Unchecked call & SF$\rightarrow$DS & raw-LR 0.1 & 0.082 (0.061--0.107) & 0.078 & pat-RF & 0.096 & 5\\
+Unchecked call & DS$\rightarrow$SB & pat-RF & 0.733 (0.625--0.838) & 0.364 & pat-RF & 0.733 & 1\\
+Unchecked call & DS$\rightarrow$SF & pat-RF & 0.111 (0.084--0.147) & 0.143 & norm-LR 0.1 & 0.179 & 5\\
+\bottomrule
+\end{tabular}

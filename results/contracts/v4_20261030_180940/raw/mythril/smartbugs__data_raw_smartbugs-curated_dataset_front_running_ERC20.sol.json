@@ -1,0 +1,1 @@
+{"seconds": 99.4143590927124, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_front_running_ERC20.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/front_running/ERC20.sol"}

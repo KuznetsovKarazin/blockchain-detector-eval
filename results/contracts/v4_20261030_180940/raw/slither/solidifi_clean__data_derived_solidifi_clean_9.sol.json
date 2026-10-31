@@ -1,0 +1,1 @@
+{"seconds": 0.8412265777587891, "findings": [], "status": "ok", "error": "", "solc": "0.5.17", "tried": "0.5.17:ok", "outside_pragma": false, "tool": "slither", "fid": "solidifi_clean__data_derived_solidifi_clean_9.sol", "dataset": "solidifi_clean", "path": "data/derived/solidifi_clean/9.sol"}

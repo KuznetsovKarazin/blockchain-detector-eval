@@ -1,0 +1,78 @@
+{
+  "script": "v3_frozen_transfer.py",
+  "created_utc": "2026-10-30T21:19:58Z",
+  "git_commit": "7f9a547df2d546d77235e3e85eac21b362449b4a",
+  "git_dirty": false,
+  "dirty_files": [],
+  "diff_sha256": null,
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "out": "results/contracts",
+    "seeds": 3,
+    "classes": "reentrancy,arithmetic,timestamp,unchecked",
+    "solidifi_unchecked": "unhandled"
+  },
+  "data": {},
+  "data_sets": {
+    "sources_dappscan": {
+      "n_files": 6587,
+      "sha256": "9f70899ecbc96a4122b747eb288911c9318155c3c4d21ffe0646f75f2d165ba2"
+    },
+    "sources_smartbugs": {
+      "n_files": 143,
+      "sha256": "584dbdf1f0ab5f174b9089e25adcabd92ffb90f93405caa466397a0d3874c575"
+    },
+    "sources_solidifi": {
+      "n_files": 350,
+      "sha256": "e66a314c3ce619e77c5554dc0c66dfa852e3bd1d93894ade7fd29c0cc19160a8"
+    },
+    "label_files": {
+      "n_files": 949,
+      "sha256": "af5b4368ce9d1d0b7e35d775ed468fa2b59e2eaae91a909e0faa37de0b28dc28"
+    }
+  },
+  "candidates": [
+    "lex_raw/logreg/C=0.1",
+    "lex_raw/logreg/C=1",
+    "lex_raw/logreg/C=10",
+    "lex_norm/logreg/C=0.1",
+    "lex_norm/logreg/C=1",
+    "lex_norm/logreg/C=10",
+    "pat/rf",
+    "pat/lgbm",
+    "pat/mlp"
+  ],
+  "tie": 0.005,
+  "pairs": [
+    [
+      "solidifi",
+      "smartbugs"
+    ],
+    [
+      "solidifi",
+      "dappscan"
+    ],
+    [
+      "dappscan",
+      "smartbugs"
+    ],
+    [
+      "dappscan",
+      "solidifi"
+    ]
+  ]
+}
