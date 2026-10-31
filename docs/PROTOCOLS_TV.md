@@ -72,4 +72,27 @@ a manifest. Elliptic labels are not committed.
 
 ## Changes after the first run
 
-(none yet)
+* 2026-10-30, X1: post-hoc feature set `causal_no_degree` (the causal set
+  without `in_txs_degree` / `out_txs_degree`) on P2, P3 and P5. Reason: a
+  transaction's out-degree is known only once its outputs are spent, so the
+  causal set could carry information from the end of the step. Reported as a
+  sensitivity row, not a hypothesis test.
+* 2026-10-31, X4 on K4: the per-day top-k rule counted a background row of
+  weight w as w alarms as soon as its rank fell inside k, so top-k overshot
+  its own budget (up to 15 alarms/day at k = 1). The row that crosses the
+  budget is now counted in part (`topk_alarms` returns the share of the row's
+  weight inside k; attacks have weight 1). The K4 runs were repeated
+  (`tv4_20261031_005129`, `tv4_20261031_014421`); ranking, fixed thresholds,
+  monitors and A3 are unchanged, and the first runs were removed.
+* 2026-10-31, X4 on K4: the rolling-quantile rule over the previous 7 days
+  was not run. K4 test days are incident days spread over the year plus 22
+  quiet days, so there are no 7 consecutive previous days to take a quantile
+  from. The threshold fixed on the quiet validation days (`fixed_quiet`)
+  is reported as a second fixed rule instead.
+* 2026-10-31, HV4: "the estimated share falls too" is read as: the EM
+  estimate at the step is lower than at the previous test step (test steps
+  of different cut-offs do not overlap). The steps where the estimate is
+  below half the true share are listed as well.
+* 2026-10-31, X5: one Optuna study runs longer than the 2-hour job limit;
+  the study is stored in sqlite and continued with `--run`. The TPE sampler
+  is re-seeded on each continuation.

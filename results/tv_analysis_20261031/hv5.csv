@@ -1,0 +1,5 @@
+model,features,test_ap,full_test_ap,median_day_rank
+lgbm,no_mechanism,0.2815,0.2123,12.6
+lgbm,no_setup,0.0293,0.2123,62.8
+rf,no_mechanism,0.1557,0.2094,38.0
+rf,no_setup,0.0205,0.2094,187.8345

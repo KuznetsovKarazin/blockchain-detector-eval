@@ -1,10 +1,13 @@
 {
   "script": "tv4_k4_temporal.py",
-  "created_utc": "2026-10-30T20:38:36Z",
-  "git_commit": "2084c7cdf9b93f841fa5a6cc3ab1072906a42092",
-  "git_dirty": false,
-  "dirty_files": [],
-  "diff_sha256": null,
+  "created_utc": "2026-10-31T02:17:59Z",
+  "git_commit": "940008c70adfd2d6c381216b5d936d5e5956b9b1",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/tv4_k4_temporal.py",
+    "scripts/tv6_analysis.py"
+  ],
+  "diff_sha256": "bb55cbeed42226e0be8ea9bb95373777b6888dd49a920a4d67d1d6f98ac59fc7",
   "python": "3.13.17",
   "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
   "cpu_count": 4,

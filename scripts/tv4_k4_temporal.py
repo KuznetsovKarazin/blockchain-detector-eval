@@ -85,17 +85,22 @@ def load(k4_run: Path, quiet: Path) -> pd.DataFrame:
 
 
 def topk_alarms(df, s, k):
-    """Per day, alarm on the transactions whose weighted rank (1 + weight of higher scores) is <= k."""
-    al = np.zeros(len(df), bool)
+    """Per day, the share of each row's weight that falls inside the k highest-scoring transactions.
+
+    A background row of weight w stands for w transactions with its score, so the row that crosses
+    the budget is counted only in part; attacks and flash rows have weight 1 (0 or 1).
+    """
+    w = df.weight.to_numpy()
+    frac = np.zeros(len(df))
     for _, idx in df.groupby("day").indices.items():
         o = idx[np.argsort(-s[idx], kind="stable")]
-        cw = np.cumsum(df.weight.to_numpy()[o])
-        al[o[(cw - df.weight.to_numpy()[o]) < k]] = True
-    return al
+        before = np.cumsum(w[o]) - w[o]
+        frac[o] = np.clip((k - before) / w[o], 0, 1)
+    return frac
 
 
 def per_day_alarms(df, al):
-    m = al & (df.y.to_numpy() == 0)
+    m = al * (df.y.to_numpy() == 0)
     return float((df.weight.to_numpy() * m).sum() / max(1, df.day.nunique()))
 
 
@@ -126,7 +131,7 @@ def evaluate(df, s, tr, va, te, name, seed, split, window, monitor=False, Xraw=N
         al = topk_alarms(df, s, b)
         thr_rows.append({**{k: r[k] for k in ("split", "window", "model", "seed")}, "budget": b,
                          "strategy": "topk", "threshold": np.nan, "achieved_val": np.nan,
-                         "recall": float(al[te_i & (y == 1)].mean()),
+                         "recall": float(al[te_i & (y == 1)].mean()),          # attack rows: 0 or 1
                          "alarms_per_day_incident": per_day_alarms(df[te_i], al[te_i]),
                          "alarms_per_day_quiet": per_day_alarms(df[te_q], al[te_q]) if te_q.any() else np.nan})
     mon = []

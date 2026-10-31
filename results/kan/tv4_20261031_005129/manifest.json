@@ -1,12 +1,13 @@
 {
   "script": "tv4_k4_temporal.py",
-  "created_utc": "2026-10-30T19:57:52Z",
-  "git_commit": "c8803c05e59351a8adf46cf55d011133c493ae6c",
+  "created_utc": "2026-10-31T01:44:16Z",
+  "git_commit": "940008c70adfd2d6c381216b5d936d5e5956b9b1",
   "git_dirty": true,
   "dirty_files": [
-    "scripts/tv5_gnn_optuna.py"
+    "scripts/tv4_k4_temporal.py",
+    "scripts/tv6_analysis.py"
   ],
-  "diff_sha256": "b6f685499909b34c1051ec7aed00c8c6bfc9386898838a09c6a14a409c7a20ce",
+  "diff_sha256": "f855a908a27d3e7735f681b4f110c7d81f76a5e89247f73a026c089638c4bfc4",
   "python": "3.13.17",
   "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
   "cpu_count": 4,
