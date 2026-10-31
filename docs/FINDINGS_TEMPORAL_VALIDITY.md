@@ -11,7 +11,7 @@ listed at its end). Decision rules are evaluated by
 | X2 / X4 / X6 / A2 rolling origin (Elliptic) | `results/transactions/tv2_20261030_x2` |
 | X2 / X3 / X4 / X6 / A3 K4 temporal splits, quiet days (rule, logreg, RF, LightGBM) | `results/kan/tv4_20261031_005129` |
 | same, MLP and KAN | `results/kan/tv4_20261031_014421` |
-| X5 Optuna GraphSAGE / GAT | `results/transactions/tv5_sage_20261030`, `tv5_gat_20261031` (running) |
+| X5 Optuna GraphSAGE / GAT | `results/transactions/tv5_sage_20261030`, `tv5_gat_20261031` |
 
 ## Verdicts
 
@@ -159,7 +159,15 @@ hidden 256, 3 layers, dropout 0.45, lr 0.013, validation AP 0.961. Refit on
 Tuning raises validation AP but not test AP: the default GraphSAGE gave
 0.569 on the same split, LightGBM 0.801. The validation steps sit before the
 test period, so a better validation score buys nothing in the next period.
-GAT: running (5/40 trials at 2026-10-31 10:00 UTC, best validation AP 0.872).
+GAT (run `results/transactions/tv5_gat_20261031`, 40 trials with five
+resumptions; interrupted trials discarded): best trial 42, AF features,
+hidden 32, 2 layers, dropout 0.33, lr 0.028, validation AP 0.918; refit on
+5 seeds: validation AP 0.893, test AP 0.545 (std 0.054), AP 0.641 before and
+0.054 after the shutdown (default GAT: test AP 0.501).
+
+Tuning moves GraphSAGE by −0.05 and GAT by +0.04 test AP, both within two
+seed standard deviations; both stay 0.25–0.30 below LightGBM (0.801), and
+every model has F1 ≈ 0.02 after step 43. Tuning does not change the RQ2 order.
 
 ## Limits
 
