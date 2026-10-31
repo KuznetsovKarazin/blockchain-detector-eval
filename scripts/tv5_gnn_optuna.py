@@ -84,6 +84,10 @@ def main():
 
     rows = []
     for seed in range(a.seeds):
+        part = run / f"refit_s{seed}.csv"          # each refit is kept, so a stopped job resumes here too
+        if part.exists():
+            rows += pd.read_csv(part).to_dict("records")
+            continue
         set_seed(seed)
         g = GraphClassifier(kind=a.model, hidden=best["hidden"], layers=best["layers"], dropout=best["dropout"],
                             lr=best["lr"], seed=seed).fit(fsets[best["features"]], d.edges, d.y, tr, va)
@@ -94,6 +98,7 @@ def main():
             r = binary_report(d.y[m], s[m], thr)
             rows.append({"model": a.model, "seed": seed, "period": pname, "f1": r.f1, "auprc": r.auprc,
                          "val_ap": safe_ap(d.y[va], s[va]), "epochs": g.epochs_run})
+        pd.DataFrame(rows[-3:]).to_csv(part, index=False)
         print(rows[-3], flush=True)
     df = pd.DataFrame(rows)
     df.to_csv(run / "refit_metrics.csv", index=False)
