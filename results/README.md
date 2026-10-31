@@ -36,8 +36,8 @@ underlying datasets.
 | V1 SolidiFI template audit | `contracts/v1_20261030_181838` | — |
 | V2 template controls (seen / LOTO / pairs) | `contracts/v2_20261030_183559` | — |
 | V3 frozen transfer | `contracts/v3_20261030_182906` | — |
-| V4 analysers (Slither, Mythril, SmartCheck) | `contracts/v4_20261030_180940` (resumed after two container restarts; Mythril on SolidiFI sampled, amendment 3), `contracts/v4_20261030_185950` (Slither, all detectors) | — |
-| V5 scoring units, budgets | `contracts/v5_20261030_234245` | — |
+| V4 analysers (Slither, Mythril, SmartCheck) | `contracts/v4_20261030_180940` (resumed after two container restarts; Mythril on SolidiFI completed in full on 2026-10-31; amendment 3 superseded), `contracts/v4_20261030_185950` (Slither, all detectors) | — |
+| V5 scoring units, budgets | `contracts/v5_20261031_115227` (full Mythril run) | — |
 | V6 paper tables and figures | `contracts/v6_paper` (generated from V1–V5) | — |
 | B1 bridges | `bridges/b1_20261022_163601` | `b1_20261022_141005` (attack ranks depended on tie order), `b1_20261022_093114` (dataset prices), `b1_20261021_161056` |
 | B2 saturation, hybrids | `bridges/b2_20261022_164508` | `b2_20261022_142045`, `b2_20261022_094142`, `b2_20261021_162632` |

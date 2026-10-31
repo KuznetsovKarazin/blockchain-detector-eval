@@ -1,7 +1,7 @@
 {
   "script": "v4_static_tools.py",
-  "created_utc": "2026-10-30T23:42:30Z",
-  "git_commit": "0cd2c3a2af7bcbeb8ab600bca2eabc089301ca37",
+  "created_utc": "2026-10-31T11:51:07Z",
+  "git_commit": "2f1772b2280c181f7ef9a9ecba89b1a9b0da712b",
   "git_dirty": false,
   "dirty_files": [],
   "diff_sha256": null,
@@ -28,7 +28,7 @@
     "timeout": 600,
     "exec_timeout": 90,
     "dappscan": true,
-    "mythril_sample": 10
+    "mythril_sample": 0
   },
   "data": {
     "data/raw/smartbugs-curated/dataset/access_control/FibonacciBalance.sol": "784009c0758940079bd3a7402a3acdf60e3a9a659012e19b0aa21dbc9c0a35ab",

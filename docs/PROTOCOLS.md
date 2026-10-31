@@ -213,6 +213,12 @@ type and originals 1..10. The 42 Re-entrancy files analysed before the
 restriction are kept. SmartBugs-curated is analysed in full. Slither and
 SmartCheck are not affected.
 
+**Amendment 3 superseded (2026-10-31).** The full Mythril run on all 350 SolidiFI
+buggy files and 50 originals was completed (resume of `v4_20261030_180940`
+without `--mythril-sample`; 343/350 and 49/50 ok, the rest compile errors).
+V5 (`v5_20261031_115227`) and V6 (`v6_paper`) were recomputed on the full run;
+the sampled V5 run `v5_20261030_234245` is withdrawn.
+
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the
