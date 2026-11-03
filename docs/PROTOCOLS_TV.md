@@ -96,3 +96,58 @@ a manifest. Elliptic labels are not committed.
 * 2026-10-31, X5: one Optuna study runs longer than the 2-hour job limit;
   the study is stored in sqlite and continued with `--run`. The TPE sampler
   is re-seeded on each continuation.
+
+## Round 2 (fixed 2026-11-03, before any of its runs)
+
+Added after an external review of the first draft. Each item names what it
+lets the paper claim; numbers of round 1 are not changed by it.
+
+* **X1c — lifetime vs prefix of the same aggregates (HV6).** The 60 causal
+  aggregates are recomputed over the whole history of the address
+  (`causal_full`: every cumulative column takes the value of the address's
+  last step, `steps_since_first` becomes the address's span, the per-step
+  counts `n_*_t` stay as they are). Point of evaluation of `causal`: the end
+  of step t, all transactions of steps <= t. Same protocols, models and seeds
+  as X1. Decomposition under P2, P3, P5 (LightGBM, wallet label):
+  future effect = AP(causal) - AP(causal_full); representation effect =
+  AP(causal_full) - AP(lifetime). **HV6:** under P3 the future effect is
+  >= 0.05 AP and under P1 AP(causal_full) >= AP(causal) - 0.01 (the future
+  helps on a random split and hurts on a temporal one). Reported whether it
+  holds or not.
+* **X6b — label-shift estimate, population and assumption.** (a) The EM
+  estimate is computed on all transactions of the step as well as on the
+  labelled ones; the labelled-only value is the one comparable to the true
+  share. (b) Positive control: for cut-offs 25 and 30 (no regime change in
+  the test steps), the labelled test transactions of each step are
+  resampled to an illicit share of 1, 2, 5, 10 and 20 % (p(x|y) unchanged);
+  EM "works" if its median absolute error is <= 0.25 times the target share.
+  (c) Assumption check: a classifier (LightGBM, 5-fold, features only)
+  separates illicit transactions of steps 35-42 from those of steps 43-49;
+  controls: licit 35-42 vs 43-49, and illicit 35-38 vs 39-42. p(x|y) is
+  called shifted if the illicit AUC is >= 0.15 above the illicit control.
+  The PSI result is narrowed to: PSI detects the change of inputs but does
+  not order the steps by AP.
+* **A3b — preparation vs execution, and a frozen detector.** K4 t2025,
+  LightGBM and RF, 5 seeds. Groups: preparation = nonce, to_created_today;
+  execution = gas_used, n_contracts; mechanism unchanged. Retrained without
+  each group (as A3). Frozen-model check: the full model of each seed scores
+  the test attacks with nonce and to_created_today replaced by the values of
+  a random background row of the same day (20 draws); reported as the median
+  within-day rank of the attacks and top-k recall at 1 and 10 per day.
+  Descriptive; it changes a feature vector, not an attack, and is reported as
+  such ("evasion" stays a hypothesis).
+* **X4b — sampling uncertainty of alarm counts.** K4 alarms per day are split
+  by stratum (flash, protocol, background; flash and protocol are complete,
+  background is a uniform sample of 3,000 per day with weight = day count /
+  3,000). 90 % intervals: 2,000 bootstrap resamples of the background rows
+  within each day, in the validation year (threshold re-fitted) and in the
+  test year together; the seed is fixed. The paper reports alarms per day
+  with these intervals and says "alarms on days without a known incident"
+  instead of false alarms.
+* **X7 — fully processed days (pilot).** One quiet 2025 day is processed in
+  full (all transactions with receipts and logs) and the alarm count of the
+  fixed thresholds is compared with the sample estimate and its X4b
+  interval. Only if the pilot fits the machine (15 GB, 2-hour jobs): 2-3
+  windows of 7 consecutive days, on which a sequential budget rule (threshold
+  from the previous days' scores only, updated each hour) is compared with
+  per-day top-k. Both are detection after execution, not prevention.
