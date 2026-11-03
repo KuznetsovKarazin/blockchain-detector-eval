@@ -1,0 +1,11 @@
+address payable lastPlayer_re_ent9;
+      uint jackpot_re_ent9;
+	  function buyTicket_re_ent9() public{
+	    address payable prev_re_ent9 = lastPlayer_re_ent9;
+	    uint amount_re_ent9 = jackpot_re_ent9;
+      lastPlayer_re_ent9 = msg.sender;
+      jackpot_re_ent9    = address(this).balance;
+	    (bool success,) = prev_re_ent9.call.value(amount_re_ent9)("");
+	    if (!success)
+	        revert();
+    }

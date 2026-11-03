@@ -106,8 +106,15 @@ def slither_once(path: str, version: str, timeout: int, full: bool = False) -> d
     try:
         js = json.loads(r.stdout)
     except json.JSONDecodeError:
-        out["status"] = "compile_error" if _is_compile_failure(r.stderr) else "tool_error"
-        out["error"] = _tail(r.stderr) or f"exit code {r.returncode}, no JSON output"
+        txt = (r.stderr or "") + (r.stdout or "")
+        if not txt.strip():
+            # slither --json - can exit silently when crytic-compile fails; ask solc itself
+            c = subprocess.run([str(solc), "--allow-paths", str(Path.cwd()), path],
+                               capture_output=True, text=True, timeout=timeout)
+            if c.returncode != 0 and re.search(r"\bError\b|Error:", c.stderr):
+                txt = "CompilationError (solc): " + c.stderr
+        out["status"] = "compile_error" if _is_compile_failure(txt) else "tool_error"
+        out["error"] = _tail(txt) or f"exit code {r.returncode}, no JSON output"
         return out
     if js.get("success"):
         out["status"] = "ok"

@@ -45,7 +45,8 @@ MAPPING = {
     "slither": {"reentrancy": {"reentrancy-eth", "reentrancy-no-eth", "reentrancy-unlimited-gas",
                                "reentrancy-benign", "reentrancy-events"},
                 "timestamp": {"timestamp"}, "unchecked": {"unchecked-lowlevel", "unchecked-send"},
-                "tx_origin": {"tx-origin"}, "unchecked_merged": {"unchecked-lowlevel", "unchecked-send"}},
+                "tx_origin": {"tx-origin"}, "unchecked_merged": {"unchecked-lowlevel", "unchecked-send"},
+                "unprotected_send": {"arbitrary-send-eth"}},          # amendment 4 (external review)
     "slither_full": None,             # same rules as slither, filled below
     "mythril": {"reentrancy": {"SWC-107"}, "arithmetic": {"SWC-101"}, "timestamp": {"SWC-116"},
                 "unchecked": {"SWC-104"}, "tx_origin": {"SWC-115"}, "unprotected_send": {"SWC-105"},
@@ -88,12 +89,29 @@ def recall_at(y, s, k):
     return at_budget(y, s, k)[1]
 
 
-def paired_boot(y, s_a, s_b, k, n=2000, seed=0):
-    """CI of recall@k(a) - recall@k(b), resampling files."""
+SEV = {"high": 3.0, "medium": 2.0, "low": 1.0, "informational": 0.5, "optimization": 0.5,
+       "3": 3.0, "2": 2.0, "1": 1.0}
+
+
+def severity_score(findings) -> float:
+    """Highest mapped severity first, then the number of mapped findings (amendment 5)."""
+    if not findings:
+        return 0.0
+    return 100.0 * max(SEV.get(str(f.get("impact", "")).lower(), 1.0) for f in findings) + len(findings)
+
+
+def paired_boot(y, s_a, s_b, k, n=2000, seed=0, groups=None):
+    """CI of recall@k(a) - recall@k(b), resampling files or, with `groups`, whole groups (projects)."""
     rng = np.random.default_rng(seed)
     d = []
+    if groups is not None:
+        gi = pd.factorize(np.asarray(groups))[0]
+        members = [np.flatnonzero(gi == u) for u in range(gi.max() + 1)]
     for _ in range(n):
-        i = rng.integers(0, len(y), len(y))
+        if groups is not None:
+            i = np.concatenate([members[u] for u in rng.integers(0, len(members), len(members))])
+        else:
+            i = rng.integers(0, len(y), len(y))
         if y[i].sum() == 0:
             continue
         d.append(recall_at(y[i], s_a[i], k) - recall_at(y[i], s_b[i], k))
@@ -195,6 +213,7 @@ def main():
                 if cls not in MAPPING[tool]:
                     continue
                 cnt = {p: float(len(mapped(f, tool, cls))) for p, f in zip(g.path, g.findings)}
+                sev = {p: severity_score(mapped(f, tool, cls)) for p, f in zip(g.path, g.findings)}
                 for r in sel[(sel.target == tgt) & (sel.cls == cls)].itertuples():
                     m = sc[(sc.cls == cls) & (sc.source == r.source) & (sc.target == tgt) & (sc.candidate == r.candidate)]
                     mm = m.groupby("file_id").agg(y=("y", "first"), s=("score", "mean")).reset_index()
@@ -204,11 +223,16 @@ def main():
                     if y.sum() < 3:
                         continue
                     s_tool = mm.path.map(cnt).to_numpy()
+                    s_sev = mm.path.map(sev).to_numpy()
+                    s_flag = (s_tool > 0).astype(float)                  # flagged first, random order inside
+                    grp = df.group.to_numpy()[mm.file_id]
                     s_model = mm.s.to_numpy().astype(float)
                     s_model01 = (s_model - s_model.min()) / max(1e-12, s_model.max() - s_model.min())
                     s_hyb = (s_tool > 0) * 2.0 + s_model01            # flagged files first, then by model
                     k_tool = int((s_tool > 0).sum())
-                    for det, s in (("tool", s_tool), ("model", s_model), ("hybrid", s_hyb)):
+                    dets = (("tool", s_tool), ("tool_severity", s_sev), ("tool_flag_random", s_flag),
+                            ("model", s_model), ("hybrid", s_hyb))
+                    for det, s in dets:
                         for k, p, rr in curve(y, s):
                             curves.append({"target": tgt, "tool": tool, "cls": cls, "source": r.source,
                                            "model": r.candidate, "detector": det, "k": k, "precision": p, "recall": rr})
@@ -217,11 +241,15 @@ def main():
                             continue
                         row = {"target": tgt, "tool": tool, "cls": cls, "source": r.source, "model": r.candidate,
                                "k": k, "k_is_tool_alarms": k == k_tool, "n": len(y), "n_pos": int(y.sum())}
-                        for det, s in (("tool", s_tool), ("model", s_model), ("hybrid", s_hyb)):
-                            p, rr, _, _ = at_budget(y, s, k)
+                        for det, s in dets:
+                            p, rr, lo_, hi_ = at_budget(y, s, k)
                             row[f"{det}_precision"], row[f"{det}_recall"] = p, rr
-                        row["model_minus_tool_ci"] = "%.3f..%.3f" % paired_boot(y, s_model, s_tool, k)
-                        row["hybrid_minus_tool_ci"] = "%.3f..%.3f" % paired_boot(y, s_hyb, s_tool, k)
+                            row[f"{det}_tp"] = rr * int(y.sum())          # expected positives found
+                        g_ = grp if tgt == "dappscan" else None           # DAppSCAN: resample projects
+                        row["model_minus_tool_ci"] = "%.3f..%.3f" % paired_boot(y, s_model, s_tool, k, groups=g_)
+                        row["hybrid_minus_tool_ci"] = "%.3f..%.3f" % paired_boot(y, s_hyb, s_tool, k, groups=g_)
+                        row["hybrid_minus_severity_ci"] = "%.3f..%.3f" % paired_boot(y, s_hyb, s_sev, k, groups=g_)
+                        row["hybrid_minus_flagrandom_ci"] = "%.3f..%.3f" % paired_boot(y, s_hyb, s_flag, k, groups=g_)
                         points.append(row)
     pd.DataFrame(curves).to_parquet(run / "budget_curves.parquet", index=False)
     atomic_to_csv(pd.DataFrame(points), run / "budget_points.csv", index=False)

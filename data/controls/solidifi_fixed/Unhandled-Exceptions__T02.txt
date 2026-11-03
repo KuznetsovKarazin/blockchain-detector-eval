@@ -1,0 +1,3 @@
+function unhandledsend_unchk2(address payable callee) public {
+    require(callee.send(5 ether));
+  }

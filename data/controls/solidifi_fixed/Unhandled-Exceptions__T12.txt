@@ -1,0 +1,4 @@
+function my_func_uncheck12(address payable dst) public payable{
+        (bool ok_uncheck12,) = dst.call.value(msg.value)("");
+        require(ok_uncheck12);
+    }

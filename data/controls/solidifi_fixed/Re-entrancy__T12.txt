@@ -1,0 +1,11 @@
+mapping(address => uint) userBalance_re_ent26;
+function withdrawBalance_re_ent26() public{
+        // send userBalance[msg.sender] ethers to msg.sender
+        // if mgs.sender is a contract, it will call its fallback function
+        uint amount_re_ent26 = userBalance_re_ent26[msg.sender];
+        userBalance_re_ent26[msg.sender] = 0;
+        (bool success,)= msg.sender.call.value(amount_re_ent26)("");
+        if( ! success ){
+            revert();
+        }
+    }
