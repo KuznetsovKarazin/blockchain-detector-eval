@@ -141,6 +141,19 @@ def main():
         cf = causal_features(data)
         cf.to_parquet(cache, index=False)
     causal = [c for c in cf.columns if c not in ("address", "step", "y_causal")]
+    # X1c (round 2): the same aggregates over the whole history of the address; the per-step
+    # counts stay, cumulative columns take the address's last value, the span replaces steps_since_first
+    g = cf.sort_values(["address", "step"]).groupby("address")
+    full = {}
+    for c in causal:
+        if c.endswith("_t"):
+            full[c + "__full"] = cf[c]
+        elif c == "steps_since_first":
+            full[c + "__full"] = g.step.transform("max") - g.step.transform("min")
+        else:
+            full[c + "__full"] = g[c].transform("last")
+    cf = pd.concat([cf, pd.DataFrame(full, index=cf.index)], axis=1)
+    causal_full = list(full)
     print("causal features", cf.shape, round(time.time() - t0), "s", flush=True)
 
     life = pd.read_csv(data / "wallets_features_classes_combined.csv").rename(columns={"Time step": "step"})
@@ -175,7 +188,8 @@ def main():
              "causal": causal,
              "causal+lifetime": causal + lifetime,
              # post-hoc check: tx-graph degrees are complete only once the step has closed
-             "causal_no_degree": [c for c in causal if "txs_degree" not in c]}
+             "causal_no_degree": [c for c in causal if "txs_degree" not in c],
+             "causal_full": causal_full}
     protocols = {
         "P1_random_rows": (lab, rng_rows < 0.70, (rng_rows >= 0.70) & (rng_rows < 0.85), rng_rows >= 0.85),
         "P1b_random_entity": (ent, rng_ent < 0.70, (rng_ent >= 0.70) & (rng_ent < 0.85), rng_ent >= 0.85),
@@ -194,6 +208,8 @@ def main():
         for lname, y in labels.items():
             for fname, cols in fsets.items():
                 if fname == "causal_no_degree" and (lname != "wallet" or pname.startswith("P1")):
+                    continue
+                if fname == "causal_full" and lname != "wallet":
                     continue
                 if lname == "causal" and fname not in ("lifetime", "causal"):
                     continue

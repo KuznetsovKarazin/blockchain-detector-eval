@@ -151,3 +151,12 @@ lets the paper claim; numbers of round 1 are not changed by it.
   windows of 7 consecutive days, on which a sequential budget rule (threshold
   from the previous days' scores only, updated each hour) is compared with
   per-day top-k. Both are detection after execution, not prevention.
+
+### Changes in round 2
+
+* 2026-11-03, X4b: a pilot run showed that at 1 alarm/day no sampled
+  background row of 2025-26 lies above the fixed thresholds; all alarms come
+  from the complete flash stratum. A bootstrap over the sampled rows cannot
+  bound background transactions the sample never drew, so a Clopper-Pearson
+  90 % interval of the share of background transactions above the threshold
+  (times the background transactions per day) is reported next to it.
