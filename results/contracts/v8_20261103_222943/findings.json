@@ -1,0 +1,2804 @@
+{
+ "arithmetic_fixed.sol": {
+  "slither": {
+   "seconds": 1.6846928596496582,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "impact": "Medium"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3960604667663574,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 10.432312250137329,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 5.684608459472656,
+   "findings": [
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "mythril_nosolv": {
+   "seconds": 7.751533508300781,
+   "findings": [],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 1.6846928596496582,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "impact": "Medium"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3960604667663574,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "arithmetic_vuln.sol": {
+  "slither": {
+   "seconds": 0.3869032859802246,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "impact": "Medium"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.36264944076538086,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 10.450104475021362,
+   "findings": [
+    {
+     "rule": "SWC-101",
+     "lines": [
+      6
+     ],
+     "impact": "High",
+     "title": "Integer Arithmetic Bugs"
+    },
+    {
+     "rule": "SWC-101",
+     "lines": [
+      7
+     ],
+     "impact": "High",
+     "title": "Integer Arithmetic Bugs"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.8490943908691406,
+   "findings": [
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "mythril_nosolv": {
+   "seconds": 6.8761067390441895,
+   "findings": [],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.3869032859802246,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "impact": "Medium"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.36264944076538086,
+   "findings": [
+    {
+     "rule": "erc20-interface",
+     "lines": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "reentrancy_call_fixed.sol": {
+  "slither": {
+   "seconds": 0.364422082901001,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3854248523712158,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      8
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 33.80496907234192,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      8
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 2.0449442863464355,
+   "findings": [
+    {
+     "rule": "SOLIDITY_CALL_WITHOUT_DATA",
+     "lines": [
+      8
+     ],
+     "impact": "2"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_UNCHECKED_CALL",
+     "lines": [
+      8
+     ],
+     "impact": "3"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "mythril_nosolv": {
+   "seconds": 29.646530151367188,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      8
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.364422082901001,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3854248523712158,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      8
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "reentrancy_call_vuln.sol": {
+  "slither": {
+   "seconds": 0.3672964572906494,
+   "findings": [
+    {
+     "rule": "reentrancy-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.36097264289855957,
+   "findings": [
+    {
+     "rule": "reentrancy-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      7
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 35.422157526016235,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      7
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      7
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    },
+    {
+     "rule": "SWC-107",
+     "lines": [
+      9
+     ],
+     "impact": "Medium",
+     "title": "State access after external call"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.8355166912078857,
+   "findings": [
+    {
+     "rule": "SOLIDITY_CALL_WITHOUT_DATA",
+     "lines": [
+      7
+     ],
+     "impact": "2"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_UNCHECKED_CALL",
+     "lines": [
+      7
+     ],
+     "impact": "3"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "mythril_nosolv": {
+   "seconds": 31.36403751373291,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      7
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      7
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    },
+    {
+     "rule": "SWC-107",
+     "lines": [
+      9
+     ],
+     "impact": "Medium",
+     "title": "State access after external call"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.3672964572906494,
+   "findings": [
+    {
+     "rule": "reentrancy-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.36097264289855957,
+   "findings": [
+    {
+     "rule": "reentrancy-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      7
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "reentrancy_transfer_limited.sol": {
+  "slither": {
+   "seconds": 0.4673576354980469,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.37044477462768555,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "reentrancy-unlimited-gas",
+     "lines": [
+      7
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 18.11284112930298,
+   "findings": [
+    {
+     "rule": "SWC-114",
+     "lines": [
+      7
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.8050808906555176,
+   "findings": [
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "mythril_nosolv": {
+   "seconds": 14.567066669464111,
+   "findings": [
+    {
+     "rule": "SWC-114",
+     "lines": [
+      7
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.4673576354980469,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.37044477462768555,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "reentrancy-unlimited-gas",
+     "lines": [
+      7
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "timestamp_fixed.sol": {
+  "slither": {
+   "seconds": 0.3745090961456299,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.37651705741882324,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 9.227057218551636,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.9369885921478271,
+   "findings": [
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 1
+  },
+  "mythril_nosolv": {
+   "seconds": 8.87863802909851,
+   "findings": [],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.3745090961456299,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.37651705741882324,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "timestamp_vuln.sol": {
+  "slither": {
+   "seconds": 0.4111747741699219,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      6
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "weak-prng",
+     "lines": [
+      5
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "incorrect-equality",
+     "lines": [
+      5
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "timestamp",
+     "lines": [
+      5
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.36044955253601074,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      6
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "weak-prng",
+     "lines": [
+      5
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "incorrect-equality",
+     "lines": [
+      5
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "timestamp",
+     "lines": [
+      5
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 93.10648369789124,
+   "findings": [
+    {
+     "rule": "SWC-116",
+     "lines": [
+      5
+     ],
+     "impact": "Low",
+     "title": "Dependence on predictable environment variable"
+    },
+    {
+     "rule": "SWC-105",
+     "lines": [
+      6
+     ],
+     "impact": "High",
+     "title": "Unprotected Ether Withdrawal"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.770505428314209,
+   "findings": [
+    {
+     "rule": "SOLIDITY_EXACT_TIME",
+     "lines": [
+      5
+     ],
+     "impact": "2"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "mythril_nosolv": {
+   "seconds": 93.1479926109314,
+   "findings": [
+    {
+     "rule": "SWC-116",
+     "lines": [
+      5
+     ],
+     "impact": "Low",
+     "title": "Dependence on predictable environment variable"
+    },
+    {
+     "rule": "SWC-105",
+     "lines": [
+      6
+     ],
+     "impact": "High",
+     "title": "Unprotected Ether Withdrawal"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.4111747741699219,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      6
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "weak-prng",
+     "lines": [
+      5
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "incorrect-equality",
+     "lines": [
+      5
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "timestamp",
+     "lines": [
+      5
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.36044955253601074,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      6
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "weak-prng",
+     "lines": [
+      5
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "incorrect-equality",
+     "lines": [
+      5
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "timestamp",
+     "lines": [
+      5
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "txorigin_fixed.sol": {
+  "slither": {
+   "seconds": 0.36435842514038086,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3507039546966553,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 17.252455711364746,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.6621026992797852,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 11
+  },
+  "mythril_nosolv": {
+   "seconds": 16.21658492088318,
+   "findings": [],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.36435842514038086,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3507039546966553,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "txorigin_vuln.sol": {
+  "slither": {
+   "seconds": 0.3564608097076416,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      8
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "tx-origin",
+     "lines": [
+      7
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3847320079803467,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      8
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "tx-origin",
+     "lines": [
+      7
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 18.174834966659546,
+   "findings": [
+    {
+     "rule": "SWC-115",
+     "lines": [
+      7
+     ],
+     "impact": "Low",
+     "title": "Dependence on tx.origin"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.8187272548675537,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 11
+  },
+  "mythril_nosolv": {
+   "seconds": 17.740103006362915,
+   "findings": [
+    {
+     "rule": "SWC-115",
+     "lines": [
+      7
+     ],
+     "impact": "Low",
+     "title": "Dependence on tx.origin"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.3564608097076416,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      8
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "tx-origin",
+     "lines": [
+      7
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3847320079803467,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      8
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "tx-origin",
+     "lines": [
+      7
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "unchecked_call_fixed.sol": {
+  "slither": {
+   "seconds": 0.3874959945678711,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.38297295570373535,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      8
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 43.483895778656006,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      8
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.6527056694030762,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      5
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      9
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 14
+  },
+  "mythril_nosolv": {
+   "seconds": 39.713324546813965,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      8
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.3874959945678711,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.38297295570373535,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      8
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "unchecked_call_vuln.sol": {
+  "slither": {
+   "seconds": 0.35979175567626953,
+   "findings": [
+    {
+     "rule": "unchecked-lowlevel",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3580141067504883,
+   "findings": [
+    {
+     "rule": "unchecked-lowlevel",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      8
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 60.417274475097656,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      8
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    },
+    {
+     "rule": "SWC-104",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Unchecked return value from external call."
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.6840729713439941,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      5
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 10
+  },
+  "mythril_nosolv": {
+   "seconds": 55.12262678146362,
+   "findings": [
+    {
+     "rule": "SWC-107",
+     "lines": [
+      8
+     ],
+     "impact": "Low",
+     "title": "External Call To User-Supplied Address"
+    },
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    },
+    {
+     "rule": "SWC-104",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Unchecked return value from external call."
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.35979175567626953,
+   "findings": [
+    {
+     "rule": "unchecked-lowlevel",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3580141067504883,
+   "findings": [
+    {
+     "rule": "unchecked-lowlevel",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "low-level-calls",
+     "lines": [
+      8
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "unchecked_send_fixed.sol": {
+  "slither": {
+   "seconds": 0.3762016296386719,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.4035964012145996,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 22.047810316085815,
+   "findings": [
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.7846684455871582,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      5
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 10
+  },
+  "mythril_nosolv": {
+   "seconds": 18.786640644073486,
+   "findings": [
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.3762016296386719,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.4035964012145996,
+   "findings": [
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "unchecked_send_vuln.sol": {
+  "slither": {
+   "seconds": 0.35953783988952637,
+   "findings": [
+    {
+     "rule": "unchecked-send",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.36664748191833496,
+   "findings": [
+    {
+     "rule": "unchecked-send",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 28.384320497512817,
+   "findings": [
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    },
+    {
+     "rule": "SWC-104",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Unchecked return value from external call."
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.823854923248291,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      5
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 8
+  },
+  "mythril_nosolv": {
+   "seconds": 24.32767677307129,
+   "findings": [
+    {
+     "rule": "SWC-114",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Transaction Order Dependence"
+    },
+    {
+     "rule": "SWC-104",
+     "lines": [
+      8
+     ],
+     "impact": "Medium",
+     "title": "Unchecked return value from external call."
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.35953783988952637,
+   "findings": [
+    {
+     "rule": "unchecked-send",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.36664748191833496,
+   "findings": [
+    {
+     "rule": "unchecked-send",
+     "lines": [
+      8
+     ],
+     "impact": "Medium"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "unprotected_send_fixed.sol": {
+  "slither": {
+   "seconds": 0.35633349418640137,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3537611961364746,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 14.580446004867554,
+   "findings": [],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.6070265769958496,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      8
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 13
+  },
+  "mythril_nosolv": {
+   "seconds": 13.744462490081787,
+   "findings": [],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.35633349418640137,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3537611961364746,
+   "findings": [
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      8
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ },
+ "unprotected_send_vuln.sol": {
+  "slither": {
+   "seconds": 0.383500337600708,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      7
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full": {
+   "seconds": 0.3558201789855957,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      7
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "mythril": {
+   "seconds": 26.959234714508057,
+   "findings": [
+    {
+     "rule": "SWC-105",
+     "lines": [
+      7
+     ],
+     "impact": "High",
+     "title": "Unprotected Ether Withdrawal"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "smartcheck": {
+   "seconds": 1.6008589267730713,
+   "findings": [
+    {
+     "rule": "SOLIDITY_LOCKED_MONEY",
+     "lines": [
+      2
+     ],
+     "impact": "3"
+    },
+    {
+     "rule": "SOLIDITY_PRAGMAS_VERSION",
+     "lines": [
+      1
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      6
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    },
+    {
+     "rule": "SOLIDITY_VISIBILITY",
+     "lines": [
+      7
+     ],
+     "impact": "1"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "parse_warnings": 11
+  },
+  "mythril_nosolv": {
+   "seconds": 26.66267466545105,
+   "findings": [
+    {
+     "rule": "SWC-105",
+     "lines": [
+      7
+     ],
+     "impact": "High",
+     "title": "Unprotected Ether Withdrawal"
+    }
+   ],
+   "status": "ok",
+   "error": ""
+  },
+  "slither_asend": {
+   "seconds": 0.383500337600708,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      7
+     ],
+     "impact": "Low"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  },
+  "slither_full_asend": {
+   "seconds": 0.3558201789855957,
+   "findings": [
+    {
+     "rule": "arbitrary-send-eth",
+     "lines": [
+      7
+     ],
+     "impact": "High"
+    },
+    {
+     "rule": "missing-zero-check",
+     "lines": [
+      7
+     ],
+     "impact": "Low"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [
+      1
+     ],
+     "impact": "Informational"
+    },
+    {
+     "rule": "solc-version",
+     "lines": [],
+     "impact": "Informational"
+    }
+   ],
+   "status": "ok",
+   "error": "",
+   "solc": "0.5.17",
+   "tried": "0.5.17:ok",
+   "outside_pragma": false
+  }
+ }
+}
