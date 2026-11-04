@@ -1,0 +1,35 @@
+{
+  "script": "tv10_full_day.py",
+  "created_utc": "2026-11-04T03:20:17Z",
+  "git_commit": "e0dd25dcad6663bc0b1ab4dfe3a98363963ec579",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/tv10_full_day.py"
+  ],
+  "diff_sha256": "595ef6ac38257c5c6d7b2c4af55b9c5749cb1c09c117fdd8216b7f7cc60d6a02",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v233-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.15.0",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": null
+  },
+  "config": {
+    "date": "2025-02-01",
+    "models": "logreg,rf,lgbm",
+    "out": "results/kan"
+  },
+  "data": {
+    "results/kan/k4_20261024_204829/features.parquet": "7db6a6728b02f51d62bbd0c282254eb5f2bf4e99fca7c87be806cb4021b22671"
+  },
+  "data_sets": {},
+  "split": "t2025"
+}

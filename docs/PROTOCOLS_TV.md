@@ -160,3 +160,23 @@ lets the paper claim; numbers of round 1 are not changed by it.
   bound background transactions the sample never drew, so a Clopper-Pearson
   90 % interval of the share of background transactions above the threshold
   (times the background transactions per day) is reported next to it.
+* 2026-11-04, X7: the pilot (2025-02-01, run `results/kan/tv10_20261104_031501`)
+  extracted and scored all 1.11 M successful transactions in about 4 minutes
+  on the job machine. Its flash-stratum alarms equal the sample's exactly;
+  1-46 further alarms per threshold come from background transactions that
+  the 3,000-row sample did not contain (sample estimate 0 in every cell,
+  within the Clopper-Pearson bound). Because full days are cheap, X7 is
+  extended before any further run: (i) all 22 quiet days are processed in
+  full, and the quiet-day alarms per day of the fixed thresholds (seed 0,
+  logistic regression, RF, LightGBM; budgets 1 and 10; thresholds fitted as
+  in tv4 on the sampled validation year) are counted exactly on the 14 test
+  days of t2025; as a sensitivity, the fixed_quiet threshold is also refitted
+  on the 8 fully processed quiet days of 2024. (ii) Two windows of 7
+  consecutive days without a DeFiHackLabs mainnet incident within +-3 days,
+  one in 2025 and one in 2026 (first such window after a seeded uniform
+  start date, seed 20261104), are processed in full; on them a sequential
+  rule (threshold = score quantile that would have given b alarms per day
+  over the previous 24 hours of scored transactions, updated every 300
+  blocks, about one hour) is compared with the fixed thresholds and the
+  retrospective per-day top-k. Reported: alarms per day and their spread
+  over days. All of this is detection after execution.
