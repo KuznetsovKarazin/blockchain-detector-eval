@@ -1,14 +1,12 @@
 {
   "script": "tv1_wallet_causal.py",
-  "created_utc": "2026-10-30T22:51:32Z",
-  "git_commit": "2084c7cdf9b93f841fa5a6cc3ab1072906a42092",
-  "git_dirty": true,
-  "dirty_files": [
-    "scripts/tv1_wallet_causal.py"
-  ],
-  "diff_sha256": "c6eda35ab4183f3422a5bb05d85d0873b6fde18fc725c8fac9064d2de89468e7",
+  "created_utc": "2026-11-04T03:11:24Z",
+  "git_commit": "b9cd18afdeb792e621bf2adc6e238c2199b037db",
+  "git_dirty": false,
+  "dirty_files": [],
+  "diff_sha256": null,
   "python": "3.13.17",
-  "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "platform": "Linux-6.18.44-fc-v233-x86_64-with-glibc2.39",
   "cpu_count": 4,
   "packages": {
     "numpy": "2.5.3",
@@ -26,7 +24,7 @@
     "data": "data/raw/ellipticpp",
     "seeds": 3,
     "out": "results/transactions",
-    "protocols": "P2,P3,P5",
+    "protocols": "all",
     "run": "results/transactions/tv1_20261030_x1",
     "aggregate": false
   },
@@ -122,14 +120,17 @@
   "parts": [
     "P1_random_rows__wallet__causal+lifetime.csv",
     "P1_random_rows__wallet__causal.csv",
+    "P1_random_rows__wallet__causal_full.csv",
     "P1_random_rows__wallet__lifetime.csv",
     "P1_random_rows__wallet__lifetime_no_time.csv",
     "P1b_random_entity__wallet__causal+lifetime.csv",
     "P1b_random_entity__wallet__causal.csv",
+    "P1b_random_entity__wallet__causal_full.csv",
     "P1b_random_entity__wallet__lifetime.csv",
     "P1b_random_entity__wallet__lifetime_no_time.csv",
     "P2_temporal_rows__wallet__causal+lifetime.csv",
     "P2_temporal_rows__wallet__causal.csv",
+    "P2_temporal_rows__wallet__causal_full.csv",
     "P2_temporal_rows__wallet__causal_no_degree.csv",
     "P2_temporal_rows__wallet__lifetime.csv",
     "P2_temporal_rows__wallet__lifetime_no_time.csv",
@@ -137,6 +138,7 @@
     "P3_temporal_entity__causal__lifetime.csv",
     "P3_temporal_entity__wallet__causal+lifetime.csv",
     "P3_temporal_entity__wallet__causal.csv",
+    "P3_temporal_entity__wallet__causal_full.csv",
     "P3_temporal_entity__wallet__causal_no_degree.csv",
     "P3_temporal_entity__wallet__lifetime.csv",
     "P3_temporal_entity__wallet__lifetime_no_time.csv",
@@ -144,6 +146,7 @@
     "P5_temporal_rows_new_addresses__causal__lifetime.csv",
     "P5_temporal_rows_new_addresses__wallet__causal+lifetime.csv",
     "P5_temporal_rows_new_addresses__wallet__causal.csv",
+    "P5_temporal_rows_new_addresses__wallet__causal_full.csv",
     "P5_temporal_rows_new_addresses__wallet__causal_no_degree.csv",
     "P5_temporal_rows_new_addresses__wallet__lifetime.csv",
     "P5_temporal_rows_new_addresses__wallet__lifetime_no_time.csv"

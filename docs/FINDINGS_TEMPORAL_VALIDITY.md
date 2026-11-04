@@ -169,6 +169,59 @@ Tuning moves GraphSAGE by −0.05 and GAT by +0.04 test AP, both within two
 seed standard deviations; both stay 0.25–0.30 below LightGBM (0.801), and
 every model has F1 ≈ 0.02 after step 43. Tuning does not change the RQ2 order.
 
+## Round 2 (protocol: docs/PROTOCOLS_TV.md, "Round 2")
+
+### X1c / HV6 — future vs representation (run `results/transactions/tv1_20261030_x1`, set `causal_full`)
+
+LightGBM test AP, mean of 3 seeds:
+
+| Protocol | causal | causal_full | lifetime | future effect | representation effect |
+|---|---|---|---|---|---|
+| P1 random rows | 0.989 | 0.992 | 0.987 | −0.003 | 0.005 |
+| P2 temporal rows | 0.716 | 0.688 | 0.426 | 0.028 | 0.262 |
+| P3 temporal addresses | 0.555 | 0.548 | 0.277 | 0.007 | 0.271 |
+| P5 new addresses | 0.716 | 0.683 | 0.413 | 0.033 | 0.270 |
+
+RF: future effect 0.049 (P3), −0.008 (P2), 0.001 (P5). **HV6 not supported**
+(P3 future effect 0.007 < 0.05; the P1 part holds). The lifetime features are
+weak under a temporal split because of what they aggregate, not because they
+see the future.
+
+### X6b — EM population, positive control, assumption (run `results/transactions/tv8_20261103_222347`)
+
+* (a) On all transactions of a step the EM estimate does not go to zero after
+  step 43: cut-off 35, mean over steps 35–42 / 43–44: all 0.155 / 0.097,
+  labelled 0.093 / 0.002, true (labelled) 0.102 / 0.016. The value on all
+  transactions cannot be checked (unlabelled truth unknown).
+* (b) Positive control (cut-offs 25, 30; 50 draws): median absolute error
+  0.002, 0.003, 0.008, 0.012, 0.015 at shares 1, 2, 5, 10, 20 % — EM works at
+  every share (limit 0.25 × share).
+* (c) Domain AUC: illicit 35–42 vs 43–49 1.000, licit control 1.000, illicit
+  35–38 vs 39–42 1.000. The test is saturated (Elliptic features identify the
+  period); rule not met; no claim of a measured p(x|y) change.
+
+### A3b — preparation vs execution, frozen check (run `results/kan/tv9_20261103`)
+
+| Model | full | no preparation | no execution | frozen, preparation swapped |
+|---|---|---|---|---|
+| LightGBM AP / median day rank | 0.212 / 6.4 | 0.040 / 12.2 | 0.162 / 10.6 | 0.063 / 362 |
+| RF AP / median day rank | 0.209 / 4.9 | 0.169 / 24.7 | 0.150 / 12.2 | 0.035 / 94 |
+
+Top-10 recall, frozen: LightGBM 0.62 → 0.28, RF 0.66 → 0.32. A dependence
+test, not an evasion experiment.
+
+### X4b — alarms by stratum (same run, seed 0)
+
+At 1 alarm/day every quiet-day alarm of every model and both fixed
+thresholds comes from the complete flash stratum (LightGBM 8.8 / 28.8, RF
+7.4 / 20.9, logreg 5.1 / 5.4 per day for incident / quiet thresholds); none of
+the 42,000 sampled quiet-day background rows is above the threshold. These are
+lower bounds; the 90 % Clopper–Pearson upper bound for the background is 123
+alarms/day (1.72 M background tx/day). The bootstrap interval is zero-width in
+such cells. One sampled row adds 23.6/day (logreg, budget 10, incident
+threshold; bootstrap 24–119 total); two rows add 90.6 per incident day
+(LightGBM, quiet threshold).
+
 ## Limits
 
 * K4 has 40 attacks and 5–13 per test split; all K4 numbers are descriptive.
