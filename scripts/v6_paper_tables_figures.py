@@ -165,8 +165,9 @@ def tab_paired(v10: Path, out: Path):
 
 def tab_controls(v8: Path, out: Path):
     c = pd.read_csv(v8 / "controls.csv")
-    tools = [("slither", "Slither"), ("slither_full", "Slither (all)"), ("mythril", "Mythril"),
-             ("mythril_nosolv", "Mythril w/o \\texttt{--solv}"), ("smartcheck", "SmartCheck")]
+    # the *_asend configurations use the final mapping (arbitrary-send-eth for unprotected sends, amendment 4)
+    tools = [("slither_asend", "Slither"), ("slither_full_asend", "Slither (all)"), ("mythril", "Mythril"),
+             ("mythril_nosolv", "Mythril$^{b}$"), ("smartcheck", "SmartCheck")]
     rows = []
     for (cls, f), g in c.groupby(["class", "file"], sort=False):
         g = g.set_index("tool")

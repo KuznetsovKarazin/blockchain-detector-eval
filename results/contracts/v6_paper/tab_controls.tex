@@ -1,6 +1,6 @@
 \begin{tabular}{@{}llccccc@{}}
 \toprule
-Class & Control & Slither & Slither (all) & Mythril & Mythril w/o \texttt{--solv} & SmartCheck\\
+Class & Control & Slither & Slither (all) & Mythril & Mythril$^{b}$ & SmartCheck\\
 \midrule
 Arithmetic & \texttt{arithmetic\_fixed} & -- & -- & $\cdot$ & $\cdot$ & --\\
 Arithmetic & \texttt{arithmetic\_vuln} & -- & -- & \checkmark & $\cdot$ & --\\
@@ -15,7 +15,7 @@ Unchecked call & \texttt{unchecked\_call\_fixed} & $\cdot$ & $\cdot$ & $\cdot$ &
 Unchecked call & \texttt{unchecked\_call\_vuln} & \checkmark & \checkmark & \checkmark & \checkmark & $\cdot$\\
 Unchecked call & \texttt{unchecked\_send\_fixed} & $\cdot$ & $\cdot$ & $\cdot$ & $\cdot$ & $\cdot$\\
 Unchecked call & \texttt{unchecked\_send\_vuln} & \checkmark & \checkmark & \checkmark & \checkmark & $\cdot$\\
-Unprotected send & \texttt{unprotected\_send\_fixed} & -- & -- & $\cdot$ & $\cdot$ & --\\
-Unprotected send & \texttt{unprotected\_send\_vuln} & -- & -- & \checkmark & \checkmark & --\\
+Unprotected send & \texttt{unprotected\_send\_fixed} & $\cdot$ & $\cdot$ & $\cdot$ & $\cdot$ & --\\
+Unprotected send & \texttt{unprotected\_send\_vuln} & \checkmark & \checkmark & \checkmark & \checkmark & --\\
 \bottomrule
 \end{tabular}
