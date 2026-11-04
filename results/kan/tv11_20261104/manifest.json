@@ -1,0 +1,32 @@
+{
+  "script": "tv11_full_days.py",
+  "created_utc": "2026-11-04T08:34:48Z",
+  "git_commit": "e5ecc40c47466c2ede0b7155f463b4644a5b9c66",
+  "git_dirty": false,
+  "dirty_files": [],
+  "diff_sha256": null,
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v233-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.15.0",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": null
+  },
+  "config": {
+    "run": "results/kan/tv11_20261104",
+    "out": "results/kan"
+  },
+  "data": {
+    "results/kan/k4_20261024_204829/features.parquet": "7db6a6728b02f51d62bbd0c282254eb5f2bf4e99fca7c87be806cb4021b22671"
+  },
+  "data_sets": {},
+  "split": "t2025"
+}

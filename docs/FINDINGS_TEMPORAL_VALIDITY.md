@@ -222,6 +222,38 @@ such cells. One sampled row adds 23.6/day (logreg, budget 10, incident
 threshold; bootstrap 24–119 total); two rows add 90.6 per incident day
 (LightGBM, quiet threshold).
 
+### X7 — fully processed Ethereum days (run `results/kan/tv11_20261104`, seed 0)
+
+All 22 quiet days were extracted in full (every successful transaction; 0.99–2.53 M per test day,
+mean 1.73 M) and scored; two 7-day windows without an incident within ±3 days (2025-10-02..08,
+2026-07-10..16) were added for the sequential rule. Scores cached in `data/derived/k4_full/scores/`
+(git-ignored, rebuilt by `scripts/tv11_full_days.py`).
+
+Quiet test days (14), exact alarms/day (sample estimate):
+
+| model | b1 incident | b1 quiet | b1 full-2024 | b10 incident | b10 quiet | b10 full-2024 |
+|---|---|---|---|---|---|---|
+| LightGBM | 9.7 (8.8) | 36.6 (28.8) | 1.5 | 83.2 (52.0) | 197.7 (95.8) | 17.4 |
+| RF | 8.6 (7.4) | 29.7 (20.9) | 0.4 | 92.7 (48.7) | 92.7 (48.7) | 7.5 |
+| logreg | 5.9 (5.1) | 6.5 (5.4) | 6.5 | 74.6 (47.8) | 6.5 (5.4) | 22.9 |
+
+- At b1 the sample is close (background adds ≈1/day); at b10 it underestimates by up to half.
+  HV3(a) holds on exact counts with a larger margin.
+- A weighted sample cannot place a threshold for a budget below one row's weight (~500); the
+  quiet-day rule refit on 8 full 2024 days keeps the budget for trees, not for logreg.
+
+Windows (12 days, first day of each window = history only), mean (max) alarms/day:
+
+| model | b1 incident | b1 full-2024 | b1 sequential | b10 incident | b10 full-2024 | b10 sequential |
+|---|---|---|---|---|---|---|
+| LightGBM | 8.9 (16) | 1.6 (5) | 1.6 (6) | 68.7 (132) | 14.4 (31) | 10.8 (17) |
+| RF | 6.2 (30) | 0.3 (2) | 2.2 (7) | 56.8 (107) | 4.8 (25) | 11.9 (24) |
+| logreg | 7.1 (18) | 7.5 (19) | 3.7 (13) | 50.0 (132) | 24.0 (52) | 13.7 (33) |
+
+- Sequential rule (b-th highest score over the previous 7200 blocks, updated every 300 blocks):
+  >2× budget on 2–6/12 days at b1, ≤1/12 at b10. Label-free and real-time.
+- No attacks in these days: alarm load only, recall of the sequential rule not measured.
+
 ## Limits
 
 * K4 has 40 attacks and 5–13 per test split; all K4 numbers are descriptive.
