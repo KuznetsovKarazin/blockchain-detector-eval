@@ -33,6 +33,9 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import pyarrow as pa
+import pyarrow.compute as pc
+import pyarrow.parquet as pq
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -52,6 +55,7 @@ def _load(name, file):
 
 TV4 = _load("tv4", "tv4_k4_temporal.py")
 TV3 = _load("tv3", "tv3_quiet_days.py")
+K4X = _load("k4x", "k4_extract_days.py")
 K4 = TV4.K4
 FULL = Path("data/derived/k4_full")
 BUDGETS = (1, 10)
@@ -83,19 +87,154 @@ def windows(blocked):
 
 
 def full_day(date, exclude):
+    """Extract and featurise in a fresh process, so its memory is returned before scoring."""
     feats = FULL / date / "features.parquet"
     if not feats.exists():
-        TV3.OUT = FULL
-        t0 = time.time()
-        TV3.run(date, exclude, 10 ** 9)
-        f = day_features(FULL / date)
-        f.to_parquet(feats, index=False)
-        # the raw day is large; keep the features and the extraction record only
-        for p in ("txs", "logs", "transfers", "state", "creations", "pairs", "pair_tokens"):
-            (FULL / date / f"{p}.parquet").unlink(missing_ok=True)
-        print("full day", date, len(f), round(time.time() - t0), "s", flush=True)
+        from concurrent.futures import ProcessPoolExecutor
+        from multiprocessing import get_context
+        with ProcessPoolExecutor(1, mp_context=get_context("spawn")) as ex:
+            ex.submit(_extract, date, exclude).result()
     f = pd.read_parquet(feats)
     return f[f.receipt_status == 1].reset_index(drop=True)
+
+
+def _download(table, date, tmp):
+    import urllib.request
+    out = []
+    for k, url in enumerate(D.aws_files(table, date)):
+        dst = tmp / f"{table}_{k}.parquet"
+        for attempt in range(4):
+            try:
+                urllib.request.urlretrieve(url, dst)
+                break
+            except Exception:
+                if attempt == 3:
+                    raise
+                time.sleep(2 ** (attempt + 1))
+        out.append(dst)
+    return out
+
+
+def _batches(files, cols):
+    for f in files:
+        pf = pq.ParquetFile(f)
+        for g in range(pf.num_row_groups):
+            yield pf.read_row_group(g, columns=cols)
+
+
+def _topic0(t):
+    first = pc.list_slice(t["topics"], 0, 1)
+    idx = pc.list_parent_indices(first).to_numpy()
+    v = np.full(len(t), None, dtype=object)
+    v[idx] = pc.list_flatten(first).to_numpy(zero_copy_only=False)
+    return t.append_column("topic0", pa.array(v, type=pa.string()))
+
+
+def _tt_pandas(t):
+    tt = t.to_pandas()
+    for c in ("token_address", "from_address", "to_address"):
+        tt[c] = "0x" + tt[c].str[-40:].str.lower()
+    return tt
+
+
+def _extract(date, exclude, parts=8):
+    """Every transaction of the day, with the strata rule of k4_extract_days (flash / background).
+
+    The raw tables are downloaded and read one row group at a time. The day-level
+    context of the features (pool state events, contracts created that day, first
+    pool-token transfers) is built from the whole day; the transactions with their
+    logs and transfers are written in block-range parts and featurised part by part.
+    The features of a transaction depend only on its own logs and transfers and on
+    the day-level context, as for the sampled days.
+    """
+    import shutil
+    feats = FULL / date / "features.parquet"
+    if feats.exists():
+        return
+    t0 = time.time()
+    out = FULL / date
+    tmp = out / "raw"
+    tmp.mkdir(parents=True, exist_ok=True)
+    files = {t: _download(t, date, tmp) for t in ("transactions", "logs", "token_transfers")}
+    tx = pa.concat_tables(list(_batches(files["transactions"], K4X.TX_COLS))).to_pandas().drop_duplicates("hash")
+    ev = []
+    for b in _batches(files["logs"], K4X.LOG_COLS):
+        b = _topic0(b)
+        e = b.filter(pc.is_in(b["topic0"], value_set=pa.array(sorted(D.KEEP_TOPICS)))).to_pandas()
+        e["address"] = e.address.str.lower()
+        ev.append(e)
+    ev = pd.concat(ev, ignore_index=True)
+    v2 = set(ev[ev.topic0 == D.T_SYNC].address)
+    pools = v2 | set(ev[ev.topic0 == D.T_SWAP_V2].address)
+    tt_v2 = []
+    for b in _batches(files["token_transfers"], K4X.TT_COLS):
+        tt = _tt_pandas(b)
+        tt_v2.append(tt[tt.from_address.isin(pools) | tt.to_address.isin(pools)])
+    tt_v2 = pd.concat(tt_v2, ignore_index=True)
+    flash = D.flash_hashes(ev, tt_v2, v2)
+    ok = set(tx[tx.receipt_status == 1].hash)
+    strata = {h: "flash" for h in flash - exclude}
+    for h in ok - set(strata) - exclude:
+        strata[h] = "background"
+    sel = tx[tx.hash.isin(strata)].copy()
+    sel["stratum"] = sel.hash.map(strata)
+    sel["weight"] = 1.0
+    ctx = {"creations": K4X._creations(tx),
+           "state": ev[ev.topic0.isin(D.STATE_TOPICS)][["address", "topic0", "data", "transaction_hash",
+                                                        "block_number", "transaction_index", "log_index"]],
+           "pair_tokens": D.pair_tokens(tt_v2, v2)}
+    del ev, tt_v2, tx
+    edges = np.quantile(sel.block_number, np.linspace(0, 1, parts + 1))
+    edges[-1] += 1
+    sel["part"] = np.clip(np.searchsorted(edges, sel.block_number, side="right") - 1, 0, parts - 1)
+    pdirs = [out / f"part{k}" for k in range(parts)]
+    keep = pa.array(sorted(strata), type=pa.string())
+    for k, d in enumerate(pdirs):
+        d.mkdir(exist_ok=True)
+        sel[sel.part == k].drop(columns="part").to_parquet(d / "txs.parquet", index=False)
+        for name, frame in ctx.items():
+            frame.to_parquet(d / f"{name}.parquet", index=False)
+    lw = [None] * parts
+    tw = [None] * parts
+    lo, hi = edges[:-1], edges[1:]
+    for b in _batches(files["logs"], K4X.LOG_COLS):
+        b = _topic0(b)
+        b = b.filter(pc.is_in(b["transaction_hash"], value_set=keep))
+        if not len(b):
+            continue
+        dfb = b.to_pandas()
+        dfb["address"] = dfb.address.str.lower()
+        dfb["topics"] = dfb.topics.map(list)
+        for k in range(parts):
+            m = (dfb.block_number >= lo[k]) & (dfb.block_number < hi[k])
+            if m.any():
+                t = pa.Table.from_pandas(dfb[m], preserve_index=False)
+                if lw[k] is None:
+                    lw[k] = pq.ParquetWriter(pdirs[k] / "logs.parquet", t.schema)
+                lw[k].write_table(t.cast(lw[k].schema))
+    for b in _batches(files["token_transfers"], K4X.TT_COLS):
+        tt = _tt_pandas(b)
+        tt = tt[tt.transaction_hash.isin(strata)]
+        for k in range(parts):
+            m = (tt.block_number >= lo[k]) & (tt.block_number < hi[k])
+            if m.any():
+                t = pa.Table.from_pandas(tt[m], preserve_index=False)
+                if tw[k] is None:
+                    tw[k] = pq.ParquetWriter(pdirs[k] / "transfers.parquet", t.schema)
+                tw[k].write_table(t.cast(tw[k].schema))
+    for w_ in lw + tw:
+        if w_ is not None:
+            w_.close()
+    shutil.rmtree(tmp)
+    fs = []
+    for d in pdirs:
+        fs.append(day_features(d))
+        shutil.rmtree(d)
+    f = pd.concat(fs, ignore_index=True)
+    f.to_parquet(feats, index=False)
+    (out / "done.json").write_text(json.dumps({"date": date, "n_tx_kept": len(sel), "n_flash": int(
+        (sel.stratum == "flash").sum()), "parts": parts, "seconds": round(time.time() - t0, 1)}, indent=1))
+    print("full day", date, len(f), round(time.time() - t0), "s", flush=True)
 
 
 def main():
