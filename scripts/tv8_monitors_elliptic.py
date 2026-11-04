@@ -65,8 +65,9 @@ def main():
     ap.add_argument("--data", default="data/raw/elliptic")
     ap.add_argument("--draws", type=int, default=50)
     ap.add_argument("--out", default="results/transactions")
+    ap.add_argument("--run", help="existing run folder: reuse its (a) and (b) tables")
     a = ap.parse_args()
-    run = Path(a.out) / time.strftime("tv8_%Y%m%d_%H%M%S")
+    run = Path(a.run) if a.run else Path(a.out) / time.strftime("tv8_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
     d = load_elliptic(a.data)
     X = np.hstack([d.X, neighbour_features(d.X, d.edges)]).astype(np.float32)
@@ -74,7 +75,8 @@ def main():
     lab = y >= 0
     rng = np.random.default_rng(0)
     em_rows, ctl_rows = [], []
-    for c in TV2.CUTOFFS:
+    done = (run / "em_population.csv").exists() and (run / "em_positive_control.csv").exists()
+    for c in () if done else TV2.CUTOFFS:
         tr_steps, va_steps, te_steps = TV2.periods(c)
         tr = np.isin(step, list(tr_steps)) & lab
         va = np.isin(step, list(va_steps)) & lab
@@ -103,10 +105,12 @@ def main():
                     ctl_rows.append({"cutoff": c, "step": t, "target": k / n, "draw": r, "em": est,
                                      "abs_err": abs(est - k / n)})
         print("cut-off", c, "done", flush=True)
-    em = pd.DataFrame(em_rows)
-    ctl = pd.DataFrame(ctl_rows)
-    atomic_to_csv(em, run / "em_population.csv", index=False)
-    atomic_to_csv(ctl, run / "em_positive_control.csv", index=False)
+    if done:
+        em, ctl = pd.read_csv(run / "em_population.csv"), pd.read_csv(run / "em_positive_control.csv")
+    else:
+        em, ctl = pd.DataFrame(em_rows), pd.DataFrame(ctl_rows)
+        atomic_to_csv(em, run / "em_population.csv", index=False)
+        atomic_to_csv(ctl, run / "em_positive_control.csv", index=False)
     ctl["share"] = pd.cut(ctl.target, [0, .015, .03, .07, .15, .3], labels=[str(x) for x in SHARES])
     g = ctl.groupby("share", observed=True)
     ctl_sum = g.agg(median_abs_err=("abs_err", "median"), median_em=("em", "median")).reset_index()
@@ -122,6 +126,7 @@ def main():
                          "licit_35-42_vs_43-49": (lic & pre, lic & post),
                          "illicit_35-38_vs_39-42": (ill & early, ill & late)}.items():
         auc, na, nb = domain_auc(d.X[A], d.X[B])
+        print(name, round(auc, 4), na, nb, flush=True)
         shift[name] = {"auc": round(auc, 4), "n_a": na, "n_b": nb}
     shift["px_given_y_shifted"] = bool(shift["illicit_35-42_vs_43-49"]["auc"]
                                        >= shift["illicit_35-38_vs_39-42"]["auc"] + 0.15)
