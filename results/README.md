@@ -36,9 +36,13 @@ underlying datasets.
 | V1 SolidiFI template audit | `contracts/v1_20261030_181838` | — |
 | V2 template controls (seen / LOTO / pairs) | `contracts/v2_20261030_183559` | — |
 | V3 frozen transfer | `contracts/v3_20261030_182906` | — |
-| V4 analysers (Slither, Mythril, SmartCheck) | `contracts/v4_20261030_180940` (resumed after two container restarts; Mythril on SolidiFI completed in full on 2026-10-31; amendment 3 superseded), `contracts/v4_20261030_185950` (Slither, all detectors) | — |
-| V5 scoring units, budgets | `contracts/v5_20261031_115227` (full Mythril run) | — |
-| V6 paper tables and figures | `contracts/v6_paper` (generated from V1–V5) | — |
+| V4 analysers (Slither, Mythril, SmartCheck) | Slither and SmartCheck: `contracts/v4_20261030_180940`, Slither all detectors: `contracts/v4_20261030_185950`; Mythril with `--solv` (amendment 4): `contracts/v4m_20261103`; Slither on DAppSCAN: `contracts/v4d_20261103` | Mythril rows of `v4_20261030_180940` (no `--solv`: integer module disabled offline) |
+| V5 scoring units, budgets | `contracts/v5_20261104_043212` (later runs replace earlier ones per tool and file) | `v5_20261031_115227` (Mythril without `--solv`; used by book chapter 13 of 2026-10-31) |
+| V6 paper tables and figures | `contracts/v6_paper` (generated from V1–V3, V5, V7b–V10) | — |
+| V7 / V7b template reading form, other readers | form `contracts/v7_rater_form`; LLM readers `contracts/v7b_llm_20261103_233429` | — |
+| V8 analyser controls | `contracts/v8_20261103_222943` | — |
+| V9 transfer statistics | `contracts/v9_20261103_222854` | — |
+| V10 paired edits | `contracts/v10_20261103_224807` | — |
 | B1 bridges | `bridges/b1_20261022_163601` | `b1_20261022_141005` (attack ranks depended on tie order), `b1_20261022_093114` (dataset prices), `b1_20261021_161056` |
 | B2 saturation, hybrids | `bridges/b2_20261022_164508` | `b2_20261022_142045`, `b2_20261022_094142`, `b2_20261021_162632` |
 | K1 KAN analysis | `kan/k1_{quantile,robust}_20261022_142521` | `k1_*_20261021_232204` (float64 LUT) |

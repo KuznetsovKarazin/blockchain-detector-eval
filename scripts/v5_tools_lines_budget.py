@@ -120,13 +120,15 @@ def paired_boot(y, s_a, s_b, k, n=2000, seed=0, groups=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--v4-run", required=True, nargs="+", help="one or more V4 runs (tools are merged)")
+    ap.add_argument("--v4-run", required=True, nargs="+", help="one or more V4 runs (tools are merged; later runs replace earlier ones per tool and file)")
     ap.add_argument("--v3-run", required=True)
     ap.add_argument("--out", default="results/contracts")
     a = ap.parse_args()
     run = Path(a.out) / time.strftime("v5_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
     R = pd.concat([load_v4(Path(r)) for r in a.v4_run], ignore_index=True)
+    # a later run replaces an earlier one for the same tool and file (amendment 4 reruns)
+    R = R.drop_duplicates(["tool", "dataset", "fid"], keep="last").reset_index(drop=True)
     files, clean, cat = solidifi.load()
     sf = {str(f.path): f for f in files}
     df = load_all()

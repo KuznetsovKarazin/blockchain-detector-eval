@@ -219,6 +219,35 @@ without `--mythril-sample`; 343/350 and 49/50 ok, the rest compile errors).
 V5 (`v5_20261031_115227`) and V6 (`v6_paper`) were recomputed on the full run;
 the sampled V5 run `v5_20261030_234245` is withdrawn.
 
+**Amendments 4–6 (2026-11-03, after an external review of the first draft;
+all earlier V results had been read).** They add controls; no earlier
+analysis is removed, and every changed number is recomputed from new runs.
+
+*Amendment 4 — analyser controls.* V8 (`scripts/v8_analyser_controls.py`)
+runs every analyser on 15 hand-written contracts in `data/controls/swc/`
+(vulnerable and minimally fixed version per class, plus reentrancy through
+`transfer`). It showed that Mythril without `--solv` disables its integer
+module offline (no compiler version from the online list), so Mythril now
+always gets `--solv <version>` and all Mythril runs were repeated
+(`v4m_20261103`). Slither `arbitrary-send-eth` is mapped to
+`unprotected_send`. Slither is also run on the 948 annotated DAppSCAN files
+(`v4d_20261103`; files that do not compile, mostly because of missing
+imports, count as unflagged; `--dappscan-tools`).
+
+*Amendment 5 — transfer statistics.* V9 (`scripts/v9_transfer_stats.py`):
+expected AP of a random order and one-sided permutation p (5,000
+permutations, the same permutation for all seeds; also within projects /
+base contracts), and a cluster bootstrap that recomputes the seed-mean AP.
+
+*Amendment 6 — templates and budgets.* The 44 SolidiFI templates are read at
+three levels (operation / weakness / exploit;
+`data/audit/template_three_levels.csv`); a blinded form for other readers is
+built by V7 and compared by V7b. V10 (`scripts/v10_paired_edits.py`) scores
+vulnerable, hand-fixed (`data/controls/solidifi_fixed/`), renamed and clean
+variants of each LOTO test unit. V5 adds severity ordering, random order among
+flagged files, expected counts and a project-level paired bootstrap on
+DAppSCAN.
+
 ## K4 — Flash-loan price-manipulation exploits (Ethereum)
 
 * Unit: one transaction. Positives: the attack transactions linked by the

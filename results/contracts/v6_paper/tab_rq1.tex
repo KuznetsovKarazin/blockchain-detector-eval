@@ -1,0 +1,15 @@
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+ & & \multicolumn{4}{c}{Our reading} & \multicolumn{3}{c}{LLM readers (range)}\\
+\cmidrule(lr){3-6}\cmidrule(lr){7-9}
+Type & templates / snippets & no operation & no weakness & not \emph{yes} & no exploit & no operation & no weakness & no exploit\\
+\midrule
+Re-entrancy & 12 / 1,343 & 0\% & 0\% & 71\% & 71\% & 0\% & 0--14\% & 0--75\%\\
+Timestamp-Dependency & 5 / 1,381 & 0\% & 18\% & 37\% & 37\% & 0\% & 0--37\% & 18--37\%\\
+Unhandled-Exceptions & 14 / 1,369 & 9\% & 26\% & 33\% & 72\% & 0\% & 0--28\% & 15--87\%\\
+Overflow-Underflow & 6 / 1,333 & 0\% & 0\% & 56\% & 56\% & 0\% & 0\% & 56\%\\
+tx.origin & 4 / 1,336 & 56\% & 56\% & 100\% & 56\% & 0\% & 0\% & 0--25\%\\
+Unchecked-Send & 1 / 1,266 & 0\% & 0\% & 0\% & 0\% & 0\% & 0\% & 0\%\\
+TOD & 2 / 1,336 & 0\% & 0\% & 0\% & 0\% & 0\% & 0\% & 0\%\\
+\bottomrule
+\end{tabular}
