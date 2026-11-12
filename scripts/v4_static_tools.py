@@ -6,7 +6,7 @@ optimisation detectors as C3 does, `slither_full` keeps them), Mythril 0.24.8 (s
 SmartCheck 2.0.1 (XPath rules on the parse tree, no compiler). Files:
 SmartBugs-curated (143), SolidiFI buggy files (350), the 50 original SolidiFI
 contracts, and with `--dappscan` the 948 annotated DAppSCAN files (SmartCheck
-only).
+only, unless `--dappscan-tools` names compiled tools).
 
 Slither and Mythril compile with the compiler choice of C3 (newest allowed
 minor of the pragma range first, older minors after a failure). Every
@@ -106,8 +106,15 @@ def slither_once(path: str, version: str, timeout: int, full: bool = False) -> d
     try:
         js = json.loads(r.stdout)
     except json.JSONDecodeError:
-        out["status"] = "compile_error" if _is_compile_failure(r.stderr) else "tool_error"
-        out["error"] = _tail(r.stderr) or f"exit code {r.returncode}, no JSON output"
+        txt = (r.stderr or "") + (r.stdout or "")
+        if not txt.strip():
+            # slither --json - can exit silently when crytic-compile fails; ask solc itself
+            c = subprocess.run([str(solc), "--allow-paths", str(Path.cwd()), path],
+                               capture_output=True, text=True, timeout=timeout)
+            if c.returncode != 0 and re.search(r"\bError\b|Error:", c.stderr):
+                txt = "CompilationError (solc): " + c.stderr
+        out["status"] = "compile_error" if _is_compile_failure(txt) else "tool_error"
+        out["error"] = _tail(txt) or f"exit code {r.returncode}, no JSON output"
         return out
     if js.get("success"):
         out["status"] = "ok"
@@ -122,14 +129,28 @@ def slither_once(path: str, version: str, timeout: int, full: bool = False) -> d
 
 
 # ---------------------------------------------------------------- Mythril
-def mythril_once(path: str, version: str, timeout: int, exec_timeout: int) -> dict:
+def mythril_once(path: str, version: str, timeout: int, exec_timeout: int, solv: bool = True) -> dict:
     solc = ensure_solc(version)
     t0 = time.time()
+    # Mythril must be told the compiler version (--solv). Without it, Mythril reads the version
+    # from the pragma via the online release list; offline that list is empty, it falls back to
+    # `solc` on PATH with an unknown version and silently disables its IntegerArithmetics
+    # (SWC-101) module (mythril_disassembler.check_run_integer_module). Amendment 4.
+    # --solv makes py-solc-x look in ~/.solcx, so the static binary is linked there.
+    solcx_dir = Path.home() / ".solcx"
+    solcx_dir.mkdir(exist_ok=True)
+    link = solcx_dir / f"solc-v{version}"
+    if not link.exists():
+        try:
+            os.symlink(solc, link)
+        except FileExistsError:
+            pass
     with tempfile.TemporaryDirectory() as d:
         os.symlink(solc, Path(d) / "solc")       # Mythril calls `solc` from PATH
         env = dict(os.environ, PATH=f"{d}:{os.environ['PATH']}")
         try:
             r = subprocess.run([os.environ.get("MYTH", "myth"), "analyze", path, "-o", "json",
+                                *(["--solv", version] if solv else []),
                                 "--execution-timeout", str(exec_timeout), "--no-onchain-data"],
                                capture_output=True, text=True, timeout=timeout, env=env)
         except subprocess.TimeoutExpired:
@@ -200,15 +221,23 @@ def main():
     ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--timeout", type=int, default=600, help="wall seconds per tool call")
     ap.add_argument("--exec-timeout", type=int, default=90, help="Mythril --execution-timeout")
-    ap.add_argument("--dappscan", action="store_true", help="also SmartCheck on annotated DAppSCAN files")
+    ap.add_argument("--dappscan", action="store_true", help="also the annotated DAppSCAN files")
+    ap.add_argument("--dappscan-tools", default="smartcheck",
+                    help="tools run on DAppSCAN files (compiled tools: amendment 4)")
+    ap.add_argument("--datasets", default="", help="comma list of datasets to run (default: all)")
     ap.add_argument("--mythril-sample", type=int, default=0,
                     help="Mythril on SolidiFI only for base contracts k <= this (0 = all); protocol amendment 3")
     a = ap.parse_args()
     run = Path(a.resume) if a.resume else Path(a.out) / time.strftime("v4_%Y%m%d_%H%M%S")
     run.mkdir(parents=True, exist_ok=True)
     df = file_table(a.dappscan)
+    if a.datasets:
+        df = df[df.dataset.isin(a.datasets.split(","))].reset_index(drop=True)
     df[["fid", "dataset", "path"]].to_csv(run / "files.csv", index=False)
-    for v in sorted({v for s in df[df.dataset != "dappscan"].source for v in solc_candidates(s)[0]}):
+    ds_tools = set(a.dappscan_tools.split(","))
+    compiled_ds = bool(ds_tools - {"smartcheck"})
+    for v in sorted({v for s in df[(df.dataset != "dappscan") | compiled_ds].source
+                     for v in solc_candidates(s)[0]}):
         for attempt in range(5):                      # GitHub release downloads are rate-limited
             try:
                 ensure_solc(v)
@@ -222,7 +251,7 @@ def main():
     for tool in a.tools.split(","):
         (run / "raw" / tool).mkdir(parents=True, exist_ok=True)
         for r in df.itertuples():
-            if tool != "smartcheck" and r.dataset == "dappscan":
+            if r.dataset == "dappscan" and tool not in ds_tools:
                 continue
             if tool == "mythril" and a.mythril_sample and r.dataset.startswith("solidifi") \
                     and int(re.search(r"(\d+)\.sol$", r.path).group(1)) > a.mythril_sample:

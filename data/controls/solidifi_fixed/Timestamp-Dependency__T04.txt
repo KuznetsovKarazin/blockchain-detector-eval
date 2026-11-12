@@ -1,0 +1,9 @@
+function bug_tmstmp4 () public payable {
+	uint pastBlockNumber_tmstmp4; // Forces one bet per block
+	require(msg.value == 10 ether); // must send 10 ether to play
+        require(block.number != pastBlockNumber_tmstmp4); // only 1 transaction per block   //bug
+        pastBlockNumber_tmstmp4 = block.number;       //bug
+        if(uint(blockhash(block.number - 1)) % 15 == 0) { // winner    //bug
+            msg.sender.transfer(address(this).balance);
+        }
+    }

@@ -5,7 +5,9 @@ Every number in the generated tables is read from a run file; nothing is
 typed by hand. Usage:
 
     python scripts/v6_paper_tables_figures.py --v1 results/contracts/v1_* --v2 results/contracts/v2_* \
-        --v3 results/contracts/v3_* --v5 results/contracts/v5_* --out results/contracts/v6_paper
+        --v3 results/contracts/v3_* --v5 results/contracts/v5_* --v7b results/contracts/v7b_* \
+        --v8 results/contracts/v8_* --v9 results/contracts/v9_* --v10 results/contracts/v10_* \
+        --out results/contracts/v6_paper
 """
 
 from __future__ import annotations
@@ -89,16 +91,94 @@ def short_model(c: str) -> str:
     return f"{p[0][4:]}-LR {p[2][2:]}"
 
 
-def tab_rq4(v3: Path, out: Path):
+def fp(p):
+    return "<0.001" if p < 0.001 else f"{p:.3f}"
+
+
+def tab_rq4(v3: Path, v9: Path, out: Path):
+    """Frozen vs oracle with the random-ranking control and cluster intervals of V9."""
     s = pd.read_csv(v3 / "v3_selection.csv")
+    st = pd.read_csv(v9 / "v9_transfer_stats.csv").set_index(["cls", "source", "target", "role"])
     rows = []
     for r in s.itertuples():
+        f, o = st.loc[(r.cls, r.source, r.target, "frozen")], st.loc[(r.cls, r.source, r.target, "oracle")]
         cand, orc = short_model(r.candidate), short_model(r.oracle)
-        rows.append(f"{CLS[r.cls]} & {DS[r.source]}$\\rightarrow${DS[r.target]} & {cand} & {r.auprc:.3f} "
-                    f"({r.ci_lo:.3f}--{r.ci_hi:.3f}) & {r.base_rate:.3f} & {orc} & {r.oracle_auprc:.3f} & {int(r.rank_on_target)}\\\\")
-    head = ("\\begin{tabular}{@{}llllrlrr@{}}\n\\toprule\nClass & Pair & Frozen model & AP (95\\% CI) & Chance & "
-            "Oracle model & AP & Rank\\\\\n\\midrule\n")
+        rows.append(f"{CLS[r.cls]} & {DS[r.source]}$\\rightarrow${DS[r.target]} & {int(f.n_pos)}/{int(f.n)} & {cand} & "
+                    f"{f.auprc:.3f} ({f.ci_lo_cluster:.3f}--{f.ci_hi_cluster:.3f}) & {f.e_ap_random:.3f} & {fp(f.p_perm)} & "
+                    f"{orc} & {o.auprc:.3f} & {fp(o.p_perm)} & {int(r.rank_on_target)}\\\\")
+    head = ("\\begin{tabular}{@{}lllllrrlrrr@{}}\n\\toprule\nClass & Pair & Pos/$n$ & Frozen model & AP (95\\% CI) & "
+            "$E[\\mathrm{AP}_{\\mathrm{rand}}]$ & $p$ & Oracle model & AP & $p$ & Rank\\\\\n\\midrule\n")
     (out / "tab_rq4.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
+
+
+def tab_rq1(v7b: Path, out: Path):
+    """Three-level template reading per SolidiFI type, with the range over the LLM readers."""
+    lv = pd.read_csv("data/audit/template_three_levels.csv")
+    sh = pd.read_csv(v7b / "shares.csv")
+    llm = sh[sh.reader != "authors"]
+    order = ["Re-entrancy", "Timestamp-Dependency", "Unhandled-Exceptions", "Overflow-Underflow", "tx.origin",
+             "Unchecked-Send", "TOD"]
+    rows = []
+    for t in order:
+        g = lv[lv.bug_type == t]
+        o = g.occurrences.sum()
+
+        def pc(mask):
+            return f"{100 * g.occurrences[mask].sum() / o:.0f}\\%"
+
+        def rng(q, col):
+            x = llm[(llm.question == q) & (llm.bug_type == t)][col]
+            return f"{100 * x.min():.0f}--{100 * x.max():.0f}\\%" if x.min() != x.max() else f"{100 * x.min():.0f}\\%"
+        rows.append(f"{t} & {len(g)} / {o:,} & {pc(g.operation == 'no')} & {pc(g.weakness == 'no')} & "
+                    f"{pc(g.weakness != 'yes')} & {pc(g.exploit == 'no')} & {rng('operation', 'share_no')} & "
+                    f"{rng('weakness', 'share_no')} & {rng('exploit', 'share_no')}\\\\")
+    head = ("\\begin{tabular}{@{}lrrrrrrrr@{}}\n\\toprule\n & & \\multicolumn{4}{c}{Our reading} & "
+            "\\multicolumn{3}{c}{LLM readers (range)}\\\\\n\\cmidrule(lr){3-6}\\cmidrule(lr){7-9}\n"
+            "Type & templates / snippets & no operation & no weakness & not \\emph{yes} & no exploit & "
+            "no operation & no weakness & no exploit\\\\\n\\midrule\n")
+    (out / "tab_rq1.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
+
+
+def tab_paired(v10: Path, out: Path):
+    u = pd.read_csv(v10 / "v10_summary.csv")
+    reps = [("lex_raw", "logreg", r"\textsc{lex\_raw}"), ("lex_norm", "logreg", r"\textsc{lex\_norm}"),
+            ("pat", "rf", r"\textsc{pat}/RF"), ("pat", "lgbm", r"\textsc{pat}/LGBM")]
+    rows = []
+    for cls in ["reentrancy", "unchecked", "arithmetic", "timestamp", "tx_origin"]:
+        first = True
+        for rep, model, name in reps:
+            g = u[(u.cls == cls) & (u.rep == rep) & (u.model == model)]
+            if g.empty:
+                continue
+            lab = f"{CLS[cls]} ({g.template.nunique()} / {int(g.units.sum() / 1)})" if first else ""
+            first = False
+            rows.append(f"{lab} & {name} & {g.mean_vuln.mean():.3f} & {g.mean_fixed.mean():.3f} & "
+                        f"{g.mean_renamed.mean():.3f} & {g.mean_clean.mean():.3f} & {g.p_vuln_gt_fixed.mean():.2f} & "
+                        f"{f2(g.fix_effect.median())} & {f2(g.rename_effect.median())}\\\\")
+        rows.append("\\addlinespace[2pt]")
+    head = ("\\begin{tabular}{@{}llrrrrrrr@{}}\n\\toprule\n & & \\multicolumn{4}{c}{mean score} & & "
+            "\\multicolumn{2}{c}{share of the vuln--clean gap}\\\\\n\\cmidrule(lr){3-6}\\cmidrule(lr){8-9}\n"
+            "Class (templates / units) & Model & vuln & fixed & renamed & clean & $P(\\mathrm{vuln}>\\mathrm{fixed})$ & "
+            "removed by fix & removed by renaming\\\\\n\\midrule\n")
+    (out / "tab_paired.tex").write_text(head + "\n".join(rows[:-1]) + "\n\\bottomrule\n\\end{tabular}\n")
+
+
+def tab_controls(v8: Path, out: Path):
+    c = pd.read_csv(v8 / "controls.csv")
+    # the *_asend configurations use the final mapping (arbitrary-send-eth for unprotected sends, amendment 4)
+    tools = [("slither_asend", "Slither"), ("slither_full_asend", "Slither (all)"), ("mythril", "Mythril"),
+             ("mythril_nosolv", "Mythril$^{b}$"), ("smartcheck", "SmartCheck")]
+    rows = []
+    for (cls, f), g in c.groupby(["class", "file"], sort=False):
+        g = g.set_index("tool")
+        cells = []
+        for t, _ in tools:
+            r = g.loc[t]
+            cells.append("--" if not r.has_rule else ("\\checkmark" if r.flagged else "$\\cdot$"))
+        rows.append(f"{CLS[cls]} & \\texttt{{{f.replace('_', chr(92) + '_').replace('.sol', '')}}} & " + " & ".join(cells) + "\\\\")
+    head = ("\\begin{tabular}{@{}ll" + "c" * len(tools) + "@{}}\n\\toprule\nClass & Control & "
+            + " & ".join(n for _, n in tools) + "\\\\\n\\midrule\n")
+    (out / "tab_controls.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
 
 
 def tab_rq3(v5: Path, out: Path):
@@ -135,21 +215,23 @@ def tab_rq5(v5: Path, out: Path):
         g = g.set_index("k")
         kt = int(g[g.k_is_tool_alarms].index[0]) if g.k_is_tool_alarms.any() else None
         cells = []
+        npos = int(g.n_pos.iloc[0])
         for k in (5, 20):
             if k not in g.index:
-                cells += ["--"] * 3
+                cells += ["--"] * 5
                 continue
             r = g.loc[k]
-            cells += [f2(r.tool_recall), f2(r.model_recall), f2(r.hybrid_recall)]
+            cells += [f2(r.tool_recall), f2(r.tool_severity_recall), f2(r.tool_flag_random_recall),
+                      f2(r.model_recall), f"{f2(r.hybrid_recall)} ({r.hybrid_recall * npos:.0f})"]
         rt = g.loc[kt] if kt is not None else None
         rows.append(f"{TOOLS[tool]} & {CLS[cls]} & {DS[src]} & {int(g.n_pos.iloc[0])} & " + " & ".join(cells)
                     + (f" & {kt} & {f2(rt.tool_recall)} & {f2(rt.model_recall)}" if rt is not None else " & -- & -- & --")
                     + r"\\")
-    head = ("\\begin{tabular}{@{}lllr" + "rrr" * 2 + "rrr@{}}\n\\toprule\n & & & & "
-            + " & ".join(rf"\multicolumn{{3}}{{c}}{{$k={k}$}}" for k in (5, 20))
+    head = ("\\begin{tabular}{@{}lllr" + "rrrrr" * 2 + "rrr@{}}\n\\toprule\n & & & & "
+            + " & ".join(rf"\multicolumn{{5}}{{c}}{{$k={k}$}}" for k in (5, 20))
             + r" & \multicolumn{3}{c}{$k=$ tool alarms}\\" "\n"
-            + "".join(rf"\cmidrule(lr){{{5 + 3 * i}-{7 + 3 * i}}}" for i in range(3)) + "\n"
-            + "Tool & Class & Src & Pos & " + " & ".join(["T", "M", "H"] * 2) + r" & $k$ & T & M\\" "\n\\midrule\n")
+            + r"\cmidrule(lr){5-9}\cmidrule(lr){10-14}\cmidrule(lr){15-17}" + "\n"
+            + "Tool & Class & Src & Pos & " + " & ".join(["T", "S", "R", "M", "H"] * 2) + r" & $k$ & T & M\\" "\n\\midrule\n")
     (out / "tab_rq5.tex").write_text(head + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
 
 
@@ -205,10 +287,13 @@ def fig_budget(v5: Path, out: Path):
             continue
         src = "dappscan" if cls in ("unchecked",) else "solidifi"
         g = g[g.source == src]
-        for det, col, lab, lw in (("hybrid", AQUA, "hybrid", 2.6), ("tool", BLUE, "tool", 1.6),
-                                  ("model", ORANGE, "model", 1.4)):
+        for det, col, lab, lw, ls in (("hybrid", AQUA, "hybrid", 2.6, "-"), ("tool", BLUE, "tool (count)", 1.6, "-"),
+                                      ("tool_severity", BLUE, "tool (severity)", 1.0, "--"),
+                                      ("tool_flag_random", GREY, "flagged, random", 1.0, ":"),
+                                      ("model", ORANGE, "model", 1.4, "-")):
             h = g[g.detector == det].sort_values("k")
-            ax.plot(h.k, h.recall, color=col, lw=lw, label=lab)
+            if not h.empty:
+                ax.plot(h.k, h.recall, color=col, lw=lw, ls=ls, label=lab)
         n = int(g.k.max())
         ax.set_title(f"{CLS[cls]}\n{TOOLS[tool]}, model from {DS[src]}", fontsize=7.5, color=INK)
         ax.set_xlim(0, min(n, 80))
@@ -223,14 +308,17 @@ def fig_budget(v5: Path, out: Path):
 
 def main():
     ap = argparse.ArgumentParser()
-    for k in ("v1", "v2", "v3", "v5"):
+    for k in ("v1", "v2", "v3", "v5", "v7b", "v8", "v9", "v10"):
         ap.add_argument(f"--{k}", required=True)
     ap.add_argument("--out", default="results/contracts/v6_paper")
     a = ap.parse_args()
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     tab_rq2(Path(a.v1), Path(a.v2), out)
-    tab_rq4(Path(a.v3), out)
+    tab_rq4(Path(a.v3), Path(a.v9), out)
+    tab_rq1(Path(a.v7b), out)
+    tab_paired(Path(a.v10), out)
+    tab_controls(Path(a.v8), out)
     tab_rq3(Path(a.v5), out)
     tab_rq5(Path(a.v5), out)
     fig_templates(Path(a.v1), Path(a.v2), Path(a.v5), out)

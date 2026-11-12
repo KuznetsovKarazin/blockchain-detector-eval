@@ -1,0 +1,45 @@
+Item,Benchmark label,Weakness,Q1 operation,Q2 weakness,Q3 exploit,Confidence,Comment
+Q01,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Отсутствует проверка возврата низкоуровневого вызова.
+Q02,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Отсутствует проверка возврата call.
+Q03,tx.origin,Authorisation through tx.origin (SWC-115),yes,yes,yes,3,tx.origin уязвим к фишингу через промежуточный контракт.
+Q04,Overflow-Underflow,Integer overflow / underflow (SWC-101),yes,yes,yes,3,Переполнение в Solidity 0.5.x позволяет манипулировать балансом.
+Q05,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Возврат send не проверяется.
+Q06,Re-entrancy,Reentrancy (SWC-107),yes,yes,yes,3,Внешний вызов до обновления состояния.
+Q07,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,При сбое send флаг payedOut всё равно true.
+Q08,Timestamp-Dependency,Block timestamp dependence (SWC-116),yes,yes,yes,3,Майнер может манипулировать block.timestamp.
+Q09,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,no,3,Сумма перевода 0 — ущерб невозможен.
+Q10,Unchecked-Send,Unprotected Ether transfer (SWC-105),yes,yes,yes,3,Отсутствие контроля доступа.
+Q11,Overflow-Underflow,Integer overflow / underflow (SWC-101),yes,yes,yes,3,Переполнение lockTime обходит блокировку.
+Q12,Timestamp-Dependency,Block timestamp dependence (SWC-116),yes,yes,yes,3,Майнер может подобрать timestamp кратный 15.
+Q13,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для send делает эксплуатацию маловероятной.
+Q14,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для send делает эксплуатацию маловероятной.
+Q15,Re-entrancy,Reentrancy (SWC-107),yes,yes,yes,3,call передает весь газ до обновления состояния.
+Q16,Overflow-Underflow,Integer overflow / underflow (SWC-101),yes,yes,no,3,Переполнение в локальной переменной без влияния на состояние.
+Q17,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Флаг payedOut ставится даже при сбое send.
+Q18,Overflow-Underflow,Integer overflow / underflow (SWC-101),yes,yes,yes,3,Переполнение lockTime обходит блокировку.
+Q19,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Возврат send не проверяется.
+Q20,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,При сбое выполнение продолжается как при успехе.
+Q21,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,no,3,Сумма перевода 0 — ущерб невозможен.
+Q22,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Отсутствует проверка возврата call.
+Q23,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,При сбое счетчик растет — несогласованность состояния.
+Q24,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Переменная обнуляется даже при сбое send.
+Q25,tx.origin,Authorisation through tx.origin (SWC-115),yes,yes,no,3,Только проверка tx.origin без чувствительных действий.
+Q26,Overflow-Underflow,Integer overflow / underflow (SWC-101),yes,yes,yes,3,Исчерпание позволяет манипулировать балансом.
+Q27,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,yes,3,Возврат send не проверяется.
+Q28,tx.origin,Authorisation through tx.origin (SWC-115),yes,yes,yes,3,Атака через tx.origin на перевод средств.
+Q29,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для send делает эксплуатацию маловероятной.
+Q30,Unhandled-Exceptions,Unchecked call return value (SWC-104),yes,yes,no,3,Условие || 1==1 всегда делает revert.
+Q31,Timestamp-Dependency,Block timestamp dependence (SWC-116),yes,yes,yes,3,Майнер может манипулировать block.timestamp.
+Q32,Re-entrancy,Reentrancy (SWC-107),yes,yes,yes,3,call передает весь газ до обновления состояния.
+Q33,Re-entrancy,Reentrancy (SWC-107),yes,yes,yes,3,call передает весь газ до обновления состояния.
+Q34,TOD,Transaction-order dependence (SWC-114),yes,yes,yes,3,Frontrun через мемпул для кражи награды.
+Q35,Overflow-Underflow,Integer overflow / underflow (SWC-101),yes,yes,no,3,Исчерпание в локальной переменной без влияния на состояние.
+Q36,Timestamp-Dependency,Block timestamp dependence (SWC-116),yes,yes,no,3,Переменная не влияет на поток управления или переводы.
+Q37,TOD,Transaction-order dependence (SWC-114),yes,yes,yes,3,Frontrun валидной заявки для кражи награды.
+Q38,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для transfer делает эксплуатацию маловероятной.
+Q39,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для send делает эксплуатацию маловероятной.
+Q40,Timestamp-Dependency,Block timestamp dependence (SWC-116),yes,yes,unclear,2,View-функция без контекста — ущерб неочевиден.
+Q41,tx.origin,Authorisation through tx.origin (SWC-115),yes,yes,yes,3,Атака через tx.origin опустошает баланс.
+Q42,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для send делает эксплуатацию маловероятной.
+Q43,Re-entrancy,Reentrancy (SWC-107),yes,yes,yes,3,call передает весь газ до обновления состояния.
+Q44,Re-entrancy,Reentrancy (SWC-107),yes,limited,limited,2,Лимит газа 2300 для send делает эксплуатацию маловероятной.
