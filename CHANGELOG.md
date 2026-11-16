@@ -6,8 +6,8 @@ tree and remain in the release that produced them (0.5.0, 0.5.1).
 
 ## 0.7.0 (2026-11-16)
 
-Temporal validity study (paper "What Survives the Next Period?", submitted to
-Computers & Security). New scripts `tv1`–`tv11`, protocol
+Temporal validity study (paper "What Survives the Next Period?", submitted to the
+Journal of Information Security and Applications). New scripts `tv1`–`tv11`, protocol
 `docs/PROTOCOLS_TV.md` (hypotheses fixed before the runs, round-2 extension
 dated in the file), results `docs/FINDINGS_TEMPORAL_VALIDITY.md`. No change to
 earlier runs.
