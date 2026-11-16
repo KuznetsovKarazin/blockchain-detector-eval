@@ -1,0 +1,1 @@
+{"seconds": 20.331998825073242, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_short_addresses_short_address_example.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/short_addresses/short_address_example.sol"}

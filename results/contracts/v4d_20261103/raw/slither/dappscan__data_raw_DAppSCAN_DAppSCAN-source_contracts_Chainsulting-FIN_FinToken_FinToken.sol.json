@@ -1,0 +1,1 @@
+{"seconds": 0.5314896106719971, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "slither", "fid": "dappscan__data_raw_DAppSCAN_DAppSCAN-source_contracts_Chainsulting-FIN_FinToken_FinToken.sol", "dataset": "dappscan", "path": "data/raw/DAppSCAN/DAppSCAN-source/contracts/Chainsulting-FIN/FinToken/FinToken.sol"}

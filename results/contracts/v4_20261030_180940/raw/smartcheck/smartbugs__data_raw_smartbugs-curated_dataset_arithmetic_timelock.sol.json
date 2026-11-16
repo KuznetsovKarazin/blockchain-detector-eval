@@ -1,0 +1,1 @@
+{"seconds": 2.613624334335327, "findings": [{"rule": "SOLIDITY_PRAGMAS_VERSION", "lines": [8], "impact": "1"}], "status": "ok", "error": "", "tool": "smartcheck", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_timelock.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/timelock.sol"}

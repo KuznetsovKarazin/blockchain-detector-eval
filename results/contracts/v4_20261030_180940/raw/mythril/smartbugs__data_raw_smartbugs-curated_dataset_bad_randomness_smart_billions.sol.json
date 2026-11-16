@@ -1,0 +1,1 @@
+{"seconds": 181.72146463394165, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_bad_randomness_smart_billions.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/bad_randomness/smart_billions.sol"}

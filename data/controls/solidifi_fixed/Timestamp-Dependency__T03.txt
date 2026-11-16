@@ -1,0 +1,5 @@
+address winner_tmstmp3;
+function play_tmstmp3(uint startBlock) public {
+	uint _vblock = block.number;
+	if (startBlock + (5 * 5760) == _vblock){
+		winner_tmstmp3 = msg.sender;}}

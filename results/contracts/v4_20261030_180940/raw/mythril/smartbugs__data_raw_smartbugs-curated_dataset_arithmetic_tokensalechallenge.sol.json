@@ -1,0 +1,1 @@
+{"seconds": 99.2886860370636, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_arithmetic_tokensalechallenge.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/arithmetic/tokensalechallenge.sol"}

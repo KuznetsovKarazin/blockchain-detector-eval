@@ -1,0 +1,1 @@
+{"seconds": 138.84717869758606, "findings": [], "status": "ok", "error": "", "solc": "0.5.17", "tried": "0.5.17:ok", "outside_pragma": false, "tool": "mythril", "fid": "solidifi__data_raw_SolidiFI-benchmark_buggy_contracts_Overflow-Underflow_buggy_21.sol", "dataset": "solidifi", "path": "data/raw/SolidiFI-benchmark/buggy_contracts/Overflow-Underflow/buggy_21.sol"}

@@ -1,0 +1,72 @@
+{
+  "script": "v10_paired_edits.py",
+  "created_utc": "2026-11-03T23:31:48Z",
+  "git_commit": "b5ad8c1e2435db42182e8e6c4d6fbbc1be3a84e8",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/v10_paired_edits.py"
+  ],
+  "diff_sha256": "d0002685758b00735f6fc92b4b54aa158ba55d0d6f82196f43a8b0c37cbc2cae",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v230-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "out": "results/contracts",
+    "seeds": 3
+  },
+  "data": {},
+  "data_sets": {
+    "fixed_templates": {
+      "n_files": 34,
+      "sha256": "d362068a441b36b4ad8b89cd4f6d8300b0a6bd35b749fefbfeb920866af7da1f"
+    }
+  },
+  "templates": [
+    "Overflow-Underflow/T01",
+    "Overflow-Underflow/T02",
+    "Overflow-Underflow/T03",
+    "Overflow-Underflow/T04",
+    "Overflow-Underflow/T05",
+    "Overflow-Underflow/T06",
+    "Re-entrancy/T01",
+    "Re-entrancy/T02",
+    "Re-entrancy/T03",
+    "Re-entrancy/T04",
+    "Re-entrancy/T05",
+    "Re-entrancy/T06",
+    "Re-entrancy/T07",
+    "Re-entrancy/T08",
+    "Re-entrancy/T09",
+    "Re-entrancy/T10",
+    "Re-entrancy/T11",
+    "Re-entrancy/T12",
+    "Timestamp-Dependency/T01",
+    "Timestamp-Dependency/T02",
+    "Timestamp-Dependency/T03",
+    "Timestamp-Dependency/T04",
+    "Unhandled-Exceptions/T02",
+    "Unhandled-Exceptions/T03",
+    "Unhandled-Exceptions/T04",
+    "Unhandled-Exceptions/T05",
+    "Unhandled-Exceptions/T08",
+    "Unhandled-Exceptions/T09",
+    "Unhandled-Exceptions/T10",
+    "Unhandled-Exceptions/T11",
+    "Unhandled-Exceptions/T12",
+    "Unhandled-Exceptions/T14",
+    "tx.origin/T01",
+    "tx.origin/T02"
+  ]
+}

@@ -1,0 +1,10 @@
+address payable lastPlayer_re_ent2;
+      uint jackpot_re_ent2;
+	  function buyTicket_re_ent2() public{
+	    address payable prev_re_ent2 = lastPlayer_re_ent2;
+	    uint amount_re_ent2 = jackpot_re_ent2;
+      lastPlayer_re_ent2 = msg.sender;
+      jackpot_re_ent2    = address(this).balance;
+	    if (!(prev_re_ent2.send(amount_re_ent2)))
+        revert();
+    }

@@ -1,0 +1,1 @@
+{"seconds": 9.995694875717163, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_time_manipulation_timed_crowdsale.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/time_manipulation/timed_crowdsale.sol"}

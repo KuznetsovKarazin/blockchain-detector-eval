@@ -1,0 +1,39 @@
+{
+  "script": "v7b_reader_agreement.py",
+  "created_utc": "2026-11-03T23:34:29Z",
+  "git_commit": "0b05546165d78a02a312db0b7b52fa38e5e3e967",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/v7b_reader_agreement.py"
+  ],
+  "diff_sha256": "b8224a4348c70e324aa716daecde6f587976bfa63efc85c37649db299af0673c",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v230-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "forms": "results/contracts/v7_rater_form/llm_readers_20261103",
+    "label": "llm",
+    "out": "results/contracts"
+  },
+  "data": {
+    "data/audit/template_three_levels.csv": "66e01825f1abaa761b1ec7f12fa68cc83e02f12cde4fd0a342cc72de0decfc7f",
+    "results/contracts/v7_rater_form/key.csv": "8e90d94072fc6273b257ea6f29169f24c27b6436825f0cb7a1ae4b8d94af3add",
+    "results/contracts/v7_rater_form/llm_readers_20261103/reader1.xlsx": "4e6012bb68abe628cdc69a238aa12228b0a6d4a44ea919005f39da57829b491a",
+    "results/contracts/v7_rater_form/llm_readers_20261103/reader2.csv": "41949c2cd1c47a5b38169e06c42cbb3b9c3bfa01cf2aa44ef68fafb7e0e5a521",
+    "results/contracts/v7_rater_form/llm_readers_20261103/reader3.xlsx": "4b9b4fac2386096e62d9210290648ccbae7c706c8c9f9c1668cb50bec57b1417",
+    "results/contracts/v7_rater_form/llm_readers_20261103/reader4.csv": "ae285898f83c2988083061ddfa4c6e7eafc5482df43d222958dc3ce6c0c46a1c"
+  },
+  "data_sets": {}
+}

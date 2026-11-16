@@ -1,0 +1,1 @@
+{"seconds": 100.58165049552917, "findings": [], "status": "ok", "error": "", "solc": "0.4.26", "tried": "0.4.26:ok", "outside_pragma": false, "tool": "mythril", "fid": "smartbugs__data_raw_smartbugs-curated_dataset_other_open_address_lottery.sol", "dataset": "smartbugs", "path": "data/raw/smartbugs-curated/dataset/other/open_address_lottery.sol"}

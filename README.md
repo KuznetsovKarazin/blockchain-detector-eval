@@ -331,7 +331,7 @@ Earlier review notes are kept in
             Anomaly Detector, and What Does It Cost to Run?},
   author  = {Kuznetsov, Oleksandr},
   year    = {2026},
-  version = {0.6.0},
+  version = {0.8.0},
   url     = {https://github.com/KuznetsovKarazin/blockchain-detector-eval}
 }
 ```

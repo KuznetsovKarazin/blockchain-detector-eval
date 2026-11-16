@@ -1,0 +1,4 @@
+address winner_tmstmp2;
+function play_tmstmp2(uint startBlock) public {
+	if (startBlock + (5 * 5760) == block.number){
+		winner_tmstmp2 = msg.sender;}}

@@ -1,0 +1,4 @@
+function sendto_txorigin1(address payable receiver, uint amount,address owner_txorigin1) public {
+	require (msg.sender == owner_txorigin1);
+	receiver.transfer(amount);
+}

@@ -1,0 +1,36 @@
+{
+  "script": "v9_transfer_stats.py",
+  "created_utc": "2026-11-03T22:38:22Z",
+  "git_commit": "863184ff7f024d3dad7e217b38025a3f98169ea8",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/v4_static_tools.py",
+    "scripts/v9_transfer_stats.py"
+  ],
+  "diff_sha256": "a734147d128eb4f67593736a5925a1a963402aab28f82828dfb0157bcae5c563",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v230-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": "0.11.6"
+  },
+  "config": {
+    "v3": "results/contracts/v3_20261030_182906",
+    "out": "results/contracts",
+    "perms": 5000,
+    "boot": 2000,
+    "seed": 0
+  },
+  "data": {},
+  "data_sets": {},
+  "v3": "results/contracts/v3_20261030_182906"
+}

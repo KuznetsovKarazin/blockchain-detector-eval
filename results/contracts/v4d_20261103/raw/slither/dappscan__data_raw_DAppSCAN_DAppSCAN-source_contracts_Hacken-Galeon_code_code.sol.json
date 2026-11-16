@@ -1,0 +1,1 @@
+{"seconds": 0.7273635864257812, "findings": [], "status": "ok", "error": "", "solc": "0.8.26", "tried": "0.8.26:ok", "outside_pragma": false, "tool": "slither", "fid": "dappscan__data_raw_DAppSCAN_DAppSCAN-source_contracts_Hacken-Galeon_code_code.sol", "dataset": "dappscan", "path": "data/raw/DAppSCAN/DAppSCAN-source/contracts/Hacken-Galeon/code/code.sol"}

@@ -1,0 +1,7 @@
+mapping(address => uint) balances_re_ent1;
+    function withdraw_balances_re_ent1 () public {
+       uint amount_re_ent1 = balances_re_ent1[msg.sender ];
+       balances_re_ent1[msg.sender] = 0;
+       (bool success,) =msg.sender.call.value(amount_re_ent1)("");
+       require(success);
+      }
