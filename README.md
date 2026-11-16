@@ -214,6 +214,32 @@ the same contracts and a background sample from the AWS public Ethereum data
 
 ---
 
+### Temporal validity (TV): what survives the next period
+
+Pre-registered study of ranking, alarm thresholds and label-free monitors on
+the next period (protocol [docs/PROTOCOLS_TV.md](docs/PROTOCOLS_TV.md),
+results [docs/FINDINGS_TEMPORAL_VALIDITY.md](docs/FINDINGS_TEMPORAL_VALIDITY.md)).
+
+| Experiment | Script | Run |
+|---|---|---|
+| X1/X1c causal vs lifetime wallet features | `tv1_wallet_causal.py` | `results/transactions/tv1_20261030_x1` |
+| X2/X4/X6 rolling origin on Elliptic | `tv2_rolling_elliptic.py` | `results/transactions/tv2_20261030_x2` |
+| Quiet Ethereum days (sampled) | `tv3_quiet_days.py` | `data/derived` (rebuilt) |
+| X3/X4 K4 temporal splits and thresholds | `tv4_k4_temporal.py` | `results/kan/tv4_20261031_*` |
+| X5 tuned GraphSAGE / GAT | `tv5_gnn_optuna.py` | `results/transactions/tv5_*` |
+| Analysis and figures | `tv6_analysis.py`, `tv7_figures.py` | `results/tv_analysis_20261031`, `results/tv_figures` |
+| X6b label-shift checks | `tv8_monitors_elliptic.py` | `results/transactions/tv8_20261103_222347` |
+| A3b/X4b preparation vs execution, alarms by stratum | `tv9_k4_round2.py` | `results/kan/tv9_20261103` |
+| X7 fully processed days, sequential threshold | `tv10_full_day.py`, `tv11_full_days.py` | `results/kan/tv11_20261104` |
+
+* Causal wallet features match lifetime features on a random split and almost
+  double their AP on later addresses (0.555 vs 0.277).
+* A 2024 threshold for one alarm/day gives 5.9–9.7 alarms per quiet day in
+  2025–26 (exact, fully processed days); a label-free 24-hour threshold keeps
+  1.6–3.7.
+* Elliptic labels are not redistributed; Ethereum days are rebuilt from the
+  AWS public blockchain data.
+
 ## What this project does NOT claim
 
 * No general ranking of model families: each claim is tied to one dataset,
@@ -305,7 +331,7 @@ Earlier review notes are kept in
             Anomaly Detector, and What Does It Cost to Run?},
   author  = {Kuznetsov, Oleksandr},
   year    = {2026},
-  version = {0.7.0},
+  version = {0.8.0},
   url     = {https://github.com/KuznetsovKarazin/blockchain-detector-eval}
 }
 ```

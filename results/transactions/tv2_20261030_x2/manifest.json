@@ -1,0 +1,56 @@
+{
+  "script": "tv2_rolling_elliptic.py",
+  "created_utc": "2026-10-30T19:12:34Z",
+  "git_commit": "db67c61f09a0c516fde191d71af4ecabb1f08252",
+  "git_dirty": true,
+  "dirty_files": [
+    "scripts/tv1_wallet_causal.py",
+    "scripts/tv2_rolling_elliptic.py",
+    "scripts/tv4_k4_temporal.py"
+  ],
+  "diff_sha256": "bf778b3b25cf5f8a51f7a8311ae969d35216dacfbd2ec851a7e0b07fcc8925bd",
+  "python": "3.13.17",
+  "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "cpu_count": 4,
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.15.0",
+    "lightgbm": "4.7.0",
+    "xgboost": null,
+    "pyarrow": "26.0.0",
+    "optuna": "5.0.0",
+    "slither-analyzer": null
+  },
+  "config": {
+    "data": "data/raw/elliptic",
+    "seeds": 5,
+    "models": "mlp",
+    "cutoffs": "20,25,30,35,40",
+    "out": "results/transactions",
+    "run": "results/transactions/tv2_20261030_x2"
+  },
+  "data": {
+    "data/raw/elliptic/elliptic_txs_features.csv": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0",
+    "data/raw/elliptic/elliptic_txs_classes.csv": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493",
+    "data/raw/elliptic/elliptic_txs_edgelist.csv": "a35053ba68a98e4382cae2ba65b9d9e36b23b6439e02dff084971b1b72a5156e"
+  },
+  "data_sets": {},
+  "cutoffs": [
+    20,
+    25,
+    30,
+    35,
+    40
+  ],
+  "budgets": [
+    0.01,
+    0.05
+  ],
+  "windows": {
+    "all": null,
+    "last10": 10
+  }
+}

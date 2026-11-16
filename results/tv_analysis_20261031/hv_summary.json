@@ -1,0 +1,187 @@
+{
+  "hv1": {
+    "lgbm": {
+      "P3_causal_minus_lifetime": 0.2774,
+      "P1_causal_minus_lifetime": 0.0022,
+      "part1_P3": true,
+      "part2_P1_drop": false
+    },
+    "rf": {
+      "P3_causal_minus_lifetime": 0.3142,
+      "P1_causal_minus_lifetime": 0.0043,
+      "part1_P3": true,
+      "part2_P1_drop": false
+    },
+    "supported": false
+  },
+  "hv2": {
+    "elliptic": {
+      "order_by_period": {
+        "c20": [
+          "lgbm",
+          "rf",
+          "mlp",
+          "logreg"
+        ],
+        "c25": [
+          "rf",
+          "lgbm",
+          "mlp",
+          "logreg"
+        ],
+        "c30": [
+          "lgbm",
+          "rf",
+          "mlp",
+          "logreg"
+        ],
+        "c35": [
+          "lgbm",
+          "rf",
+          "mlp",
+          "logreg"
+        ],
+        "c40": [
+          "lgbm",
+          "logreg",
+          "mlp",
+          "rf"
+        ]
+      },
+      "kendall_tau_mean": 0.467,
+      "kendall_tau_min": -0.333,
+      "trees_first_every_period": true,
+      "best_ap_max_over_min": 5.15,
+      "supported": false
+    },
+    "k4": {
+      "order_by_period": {
+        "t2024": [
+          "lgbm",
+          "rf",
+          "mlp",
+          "kan",
+          "rule",
+          "logreg"
+        ],
+        "t2025": [
+          "lgbm",
+          "rf",
+          "kan",
+          "mlp",
+          "logreg",
+          "rule"
+        ],
+        "t2026": [
+          "lgbm",
+          "rf",
+          "mlp",
+          "kan",
+          "logreg",
+          "rule"
+        ]
+      },
+      "kendall_tau_mean": 0.822,
+      "kendall_tau_min": 0.733,
+      "trees_first_every_period": true,
+      "best_ap_max_over_min": 2.03,
+      "supported": true
+    }
+  },
+  "hv3": {
+    "elliptic": {
+      "models_over_2x_at_both_budgets": 0,
+      "models": 4,
+      "part1": false,
+      "topk_over_fixed_recall_min": 0.588,
+      "topk_over_fixed_recall_median": 1.052,
+      "part2": true
+    },
+    "k4_t2025": {
+      "models_over_2x_at_both_budgets": 5,
+      "models": 6,
+      "part1": true,
+      "topk_over_fixed_recall_min": 0.2,
+      "topk_over_fixed_recall_median": 0.949,
+      "part2": false
+    }
+  },
+  "hv4": {
+    "elliptic": {
+      "psi_median": 0.17,
+      "domain_auc": -0.101,
+      "mean_score": 0.542,
+      "em_prior": 0.727,
+      "steps_em_below_half_true": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "misread_steps": [
+        {
+          "cutoff": 35,
+          "step": 43,
+          "ap": 0.1036,
+          "val_ap": 0.9571,
+          "em_prior": 0.0,
+          "true_prior": 0.0175
+        },
+        {
+          "cutoff": 40,
+          "step": 45,
+          "ap": 0.0314,
+          "val_ap": 0.8824,
+          "em_prior": 0.0,
+          "true_prior": 0.0041
+        },
+        {
+          "cutoff": 40,
+          "step": 47,
+          "ap": 0.429,
+          "val_ap": 0.8824,
+          "em_prior": 0.0,
+          "true_prior": 0.026
+        }
+      ],
+      "em_vs_true_spearman": 0.879
+    },
+    "k4": {
+      "psi_median": -0.074,
+      "mean_score": 0.373,
+      "share_above_t1": 0.33,
+      "quiet_vs_incident_means": {
+        "False": {
+          "psi_median": 0.385159,
+          "mean_score": 0.0,
+          "share_above_t1": 3e-06
+        },
+        "True": {
+          "psi_median": 0.319006,
+          "mean_score": 0.0,
+          "share_above_t1": 3e-06
+        }
+      }
+    },
+    "input_uninformative": true,
+    "output_misread": true
+  },
+  "hv5": {
+    "lgbm": {
+      "full": 0.2123,
+      "drop_no_setup": 0.183,
+      "drop_no_mechanism": -0.0692
+    },
+    "rf": {
+      "full": 0.2094,
+      "drop_no_setup": 0.1889,
+      "drop_no_mechanism": 0.0537
+    },
+    "supported": "True",
+    "setup": "nonce, gas_used, to_created_today, n_contracts",
+    "mechanism": "has_flash, n_flash, flash_to_pool, max_price_move, net_price_move, n_pools"
+  }
+}

@@ -1,0 +1,8 @@
+domain,monitor,target,spearman
+elliptic,psi_median,step AP (lgbm s0),0.17
+elliptic,domain_auc,step AP (lgbm s0),-0.101
+elliptic,mean_score,step AP (lgbm s0),0.542
+elliptic,em_prior,step AP (lgbm s0),0.727
+k4,psi_median,minus attack rank (lgbm),-0.074
+k4,mean_score,minus attack rank (lgbm),0.373
+k4,share_above_t1,minus attack rank (lgbm),0.33

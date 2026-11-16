@@ -1,0 +1,80 @@
+{
+  "ablation": [
+    {
+      "model": "lgbm",
+      "features": "full",
+      "test_ap": 0.212,
+      "median_day_rank": 6.4,
+      "topk1_recall": 0.308,
+      "topk10_recall": 0.615
+    },
+    {
+      "model": "lgbm",
+      "features": "no_execution",
+      "test_ap": 0.162,
+      "median_day_rank": 10.6,
+      "topk1_recall": 0.246,
+      "topk10_recall": 0.492
+    },
+    {
+      "model": "lgbm",
+      "features": "no_preparation",
+      "test_ap": 0.04,
+      "median_day_rank": 12.2,
+      "topk1_recall": 0.138,
+      "topk10_recall": 0.474
+    },
+    {
+      "model": "rf",
+      "features": "full",
+      "test_ap": 0.209,
+      "median_day_rank": 4.9,
+      "topk1_recall": 0.385,
+      "topk10_recall": 0.662
+    },
+    {
+      "model": "rf",
+      "features": "no_execution",
+      "test_ap": 0.15,
+      "median_day_rank": 12.2,
+      "topk1_recall": 0.185,
+      "topk10_recall": 0.508
+    },
+    {
+      "model": "rf",
+      "features": "no_preparation",
+      "test_ap": 0.169,
+      "median_day_rank": 24.732,
+      "topk1_recall": 0.215,
+      "topk10_recall": 0.354
+    }
+  ],
+  "frozen": [
+    {
+      "model": "lgbm",
+      "full_test_ap": 0.212,
+      "full_median_day_rank": 6.4,
+      "test_ap": 0.063,
+      "median_day_rank": 361.667,
+      "topk1_recall": 0.134,
+      "topk10_recall": 0.275
+    },
+    {
+      "model": "rf",
+      "full_test_ap": 0.209,
+      "full_median_day_rank": 4.9,
+      "test_ap": 0.035,
+      "median_day_rank": 93.591,
+      "topk1_recall": 0.055,
+      "topk10_recall": 0.32
+    }
+  ],
+  "preparation": [
+    "nonce",
+    "to_created_today"
+  ],
+  "execution": [
+    "gas_used",
+    "n_contracts"
+  ]
+}

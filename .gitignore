@@ -28,3 +28,5 @@ results/**/smoke*/
 .idea/
 .DS_Store
 data/derived/
+results/transactions/tv1_*/causal_features.parquet
+results/transactions/tv5_*/trials.db
