@@ -4,6 +4,22 @@ Each release is tagged on GitHub. Superseded runs are listed in
 `results/README.md`; the large superseded K4 runs are removed from the working
 tree and remain in the release that produced them (0.5.0, 0.5.1).
 
+## 0.7.0 (2026-11-16)
+
+Temporal validity study (paper "What Survives the Next Period?", submitted to
+Computers & Security). New scripts `tv1`–`tv11`, protocol
+`docs/PROTOCOLS_TV.md` (hypotheses fixed before the runs, round-2 extension
+dated in the file), results `docs/FINDINGS_TEMPORAL_VALIDITY.md`. No change to
+earlier runs.
+
+* Causal wallet features for Elliptic++ (prefix-invariance unit test).
+* Rolling origin on Elliptic, label-free monitors, EM label-shift checks with a
+  positive control.
+* K4 temporal splits, 22 quiet days, threshold strategies, preparation vs
+  execution ablation and a frozen-model swap.
+* Fully processed Ethereum days (streaming extraction by row group) for exact
+  alarm counts and a sequential 24-hour threshold.
+
 ## 0.6.0 (2026-10-25)
 
 K4 (DeFi exploits):
